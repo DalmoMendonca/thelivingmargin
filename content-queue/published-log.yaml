@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:05:33.964Z
+updatedAt: 2026-04-25T18:19:02.242Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -12,3 +12,14 @@ entries:
     slot: morning
     instagramMediaId: "18040541288578199"
     title: Peace As a Disguise
+  - id: 2026-04-25-standards-as-delay
+    publishedAt: 2026-04-25T18:19:02.229Z
+    topic: How “standards” can function as a postponement strategy
+    angle: Sometimes what you call high standards is just the comfort of not having
+      to produce an imperfect draft.
+    fingerprint: as call can comfort delay draft function having high how imperfect
+      just not postponement produce sometimes standards strategy what
+    kind: single
+    slot: midday
+    instagramMediaId: "18102670540762468"
+    title: Standards as delay

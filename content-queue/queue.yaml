@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:18:54.967Z
+updatedAt: 2026-04-25T18:19:02.229Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -402,11 +402,13 @@ items:
         - "#taste"
         - "#drafting"
         - "#intellectualhonesty"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260425-standards-as-delay
     renderedFiles:
       - docs/assets/posts/20260425-standards-as-delay/post.png
+    instagramMediaId: "18102670540762468"
+    publishedAt: 2026-04-25T18:19:02.229Z
   - id: 2026-04-25-the-unpaid-obsession
     createdAt: 2026-04-25T17:24:52.527Z
     source: ai
