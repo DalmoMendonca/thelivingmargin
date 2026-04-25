@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T21:44:31.216Z
+updatedAt: 2026-04-25T22:08:33.383Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -35,3 +35,14 @@ entries:
     slot: midday
     instagramMediaId: "18100428052815264"
     title: The Soft Lie of Clarity
+  - id: 2026-04-25-the-unpaid-obsession
+    publishedAt: 2026-04-25T22:08:33.370Z
+    topic: attention, taste, and the cost of choosing what to care about
+    angle: "Treat the things you keep returning to as unpaid debts: they shape your
+      mind more than your intentions do."
+    fingerprint: about as attention care choosing cost debts do intentions keep mind
+      more obsession returning shape taste than they things treat unpaid what
+    kind: single
+    slot: morning
+    instagramMediaId: "18008364971903891"
+    title: The Unpaid Obsession
