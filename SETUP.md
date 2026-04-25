@@ -132,6 +132,12 @@ For the zero-cost publishing flow, use a `public` repository.
    - `OPENAI_API_KEY`
    - `INSTAGRAM_USER_ID`
    - `INSTAGRAM_ACCESS_TOKEN`
+   - In GitHub, open the repository.
+   - Click `Settings`.
+   - In the left sidebar, click `Secrets and variables` -> `Actions`.
+   - Stay on the `Secrets` tab.
+   - Click `New repository secret`.
+   - Add each secret one at a time.
 4. Add these optional secrets for email alerts:
    - `SMTP_HOST`
    - `SMTP_PORT`
@@ -144,6 +150,14 @@ For the zero-cost publishing flow, use a `public` repository.
 Optional repository variable:
 
 - `OPENAI_MODEL` = `gpt-5`
+- To add it in GitHub:
+  - Open the repository.
+  - Click `Settings`.
+  - In the left sidebar, click `Secrets and variables` -> `Actions`.
+  - Click the `Variables` tab.
+  - Click `New repository variable`.
+  - Name = `OPENAI_MODEL`
+  - Value = `gpt-5` or `gpt-5.4-nano`
 
 ## 8. Gmail alerts
 
@@ -180,6 +194,21 @@ After the repository is pushed:
    - `1:00 PM` America/Chicago
    - `6:30 PM` America/Chicago
 4. You can also trigger it manually with `workflow_dispatch`.
+
+### Manual publish now
+
+To test a post immediately without waiting for the schedule:
+
+1. Push your latest code to the repository's default branch.
+2. In GitHub, open the repository and click `Actions`.
+3. If prompted, enable workflows.
+4. In the left sidebar, click `Instagram Publish`.
+5. Click `Run workflow`.
+6. Choose the `main` branch.
+7. Pick a slot such as `morning`.
+8. Click `Run workflow`.
+
+This is the on-demand publish path for testing outside the 3x/day schedule.
 
 ## 11. Manual idea queue
 
