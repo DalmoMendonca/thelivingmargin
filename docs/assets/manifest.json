@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T21:57:38.746Z",
+  "updatedAt": "2026-04-25T22:08:17.288Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -99,6 +99,17 @@
       "createdAt": "2026-04-25T17:24:47.599Z",
       "renderedFiles": [
         "assets/posts/20260425-standards-as-delay/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-unpaid-obsession",
+      "title": "The Unpaid Obsession",
+      "kind": "single",
+      "topic": "attention, taste, and the cost of choosing what to care about",
+      "angle": "Treat the things you keep returning to as unpaid debts: they shape your mind more than your intentions do.",
+      "createdAt": "2026-04-25T17:24:52.527Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-unpaid-obsession/post.png"
       ]
     },
     {

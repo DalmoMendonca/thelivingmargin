@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T21:57:51.223Z
+updatedAt: 2026-04-25T22:08:17.268Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -459,7 +459,10 @@ items:
         - "#taste"
         - "#editorialwriting"
     publishAttempts: 0
-    status: ready
+    status: rendered
+    renderDir: docs/assets/posts/20260425-the-unpaid-obsession
+    renderedFiles:
+      - docs/assets/posts/20260425-the-unpaid-obsession/post.png
   - id: 2026-04-25-proof-of-thinking
     createdAt: 2026-04-25T17:24:57.033Z
     source: ai
@@ -1248,5 +1251,44 @@ items:
         - "#decisionmaking"
         - "#creativity"
         - "#attention"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-convenience-hides-cost
+    createdAt: 2026-04-25T22:08:16.035Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    title: Convenience Hides Cost
+    topic: tradeoffs of convenience culture
+    angle: Convenience often replaces skill with dependency and erodes judgment over
+      time.
+    fingerprint: convenience cost culture dependency erodes hides judgment often
+      over replaces skill time tradeoffs
+    voiceMode: sharp
+    altText: A minimal editorial poster with a sharp headline about convenience
+      hiding cost on warm paper with brass-toned type.
+    single:
+      headline: Convenience is a tax on future you.
+      body: Every click that saves a minute rents out a muscle you’ll later wish you
+        had. Tools don’t just speed you up; they decide which skills you never
+        build—and which frictions you stop noticing.
+      supportLine: Cheap now, expensive in judgment.
+      footer: Ask what you’re outsourcing besides time.
+    caption:
+      hook: Shortcut is a direction, not a neutral tool.
+      body: Some conveniences are worth it; many are quiet mortgages on competence.
+        Offload enough steps and you lose the map that made decisions legible.
+        Speed feels like progress until you can’t proceed without the rails that
+        trained you to stop noticing terrain.
+      callToComment: Where has convenience quietly made you worse—and where is it
+        honestly worth the trade?
+      hashtags:
+        - "#craft"
+        - "#learning"
+        - "#decisionmaking"
+        - "#technology"
+        - "#habits"
     publishAttempts: 0
     status: ready
