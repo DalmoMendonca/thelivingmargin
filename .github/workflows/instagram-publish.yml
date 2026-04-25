@@ -20,6 +20,10 @@ on:
     - cron: "30 18 * * *"
       timezone: "America/Chicago"
 
+concurrency:
+  group: instagram-publish-${{ github.ref_name || 'main' }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
