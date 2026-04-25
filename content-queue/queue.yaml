@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T22:08:33.370Z
+updatedAt: 2026-04-25T22:12:42.578Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -622,7 +622,10 @@ items:
         - "#criticalthinking"
         - "#taste"
     publishAttempts: 0
-    status: ready
+    status: rendered
+    renderDir: docs/assets/posts/20260425-attention-as-allegiance
+    renderedFiles:
+      - docs/assets/posts/20260425-attention-as-allegiance/post.png
   - id: 2026-04-25-questions-aren-t-action
     createdAt: 2026-04-25T17:25:13.315Z
     source: ai
@@ -1297,5 +1300,44 @@ items:
         - "#decisionmaking"
         - "#technology"
         - "#habits"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-memory-as-editor
+    createdAt: 2026-04-25T22:12:41.159Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    title: Memory As Editor
+    topic: memory and judgment
+    angle: Treat what you remember as an edit, not evidence—the mind keeps what
+      flatters its story and cuts what complicates it.
+    fingerprint: as complicates cuts edit editor evidence flatters its judgment
+      keeps memory mind not remember story treat what
+    voiceMode: sharp
+    altText: A restrained editorial graphic with a bold headline about memory as an
+      editor, set on a warm cream background with brass ink typography.
+    single:
+      headline: Memory keeps what flatters the story.
+      body: Don’t trust recall like a witness; use it like a draft. What sticks isn’t
+        proof—it’s preference that survived the cut.
+      supportLine: Reconstruct, then verify.
+      footer: Edit the memory before it edits you.
+    caption:
+      hook: Your memory is not a record; it’s an edit suite.
+      body: We’re biased toward scenes that vindicate us and fade the ones that
+        complicate us. That’s not corruption; it’s compression. The fix isn’t to
+        distrust yourself forever—it’s to treat recall like a first draft and
+        re-report the parts that feel too tidy. Ask for dates, costs, witnesses,
+        and missing footage.
+      callToComment: When has a checked fact contradicted the memory you were sure about?
+      hashtags:
+        - "#thinking"
+        - "#epistemology"
+        - "#cognition"
+        - "#memory"
+        - "#writing"
+        - "#judgment"
     publishAttempts: 0
     status: ready

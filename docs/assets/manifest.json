@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T22:08:33.384Z",
+  "updatedAt": "2026-04-25T22:12:42.601Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -136,6 +136,17 @@
         "assets/posts/20260425-the-soft-lie-of-clarity/slide-03.png",
         "assets/posts/20260425-the-soft-lie-of-clarity/slide-04.png",
         "assets/posts/20260425-the-soft-lie-of-clarity/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-attention-as-allegiance",
+      "title": "Attention as Allegiance",
+      "kind": "single",
+      "topic": "Why attention is the real choice, not motivation",
+      "angle": "We treat attention like a resource, but it’s actually a commitment—so distractions aren’t just habits, they’re votes for what you’re willing to become.",
+      "createdAt": "2026-04-25T17:25:09.048Z",
+      "renderedFiles": [
+        "assets/posts/20260425-attention-as-allegiance/post.png"
       ]
     },
     {
