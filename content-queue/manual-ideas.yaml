@@ -1,0 +1,13 @@
+version: 1
+updatedAt: 2026-04-25T06:12:03.027Z
+ideas:
+  - id: idea-001
+    idea: A carousel about why taste matters more than being informed.
+    priority: high
+    status: consumed
+    addedAt: 2026-04-25T06:06:50.774Z
+  - id: idea-002
+    idea: A quote card about how peace can become a disguise for avoidance.
+    priority: normal
+    status: consumed
+    addedAt: 2026-04-25T06:06:50.774Z

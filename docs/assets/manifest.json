@@ -1,0 +1,57 @@
+{
+  "updatedAt": "2026-04-25T06:12:04.856Z",
+  "items": [
+    {
+      "id": "sample-a-lot-of-people-call-confusion",
+      "title": "Confusion Is Often The Start",
+      "kind": "single",
+      "topic": "belief and doubt",
+      "angle": "Confusion is not failure. It is often the tax you pay for thinking for yourself.",
+      "createdAt": "2026-04-25T06:06:50.774Z",
+      "renderedFiles": [
+        "assets/posts/20260425-confusion-is-often-the-start/post.png"
+      ]
+    },
+    {
+      "id": "sample-the-smartest-people-are-not",
+      "title": "Intelligence Without Taste",
+      "kind": "carousel",
+      "topic": "reading and intelligence",
+      "angle": "Being informed is not the same as being thoughtful.",
+      "createdAt": "2026-04-25T06:06:50.774Z",
+      "renderedFiles": [
+        "assets/posts/20260425-intelligence-without-taste/slide-01.png",
+        "assets/posts/20260425-intelligence-without-taste/slide-02.png",
+        "assets/posts/20260425-intelligence-without-taste/slide-03.png",
+        "assets/posts/20260425-intelligence-without-taste/slide-04.png",
+        "assets/posts/20260425-intelligence-without-taste/slide-05.png"
+      ]
+    },
+    {
+      "id": "sample-peace-is-not-always-proof",
+      "title": "Peace And Avoidance",
+      "kind": "single",
+      "topic": "discipline and softness",
+      "angle": "Peace can be maturity, but it can also be a sophisticated form of avoidance.",
+      "createdAt": "2026-04-25T06:06:50.774Z",
+      "renderedFiles": [
+        "assets/posts/20260425-peace-and-avoidance/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-taste-over-trivia",
+      "title": "Taste Over Trivia",
+      "kind": "carousel",
+      "topic": "Why taste outperforms mere information",
+      "angle": "Being informed fills you; taste filters you.",
+      "createdAt": "2026-04-25T06:10:37.377Z",
+      "renderedFiles": [
+        "assets/posts/20260425-taste-over-trivia/slide-01.png",
+        "assets/posts/20260425-taste-over-trivia/slide-02.png",
+        "assets/posts/20260425-taste-over-trivia/slide-03.png",
+        "assets/posts/20260425-taste-over-trivia/slide-04.png",
+        "assets/posts/20260425-taste-over-trivia/slide-05.png"
+      ]
+    }
+  ]
+}

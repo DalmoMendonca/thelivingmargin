@@ -1,0 +1,78 @@
+name: Instagram Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: Slot to publish
+        required: true
+        default: morning
+        type: choice
+        options:
+          - morning
+          - midday
+          - evening
+  schedule:
+    - cron: "0 9 * * *"
+      timezone: "America/Chicago"
+    - cron: "0 13 * * *"
+      timezone: "America/Chicago"
+    - cron: "30 18 * * *"
+      timezone: "America/Chicago"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Choose slot
+        id: slot
+        run: |
+          SLOT="${{ inputs.slot }}"
+          if [ -z "$SLOT" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 9 * * *") SLOT="morning" ;;
+              "0 13 * * *") SLOT="midday" ;;
+              "30 18 * * *") SLOT="evening" ;;
+              *) SLOT="morning" ;;
+            esac
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+
+      - name: Publish slot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5' }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          PUBLIC_GITHUB_REPOSITORY: ${{ github.repository }}
+          PUBLIC_GITHUB_BRANCH: ${{ github.ref_name }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          ALERT_FROM: ${{ secrets.ALERT_FROM }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: npm run publish:slot -- --slot ${{ steps.slot.outputs.slot }}

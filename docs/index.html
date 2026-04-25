@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram Content Machine Preview</title>
+    <style>
+      :root {
+        --bg: #131110;
+        --panel: #1d1a19;
+        --ink: #f3ebdf;
+        --muted: #bba992;
+        --accent: #d99e67;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background:
+          radial-gradient(circle at top right, rgba(217, 158, 103, 0.18), transparent 28%),
+          linear-gradient(180deg, #161312, #100e0d);
+        color: var(--ink);
+      }
+
+      header {
+        padding: 40px 28px 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3.6rem);
+        font-weight: 500;
+      }
+
+      p {
+        margin: 10px 0 0;
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      main {
+        padding: 0 24px 48px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+      }
+
+      article {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        background: #222;
+      }
+
+      .meta {
+        padding: 16px 18px 18px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-family: ui-monospace, monospace;
+        font-size: 0.72rem;
+      }
+
+      h2 {
+        margin: 8px 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+      }
+
+      .angle {
+        color: var(--muted);
+        line-height: 1.5;
+        font-size: 0.98rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">Preview Surface</div>
+      <h1>Instagram Content Machine</h1>
+      <p>
+        This gallery is generated from the queue. Each card here is a live preview of the assets that
+        the publisher will expose publicly before sending them to Instagram.
+      </p>
+    </header>
+    <main>
+      <section class="grid" id="grid"></section>
+    </main>
+    <script>
+      const grid = document.getElementById("grid");
+      fetch("./assets/manifest.json")
+        .then((response) => response.json())
+        .then((manifest) => {
+          manifest.items
+            .slice()
+            .reverse()
+            .forEach((item) => {
+              const article = document.createElement("article");
+              article.innerHTML = `
+                <img alt="${item.title}" src="./${item.renderedFiles[0]}" />
+                <div class="meta">
+                  <div class="eyebrow">${item.kind} · ${item.topic}</div>
+                  <h2>${item.title}</h2>
+                  <div class="angle">${item.angle}</div>
+                </div>
+              `;
+              grid.appendChild(article);
+            });
+        })
+        .catch(() => {
+          grid.innerHTML = "<p>No preview manifest yet. Run the preview script first.</p>";
+        });
+    </script>
+  </body>
+</html>
