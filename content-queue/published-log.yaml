@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T22:08:33.383Z
+updatedAt: 2026-04-25T22:36:22.820Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -46,3 +46,14 @@ entries:
     slot: morning
     instagramMediaId: "18008364971903891"
     title: The Unpaid Obsession
+  - id: 2026-04-25-proof-of-your-priorities
+    publishedAt: 2026-04-25T22:36:22.791Z
+    topic: priorities and procrastination
+    angle: The task you keep bargaining with usually reveals the feeling you are
+      protecting yourself from, not a mystery about motivation.
+    fingerprint: about bargaining feeling from keep motivation mystery not
+      priorities procrastination proof protecting reveals task usually yourself
+    kind: single
+    slot: morning
+    instagramMediaId: "18134290414549195"
+    title: Proof of your priorities
