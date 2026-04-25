@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T21:44:31.217Z",
+  "updatedAt": "2026-04-25T21:57:38.746Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -62,6 +62,17 @@
       "createdAt": "2026-04-25T17:24:34.130Z",
       "renderedFiles": [
         "assets/posts/20260425-peace-as-a-disguise/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-cost-of-being-easy",
+      "title": "The Cost of Being Easy",
+      "kind": "single",
+      "topic": "attention as a design problem",
+      "angle": "What people call “simplicity” is often just a product decision to remove friction before thought can begin.",
+      "createdAt": "2026-04-25T17:24:38.015Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-cost-of-being-easy/post.png"
       ]
     },
     {

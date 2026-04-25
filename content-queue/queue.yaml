@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T21:47:57.287Z
+updatedAt: 2026-04-25T21:57:38.732Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -295,7 +295,10 @@ items:
         - "#writing"
         - "#intellectualcuriosity"
     publishAttempts: 0
-    status: ready
+    status: rendered
+    renderDir: docs/assets/posts/20260425-the-cost-of-being-easy
+    renderedFiles:
+      - docs/assets/posts/20260425-the-cost-of-being-easy/post.png
   - id: 2026-04-25-the-myth-of-being-ready
     createdAt: 2026-04-25T17:24:43.340Z
     source: ai
@@ -1203,5 +1206,42 @@ items:
         - "#practice"
         - "#epistemology"
         - "#creativeprocess"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-the-scarcity-of-saying-no
+    createdAt: 2026-04-25T21:57:38.011Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    title: The Scarcity of Saying No
+    topic: attention and selectivity
+    angle: Argues that saying no is a creative act that shapes signal by refusing
+      noise.
+    fingerprint: act argues attention by creative no noise refusing saying scarcity
+      selectivity shapes signal
+    voiceMode: sharp
+    altText: Minimal typographic poster with a bold headline about saying no, set on
+      a warm gray background with restrained serif type.
+    single:
+      headline: Saying no is a creative act.
+      body: Most people add to improve. The sharper move is to subtract until what
+        remains can’t be mistaken for anything else.
+      supportLine: Refusal is design.
+      footer: Keep the shape; lose the noise.
+    caption:
+      hook: Addition flatters effort; subtraction exposes intent.
+      body: "‘Yes’ is cheap because it hides cost. ‘No’ makes a shape: it creates
+        edges, priorities, and the conditions for taste to mean something. If
+        your calendar, draft, or team can’t survive three serious nos, it’s not
+        a plan—it’s a pile."
+      callToComment: Where would one hard no clarify your week more than five soft yeses?
+      hashtags:
+        - "#editing"
+        - "#focus"
+        - "#decisionmaking"
+        - "#creativity"
+        - "#attention"
     publishAttempts: 0
     status: ready
