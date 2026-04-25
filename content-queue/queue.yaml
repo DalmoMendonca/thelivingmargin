@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:05:33.951Z
+updatedAt: 2026-04-25T18:18:54.967Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -403,7 +403,10 @@ items:
         - "#drafting"
         - "#intellectualhonesty"
     publishAttempts: 0
-    status: ready
+    status: rendered
+    renderDir: docs/assets/posts/20260425-standards-as-delay
+    renderedFiles:
+      - docs/assets/posts/20260425-standards-as-delay/post.png
   - id: 2026-04-25-the-unpaid-obsession
     createdAt: 2026-04-25T17:24:52.527Z
     source: ai
@@ -1123,5 +1126,52 @@ items:
         - "#writing"
         - "#design"
         - "#ideas"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-context-is-a-skill
+    createdAt: 2026-04-25T18:18:52.917Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    title: Context Is a Skill
+    topic: context-building as the core of understanding
+    angle: We confuse collecting facts with knowing, but understanding is the
+      practiced habit of restoring the context those facts were torn from.
+    fingerprint: as building but collecting confuse context core facts from habit
+      knowing practiced restoring skill those torn understanding were
+    voiceMode: contrarian
+    quoteAttribution: ""
+    altText: "An editorial-style typographic poster reading: Context Is a Skill.
+      Subhead explains that facts without context mislead; understanding is the
+      art of restoring what was removed."
+    single:
+      headline: Context Is a Skill
+      body: >-
+        A fact is a bead; meaning is the string. Most confusion isn’t
+        ignorance—it’s amputation. We slice claims from their conditions, then
+        argue with the stump.
+
+
+        Understanding isn’t more data. It’s the practiced habit of restoring
+        what was removed: who said it, when, for whom, against what alternative,
+        at what cost.
+      supportLine: If it can’t survive its context, it isn’t knowledge—it’s a slogan.
+      footer: "Test: before you agree or attack, name the missing conditions."
+    caption:
+      hook: Most bad takes are just context that never made it to the scene.
+      body: We treat facts like trophies, then wonder why they don’t explain anything.
+        The real work is reattaching conditions—time, tradeoffs, incentives, and
+        alternatives. That’s not pedantry; it’s the difference between signal
+        and slogan. You don’t need more sources—you need the muscle that
+        stitches them back together.
+      callToComment: What’s a claim you believed until you put its context back on?
+      hashtags:
+        - "#criticalthinking"
+        - "#epistemology"
+        - "#context"
+        - "#intellectualhonesty"
+        - "#learnbetter"
     publishAttempts: 0
     status: ready

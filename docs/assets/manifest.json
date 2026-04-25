@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T18:05:33.965Z",
+  "updatedAt": "2026-04-25T18:18:54.991Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -77,6 +77,17 @@
         "assets/posts/20260425-the-myth-of-being-ready/slide-03.png",
         "assets/posts/20260425-the-myth-of-being-ready/slide-04.png",
         "assets/posts/20260425-the-myth-of-being-ready/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-standards-as-delay",
+      "title": "Standards as delay",
+      "kind": "single",
+      "topic": "How “standards” can function as a postponement strategy",
+      "angle": "Sometimes what you call high standards is just the comfort of not having to produce an imperfect draft.",
+      "createdAt": "2026-04-25T17:24:47.599Z",
+      "renderedFiles": [
+        "assets/posts/20260425-standards-as-delay/post.png"
       ]
     },
     {
