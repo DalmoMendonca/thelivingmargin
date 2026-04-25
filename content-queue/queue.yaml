@@ -1,6 +1,61 @@
 version: 1
-updatedAt: 2026-04-25T22:12:56.215Z
+updatedAt: 2026-04-25T22:36:03.366Z
 items:
+  - id: 2026-04-25-proof-of-your-priorities
+    createdAt: 2026-04-25T22:35:52.681Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Proof of your priorities
+    topic: priorities and procrastination
+    angle: The task you keep bargaining with usually reveals the feeling you are
+      protecting yourself from, not a mystery about motivation.
+    fingerprint: about bargaining feeling from keep motivation mystery not
+      priorities procrastination proof protecting reveals task usually yourself
+    contentMode: question
+    voiceMode: reflective
+    altText: Notebook-style text card asking what feels hardest to do after you
+      already know it matters.
+    single:
+      headline: What feels hardest to do—after you already know it matters?
+      body: >-
+        Not the thing you claim to believe.
+
+
+        The thing your body keeps bargaining with.
+
+
+        If you keep revising your reasons, you’re probably not searching for
+        truth—you’re searching for relief.
+      supportLine: "[[hardest to do]] is a data point."
+      footer: Name the delay. Then decide what you’re protecting.
+    caption:
+      hook: Most “motivation problems” are preference problems with better branding.
+      body: >-
+        When you already know what matters, the remaining friction isn’t a
+        mystery—it’s an agreement you haven’t admitted. Your attention, your
+        avoidance, your quiet workarounds: that’s the real platform your day
+        runs on.
+
+
+        Try asking a narrower question: what are you trying not to feel by
+        postponing this?
+      callToComment: What’s a small task you keep justifying, even though the outcome
+        matters to you?
+      hashtags:
+        - "#writing"
+        - "#selfknowledge"
+        - "#decisionmaking"
+        - "#habits"
+        - "#editorialnotes"
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260425-proof-of-your-priorities
+    renderedFiles:
+      - docs/assets/posts/20260425-proof-of-your-priorities/post.png
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
     source: ai
@@ -38,6 +93,8 @@ items:
     renderDir: docs/assets/posts/20260425-confusion-is-often-the-start
     renderedFiles:
       - docs/assets/posts/20260425-confusion-is-often-the-start/post.png
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: sample-the-smartest-people-are-not
     createdAt: 2026-04-25T17:21:10.127Z
     source: ai
@@ -94,6 +151,8 @@ items:
       - docs/assets/posts/20260425-intelligence-without-taste/slide-03.png
       - docs/assets/posts/20260425-intelligence-without-taste/slide-04.png
       - docs/assets/posts/20260425-intelligence-without-taste/slide-05.png
+    surfaceStyle: notebookCream
+    contentMode: advice
   - id: sample-peace-is-not-always-proof
     createdAt: 2026-04-25T17:21:10.127Z
     source: ai
@@ -133,6 +192,8 @@ items:
     renderDir: docs/assets/posts/20260425-peace-and-avoidance
     renderedFiles:
       - docs/assets/posts/20260425-peace-and-avoidance/post.png
+    surfaceStyle: charcoalGrain
+    contentMode: observation
   - id: 2026-04-25-taste-is-the-edit-not-the-dessert
     createdAt: 2026-04-25T17:24:30.210Z
     source: manual
@@ -195,6 +256,8 @@ items:
       - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-03.png
       - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-04.png
       - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-05.png
+    surfaceStyle: notebookCream
+    contentMode: advice
   - id: 2026-04-25-peace-as-a-disguise
     createdAt: 2026-04-25T17:24:34.130Z
     source: manual
@@ -247,6 +310,8 @@ items:
       - docs/assets/posts/20260425-peace-as-a-disguise/post.png
     instagramMediaId: "18040541288578199"
     publishedAt: 2026-04-25T18:05:33.951Z
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-cost-of-being-easy
     createdAt: 2026-04-25T17:24:38.015Z
     source: ai
@@ -304,6 +369,8 @@ items:
       available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Cannot
       Publish","error_user_msg":"The media is not ready for publishing, please
       wait for a moment","fbtrace_id":"AqwrOC-KoWla2_UIzZlVFYo"}}'
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-myth-of-being-ready
     createdAt: 2026-04-25T17:24:43.340Z
     source: ai
@@ -366,6 +433,8 @@ items:
       - docs/assets/posts/20260425-the-myth-of-being-ready/slide-03.png
       - docs/assets/posts/20260425-the-myth-of-being-ready/slide-04.png
       - docs/assets/posts/20260425-the-myth-of-being-ready/slide-05.png
+    surfaceStyle: paperWarm
+    contentMode: advice
   - id: 2026-04-25-standards-as-delay
     createdAt: 2026-04-25T17:24:47.599Z
     source: ai
@@ -412,6 +481,8 @@ items:
       - docs/assets/posts/20260425-standards-as-delay/post.png
     instagramMediaId: "18102670540762468"
     publishedAt: 2026-04-25T18:19:02.229Z
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-unpaid-obsession
     createdAt: 2026-04-25T17:24:52.527Z
     source: ai
@@ -470,6 +541,8 @@ items:
       wait for a moment","fbtrace_id":"A0EHEa7zhbp9_--G0pO2YW3"}}'
     instagramMediaId: "18008364971903891"
     publishedAt: 2026-04-25T22:08:33.370Z
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-proof-of-thinking
     createdAt: 2026-04-25T17:24:57.033Z
     source: ai
@@ -515,6 +588,8 @@ items:
     renderDir: docs/assets/posts/20260425-proof-of-thinking
     renderedFiles:
       - docs/assets/posts/20260425-proof-of-thinking/post.png
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-soft-lie-of-clarity
     createdAt: 2026-04-25T17:25:02.928Z
     source: ai
@@ -578,6 +653,8 @@ items:
       - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-05.png
     instagramMediaId: "18100428052815264"
     publishedAt: 2026-04-25T21:44:31.194Z
+    surfaceStyle: paperWarm
+    contentMode: advice
   - id: 2026-04-25-attention-as-allegiance
     createdAt: 2026-04-25T17:25:09.048Z
     source: ai
@@ -631,6 +708,8 @@ items:
       available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Cannot
       Publish","error_user_msg":"The media is not ready for publishing, please
       wait for a moment","fbtrace_id":"AL8749Ga2a6FluZQgP51YPN"}}'
+    surfaceStyle: paperWarm
+    contentMode: quote
   - id: 2026-04-25-questions-aren-t-action
     createdAt: 2026-04-25T17:25:13.315Z
     source: ai
@@ -683,6 +762,8 @@ items:
     renderDir: docs/assets/posts/20260425-questions-aren-t-action
     renderedFiles:
       - docs/assets/posts/20260425-questions-aren-t-action/post.png
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-argument-you-keep-avoiding
     createdAt: 2026-04-25T17:25:18.664Z
     source: ai
@@ -723,6 +804,8 @@ items:
         - "#writingcraft"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-hobby-test
     createdAt: 2026-04-25T17:25:22.278Z
     source: ai
@@ -772,6 +855,8 @@ items:
         - "#criticalthinking"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-deadline-is-the-teacher
     createdAt: 2026-04-25T17:25:28.598Z
     source: ai
@@ -830,6 +915,8 @@ items:
       - docs/assets/posts/20260425-the-deadline-is-the-teacher/slide-03.png
       - docs/assets/posts/20260425-the-deadline-is-the-teacher/slide-04.png
       - docs/assets/posts/20260425-the-deadline-is-the-teacher/slide-05.png
+    surfaceStyle: paperWarm
+    contentMode: advice
   - id: 2026-04-25-elegance-isn-t-evidence
     createdAt: 2026-04-25T17:25:32.712Z
     source: ai
@@ -872,6 +959,8 @@ items:
         - "#howweknow"
     publishAttempts: 0
     status: ready
+    surfaceStyle: charcoalGrain
+    contentMode: aphorism
   - id: 2026-04-25-taste-is-not-proof
     createdAt: 2026-04-25T17:25:37.031Z
     source: ai
@@ -923,6 +1012,8 @@ items:
         - "#intellectualhonesty"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-privacy-of-thinking
     createdAt: 2026-04-25T17:26:40.867Z
     source: ai
@@ -969,6 +1060,8 @@ items:
         - "#curiouslearning"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-complaint-test
     createdAt: 2026-04-25T17:29:33.547Z
     source: ai
@@ -1009,6 +1102,8 @@ items:
         - "#eveningreads"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-conditions-over-certainty
     createdAt: 2026-04-25T17:32:16.103Z
     source: ai
@@ -1056,6 +1151,8 @@ items:
         - "#epistemology"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-borrowed-difficulty
     createdAt: 2026-04-25T18:05:19.115Z
     source: ai
@@ -1097,6 +1194,8 @@ items:
         - "#contrarian"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-originality-is-a-rounding-error
     createdAt: 2026-04-25T18:05:25.969Z
     source: ai
@@ -1145,6 +1244,8 @@ items:
         - "#ideas"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-context-is-a-skill
     createdAt: 2026-04-25T18:18:52.917Z
     source: ai
@@ -1191,6 +1292,8 @@ items:
         - "#learnbetter"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-repetition-is-research
     createdAt: 2026-04-25T21:43:59.532Z
     source: ai
@@ -1231,6 +1334,8 @@ items:
         - "#creativeprocess"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-the-scarcity-of-saying-no
     createdAt: 2026-04-25T21:57:38.011Z
     source: ai
@@ -1268,6 +1373,8 @@ items:
         - "#attention"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-convenience-hides-cost
     createdAt: 2026-04-25T22:08:16.035Z
     source: ai
@@ -1307,6 +1414,8 @@ items:
         - "#habits"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
   - id: 2026-04-25-memory-as-editor
     createdAt: 2026-04-25T22:12:41.159Z
     source: ai
@@ -1346,3 +1455,5 @@ items:
         - "#judgment"
     publishAttempts: 0
     status: ready
+    surfaceStyle: paperWarm
+    contentMode: aphorism
