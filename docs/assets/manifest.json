@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T17:32:16.487Z",
+  "updatedAt": "2026-04-25T17:56:23.358Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -88,6 +88,21 @@
       "createdAt": "2026-04-25T17:25:13.315Z",
       "renderedFiles": [
         "assets/posts/20260425-questions-aren-t-action/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-deadline-is-the-teacher",
+      "title": "The deadline is the teacher",
+      "kind": "carousel",
+      "topic": "Learning by forcing a verdict",
+      "angle": "Curiosity isn’t proven by reading more—it’s proven when you risk an answer under constraint and let it be wrong in public.",
+      "createdAt": "2026-04-25T17:25:28.598Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-deadline-is-the-teacher/slide-01.png",
+        "assets/posts/20260425-the-deadline-is-the-teacher/slide-02.png",
+        "assets/posts/20260425-the-deadline-is-the-teacher/slide-03.png",
+        "assets/posts/20260425-the-deadline-is-the-teacher/slide-04.png",
+        "assets/posts/20260425-the-deadline-is-the-teacher/slide-05.png"
       ]
     }
   ]
