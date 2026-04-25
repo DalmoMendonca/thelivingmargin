@@ -20,7 +20,34 @@ const templateFamilyValues = [
   "margin",
   "editorial",
   "signal",
-  "lesson"
+  "lesson",
+  "highlight",
+  "notebook",
+  "broadside"
+] as const;
+const paletteValues = [
+  "emberParchment",
+  "midnightPaper",
+  "sageAsh",
+  "brassInk",
+  "bluePlaster",
+  "roseLedger"
+] as const;
+const contentModeValues = [
+  "aphorism",
+  "advice",
+  "story",
+  "quote",
+  "encouragement",
+  "observation",
+  "question"
+] as const;
+const surfaceStyleValues = [
+  "paperWarm",
+  "plasterBlue",
+  "notebookCream",
+  "charcoalGrain",
+  "vellumRose"
 ] as const;
 const slotValues = ["morning", "midday", "evening"] as const;
 
@@ -34,7 +61,9 @@ const slideSchema = z.object({
 const responseSchema = z.object({
   kind: z.enum(["single", "carousel"]),
   templateFamily: z.enum(templateFamilyValues),
-  palette: z.enum(["emberParchment", "midnightPaper", "sageAsh", "brassInk"]),
+  palette: z.enum(paletteValues),
+  surfaceStyle: z.enum(surfaceStyleValues),
+  contentMode: z.enum(contentModeValues),
   voiceMode: z.enum(["contrarian", "reflective", "sharp"]),
   slotPreference: z.enum(slotValues),
   title: z.string(),
@@ -81,10 +110,12 @@ const buildQueueItem = (
     kind: parsed.kind,
     templateFamily: parsed.templateFamily as QueueItem["templateFamily"],
     palette: parsed.palette,
+    surfaceStyle: parsed.surfaceStyle,
     title,
     topic,
     angle,
     fingerprint: makeFingerprint(title, angle, topic),
+    contentMode: parsed.contentMode,
     voiceMode: parsed.voiceMode,
     quoteAttribution: parsed.quoteAttribution ?? undefined,
     altText: trimParagraphs(parsed.altText),
@@ -126,6 +157,32 @@ const reasoningEffortForModel = (model: string) => {
   // Newer GPT-5.4-class models reject `minimal`; `low` works across the current
   // GPT-5 variants we use here and keeps generation cheap enough for queue fill.
   return model.startsWith("gpt-5.4") ? "low" : "minimal";
+};
+
+const nextSlotForQueue = (items: QueueItem[]) => {
+  const readyCounts = new Map(slotOrder.map((slot) => [slot, 0]));
+
+  for (const item of items) {
+    if (item.status !== "ready") {
+      continue;
+    }
+
+    readyCounts.set(
+      item.slotPreference,
+      (readyCounts.get(item.slotPreference) ?? 0) + 1
+    );
+  }
+
+  return [...slotOrder].sort((left, right) => {
+    const countDifference =
+      (readyCounts.get(left) ?? 0) - (readyCounts.get(right) ?? 0);
+
+    if (countDifference !== 0) {
+      return countDifference;
+    }
+
+    return slotOrder.indexOf(left) - slotOrder.indexOf(right);
+  })[0];
 };
 
 export const fallbackPosts = () => sampleQueueItems();
@@ -203,7 +260,7 @@ export const topUpQueue = async ({
   }
 
   for (let index = 0; index < missing; index += 1) {
-    const slot = slotOrder[(readyCount + index) % slotOrder.length];
+    const slot = nextSlotForQueue([...queue.items, ...generated]);
     const manualIdea = manualIdeas[index];
 
     logStep(`Generating queue item ${index + 1} of ${missing} for ${slot}.`);

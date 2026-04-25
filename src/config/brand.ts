@@ -2,7 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
 import { z } from "zod";
-import type { SlotName, TemplateFamily } from "../types.js";
+import type { ContentMode, SlotName, SurfaceStyle, TemplateFamily } from "../types.js";
 
 dotenv.config();
 
@@ -55,7 +55,28 @@ export const templateRotation: TemplateFamily[] = [
   "margin",
   "editorial",
   "signal",
-  "lesson"
+  "lesson",
+  "highlight",
+  "notebook",
+  "broadside"
+];
+
+export const contentModes: ContentMode[] = [
+  "aphorism",
+  "advice",
+  "story",
+  "quote",
+  "encouragement",
+  "observation",
+  "question"
+];
+
+export const surfaceStyles: SurfaceStyle[] = [
+  "paperWarm",
+  "plasterBlue",
+  "notebookCream",
+  "charcoalGrain",
+  "vellumRose"
 ];
 
 export const palettes = {
@@ -65,7 +86,9 @@ export const palettes = {
     secondary: "#d7c3a4",
     text: "#1f1812",
     accent: "#9f5536",
-    accentSoft: "#d48a62"
+    accentSoft: "#d48a62",
+    marker: "#ead2a9",
+    markerText: "#241914"
   },
   midnightPaper: {
     name: "midnightPaper",
@@ -73,7 +96,9 @@ export const palettes = {
     secondary: "#302d2c",
     text: "#f6efe5",
     accent: "#d9ad62",
-    accentSoft: "#90785d"
+    accentSoft: "#90785d",
+    marker: "#685f3c",
+    markerText: "#f7f0e4"
   },
   sageAsh: {
     name: "sageAsh",
@@ -81,7 +106,9 @@ export const palettes = {
     secondary: "#c8d0c0",
     text: "#172018",
     accent: "#51664e",
-    accentSoft: "#8ea087"
+    accentSoft: "#8ea087",
+    marker: "#cfe0b6",
+    markerText: "#1c261b"
   },
   brassInk: {
     name: "brassInk",
@@ -89,24 +116,47 @@ export const palettes = {
     secondary: "#e2d6c2",
     text: "#221c17",
     accent: "#8a6237",
-    accentSoft: "#bc9567"
+    accentSoft: "#bc9567",
+    marker: "#eed8b2",
+    markerText: "#241b14"
+  },
+  bluePlaster: {
+    name: "bluePlaster",
+    background: "#dfe8ea",
+    secondary: "#bccdd1",
+    text: "#1d1b18",
+    accent: "#62784f",
+    accentSoft: "#93a985",
+    marker: "#d2e1b8",
+    markerText: "#1d241a"
+  },
+  roseLedger: {
+    name: "roseLedger",
+    background: "#f1e7df",
+    secondary: "#d9cac0",
+    text: "#231a17",
+    accent: "#875c4d",
+    accentSoft: "#b88d7f",
+    marker: "#ecdcbc",
+    markerText: "#261b17"
   }
 } as const;
 
 export const brand = {
   name: "The Living Margin",
   visualDirection:
-    "Warm, editorial, humane, and literary. It should feel authored, restrained, and exact, not generic, self-conscious, or theatrically provocative.",
+    "Warm, editorial, humane, and literary. Texture matters: plaster walls, notebook paper, soft grain, taped notes, highlighted phrases, and layouts that feel assembled by a tasteful human rather than procedurally generated.",
   audience:
-    "Curious lifelong learners first, then high-agency intellectuals, then mystic-aesthetic quote lovers.",
+    "Thoughtful people who like shareable writing with real texture: part literary, part relatable, part sharp insight, part emotional recognition.",
   tone:
-    "Direct, observant, and occasionally contrarian. Never corny, preachy, therapeutic, guruish, or obviously engagement-seeking.",
+    "Direct, intimate, observant, sometimes contrarian, sometimes encouraging. Never corny, preachy, therapeutic in a canned way, guruish, or obviously engagement-seeking.",
   editorialRules: [
     "Write like one sharp human making a real claim, not like a content system performing a niche.",
     "Let the image carry the strongest sentence. Let the caption add context, tension, or consequence instead of repeating the graphic.",
-    "Prefer one clean insight to a stack of dramatic lines.",
+    "Prefer one clean insight to a stack of dramatic lines, but allow denser blocks of text when the writing earns it.",
     "Questions should invite recognition or disagreement, not announce that comments are desired.",
     "Original writing is the default. Use quotations sparingly and only with certain attribution.",
+    "Stories can be scenes, parables, observed moments, or composite vignettes. Never present invented events as the account owner's personal biography.",
     "Cut self-description. Never narrate the tone, strategy, posting slot, or audience inside the post."
   ],
   forbiddenPhrases: [
@@ -126,12 +176,18 @@ export const brand = {
   queueTarget: 15,
   maxPublishAttempts: 3,
   topics: [
+    "grief and repair",
+    "intimacy and distance",
+    "family patterns",
     "ego and status",
     "attention and distraction",
     "ambition and peace",
+    "rest and worthiness",
     "reading and intelligence",
     "loneliness and friendship",
     "desire and self-respect",
+    "aging and identity",
+    "betrayal and dignity",
     "truth and performance",
     "modern spirituality",
     "discipline and softness",
@@ -147,6 +203,11 @@ export const brand = {
   ],
   contentArchetypes: [
     "hot-take quote card",
+    "highlighted advice wall",
+    "dense story card",
+    "encouraging reminder",
+    "relatable aphorism",
+    "clean quote with commentary",
     "paradox statement",
     "reflective question",
     "mini-lesson carousel",

@@ -1,11 +1,28 @@
 export type SlotName = "morning" | "midday" | "evening";
 export type PostKind = "single" | "carousel";
+export type ContentMode =
+  | "aphorism"
+  | "advice"
+  | "story"
+  | "quote"
+  | "encouragement"
+  | "observation"
+  | "question";
+export type SurfaceStyle =
+  | "paperWarm"
+  | "plasterBlue"
+  | "notebookCream"
+  | "charcoalGrain"
+  | "vellumRose";
 export type TemplateFamily =
   | "oracle"
   | "margin"
   | "editorial"
   | "signal"
-  | "lesson";
+  | "lesson"
+  | "highlight"
+  | "notebook"
+  | "broadside";
 export type QueueStatus = "ready" | "rendered" | "published" | "blocked";
 
 export interface ManualIdea {
@@ -45,10 +62,12 @@ export interface QueueItem {
   kind: PostKind;
   templateFamily: TemplateFamily;
   palette: string;
+  surfaceStyle: SurfaceStyle;
   title: string;
   topic: string;
   angle: string;
   fingerprint: string;
+  contentMode: ContentMode;
   voiceMode: "contrarian" | "reflective" | "sharp";
   quoteAttribution?: string;
   altText: string;

@@ -26,17 +26,19 @@ export const sampleQueueItems = (): QueueItem[] => {
       source: "ai",
       slotPreference: "morning",
       kind: "single",
-      templateFamily: "oracle",
-      palette: "emberParchment",
+      templateFamily: "highlight",
+      palette: "bluePlaster",
+      surfaceStyle: "plasterBlue",
       title: "Confusion Is Often The Start",
       topic: "belief and doubt",
       angle: "Confusion is not failure. It is often the tax you pay for thinking for yourself.",
       fingerprint: makeFingerprint("confusion", "thinking for yourself", "belief", "doubt"),
+      contentMode: "aphorism",
       voiceMode: "contrarian",
       altText:
         "Editorial quote card on warm parchment tones reading: A lot of people call it confusion when their borrowed certainty starts to crack.",
       single: {
-        headline: "A lot of people call it confusion",
+        headline: "[[A lot of people call it confusion]]",
         body: "when their borrowed certainty starts to crack.",
         supportLine: "Thinking for yourself is rarely clean at the beginning.",
         footer: "Remember this the next time doubt feels like failure."
@@ -53,20 +55,22 @@ export const sampleQueueItems = (): QueueItem[] => {
       source: "ai",
       slotPreference: "midday",
       kind: "carousel",
-      templateFamily: "lesson",
-      palette: "sageAsh",
+      templateFamily: "notebook",
+      palette: "roseLedger",
+      surfaceStyle: "notebookCream",
       title: "Intelligence Without Taste",
       topic: "reading and intelligence",
       angle: "Being informed is not the same as being thoughtful.",
       fingerprint: makeFingerprint("intelligence", "taste", "thoughtful", "informed"),
+      contentMode: "advice",
       voiceMode: "sharp",
       altText:
         "Five-slide educational carousel about the difference between information, intelligence, taste, discernment, and wisdom.",
       carousel: [
         {
-          kicker: "Slide 1",
-          headline: "Being informed is cheap now.",
-          body: "Discernment is not.",
+          kicker: "[[Being informed]] is cheap now.",
+          headline: "Discernment is not.",
+          body: "Access is abundant. Standards still cost you something.",
           footer: "Access is not depth."
         },
         {
@@ -116,17 +120,19 @@ export const sampleQueueItems = (): QueueItem[] => {
       source: "ai",
       slotPreference: "evening",
       kind: "single",
-      templateFamily: "editorial",
+      templateFamily: "broadside",
       palette: "midnightPaper",
+      surfaceStyle: "charcoalGrain",
       title: "Peace And Avoidance",
       topic: "discipline and softness",
       angle: "Peace can be maturity, but it can also be a sophisticated form of avoidance.",
       fingerprint: makeFingerprint("peace", "avoidance", "maturity", "discipline"),
+      contentMode: "observation",
       voiceMode: "reflective",
       altText:
         "Dark editorial quote card reading: Peace is not always proof that you healed. Sometimes it is proof that you stopped asking the dangerous question.",
       single: {
-        headline: "Peace is not always proof that you healed.",
+        headline: "[[Peace is not always proof]] that you healed.",
         body: "Sometimes it is proof that you stopped asking the dangerous question.",
         supportLine: "Silence can be medicine. It can also be surrender.",
         footer: "The difference is honesty."

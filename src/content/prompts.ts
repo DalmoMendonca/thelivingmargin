@@ -1,5 +1,47 @@
-import { brand, slotTimes } from "../config/brand.js";
+import {
+  brand,
+  contentModes,
+  slotTimes,
+  surfaceStyles,
+  templateRotation
+} from "../config/brand.js";
 import type { ManualIdea, PublishedLogFile, QueueFile, SlotName } from "../types.js";
+
+const slotModePriorities = {
+  morning: ["encouragement", "question", "aphorism", "advice"],
+  midday: ["advice", "story", "observation", "question"],
+  evening: ["aphorism", "quote", "observation", "story"]
+} as const;
+
+const slotTemplatePriorities = {
+  morning: ["highlight", "oracle", "signal", "notebook"],
+  midday: ["notebook", "lesson", "highlight", "broadside"],
+  evening: ["broadside", "editorial", "oracle", "highlight"]
+} as const;
+
+const rankUnderused = <T extends string>(
+  values: readonly T[],
+  counts: Map<string, number>,
+  preferred: readonly T[]
+) =>
+  [...values].sort((left, right) => {
+    const countDifference = (counts.get(left) ?? 0) - (counts.get(right) ?? 0);
+
+    if (countDifference !== 0) {
+      return countDifference;
+    }
+
+    const leftPreference = preferred.indexOf(left);
+    const rightPreference = preferred.indexOf(right);
+    const normalizedLeft = leftPreference === -1 ? values.length : leftPreference;
+    const normalizedRight = rightPreference === -1 ? values.length : rightPreference;
+
+    if (normalizedLeft !== normalizedRight) {
+      return normalizedLeft - normalizedRight;
+    }
+
+    return left.localeCompare(right);
+  });
 
 export const buildPostPrompt = ({
   slot,
@@ -27,6 +69,36 @@ export const buildPostPrompt = ({
     ? `Use this human-supplied seed idea as the starting point without copying it too literally:\n${manualIdea.idea}`
     : "No human seed idea is available for this post. Generate a fresh idea from scratch.";
 
+  const activeQueue = queue.items.filter((item) => item.status !== "published");
+  const contentModeCounts = new Map<string, number>();
+  const templateCounts = new Map<string, number>();
+
+  for (const item of activeQueue) {
+    contentModeCounts.set(
+      item.contentMode,
+      (contentModeCounts.get(item.contentMode) ?? 0) + 1
+    );
+    templateCounts.set(
+      item.templateFamily,
+      (templateCounts.get(item.templateFamily) ?? 0) + 1
+    );
+  }
+
+  const suggestedModes = rankUnderused(
+    contentModes,
+    contentModeCounts,
+    slotModePriorities[slot]
+  )
+    .slice(0, 3)
+    .join(", ");
+  const suggestedTemplates = rankUnderused(
+    templateRotation,
+    templateCounts,
+    slotTemplatePriorities[slot]
+  )
+    .slice(0, 4)
+    .join(", ");
+
   return `
 You are creating a single Instagram-ready content package for a highly curated account.
 
@@ -48,10 +120,19 @@ Account goals:
 Editorial strategy:
 ${brand.editorialRules.map((rule) => `- ${rule}`).join("\n")}
 
+Variety pressure for this generation:
+- Underused content modes in the active queue: ${suggestedModes}
+- Underused template families in the active queue: ${suggestedTemplates}
+- For the ${slot} slot, especially consider: ${slotModePriorities[slot].join(", ")}
+- Let this post widen the feed instead of blending into the existing queue.
+
 Format guidance:
 - Choose either a single-image quote/editorial post OR a carousel.
 - Singles should feel punchy and memorable.
 - Carousels should feel like miniature essays with momentum and a reason to swipe.
+- Build a better mix than a pure "thinking account." Some posts should feel quotable, some useful, some emotionally precise, some story-driven, some encouraging.
+- Use visual variety without losing the brand: textured surfaces, highlighted phrases, denser text blocks, occasional quieter minimalist cards.
+- Do not imitate or paraphrase specific reference-account posts. Be original.
 
 Recent published posts to avoid repeating:
 ${recentTitles || "- none yet"}
@@ -67,8 +148,10 @@ ${brand.forbiddenPhrases.map((phrase) => `- ${phrase}`).join("\n")}
 Return valid JSON only with this exact shape:
 {
   "kind": "single" | "carousel",
-  "templateFamily": "oracle" | "margin" | "editorial" | "signal" | "lesson",
-  "palette": "emberParchment" | "midnightPaper" | "sageAsh" | "brassInk",
+  "templateFamily": "oracle" | "margin" | "editorial" | "signal" | "lesson" | "highlight" | "notebook" | "broadside",
+  "palette": "emberParchment" | "midnightPaper" | "sageAsh" | "brassInk" | "bluePlaster" | "roseLedger",
+  "surfaceStyle": ${surfaceStyles.map((value) => `"${value}"`).join(" | ")},
+  "contentMode": ${contentModes.map((value) => `"${value}"`).join(" | ")},
   "voiceMode": "contrarian" | "reflective" | "sharp",
   "slotPreference": "morning" | "midday" | "evening",
   "title": "short internal title",
@@ -109,5 +192,8 @@ Rules:
 - The caption should sound authored, not automated. No filler, no AI hedging, and no fake citation lines.
 - If there is no real, verifiable source, set "quoteAttribution" to null. Never output the string "null".
 - Hashtags must be lowercase and begin with "#".
+- You may wrap 1 to 3 exact phrases in [[double brackets]] to request visual highlighting on the card. Use that sparingly and only when it improves rhythm or emphasis.
+- "story" content must never pretend to be a true autobiographical confession from the account owner unless the seed idea explicitly says so.
+- Prefer "highlight", "notebook", or "broadside" when the copy benefits from denser text, vivid emphasis, or a more human-made poster feel.
 `.trim();
 };
