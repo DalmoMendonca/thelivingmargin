@@ -110,6 +110,12 @@ const buildQueueItem = (
   };
 };
 
+const reasoningEffortForModel = (model: string) => {
+  // Newer GPT-5.4-class models reject `minimal`; `low` works across the current
+  // GPT-5 variants we use here and keeps generation cheap enough for queue fill.
+  return model.startsWith("gpt-5.4") ? "low" : "minimal";
+};
+
 export const fallbackPosts = () => sampleQueueItems();
 
 export const generateWithOpenAi = async ({
@@ -142,7 +148,7 @@ export const generateWithOpenAi = async ({
     input: prompt,
     max_output_tokens: 2200,
     reasoning: {
-      effort: "minimal"
+      effort: reasoningEffortForModel(appEnv.OPENAI_MODEL)
     },
     text: {
       format: zodTextFormat(responseSchema, "instagram_post_package"),

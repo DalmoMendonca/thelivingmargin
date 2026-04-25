@@ -1,16 +1,7 @@
 # One-Time Setup
 
 ## 1. Pick and create the Instagram account
-
-Top handle candidates I checked against Instagram's public profile URLs on April 25, 2026. These did not resolve to existing public profile pages at the time of checking, so they are the strongest current candidates:
-
-1. `thelivingmargin`
-2. `schoolofmaybe`
-3. `softcontrarian`
-4. `thirdmeaning`
-5. `sacredcontrarian`
-
-Important: Instagram can still reject a handle during sign-up for reasons that are not visible from public profile checks, so treat these as best-effort verified candidates rather than a contractual guarantee.
+@thelivingmargin
 
 ### Create the account
 
@@ -19,10 +10,7 @@ Important: Instagram can still reject a handle during sign-up for reasons that a
 3. Add a profile photo and short bio after sign-up.
 4. Keep the account public.
 
-Suggested starter bio:
-
-`Thoughts for people who still think.`
-`Literary, spiritual, contrarian, humane.`
+Starter bio: `Thoughts for people who still think.`
 
 ## 2. Convert it to a professional account
 
@@ -50,16 +38,83 @@ Meta's publishing flow still expects the Instagram professional account to be co
 
 ## 5. Generate the Instagram access token
 
-1. In the Meta app dashboard, go to `Instagram` -> `API setup with Instagram business login`.
-2. Click `Generate token`.
-3. Log in with the new Instagram account.
-4. Copy the generated token.
+1. In the Meta app dashboard, go to `Instagram` -> `API setup with Instagram login`.
+2. In Meta's current UI, click `Add account` in the `Generate access tokens` section. This is the same flow older guides call `Generate token`.
+3. Before you continue, confirm all of these are true:
+   - The Instagram account is `public`.
+   - The Instagram account is a `professional` account.
+   - If Meta shows `Unable to add a user with a role on the app's owning business`, do not use `App roles` -> `Add People` for your personal profile. Use `App roles` -> `Edit roles in Business Manager` and assign yourself access there first.
+   - In the roles flow, make sure you grant the `Instagram Tester` role, not just the generic app `Tester` role.
+4. After adding the Instagram account as `Instagram Tester`, go to the Instagram account itself and accept the invite. Meta will show the account as `Pending` until you do this.
+   - On the web, open `https://www.instagram.com/accounts/manage_access/` while logged in as the Instagram account.
+   - Or in Instagram settings, go to `Website permissions` -> `Apps and websites` -> `Tester Invites`.
+   - Accept the invite for your Meta app.
+5. Return to the Meta app dashboard and confirm the `Instagram Tester` entry is no longer `Pending`.
+6. Log in with the new Instagram account and approve the prompt.
+7. If the popup lands on a blank `instagram.com/accounts/profile_selection` page after the account is already listed in `Generate access tokens`, treat it as a browser or session problem first:
+   - Log out of Instagram in all tabs.
+   - Use a fresh browser profile or a clean browser window with extensions disabled.
+   - Allow popups and cookies for both `developers.facebook.com` and `instagram.com`.
+   - Log in to `instagram.com` as the Instagram account in that same clean browser session first, then return to the Meta dashboard and click `Generate token`.
+   - If Chrome still fails, retry once in another browser.
+   - If the dashboard popup still fails, use the manual OAuth fallback below.
+8. Copy the generated token.
+
+### Manual OAuth fallback
+
+If Meta's `Generate token` popup still fails even though the Instagram account is already listed, use the product's OAuth flow directly.
+
+1. In `Instagram` -> `API setup with Instagram login`, expand `3. Set up Instagram business login`.
+2. Open `https://webhook.site/` in a new tab. It will generate a unique HTTPS URL for you.
+3. Copy the value labeled `Your unique URL`. It will look like:
+
+```text
+https://webhook.site/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+
+4. Paste that exact full URL into Meta as the `Redirect URL` and save it.
+5. Open `Business login settings` and make sure the exact same URL is listed in `OAuth Redirect URIs`.
+6. Copy the generated `Embed URL`. Use that URL directly instead of hand-building the login link.
+7. Open the `Embed URL` in a clean browser session where only the Instagram account is signed in.
+8. After you approve the login, you will be redirected to your Webhook.site URL with a `code=...` query parameter.
+9. Copy the `code` value from the browser address bar. If the URL ends with `#_`, do not include that part in the code. If needed, Webhook.site will also show the redirected request in its request list.
+10. Exchange that code for a long-lived token:
+
+Use the `Instagram App ID` and `Instagram App Secret` shown at the top of the same page:
+
+`App Dashboard -> Instagram -> API setup with Instagram login`
+
+They appear above `1. Generate access tokens` as:
+- `Instagram app ID`
+- `Instagram app secret`
+
+The `Business login settings` modal is only for redirect and callback URLs. It does not show the secret.
+
+Do not use the top-level Meta app `App ID` from the dashboard header or `App settings -> Basic -> App Secret` for this step.
+
+```bash
+npm run instagram:exchange-code -- \
+  --client-id YOUR_INSTAGRAM_APP_ID \
+  --client-secret YOUR_INSTAGRAM_APP_SECRET \
+  --redirect-uri YOUR_EXACT_REDIRECT_URI \
+  --code YOUR_CODE
+```
+
+8. The script prints the final values for:
+   - `INSTAGRAM_USER_ID`
+   - `INSTAGRAM_ACCESS_TOKEN`
+
+Use those in `.env` locally and in GitHub Actions secrets later.
 
 Meta's current docs say dashboard-generated tokens are long-lived and valid for 60 days, so plan to refresh them before expiry.
 
 ## 6. Find the Instagram user ID
 
 Run this once with the token:
+
+```bash
+curl "https://graph.instagram.com/v25.0/me?fields=user_id,username&access_token=YOUR_TOKEN"
+```
 
 ```bash
 curl "https://graph.instagram.com/v25.0/me?fields=user_id,username&access_token=YOUR_TOKEN"

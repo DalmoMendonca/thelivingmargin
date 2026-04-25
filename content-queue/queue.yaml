@@ -1,8 +1,8 @@
 version: 1
-updatedAt: 2026-04-25T06:12:04.837Z
+updatedAt: 2026-04-25T17:32:16.477Z
 items:
   - id: sample-a-lot-of-people-call-confusion
-    createdAt: 2026-04-25T06:06:50.774Z
+    createdAt: 2026-04-25T17:21:10.127Z
     source: ai
     slotPreference: morning
     kind: single
@@ -39,7 +39,7 @@ items:
     renderedFiles:
       - docs/assets/posts/20260425-confusion-is-often-the-start/post.png
   - id: sample-the-smartest-people-are-not
-    createdAt: 2026-04-25T06:06:50.774Z
+    createdAt: 2026-04-25T17:21:10.127Z
     source: ai
     slotPreference: midday
     kind: carousel
@@ -95,7 +95,7 @@ items:
       - docs/assets/posts/20260425-intelligence-without-taste/slide-04.png
       - docs/assets/posts/20260425-intelligence-without-taste/slide-05.png
   - id: sample-peace-is-not-always-proof
-    createdAt: 2026-04-25T06:06:50.774Z
+    createdAt: 2026-04-25T17:21:10.127Z
     source: ai
     slotPreference: evening
     kind: single
@@ -133,656 +133,892 @@ items:
     renderDir: docs/assets/posts/20260425-peace-and-avoidance
     renderedFiles:
       - docs/assets/posts/20260425-peace-and-avoidance/post.png
-  - id: 2026-04-25-taste-over-trivia
-    createdAt: 2026-04-25T06:10:37.377Z
+  - id: 2026-04-25-taste-is-the-edit-not-the-dessert
+    createdAt: 2026-04-25T17:24:30.210Z
     source: manual
+    slotPreference: morning
+    kind: carousel
+    templateFamily: lesson
+    palette: emberParchment
+    title: Taste Is the Edit, Not the Dessert
+    topic: Why taste matters more than being informed
+    angle: Information tells you what happened; taste decides what matters, what
+      belongs, and what you’ll keep repeating.
+    fingerprint: being belongs decides dessert edit happened information informed
+      keep matters more not repeating taste tells than what why youll
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: Five-slide carousel arguing that taste is the quality-control system
+      for living and thinking, not a decorative preference.
+    carousel:
+      - kicker: Slide 1
+        headline: Being informed is easy to counterfeit.
+        body: You can collect facts the way some people collect tabs. Knowing looks like
+          progress; organizing looks like personality.
+      - kicker: Slide 2
+        headline: Taste is the quality-control step.
+        body: "It’s the internal editor that says: not that, not now, not for me.
+          Without it, information just multiplies your noise."
+      - kicker: Slide 3
+        headline: Taste isn’t “preference.” It’s judgment.
+        body: Preference is taste without consequences. Judgment shows up when you
+          choose under uncertainty and still feel responsible for the choice.
+      - kicker: Slide 4
+        headline: A well-read person can still be uncurated.
+        body: You can cite everything and still miss the point—because you never trained
+          your sensitivity to what’s coherent, humane, and true-to-life.
+      - kicker: Slide 5
+        headline: Want a smarter life? Build taste.
+        body: "Practice returning to fewer things with more care: the sentence that
+          lands, the argument that holds, the artwork that keeps teaching you
+          after the first hit."
+    caption:
+      hook: Most people think “more information” will make them wiser—but taste does
+        the actual work.
+      body: Information is raw material. Taste is how you shape it into meaning, and
+        how you decide what you’ll protect from becoming clutter. I’d rather be
+        slightly behind on facts than ahead on judgment.
+      callToComment: "Where do you think taste comes from in your life: exposure,
+        discipline, or taste for discomfort?"
+      hashtags:
+        - "#literaryThinking"
+        - "#tasteMatters"
+        - "#lifelongLearning"
+        - "#editorialMindset"
+        - "#curation"
+    publishAttempts: 0
+    status: rendered
+    notes: Seeded from manual idea idea-001
+    renderDir: docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert
+    renderedFiles:
+      - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-01.png
+      - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-02.png
+      - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-03.png
+      - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-04.png
+      - docs/assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-05.png
+  - id: 2026-04-25-peace-as-a-disguise
+    createdAt: 2026-04-25T17:24:34.130Z
+    source: manual
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Peace As a Disguise
+    topic: Avoidance disguised as peace
+    angle: Suggest that some “calm” is less wisdom than a well-tailored exit from
+      discomfort.
+    fingerprint: as avoidance calm discomfort disguise disguised exit from less
+      peace some suggest tailored than well wisdom
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: Editorial quote card warning that peace can sometimes be avoidance
+      dressed up as wisdom.
+    single:
+      headline: Beware the peace that never costs you anything.
+      body: >-
+        Not every calm mind is a practiced mind. Sometimes it’s just a mind that
+        learned to leave the problem alone—early, politely, permanently.
+
+
+        Peace should come with contact: a choice, a risk, a boundary you can
+        actually defend.
+      supportLine: If it never asks anything of you, it may be avoiding you.
+      footer: What are you calling “peace” that you don’t test?
+    caption:
+      hook: Some people don’t choose calm—they choose distance.
+      body: >-
+        I’ve noticed that “peace” can turn into a disguise when it removes
+        consequence. If nothing in your life ever has to change, you might be
+        mistaking stillness for resolution.
+
+
+        Real peace usually has fingerprints: the conversation you finally had,
+        the boundary you kept, the uncomfortable truth you held.
+      callToComment: Where do you notice yourself calling avoidance “peace”?
+      hashtags:
+        - "#literarythinking"
+        - "#tasteandjudgment"
+        - "#selfhonesty"
+        - "#mindfulness"
+        - "#criticalthinking"
+    publishAttempts: 0
+    status: ready
+    notes: Seeded from manual idea idea-002
+  - id: 2026-04-25-the-cost-of-being-easy
+    createdAt: 2026-04-25T17:24:38.015Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: The Cost of Being Easy
+    topic: attention as a design problem
+    angle: What people call “simplicity” is often just a product decision to remove
+      friction before thought can begin.
+    fingerprint: as attention before begin being call can cost decision design easy
+      friction just often people problem product remove simplicity thought what
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: "Editorial quote-style graphic reading: “If something is easy to
+      consume, ask what it’s protecting you from.” with warm paper textures and
+      a fine rule line."
+    single:
+      headline: If it’s easy to consume, ask what it’s protecting you from.
+      body: >-
+        Some writing is clear. Some is clean. And some is engineered so you
+        don’t have to work at all.
+
+
+        When the message arrives pre-chewed, the only thing you’re really
+        practicing is agreement.
+      supportLine: Clarity is generosity; convenience is sedation.
+      footer: "Tonight: choose the paragraph that makes you slow down."
+    caption:
+      hook: A lot of “digestible” content is just thought managed for you.
+      body: >-
+        Clarity helps comprehension. But when an idea comes effortless—no hard
+        edges, no awkward questions—it may be protecting you from the parts that
+        would change your mind.
+
+
+        Try this: read one piece that costs you something (time, rereads,
+        confusion), then notice what that cost bought you: precision, memory, or
+        real disagreement.
+      callToComment: What’s one “easy” idea you believed for years because it never
+        asked you to think?
+      hashtags:
+        - literarythought
+        - attention
+        - criticalthinking
+        - writing
+        - intellectualcuriosity
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-the-myth-of-being-ready
+    createdAt: 2026-04-25T17:24:43.340Z
+    source: ai
     slotPreference: morning
     kind: carousel
     templateFamily: editorial
     palette: emberParchment
-    title: Taste Over Trivia
-    topic: Why taste outperforms mere information
-    angle: Being informed fills you; taste filters you.
-    fingerprint: being fills filters information informed mere outperforms over
-      taste trivia why
+    title: The Myth of Being Ready
+    topic: Learning and action
+    angle: "Treat “I’m not ready” as a social alibi: sometimes it protects you from
+      failure, but other times it protects you from living with unfinished
+      thought."
+    fingerprint: action alibi as being but failure from im learning living myth not
+      other protects ready social sometimes thought times treat unfinished
     voiceMode: contrarian
-    quoteAttribution: |+
-      
-    altText: Five-slide editorial carousel arguing that cultivated taste is more
-      valuable than being merely well-informed, with warm literary design.
+    quoteAttribution: optional source name or null
+    altText: A warm editorial carousel about how “not ready” can be a refusal to
+      tolerate unfinished learning and the first, imperfect attempts.
     carousel:
-      - kicker: Against Info Glut
-        headline: Being informed is easy. Having taste is costly.
-        body: News is free and endless. Taste requires selection, omission, and the
-          nerve to stand by it.
-      - headline: Information adds. Taste subtracts.
-        body: You can stack facts forever. Taste says no—until the signal appears. Most
-          people fear the no.
-      - headline: Taste has skin in the game.
-        body: If you choose, you can be wrong. If you collect, you’re never accountable.
-          Curation risks reputation; accumulation hides it.
-      - headline: Taste shapes time, not just takes it.
-        body: Information occupies you. Taste orders your day, your shelf, your
-          attention. It builds a spine for what you’ll ignore.
-      - kicker: The Unpopular Ask
-        headline: Read less. Care more. Return often.
-        body: Pick a few living minds. Revisit. Compare. Commit. Let boredom disqualify,
-          not novelty seduce.
-        footer: Your taste is your algorithm.
+      - kicker: Contrarian morning thought
+        headline: “I’m not ready” is usually an agreement.
+        body: With who? With your past self. With your fear. With the fantasy that
+          clarity arrives before contact.
+      - kicker: What readiness hides
+        headline: Readiness often means control.
+        body: You want the outcome to be predictable so you can skip the part where you
+          discover what you actually believe.
+      - kicker: Unfinished is not unworthy
+        headline: Learning starts at the messy edge.
+        body: Drafts, wrong turns, awkward questions—these aren’t delays. They’re the
+          mechanism.
+      - kicker: The real question
+        headline: What are you avoiding feeling?
+        body: "Not failure in general—specifically: small humiliation, slow progress, or
+          the silence after you speak."
+      - kicker: A better rule
+        headline: Do the smallest version that can still teach you.
+        body: Not “ready.” Just answerable. One page. One call. One try—then revise by
+          evidence, not vibes.
     caption:
-      hook: Information is abundant; taste is expensive.
-      body: Facts are table stakes. What moves a life is the ability to refuse most of
-        them and commit to a few. Taste isn’t snobbery—it’s the courage to be
-        specific, to risk being wrong, and to build a spine for attention. If it
-        can’t survive a reread, it didn’t deserve the first read.
-      callToComment: Where do you practice subtraction—what do you stop reading, and why?
+      hook: "Morning prompt: when you say “I’m not ready,” what are you protecting?"
+      body: We call it wisdom, but sometimes it’s choreography for staying
+        comfortable. If your readiness criteria never shrink, you’re not waiting
+        for clarity—you’re outsourcing courage. Try making the next step small
+        enough to risk, but honest enough to reveal what you care about.
+      callToComment: Where have you been using “not ready” as cover—study, speaking,
+        starting, or staying?
       hashtags:
-        - "#taste"
-        - "#attention"
-        - "#curation"
-        - "#thinking"
-        - "#reading"
-        - "#designofmind"
+        - lifelonglearning
+        - thinkinghabits
+        - editorialthoughts
+        - personalpractice
+        - intellectualhonesty
+        - creativeprocess
     publishAttempts: 0
     status: rendered
-    notes: Seeded from manual idea idea-001
-    renderDir: docs/assets/posts/20260425-taste-over-trivia
+    renderDir: docs/assets/posts/20260425-the-myth-of-being-ready
     renderedFiles:
-      - docs/assets/posts/20260425-taste-over-trivia/slide-01.png
-      - docs/assets/posts/20260425-taste-over-trivia/slide-02.png
-      - docs/assets/posts/20260425-taste-over-trivia/slide-03.png
-      - docs/assets/posts/20260425-taste-over-trivia/slide-04.png
-      - docs/assets/posts/20260425-taste-over-trivia/slide-05.png
-  - id: 2026-04-25-peace-as-camouflage
-    createdAt: 2026-04-25T06:10:45.062Z
-    source: manual
+      - docs/assets/posts/20260425-the-myth-of-being-ready/slide-01.png
+      - docs/assets/posts/20260425-the-myth-of-being-ready/slide-02.png
+      - docs/assets/posts/20260425-the-myth-of-being-ready/slide-03.png
+      - docs/assets/posts/20260425-the-myth-of-being-ready/slide-04.png
+      - docs/assets/posts/20260425-the-myth-of-being-ready/slide-05.png
+  - id: 2026-04-25-standards-as-delay
+    createdAt: 2026-04-25T17:24:47.599Z
+    source: ai
     slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Standards as delay
+    topic: How “standards” can function as a postponement strategy
+    angle: Sometimes what you call high standards is just the comfort of not having
+      to produce an imperfect draft.
+    fingerprint: as call can comfort delay draft function having high how imperfect
+      just not postponement produce sometimes standards strategy what
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: Editorial quote-style graphic with the headline “Your standards might
+      be delay,” followed by a short paragraph about judging yourself before
+      you’ve made anything.
+    single:
+      headline: Your standards might be delay.
+      body: If you wait to feel “good enough” before you start, you’ve defined success
+        as permission, not output. Standards are useful when they guide
+        revision; they’re just procrastination when they block the first
+        attempt.
+      supportLine: A draft is not a failure. It’s a tool.
+      footer: Make something, then decide what deserves to stay.
+    caption:
+      hook: A lot of “disciplined people” are actually just delaying in better
+        language.
+      body: "What if your standards aren’t protecting the work but protecting your
+        self-image? The first draft always looks worse than the idea—because
+        it’s doing the one thing ideas can’t: exposing what’s missing. Revision
+        is taste; avoidance just wears a tuxedo."
+      callToComment: Where do you see standards turning into delay in your own process?
+      hashtags:
+        - "#literarythinking"
+        - "#creativeprocess"
+        - "#taste"
+        - "#drafting"
+        - "#intellectualhonesty"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-the-unpaid-obsession
+    createdAt: 2026-04-25T17:24:52.527Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: The Unpaid Obsession
+    topic: attention, taste, and the cost of choosing what to care about
+    angle: "Treat the things you keep returning to as unpaid debts: they shape your
+      mind more than your intentions do."
+    fingerprint: about as attention care choosing cost debts do intentions keep mind
+      more obsession returning shape taste than they things treat unpaid what
+    voiceMode: sharp
+    quoteAttribution: "null"
+    altText: "A warm, editorial Instagram graphic with the headline: “The things you
+      return to are the tuition you keep paying.” and supporting text about
+      attention and taste."
+    single:
+      headline: The things you return to are the tuition you keep paying.
+      body: >-
+        Not your goals. Not your resolutions. Your attention leaves receipts.
+
+
+        If you circle the same idea, you’re not “stuck”—you’re training your
+        taste, one unresolved question at a time.
+      supportLine: Choose deliberately what you revisit.
+      footer: A mind is built from return visits.
+    caption:
+      hook: Your interests aren’t vibes; they’re the curriculum you keep choosing.
+      body: >-
+        We love talking about intentions, but attention behaves like a ledger.
+        The topics you return to—before you feel “ready,” after you’ve moved on
+        from the original curiosity—are what your mind is actually rehearsing.
+
+
+        So here’s the contrarian question: what if your “lack of progress” is
+        really just insufficient commitment to follow the thread long enough to
+        form taste?
+      callToComment: What’s one thing you keep circling back to, and what do you think
+        it’s teaching you?
+      hashtags:
+        - "#attention"
+        - "#lifelonglearning"
+        - "#literarythinking"
+        - "#taste"
+        - "#editorialwriting"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-proof-of-thinking
+    createdAt: 2026-04-25T17:24:57.033Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Proof of thinking
+    topic: How to tell genuine learning from consumption
+    angle: "Most people mistake “getting information” for thinking, but the tell is
+      whether you can rework it into something accountable: a claim, a draft, or
+      a contradiction."
+    fingerprint: accountable but can claim consumption contradiction draft from
+      genuine getting how information into learning mistake most people proof
+      rework something tell thinking whether
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: 'Editorial quote-style post reading: "Learning isn’t gathering. It’s
+      taking what you absorbed and submitting it to change."'
+    single:
+      headline: Learning isn’t gathering.
+      body: "It’s taking what you absorbed and submitting it to change: a claim you
+        can defend, a draft you can revise, or a contradiction you can’t ignore.
+        If nothing in you shifts after the input, you didn’t learn—you
+        consumed."
+      supportLine: A lecture can be listened to. Learning leaves evidence.
+      footer: This is the difference between curiosity and mere attention.
+    caption:
+      hook: "A good way to spot real learning: it leaves fingerprints."
+      body: If you can’t rephrase the idea in your own architecture, you only
+        collected it. If you can’t test it—against your experience, your
+        assumptions, or someone else’s—then it never became yours. Consumption
+        feels smooth; learning feels like friction.
+      callToComment: What’s one “fingerprint” you’ve seen in yourself after you truly
+        learned something?
+      hashtags:
+        - "#learning"
+        - "#intellectuallife"
+        - "#taste"
+        - "#writing"
+        - "#curiosity"
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260425-proof-of-thinking
+    renderedFiles:
+      - docs/assets/posts/20260425-proof-of-thinking/post.png
+  - id: 2026-04-25-the-soft-lie-of-clarity
+    createdAt: 2026-04-25T17:25:02.928Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: editorial
+    palette: emberParchment
+    title: The Soft Lie of Clarity
+    topic: "Writing and thinking: clarity as a tactic, not a virtue"
+    angle: A mini-argument that “clarity” can be a comfort blanket that erases
+      friction before thought has earned its shape.
+    fingerprint: argument as before blanket can clarity comfort earned erases
+      friction has its lie mini not shape soft tactic thinking thought virtue
+      writing
+    voiceMode: sharp
+    quoteAttribution: "null"
+    altText: Five-slide editorial carousel about how people use the demand for
+      clarity to avoid messy thinking and early drafts.
+    carousel:
+      - kicker: Slide 1
+        headline: Clarity is not always the goal.
+        body: Sometimes it’s just the speed-limit sign you install so you don’t have to
+          drive through uncertainty.
+      - kicker: Slide 2
+        headline: Early thought is allowed to look bad.
+        body: If your first drafts already read like final answers, you probably skipped
+          the part where meaning forms.
+      - kicker: Slide 3
+        headline: “Be clearer” can mean “be easier.”
+        body: Some feedback isn’t about understanding—it’s about reducing the other
+          person’s cognitive labor.
+      - kicker: Slide 4
+        headline: Real clarity arrives late.
+        body: It’s what you get after you’ve contradicted yourself, weighed options, and
+          kept only what survives revision.
+      - kicker: Slide 5
+        headline: "Try this: argue on paper before polishing."
+        body: Write the messy version that makes the claim. Then, later, earn the clean
+          sentence.
+    caption:
+      hook: What if the demand for clarity is often just a demand for comfort?
+      body: "Next time someone tells you to be clearer, ask what they’re really trying
+        to avoid: confusion, effort, or disagreement. Clarity matters—but not as
+        an early substitute for thinking. The drafts that look wrong at first
+        are often the ones that later become precise."
+      callToComment: When have you mistaken “clear” for “accurate,” or “confusing” for
+        “unfinished”?
+      hashtags:
+        - "#writing"
+        - "#thinking"
+        - "#editing"
+        - "#intellectuallife"
+        - "#literarycraft"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-attention-as-allegiance
+    createdAt: 2026-04-25T17:25:09.048Z
+    source: ai
+    slotPreference: evening
     kind: single
     templateFamily: oracle
     palette: emberParchment
-    title: Peace As Camouflage
-    topic: When calm becomes avoidance
-    angle: Probe the line where serenity is wisdom and where it’s a mask for not
-      engaging.
-    fingerprint: as avoidance becomes calm camouflage engaging its line mask not
-      peace probe serenity when where wisdom
+    title: Attention as Allegiance
+    topic: Why attention is the real choice, not motivation
+    angle: We treat attention like a resource, but it’s actually a commitment—so
+      distractions aren’t just habits, they’re votes for what you’re willing to
+      become.
+    fingerprint: actually allegiance arent as attention become but choice commitment
+      distractions habits its just like motivation not real resource so theyre
+      treat votes what why willing youre
     voiceMode: contrarian
-    quoteAttribution: ""
-    altText: "A minimal editorial quote card reading: 'Some calm is earned; some is
-      camouflage. Learn the difference.' on a warm parchment background."
+    quoteAttribution: Simone Weil
+    altText: An editorial Instagram quote about attention being a rare, pure form of
+      generosity, reframed as a commitment that shapes who you become.
     single:
-      headline: Some calm is earned; some is camouflage.
-      body: Not every quiet is wisdom. Sometimes it’s a velvet curtain pulled over a
-        hard conversation, a risk, a choice.
-      supportLine: If your peace requires shrinking what matters, it isn’t peace—it's
-        concealment.
-      footer: Peace that can’t withstand truth is only staging.
+      headline: You don’t lack motivation. You ration attention.
+      body: "Distraction feels like rest, but it often functions like surrender: to
+        whatever is loudest, fastest, easiest. Attention is slower than desire,
+        and that’s why it’s revealing. Where you consistently look—at problems,
+        craft, people, or boredom—you train your future mind."
+      supportLine: “Attention is the rarest and purest form of generosity.”
+      footer: Stop asking what you want. Ask what you keep choosing to notice.
     caption:
-      hook: Not all tranquility is trustworthy.
-      body: "Peace is priceless, but it can also be a clever way to dodge friction. If
-        your serenity depends on avoiding the vital thing, it’s performance, not
-        poise. Real peace can survive discomfort because it isn’t hiding from
-        it. The test is simple: does your calm clarify, or does it blur?"
-      callToComment: Where do you draw the line between mature restraint and artful avoidance?
+      hook: "Most “discipline” advice misses the point: attention is the decision you
+        make every day."
+      body: Distraction isn’t neutral; it has preferences. When you give your focus to
+        whatever is immediately rewarding, you’re not becoming “busy,” you’re
+        becoming someone with different priorities than you claim to have. The
+        real question isn’t how to feel inspired—it’s how to structure what
+        earns your attention.
+      callToComment: Where do you notice your attention being negotiated, and what
+        would change if you treated it like allegiance instead of habit?
       hashtags:
-        - "#thinking"
-        - "#selfinquiry"
-        - "#philosophy"
-        - "#discernment"
-        - "#innerwork"
+        - lifelonglearning
+        - attention
+        - editorialwriting
+        - criticalthinking
+        - taste
     publishAttempts: 0
     status: ready
-    notes: Seeded from manual idea idea-002
-  - id: 2026-04-25-polish-vs-proof
-    createdAt: 2026-04-25T06:10:52.737Z
+  - id: 2026-04-25-questions-aren-t-action
+    createdAt: 2026-04-25T17:25:13.315Z
     source: ai
-    slotPreference: evening
+    slotPreference: morning
     kind: single
     templateFamily: editorial
     palette: emberParchment
-    title: Polish vs. Proof
-    topic: The difference between polish and substance in ideas and people
-    angle: Shiny presentation seduces, but reliable substance is quieter and slower
-      to signal—yet it endures.
-    fingerprint: between but difference endures ideas people polish presentation
-      proof quieter reliable seduces shiny signal slower substance vs yet
-    voiceMode: contrarian
-    quoteAttribution: "null"
-    altText: Text-based editorial post stating that polish is fast to signal value
-      while proof is slow but durable, set on warm parchment tones with literary
-      styling.
+    title: Questions Aren’t Action
+    topic: Intellectual courage vs endless reflection
+    angle: Some people call it thinking when it’s really rehearsal—real learning
+      starts when you accept the embarrassment of being wrong.
+    fingerprint: accept action arent being call courage embarrassment endless
+      intellectual its learning people questions real really reflection
+      rehearsal some starts thinking vs when wrong
+    voiceMode: sharp
+    quoteAttribution: ""
+    altText: "A warm editorial graphic with the headline: “Thinking isn’t the hard
+      part—being wrong is.” and supporting text about rehearsing instead of
+      doing."
     single:
-      headline: Polish is a billboard. Proof is a ledger.
+      headline: Thinking isn’t the hard part—being wrong is.
       body: >-
-        Billboards get attention. Ledgers survive audits.
+        If you only “process” privately, you’re not protecting your mind. You’re
+        protecting your ego from the friction of reality.
 
 
-        Most people optimize for the billboard because it’s instantly legible.
-        But polish only predicts how much someone cares about being seen.
-
-
-        Proof predicts whether it will still work when no one is watching.
-      supportLine: If you must choose, trade shine for receipts.
-      footer: Ask to see the ledger.
+        Try this today: make one claim you can stand behind, publish a draft you
+        can’t fully perfect, and let feedback interrupt your favorite thoughts.
+      supportLine: A curious mind still has to survive contact.
+      footer: Make a small bet. Then revise.
     caption:
-      hook: We confuse shine with signal because shine speaks first.
-      body: Presentation matters—but it is a loud guess. Evidence is a quiet history.
-        The algorithm of real life runs on receipts, not vibes. Your future self
-        will prefer the thing that still works after the applause fades.
-      callToComment: Where do you currently mistake a billboard for a ledger—in your
-        work, relationships, or ideas?
+      hook: There’s a difference between thinking and rehearsing.
+      body: >-
+        Rehearsal feels virtuous because it’s quiet, but it rarely changes
+        anything you do. Real learning has a cost: the possibility that someone
+        will disagree with your first version.
+
+
+        What’s your go-to “thinking” habit that keeps you from shipping a real
+        draft—an essay, a message, an argument, a decision?
+      callToComment: Tell me the exact form your rehearsal takes, and what would count
+        as your first draft today.
       hashtags:
+        - "#lifelonglearning"
+        - "#intellectualhonesty"
+        - "#writingpractice"
         - "#criticalthinking"
-        - "#craftoverclout"
-        - "#longgame"
-        - "#taste"
-        - "#intellectual"
+        - "#tasteandattention"
     publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-originality-is-a-deadline
-    createdAt: 2026-04-25T06:10:58.546Z
-    source: ai
-    slotPreference: morning
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Originality Is A Deadline
-    topic: originality and constraint
-    angle: Constraints don’t kill originality; they force it into focus.
-    fingerprint: constraint constraints deadline dont focus force into kill originality they
-    voiceMode: contrarian
-    quoteAttribution: "null"
-    altText: Warm editorial poster with a sharp headline about originality and
-      deadlines on a parchment-like background.
-    single:
-      headline: Originality Needs A Deadline
-      body: Most people wait for a muse; the pros set a clock. Constraint is not the
-        enemy of originality—it’s the spine that makes it stand up.
-      supportLine: If it isn’t due, it rarely becomes real.
-      footer: Make it smaller. Make it sooner. Then make it yours.
-    caption:
-      hook: Originality is a rhythm problem, not a purity problem.
-      body: Waiting for perfect conditions breeds derivative work. Constraints corner
-        you into choices only you would make. Deadlines don’t cheapen ideas;
-        they compress them until the residue is unmistakably yours. The risk is
-        shipping too late, not too rough.
-      callToComment: Where have constraints made your work better—and where did they
-        suffocate it?
-      hashtags:
-        - "#originality"
-        - "#creativeprocess"
-        - "#constraints"
-        - "#writinglife"
-        - "#designthinking"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-kindness-is-not-niceness
-    createdAt: 2026-04-25T06:11:04.108Z
+    status: rendered
+    renderDir: docs/assets/posts/20260425-questions-aren-t-action
+    renderedFiles:
+      - docs/assets/posts/20260425-questions-aren-t-action/post.png
+  - id: 2026-04-25-the-argument-you-keep-avoiding
+    createdAt: 2026-04-25T17:25:18.664Z
     source: ai
     slotPreference: midday
     kind: single
     templateFamily: editorial
-    palette: emberParchment
-    title: Kindness Is Not Niceness
-    topic: difference between kindness and niceness
-    angle: Argues that true kindness sometimes requires friction, while niceness
-      often avoids truth to protect image or comfort.
-    fingerprint: argues avoids between comfort difference friction image kindness
-      niceness not often protect requires sometimes true truth while
-    voiceMode: contrarian
+    palette: brassInk
+    title: The Argument You Keep Avoiding
+    topic: intellectual honesty vs. performative certainty
+    angle: Make the case that the most intelligent people aren’t the ones who know
+      more—they’re the ones willing to lose face on a precise, testable claim.
+    fingerprint: arent argument avoiding case certainty claim face honesty
+      intellectual intelligent keep know lose make more most ones people
+      performative precise testable theyre vs who willing
+    voiceMode: sharp
     quoteAttribution: "null"
-    altText: Warm editorial slide with serif typography reading a bold headline
-      about kindness versus niceness, on a parchment-toned background with
-      subtle grain.
+    altText: "A warm editorial quote card with the line: “Being certain is easy.
+      Being specific is costly.”"
     single:
-      headline: Kindness Isn’t Niceness
-      body: |-
-        Niceness protects appearances. Kindness protects people.
-
-        Niceness avoids friction. Kindness tolerates it.
-
-        Niceness asks, “Do you still like me?”
-
-        Kindness asks, “Did this help you?”
-      supportLine: If it never risks your approval, it’s not kindness yet.
-      footer: Warm is not always soft.
+      headline: Being certain is easy. Being specific is costly.
+      body: Specific claims can be disproved. Vague takes can only be praised. If you
+        never risk contradiction, you’ve made a career out of being
+        unaccountable.
+      supportLine: A good mind doesn’t just hold beliefs; it survives contact with reality.
+      footer: "Midday reminder: trade comfort for testable thinking."
     caption:
-      hook: Most people confuse social ease with moral care.
-      body: Niceness is image management; it prizes smoothness over substance.
-        Kindness is service; it sometimes sounds like bad news, because truth
-        has edges. If your “care” never costs you approval, check whether it’s
-        care or choreography.
-      callToComment: Where’s the line for you—when does honesty stop being kind?
+      hook: "Quick litmus test: can your view be wrong in a particular way?"
+      body: Many of us talk like we’re pursuing truth, but we’re actually protecting
+        image—keeping everything broad enough to survive any outcome.
+        Specificity isn’t pedantry; it’s exposure. The uncomfortable part of
+        thinking is that it can cost you your favorite version of yourself.
+      callToComment: What’s a claim you’ve held that you now realize was too general
+        to learn from?
       hashtags:
-        - "#thinkingoutloud"
-        - "#ethics"
-        - "#psychology"
-        - "#communication"
-        - "#character"
+        - "#intellectualhonesty"
+        - "#criticalthinking"
+        - "#tasteandjudgment"
+        - "#learningbydisagreement"
+        - "#writingcraft"
     publishAttempts: 0
     status: ready
-  - id: 2026-04-25-skill-vs-signal
-    createdAt: 2026-04-25T06:11:10.054Z
+  - id: 2026-04-25-the-hobby-test
+    createdAt: 2026-04-25T17:25:22.278Z
     source: ai
     slotPreference: evening
     kind: single
     templateFamily: editorial
     palette: emberParchment
-    title: Skill vs. Signal
-    topic: competence and presentation
-    angle: Competence compounds quietly; performance signals loudly—most people
-      confuse the latter for the former.
-    fingerprint: competence compounds confuse former latter loudly most people
-      performance presentation quietly signal signals skill vs
+    title: The Hobby Test
+    topic: casual pursuits vs real learning
+    angle: A hobby only becomes wisdom when it produces friction you can
+      name—otherwise it’s just taste without consequence.
+    fingerprint: becomes can casual consequence friction hobby its just learning
+      name only otherwise produces pursuits real taste test vs when wisdom
+      without
     voiceMode: contrarian
     quoteAttribution: "null"
-    altText: A warm, editorial single-image post with a bold headline about
-      competence versus performance, minimal text on textured parchment
-      background.
+    altText: "Editorial-style quote graphic: “A hobby is only a teacher when it
+      refuses to be comfortable. Otherwise it’s just aesthetic.”"
     single:
-      headline: Competence Doesn’t Clap
-      body: |-
-        Real skill makes fewer announcements because it’s busy doing the work.
-
-        Performance is louder because it needs witnesses.
-
-        Be suspicious of what needs applause to exist.
-      supportLine: The good stuff leaves a trail, not a show.
-      footer: Ask what would remain if no one were watching.
-    caption:
-      hook: Much of what looks like excellence is just hunger for an audience.
-      body: "Competence tends to be quiet because it’s absorbed in cause-and-effect,
-        not optics. Performance thrives on optics because that’s its fuel. The
-        tricky part: short-term, performance often wins attention and reward.
-        Long-term, competence survives the audit. Choose the game you want to be
-        judged by."
-      callToComment: Where do you draw the line between healthy signaling and empty
-        performance?
-      hashtags:
-        - "#craft"
-        - "#competence"
-        - "#signalvsnoise"
-        - "#taste"
-        - "#workethic"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-depth-has-a-pace
-    createdAt: 2026-04-25T06:11:15.408Z
-    source: ai
-    slotPreference: morning
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Depth Has A Pace
-    topic: Depth vs. speed in thinking and craft
-    angle: Argues that depth is a speed, but it runs on a different clock than the
-      feed.
-    fingerprint: argues but clock craft depth different feed has pace runs speed
-      than thinking vs
-    voiceMode: contrarian
-    quoteAttribution: "null"
-    altText: "A minimalist typographic poster with warm paper tones reading: “Depth
-      has a pace the feed can’t hear.” Subhead and short paragraph beneath."
-    single:
-      headline: Depth Has A Pace The Feed Can’t Hear
-      body: Speed makes answers. Depth makes questions that survive the week. If you
-        never miss the rush, you’ll miss the root.
-      supportLine: Fast is loud; thorough is durable.
-      footer: Choose the clock you want to be judged by.
-    caption:
-      hook: Fast work wins attention; deep work outlives it.
-      body: The feed rewards speed because it can measure it. Depth is slower because
-        it recalibrates the question before it chases the answer. If you only
-        train for momentum, you’ll mistake movement for meaning. Pick the clock
-        that matches the life you want to be accountable to.
-      callToComment: Where do you feel the pressure to be fast when you know you
-        should go deep?
-      hashtags:
-        - "#thinking"
-        - "#craft"
-        - "#slowmade"
-        - "#depth"
-        - "#creativeprocess"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-expertise-without-curiosity
-    createdAt: 2026-04-25T06:11:20.500Z
-    source: ai
-    slotPreference: midday
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Expertise Without Curiosity
-    topic: curiosity vs. expertise
-    angle: Argues that expertise decays without ongoing curiosity, while curiosity
-      stays useful even before mastery.
-    fingerprint: argues before curiosity decays even expertise mastery ongoing stays
-      useful vs while without
-    voiceMode: contrarian
-    quoteAttribution: .
-    altText: Warm editorial graphic with a concise headline reading 'Expertise
-      Without Curiosity Is Just Storage' and a short paragraph below on a
-      parchment-toned background.
-    single:
-      headline: Expertise Without Curiosity Is Just Storage
-      body: Knowing a lot is not the same as staying alive to the world. Knowledge
-        stacks; curiosity moves. One hardens without the other.
-      supportLine: If you stop asking, your expertise starts aging in place.
-      footer: Protect the question, not the credential.
-    caption:
-      hook: Most expertise expires faster than its owners admit.
-      body: The market rewards answers, but progress rides on questions. Curiosity
-        keeps knowledge in circulation, forcing it to earn its keep. Expertise
-        without it becomes archival—impressive, inert, and eventually wrong.
-        Curiosity without mastery can still discover; mastery without curiosity
-        only defends.
-      callToComment: Where have you seen curiosity outperform expertise—or the reverse?
-      hashtags:
-        - "#curiosity"
-        - "#expertise"
-        - "#thinking"
-        - "#intellectual"
-        - "#learning"
-        - "#contrarian"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-repetition-is-research
-    createdAt: 2026-04-25T06:11:25.869Z
-    source: ai
-    slotPreference: evening
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Repetition Is Research
-    topic: practice and originality
-    angle: Argues that repeating work is not redundancy but a method for discovering
-      what actually matters.
-    fingerprint: actually argues but discovering matters method not originality
-      practice redundancy repeating repetition research what work
-    voiceMode: contrarian
-    quoteAttribution: "null"
-    altText: Warm editorial graphic with the headline 'Repetition Is Research' in
-      serif type on parchment tones, with a short body text beneath.
-    single:
-      headline: Repetition Is Research
-      body: If you do it once, you got lucky. If you do it again, you learned
-        something. If you do it ten times, you found the pattern. Originality is
-        rarely a spark; it’s a residue left by honest repetition.
-      supportLine: Most people quit at boredom, right before the data turns into taste.
-      footer: Stop hunting novelty; repeat until the work speaks back.
-    caption:
-      hook: Repetition isn’t redundancy—it’s a lab.
-      body: One-offs flatter talent; runs reveal structure. The point of repeating is
-        not to copy yourself, but to notice what refuses to change when you try.
-        That’s where the work becomes yours. If it still feels like slog, you
-        may be measuring attention, not insight.
-      callToComment: What’s one thing you’ve repeated enough times to discover a
-        pattern others miss?
-      hashtags:
-        - "#craft"
-        - "#originality"
-        - "#practice"
-        - "#process"
-        - "#creativity"
-        - "#taste"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-opinions-that-cost-you
-    createdAt: 2026-04-25T06:11:31.831Z
-    source: ai
-    slotPreference: morning
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Opinions That Cost You
-    topic: The difference between beliefs you rent and beliefs you own
-    angle: Beliefs only become real when you accept the consequences of holding them.
-    fingerprint: accept become beliefs between consequences cost difference holding
-      only opinions own real rent them when
-    voiceMode: contrarian
-    quoteAttribution: ""
-    altText: Editorial poster-style image with warm parchment background and serif
-      typography displaying a short statement about owning beliefs and paying
-      their costs.
-    single:
-      headline: You don’t hold a belief until you pay for it.
-      body: "Rented opinions are cheap: they gain you nods and lose you nothing. Owned
-        beliefs charge a fee—time, risk, reputation, inconvenience. If your view
-        never costs you, it isn’t a view; it’s decor."
-      supportLine: "Test: what have you risked or refused because of it?"
-      footer: Morning margin note
-    caption:
-      hook: Most takes are decorations, not commitments.
-      body: A belief that never taxes your comfort is just a costume. The bill can be
-        small—who you say no to, what you forego, what work you actually do—but
-        there has to be a bill. Otherwise you’re borrowing conviction at zero
-        interest and calling it character.
-      callToComment: What belief of yours has actually cost you something—and was it
-        worth the price?
-      hashtags:
-        - "#thinking"
-        - "#culture"
-        - "#ethics"
-        - "#intellectuallife"
-        - "#writing"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-attention-has-texture
-    createdAt: 2026-04-25T06:11:38.043Z
-    source: ai
-    slotPreference: midday
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Attention Has Texture
-    topic: quality of attention vs quantity of input
-    angle: Argues that the texture of attention matters more than the volume of
-      information—coarse attention misses meaning, fine attention finds it.
-    fingerprint: argues attention coarse finds fine has information input matters
-      meaning misses more quality quantity texture than volume vs
-    voiceMode: contrarian
-    quoteAttribution: ""
-    altText: A warm, editorial single-image post with the headline about attention’s
-      texture and a short body text contrasting coarse and fine attention.
-    single:
-      headline: Attention Has Texture
+      headline: A hobby is only a teacher when it refuses to be comfortable.
       body: >-
-        Most people optimize for volume: more books, more tabs, more takes.
-        That’s coarse attention—fast, wide, and mostly skimming the rind.
+        Otherwise it’s just aesthetic: time spent looking cultivated, not
+        becoming competent.
 
 
-        Fine attention is slow, narrow, and abrasive enough to reveal grain. It
-        doesn’t consume more; it renders more.
-
-
-        If your attention is smooth, nothing sticks. If it has edges, meaning
-        catches.
-      supportLine: You don’t need more input. You need sharper noticing.
-      footer: Texture beats volume.
+        The test is simple—what did you get stuck on that you can still describe
+        precisely?
+      supportLine: If you can’t name the obstacle, you didn’t learn it; you decorated
+        around it.
+      footer: Evening practice, not weekend vibes.
     caption:
-      hook: You can drown in data and still be thirsty for meaning.
-      body: Quantity of input is the wrong race. Coarse attention treats ideas like
-        headlines; fine attention treats them like wood—something you plane
-        until the figure appears. Sharpen the edges of how you look, not the
-        size of what you look at. The feed rewards throughput; your mind rewards
-        texture.
-      callToComment: Where do you practice fine attention—and where do you still skim?
+      hook: Most “self-development” is just better lighting around the same avoidance.
+      body: >-
+        Call it a hobby, a “creative outlet,” or a “low-stakes season” if you
+        want—fine. But if it never creates a problem you can articulate, it
+        hasn’t taught you; it’s only entertained you.
+
+
+        I’m not saying rest is bad. I’m saying don’t confuse comfort with
+        cultivation.
+      callToComment: What’s a pursuit of yours that taught you only after it became
+        uncomfortable—and what exactly was the obstacle?
       hashtags:
-        - "#attention"
-        - "#thinking"
-        - "#learning"
-        - "#depth"
+        - "#lifelonglearning"
         - "#craft"
-        - "#essay"
+        - "#learningdesign"
+        - "#taste"
+        - "#criticalthinking"
     publishAttempts: 0
     status: ready
-  - id: 2026-04-25-memory-over-metrics
-    createdAt: 2026-04-25T06:11:43.696Z
-    source: ai
-    slotPreference: evening
-    kind: single
-    templateFamily: editorial
-    palette: emberParchment
-    title: Memory Over Metrics
-    topic: The limits of metrics in measuring meaningful work
-    angle: Argues that what endures in culture is carried by memory, not
-      dashboards—metrics steer, but memory crowns.
-    fingerprint: argues but by carried crowns culture dashboards endures limits
-      meaningful measuring memory metrics not over steer what work
-    voiceMode: contrarian
-    quoteAttribution: ""
-    altText: "An editorial-style typographic poster with warm parchment tones
-      reading: 'If it doesn’t live in memory, it doesn’t matter.' Minimalist
-      layout with literary feel."
-    single:
-      headline: If it doesn’t live in memory, it doesn’t matter.
-      body: Metrics can tell you what moved, not what stayed. Charts reward what is
-        easy to count; culture remembers what is hard to forget.
-      supportLine: Aim for recall, not just reach.
-      footer: Let the graph advise you. Let memory decide you.
-    caption:
-      hook: Most work is optimized for dashboards that no one remembers.
-      body: "Numbers are useful—they warn, compare, and steer. But the things that
-        last hitch a ride in human memory: phrasing, scenes, gestures, textures.
-        If your work vanishes the moment the tab closes, the metric lied about
-        its importance. Make something that’s hard to shake, even when the chart
-        is gone."
-      callToComment: What’s one line, image, or moment you still remember—and why do
-        you think it stuck?
-      hashtags:
-        - "#creativeprocess"
-        - "#culture"
-        - "#writing"
-        - "#designthinking"
-        - "#attention"
-    publishAttempts: 0
-    status: ready
-  - id: 2026-04-25-friction-makes-shape
-    createdAt: 2026-04-25T06:11:49.457Z
+  - id: 2026-04-25-the-deadline-is-the-teacher
+    createdAt: 2026-04-25T17:25:28.598Z
     source: ai
     slotPreference: morning
-    kind: single
+    kind: carousel
     templateFamily: editorial
     palette: emberParchment
-    title: Friction Makes Shape
-    topic: value of struggle in creative and intellectual work
-    angle: Argues that ease smooths away distinction while productive friction
-      carves character and ideas into form.
-    fingerprint: argues away carves character creative distinction ease form
-      friction ideas intellectual into makes productive shape smooths struggle
-      value while work
+    title: The deadline is the teacher
+    topic: Learning by forcing a verdict
+    angle: Curiosity isn’t proven by reading more—it’s proven when you risk an
+      answer under constraint and let it be wrong in public.
+    fingerprint: answer by constraint curiosity deadline forcing isnt its learning
+      let more proven public reading risk teacher under verdict when wrong
     voiceMode: contrarian
-    quoteAttribution: ""
-    altText: "Minimalist editorial poster with warm parchment tone: bold headline
-      reads 'Ease Makes You Smooth. Friction Gives You Shape.' with a short
-      paragraph beneath about choosing worthwhile resistance."
-    single:
-      headline: |-
-        Ease Makes You Smooth.
-
-        Friction Gives You Shape.
-      body: Comfort rounds edges until nothing catches. The work that resists you is
-        the work that names you—because you must choose what to keep, what to
-        cut, and what to endure. Smooth travels faster; shaped travels farther.
-      supportLine: Choose the resistance that teaches, not the struggle that flatters.
-      footer: Morning field note
+    quoteAttribution: "null"
+    altText: Carousel slides arguing that real learning happens when you write your
+      best ugly answer on a timer and then revise it.
+    carousel:
+      - kicker: Contrarian premise
+        headline: Motivation is not the missing ingredient.
+        body: If you keep “feeling curious” without producing a draft, you’re not
+          learning—you’re taste-testing possibilities.
+      - kicker: What changes when you constrain it
+        headline: A timer turns vague questions into stakes.
+        body: Deadlines don’t add pressure; they remove the escape hatch of “not yet.”
+          You must pick a claim.
+      - kicker: The real test
+        headline: Write the ugliest answer you can defend.
+        body: Not a perfect explanation—an accountable one. Then mark what you can’t
+          justify yet.
+      - kicker: Why this feels uncomfortable
+        headline: You’ll lose face with drafts.
+        body: "That’s the point. Learning is a controlled embarrassment: you replace
+          performance with revision."
+      - kicker: Try it today
+        headline: Pick one question. Set 12 minutes. Produce one verdict.
+        body: Afterward, revise only what your draft proved you don’t actually know.
     caption:
-      hook: Most people optimize for glide when they actually need grip.
-      body: "Ease feels like progress because it’s frictionless. But without
-        resistance, nothing distinctive forms—only speed. The right kind of
-        difficulty is a sculptor: it clarifies taste, builds stamina, and sets
-        limits that reveal design. If everything slides, nothing holds."
-      callToComment: Where has chosen friction improved your work—or where did ease
-        quietly dull it?
+      hook: The fastest way to move from curiosity to understanding is to stop waiting
+        for the feeling.
+      body: Most people think learning is collecting more inputs. It’s not. It’s
+        submitting an answer to time, then letting the mismatch teach you what’s
+        missing.
+      callToComment: What’s a question you keep circling—what would your “12-minute
+        verdict” look like?
       hashtags:
-        - "#creativeprocess"
-        - "#intellectualwork"
-        - "#craft"
-        - "#constraints"
-        - "#contrarianwisdom"
+        - "#lifelonglearning"
+        - "#writingpractice"
+        - "#criticalthinking"
+        - "#intellectualhabits"
+        - "#curiosity"
     publishAttempts: 0
     status: ready
-  - id: 2026-04-25-borrowed-certainty
-    createdAt: 2026-04-25T06:11:56.096Z
+  - id: 2026-04-25-elegance-isn-t-evidence
+    createdAt: 2026-04-25T17:25:32.712Z
     source: ai
     slotPreference: midday
     kind: single
     templateFamily: editorial
-    palette: emberParchment
-    title: Borrowed Certainty
-    topic: Secondhand convictions
-    angle: Argues that many firm beliefs are just rented language; understanding
-      requires paying in observation and time.
-    fingerprint: argues beliefs borrowed certainty convictions firm just language
-      many observation paying rented requires secondhand time understanding
+    palette: midnightPaper
+    title: Elegance Isn’t Evidence
+    topic: How style can masquerade as truth
+    angle: The more gracefully an idea is packaged, the easier it is to stop asking
+      whether it survives contact with facts and cost.
+    fingerprint: as asking can contact cost easier elegance evidence facts
+      gracefully how idea isnt masquerade more packaged stop style survives
+      truth whether
     voiceMode: contrarian
     quoteAttribution: "null"
-    altText: Editorial-style typographic post on warm parchment background reading a
-      bold headline about borrowed certainty, with a short paragraph challenging
-      secondhand convictions.
+    altText: "Editorial quote-style design with text: “A beautiful argument can be a
+      beautiful mistake. Judge by what it commits you to—not by how it sounds.”"
     single:
-      headline: Most certainty is rented.
-      body: "We inherit conclusions the way we inherit furniture—heavy, familiar,
-        rarely inspected. But belief you haven’t paid for with looking, testing,
-        revising, doesn’t belong to you; it’s staging. If you want conviction,
-        settle the bill: name what you’ve seen, where it fails, and what would
-        change your mind."
-      supportLine: If it can’t be refunded by evidence, it’s decor, not knowledge.
-      footer: Own fewer beliefs. Prove more of them.
+      headline: A beautiful argument can be a beautiful mistake.
+      body: "Judge ideas by what they commit you to: predictions, tradeoffs, and the
+        specific kind of friction they create when you test them. If the claims
+        stay comforting no matter what happens, you’re probably admiring
+        packaging, not truth."
+      supportLine: Elegance is not evidence.
+      footer: What would this idea cost to disprove?
     caption:
-      hook: A lot of what sounds like conviction is just furniture we forgot we didn’t
-        buy.
-      body: "We repeat fluent lines because they feel like thinking. They’re not.
-        Conviction without receipts is set dressing—useful for signaling,
-        brittle in weather. Try paying in observation: specify your evidence and
-        your exit conditions. It makes beliefs lighter, rarer, and yours."
-      callToComment: What belief of yours has actual receipts—and what would refund it?
+      hook: Most people don’t believe arguments—they believe their own relief at how
+        well the sentence lands.
+      body: A sharp claim should make you a little less comfortable, not more. Ask
+        what would count against it, what you’d have to give up, and which
+        prediction you’re willing to risk being wrong about. If none of that
+        exists, the argument may be well-written—but it’s not yet accountable.
+      callToComment: What’s an example of a “beautiful” idea you later found you
+        couldn’t actually test?
       hashtags:
         - "#criticalthinking"
         - "#intellectualhonesty"
+        - "#writingcraft"
         - "#epistemology"
-        - "#learnersmind"
+        - "#howweknow"
     publishAttempts: 0
     status: ready
-  - id: 2026-04-25-genius-is-pacing
-    createdAt: 2026-04-25T06:12:03.025Z
+  - id: 2026-04-25-taste-is-not-proof
+    createdAt: 2026-04-25T17:25:37.031Z
     source: ai
     slotPreference: evening
     kind: single
     templateFamily: editorial
     palette: emberParchment
-    title: Genius Is Pacing
-    topic: hidden role of rest in creative work
-    angle: Argues that real progress happens in alternation—bursts of effort
-      punctuated by deliberate idleness—not in continuous grind.
-    fingerprint: alternation argues bursts by continuous creative deliberate effort
-      genius grind happens hidden idleness not pacing progress punctuated real
-      rest role work
+    title: Taste Is Not Proof
+    topic: intellectual accountability vs aesthetic preference
+    angle: Your taste can feel like wisdom, but without a claim you can test, it’s
+      just preference wearing a better coat.
+    fingerprint: accountability aesthetic better but can claim coat feel
+      intellectual its just like not preference proof taste test vs wearing
+      wisdom without
+    voiceMode: sharp
+    quoteAttribution: "null"
+    altText: "Editorial quote card: “Aesthetic taste isn’t evidence. Evidence is
+      what still holds after you try to break your own idea.”"
+    single:
+      headline: Aesthetic taste isn’t evidence.
+      body: >-
+        Preference is quiet. Proof is noisy.
+
+
+        When you can’t say what would change your mind, you’re not
+        learning—you’re curating.
+
+
+        Treat every “I like this” as a draft, not a conclusion.
+      supportLine: If it can’t be contradicted, it’s not a claim.
+      footer: What survives friction earns belief.
+    caption:
+      hook: Most people don’t lack intelligence—they lack a way to make taste
+        accountable.
+      body: >-
+        We mistake the feeling of “this is right” for the work of “this is right
+        enough to risk being wrong.” But evidence isn’t generated by elegance;
+        it’s generated by pressure: constraints, counterexamples, costs, and
+        revised wording.
+
+
+        If your idea can’t be sharpened into a testable claim, it’s probably a
+        vibe.
+      callToComment: What’s one “smart-sounding” belief you realized was really just
+        taste—until you tried to test it?
+      hashtags:
+        - criticalthinking
+        - learninghowtolearn
+        - writingcraft
+        - intellectualhonesty
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-the-privacy-of-thinking
+    createdAt: 2026-04-25T17:26:40.867Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: The Privacy of Thinking
+    topic: Writing as evidence, not expression
+    angle: "Treat your drafts like lab notes: if you can’t show the thinking that
+      produced the conclusion, it’s not knowledge yet."
+    fingerprint: as cant conclusion drafts evidence expression if its knowledge lab
+      like not notes privacy produced show thinking treat writing yet
+    voiceMode: sharp
+    quoteAttribution: "null"
+    altText: Warm editorial Instagram slide with the headline 'Your best thoughts
+      are not the ones you can explain—only the ones you can revise.'
+    single:
+      headline: Your best thoughts are not the ones you can explain—only the ones you
+        can revise.
+      body: >-
+        Explanation is performance. Revision is contact.
+
+
+        If your writing never changes, you’re probably not learning—you’re just
+        rephrasing confidence.
+      supportLine: "Try this: write a claim, then rewrite it after one real objection."
+      footer: Drafts aren’t decoration. They’re receipts.
+    caption:
+      hook: Most people don’t lack good ideas—they lack revisable ones.
+      body: >-
+        We confuse eloquence with understanding because it feels like progress.
+        But the real test is whether your sentence survives friction.
+
+
+        Write the claim you’re tempted to believe, then force yourself to
+        rewrite it after you can state the best counterargument you can find.
+      callToComment: What’s a belief you’ve written that changed only after you wrote
+        the objection beside it?
+      hashtags:
+        - "#literarythinking"
+        - "#writingpractice"
+        - "#intellectualhonesty"
+        - "#drafts"
+        - "#curiouslearning"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-the-complaint-test
+    createdAt: 2026-04-25T17:29:33.547Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: The Complaint Test
+    topic: Why critique can be a disguised desire
+    angle: "Treat your strongest complaint as a clue: it may reveal what you
+      secretly want, not what you actually know."
+    fingerprint: actually as can clue complaint critique desire disguised know may
+      not reveal secretly strongest test treat want what why
     voiceMode: contrarian
     quoteAttribution: "null"
-    altText: "Editorial-style single image with warm parchment palette: bold
-      headline reading 'Work Rested, Not Relentless' and a short paragraph
-      beneath, set in literary serif type on textured paper background."
+    altText: "Editorial single post with a warm, literary layout reading: “Your
+      loudest complaint is often a private wish in public clothing.”"
     single:
-      headline: Work Rested, Not Relentless
-      body: The mind does its best lifting off the clock. Bursts make breakthroughs;
-        idleness metabolizes them. Continuous grind looks brave and produces
-        averages. The people who seem tireless usually excel at stopping early.
-      supportLine: Pace is a skill, not a mood.
-      footer: If you never step away, you’re rehearsing noise.
+      headline: Your loudest complaint is often a private wish in public clothing.
+      body: Complaining feels like clarity because it has momentum. But momentum isn’t
+        evidence; it’s just energy with a direction. The useful question isn’t
+        “Who’s wrong?”—it’s “What outcome would make this discomfort vanish?”
+      supportLine: "Try this tonight: rewrite your grievance as a request you’d be
+        willing to admit."
+      footer: Sharp mind, softer honesty.
     caption:
-      hook: Relentless isn’t reliable—paced is.
-      body: Most “grind” is an alibi for not trusting incubation. Insight needs
-        oxygen, not just hours. The top performers are not the hardest workers
-        in a straight line; they are the best at punctuating effort with
-        emptiness so the work can organize itself. That looks lazy to the clock
-        and lethal to the problem.
-      callToComment: Where do you deliberately stop so the work can keep going without you?
+      hook: Most people use critique to avoid confessing what they want.
+      body: A complaint can be true and still be motivated. The test is whether your
+        language can survive a translation from accusation into a specific
+        outcome. If it can’t, your certainty might be protecting you—not
+        informing you.
+      callToComment: What’s a complaint you’ve had lately that, on closer inspection,
+        sounded like a wish?
       hashtags:
-        - "#creativeprocess"
-        - "#deepwork"
-        - "#craft"
-        - "#contrarianwisdom"
-        - "#restandwork"
+        - "#criticalthinking"
+        - "#writingcraft"
+        - "#lifelonglearning"
+        - "#tasteandtruth"
+        - "#eveningreads"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-conditions-over-certainty
+    createdAt: 2026-04-25T17:32:16.103Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Conditions Over Certainty
+    topic: How we signal intelligence—without doing the work
+    angle: "Most people don’t want truth; they want sentences that sound finished,
+      so they avoid the smaller, harder habit: attaching conditions."
+    fingerprint: attaching avoid certainty conditions doing dont finished habit
+      harder how intelligence most over people sentences signal smaller so sound
+      they truth want without work
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: "Warm editorial Instagram graphic with the headline: “The smartest
+      sentence you can write is conditional.” Body text explaining that real
+      thinking names what would change the conclusion."
+    single:
+      headline: The smartest sentence you can write is conditional.
+      body: >-
+        Not “X is true,” but “X is true unless Y.”
+
+
+        If your claim can’t survive a named exception, it isn’t thinking
+        yet—it’s packaging.
+
+
+        A good mind doesn’t just arrive; it auditions its own conclusion.
+      supportLine: Ask yourself what would disconfirm you, in plain language.
+      footer: "Tonight: draft one conditional you actually fear being wrong about."
+    caption:
+      hook: What if your confidence is a style choice, not evidence?
+      body: "Try this: rewrite one of your strongest beliefs with a condition and a
+        failure case. If you can’t name what would change your mind, you’re not
+        defending truth—you’re defending comfort. Intelligence shows up as
+        specificity: the exact way you could be wrong."
+      callToComment: What’s a belief you’d keep only if an exception holds—what is
+        that exception?
+      hashtags:
+        - "#intellectuallife"
+        - "#criticalthinking"
+        - "#writingcraft"
+        - "#learning"
+        - "#epistemology"
     publishAttempts: 0
     status: ready

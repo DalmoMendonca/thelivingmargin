@@ -101,10 +101,12 @@ if (!appEnv.PUBLIC_GITHUB_REPOSITORY) {
 const publicUrls = publicUrlsForItem(target);
 logStep(`Rendered public assets:\n${publicUrls.join("\n")}`);
 
-for (const url of publicUrls) {
-  const reachable = await pollUrl(url, 20, 6000);
-  if (!reachable) {
-    throw new Error(`Rendered asset did not become reachable: ${url}`);
+if (!dryRun) {
+  for (const url of publicUrls) {
+    const reachable = await pollUrl(url, 20, 6000);
+    if (!reachable) {
+      throw new Error(`Rendered asset did not become reachable: ${url}`);
+    }
   }
 }
 

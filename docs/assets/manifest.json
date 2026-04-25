@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T06:12:04.856Z",
+  "updatedAt": "2026-04-25T17:32:16.487Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -7,7 +7,7 @@
       "kind": "single",
       "topic": "belief and doubt",
       "angle": "Confusion is not failure. It is often the tax you pay for thinking for yourself.",
-      "createdAt": "2026-04-25T06:06:50.774Z",
+      "createdAt": "2026-04-25T17:21:10.127Z",
       "renderedFiles": [
         "assets/posts/20260425-confusion-is-often-the-start/post.png"
       ]
@@ -18,7 +18,7 @@
       "kind": "carousel",
       "topic": "reading and intelligence",
       "angle": "Being informed is not the same as being thoughtful.",
-      "createdAt": "2026-04-25T06:06:50.774Z",
+      "createdAt": "2026-04-25T17:21:10.127Z",
       "renderedFiles": [
         "assets/posts/20260425-intelligence-without-taste/slide-01.png",
         "assets/posts/20260425-intelligence-without-taste/slide-02.png",
@@ -33,24 +33,61 @@
       "kind": "single",
       "topic": "discipline and softness",
       "angle": "Peace can be maturity, but it can also be a sophisticated form of avoidance.",
-      "createdAt": "2026-04-25T06:06:50.774Z",
+      "createdAt": "2026-04-25T17:21:10.127Z",
       "renderedFiles": [
         "assets/posts/20260425-peace-and-avoidance/post.png"
       ]
     },
     {
-      "id": "2026-04-25-taste-over-trivia",
-      "title": "Taste Over Trivia",
+      "id": "2026-04-25-taste-is-the-edit-not-the-dessert",
+      "title": "Taste Is the Edit, Not the Dessert",
       "kind": "carousel",
-      "topic": "Why taste outperforms mere information",
-      "angle": "Being informed fills you; taste filters you.",
-      "createdAt": "2026-04-25T06:10:37.377Z",
+      "topic": "Why taste matters more than being informed",
+      "angle": "Information tells you what happened; taste decides what matters, what belongs, and what you’ll keep repeating.",
+      "createdAt": "2026-04-25T17:24:30.210Z",
       "renderedFiles": [
-        "assets/posts/20260425-taste-over-trivia/slide-01.png",
-        "assets/posts/20260425-taste-over-trivia/slide-02.png",
-        "assets/posts/20260425-taste-over-trivia/slide-03.png",
-        "assets/posts/20260425-taste-over-trivia/slide-04.png",
-        "assets/posts/20260425-taste-over-trivia/slide-05.png"
+        "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-01.png",
+        "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-02.png",
+        "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-03.png",
+        "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-04.png",
+        "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-myth-of-being-ready",
+      "title": "The Myth of Being Ready",
+      "kind": "carousel",
+      "topic": "Learning and action",
+      "angle": "Treat “I’m not ready” as a social alibi: sometimes it protects you from failure, but other times it protects you from living with unfinished thought.",
+      "createdAt": "2026-04-25T17:24:43.340Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-myth-of-being-ready/slide-01.png",
+        "assets/posts/20260425-the-myth-of-being-ready/slide-02.png",
+        "assets/posts/20260425-the-myth-of-being-ready/slide-03.png",
+        "assets/posts/20260425-the-myth-of-being-ready/slide-04.png",
+        "assets/posts/20260425-the-myth-of-being-ready/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-proof-of-thinking",
+      "title": "Proof of thinking",
+      "kind": "single",
+      "topic": "How to tell genuine learning from consumption",
+      "angle": "Most people mistake “getting information” for thinking, but the tell is whether you can rework it into something accountable: a claim, a draft, or a contradiction.",
+      "createdAt": "2026-04-25T17:24:57.033Z",
+      "renderedFiles": [
+        "assets/posts/20260425-proof-of-thinking/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-questions-aren-t-action",
+      "title": "Questions Aren’t Action",
+      "kind": "single",
+      "topic": "Intellectual courage vs endless reflection",
+      "angle": "Some people call it thinking when it’s really rehearsal—real learning starts when you accept the embarrassment of being wrong.",
+      "createdAt": "2026-04-25T17:25:13.315Z",
+      "renderedFiles": [
+        "assets/posts/20260425-questions-aren-t-action/post.png"
       ]
     }
   ]

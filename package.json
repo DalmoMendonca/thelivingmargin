@@ -7,6 +7,7 @@
   "scripts": {
     "bootstrap": "tsx src/cli/bootstrap.ts",
     "generate:queue": "tsx src/cli/generate-queue.ts",
+    "instagram:exchange-code": "tsx src/cli/exchange-instagram-token.ts",
     "preview": "tsx src/cli/render-preview.ts",
     "publish:slot": "tsx src/cli/publish-slot.ts",
     "typecheck": "tsc --noEmit"

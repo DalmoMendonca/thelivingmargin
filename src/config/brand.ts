@@ -140,6 +140,17 @@ export const brand = {
 
 export const appEnv = env;
 
+const normalizeGithubRepository = (value: string) => {
+  const trimmed = value.trim().replace(/\.git$/i, "");
+  const githubPrefix = "https://github.com/";
+
+  if (trimmed.startsWith(githubPrefix)) {
+    return trimmed.slice(githubPrefix.length);
+  }
+
+  return trimmed.replace(/^github\.com\//i, "");
+};
+
 export const publicAssetBase = () => {
   if (!env.PUBLIC_GITHUB_REPOSITORY) {
     throw new Error(
@@ -147,7 +158,8 @@ export const publicAssetBase = () => {
     );
   }
 
-  return `https://raw.githubusercontent.com/${env.PUBLIC_GITHUB_REPOSITORY}/${env.PUBLIC_GITHUB_BRANCH}/${env.PUBLIC_ASSET_ROOT}`;
+  const repository = normalizeGithubRepository(env.PUBLIC_GITHUB_REPOSITORY);
+  return `https://raw.githubusercontent.com/${repository}/${env.PUBLIC_GITHUB_BRANCH}/${env.PUBLIC_ASSET_ROOT}`;
 };
 
 export const hasOpenAi = () => Boolean(env.OPENAI_API_KEY);
