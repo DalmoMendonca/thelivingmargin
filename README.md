@@ -22,6 +22,8 @@ The key constraint is Meta's current publishing requirement: media must be publi
 - `npm run publish:slot -- --slot midday`
 - `npm run publish:slot -- --slot evening`
 - `npm run publish:slot -- --slot morning --dry-run`
+- `npm run sync:remote-state`
+- `npm run ship:code -- --message "refactor: tighten captions"`
 
 ## Project structure
 
@@ -31,6 +33,30 @@ The key constraint is Meta's current publishing requirement: media must be publi
 - `docs/assets/posts/`: rendered images
 - `docs/index.html`: preview gallery
 - `.github/workflows/instagram-publish.yml`: 3x/day automation
+
+## Local Git workflow
+
+GitHub Actions continuously updates automation-owned state. In practice, `origin/main` will usually have newer queue and publish data than your local checkout.
+
+Automation-owned paths:
+
+- `content-queue/queue.yaml`
+- `content-queue/published-log.yaml`
+- `docs/assets/manifest.json`
+- `docs/assets/posts/`
+
+Recommended flow when you are changing code locally:
+
+1. Make your code changes normally.
+2. Run `npm run sync:remote-state` to rebase onto `origin/<current-branch>` while preserving your code/manual-content edits and refreshing automation-owned state from remote.
+3. Run `npm run ship:code -- --message "your commit message"` to sync again, typecheck, commit only user-owned changes, and push.
+
+Notes:
+
+- `ship:code` intentionally excludes automation-owned paths from your commit.
+- `manual-ideas.yaml` and `swipe-file.yaml` are treated as user-owned content and will still be committed.
+- Add `--dry-run` to `ship:code` to preview what would be staged.
+- Add `--skip-typecheck` if you need to bypass the typecheck step temporarily.
 
 ## What the engine does
 
