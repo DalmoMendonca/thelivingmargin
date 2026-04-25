@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:05:27.280Z
+updatedAt: 2026-04-25T18:05:33.951Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -241,12 +241,14 @@ items:
         - "#selfhonesty"
         - "#mindfulness"
         - "#criticalthinking"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Seeded from manual idea idea-002
     renderDir: docs/assets/posts/20260425-peace-as-a-disguise
     renderedFiles:
       - docs/assets/posts/20260425-peace-as-a-disguise/post.png
+    instagramMediaId: "18040541288578199"
+    publishedAt: 2026-04-25T18:05:33.951Z
   - id: 2026-04-25-the-cost-of-being-easy
     createdAt: 2026-04-25T17:24:38.015Z
     source: ai
