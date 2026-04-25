@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:19:02.229Z
+updatedAt: 2026-04-25T21:44:00.147Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -558,7 +558,14 @@ items:
         - "#intellectuallife"
         - "#literarycraft"
     publishAttempts: 0
-    status: ready
+    status: rendered
+    renderDir: docs/assets/posts/20260425-the-soft-lie-of-clarity
+    renderedFiles:
+      - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-01.png
+      - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-02.png
+      - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-03.png
+      - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-04.png
+      - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-05.png
   - id: 2026-04-25-attention-as-allegiance
     createdAt: 2026-04-25T17:25:09.048Z
     source: ai
@@ -1175,5 +1182,46 @@ items:
         - "#context"
         - "#intellectualhonesty"
         - "#learnbetter"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-repetition-is-research
+    createdAt: 2026-04-25T21:43:59.532Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Repetition Is Research
+    topic: practice vs novelty in learning
+    angle: Most people chase novelty, but the real signal appears when you repeat
+      the same move until the noise falls away.
+    fingerprint: appears away but chase falls learning most move noise novelty
+      people practice real repeat repetition research same signal until vs when
+    voiceMode: contrarian
+    quoteAttribution: "null"
+    altText: Warm editorial typographic poster with a sharp headline reading
+      'Repetition Is Research' on textured parchment with subtle ink accents.
+    single:
+      headline: Repetition Is Research
+      body: If you can’t make the same attempt ten times, you don’t have a
+        question—you have a craving for novelty. Repetition isn’t busywork; it’s
+        how variance shows its hand. Patterns don’t admit themselves to
+        tourists.
+      supportLine: Do it again so the noise can’t hide.
+      footer: Stop optimizing for new; optimize for signal.
+    caption:
+      hook: Novelty flatters; repetition measures.
+      body: We love the rush of new inputs because they spare us from confronting what
+        our last attempt actually said. But without multiple passes, you can’t
+        tell skill from luck, or signal from weather. Repetition isn’t
+        conservative—it’s experimental design for humans. The point is not
+        routine; it’s resolution.
+      callToComment: Where has doing the same thing, again, finally told you the truth?
+      hashtags:
+        - "#learning"
+        - "#craft"
+        - "#practice"
+        - "#epistemology"
+        - "#creativeprocess"
     publishAttempts: 0
     status: ready

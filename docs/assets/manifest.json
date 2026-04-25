@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T18:19:02.243Z",
+  "updatedAt": "2026-04-25T21:44:00.163Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -99,6 +99,21 @@
       "createdAt": "2026-04-25T17:24:57.033Z",
       "renderedFiles": [
         "assets/posts/20260425-proof-of-thinking/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-soft-lie-of-clarity",
+      "title": "The Soft Lie of Clarity",
+      "kind": "carousel",
+      "topic": "Writing and thinking: clarity as a tactic, not a virtue",
+      "angle": "A mini-argument that “clarity” can be a comfort blanket that erases friction before thought has earned its shape.",
+      "createdAt": "2026-04-25T17:25:02.928Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-soft-lie-of-clarity/slide-01.png",
+        "assets/posts/20260425-the-soft-lie-of-clarity/slide-02.png",
+        "assets/posts/20260425-the-soft-lie-of-clarity/slide-03.png",
+        "assets/posts/20260425-the-soft-lie-of-clarity/slide-04.png",
+        "assets/posts/20260425-the-soft-lie-of-clarity/slide-05.png"
       ]
     },
     {
