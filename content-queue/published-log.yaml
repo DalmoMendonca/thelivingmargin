@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T18:19:02.242Z
+updatedAt: 2026-04-25T21:44:31.216Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -23,3 +23,15 @@ entries:
     slot: midday
     instagramMediaId: "18102670540762468"
     title: Standards as delay
+  - id: 2026-04-25-the-soft-lie-of-clarity
+    publishedAt: 2026-04-25T21:44:31.194Z
+    topic: "Writing and thinking: clarity as a tactic, not a virtue"
+    angle: A mini-argument that “clarity” can be a comfort blanket that erases
+      friction before thought has earned its shape.
+    fingerprint: argument as before blanket can clarity comfort earned erases
+      friction has its lie mini not shape soft tactic thinking thought virtue
+      writing
+    kind: carousel
+    slot: midday
+    instagramMediaId: "18100428052815264"
+    title: The Soft Lie of Clarity

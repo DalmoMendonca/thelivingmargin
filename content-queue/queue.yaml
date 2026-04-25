@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T21:44:00.147Z
+updatedAt: 2026-04-25T21:44:31.195Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -557,8 +557,8 @@ items:
         - "#editing"
         - "#intellectuallife"
         - "#literarycraft"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260425-the-soft-lie-of-clarity
     renderedFiles:
       - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-01.png
@@ -566,6 +566,8 @@ items:
       - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-03.png
       - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-04.png
       - docs/assets/posts/20260425-the-soft-lie-of-clarity/slide-05.png
+    instagramMediaId: "18100428052815264"
+    publishedAt: 2026-04-25T21:44:31.194Z
   - id: 2026-04-25-attention-as-allegiance
     createdAt: 2026-04-25T17:25:09.048Z
     source: ai
