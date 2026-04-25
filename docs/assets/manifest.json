@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T22:36:22.824Z",
+  "updatedAt": "2026-04-25T23:48:24.029Z",
   "items": [
     {
       "id": "2026-04-25-proof-of-your-priorities",
@@ -169,6 +169,17 @@
       "createdAt": "2026-04-25T17:25:13.315Z",
       "renderedFiles": [
         "assets/posts/20260425-questions-aren-t-action/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-the-hobby-test",
+      "title": "The Hobby Test",
+      "kind": "single",
+      "topic": "casual pursuits vs real learning",
+      "angle": "A hobby only becomes wisdom when it produces friction you can name—otherwise it’s just taste without consequence.",
+      "createdAt": "2026-04-25T17:25:22.278Z",
+      "renderedFiles": [
+        "assets/posts/20260425-the-hobby-test/post.png"
       ]
     },
     {

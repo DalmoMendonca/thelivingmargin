@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T22:36:22.792Z
+updatedAt: 2026-04-25T23:48:24.013Z
 items:
   - id: 2026-04-25-proof-of-your-priorities
     createdAt: 2026-04-25T22:35:52.681Z
@@ -861,9 +861,12 @@ items:
         - "#taste"
         - "#criticalthinking"
     publishAttempts: 0
-    status: ready
+    status: rendered
     surfaceStyle: paperWarm
     contentMode: aphorism
+    renderDir: docs/assets/posts/20260425-the-hobby-test
+    renderedFiles:
+      - docs/assets/posts/20260425-the-hobby-test/post.png
   - id: 2026-04-25-the-deadline-is-the-teacher
     createdAt: 2026-04-25T17:25:28.598Z
     source: ai
@@ -1464,3 +1467,55 @@ items:
     status: ready
     surfaceStyle: paperWarm
     contentMode: aphorism
+  - id: 2026-04-25-quiet-quitting-vs-quiet-beginning
+    createdAt: 2026-04-25T23:48:22.815Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Quiet Quitting vs Quiet Beginning
+    topic: work and motivation
+    angle: Reframe burnout-era withdrawal as a mis-aimed start rather than an end.
+    fingerprint: aimed as beginning burnout end era mis motivation quiet quitting
+      rather reframe start than vs withdrawal work
+    contentMode: question
+    voiceMode: sharp
+    altText: Editorial poster on warm paper with taped highlight of a bold headline
+      questioning whether quiet quitting is actually a quiet beginning, with
+      short supporting text.
+    single:
+      headline: What if "quiet quitting" is just [[a quiet beginning]]—but pointed at
+        the wrong thing?
+      body: >-
+        You didn’t stop caring; you stopped funding a machine that spends your
+        care badly.
+
+
+        The energy didn’t die. It defected.
+
+
+        If that’s true, the question isn’t “How do I re‑engage?”
+
+
+        It’s: “What deserves my best attention enough to make leaving feel
+        expensive?”
+      supportLine: Indifference is often misallocated devotion.
+      footer: Name the thing you’d regret not building.
+    caption:
+      hook: Maybe withdrawal isn’t apathy; it’s precision trying to be born.
+      body: Calling it quitting flatters the system you left. Sometimes you’re not
+        done—you’re done subsidizing poor exchange. That’s a beginning in need
+        of a target. If the cost of staying is your best hours, price them like
+        they matter.
+      callToComment: If you stopped over-giving somewhere, what now deserves the
+        energy you took back—and why that, not a safer proxy?
+      hashtags:
+        - "#work"
+        - "#attention"
+        - "#burnout"
+        - "#motivation"
+        - "#creativity"
+    publishAttempts: 0
+    status: ready
