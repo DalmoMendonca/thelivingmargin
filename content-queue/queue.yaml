@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T17:56:23.347Z
+updatedAt: 2026-04-25T18:05:27.280Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -242,8 +242,11 @@ items:
         - "#mindfulness"
         - "#criticalthinking"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: Seeded from manual idea idea-002
+    renderDir: docs/assets/posts/20260425-peace-as-a-disguise
+    renderedFiles:
+      - docs/assets/posts/20260425-peace-as-a-disguise/post.png
   - id: 2026-04-25-the-cost-of-being-easy
     createdAt: 2026-04-25T17:24:38.015Z
     source: ai
@@ -1027,5 +1030,96 @@ items:
         - "#writingcraft"
         - "#learning"
         - "#epistemology"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-borrowed-difficulty
+    createdAt: 2026-04-25T18:05:19.115Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Borrowed Difficulty
+    topic: effort signaling vs. real difficulty
+    angle: We confuse the feeling of difficulty with proof of meaning; borrowed
+      difficulty (jargon, complexity) flatters us while real difficulty exposes
+      us.
+    fingerprint: borrowed complexity confuse difficulty effort exposes feeling
+      flatters jargon meaning proof real signaling us vs while
+    voiceMode: contrarian
+    quoteAttribution: ""
+    altText: A single editorial-style slide with the headline 'Borrowed Difficulty
+      Isn’t Meaning' in a warm serif font on parchment tones, with a short body
+      text below and a minimal footer line.
+    single:
+      headline: Borrowed Difficulty Isn’t Meaning
+      body: "If it only feels hard because the language is heavy, the tools are fancy,
+        or the room is impressed—you’re lifting someone else’s weight. Real
+        difficulty is specific: a tradeoff you can name, a risk you accept, a
+        result you can be wrong about."
+      supportLine: Complexity can be a costume. Stakes can’t.
+      footer: "Ask: where does this break, and what will it cost me if it does?"
+    caption:
+      hook: Not all difficulty proves depth.
+      body: We love the ache of complexity because it flatters us. But difficulty that
+        can’t be located—in a decision, a dollar, a deadline, a downside—is just
+        theater. If you can’t point to the stake, you’re not struggling; you’re
+        posing. Put friction where it can fail you, not where it can hide you.
+      callToComment: Where have you mistaken borrowed difficulty for the real thing?
+      hashtags:
+        - "#criticalthinking"
+        - "#intellectualhonesty"
+        - "#creativework"
+        - "#decisionmaking"
+        - "#contrarian"
+    publishAttempts: 0
+    status: ready
+  - id: 2026-04-25-originality-is-a-rounding-error
+    createdAt: 2026-04-25T18:05:25.969Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    title: Originality Is A Rounding Error
+    topic: originality vs recombination
+    angle: Most so-called originality is careful recombination under a constraint;
+      the lie is pretending it arrived untouched.
+    fingerprint: arrived called careful constraint error lie most originality
+      pretending recombination rounding so under untouched vs
+    voiceMode: contrarian
+    quoteAttribution: ""
+    altText: Warm editorial poster with a concise statement about originality being
+      recombination, set in literary type on parchment tones.
+    single:
+      headline: Originality is a rounding error.
+      body: >-
+        What you call “new” is usually two old ideas forced to share a small
+        room.
+
+
+        The work isn’t purity—it’s selection under pressure.
+
+
+        If it survives the constraint, we call it yours.
+      supportLine: Stop hunting for untouched snow; change the weather.
+      footer: "Test: name the sources and the constraint. If you can’t, it isn’t
+        ready."
+    caption:
+      hook: Original rarely means untouched—it means edited by a real constraint.
+      body: "We mythologize purity and ignore the craft: selection, deletion, and
+        pressure. Most ‘novel’ work is recombination that had to earn its shape
+        in a tight corner. If you can’t name the sources and the rule that cut
+        them down, you’re cosplaying invention. Constraint is the coauthor;
+        honesty is the signature."
+      callToComment: What’s the constraint that actually shaped your last “original”
+        piece—and can you name the two sources you stole from?
+      hashtags:
+        - "#originality"
+        - "#creativity"
+        - "#constraints"
+        - "#writing"
+        - "#design"
+        - "#ideas"
     publishAttempts: 0
     status: ready

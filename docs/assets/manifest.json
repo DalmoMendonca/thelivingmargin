@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T17:56:23.358Z",
+  "updatedAt": "2026-04-25T18:05:27.303Z",
   "items": [
     {
       "id": "sample-a-lot-of-people-call-confusion",
@@ -51,6 +51,17 @@
         "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-03.png",
         "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-04.png",
         "assets/posts/20260425-taste-is-the-edit-not-the-dessert/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-peace-as-a-disguise",
+      "title": "Peace As a Disguise",
+      "kind": "single",
+      "topic": "Avoidance disguised as peace",
+      "angle": "Suggest that some “calm” is less wisdom than a well-tailored exit from discomfort.",
+      "createdAt": "2026-04-25T17:24:34.130Z",
+      "renderedFiles": [
+        "assets/posts/20260425-peace-as-a-disguise/post.png"
       ]
     },
     {
