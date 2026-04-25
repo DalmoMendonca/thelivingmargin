@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T21:44:31.195Z
+updatedAt: 2026-04-25T21:47:57.287Z
 items:
   - id: sample-a-lot-of-people-call-confusion
     createdAt: 2026-04-25T17:21:10.127Z
@@ -147,7 +147,6 @@ items:
     fingerprint: being belongs decides dessert edit happened information informed
       keep matters more not repeating taste tells than what why youll
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: Five-slide carousel arguing that taste is the quality-control system
       for living and thinking, not a decorative preference.
     carousel:
@@ -181,10 +180,10 @@ items:
       callToComment: "Where do you think taste comes from in your life: exposure,
         discipline, or taste for discomfort?"
       hashtags:
-        - "#literaryThinking"
-        - "#tasteMatters"
-        - "#lifelongLearning"
-        - "#editorialMindset"
+        - "#literarythinking"
+        - "#tastematters"
+        - "#lifelonglearning"
+        - "#editorialmindset"
         - "#curation"
     publishAttempts: 0
     status: rendered
@@ -210,7 +209,6 @@ items:
     fingerprint: as avoidance calm discomfort disguise disguised exit from less
       peace some suggest tailored than well wisdom
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: Editorial quote card warning that peace can sometimes be avoidance
       dressed up as wisdom.
     single:
@@ -263,7 +261,6 @@ items:
     fingerprint: as attention before begin being call can cost decision design easy
       friction just often people problem product remove simplicity thought what
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: "Editorial quote-style graphic reading: “If something is easy to
       consume, ask what it’s protecting you from.” with warm paper textures and
       a fine rule line."
@@ -292,11 +289,11 @@ items:
       callToComment: What’s one “easy” idea you believed for years because it never
         asked you to think?
       hashtags:
-        - literarythought
-        - attention
-        - criticalthinking
-        - writing
-        - intellectualcuriosity
+        - "#literarythought"
+        - "#attention"
+        - "#criticalthinking"
+        - "#writing"
+        - "#intellectualcuriosity"
     publishAttempts: 0
     status: ready
   - id: 2026-04-25-the-myth-of-being-ready
@@ -314,7 +311,6 @@ items:
     fingerprint: action alibi as being but failure from im learning living myth not
       other protects ready social sometimes thought times treat unfinished
     voiceMode: contrarian
-    quoteAttribution: optional source name or null
     altText: A warm editorial carousel about how “not ready” can be a refusal to
       tolerate unfinished learning and the first, imperfect attempts.
     carousel:
@@ -339,7 +335,7 @@ items:
         body: Not “ready.” Just answerable. One page. One call. One try—then revise by
           evidence, not vibes.
     caption:
-      hook: "Morning prompt: when you say “I’m not ready,” what are you protecting?"
+      hook: When you say “I’m not ready,” what are you protecting?
       body: We call it wisdom, but sometimes it’s choreography for staying
         comfortable. If your readiness criteria never shrink, you’re not waiting
         for clarity—you’re outsourcing courage. Try making the next step small
@@ -347,12 +343,12 @@ items:
       callToComment: Where have you been using “not ready” as cover—study, speaking,
         starting, or staying?
       hashtags:
-        - lifelonglearning
-        - thinkinghabits
-        - editorialthoughts
-        - personalpractice
-        - intellectualhonesty
-        - creativeprocess
+        - "#lifelonglearning"
+        - "#thinkinghabits"
+        - "#editorialthoughts"
+        - "#personalpractice"
+        - "#intellectualhonesty"
+        - "#creativeprocess"
     publishAttempts: 0
     status: rendered
     renderDir: docs/assets/posts/20260425-the-myth-of-being-ready
@@ -376,7 +372,6 @@ items:
     fingerprint: as call can comfort delay draft function having high how imperfect
       just not postponement produce sometimes standards strategy what
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: Editorial quote-style graphic with the headline “Your standards might
       be delay,” followed by a short paragraph about judging yourself before
       you’ve made anything.
@@ -423,7 +418,6 @@ items:
     fingerprint: about as attention care choosing cost debts do intentions keep mind
       more obsession returning shape taste than they things treat unpaid what
     voiceMode: sharp
-    quoteAttribution: "null"
     altText: "A warm, editorial Instagram graphic with the headline: “The things you
       return to are the tuition you keep paying.” and supporting text about
       attention and taste."
@@ -474,7 +468,6 @@ items:
       genuine getting how information into learning mistake most people proof
       rework something tell thinking whether
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: 'Editorial quote-style post reading: "Learning isn’t gathering. It’s
       taking what you absorbed and submitting it to change."'
     single:
@@ -519,7 +512,6 @@ items:
       friction has its lie mini not shape soft tactic thinking thought virtue
       writing
     voiceMode: sharp
-    quoteAttribution: "null"
     altText: Five-slide editorial carousel about how people use the demand for
       clarity to avoid messy thinking and early drafts.
     carousel:
@@ -606,11 +598,11 @@ items:
       callToComment: Where do you notice your attention being negotiated, and what
         would change if you treated it like allegiance instead of habit?
       hashtags:
-        - lifelonglearning
-        - attention
-        - editorialwriting
-        - criticalthinking
-        - taste
+        - "#lifelonglearning"
+        - "#attention"
+        - "#editorialwriting"
+        - "#criticalthinking"
+        - "#taste"
     publishAttempts: 0
     status: ready
   - id: 2026-04-25-questions-aren-t-action
@@ -628,7 +620,6 @@ items:
       intellectual its learning people questions real really reflection
       rehearsal some starts thinking vs when wrong
     voiceMode: sharp
-    quoteAttribution: ""
     altText: "A warm editorial graphic with the headline: “Thinking isn’t the hard
       part—being wrong is.” and supporting text about rehearsing instead of
       doing."
@@ -681,7 +672,6 @@ items:
       intellectual intelligent keep know lose make more most ones people
       performative precise testable theyre vs who willing
     voiceMode: sharp
-    quoteAttribution: "null"
     altText: "A warm editorial quote card with the line: “Being certain is easy.
       Being specific is costly.”"
     single:
@@ -690,9 +680,9 @@ items:
         never risk contradiction, you’ve made a career out of being
         unaccountable.
       supportLine: A good mind doesn’t just hold beliefs; it survives contact with reality.
-      footer: "Midday reminder: trade comfort for testable thinking."
+      footer: Trade comfort for testable thinking.
     caption:
-      hook: "Quick litmus test: can your view be wrong in a particular way?"
+      hook: Can your view be wrong in a particular way?
       body: Many of us talk like we’re pursuing truth, but we’re actually protecting
         image—keeping everything broad enough to survive any outcome.
         Specificity isn’t pedantry; it’s exposure. The uncomfortable part of
@@ -722,7 +712,6 @@ items:
       name only otherwise produces pursuits real taste test vs when wisdom
       without
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: "Editorial-style quote graphic: “A hobby is only a teacher when it
       refuses to be comfortable. Otherwise it’s just aesthetic.”"
     single:
@@ -736,7 +725,7 @@ items:
         precisely?
       supportLine: If you can’t name the obstacle, you didn’t learn it; you decorated
         around it.
-      footer: Evening practice, not weekend vibes.
+      footer: Not weekend vibes.
     caption:
       hook: Most “self-development” is just better lighting around the same avoidance.
       body: >-
@@ -771,12 +760,10 @@ items:
     fingerprint: answer by constraint curiosity deadline forcing isnt its learning
       let more proven public reading risk teacher under verdict when wrong
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: Carousel slides arguing that real learning happens when you write your
       best ugly answer on a timer and then revise it.
     carousel:
-      - kicker: Contrarian premise
-        headline: Motivation is not the missing ingredient.
+      - headline: Motivation is not the missing ingredient.
         body: If you keep “feeling curious” without producing a draft, you’re not
           learning—you’re taste-testing possibilities.
       - kicker: What changes when you constrain it
@@ -832,7 +819,6 @@ items:
       gracefully how idea isnt masquerade more packaged stop style survives
       truth whether
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: "Editorial quote-style design with text: “A beautiful argument can be a
       beautiful mistake. Judge by what it commits you to—not by how it sounds.”"
     single:
@@ -875,7 +861,6 @@ items:
       intellectual its just like not preference proof taste test vs wearing
       wisdom without
     voiceMode: sharp
-    quoteAttribution: "null"
     altText: "Editorial quote card: “Aesthetic taste isn’t evidence. Evidence is
       what still holds after you try to break your own idea.”"
     single:
@@ -906,10 +891,10 @@ items:
       callToComment: What’s one “smart-sounding” belief you realized was really just
         taste—until you tried to test it?
       hashtags:
-        - criticalthinking
-        - learninghowtolearn
-        - writingcraft
-        - intellectualhonesty
+        - "#criticalthinking"
+        - "#learninghowtolearn"
+        - "#writingcraft"
+        - "#intellectualhonesty"
     publishAttempts: 0
     status: ready
   - id: 2026-04-25-the-privacy-of-thinking
@@ -926,7 +911,6 @@ items:
     fingerprint: as cant conclusion drafts evidence expression if its knowledge lab
       like not notes privacy produced show thinking treat writing yet
     voiceMode: sharp
-    quoteAttribution: "null"
     altText: Warm editorial Instagram slide with the headline 'Your best thoughts
       are not the ones you can explain—only the ones you can revise.'
     single:
@@ -973,7 +957,6 @@ items:
     fingerprint: actually as can clue complaint critique desire disguised know may
       not reveal secretly strongest test treat want what why
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: "Editorial single post with a warm, literary layout reading: “Your
       loudest complaint is often a private wish in public clothing.”"
     single:
@@ -1015,7 +998,6 @@ items:
       harder how intelligence most over people sentences signal smaller so sound
       they truth want without work
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: "Warm editorial Instagram graphic with the headline: “The smartest
       sentence you can write is conditional.” Body text explaining that real
       thinking names what would change the conclusion."
@@ -1063,7 +1045,6 @@ items:
     fingerprint: borrowed complexity confuse difficulty effort exposes feeling
       flatters jargon meaning proof real signaling us vs while
     voiceMode: contrarian
-    quoteAttribution: ""
     altText: A single editorial-style slide with the headline 'Borrowed Difficulty
       Isn’t Meaning' in a warm serif font on parchment tones, with a short body
       text below and a minimal footer line.
@@ -1104,7 +1085,6 @@ items:
     fingerprint: arrived called careful constraint error lie most originality
       pretending recombination rounding so under untouched vs
     voiceMode: contrarian
-    quoteAttribution: ""
     altText: Warm editorial poster with a concise statement about originality being
       recombination, set in literary type on parchment tones.
     single:
@@ -1153,7 +1133,6 @@ items:
     fingerprint: as building but collecting confuse context core facts from habit
       knowing practiced restoring skill those torn understanding were
     voiceMode: contrarian
-    quoteAttribution: ""
     altText: "An editorial-style typographic poster reading: Context Is a Skill.
       Subhead explains that facts without context mislead; understanding is the
       art of restoring what was removed."
@@ -1200,7 +1179,6 @@ items:
     fingerprint: appears away but chase falls learning most move noise novelty
       people practice real repeat repetition research same signal until vs when
     voiceMode: contrarian
-    quoteAttribution: "null"
     altText: Warm editorial typographic poster with a sharp headline reading
       'Repetition Is Research' on textured parchment with subtle ink accents.
     single:

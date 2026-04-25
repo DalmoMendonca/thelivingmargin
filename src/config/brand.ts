@@ -94,13 +94,31 @@ export const palettes = {
 } as const;
 
 export const brand = {
-  name: "Thoughtful Contrarian Feed",
+  name: "The Living Margin",
   visualDirection:
-    "Warm, editorial, humane, literary, slightly mystical. It should feel made by a sharp human with taste, not a generic AI quote account.",
+    "Warm, editorial, humane, and literary. It should feel authored, restrained, and exact, not generic, self-conscious, or theatrically provocative.",
   audience:
     "Curious lifelong learners first, then high-agency intellectuals, then mystic-aesthetic quote lovers.",
   tone:
-    "Mostly contrarian-but-fair, sometimes reflective, occasionally sharp. Never corny, preachy, or guruish.",
+    "Direct, observant, and occasionally contrarian. Never corny, preachy, therapeutic, guruish, or obviously engagement-seeking.",
+  editorialRules: [
+    "Write like one sharp human making a real claim, not like a content system performing a niche.",
+    "Let the image carry the strongest sentence. Let the caption add context, tension, or consequence instead of repeating the graphic.",
+    "Prefer one clean insight to a stack of dramatic lines.",
+    "Questions should invite recognition or disagreement, not announce that comments are desired.",
+    "Original writing is the default. Use quotations sparingly and only with certain attribution.",
+    "Cut self-description. Never narrate the tone, strategy, posting slot, or audience inside the post."
+  ],
+  forbiddenPhrases: [
+    "thoughtful contrarian feed",
+    "comment bait, but honest",
+    "uncomfortable, but useful",
+    "comment if this is too harsh",
+    "argue with this in the comments",
+    "morning prompt",
+    "midday reminder",
+    "evening practice"
+  ],
   postMix: {
     single: 0.55,
     carousel: 0.45

@@ -8,6 +8,38 @@ const canvas = {
   height: 1350
 };
 
+const topicLabel = (value: string, maxLength = 34) => {
+  const cleaned = value.replace(/\s+/g, " ").trim();
+  if (cleaned.length <= maxLength) {
+    return cleaned;
+  }
+
+  return `${cleaned.slice(0, maxLength - 3).trimEnd()}...`;
+};
+
+const graphicMetaPattern =
+  /comment bait|thoughtful contrarian|uncomfortable, but useful|argue with this|comment if|save this|^(morning|midday|evening)\s+(prompt|reminder|practice)/i;
+const graphicEngagementPattern = /^(comment|save|share|follow|tag)\b/i;
+
+const isGraphicSafeText = (value?: string) =>
+  Boolean(
+    value &&
+      !graphicMetaPattern.test(value.trim()) &&
+      !graphicEngagementPattern.test(value.trim())
+  );
+
+const graphicFooter = (value?: string, fallback?: string) =>
+  isGraphicSafeText(value) ? value : fallback;
+
+const graphicKicker = (value: string | undefined, fallback: string) => {
+  const trimmed = value?.trim();
+  if (!trimmed || /^slide\s+\d+/i.test(trimmed) || !isGraphicSafeText(trimmed)) {
+    return fallback;
+  }
+
+  return trimmed;
+};
+
 const shell = (paletteName: string, children: ReactElement) => {
   const palette = resolvePalette(paletteName);
 
@@ -75,7 +107,7 @@ const topLabel = (paletteName: string, slotLabel?: string) => {
         left: 80,
         right: 80,
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: slotLabel ? "space-between" : "flex-start",
         alignItems: "center",
         fontFamily: "Space Grotesk",
         fontWeight: 500,
@@ -86,7 +118,7 @@ const topLabel = (paletteName: string, slotLabel?: string) => {
       }}
     >
       <div>{brand.name}</div>
-      {slotLabel ? <div>{slotLabel}</div> : <div>Comment Bait, But Honest</div>}
+      {slotLabel ? <div>{slotLabel}</div> : null}
     </div>
   );
 };
@@ -256,7 +288,7 @@ const singleEditorial = (item: QueueItem) => {
               color: palette.accent
             }}
           >
-            Uncomfortable, But Useful
+            {topicLabel(item.topic)}
           </div>
           <div
             style={{
@@ -302,25 +334,27 @@ const singleEditorial = (item: QueueItem) => {
         >
           {content.supportLine ?? item.angle}
         </div>
-        <div
-          style={{
-            display: "flex",
-            borderWidth: 1,
-            borderStyle: "solid",
-            borderColor: palette.secondary,
-            paddingTop: 14,
-            paddingBottom: 14,
-            paddingLeft: 18,
-            paddingRight: 18,
-            fontFamily: "Space Grotesk",
-            fontSize: 22,
-            textTransform: "uppercase",
-            color: palette.accent,
-            letterSpacing: 2
-          }}
-        >
-          {content.footer ?? "Argue With This In The Comments"}
-        </div>
+        {graphicFooter(content.footer) ? (
+          <div
+            style={{
+              display: "flex",
+              borderWidth: 1,
+              borderStyle: "solid",
+              borderColor: palette.secondary,
+              paddingTop: 14,
+              paddingBottom: 14,
+              paddingLeft: 18,
+              paddingRight: 18,
+              fontFamily: "Space Grotesk",
+              fontSize: 22,
+              textTransform: "uppercase",
+              color: palette.accent,
+              letterSpacing: 2
+            }}
+          >
+            {graphicFooter(content.footer)}
+          </div>
+        ) : null}
       </div>
     </div>
   );
@@ -364,7 +398,7 @@ const singleMargin = (item: QueueItem) => {
             color: palette.accent
           }}
         >
-          Margin Notes
+          {brand.name}
         </div>
         <div
           style={{
@@ -376,7 +410,7 @@ const singleMargin = (item: QueueItem) => {
             color: palette.text
           }}
         >
-          {content.footer ?? "Good feeds reward agreement. Good minds survive disagreement."}
+          {content.footer ?? item.angle}
         </div>
       </div>
       <div
@@ -470,7 +504,7 @@ const singleSignal = (item: QueueItem) => {
             lineHeight: 1.1
           }}
         >
-          Comment if this is too harsh
+          {topicLabel(item.topic, 24)}
         </div>
         <div
           style={{
@@ -583,7 +617,7 @@ const carouselSlide = (
             color: palette.accent
           }}
         >
-          {slide.kicker ?? item.topic}
+          {graphicKicker(slide.kicker, topicLabel(item.topic))}
         </div>
         <div
           style={{
@@ -624,7 +658,7 @@ const carouselSlide = (
             maxWidth: 610
           }}
         >
-          {slide.footer ?? item.angle}
+          {graphicFooter(slide.footer, item.angle)}
         </div>
         <div
           style={{

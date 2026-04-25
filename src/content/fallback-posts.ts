@@ -6,7 +6,7 @@ const baseCaption = (body: string): QueueItem["caption"] => ({
   hook: body,
   body:
     "The internet rewards certainty, but the mind grows through friction. Keep the part that stings. Drop the part that performs.",
-  callToComment: "What part do you agree with, and what part do you want to argue with?",
+  callToComment: "What part of this feels true to you, and where do you disagree?",
   hashtags: [
     "#thoughtprovoking",
     "#selfinquiry",
@@ -39,7 +39,7 @@ export const sampleQueueItems = (): QueueItem[] => {
         headline: "A lot of people call it confusion",
         body: "when their borrowed certainty starts to crack.",
         supportLine: "Thinking for yourself is rarely clean at the beginning.",
-        footer: "Save this for the next time doubt feels like failure."
+        footer: "Remember this the next time doubt feels like failure."
       },
       caption: baseCaption(
         "A lot of people call it confusion when their borrowed certainty starts to crack."
@@ -91,7 +91,7 @@ export const sampleQueueItems = (): QueueItem[] => {
           kicker: "Slide 5",
           headline: "What actually matters?",
           body: "Not how many ideas you can repeat. Which ones reshaped your life?",
-          footer: "Comment with one book that changed your standards."
+          footer: "One book changed your standards. Which one?"
         }
       ],
       caption: {

@@ -7,6 +7,7 @@ import type {
   QueueFile,
   QueueItem
 } from "../types.js";
+import { sanitizeQueueItem } from "../util/post.js";
 import { readJsonFile, readYamlFile, writeJsonFile, writeYamlFile } from "../util/file.js";
 import { nowIso } from "../util/time.js";
 
@@ -41,12 +42,19 @@ async function safeReadYaml<T>(targetPath: string, fallback: () => T): Promise<T
   }
 }
 
-export const loadQueue = () => safeReadYaml(files.queue, defaultQueue);
+export const loadQueue = async () => {
+  const queue = await safeReadYaml(files.queue, defaultQueue);
+  return {
+    ...queue,
+    items: queue.items.map(sanitizeQueueItem)
+  };
+};
 export const loadPublished = () => safeReadYaml(files.publishedLog, defaultPublished);
 export const loadIdeas = () => safeReadYaml(files.manualIdeas, defaultIdeas);
 
 export const saveQueue = async (value: QueueFile) => {
   value.updatedAt = nowIso();
+  value.items = value.items.map(sanitizeQueueItem);
   await writeYamlFile(files.queue, value);
 };
 

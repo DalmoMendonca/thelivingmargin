@@ -4,6 +4,12 @@ import { z } from "zod";
 import { appEnv, brand, hasOpenAi, slotOrder } from "../config/brand.js";
 import type { ManualIdea, PublishedLogFile, QueueFile, QueueItem, SlotName } from "../types.js";
 import { logStep, logWarn } from "../util/log.js";
+import {
+  normalizeHashtags,
+  normalizeQuoteAttribution,
+  sanitizeQueueItem,
+  stripMetaLead
+} from "../util/post.js";
 import { makeFingerprint, slugify, trimParagraphs } from "../util/text.js";
 import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
@@ -34,7 +40,11 @@ const responseSchema = z.object({
   title: z.string(),
   topic: z.string(),
   angle: z.string(),
-  quoteAttribution: z.string().nullable().optional(),
+  quoteAttribution: z.preprocess(
+    (value) =>
+      typeof value === "string" ? normalizeQuoteAttribution(value) ?? null : value,
+    z.string().nullable().optional()
+  ),
   altText: z.string(),
   single: z
     .object({
@@ -63,7 +73,7 @@ const buildQueueItem = (
   const createdAt = nowIso();
   const id = `${createdAt.slice(0, 10)}-${slugify(title)}`;
 
-  return {
+  return sanitizeQueueItem({
     id,
     createdAt,
     source: manualIdea ? "manual" : "ai",
@@ -84,30 +94,32 @@ const buildQueueItem = (
             headline: trimParagraphs(parsed.single.headline),
             body: trimParagraphs(parsed.single.body),
             supportLine: parsed.single.supportLine
-              ? trimParagraphs(parsed.single.supportLine)
+              ? trimParagraphs(stripMetaLead(parsed.single.supportLine))
               : undefined,
-            footer: parsed.single.footer ? trimParagraphs(parsed.single.footer) : undefined
+            footer: parsed.single.footer
+              ? trimParagraphs(stripMetaLead(parsed.single.footer))
+              : undefined
           }
         : undefined,
     carousel:
       parsed.kind === "carousel" && parsed.carousel
         ? parsed.carousel.map((slide) => ({
-            kicker: slide.kicker ? trimParagraphs(slide.kicker) : undefined,
+            kicker: slide.kicker ? trimParagraphs(stripMetaLead(slide.kicker)) : undefined,
             headline: trimParagraphs(slide.headline),
             body: trimParagraphs(slide.body),
-            footer: slide.footer ? trimParagraphs(slide.footer) : undefined
+            footer: slide.footer ? trimParagraphs(stripMetaLead(slide.footer)) : undefined
           }))
         : undefined,
     caption: {
-      hook: trimParagraphs(parsed.caption.hook),
-      body: trimParagraphs(parsed.caption.body),
-      callToComment: trimParagraphs(parsed.caption.callToComment),
-      hashtags: parsed.caption.hashtags.map((tag) => tag.trim())
+      hook: trimParagraphs(stripMetaLead(parsed.caption.hook)),
+      body: trimParagraphs(stripMetaLead(parsed.caption.body)),
+      callToComment: trimParagraphs(stripMetaLead(parsed.caption.callToComment)),
+      hashtags: normalizeHashtags(parsed.caption.hashtags)
     },
     publishAttempts: 0,
     status: "ready",
     notes: manualIdea ? `Seeded from manual idea ${manualIdea.id}` : undefined
-  };
+  });
 };
 
 const reasoningEffortForModel = (model: string) => {

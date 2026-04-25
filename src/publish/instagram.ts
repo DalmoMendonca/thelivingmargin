@@ -1,5 +1,6 @@
 import { appEnv } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
+import { normalizeQuoteAttribution } from "../util/post.js";
 import { assertOk } from "../util/http.js";
 import { logStep } from "../util/log.js";
 import { publicUrlsForItem } from "./assets.js";
@@ -68,12 +69,16 @@ const publishContainer = async (containerId: string) => {
 };
 
 const buildCaption = (item: QueueItem) => {
-  const body = [item.caption.hook, item.caption.body, item.caption.callToComment].join("\n\n");
+  const body = [item.caption.hook, item.caption.body, item.caption.callToComment]
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .join("\n\n");
   const hashLine = item.caption.hashtags.join(" ");
-  const quoteLine = item.quoteAttribution
-    ? `\n\nSource: ${item.quoteAttribution}`
-    : "";
-  return `${body}${quoteLine}\n\n${hashLine}`;
+  const source = normalizeQuoteAttribution(item.quoteAttribution);
+
+  return [body, source ? `Source: ${source}` : undefined, hashLine]
+    .filter(Boolean)
+    .join("\n\n");
 };
 
 export const publishToInstagram = async (item: QueueItem) => {
