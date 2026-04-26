@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T02:27:41.243Z",
+  "updatedAt": "2026-04-26T02:31:00.204Z",
   "items": [
     {
       "id": "2026-04-25-proof-of-your-priorities",
@@ -206,6 +206,17 @@
       "createdAt": "2026-04-25T23:48:22.815Z",
       "renderedFiles": [
         "assets/posts/20260426-quiet-quitting-vs-quiet-beginning/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-refusal-vs-failure",
+      "title": "Refusal vs Failure",
+      "kind": "single",
+      "topic": "avoidance disguised as standards",
+      "angle": "We mistake fear of being seen trying for standards; refusal looks tidy, failure looks alive.",
+      "createdAt": "2026-04-26T02:27:28.899Z",
+      "renderedFiles": [
+        "assets/posts/20260426-refusal-vs-failure/post.png"
       ]
     }
   ]

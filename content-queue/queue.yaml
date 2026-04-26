@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T02:27:41.219Z
+updatedAt: 2026-04-26T02:31:00.185Z
 items:
   - id: 2026-04-25-proof-of-your-priorities
     createdAt: 2026-04-25T22:35:52.681Z
@@ -1577,5 +1577,50 @@ items:
         - "#perfectionism"
         - "#process"
         - "#writinglife"
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426-refusal-vs-failure
+    renderedFiles:
+      - docs/assets/posts/20260426-refusal-vs-failure/post.png
+  - id: 2026-04-26-practice-vs-preference
+    createdAt: 2026-04-26T02:30:58.558Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Practice vs Preference
+    topic: effort, identity, and standards
+    angle: Claim that the thing you call your standard is just branding until you’re
+      willing to do it badly in public.
+    fingerprint: badly branding call claim do effort identity just practice
+      preference public standard standards thing until vs willing youre
+    contentMode: question
+    voiceMode: sharp
+    altText: A textured paper card with a bold, concise question and a short
+      follow-up line, set on warm paper with subtle grain and a highlight on a
+      key phrase.
+    single:
+      headline: Is it a standard—or a costume?
+      body: If you won’t do it [[badly and visibly]] for a while, it isn’t your
+        standard. It’s just the outfit you wear to avoid starting.
+      supportLine: Standards are earned by practice, not protected by talk.
+      footer: Pick one move you’ll do badly this week.
+    caption:
+      hook: Most “standards” are reputations we maintain to dodge early drafts.
+      body: The work only becomes yours when you’re willing to let it look wrong on
+        the way to right. That visibility is the toll; avoidance is just image
+        control with nicer words. If it matters, stake it in daylight and let it
+        wobble. If it can’t survive that, call it preference and move on.
+      callToComment: What’s one standard you claim that you haven’t allowed to be bad
+        in public yet—and why?
+      hashtags:
+        - "#writing"
+        - "#craft"
+        - "#practice"
+        - "#making"
+        - "#creativity"
+        - "#habits"
     publishAttempts: 0
     status: ready
