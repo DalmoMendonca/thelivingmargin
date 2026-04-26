@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T14:46:16.610Z
+updatedAt: 2026-04-26T14:55:35.357Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -143,3 +143,14 @@ entries:
     slot: evening
     instagramMediaId: "18075733736203097"
     title: Warmth and Presence
+  - id: 2026-04-26-before-the-crash
+    publishedAt: 2026-04-26T14:54:42.677Z
+    topic: rest and worthiness
+    angle: Rest is allowed before exhaustion turns you into a worse version of
+      yourself.
+    fingerprint: allowed before crash exhaustion into rest turns version worse
+      worthiness yourself
+    kind: single
+    slot: morning
+    instagramMediaId: "17857679097651353"
+    title: Before the Crash
