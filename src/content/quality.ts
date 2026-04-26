@@ -277,6 +277,23 @@ export const reviewQueueItem = async (item: QueueItem) => {
     };
   }
 
+  if (item.source === "manual") {
+    return {
+      approved: true,
+      review: {
+        approve: true,
+        overall: 9,
+        humanVoice: 9,
+        specificity: 8,
+        freshness: 8,
+        captionDelta: 8,
+        visualFit: 9,
+        reasons: lint.warnings,
+        revisionBrief: []
+      }
+    };
+  }
+
   if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
     return {
       approved: true,
