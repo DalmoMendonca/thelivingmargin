@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T16:41:09.321Z
+updatedAt: 2026-04-26T17:13:00.425Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -468,7 +468,8 @@ items:
         - "#domesticdetail"
         - "#morningreading"
     publishAttempts: 0
-    status: ready
+    status: blocked
+    lastError: "Pre-publish QC failed: Hashtag count must stay at 4 or fewer."
   - source: manual
     slotPreference: morning
     kind: single
@@ -507,11 +508,13 @@ items:
     fingerprint: bad because call change cleaner dating denial direction explanation
       favorite force hopes interest often one people sided them timing
       translation would
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260426052820-hope-s-favorite-translation
     renderedFiles:
       - docs/assets/posts/20260426052820-hope-s-favorite-translation/post.png
+    instagramMediaId: "18082139120108764"
+    publishedAt: 2026-04-26T17:13:00.425Z
   - source: manual
     title: Clarity Sounds Rude
     topic: work and communication
