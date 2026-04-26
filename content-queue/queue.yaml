@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T17:13:00.425Z
+updatedAt: 2026-04-26T18:10:29.245Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -262,7 +262,7 @@ items:
     fingerprint: busy busyness choice distance do intimacy language name not people
       soften sometimes they use want
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: midday
     kind: single
     templateFamily: broadside
@@ -295,6 +295,9 @@ items:
         - "#relationships"
         - "#attention"
         - "#modernlife"
+    renderDir: docs/assets/posts/2026-04-26-busy-language
+    renderedFiles:
+      - docs/assets/posts/2026-04-26-busy-language/post.png
   - id: 2026-04-26-future-tense-intimacy
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual

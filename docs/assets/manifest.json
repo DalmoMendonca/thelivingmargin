@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T17:13:00.444Z",
+  "updatedAt": "2026-04-26T18:10:29.275Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -58,6 +58,17 @@
       "createdAt": "2026-04-26T03:50:05.757Z",
       "renderedFiles": [
         "assets/posts/2026-04-26-tuesday-advice/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-busy-language",
+      "title": "Busy Language",
+      "kind": "single",
+      "topic": "intimacy and distance",
+      "angle": "People sometimes use the language of busyness to soften a choice they do not want to name.",
+      "createdAt": "2026-04-26T03:50:05.757Z",
+      "renderedFiles": [
+        "assets/posts/2026-04-26-busy-language/post.png"
       ]
     },
     {
