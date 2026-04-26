@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T03:50:35.814Z
+updatedAt: 2026-04-26T03:50:47.675Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -9,8 +9,8 @@ items:
     angle: A commitment can remain active long after the self who made it is gone.
     fingerprint: active after can commitment gone identity long made obligation old
       remain self who yeses
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     slotPreference: morning
     kind: single
     templateFamily: highlight
@@ -44,6 +44,8 @@ items:
     renderDir: docs/assets/posts/20260426-old-yeses
     renderedFiles:
       - docs/assets/posts/20260426-old-yeses/post.png
+    instagramMediaId: "17983540304820724"
+    publishedAt: 2026-04-26T03:50:47.675Z
   - id: 2026-04-26-clean-apology
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T02:31:11.282Z
+updatedAt: 2026-04-26T03:50:47.682Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -90,3 +90,13 @@ entries:
     slot: morning
     instagramMediaId: "18401454463145086"
     title: Refusal vs Failure
+  - id: 2026-04-26-old-yeses
+    publishedAt: 2026-04-26T03:50:47.675Z
+    topic: obligation and identity
+    angle: A commitment can remain active long after the self who made it is gone.
+    fingerprint: active after can commitment gone identity long made obligation old
+      remain self who yeses
+    kind: single
+    slot: morning
+    instagramMediaId: "17983540304820724"
+    title: Old Yeses
