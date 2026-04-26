@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T03:54:18.545Z
+updatedAt: 2026-04-26T04:52:47.909Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -122,3 +122,14 @@ entries:
     slot: evening
     instagramMediaId: "18209404774331097"
     title: Future Tense Intimacy
+  - id: 2026-04-26-clean-apology
+    publishedAt: 2026-04-26T04:52:47.899Z
+    topic: conflict and accountability
+    angle: A real apology is usually shorter than the defense that tries to keep
+      innocence intact.
+    fingerprint: accountability apology clean conflict defense innocence intact keep
+      real shorter than tries usually
+    kind: single
+    slot: morning
+    instagramMediaId: "18417905251132623"
+    title: Clean Apology
