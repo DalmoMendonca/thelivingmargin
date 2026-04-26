@@ -1,16 +1,7 @@
 import type { QueueFile, QueueItem, SlotName } from "../types.js";
 
-export const findNextReadyItem = (queue: QueueFile, slot: SlotName) => {
-  const preferred = queue.items.find(
-    (item) => item.status === "ready" && item.slotPreference === slot
-  );
-
-  if (preferred) {
-    return preferred;
-  }
-
-  return queue.items.find((item) => item.status === "ready");
-};
+export const findNextReadyItem = (queue: QueueFile, slot: SlotName) =>
+  queue.items.find((item) => item.status === "ready" && item.slotPreference === slot);
 
 export const replaceQueueItem = (queue: QueueFile, nextItem: QueueItem) => ({
   ...queue,

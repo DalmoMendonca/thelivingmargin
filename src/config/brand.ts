@@ -66,7 +66,10 @@ export const contentModes: ContentMode[] = [
   "quote",
   "encouragement",
   "observation",
-  "question"
+  "question",
+  "reframe",
+  "dialogue",
+  "list"
 ];
 
 export const surfaceStyles: SurfaceStyle[] = [
@@ -172,7 +175,7 @@ export const brand = {
     single: 0.6,
     carousel: 0.4
   },
-  queueTarget: 6,
+  queueTarget: 30,
   maxPublishAttempts: 3,
   topics: [
     "grief and repair",
@@ -210,7 +213,10 @@ export const brand = {
     "clean sourced quote plus commentary",
     "practical advice with one vivid phrase",
     "counterintuitive self-knowledge post",
-    "relatable recognition post"
+    "relatable recognition post",
+    "dialogue-driven slide",
+    "reframe post",
+    "short list carousel"
   ]
 };
 

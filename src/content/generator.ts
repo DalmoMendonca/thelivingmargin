@@ -2,7 +2,14 @@ import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 import { appEnv, brand, hasOpenAi, slotOrder } from "../config/brand.js";
-import type { ManualIdea, PublishedLogFile, QueueFile, QueueItem, SlotName } from "../types.js";
+import type {
+  ContentMode,
+  ManualIdea,
+  PublishedLogFile,
+  QueueFile,
+  QueueItem,
+  SlotName
+} from "../types.js";
 import { logStep, logWarn } from "../util/log.js";
 import {
   normalizeHashtags,
@@ -10,7 +17,11 @@ import {
   sanitizeQueueItem,
   stripMetaLead
 } from "../util/post.js";
-import { makeFingerprint, slugify, trimParagraphs } from "../util/text.js";
+import {
+  buildContentId,
+  makeFingerprint,
+  trimParagraphs
+} from "../util/text.js";
 import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
 import { buildPostPrompt, buildRevisionPrompt } from "./prompts.js";
@@ -41,7 +52,10 @@ const contentModeValues = [
   "quote",
   "encouragement",
   "observation",
-  "question"
+  "question",
+  "reframe",
+  "dialogue",
+  "list"
 ] as const;
 const surfaceStyleValues = [
   "paperWarm",
@@ -88,7 +102,7 @@ const responseSchema = z.object({
   caption: z.object({
     hook: z.string(),
     body: z.string(),
-    callToComment: z.string(),
+    callToComment: z.string().optional().nullable(),
     hashtags: z.array(z.string()).min(3).max(6)
   })
 });
@@ -101,7 +115,7 @@ const buildQueueItem = (
   const angle = trimParagraphs(parsed.angle);
   const topic = trimParagraphs(parsed.topic);
   const createdAt = nowIso();
-  const id = `${createdAt.slice(0, 10)}-${slugify(title)}`;
+  const id = buildContentId(createdAt, title);
 
   return sanitizeQueueItem({
     id,
@@ -145,7 +159,9 @@ const buildQueueItem = (
     caption: {
       hook: trimParagraphs(stripMetaLead(parsed.caption.hook)),
       body: trimParagraphs(stripMetaLead(parsed.caption.body)),
-      callToComment: trimParagraphs(stripMetaLead(parsed.caption.callToComment)),
+      callToComment: parsed.caption.callToComment
+        ? trimParagraphs(stripMetaLead(parsed.caption.callToComment))
+        : undefined,
       hashtags: normalizeHashtags(parsed.caption.hashtags)
     },
     publishAttempts: 0,
@@ -230,13 +246,17 @@ const generateDraft = async ({
   queue,
   published,
   manualIdea,
-  revisionNotes
+  revisionNotes,
+  forcedContentMode,
+  seedIdea
 }: {
   slot: SlotName;
   queue: QueueFile;
   published: PublishedLogFile;
   manualIdea?: ManualIdea;
   revisionNotes?: string[];
+  forcedContentMode?: ContentMode;
+  seedIdea?: string;
 }) => {
   if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
     throw new Error("OPENAI_API_KEY is missing.");
@@ -247,7 +267,9 @@ const generateDraft = async ({
     recentPublished: published,
     queue,
     manualIdea,
-    revisionNotes
+    revisionNotes,
+    forcedContentMode,
+    seedIdea
   });
 
   return parseDraftFromPrompt({ prompt, manualIdea });
@@ -257,12 +279,16 @@ export const generateWithOpenAi = async ({
   slot,
   queue,
   published,
-  manualIdea
+  manualIdea,
+  forcedContentMode,
+  seedIdea
 }: {
   slot: SlotName;
   queue: QueueFile;
   published: PublishedLogFile;
   manualIdea?: ManualIdea;
+  forcedContentMode?: ContentMode;
+  seedIdea?: string;
 }) => {
   let revisionNotes: string[] | undefined;
   let lastItem: QueueItem | undefined;
@@ -272,7 +298,9 @@ export const generateWithOpenAi = async ({
     slot,
     queue,
     published,
-    manualIdea
+    manualIdea,
+    forcedContentMode,
+    seedIdea
   });
   lastItem = firstDraft;
 
@@ -350,7 +378,9 @@ export const topUpQueue = async ({
         items: [...queue.items, ...generated]
       },
       published,
-      manualIdea
+      manualIdea,
+      forcedContentMode: undefined,
+      seedIdea: manualIdea?.idea
     });
 
     generated.push(item);

@@ -70,6 +70,7 @@ const publishContainer = async (containerId: string) => {
 
 const buildCaption = (item: QueueItem) => {
   const body = [item.caption.hook, item.caption.body, item.caption.callToComment]
+    .filter((part): part is string => Boolean(part))
     .map((part) => part.trim())
     .filter(Boolean)
     .join("\n\n");

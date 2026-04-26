@@ -29,6 +29,11 @@ export const slugify = (value: string) =>
     .replace(/^-+|-+$/g, "")
     .slice(0, 72);
 
+export const buildContentId = (createdAt: string, value: string) => {
+  const stamp = createdAt.replace(/[^0-9]/g, "").slice(0, 14);
+  return `${stamp}-${slugify(value)}`;
+};
+
 export const normalizeForFingerprint = (value: string) =>
   value
     .toLowerCase()

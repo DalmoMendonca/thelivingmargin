@@ -3,6 +3,7 @@ import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 import { appEnv, hasOpenAi } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
+import { contentModeProfiles } from "./mode-profiles.js";
 
 const metaPattern =
   /\b(thoughtful contrarian|comment bait|uncomfortable, but useful|morning prompt|midday reminder|evening practice)\b/i;
@@ -74,10 +75,14 @@ const stringValuesForItem = (item: QueueItem) => [
 
 const budgetForItem = (item: QueueItem) => {
   if (item.kind === "carousel") {
+    const narrativeMode =
+      (item.contentMode === "story" || item.contentMode === "dialogue") &&
+      (item.carousel?.length ?? 0) <= 3;
+
     return {
       kicker: 42,
-      headline: item.templateFamily === "broadside" ? 88 : 74,
-      body: item.templateFamily === "broadside" ? 250 : 220,
+      headline: item.templateFamily === "broadside" ? 88 : narrativeMode ? 78 : 74,
+      body: item.templateFamily === "broadside" ? (narrativeMode ? 290 : 250) : narrativeMode ? 245 : 220,
       footer: 84
     };
   }
@@ -103,13 +108,34 @@ export const lintQueueItem = (item: QueueItem) => {
   const errors: string[] = [];
   const warnings: string[] = [];
   const budgets = budgetForItem(item);
+  const profile = contentModeProfiles[item.contentMode];
 
   if (item.kind === "single" && !item.single) {
     errors.push("Single post is missing `single` content.");
   }
 
-  if (item.kind === "carousel" && (!item.carousel || item.carousel.length !== 5)) {
-    errors.push("Carousel post must contain exactly 5 slides.");
+  if (
+    item.kind === "carousel" &&
+    (!item.carousel || item.carousel.length < 3 || item.carousel.length > 5)
+  ) {
+    errors.push("Carousel post must contain between 3 and 5 slides.");
+  }
+
+  if (!profile.preferredKinds.includes(item.kind)) {
+    warnings.push(
+      `${item.contentMode} usually performs better as ${profile.preferredKinds.join(" or ")}.`
+    );
+  }
+
+  if (
+    item.kind === "carousel" &&
+    item.carousel &&
+    profile.preferredSlideCounts &&
+    !profile.preferredSlideCounts.includes(item.carousel.length)
+  ) {
+    warnings.push(
+      `${item.contentMode} usually performs better at ${profile.preferredSlideCounts.join(" or ")} slides.`
+    );
   }
 
   for (const value of stringValuesForItem(item)) {
@@ -237,6 +263,9 @@ const reviewPromptForItem = (item: QueueItem, warnings: string[]) =>
     "Reject anything that feels AI-generated, over-explained, generic, caption-redundant, or visually risky.",
     "A passing draft should sound like a sharp human wrote it in one sitting.",
     "Focus especially on: human voice, specificity, freshness, whether the caption adds a second move, and whether the amount of text fits the chosen visual format.",
+    `This draft's intended mode is ${item.contentMode} (${contentModeProfiles[item.contentMode].label}).`,
+    `Mode success: ${contentModeProfiles[item.contentMode].objective}`,
+    `Mode failure patterns: ${contentModeProfiles[item.contentMode].bannedMoves.join(" | ")}`,
     warnings.length > 0 ? `Lint warnings:\n- ${warnings.join("\n- ")}` : undefined,
     "Candidate JSON:",
     JSON.stringify(

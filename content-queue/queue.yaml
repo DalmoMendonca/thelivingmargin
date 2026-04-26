@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T05:04:59.907Z
+updatedAt: 2026-04-26T05:38:23.292Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -457,3 +457,497 @@ items:
         - "#morningreading"
     publishAttempts: 0
     status: ready
+  - source: manual
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Hope's Favorite Translation
+    topic: dating and denial
+    angle: People often call one-sided interest bad timing because the cleaner
+      explanation would force them to change direction.
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: Blue plaster editorial card about calling someone busy because not
+      interested would hurt more.
+    single:
+      headline: |-
+        You keep calling them busy
+        because [[not interested]]
+        would rearrange your hope.
+      body: Temporary language is how a lot of one-sided situations stay emotionally
+        open.
+      supportLine: Some confusion is borrowed optimism.
+    caption:
+      hook: A vague maybe can keep a door open longer than a clean no.
+      body: That is why people reread the politeness and ignore the pattern.
+        Uncertainty can feel gentler than truth while it is still collecting
+        time.
+      hashtags:
+        - "#dating"
+        - "#relationships"
+        - "#selfrespect"
+        - "#discernment"
+    notes: Showcase fallback
+    id: 20260426052820-hope-s-favorite-translation
+    createdAt: 2026-04-26T05:28:20.624Z
+    fingerprint: bad because call change cleaner dating denial direction explanation
+      favorite force hopes interest often one people sided them timing
+      translation would
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426052820-hope-s-favorite-translation
+    renderedFiles:
+      - docs/assets/posts/20260426052820-hope-s-favorite-translation/post.png
+  - source: manual
+    title: Clarity Sounds Rude
+    topic: work and communication
+    angle: In vague rooms, a specific sentence feels impolite because it creates
+      actual owners.
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: roseLedger
+    surfaceStyle: notebookCream
+    contentMode: advice
+    voiceMode: sharp
+    altText: Five-slide notebook carousel on why clarity feels rude in vague group
+      settings.
+    carousel:
+      - kicker: Meetings
+        headline: Clarity is why half the room goes quiet.
+        body: Vagueness lets everyone stay agreeable. Specifics create owners.
+        footer: That is why they feel rude.
+      - kicker: Try this
+        headline: Replace 'we should' with a name, a verb, and a date.
+        body: "\"Can you send the draft by Thursday?\" moves more life than \"let's keep
+          this moving.\""
+        footer: Mood is not progress.
+      - kicker: Notice
+        headline: A vague room protects reputation.
+        body: Nobody can fail a task nobody actually owns.
+        footer: Fog is political.
+      - kicker: Cost
+        headline: The meeting after the meeting is the price.
+        body: That is where people finally ask what was meant, who is doing it, and
+          whether anyone agreed.
+        footer: Say it once in the room.
+      - kicker: Question
+        headline: What sentence would make this concrete right now?
+        body: Ask that before the conversation ends and watch how fast the air changes.
+        footer: Clarity sounds rude until it saves time.
+    caption:
+      hook: A vague room can confuse politeness with progress.
+      body: If nobody leaves with a name, a decision, or a date, the conversation
+        mostly served mood management. Clarity feels sharp because it stops
+        people from borrowing each other's assumptions.
+      callToComment: What sentence cuts through fog fastest for you?
+      hashtags:
+        - "#work"
+        - "#communication"
+        - "#leadership"
+        - "#meetings"
+        - "#clarity"
+    id: 20260426052854-clarity-sounds-rude
+    createdAt: 2026-04-26T05:28:54.741Z
+    fingerprint: actual because clarity communication creates feels impolite owners
+      rooms rude sentence sounds specific vague work
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426052854-clarity-sounds-rude
+    renderedFiles:
+      - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-01.png
+      - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-02.png
+      - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-03.png
+      - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-04.png
+      - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-05.png
+  - source: manual
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Eleven Minutes
+    topic: care and urgency
+    angle: A small act of institutional mercy can matter for years when it prevents
+      a hard day from becoming a permanent regret.
+    contentMode: story
+    voiceMode: reflective
+    altText: Three-slide blue notebook story about a nurse helping a late visitor
+      see his mother after surgery.
+    carousel:
+      - kicker: Hospital
+        headline: He was ten minutes late for visiting hours.
+        body: Still in paint-stained work clothes, holding a charger and a paper cup.
+          'My mother had surgery this morning,' he said. 'She doesn't know where
+          I am.'
+        footer: The window had already closed.
+      - kicker: Desk
+        headline: The night nurse heard him from the desk.
+        body: She looked at the clock, looked at his hands, and said, 'Give me two
+          minutes.' She came back with a badge and walked him upstairs herself.
+        footer: Some care arrives as a small rule bending.
+      - kicker: After
+        headline: He sat with his mother for eleven minutes.
+        body: Long enough to plug in her phone, fix the blanket at her feet, and let her
+          see his face before the medication pulled her back under. He cried in
+          the elevator because someone refused to let eleven minutes become
+          zero.
+        footer: Mercy is often a small defiance.
+    caption:
+      hook: A lot of people remember the crisis. They never forget who made room
+        inside it.
+      body: Care does not always arrive as rescue. Sometimes it arrives as a person
+        who knows exactly which rule can bend without breaking what matters.
+      hashtags:
+        - "#story"
+        - "#kindness"
+        - "#care"
+        - "#writing"
+    notes: Showcase fallback
+    id: 20260426052908-eleven-minutes
+    createdAt: 2026-04-26T05:29:08.381Z
+    fingerprint: act becoming can care day eleven from hard institutional matter
+      mercy minutes permanent prevents regret small urgency when years
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426052908-eleven-minutes
+    renderedFiles:
+      - docs/assets/posts/20260426052908-eleven-minutes/slide-01.png
+      - docs/assets/posts/20260426052908-eleven-minutes/slide-02.png
+      - docs/assets/posts/20260426052908-eleven-minutes/slide-03.png
+  - source: manual
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Tuesday Is the Life
+    topic: attention and ordinary life
+    angle: A well-known line about days and lives becomes useful again when it is
+      aimed at ordinary repetition instead of abstract admiration.
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Annie Dillard
+    altText: Warm editorial card featuring a short Annie Dillard quote about days
+      and lives with a pointed subline about Tuesday.
+    single:
+      headline: |-
+        "How we spend our days is, of course,
+        how we spend our lives."
+      body: "- Annie Dillard"
+      supportLine: People quote this line and still treat Tuesday like a loophole.
+    caption:
+      hook: Admiration is easy. Tuesday is the real biography.
+      body: Most people agree with this quote in the abstract and then hand the
+        ordinary hours to drift, resentment, and convenience. The life is
+        usually hiding in the repeat, not the vow.
+      hashtags:
+        - "#quote"
+        - "#anniedillard"
+        - "#attention"
+        - "#habits"
+    notes: Showcase fallback
+    id: 20260426052942-tuesday-is-the-life
+    createdAt: 2026-04-26T05:29:42.691Z
+    fingerprint: about abstract admiration again aimed at attention becomes days
+      instead known life line lives ordinary repetition tuesday useful well when
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426052942-tuesday-is-the-life
+    renderedFiles:
+      - docs/assets/posts/20260426052942-tuesday-is-the-life/post.png
+  - source: manual
+    title: Before the Crash
+    topic: rest and worthiness
+    angle: Rest is allowed before exhaustion turns you into a worse version of
+      yourself.
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: roseLedger
+    surfaceStyle: notebookCream
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: Notebook-style card reminding people they can rest before they collapse.
+    single:
+      headline: You are allowed to rest before you become impossible to live with.
+      body: Exhaustion doesn't make you noble. It makes you less accurate, less kind,
+        and more likely to mistake burnout for truth.
+      supportLine: You do not need a collapse to justify a chair.
+      footer: Rest is cheapest before the repair bill.
+    caption:
+      hook: Waiting until you're wrecked is not discipline. It's expensive timing.
+      body: A lot of people only grant themselves rest once their body has made the
+        decision for them. Earlier mercy is usually smarter than dramatic
+        recovery.
+      callToComment: What sign tells you you've waited too long to pause?
+      hashtags:
+        - "#rest"
+        - "#selfrespect"
+        - "#burnout"
+        - "#habits"
+        - "#mentalclarity"
+    id: 20260426053014-before-the-crash
+    createdAt: 2026-04-26T05:30:14.087Z
+    fingerprint: allowed before crash exhaustion into rest turns version worse
+      worthiness yourself
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426053014-before-the-crash
+    renderedFiles:
+      - docs/assets/posts/20260426053014-before-the-crash/post.png
+  - source: manual
+    title: Busy Language
+    topic: intimacy and distance
+    angle: People sometimes use the language of busyness to soften a choice they do
+      not want to name.
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: vellumRose
+    contentMode: observation
+    voiceMode: reflective
+    altText: Broadside-style text card reflecting on how people use busy language to
+      soften distance.
+    single:
+      headline: At brunch, everyone said they were 'bad at texting.'
+      body: >-
+        Nobody sounded guilty. Just booked.
+
+
+        We have learned to describe neglect with the language of inconvenience.
+
+
+        Sometimes the problem is not modern life. Sometimes it's that we want
+        intimacy on a schedule that protects us from it.
+      supportLine: Busy can be true and still be a cover.
+      footer: Some absences are logistical. Some are chosen.
+    caption:
+      hook: The friendliest distance usually arrives with a reasonable explanation.
+      body: That is what makes it hard to name. Nobody is cruel enough to indict. The
+        relationship just starts living on intentions instead of contact.
+      callToComment: Where do you notice future plans replacing actual presence?
+      hashtags:
+        - "#friendship"
+        - "#relationships"
+        - "#attention"
+        - "#modernlife"
+    id: 20260426053050-busy-language
+    createdAt: 2026-04-26T05:30:50.664Z
+    fingerprint: busy busyness choice distance do intimacy language name not people
+      soften sometimes they use want
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426053050-busy-language
+    renderedFiles:
+      - docs/assets/posts/20260426053050-busy-language/post.png
+  - source: manual
+    title: Old Yeses
+    topic: obligation and identity
+    angle: A commitment can remain active long after the self who made it is gone.
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    contentMode: question
+    voiceMode: reflective
+    altText: Editorial wall card asking what obligations people still carry just
+      because they once said yes.
+    single:
+      headline: What are you still carrying just because you [[said yes once]]?
+      body: |-
+        A promise can outlive its reason.
+
+        Sometimes discipline is finishing.
+        Sometimes it's admitting the job has changed.
+      supportLine: Old yeses can become expensive furniture.
+      footer: Which obligation needs to be re-chosen?
+    caption:
+      hook: Not every unfinished thing deserves your loyalty.
+      body: Some obligations began as honesty and stayed as inertia. The useful
+        question is not whether you can endure them. It's whether they still
+        belong in the life you're actually building.
+      callToComment: What's one commitment you need to re-choose instead of just carrying?
+      hashtags:
+        - "#selfknowledge"
+        - "#decisionmaking"
+        - "#boundaries"
+        - "#writing"
+        - "#growth"
+    id: 20260426053123-old-yeses
+    createdAt: 2026-04-26T05:31:23.286Z
+    fingerprint: active after can commitment gone identity long made obligation old
+      remain self who yeses
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426053123-old-yeses
+    renderedFiles:
+      - docs/assets/posts/20260426053123-old-yeses/post.png
+  - source: manual
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: roseLedger
+    surfaceStyle: vellumRose
+    title: Planner-Shaped Resentment
+    topic: work and misdiagnosis
+    angle: What gets called procrastination is sometimes resentment toward a role or
+      obligation that was never honestly chosen.
+    contentMode: reframe
+    voiceMode: sharp
+    altText: Rose editorial card reframing procrastination as resentment with office
+      clothes on.
+    single:
+      headline: |-
+        Maybe it isn't procrastination.
+        Maybe it's [[resentment]]
+        with office clothes on.
+      body: If the task belongs to a version of you that never fully agreed, delay may
+        be information before it is disobedience.
+      supportLine: The label matters because the remedy changes.
+    caption:
+      hook: You cannot solve the right problem with the wrong diagnosis.
+      body: Sometimes the next move is discipline. Sometimes it is admitting you built
+        your week around an obligation your deeper self has been refusing in
+        private for months.
+      hashtags:
+        - "#work"
+        - "#reframe"
+        - "#selfknowledge"
+        - "#motivation"
+    notes: Showcase fallback
+    id: 20260426053155-planner-shaped-resentment
+    createdAt: 2026-04-26T05:31:55.707Z
+    fingerprint: called chosen gets honestly misdiagnosis never obligation planner
+      procrastination resentment role shaped sometimes toward was what work
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426053155-planner-shaped-resentment
+    renderedFiles:
+      - docs/assets/posts/20260426053155-planner-shaped-resentment/post.png
+  - source: manual
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: What I'll Try Means
+    topic: ambiguity and commitment
+    angle: A short exchange can expose the difference between warmth and commitment
+      when one person relies on ambiguity.
+    contentMode: dialogue
+    voiceMode: reflective
+    altText: Three-slide notebook carousel about how 'I'll try' can mean very
+      different things in a relationship.
+    carousel:
+      - kicker: Kitchen
+        headline: '"Are you still coming?"'
+        body: |-
+          'I said I'd try,' he said.
+
+          That was the sentence she finally heard correctly.
+        footer: Some ambiguity is policy.
+      - kicker: Translation
+        headline: "\"I'll try\" can mean two different things."
+        body: |-
+          One person hears hope.
+          The other person has already protected their evening.
+        footer: Warmth and commitment are not synonyms.
+      - kicker: After
+        headline: She stopped arguing with the wording.
+        body: From then on, she listened for dates, not tone. It hurt less than guessing
+          and ended sooner.
+        footer: Clarity can feel colder than fantasy.
+    caption:
+      hook: A lot of painful relationships are built on sentences nobody translates in
+        time.
+      body: Language can divide responsibility very neatly. One person gets to sound
+        kind. The other person carries the labor of interpretation.
+      hashtags:
+        - "#dialogue"
+        - "#relationships"
+        - "#communication"
+        - "#clarity"
+    notes: Showcase fallback
+    id: 20260426053233-what-i-ll-try-means
+    createdAt: 2026-04-26T05:32:33.251Z
+    fingerprint: ambiguity between can commitment difference exchange expose ill
+      means one person relies short try warmth what when
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426053233-what-i-ll-try-means
+    renderedFiles:
+      - docs/assets/posts/20260426053233-what-i-ll-try-means/slide-01.png
+      - docs/assets/posts/20260426053233-what-i-ll-try-means/slide-02.png
+      - docs/assets/posts/20260426053233-what-i-ll-try-means/slide-03.png
+  - source: manual
+    slotPreference: midday
+    kind: carousel
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Improvement as Camouflage
+    topic: self-improvement and avoidance
+    angle: Self-improvement language can hide from exposure, feedback, and real
+      attempts when it never risks embarrassment.
+    contentMode: list
+    voiceMode: sharp
+    altText: Five-slide blue carousel listing signs that self-improvement has become
+      image management instead of growth.
+    carousel:
+      - kicker: List
+        headline: 5 signs your self-improvement plan is protecting you from being seen.
+        body: Growth can be honest. It can also be the prettier cousin of avoidance.
+        footer: The difference is contact.
+      - kicker: Sign 1
+        headline: You keep preparing for a conversation you could already have.
+        body: Reading more about honesty can feel safer than saying one unpolished true
+          sentence out loud.
+        footer: Research is not always readiness.
+      - kicker: Sign 2
+        headline: You buy systems where feedback would be cheaper.
+        body: A new routine can look productive while it quietly replaces exposure with
+          equipment.
+        footer: Tools can become camouflage.
+      - kicker: Sign 3
+        headline: You call it standards when you mean insulation.
+        body: If the plan only counts once it can protect your image, the plan is
+          serving fear first.
+        footer: Perfection often has a bodyguard.
+      - kicker: Turn
+        headline: If improvement never risks embarrassment, it may be image management.
+        body: Real growth usually includes a visible draft, an awkward ask, or a day you
+          are seen mid-process.
+        footer: The proof is contact, not vocabulary.
+    caption:
+      hook: Some glow-ups are just better-lit hiding places.
+      body: Self-improvement becomes honest again the moment it touches a real
+        attempt, a real witness, or a real consequence. Until then, a lot of it
+        is beautifully organized delay.
+      hashtags:
+        - "#selfimprovement"
+        - "#avoidance"
+        - "#growth"
+        - "#selfknowledge"
+    notes: Showcase fallback
+    id: 20260426053317-improvement-as-camouflage
+    createdAt: 2026-04-26T05:33:17.310Z
+    fingerprint: as attempts avoidance camouflage can embarrassment exposure
+      feedback from hide improvement language never real risks self when
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426053317-improvement-as-camouflage
+    renderedFiles:
+      - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-01.png
+      - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-02.png
+      - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-03.png
+      - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-04.png
+      - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-05.png

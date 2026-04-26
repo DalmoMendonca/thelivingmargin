@@ -5,7 +5,7 @@ import {
   hasInstagramPublish,
   projectRoot
 } from "../config/brand.js";
-import { queueTarget, topUpQueue } from "../content/generator.js";
+import { generateWithOpenAi, queueTarget, topUpQueue } from "../content/generator.js";
 import { reviewQueueItem } from "../content/quality.js";
 import { isTooSimilar } from "../content/dedupe.js";
 import { publicUrlsForItem } from "../publish/assets.js";
@@ -68,10 +68,33 @@ for (const idea of ideas.ideas) {
 await saveIdeas(ideas);
 await saveQueue(queue);
 
-const target = findNextReadyItem(queue, slot);
+let target = findNextReadyItem(queue, slot);
 if (!target) {
-  logWarn("No ready item was available to publish.");
-  process.exit(0);
+  logWarn(`No ready ${slot} item was available. Generating one on demand.`);
+
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const generatedTarget = await generateWithOpenAi({
+      slot,
+      queue,
+      published
+    });
+
+    if (isTooSimilar(generatedTarget, queue, published)) {
+      logWarn(
+        `Generated ${slot} item was too similar on attempt ${attempt}. Retrying.`
+      );
+      continue;
+    }
+
+    queue.items.push(generatedTarget);
+    await saveQueue(queue);
+    target = generatedTarget;
+    break;
+  }
+}
+
+if (!target) {
+  throw new Error(`Unable to generate a non-duplicate ${slot} item on demand.`);
 }
 
 const qualityReview = await reviewQueueItem(target);

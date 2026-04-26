@@ -5,20 +5,13 @@ import satori from "satori";
 import { appEnv, projectRoot } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
 import { ensureDir } from "../util/file.js";
-import { slugify } from "../util/text.js";
-import { todayStamp } from "../util/time.js";
 import { loadFonts } from "./fonts.js";
 import { renderItemCard } from "./templates.js";
 
 export const renderQueueItem = async (item: QueueItem) => {
   const fonts = await loadFonts();
   const cards = renderItemCard(item);
-  const slug = slugify(item.title || item.id);
-  const renderDir = path.join(
-    projectRoot,
-    appEnv.PUBLIC_ASSET_ROOT,
-    `${todayStamp()}-${slug}`
-  );
+  const renderDir = path.join(projectRoot, appEnv.PUBLIC_ASSET_ROOT, item.id);
 
   await ensureDir(renderDir);
 

@@ -138,7 +138,10 @@ export const normalizeContentMode = (
     normalized === "quote" ||
     normalized === "encouragement" ||
     normalized === "observation" ||
-    normalized === "question"
+    normalized === "question" ||
+    normalized === "reframe" ||
+    normalized === "dialogue" ||
+    normalized === "list"
   ) {
     return normalized;
   }
@@ -200,7 +203,9 @@ export const sanitizeQueueItem = (item: QueueItem): QueueItem => ({
   caption: {
     hook: normalizeTypography(stripMetaLead(item.caption.hook)),
     body: normalizeTypography(stripMetaLead(item.caption.body)),
-    callToComment: normalizeTypography(stripMetaLead(item.caption.callToComment)),
+    callToComment: item.caption.callToComment
+      ? normalizeTypography(stripMetaLead(item.caption.callToComment))
+      : undefined,
     hashtags: normalizeHashtags(item.caption.hashtags)
   }
 });

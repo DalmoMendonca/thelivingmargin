@@ -1,5 +1,5 @@
 import type { CaptionBundle, QueueItem } from "../types.js";
-import { makeFingerprint, slugify } from "../util/text.js";
+import { buildContentId, makeFingerprint } from "../util/text.js";
 import { nowIso } from "../util/time.js";
 
 const hashtags = (...values: string[]) => values;
@@ -35,7 +35,7 @@ const baseItem = (
   const createdAt = nowIso();
 
   return {
-    id: `${createdAt.slice(0, 10)}-${slugify(title)}`,
+    id: buildContentId(createdAt, title),
     createdAt,
     source: "manual",
     title,

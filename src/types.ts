@@ -7,7 +7,10 @@ export type ContentMode =
   | "quote"
   | "encouragement"
   | "observation"
-  | "question";
+  | "question"
+  | "reframe"
+  | "dialogue"
+  | "list";
 export type SurfaceStyle =
   | "paperWarm"
   | "plasterBlue"
@@ -50,7 +53,7 @@ export interface SinglePostContent {
 export interface CaptionBundle {
   hook: string;
   body: string;
-  callToComment: string;
+  callToComment?: string;
   hashtags: string[];
 }
 

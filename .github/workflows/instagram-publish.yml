@@ -13,11 +13,7 @@ on:
           - midday
           - evening
   schedule:
-    - cron: "0 9 * * *"
-      timezone: "America/Chicago"
-    - cron: "0 13 * * *"
-      timezone: "America/Chicago"
-    - cron: "30 18 * * *"
+    - cron: "0 * * * *"
       timezone: "America/Chicago"
 
 concurrency:
@@ -55,19 +51,21 @@ jobs:
         run: |
           SLOT="${{ inputs.slot }}"
           if [ -z "$SLOT" ]; then
-            case "${{ github.event.schedule }}" in
-              "0 9 * * *") SLOT="morning" ;;
-              "0 13 * * *") SLOT="midday" ;;
-              "30 18 * * *") SLOT="evening" ;;
-              *) SLOT="morning" ;;
-            esac
+            HOUR="$(TZ=America/Chicago date +%H)"
+            if [ "$HOUR" -lt 12 ]; then
+              SLOT="morning"
+            elif [ "$HOUR" -lt 17 ]; then
+              SLOT="midday"
+            else
+              SLOT="evening"
+            fi
           fi
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
 
       - name: Publish slot
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5' }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.4' }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           PUBLIC_GITHUB_REPOSITORY: ${{ github.repository }}
