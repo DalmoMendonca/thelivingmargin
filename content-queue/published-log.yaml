@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T19:17:22.772Z
+updatedAt: 2026-04-26T20:09:37.298Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -209,3 +209,14 @@ entries:
     slot: evening
     instagramMediaId: "17877630396577286"
     title: Eleven Minutes
+  - id: 20260426053014-before-the-crash
+    publishedAt: 2026-04-26T20:09:37.264Z
+    topic: rest and worthiness
+    angle: Rest is allowed before exhaustion turns you into a worse version of
+      yourself.
+    fingerprint: allowed before crash exhaustion into rest turns version worse
+      worthiness yourself
+    kind: single
+    slot: morning
+    instagramMediaId: "18579742048015218"
+    title: Before the Crash

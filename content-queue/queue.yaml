@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T19:17:22.736Z
+updatedAt: 2026-04-26T20:09:37.265Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -716,12 +716,14 @@ items:
     createdAt: 2026-04-26T05:30:14.087Z
     fingerprint: allowed before crash exhaustion into rest turns version worse
       worthiness yourself
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426053014-before-the-crash
     renderedFiles:
       - docs/assets/posts/20260426053014-before-the-crash/post.png
+    instagramMediaId: "18579742048015218"
+    publishedAt: 2026-04-26T20:09:37.264Z
   - source: manual
     title: Busy Language
     topic: intimacy and distance
