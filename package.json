@@ -10,6 +10,8 @@
     "instagram:exchange-code": "tsx src/cli/exchange-instagram-token.ts",
     "preview": "tsx src/cli/render-preview.ts",
     "publish:slot": "tsx src/cli/publish-slot.ts",
+    "reset:queue": "tsx src/cli/reset-queue.ts",
+    "seed:curated": "tsx src/cli/seed-curated-queue.ts",
     "sync:remote-state": "tsx src/cli/sync-remote-state.ts",
     "ship:code": "tsx src/cli/ship-code.ts",
     "typecheck": "tsc --noEmit"

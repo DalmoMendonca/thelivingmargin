@@ -13,7 +13,8 @@ import {
 import { makeFingerprint, slugify, trimParagraphs } from "../util/text.js";
 import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
-import { buildPostPrompt } from "./prompts.js";
+import { buildPostPrompt, buildRevisionPrompt } from "./prompts.js";
+import { reviewQueueItem } from "./quality.js";
 
 const templateFamilyValues = [
   "oracle",
@@ -154,9 +155,11 @@ const buildQueueItem = (
 };
 
 const reasoningEffortForModel = (model: string) => {
-  // Newer GPT-5.4-class models reject `minimal`; `low` works across the current
-  // GPT-5 variants we use here and keeps generation cheap enough for queue fill.
-  return model.startsWith("gpt-5.4") ? "low" : "minimal";
+  if (model.startsWith("gpt-5.4")) {
+    return "medium";
+  }
+
+  return "low";
 };
 
 const nextSlotForQueue = (items: QueueItem[]) => {
@@ -187,15 +190,11 @@ const nextSlotForQueue = (items: QueueItem[]) => {
 
 export const fallbackPosts = () => sampleQueueItems();
 
-export const generateWithOpenAi = async ({
-  slot,
-  queue,
-  published,
+const parseDraftFromPrompt = async ({
+  prompt,
   manualIdea
 }: {
-  slot: SlotName;
-  queue: QueueFile;
-  published: PublishedLogFile;
+  prompt: string;
   manualIdea?: ManualIdea;
 }) => {
   if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
@@ -203,13 +202,6 @@ export const generateWithOpenAi = async ({
   }
 
   const client = new OpenAI({ apiKey: appEnv.OPENAI_API_KEY });
-  const prompt = buildPostPrompt({
-    slot,
-    recentPublished: published,
-    queue,
-    manualIdea
-  });
-
   const response = await client.responses.parse({
     model: appEnv.OPENAI_MODEL,
     instructions:
@@ -231,6 +223,93 @@ export const generateWithOpenAi = async ({
   }
 
   return buildQueueItem(parsed, manualIdea);
+};
+
+const generateDraft = async ({
+  slot,
+  queue,
+  published,
+  manualIdea,
+  revisionNotes
+}: {
+  slot: SlotName;
+  queue: QueueFile;
+  published: PublishedLogFile;
+  manualIdea?: ManualIdea;
+  revisionNotes?: string[];
+}) => {
+  if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
+    throw new Error("OPENAI_API_KEY is missing.");
+  }
+
+  const prompt = buildPostPrompt({
+    slot,
+    recentPublished: published,
+    queue,
+    manualIdea,
+    revisionNotes
+  });
+
+  return parseDraftFromPrompt({ prompt, manualIdea });
+};
+
+export const generateWithOpenAi = async ({
+  slot,
+  queue,
+  published,
+  manualIdea
+}: {
+  slot: SlotName;
+  queue: QueueFile;
+  published: PublishedLogFile;
+  manualIdea?: ManualIdea;
+}) => {
+  let revisionNotes: string[] | undefined;
+  let lastItem: QueueItem | undefined;
+  let lastReasons: string[] = [];
+
+  const firstDraft = await generateDraft({
+    slot,
+    queue,
+    published,
+    manualIdea
+  });
+  lastItem = firstDraft;
+
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const item: QueueItem =
+      attempt === 1
+        ? firstDraft
+        : await parseDraftFromPrompt({
+            prompt: buildRevisionPrompt({
+              draft: lastItem,
+              revisionNotes: revisionNotes ?? lastReasons
+            }),
+            manualIdea
+          });
+    lastItem = item;
+
+    const review = await reviewQueueItem(item);
+    if (review.approved) {
+      if (attempt > 1) {
+        logStep(`Accepted revised draft for ${item.title} on attempt ${attempt}.`);
+      }
+      return item;
+    }
+
+    lastReasons = review.review.reasons;
+    revisionNotes =
+      review.review.revisionBrief.length > 0
+        ? review.review.revisionBrief
+        : review.review.reasons;
+    logWarn(
+      `Rejected draft attempt ${attempt} for ${item.title}: ${lastReasons.join(" | ")}`
+    );
+  }
+
+  throw new Error(
+    `Unable to generate an approved post after 3 attempts.${lastItem ? ` Last title: ${lastItem.title}.` : ""} ${lastReasons.join(" ")}`
+  );
 };
 
 export const topUpQueue = async ({

@@ -6,6 +6,7 @@ import {
   projectRoot
 } from "../config/brand.js";
 import { queueTarget, topUpQueue } from "../content/generator.js";
+import { reviewQueueItem } from "../content/quality.js";
 import { isTooSimilar } from "../content/dedupe.js";
 import { publicUrlsForItem } from "../publish/assets.js";
 import { sendFailureAlert } from "../publish/alerts.js";
@@ -71,6 +72,15 @@ const target = findNextReadyItem(queue, slot);
 if (!target) {
   logWarn("No ready item was available to publish.");
   process.exit(0);
+}
+
+const qualityReview = await reviewQueueItem(target);
+if (!qualityReview.approved) {
+  target.status = "blocked";
+  target.lastError = `Pre-publish QC failed: ${qualityReview.review.reasons.join(" | ")}`;
+  queue.items = replaceQueueItem(queue, target).items;
+  await saveQueue(queue);
+  throw new Error(target.lastError);
 }
 
 await renderQueueItem(target);

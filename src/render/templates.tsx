@@ -12,14 +12,12 @@ const canvas = {
 
 const stripMarkers = (value: string) => value.replace(/\[\[(.+?)\]\]/g, "$1");
 
-const titleCase = (value: string) =>
-  value
-    .split(/[\s-]+/)
-    .filter(Boolean)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(" ");
+const cleanLength = (value?: string) =>
+  stripMarkers(value ?? "")
+    .replace(/\s+/g, " ")
+    .trim().length;
 
-const shortLabel = (value: string, maxLength = 34) => {
+const shortLabel = (value: string, maxLength = 38) => {
   const cleaned = stripMarkers(value).replace(/\s+/g, " ").trim();
   if (cleaned.length <= maxLength) {
     return cleaned;
@@ -28,76 +26,180 @@ const shortLabel = (value: string, maxLength = 34) => {
   return `${cleaned.slice(0, maxLength - 3).trimEnd()}...`;
 };
 
-const graphicMetaPattern =
-  /comment bait|thoughtful contrarian|uncomfortable, but useful|argue with this|comment if|save this|^(morning|midday|evening)\s+(prompt|reminder|practice)/i;
-const graphicEngagementPattern = /^(comment|save|share|follow|tag)\b/i;
+const titleCase = (value: string) =>
+  value
+    .split(/[\s-]+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
 
-const isGraphicSafeText = (value?: string) =>
-  Boolean(
-    value &&
-      !graphicMetaPattern.test(stripMarkers(value).trim()) &&
-      !graphicEngagementPattern.test(stripMarkers(value).trim())
-  );
+const clamp = (value: number, min: number, max: number) =>
+  Math.max(min, Math.min(max, value));
 
-const graphicFooter = (value?: string, fallback?: string) =>
-  isGraphicSafeText(value) ? value : fallback;
+const scaleByLength = (
+  value: string | undefined,
+  base: number,
+  floor: number,
+  divisor: number
+) => clamp(base - Math.max(0, cleanLength(value) - divisor) * 0.28, floor, base);
 
-const graphicKicker = (value: string | undefined, fallback: string) => {
-  const cleaned = value ? shortLabel(value, 42) : "";
-  if (!cleaned || /^slide\s+\d+/i.test(cleaned) || !isGraphicSafeText(cleaned)) {
-    return fallback;
+const safeOptionalText = (value?: string, maxLength = 86) => {
+  if (!value) {
+    return undefined;
   }
 
-  return cleaned;
+  return cleanLength(value) <= maxLength ? value : undefined;
 };
 
-const labelForItem = (item: QueueItem) => shortLabel(item.topic || titleCase(item.contentMode), 32);
-const contentModeLabel = (item: QueueItem) => titleCase(item.contentMode);
+const pageLabel = (index: number) => `PAGE ${index + 1}`;
 
-const surfaceOverlayOpacity = (item: QueueItem) => {
+const panelBackground = (item: QueueItem) => {
   if (item.surfaceStyle === "charcoalGrain") {
-    return 0.18;
+    return "rgba(21, 20, 19, 0.78)";
+  }
+
+  return "rgba(248, 244, 237, 0.9)";
+};
+
+const panelBorder = (item: QueueItem, palette: ReturnType<typeof resolvePalette>) => {
+  if (item.surfaceStyle === "charcoalGrain") {
+    return "rgba(247, 238, 226, 0.16)";
+  }
+
+  return palette.secondary;
+};
+
+const surfaceOverlay = (item: QueueItem) => {
+  if (item.surfaceStyle === "charcoalGrain") {
+    return "rgba(10, 10, 10, 0.28)";
   }
 
   if (item.surfaceStyle === "plasterBlue") {
-    return 0.06;
+    return "rgba(236, 242, 242, 0.26)";
   }
 
-  return 0.1;
+  return "rgba(245, 240, 233, 0.16)";
 };
 
-const contentPanel = (
+const topBar = (
   palette: ReturnType<typeof resolvePalette>,
-  children: ReactElement,
-  style?: Record<string, string | number>
+  rightLabel?: string
+) => (
+  <div
+    style={{
+      position: "absolute",
+      top: 54,
+      left: 66,
+      right: 66,
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      fontFamily: "Space Grotesk",
+      fontSize: 20,
+      fontWeight: 600,
+      letterSpacing: 2.2,
+      textTransform: "uppercase",
+      color: palette.accent
+    }}
+  >
+    <div>{brand.name}</div>
+    <div>{rightLabel ?? ""}</div>
+  </div>
+);
+
+const tagRow = (
+  palette: ReturnType<typeof resolvePalette>,
+  label: string
 ) => (
   <div
     style={{
       display: "flex",
-      flexDirection: "column",
-      position: "relative",
-      backgroundColor:
-        palette.name === "midnightPaper"
-          ? "rgba(24, 22, 20, 0.76)"
-          : "rgba(248, 244, 238, 0.74)",
-      borderWidth: 1,
-      borderStyle: "solid",
-      borderColor:
-        palette.name === "midnightPaper"
-          ? "rgba(246, 239, 229, 0.16)"
-          : "rgba(60, 40, 24, 0.08)",
-      padding: 44,
-      ...style
+      alignItems: "center",
+      gap: 14,
+      fontFamily: "Space Grotesk",
+      fontSize: 18,
+      fontWeight: 700,
+      letterSpacing: 1.8,
+      textTransform: "uppercase",
+      color: palette.accent
     }}
   >
-    {children}
+    <div
+      style={{
+        display: "flex",
+        width: 12,
+        height: 12,
+        borderRadius: 9999,
+        backgroundColor: palette.accent
+      }}
+    />
+    <div>{shortLabel(label, 42)}</div>
   </div>
 );
 
-const shell = (
+const footerBlock = (
+  palette: ReturnType<typeof resolvePalette>,
+  supportLine?: string,
+  footer?: string,
+  align: "left" | "right" = "left"
+) => {
+  const safeSupport = safeOptionalText(supportLine, 88);
+  const safeFooter = safeOptionalText(footer, 88);
+  if (!safeSupport && !safeFooter) {
+    return null;
+  }
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: align === "right" ? "flex-end" : "flex-start",
+        gap: 16,
+        marginTop: "auto"
+      }}
+    >
+      {safeSupport ? (
+        <div style={{ display: "flex", maxWidth: 520 }}>
+          {renderMarkedText(safeSupport, {
+            fontFamily: "Space Grotesk",
+            fontSize: 22,
+            lineHeight: 1.32,
+            color: palette.accent,
+            letterSpacing: 1.1,
+            textTransform: "uppercase",
+            highlightBackground: palette.marker,
+            highlightColor: palette.markerText,
+            highlightPaddingX: 8,
+            highlightPaddingY: 2
+          })}
+        </div>
+      ) : null}
+      {safeFooter ? (
+        <div style={{ display: "flex", maxWidth: 460 }}>
+          {renderMarkedText(safeFooter, {
+            fontFamily: "Newsreader",
+            fontSize: 26,
+            lineHeight: 1.22,
+            color: palette.text,
+            textAlign: align,
+            highlightBackground: palette.marker,
+            highlightColor: palette.markerText,
+            highlightPaddingX: 8,
+            highlightPaddingY: 2
+          })}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+const frame = (
   item: QueueItem,
-  children: ReactElement,
-  trailingLabel?: string
+  child: ReactElement,
+  options?: {
+    page?: string;
+  }
 ) => {
   const palette = resolvePalette(item.palette);
 
@@ -120,241 +222,65 @@ const shell = (
         style={{
           position: "absolute",
           inset: 0,
-          backgroundColor: palette.background,
-          opacity: surfaceOverlayOpacity(item)
+          backgroundColor: surfaceOverlay(item)
         }}
       />
-      <div
-        style={{
-          position: "absolute",
-          inset: 34,
-          borderWidth: 1,
-          borderStyle: "solid",
-          borderColor: palette.secondary,
-          opacity: palette.name === "midnightPaper" ? 0.5 : 0.9
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          top: -160,
-          right: -120,
-          width: 420,
-          height: 420,
-          borderRadius: 9999,
-          backgroundColor: palette.accentSoft,
-          opacity: palette.name === "midnightPaper" ? 0.1 : 0.12
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          bottom: -120,
-          left: -100,
-          width: 320,
-          height: 320,
-          borderRadius: 9999,
-          borderWidth: 2,
-          borderStyle: "solid",
-          borderColor: palette.accent,
-          opacity: palette.name === "midnightPaper" ? 0.08 : 0.16
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          top: 70,
-          left: 78,
-          right: 78,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          fontFamily: "Space Grotesk",
-          fontWeight: 500,
-          fontSize: 24,
-          letterSpacing: 2.2,
-          textTransform: "uppercase",
-          color: palette.accent
-        }}
-      >
-        <div>{brand.name}</div>
-        <div>{trailingLabel ?? contentModeLabel(item)}</div>
-      </div>
-      {children}
+      {topBar(palette, options?.page)}
+      {child}
     </div>
   );
 };
 
-const noteStripe = (
+const panel = (
+  item: QueueItem,
   palette: ReturnType<typeof resolvePalette>,
-  label: string,
-  width = 280
+  children: ReactElement,
+  style?: Record<string, string | number>
 ) => (
   <div
     style={{
       display: "flex",
-      alignItems: "center",
-      gap: 18,
-      fontFamily: "Space Grotesk",
-      fontWeight: 700,
-      fontSize: 26,
-      letterSpacing: 2,
-      textTransform: "uppercase",
-      color: palette.accent
+      flexDirection: "column",
+      position: "relative",
+      width: 820,
+      minHeight: 1000,
+      paddingTop: 52,
+      paddingBottom: 50,
+      paddingLeft: 52,
+      paddingRight: 52,
+      backgroundColor: panelBackground(item),
+      borderWidth: 1,
+      borderStyle: "solid",
+      borderColor: panelBorder(item, palette),
+      ...style
     }}
   >
-    <div
-      style={{
-        display: "flex",
-        width: 16,
-        height: 16,
-        borderRadius: 9999,
-        backgroundColor: palette.accent
-      }}
-    />
-    <div>{shortLabel(label, width / 8)}</div>
+    {children}
   </div>
 );
 
-const singleHighlight = (item: QueueItem) => {
+const wallSingle = (item: QueueItem) => {
   const palette = resolvePalette(item.palette);
   const content = item.single!;
+  const headlineSize = scaleByLength(content.headline, 76, 54, 86);
+  const bodySize = scaleByLength(content.body, 34, 28, 180);
 
-  return shell(
+  return frame(
     item,
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "100%",
-        paddingTop: 154,
-        paddingBottom: 92,
-        paddingLeft: 86,
-        paddingRight: 86
+        paddingTop: 128,
+        paddingBottom: 94,
+        paddingLeft: 92,
+        paddingRight: 92,
+        alignItems: "center"
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: 742,
-          marginTop: 88
-        }}
-      >
-        {noteStripe(palette, labelForItem(item), 300)}
-        <div style={{ display: "flex", marginTop: 38 }}>
-          {renderMarkedText(content.headline, {
-            fontFamily: "Newsreader",
-            fontSize: 72,
-            lineHeight: 1.16,
-            color: palette.text,
-            fontWeight: 600,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 12,
-            highlightPaddingY: 3,
-            paragraphGap: 18
-          })}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 28,
-            maxWidth: 720
-          }}
-        >
-          {renderMarkedText(content.body, {
-            fontFamily: "Newsreader",
-            fontSize: 40,
-            lineHeight: 1.24,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 10,
-            highlightPaddingY: 2,
-            paragraphGap: 18
-          })}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            marginTop: "auto",
-            gap: 32
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              maxWidth: 420
-            }}
-          >
-            {renderMarkedText(content.supportLine ?? item.angle, {
-              fontFamily: "Space Grotesk",
-              fontSize: 24,
-              lineHeight: 1.3,
-              color: palette.accent,
-              letterSpacing: 1.1,
-              textTransform: "uppercase",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 2
-            })}
-          </div>
-          {graphicFooter(content.footer) ? (
-            <div
-              style={{
-                display: "flex",
-                width: 302,
-                borderWidth: 1,
-                borderStyle: "solid",
-                borderColor: palette.secondary,
-                paddingTop: 14,
-                paddingBottom: 14,
-                paddingLeft: 18,
-                paddingRight: 18
-              }}
-            >
-              {renderMarkedText(graphicFooter(content.footer)!, {
-                fontFamily: "Space Grotesk",
-                fontSize: 20,
-                lineHeight: 1.3,
-                color: palette.accent,
-                letterSpacing: 1.4,
-                textTransform: "uppercase",
-                highlightBackground: palette.marker,
-                highlightColor: palette.markerText,
-                highlightPaddingX: 6,
-                highlightPaddingY: 1
-              })}
-            </div>
-          ) : null}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const singleNotebook = (item: QueueItem) => {
-  const palette = resolvePalette(item.palette);
-  const content = item.single!;
-
-  return shell(
-    item,
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "100%",
-        paddingTop: 154,
-        paddingBottom: 86,
-        paddingLeft: 80,
-        paddingRight: 80
-      }}
-    >
-      {contentPanel(
+      {panel(
+        item,
         palette,
         <div
           style={{
@@ -364,38 +290,12 @@ const singleNotebook = (item: QueueItem) => {
             height: "100%"
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center"
-            }}
-          >
-            {noteStripe(palette, contentModeLabel(item), 220)}
-            <div
-              style={{
-                display: "flex",
-                fontFamily: "Space Grotesk",
-                fontSize: 20,
-                letterSpacing: 1.6,
-                textTransform: "uppercase",
-                color: palette.accent
-              }}
-            >
-              Page 01
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              marginTop: 34,
-              maxWidth: 760
-            }}
-          >
+          {tagRow(palette, item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 30, maxWidth: 670 }}>
             {renderMarkedText(content.headline, {
               fontFamily: "Instrument Serif",
-              fontSize: 84,
-              lineHeight: 1.05,
+              fontSize: headlineSize,
+              lineHeight: 1.04,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
@@ -403,102 +303,47 @@ const singleNotebook = (item: QueueItem) => {
               highlightPaddingY: 3
             })}
           </div>
-          <div
-            style={{
-              display: "flex",
-              marginTop: 26,
-              maxWidth: 760
-            }}
-          >
+          <div style={{ display: "flex", marginTop: 26, maxWidth: 660 }}>
             {renderMarkedText(content.body, {
               fontFamily: "Newsreader",
-              fontSize: 38,
-              lineHeight: 1.28,
+              fontSize: bodySize,
+              lineHeight: 1.26,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
               highlightPaddingX: 10,
               highlightPaddingY: 2,
-              paragraphGap: 16
+              paragraphGap: 18
             })}
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-              gap: 26,
-              marginTop: "auto"
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                maxWidth: 470
-              }}
-            >
-              {renderMarkedText(content.supportLine ?? item.angle, {
-                fontFamily: "Space Grotesk",
-                fontSize: 24,
-                lineHeight: 1.3,
-                color: palette.accent,
-                letterSpacing: 1.2,
-                textTransform: "uppercase",
-                highlightBackground: palette.marker,
-                highlightColor: palette.markerText,
-                highlightPaddingX: 8,
-                highlightPaddingY: 2
-              })}
-            </div>
-            {graphicFooter(content.footer) ? (
-              <div
-                style={{
-                  display: "flex",
-                  maxWidth: 280
-                }}
-              >
-                {renderMarkedText(graphicFooter(content.footer)!, {
-                  fontFamily: "Newsreader",
-                  fontSize: 24,
-                  lineHeight: 1.25,
-                  color: palette.text,
-                  textAlign: "right",
-                  highlightBackground: palette.marker,
-                  highlightColor: palette.markerText,
-                  highlightPaddingX: 8,
-                  highlightPaddingY: 2
-                })}
-              </div>
-            ) : null}
-          </div>
-        </div>,
-        {
-          width: 1000,
-          marginTop: 6
-        }
+          {footerBlock(palette, content.supportLine, content.footer)}
+        </div>
       )}
     </div>
   );
 };
 
-const singleBroadside = (item: QueueItem) => {
+const notebookSingle = (item: QueueItem) => {
   const palette = resolvePalette(item.palette);
   const content = item.single!;
+  const headlineSize = scaleByLength(content.headline, 82, 56, 90);
+  const bodySize = scaleByLength(content.body, 36, 28, 190);
 
-  return shell(
+  return frame(
     item,
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "100%",
-        paddingTop: 154,
-        paddingBottom: 88,
-        paddingLeft: 84,
-        paddingRight: 84
+        paddingTop: 138,
+        paddingBottom: 92,
+        paddingLeft: 96,
+        paddingRight: 96
       }}
     >
-      {contentPanel(
+      {panel(
+        item,
         palette,
         <div
           style={{
@@ -508,35 +353,41 @@ const singleBroadside = (item: QueueItem) => {
             height: "100%"
           }}
         >
-          {noteStripe(palette, labelForItem(item), 280)}
           <div
             style={{
               display: "flex",
-              marginTop: 30,
-              maxWidth: 850
+              width: "100%",
+              justifyContent: "space-between",
+              alignItems: "center"
             }}
           >
+            {tagRow(palette, titleCase(item.contentMode))}
+            <div
+              style={{
+                display: "flex",
+                width: 92,
+                height: 18,
+                backgroundColor: palette.accentSoft,
+                opacity: 0.4
+              }}
+            />
+          </div>
+          <div style={{ display: "flex", marginTop: 32, maxWidth: 690 }}>
             {renderMarkedText(content.headline, {
               fontFamily: "Instrument Serif",
-              fontSize: 82,
-              lineHeight: 1.04,
+              fontSize: headlineSize,
+              lineHeight: 1.02,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
               highlightPaddingX: 12,
-              highlightPaddingY: 4
+              highlightPaddingY: 3
             })}
           </div>
-          <div
-            style={{
-              display: "flex",
-              marginTop: 28,
-              maxWidth: 820
-            }}
-          >
+          <div style={{ display: "flex", marginTop: 28, maxWidth: 670 }}>
             {renderMarkedText(content.body, {
               fontFamily: "Newsreader",
-              fontSize: 36,
+              fontSize: bodySize,
               lineHeight: 1.28,
               color: palette.text,
               highlightBackground: palette.marker,
@@ -546,569 +397,240 @@ const singleBroadside = (item: QueueItem) => {
               paragraphGap: 18
             })}
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              gap: 26,
-              marginTop: "auto",
-              alignItems: "flex-end"
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                maxWidth: 500
-              }}
-            >
-              {renderMarkedText(content.supportLine ?? item.angle, {
-                fontFamily: "Space Grotesk",
-                fontSize: 23,
-                lineHeight: 1.34,
-                color: palette.accent,
-                letterSpacing: 1.2,
-                textTransform: "uppercase",
-                highlightBackground: palette.marker,
-                highlightColor: palette.markerText,
-                highlightPaddingX: 8,
-                highlightPaddingY: 2
-              })}
-            </div>
-            <div
-              style={{
-                display: "flex",
-                width: 200,
-                height: 200,
-                borderRadius: 9999,
-                borderWidth: 2,
-                borderStyle: "solid",
-                borderColor: palette.accent,
-                alignItems: "center",
-                justifyContent: "center",
-                fontFamily: "Instrument Serif",
-                fontSize: 76,
-                color: palette.accent
-              }}
-            >
-              ?
-            </div>
-          </div>
+          {footerBlock(palette, content.supportLine, content.footer)}
         </div>,
         {
-          width: 912,
-          marginLeft: "auto"
+          width: 840
         }
       )}
     </div>
   );
 };
 
-const singleOracle = (item: QueueItem) => {
+const broadsideSingle = (item: QueueItem) => {
   const palette = resolvePalette(item.palette);
   const content = item.single!;
+  const headlineSize = scaleByLength(content.headline, 68, 46, 110);
+  const bodySize = scaleByLength(content.body, 32, 25, 320);
 
-  return shell(
+  return frame(
     item,
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
         width: "100%",
         height: "100%",
-        paddingTop: 166,
-        paddingBottom: 96,
-        paddingLeft: 102,
-        paddingRight: 102
+        paddingTop: 146,
+        paddingBottom: 98,
+        paddingLeft: 96,
+        paddingRight: 96,
+        justifyContent: "center"
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          fontSize: 166,
-          lineHeight: 0.7,
-          color: palette.accent,
-          fontFamily: "Instrument Serif"
-        }}
-      >
-        "
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 28,
-          marginTop: 4,
-          maxWidth: 860
-        }}
-      >
-        {renderMarkedText(content.headline, {
-          fontFamily: "Instrument Serif",
-          fontSize: 92,
-          lineHeight: 1.03,
-          color: palette.text,
-          highlightBackground: palette.marker,
-          highlightColor: palette.markerText,
-          highlightPaddingX: 12,
-          highlightPaddingY: 4
-        })}
-        {renderMarkedText(content.body, {
-          fontFamily: "Newsreader",
-          fontSize: 46,
-          lineHeight: 1.24,
-          color: palette.text,
-          highlightBackground: palette.marker,
-          highlightColor: palette.markerText,
-          highlightPaddingX: 10,
-          highlightPaddingY: 2
-        })}
-      </div>
-      <div
-        style={{
-          marginTop: "auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: 24
-        }}
-      >
-        {content.supportLine ? (
-          <div style={{ display: "flex", maxWidth: 520 }}>
-            {renderMarkedText(content.supportLine, {
-              fontFamily: "Space Grotesk",
-              fontSize: 26,
-              lineHeight: 1.3,
-              color: palette.accent,
-              letterSpacing: 1.4,
-              textTransform: "uppercase",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 2
-            })}
-          </div>
-        ) : null}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end"
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              width: 280,
-              height: 2,
-              backgroundColor: palette.accent
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              maxWidth: 420,
-              textAlign: "right"
-            }}
-          >
-            {renderMarkedText(content.footer ?? item.angle, {
-              fontFamily: "Newsreader",
-              fontSize: 30,
-              lineHeight: 1.22,
-              color: palette.text,
-              textAlign: "right",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 2
-            })}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const singleEditorial = (item: QueueItem) => {
-  const palette = resolvePalette(item.palette);
-  const content = item.single!;
-
-  return shell(
-    item,
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%",
-        paddingTop: 162,
-        paddingBottom: 88,
-        paddingLeft: 92,
-        paddingRight: 92
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          gap: 34,
-          flex: 1
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            width: 16,
-            backgroundColor: palette.accent,
-            borderRadius: 9999
-          }}
-        />
+      {panel(
+        item,
+        palette,
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 30,
-            flex: 1
+            width: "100%",
+            height: "100%"
           }}
         >
-          {noteStripe(palette, labelForItem(item), 280)}
-          {renderMarkedText(content.headline, {
-            fontFamily: "Instrument Serif",
-            fontSize: 86,
-            lineHeight: 1.03,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 12,
-            highlightPaddingY: 4
-          })}
-          <div style={{ display: "flex", maxWidth: 760 }}>
+          {tagRow(palette, item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 30, maxWidth: 620 }}>
+            {renderMarkedText(content.headline, {
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
+              lineHeight: 1.06,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 12,
+              highlightPaddingY: 3
+            })}
+          </div>
+          <div style={{ display: "flex", marginTop: 28, maxWidth: 620 }}>
             {renderMarkedText(content.body, {
               fontFamily: "Newsreader",
-              fontSize: 42,
-              lineHeight: 1.26,
+              fontSize: bodySize,
+              lineHeight: 1.34,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
               highlightPaddingX: 10,
-              highlightPaddingY: 2
+              highlightPaddingY: 2,
+              paragraphGap: 18
             })}
           </div>
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-          gap: 24,
-          marginTop: 28
-        }}
-      >
-        <div style={{ display: "flex", maxWidth: 560 }}>
-          {renderMarkedText(content.supportLine ?? item.angle, {
-            fontFamily: "Newsreader",
-            fontSize: 27,
-            lineHeight: 1.28,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-        {graphicFooter(content.footer) ? (
-          <div
-            style={{
-              display: "flex",
-              borderWidth: 1,
-              borderStyle: "solid",
-              borderColor: palette.secondary,
-              paddingTop: 14,
-              paddingBottom: 14,
-              paddingLeft: 18,
-              paddingRight: 18
-            }}
-          >
-            {renderMarkedText(graphicFooter(content.footer)!, {
-              fontFamily: "Space Grotesk",
-              fontSize: 20,
-              lineHeight: 1.3,
-              color: palette.accent,
-              letterSpacing: 1.4,
-              textTransform: "uppercase",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 1
-            })}
-          </div>
-        ) : null}
-      </div>
+          {footerBlock(palette, content.supportLine, content.footer)}
+        </div>,
+        {
+          width: 720,
+          minHeight: 1030
+        }
+      )}
     </div>
   );
 };
 
-const singleMargin = (item: QueueItem) => {
+const darkSingle = (item: QueueItem) => {
   const palette = resolvePalette(item.palette);
   const content = item.single!;
+  const headlineSize = scaleByLength(content.headline, 78, 54, 84);
+  const bodySize = scaleByLength(content.body, 34, 28, 180);
 
-  return shell(
+  return frame(
     item,
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "100%",
-        paddingTop: 154,
-        paddingBottom: 88,
-        paddingLeft: 78,
-        paddingRight: 78
+        paddingTop: 136,
+        paddingBottom: 92,
+        paddingLeft: 90,
+        paddingRight: 90,
+        alignItems: "center"
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          width: 232,
-          flexDirection: "column",
-          paddingRight: 34,
-          borderRightWidth: 1,
-          borderRightStyle: "solid",
-          borderRightColor: palette.secondary
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            fontFamily: "Space Grotesk",
-            fontSize: 22,
-            letterSpacing: 2.2,
-            textTransform: "uppercase",
-            color: palette.accent
-          }}
-        >
-          {contentModeLabel(item)}
-        </div>
-        <div style={{ display: "flex", marginTop: 22 }}>
-          {renderMarkedText(labelForItem(item), {
-            fontFamily: "Space Grotesk",
-            fontSize: 24,
-            lineHeight: 1.28,
-            color: palette.text,
-            letterSpacing: 1.1,
-            textTransform: "uppercase",
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-        <div style={{ display: "flex", marginTop: "auto" }}>
-          {renderMarkedText(content.footer ?? item.angle, {
-            fontFamily: "Newsreader",
-            fontSize: 30,
-            lineHeight: 1.22,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          paddingLeft: 56,
-          paddingTop: 12,
-          flex: 1
-        }}
-      >
-        <div style={{ display: "flex", maxWidth: 690 }}>
-          {renderMarkedText(content.headline, {
-            fontFamily: "Instrument Serif",
-            fontSize: 92,
-            lineHeight: 1.04,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 12,
-            highlightPaddingY: 4
-          })}
-        </div>
-        <div style={{ display: "flex", marginTop: 28, maxWidth: 670 }}>
-          {renderMarkedText(content.body, {
-            fontFamily: "Newsreader",
-            fontSize: 42,
-            lineHeight: 1.24,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 10,
-            highlightPaddingY: 2
-          })}
-        </div>
-        <div style={{ display: "flex", marginTop: 46, maxWidth: 620 }}>
-          {renderMarkedText(content.supportLine ?? item.angle, {
-            fontFamily: "Space Grotesk",
-            fontSize: 25,
-            lineHeight: 1.34,
-            color: palette.accent,
-            letterSpacing: 1.2,
-            textTransform: "uppercase",
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const singleSignal = (item: QueueItem) => {
-  const palette = resolvePalette(item.palette);
-  const content = item.single!;
-
-  return shell(
-    item,
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%",
-        paddingTop: 158,
-        paddingBottom: 88,
-        paddingLeft: 88,
-        paddingRight: 88
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          marginTop: 34,
-          alignItems: "stretch",
-          gap: 24
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            width: 250,
-            minHeight: 250,
-            padding: 24,
-            backgroundColor: palette.accent,
-            color: palette.background
-          }}
-        >
-          {renderMarkedText(labelForItem(item), {
-            fontFamily: "Space Grotesk",
-            fontSize: 28,
-            lineHeight: 1.2,
-            color: palette.background,
-            fontWeight: 700,
-            textTransform: "uppercase",
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
+      {panel(
+        item,
+        palette,
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            flex: 1,
-            gap: 24
+            width: "100%",
+            height: "100%"
           }}
         >
-          {renderMarkedText(content.headline, {
-            fontFamily: "Instrument Serif",
-            fontSize: 84,
-            lineHeight: 1.03,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 12,
-            highlightPaddingY: 4
-          })}
-          {renderMarkedText(content.body, {
-            fontFamily: "Newsreader",
-            fontSize: 40,
-            lineHeight: 1.22,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 10,
-            highlightPaddingY: 2
-          })}
-        </div>
-      </div>
-      <div
-        style={{
-          marginTop: "auto",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 26
-        }}
-      >
-        <div style={{ display: "flex", maxWidth: 560 }}>
-          {renderMarkedText(content.supportLine ?? item.angle, {
-            fontFamily: "Newsreader",
-            fontSize: 30,
-            lineHeight: 1.22,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: 160,
-            height: 160,
-            borderRadius: 9999,
-            borderWidth: 2,
-            borderStyle: "solid",
-            borderColor: palette.accent,
-            alignItems: "center",
-            justifyContent: "center",
-            fontFamily: "Instrument Serif",
-            fontSize: 78,
-            color: palette.accent
-          }}
-        >
-          ?
-        </div>
-      </div>
+          {tagRow(palette, item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 32, maxWidth: 660 }}>
+            {renderMarkedText(content.headline, {
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
+              lineHeight: 1.04,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 12,
+              highlightPaddingY: 3
+            })}
+          </div>
+          <div style={{ display: "flex", marginTop: 26, maxWidth: 650 }}>
+            {renderMarkedText(content.body, {
+              fontFamily: "Newsreader",
+              fontSize: bodySize,
+              lineHeight: 1.28,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 10,
+              highlightPaddingY: 2,
+              paragraphGap: 18
+            })}
+          </div>
+          {footerBlock(palette, content.supportLine, content.footer)}
+        </div>,
+        {
+          width: 780,
+          minHeight: 980
+        }
+      )}
     </div>
   );
 };
 
-const notebookCarousel = (
+const carouselPage = (
   item: QueueItem,
   slide: CarouselSlide,
   index: number,
-  total: number
-) => {
-  const palette = resolvePalette(item.palette);
+  renderer: (item: QueueItem, slide: CarouselSlide, index: number) => ReactElement
+) => frame(item, renderer(item, slide, index), { page: pageLabel(index) });
 
-  return shell(
-    item,
+const wallCarouselContent = (item: QueueItem, slide: CarouselSlide) => {
+  const palette = resolvePalette(item.palette);
+  const headlineSize = scaleByLength(slide.headline, 72, 50, 76);
+  const bodySize = scaleByLength(slide.body, 34, 28, 180);
+
+  return (
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "100%",
-        paddingTop: 154,
-        paddingBottom: 84,
-        paddingLeft: 80,
-        paddingRight: 80
+        paddingTop: 138,
+        paddingBottom: 94,
+        paddingLeft: 92,
+        paddingRight: 92,
+        alignItems: "center"
       }}
     >
-      {contentPanel(
+      {panel(
+        item,
+        palette,
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            height: "100%"
+          }}
+        >
+          {tagRow(palette, slide.kicker || item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 30, maxWidth: 670 }}>
+            {renderMarkedText(slide.headline, {
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
+              lineHeight: 1.04,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 12,
+              highlightPaddingY: 3
+            })}
+          </div>
+          <div style={{ display: "flex", marginTop: 26, maxWidth: 660 }}>
+            {renderMarkedText(slide.body, {
+              fontFamily: "Newsreader",
+              fontSize: bodySize,
+              lineHeight: 1.28,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 10,
+              highlightPaddingY: 2,
+              paragraphGap: 18
+            })}
+          </div>
+          {footerBlock(palette, slide.footer, undefined)}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const notebookCarouselContent = (item: QueueItem, slide: CarouselSlide) => {
+  const palette = resolvePalette(item.palette);
+  const headlineSize = scaleByLength(slide.headline, 78, 54, 84);
+  const bodySize = scaleByLength(slide.body, 34, 28, 170);
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        height: "100%",
+        paddingTop: 138,
+        paddingBottom: 92,
+        paddingLeft: 96,
+        paddingRight: 96
+      }}
+    >
+      {panel(
+        item,
         palette,
         <div
           style={{
@@ -1121,38 +643,27 @@ const notebookCarousel = (
           <div
             style={{
               display: "flex",
+              width: "100%",
               justifyContent: "space-between",
               alignItems: "center"
             }}
           >
-            {noteStripe(palette, graphicKicker(slide.kicker, labelForItem(item)), 240)}
+            {tagRow(palette, slide.kicker || titleCase(item.contentMode))}
             <div
               style={{
                 display: "flex",
-                flexDirection: "row",
-                gap: 10
+                width: 92,
+                height: 18,
+                backgroundColor: palette.accentSoft,
+                opacity: 0.4
               }}
-            >
-              {Array.from({ length: total }).map((_, dotIndex) => (
-                <div
-                  key={`${item.id}-${dotIndex}`}
-                  style={{
-                    display: "flex",
-                    width: dotIndex === index ? 44 : 14,
-                    height: 14,
-                    borderRadius: 9999,
-                    backgroundColor:
-                      dotIndex === index ? palette.accent : palette.secondary
-                  }}
-                />
-              ))}
-            </div>
+            />
           </div>
-          <div style={{ display: "flex", marginTop: 34, maxWidth: 790 }}>
+          <div style={{ display: "flex", marginTop: 30, maxWidth: 690 }}>
             {renderMarkedText(slide.headline, {
-              fontFamily: index === 0 ? "Instrument Serif" : "Newsreader",
-              fontSize: index === 0 ? 84 : 72,
-              lineHeight: 1.06,
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
+              lineHeight: 1.03,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
@@ -1160,172 +671,49 @@ const notebookCarousel = (
               highlightPaddingY: 3
             })}
           </div>
-          <div style={{ display: "flex", marginTop: 26, maxWidth: 790 }}>
+          <div style={{ display: "flex", marginTop: 26, maxWidth: 670 }}>
             {renderMarkedText(slide.body, {
               fontFamily: "Newsreader",
-              fontSize: 38,
+              fontSize: bodySize,
               lineHeight: 1.28,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
               highlightPaddingX: 10,
               highlightPaddingY: 2,
-              paragraphGap: 16
+              paragraphGap: 18
             })}
           </div>
-          <div style={{ display: "flex", marginTop: "auto", maxWidth: 500 }}>
-            {renderMarkedText(graphicFooter(slide.footer, item.angle)!, {
-              fontFamily: "Space Grotesk",
-              fontSize: 24,
-              lineHeight: 1.32,
-              color: palette.accent,
-              letterSpacing: 1.2,
-              textTransform: "uppercase",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 2
-            })}
-          </div>
+          {footerBlock(palette, slide.footer, undefined)}
         </div>,
         {
-          width: 1000
+          width: 840
         }
       )}
-    </div>,
-    `Slide ${index + 1}/${total}`
+    </div>
   );
 };
 
-const highlightCarousel = (
-  item: QueueItem,
-  slide: CarouselSlide,
-  index: number,
-  total: number
-) => {
+const broadsideCarouselContent = (item: QueueItem, slide: CarouselSlide) => {
   const palette = resolvePalette(item.palette);
+  const headlineSize = scaleByLength(slide.headline, 62, 44, 88);
+  const bodySize = scaleByLength(slide.body, 31, 24, 240);
 
-  return shell(
-    item,
+  return (
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "100%",
-        paddingTop: 166,
-        paddingBottom: 88,
-        paddingLeft: 92,
-        paddingRight: 92
+        paddingTop: 146,
+        paddingBottom: 98,
+        paddingLeft: 96,
+        paddingRight: 96,
+        justifyContent: "center"
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "100%",
-          height: "100%"
-        }}
-      >
-        {noteStripe(palette, graphicKicker(slide.kicker, labelForItem(item)), 300)}
-        <div style={{ display: "flex", marginTop: 34, maxWidth: 780 }}>
-          {renderMarkedText(slide.headline, {
-            fontFamily: "Newsreader",
-            fontSize: index === 0 ? 76 : 68,
-            lineHeight: 1.14,
-            color: palette.text,
-            fontWeight: 600,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 12,
-            highlightPaddingY: 3
-          })}
-        </div>
-        <div style={{ display: "flex", marginTop: 24, maxWidth: 760 }}>
-          {renderMarkedText(slide.body, {
-            fontFamily: "Newsreader",
-            fontSize: 38,
-            lineHeight: 1.28,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 10,
-            highlightPaddingY: 2,
-            paragraphGap: 16
-          })}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            gap: 26,
-            marginTop: "auto"
-          }}
-        >
-          <div style={{ display: "flex", maxWidth: 480 }}>
-            {renderMarkedText(graphicFooter(slide.footer, item.angle)!, {
-              fontFamily: "Space Grotesk",
-              fontSize: 24,
-              lineHeight: 1.32,
-              color: palette.accent,
-              letterSpacing: 1.2,
-              textTransform: "uppercase",
-              highlightBackground: palette.marker,
-              highlightColor: palette.markerText,
-              highlightPaddingX: 8,
-              highlightPaddingY: 2
-            })}
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: 12
-            }}
-          >
-            {Array.from({ length: total }).map((_, dotIndex) => (
-              <div
-                key={`${item.id}-${dotIndex}`}
-                style={{
-                  display: "flex",
-                  width: dotIndex === index ? 44 : 14,
-                  height: 14,
-                  borderRadius: 9999,
-                  backgroundColor:
-                    dotIndex === index ? palette.accent : palette.secondary
-                }}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>,
-    `Slide ${index + 1}/${total}`
-  );
-};
-
-const broadsideCarousel = (
-  item: QueueItem,
-  slide: CarouselSlide,
-  index: number,
-  total: number
-) => {
-  const palette = resolvePalette(item.palette);
-
-  return shell(
-    item,
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "100%",
-        paddingTop: 154,
-        paddingBottom: 84,
-        paddingLeft: 92,
-        paddingRight: 92
-      }}
-    >
-      {contentPanel(
+      {panel(
+        item,
         palette,
         <div
           style={{
@@ -1335,11 +723,11 @@ const broadsideCarousel = (
             height: "100%"
           }}
         >
-          {noteStripe(palette, graphicKicker(slide.kicker, labelForItem(item)), 280)}
-          <div style={{ display: "flex", marginTop: 32, maxWidth: 840 }}>
+          {tagRow(palette, slide.kicker || item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 28, maxWidth: 620 }}>
             {renderMarkedText(slide.headline, {
-              fontFamily: index === 0 ? "Instrument Serif" : "Newsreader",
-              fontSize: index === 0 ? 84 : 72,
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
               lineHeight: 1.06,
               color: palette.text,
               highlightBackground: palette.marker,
@@ -1348,218 +736,126 @@ const broadsideCarousel = (
               highlightPaddingY: 3
             })}
           </div>
-          <div style={{ display: "flex", marginTop: 26, maxWidth: 820 }}>
+          <div style={{ display: "flex", marginTop: 24, maxWidth: 620 }}>
             {renderMarkedText(slide.body, {
               fontFamily: "Newsreader",
-              fontSize: 36,
+              fontSize: bodySize,
+              lineHeight: 1.34,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 10,
+              highlightPaddingY: 2,
+              paragraphGap: 18
+            })}
+          </div>
+          {footerBlock(palette, slide.footer, undefined)}
+        </div>,
+        {
+          width: 720,
+          minHeight: 1030
+        }
+      )}
+    </div>
+  );
+};
+
+const darkCarouselContent = (item: QueueItem, slide: CarouselSlide) => {
+  const palette = resolvePalette(item.palette);
+  const headlineSize = scaleByLength(slide.headline, 72, 50, 80);
+  const bodySize = scaleByLength(slide.body, 34, 28, 170);
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        height: "100%",
+        paddingTop: 136,
+        paddingBottom: 92,
+        paddingLeft: 90,
+        paddingRight: 90,
+        alignItems: "center"
+      }}
+    >
+      {panel(
+        item,
+        palette,
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            height: "100%"
+          }}
+        >
+          {tagRow(palette, slide.kicker || item.topic || titleCase(item.contentMode))}
+          <div style={{ display: "flex", marginTop: 32, maxWidth: 660 }}>
+            {renderMarkedText(slide.headline, {
+              fontFamily: "Instrument Serif",
+              fontSize: headlineSize,
+              lineHeight: 1.04,
+              color: palette.text,
+              highlightBackground: palette.marker,
+              highlightColor: palette.markerText,
+              highlightPaddingX: 12,
+              highlightPaddingY: 3
+            })}
+          </div>
+          <div style={{ display: "flex", marginTop: 26, maxWidth: 650 }}>
+            {renderMarkedText(slide.body, {
+              fontFamily: "Newsreader",
+              fontSize: bodySize,
               lineHeight: 1.28,
               color: palette.text,
               highlightBackground: palette.marker,
               highlightColor: palette.markerText,
               highlightPaddingX: 10,
               highlightPaddingY: 2,
-              paragraphGap: 16
+              paragraphGap: 18
             })}
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-              gap: 26,
-              marginTop: "auto"
-            }}
-          >
-            <div style={{ display: "flex", maxWidth: 520 }}>
-              {renderMarkedText(graphicFooter(slide.footer, item.angle)!, {
-                fontFamily: "Newsreader",
-                fontSize: 28,
-                lineHeight: 1.24,
-                color: palette.text,
-                highlightBackground: palette.marker,
-                highlightColor: palette.markerText,
-                highlightPaddingX: 8,
-                highlightPaddingY: 2
-              })}
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                gap: 12
-              }}
-            >
-              {Array.from({ length: total }).map((_, dotIndex) => (
-                <div
-                  key={`${item.id}-${dotIndex}`}
-                  style={{
-                    display: "flex",
-                    width: dotIndex === index ? 44 : 14,
-                    height: 14,
-                    borderRadius: 9999,
-                    backgroundColor:
-                      dotIndex === index ? palette.accent : palette.secondary
-                  }}
-                />
-              ))}
-            </div>
-          </div>
+          {footerBlock(palette, slide.footer, undefined)}
         </div>,
         {
-          width: 920,
-          marginLeft: "auto"
+          width: 780,
+          minHeight: 980
         }
       )}
-    </div>,
-    `Slide ${index + 1}/${total}`
-  );
-};
-
-const editorialCarousel = (
-  item: QueueItem,
-  slide: CarouselSlide,
-  index: number,
-  total: number
-) => {
-  const palette = resolvePalette(item.palette);
-  const isCover = index === 0;
-
-  return shell(
-    item,
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%",
-        paddingTop: 160,
-        paddingBottom: 86,
-        paddingLeft: 88,
-        paddingRight: 88
-      }}
-    >
-      {noteStripe(palette, graphicKicker(slide.kicker, labelForItem(item)), 280)}
-      <div
-        style={{
-          display: "flex",
-          marginTop: 34,
-          flexDirection: "column",
-          gap: 24,
-          maxWidth: 840
-        }}
-      >
-        {renderMarkedText(slide.headline, {
-          fontFamily: isCover ? "Instrument Serif" : "Newsreader",
-          fontSize: isCover ? 86 : 72,
-          lineHeight: 1.06,
-          color: palette.text,
-          highlightBackground: palette.marker,
-          highlightColor: palette.markerText,
-          highlightPaddingX: 12,
-          highlightPaddingY: 3
-        })}
-        {renderMarkedText(slide.body, {
-          fontFamily: "Newsreader",
-          fontSize: 40,
-          lineHeight: 1.25,
-          color: palette.text,
-          highlightBackground: palette.marker,
-          highlightColor: palette.markerText,
-          highlightPaddingX: 10,
-          highlightPaddingY: 2,
-          paragraphGap: 16
-        })}
-      </div>
-      <div
-        style={{
-          marginTop: "auto",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 24
-        }}
-      >
-        <div style={{ display: "flex", maxWidth: 610 }}>
-          {renderMarkedText(graphicFooter(slide.footer, item.angle)!, {
-            fontFamily: "Newsreader",
-            fontSize: 28,
-            lineHeight: 1.24,
-            color: palette.text,
-            highlightBackground: palette.marker,
-            highlightColor: palette.markerText,
-            highlightPaddingX: 8,
-            highlightPaddingY: 2
-          })}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: 12
-          }}
-        >
-          {Array.from({ length: total }).map((_, dotIndex) => (
-            <div
-              key={`${item.id}-${dotIndex}`}
-              style={{
-                display: "flex",
-                width: dotIndex === index ? 44 : 14,
-                height: 14,
-                borderRadius: 9999,
-                backgroundColor:
-                  dotIndex === index ? palette.accent : palette.secondary
-              }}
-            />
-          ))}
-        </div>
-      </div>
-    </div>,
-    `Slide ${index + 1}/${total}`
+    </div>
   );
 };
 
 export const renderItemCard = (item: QueueItem) => {
   if (item.kind === "carousel" && item.carousel) {
     return item.carousel.map((slide, index) => {
-      if (item.templateFamily === "highlight") {
-        return highlightCarousel(item, slide, index, item.carousel!.length);
-      }
-
       if (item.templateFamily === "notebook" || item.templateFamily === "lesson") {
-        return notebookCarousel(item, slide, index, item.carousel!.length);
+        return carouselPage(item, slide, index, notebookCarouselContent);
       }
 
       if (item.templateFamily === "broadside") {
-        return broadsideCarousel(item, slide, index, item.carousel!.length);
+        return carouselPage(item, slide, index, broadsideCarouselContent);
       }
 
-      return editorialCarousel(item, slide, index, item.carousel!.length);
+      if (item.templateFamily === "signal") {
+        return carouselPage(item, slide, index, darkCarouselContent);
+      }
+
+      return carouselPage(item, slide, index, wallCarouselContent);
     });
   }
 
-  if (item.templateFamily === "highlight") {
-    return [singleHighlight(item)];
-  }
-
   if (item.templateFamily === "notebook" || item.templateFamily === "lesson") {
-    return [singleNotebook(item)];
+    return [notebookSingle(item)];
   }
 
   if (item.templateFamily === "broadside") {
-    return [singleBroadside(item)];
-  }
-
-  if (item.templateFamily === "oracle") {
-    return [singleOracle(item)];
-  }
-
-  if (item.templateFamily === "margin") {
-    return [singleMargin(item)];
+    return [broadsideSingle(item)];
   }
 
   if (item.templateFamily === "signal") {
-    return [singleSignal(item)];
+    return [darkSingle(item)];
   }
 
-  return [singleEditorial(item)];
+  return [wallSingle(item)];
 };

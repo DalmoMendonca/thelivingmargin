@@ -22,6 +22,8 @@ The key constraint is Meta's current publishing requirement: media must be publi
 - `npm run publish:slot -- --slot midday`
 - `npm run publish:slot -- --slot evening`
 - `npm run publish:slot -- --slot morning --dry-run`
+- `npm run reset:queue`
+- `npm run seed:curated`
 - `npm run sync:remote-state`
 - `npm run ship:code -- --message "refactor: tighten captions"`
 
@@ -61,12 +63,13 @@ Notes:
 ## What the engine does
 
 1. Tops up the queue to a target size.
-2. Rotates topics and avoids near-duplicate angles.
-3. Renders polished quote cards or 5-slide carousels.
-4. Pushes assets so they become publicly reachable.
-5. Publishes the selected item to Instagram.
-6. Retries up to 3 times.
-7. Emails a failure alert if SMTP is configured.
+2. Uses a multi-pass prompt and reviewer loop to reject generic drafts.
+3. Runs copy and layout linting before items enter the queue or publish.
+4. Renders polished quote cards or 5-slide carousels on top of real-photo textures.
+5. Pushes assets so they become publicly reachable.
+6. Publishes the selected item to Instagram.
+7. Retries up to 3 times.
+8. Emails a failure alert if SMTP is configured.
 
 ## Notes
 

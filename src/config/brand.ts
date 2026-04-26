@@ -8,7 +8,7 @@ dotenv.config();
 
 const envSchema = z.object({
   OPENAI_API_KEY: z.string().optional(),
-  OPENAI_MODEL: z.string().default("gpt-5"),
+  OPENAI_MODEL: z.string().default("gpt-5.4"),
   INSTAGRAM_USER_ID: z.string().optional(),
   INSTAGRAM_ACCESS_TOKEN: z.string().optional(),
   PUBLIC_GITHUB_REPOSITORY: z.string().optional(),
@@ -51,14 +51,12 @@ export const slotTimes: Record<SlotName, string> = {
 export const slotOrder: SlotName[] = ["morning", "midday", "evening"];
 
 export const templateRotation: TemplateFamily[] = [
-  "oracle",
-  "margin",
-  "editorial",
-  "signal",
-  "lesson",
   "highlight",
+  "editorial",
   "notebook",
-  "broadside"
+  "broadside",
+  "signal",
+  "oracle"
 ];
 
 export const contentModes: ContentMode[] = [
@@ -145,19 +143,20 @@ export const palettes = {
 export const brand = {
   name: "The Living Margin",
   visualDirection:
-    "Warm, editorial, humane, and literary. Texture matters: plaster walls, notebook paper, soft grain, taped notes, highlighted phrases, and layouts that feel assembled by a tasteful human rather than procedurally generated.",
+    "Editorial, tactile, and human-made. Use real photographed surfaces when possible: white wall, worn paper, notebook stock, dark grain. Keep layouts simple enough that the texture breathes and the copy stays legible.",
   audience:
-    "Thoughtful people who like shareable writing with real texture: part literary, part relatable, part sharp insight, part emotional recognition.",
+    "Thoughtful adults who want emotionally precise, quotable writing that feels observed rather than generated.",
   tone:
-    "Direct, intimate, observant, sometimes contrarian, sometimes encouraging. Never corny, preachy, therapeutic in a canned way, guruish, or obviously engagement-seeking.",
+    "Natural, intelligent, emotionally legible, and occasionally sharp. Never canned, guruish, therapy-template, pseudo-poetic for its own sake, or obviously engineered for engagement.",
   editorialRules: [
-    "Write like one sharp human making a real claim, not like a content system performing a niche.",
-    "Let the image carry the strongest sentence. Let the caption add context, tension, or consequence instead of repeating the graphic.",
-    "Prefer one clean insight to a stack of dramatic lines, but allow denser blocks of text when the writing earns it.",
-    "Questions should invite recognition or disagreement, not announce that comments are desired.",
-    "Original writing is the default. Use quotations sparingly and only with certain attribution.",
-    "Stories can be scenes, parables, observed moments, or composite vignettes. Never present invented events as the account owner's personal biography.",
-    "Cut self-description. Never narrate the tone, strategy, posting slot, or audience inside the post."
+    "Start from a real friction, embarrassment, decision, or observed scene. Not a content theme.",
+    "Let the image deliver the line worth saving. Let the caption deepen it with consequence, detail, or a second move.",
+    "Prefer clarity over ornament. One clean turn is stronger than stacked intensity.",
+    "Questions should expose a tradeoff, not ask for generic participation.",
+    "Original writing is the default. Use quotations rarely and only with certain attribution.",
+    "Stories can be composite or observed, but they must never masquerade as the account owner's literal autobiography unless explicitly seeded that way.",
+    "Do not narrate tone, strategy, niche, posting slot, or audience inside the post.",
+    "If a sentence sounds like it could belong to any self-help account, cut it."
   ],
   forbiddenPhrases: [
     "thoughtful contrarian feed",
@@ -170,10 +169,10 @@ export const brand = {
     "evening practice"
   ],
   postMix: {
-    single: 0.55,
-    carousel: 0.45
+    single: 0.6,
+    carousel: 0.4
   },
-  queueTarget: 15,
+  queueTarget: 6,
   maxPublishAttempts: 3,
   topics: [
     "grief and repair",
@@ -202,18 +201,16 @@ export const brand = {
     "paradox and wisdom"
   ],
   contentArchetypes: [
-    "hot-take quote card",
-    "highlighted advice wall",
-    "dense story card",
-    "encouraging reminder",
-    "relatable aphorism",
-    "clean quote with commentary",
-    "paradox statement",
-    "reflective question",
-    "mini-lesson carousel",
-    "quote plus commentary",
-    "cultural observation",
-    "counterintuitive self-knowledge post"
+    "saveable aphorism",
+    "hard question card",
+    "observed scene",
+    "story with a turn",
+    "encouraging but unsentimental reminder",
+    "five-slide mini-essay",
+    "clean sourced quote plus commentary",
+    "practical advice with one vivid phrase",
+    "counterintuitive self-knowledge post",
+    "relatable recognition post"
   ]
 };
 

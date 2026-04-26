@@ -6,17 +6,18 @@ import {
   templateRotation
 } from "../config/brand.js";
 import type { ManualIdea, PublishedLogFile, QueueFile, SlotName } from "../types.js";
+import { antiSlopRules, styleExamples, voicePrinciples } from "./style-examples.js";
 
 const slotModePriorities = {
-  morning: ["encouragement", "question", "aphorism", "advice"],
+  morning: ["question", "encouragement", "aphorism", "advice"],
   midday: ["advice", "story", "observation", "question"],
-  evening: ["aphorism", "quote", "observation", "story"]
+  evening: ["story", "observation", "aphorism", "quote"]
 } as const;
 
 const slotTemplatePriorities = {
-  morning: ["highlight", "oracle", "signal", "notebook"],
-  midday: ["notebook", "lesson", "highlight", "broadside"],
-  evening: ["broadside", "editorial", "oracle", "highlight"]
+  morning: ["highlight", "notebook", "editorial", "oracle"],
+  midday: ["notebook", "broadside", "highlight", "editorial"],
+  evening: ["broadside", "signal", "editorial", "highlight"]
 } as const;
 
 const rankUnderused = <T extends string>(
@@ -43,16 +44,32 @@ const rankUnderused = <T extends string>(
     return left.localeCompare(right);
   });
 
+const fewShotBlock = styleExamples
+  .map(
+    (example, index) => `
+Example ${index + 1}: ${example.name}
+- Why it works: ${example.whyItWorks}
+- Image copy:
+${example.image}
+- Caption hook: ${example.captionHook}
+- Caption body: ${example.captionBody}
+- Comment question: ${example.commentQuestion}
+`.trim()
+  )
+  .join("\n\n");
+
 export const buildPostPrompt = ({
   slot,
   recentPublished,
   queue,
-  manualIdea
+  manualIdea,
+  revisionNotes
 }: {
   slot: SlotName;
   recentPublished: PublishedLogFile;
   queue: QueueFile;
   manualIdea?: ManualIdea;
+  revisionNotes?: string[];
 }) => {
   const recentTitles = recentPublished.entries
     .slice(-18)
@@ -66,8 +83,8 @@ export const buildPostPrompt = ({
     .join("\n");
 
   const manualSection = manualIdea
-    ? `Use this human-supplied seed idea as the starting point without copying it too literally:\n${manualIdea.idea}`
-    : "No human seed idea is available for this post. Generate a fresh idea from scratch.";
+    ? `Use this human-supplied seed as the raw material, but write with restraint and originality:\n${manualIdea.idea}`
+    : "No human seed idea is available. Start from a sharp original observation.";
 
   const activeQueue = queue.items.filter((item) => item.status !== "published");
   const contentModeCounts = new Map<string, number>();
@@ -99,8 +116,13 @@ export const buildPostPrompt = ({
     .slice(0, 4)
     .join(", ");
 
+  const revisionBlock =
+    revisionNotes && revisionNotes.length > 0
+      ? `Your previous attempt was rejected. Fix these issues directly:\n- ${revisionNotes.join("\n- ")}`
+      : "No prior revision notes.";
+
   return `
-You are creating a single Instagram-ready content package for a highly curated account.
+You are creating one Instagram-ready content package for a premium writing account.
 
 Brand target:
 - Audience: ${brand.audience}
@@ -108,31 +130,20 @@ Brand target:
 - Visual direction: ${brand.visualDirection}
 - Preferred posting slot: ${slot} (${slotTimes[slot]})
 
-Account goals:
-- Optimize for resonance, saves, shares, and the kind of comments that come from recognition or disagreement.
-- Feel genuinely human, literary, and intentional.
-- Avoid generic self-help sludge, vague platitudes, therapy-speak, hustle-bro cliches, or fake mysticism.
-- English only.
-- If using a quote, attribution must be certain and the quote must stay short.
-- Original writing is preferred unless a quote genuinely improves the post.
-- Avoid politics, medical claims, financial claims, adult content, and copyrighted long excerpts.
-
-Editorial strategy:
+Core strategy:
 ${brand.editorialRules.map((rule) => `- ${rule}`).join("\n")}
 
-Variety pressure for this generation:
-- Underused content modes in the active queue: ${suggestedModes}
-- Underused template families in the active queue: ${suggestedTemplates}
-- For the ${slot} slot, especially consider: ${slotModePriorities[slot].join(", ")}
-- Let this post widen the feed instead of blending into the existing queue.
+Voice principles:
+${voicePrinciples.map((rule) => `- ${rule}`).join("\n")}
 
-Format guidance:
-- Choose either a single-image quote/editorial post OR a carousel.
-- Singles should feel punchy and memorable.
-- Carousels should feel like miniature essays with momentum and a reason to swipe.
-- Build a better mix than a pure "thinking account." Some posts should feel quotable, some useful, some emotionally precise, some story-driven, some encouraging.
-- Use visual variety without losing the brand: textured surfaces, highlighted phrases, denser text blocks, occasional quieter minimalist cards.
-- Do not imitate or paraphrase specific reference-account posts. Be original.
+Anti-slop rules:
+${antiSlopRules.map((rule) => `- ${rule}`).join("\n")}
+
+Variety pressure for this generation:
+- Underused content modes: ${suggestedModes}
+- Underused template families: ${suggestedTemplates}
+- For the ${slot} slot, lean toward: ${slotModePriorities[slot].join(", ")}
+- This draft must widen the feed, not blend into the current queue.
 
 Recent published posts to avoid repeating:
 ${recentTitles || "- none yet"}
@@ -141,6 +152,18 @@ Current queued ideas to avoid overlapping with:
 ${queuedTitles || "- none yet"}
 
 ${manualSection}
+
+${revisionBlock}
+
+Few-shot style references:
+${fewShotBlock}
+
+Planning instructions:
+- Privately brainstorm 3 radically different directions before writing.
+- Reject any direction that sounds like generic self-help, coaching copy, therapy-template language, or engagement farming.
+- Pick the direction with the cleanest sentence music, strongest human specificity, and clearest save-worthy line.
+- Keep the image copy tighter than the caption.
+- Make the caption add a second move, not a restatement.
 
 Do not use these phrases, or anything similarly self-descriptive, inside the post or caption:
 ${brand.forbiddenPhrases.map((phrase) => `- ${phrase}`).join("\n")}
@@ -175,7 +198,7 @@ Return valid JSON only with this exact shape:
   ],
   "caption": {
     "hook": "1 sentence",
-    "body": "2 to 5 sentences",
+    "body": "2 to 4 sentences",
     "callToComment": "1 precise question that earns comments naturally",
     "hashtags": ["3 to 6 concise hashtags"]
   }
@@ -184,16 +207,43 @@ Return valid JSON only with this exact shape:
 Rules:
 - Exactly one of "single" or "carousel" should be populated. The other must be null.
 - If carousel is chosen, provide 5 slides.
+- English only.
 - Do not use emojis.
-- Keep copy tight enough to fit on beautifully designed slides.
-- Make the post arguable enough that smart people may disagree in the comments.
+- Keep every field short enough to fit on the card beautifully.
+- Original writing is preferred unless a quote genuinely improves the post.
+- If using a quote, attribution must be certain and the quote must stay short.
 - Never narrate the tone, strategy, posting slot, audience, or desired engagement inside the post or caption.
-- The image should never contain meta labels such as "contrarian," "comment bait," "morning prompt," or generic engagement instructions.
-- The caption should sound authored, not automated. No filler, no AI hedging, and no fake citation lines.
-- If there is no real, verifiable source, set "quoteAttribution" to null. Never output the string "null".
+- The image should never contain meta labels, fake source labels, or page labels for a single-image post.
+- If there is no real source, set "quoteAttribution" to null. Never output the string "null".
 - Hashtags must be lowercase and begin with "#".
-- You may wrap 1 to 3 exact phrases in [[double brackets]] to request visual highlighting on the card. Use that sparingly and only when it improves rhythm or emphasis.
+- You may wrap 1 to 3 exact phrases in [[double brackets]] to request visual highlighting on the card.
 - "story" content must never pretend to be a true autobiographical confession from the account owner unless the seed idea explicitly says so.
-- Prefer "highlight", "notebook", or "broadside" when the copy benefits from denser text, vivid emphasis, or a more human-made poster feel.
+- Prefer crisp endings over inspirational blur.
 `.trim();
 };
+
+export const buildRevisionPrompt = ({
+  draft,
+  revisionNotes
+}: {
+  draft: unknown;
+  revisionNotes: string[];
+}) =>
+  `
+Revise this Instagram content package.
+
+Goals:
+- Make it sound more human, more singular, and less like a generated content artifact.
+- Keep the strongest underlying idea.
+- Shorten wherever the draft is over-explaining itself.
+- Make the caption add a second move instead of repeating the card.
+- Keep the final output visually renderable.
+
+Required fixes:
+- ${revisionNotes.join("\n- ")}
+
+Candidate JSON to revise:
+${JSON.stringify(draft, null, 2)}
+
+Return valid JSON only in the exact same schema as the input package.
+`.trim();

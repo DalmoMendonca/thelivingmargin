@@ -14,7 +14,8 @@ const leadingMetaPatterns = [
   /^(morning|midday|evening)\s+(prompt|reminder|practice)\s*[:,-]?\s*/i,
   /^quick litmus test\s*:\s*/i,
   /^contrarian (premise|take|thought)\s*[:,-]?\s*/i,
-  /^reflective (prompt|question)\s*[:,-]?\s*/i
+  /^reflective (prompt|question)\s*[:,-]?\s*/i,
+  /^source\s*:\s*(null|none|n\/a|na|unknown)\s*/i
 ];
 
 export const normalizeOptionalText = (value?: string | null) => {
@@ -37,6 +38,17 @@ export const stripMetaLead = (value: string) =>
   leadingMetaPatterns
     .reduce((current, pattern) => current.replace(pattern, ""), value.trim())
     .replace(/^\s*([a-z])/, (_, first: string) => first.toUpperCase());
+
+export const normalizeTypography = (value: string) =>
+  value
+    .normalize("NFKC")
+    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015]/g, "-")
+    .replace(/\u00ad/g, "")
+    .replace(/\u2026/g, "...")
+    .replace(/\uFFFD/g, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 
 export const normalizeHashtag = (value: string) => {
   const cleaned = value
@@ -156,28 +168,39 @@ const contentModeFallbackForItem = (item: Partial<QueueItem>): ContentMode => {
 
 export const sanitizeQueueItem = (item: QueueItem): QueueItem => ({
   ...item,
+  title: normalizeTypography(item.title),
+  topic: normalizeTypography(item.topic),
+  angle: normalizeTypography(item.angle),
   surfaceStyle: normalizeSurfaceStyle(item.surfaceStyle, surfaceFallbackForItem(item)),
   quoteAttribution: normalizeQuoteAttribution(item.quoteAttribution),
   contentMode: normalizeContentMode(item.contentMode, contentModeFallbackForItem(item)),
+  altText: normalizeTypography(item.altText),
   single: item.single
     ? {
-        ...item.single,
+        headline: normalizeTypography(item.single.headline),
+        body: normalizeTypography(item.single.body),
         supportLine: item.single.supportLine
-          ? stripMetaLead(item.single.supportLine)
+          ? normalizeTypography(stripMetaLead(item.single.supportLine))
           : undefined,
-        footer: item.single.footer ? stripMetaLead(item.single.footer) : undefined
+        footer: item.single.footer
+          ? normalizeTypography(stripMetaLead(item.single.footer))
+          : undefined
       }
     : undefined,
   carousel: item.carousel?.map((slide) => ({
-    ...slide,
-    kicker: slide.kicker ? stripMetaLead(slide.kicker) : undefined,
-    footer: slide.footer ? stripMetaLead(slide.footer) : undefined
+    kicker: slide.kicker
+      ? normalizeTypography(stripMetaLead(slide.kicker))
+      : undefined,
+    headline: normalizeTypography(slide.headline),
+    body: normalizeTypography(slide.body),
+    footer: slide.footer
+      ? normalizeTypography(stripMetaLead(slide.footer))
+      : undefined
   })),
   caption: {
-    ...item.caption,
-    hook: stripMetaLead(item.caption.hook),
-    body: stripMetaLead(item.caption.body),
-    callToComment: stripMetaLead(item.caption.callToComment),
+    hook: normalizeTypography(stripMetaLead(item.caption.hook)),
+    body: normalizeTypography(stripMetaLead(item.caption.body)),
+    callToComment: normalizeTypography(stripMetaLead(item.caption.callToComment)),
     hashtags: normalizeHashtags(item.caption.hashtags)
   }
 });
