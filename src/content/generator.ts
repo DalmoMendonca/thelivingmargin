@@ -1,5 +1,3 @@
-import OpenAI from "openai";
-import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 import { appEnv, brand, hasOpenAi, slotOrder } from "../config/brand.js";
 import type {
@@ -24,8 +22,17 @@ import {
 } from "../util/text.js";
 import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
-import { buildPostPrompt, buildRevisionPrompt } from "./prompts.js";
-import { reviewQueueItem } from "./quality.js";
+import { contentModeProfiles } from "./mode-profiles.js";
+import { modePlaybooks } from "./mode-playbooks.js";
+import { createOpenAiClient, parseStructuredResponse } from "./openai.js";
+import {
+  buildCandidatePrompt,
+  buildPlanningPrompt,
+  buildPolishPrompt,
+  buildSelectionPrompt,
+  deriveTargetMode
+} from "./prompts.js";
+import { reviewQueueItem, type ReviewResult } from "./quality.js";
 import { isPublishableStatus } from "../queue/selection.js";
 
 const templateFamilyValues = [
@@ -104,19 +111,65 @@ const responseSchema = z.object({
     hook: z.string(),
     body: z.string(),
     callToComment: z.string().optional().nullable(),
-    hashtags: z.array(z.string()).min(3).max(6)
+    hashtags: z.array(z.string()).max(4)
   })
 });
 
+const planningSchema = z.object({
+  contentMode: z.enum(contentModeValues),
+  slotPreference: z.enum(slotValues),
+  kind: z.enum(["single", "carousel"]),
+  slideCount: z.number().int().nullable(),
+  templateFamily: z.enum(templateFamilyValues),
+  palette: z.enum(paletteValues),
+  surfaceStyle: z.enum(surfaceStyleValues),
+  voiceMode: z.enum(["contrarian", "reflective", "sharp"]),
+  title: z.string(),
+  topic: z.string(),
+  angle: z.string(),
+  readerMoment: z.string(),
+  emotionalCore: z.string(),
+  imageIntent: z.string(),
+  captionIntent: z.string(),
+  concreteAnchors: z.array(z.string()).min(2).max(5),
+  mustInclude: z.array(z.string()).max(5),
+  mustAvoid: z.array(z.string()).min(3).max(6),
+  cardBlueprint: z.array(z.string()).min(1).max(5),
+  commentStyle: z.enum(["none", "reflective", "direct"])
+});
+
+const selectionSchema = z.object({
+  winnerIndex: z.number().int().min(1).max(3),
+  rationale: z.string(),
+  preserve: z.array(z.string()).min(1).max(4),
+  polishPriorities: z.array(z.string()).min(1).max(5)
+});
+
+type DraftPlan = z.infer<typeof planningSchema>;
+type SelectionDecision = z.infer<typeof selectionSchema>;
+
+interface CandidateRun {
+  index: number;
+  laneName: string;
+  item: QueueItem;
+  review: ReviewResult;
+  score: number;
+}
+
 const buildQueueItem = (
   parsed: z.infer<typeof responseSchema>,
-  manualIdea?: ManualIdea
+  manualIdea?: ManualIdea,
+  pipelineNote?: string
 ): QueueItem => {
   const title = trimParagraphs(parsed.title);
   const angle = trimParagraphs(parsed.angle);
   const topic = trimParagraphs(parsed.topic);
   const createdAt = nowIso();
   const id = buildContentId(createdAt, title);
+  const notes = [
+    manualIdea ? `Seeded from manual idea ${manualIdea.id}` : undefined,
+    pipelineNote
+  ].filter((value): value is string => Boolean(value));
 
   return sanitizeQueueItem({
     id,
@@ -167,16 +220,8 @@ const buildQueueItem = (
     },
     publishAttempts: 0,
     status: "ready",
-    notes: manualIdea ? `Seeded from manual idea ${manualIdea.id}` : undefined
+    notes: notes.length > 0 ? notes.join(" | ") : undefined
   });
-};
-
-const reasoningEffortForModel = (model: string) => {
-  if (model.startsWith("gpt-5.4")) {
-    return "medium";
-  }
-
-  return "low";
 };
 
 const nextSlotForQueue = (items: QueueItem[]) => {
@@ -210,73 +255,242 @@ export const countPublishableItems = (items: QueueItem[]) =>
 
 export const fallbackPosts = () => sampleQueueItems();
 
-const parseDraftFromPrompt = async ({
-  prompt,
-  manualIdea
-}: {
-  prompt: string;
-  manualIdea?: ManualIdea;
-}) => {
-  if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is missing.");
+const planToJson = (plan: DraftPlan) => JSON.stringify(plan, null, 2);
+
+const scoreReview = (review: ReviewResult) =>
+  review.review.overall * 2 +
+  review.review.humanVoice * 2 +
+  review.review.specificity * 1.4 +
+  review.review.freshness * 1.4 +
+  review.review.captionDelta * 1.1 +
+  review.review.visualFit * 1.1 +
+  review.review.modeFit * 1.4 +
+  (review.approved ? 6 : 0);
+
+const compactReasons = (review: ReviewResult) =>
+  review.review.reasons.length > 0
+    ? review.review.reasons
+    : review.review.revisionBrief.slice(0, 3);
+
+const stabilizePlan = (
+  plan: DraftPlan,
+  slot: SlotName,
+  targetMode: ContentMode
+) => {
+  const profile = contentModeProfiles[targetMode];
+
+  plan.slotPreference = slot;
+  plan.contentMode = targetMode;
+
+  if (plan.kind === "single") {
+    plan.slideCount = null;
+    return plan;
   }
 
-  const client = new OpenAI({ apiKey: appEnv.OPENAI_API_KEY });
-  const response = await client.responses.parse({
-    model: appEnv.OPENAI_MODEL,
+  if (!plan.slideCount) {
+    plan.slideCount = profile.preferredSlideCounts?.[0] ?? 3;
+  }
+
+  return plan;
+};
+
+const alignItemToPlan = (item: QueueItem, plan: DraftPlan) => {
+  if (item.kind !== plan.kind) {
+    throw new Error(`Draft ignored plan kind. Expected ${plan.kind}, received ${item.kind}.`);
+  }
+
+  if (plan.kind === "single" && !item.single) {
+    throw new Error("Draft planned as single but single payload is missing.");
+  }
+
+  if (plan.kind === "carousel") {
+    if (!item.carousel?.length) {
+      throw new Error("Draft planned as carousel but carousel payload is missing.");
+    }
+
+    if (plan.slideCount && item.carousel.length !== plan.slideCount) {
+      throw new Error(
+        `Draft ignored planned slide count. Expected ${plan.slideCount}, received ${item.carousel.length}.`
+      );
+    }
+  }
+
+  item.slotPreference = plan.slotPreference;
+  item.contentMode = plan.contentMode;
+  item.templateFamily = plan.templateFamily;
+  item.palette = plan.palette;
+  item.surfaceStyle = plan.surfaceStyle;
+  item.voiceMode = plan.voiceMode;
+  return item;
+};
+
+const polishPrioritiesForRun = (
+  winner: CandidateRun,
+  decision: SelectionDecision
+) => {
+  const seen = new Set<string>();
+  const merged = [...decision.polishPriorities, ...winner.review.review.revisionBrief];
+
+  return merged.filter((value) => {
+    const key = value.toLowerCase();
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
+};
+
+const parseDraftFromPrompt = async ({
+  client,
+  prompt,
+  manualIdea,
+  pipelineNote
+}: {
+  client: ReturnType<typeof createOpenAiClient>;
+  prompt: string;
+  manualIdea?: ManualIdea;
+  pipelineNote?: string;
+}) => {
+  const parsed = await parseStructuredResponse({
+    client,
+    schema: responseSchema,
+    schemaName: "instagram_post_package",
     instructions:
       "You are a creative director and copywriter for a visually sophisticated Instagram account. Return JSON only.",
     input: prompt,
-    max_output_tokens: 2200,
-    reasoning: {
-      effort: reasoningEffortForModel(appEnv.OPENAI_MODEL)
-    },
-    text: {
-      format: zodTextFormat(responseSchema, "instagram_post_package"),
-      verbosity: "low"
-    }
+    maxOutputTokens: 2200
   });
 
-  const parsed = response.output_parsed;
-  if (!parsed) {
-    throw new Error("OpenAI did not return a parsed structured response.");
-  }
-
-  return buildQueueItem(parsed, manualIdea);
+  return buildQueueItem(parsed, manualIdea, pipelineNote);
 };
 
-const generateDraft = async ({
+const generatePlan = async ({
+  client,
   slot,
   queue,
   published,
   manualIdea,
-  revisionNotes,
   forcedContentMode,
   seedIdea
 }: {
+  client: ReturnType<typeof createOpenAiClient>;
   slot: SlotName;
   queue: QueueFile;
   published: PublishedLogFile;
   manualIdea?: ManualIdea;
-  revisionNotes?: string[];
   forcedContentMode?: ContentMode;
   seedIdea?: string;
-}) => {
-  if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is missing.");
-  }
-
-  const prompt = buildPostPrompt({
-    slot,
-    recentPublished: published,
-    queue,
-    manualIdea,
-    revisionNotes,
-    forcedContentMode,
-    seedIdea
+}) =>
+  parseStructuredResponse({
+    client,
+    schema: planningSchema,
+    schemaName: "instagram_content_plan",
+    instructions:
+      "You are the planning brain for a premium text-first Instagram account. Build a concrete, specific plan before prose is written. Return JSON only.",
+    input: buildPlanningPrompt({
+      slot,
+      recentPublished: published,
+      queue,
+      manualIdea,
+      forcedContentMode,
+      seedIdea
+    }),
+    maxOutputTokens: 1500
   });
 
-  return parseDraftFromPrompt({ prompt, manualIdea });
+const generateLaneCandidate = async ({
+  client,
+  laneName,
+  laneInstruction,
+  mode,
+  planJson,
+  manualIdea
+}: {
+  client: ReturnType<typeof createOpenAiClient>;
+  laneName: string;
+  laneInstruction: string;
+  mode: ContentMode;
+  planJson: string;
+  manualIdea?: ManualIdea;
+}) =>
+  parseDraftFromPrompt({
+    client,
+    prompt: buildCandidatePrompt({
+      planJson,
+      laneName,
+      laneInstruction,
+      mode
+    }),
+    manualIdea,
+    pipelineNote: `AI pipeline lane ${laneName}`
+  });
+
+const chooseWinner = async ({
+  client,
+  planJson,
+  candidates
+}: {
+  client: ReturnType<typeof createOpenAiClient>;
+  planJson: string;
+  candidates: CandidateRun[];
+}) => {
+  const fallback = [...candidates].sort((left, right) => right.score - left.score)[0];
+
+  if (candidates.length === 1) {
+    return {
+      winner: fallback,
+      decision: {
+        winnerIndex: fallback.index,
+        rationale: "Only one candidate remained after review.",
+        preserve: compactReasons(fallback.review).slice(0, 2),
+        polishPriorities: fallback.review.review.revisionBrief.slice(0, 4)
+      }
+    };
+  }
+
+  try {
+    const decision = await parseStructuredResponse({
+      client,
+      schema: selectionSchema,
+      schemaName: "instagram_candidate_selection",
+      instructions:
+        "You are an editorial selector choosing the best candidate from multiple drafts. Return JSON only.",
+      input: buildSelectionPrompt({
+        planJson,
+        candidates: candidates.map((candidate) => ({
+          index: candidate.index,
+          laneName: candidate.laneName,
+          score: candidate.score,
+          reviewSummary: compactReasons(candidate.review),
+          item: candidate.item
+        }))
+      }),
+      maxOutputTokens: 700
+    });
+
+    const winner =
+      candidates.find((candidate) => candidate.index === decision.winnerIndex) ?? fallback;
+
+    return {
+      winner,
+      decision
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    logWarn(`Comparative selection failed. Using top-scoring candidate. ${message}`);
+
+    return {
+      winner: fallback,
+      decision: {
+        winnerIndex: fallback.index,
+        rationale: "Top-scoring draft selected by deterministic rubric fallback.",
+        preserve: compactReasons(fallback.review).slice(0, 2),
+        polishPriorities: fallback.review.review.revisionBrief.slice(0, 4)
+      }
+    };
+  }
 };
 
 export const generateWithOpenAi = async ({
@@ -285,7 +499,8 @@ export const generateWithOpenAi = async ({
   published,
   manualIdea,
   forcedContentMode,
-  seedIdea
+  seedIdea,
+  allowSoftPass = false
 }: {
   slot: SlotName;
   queue: QueueFile;
@@ -293,54 +508,162 @@ export const generateWithOpenAi = async ({
   manualIdea?: ManualIdea;
   forcedContentMode?: ContentMode;
   seedIdea?: string;
+  allowSoftPass?: boolean;
 }) => {
-  let revisionNotes: string[] | undefined;
-  let lastItem: QueueItem | undefined;
-  let lastReasons: string[] = [];
+  if (!hasOpenAi() || !appEnv.OPENAI_API_KEY) {
+    throw new Error("OPENAI_API_KEY is missing.");
+  }
 
-  const firstDraft = await generateDraft({
+  const client = createOpenAiClient();
+  const targetMode = forcedContentMode ?? deriveTargetMode(slot, queue);
+  const playbook = modePlaybooks[targetMode];
+
+  const rawPlan = await generatePlan({
+    client,
     slot,
     queue,
     published,
     manualIdea,
-    forcedContentMode,
+    forcedContentMode: targetMode,
     seedIdea
   });
-  lastItem = firstDraft;
+  const plan = stabilizePlan(rawPlan, slot, targetMode);
+  const planJson = planToJson(plan);
 
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
-    const item: QueueItem =
-      attempt === 1
-        ? firstDraft
-        : await parseDraftFromPrompt({
-            prompt: buildRevisionPrompt({
-              draft: lastItem,
-              revisionNotes: revisionNotes ?? lastReasons
-            }),
-            manualIdea
-          });
-    lastItem = item;
+  const candidateSettled = await Promise.allSettled(
+    playbook.draftLanes.map((lane, index) =>
+      generateLaneCandidate({
+        client,
+        laneName: lane.name,
+        laneInstruction: lane.instruction,
+        mode: targetMode,
+        planJson,
+        manualIdea
+      }).then((item) => ({
+        index: index + 1,
+        laneName: lane.name,
+        item: alignItemToPlan(item, plan)
+      }))
+    )
+  );
 
-    const review = await reviewQueueItem(item);
-    if (review.approved) {
-      if (attempt > 1) {
-        logStep(`Accepted revised draft for ${item.title} on attempt ${attempt}.`);
-      }
-      return item;
+  const parsedCandidates = candidateSettled.flatMap((result) => {
+    if (result.status === "rejected") {
+      logWarn(`Candidate generation failed: ${result.reason instanceof Error ? result.reason.message : String(result.reason)}`);
+      return [];
     }
 
-    lastReasons = review.review.reasons;
-    revisionNotes =
-      review.review.revisionBrief.length > 0
-        ? review.review.revisionBrief
-        : review.review.reasons;
+    return [result.value];
+  });
+
+  if (parsedCandidates.length === 0) {
+    throw new Error(`No candidate drafts were generated for mode ${targetMode}.`);
+  }
+
+  const reviewedCandidates: CandidateRun[] = [];
+  for (const candidate of parsedCandidates) {
+    const review = await reviewQueueItem(candidate.item, {
+      planJson,
+      laneName: candidate.laneName,
+      rubricEmphasis: playbook.rubricEmphasis
+    });
+
+    reviewedCandidates.push({
+      index: candidate.index,
+      laneName: candidate.laneName,
+      item: candidate.item,
+      score: scoreReview(review),
+      review
+    });
+  }
+
+  const candidatePool = reviewedCandidates.some((candidate) => candidate.review.approved)
+    ? reviewedCandidates.filter((candidate) => candidate.review.approved)
+    : [...reviewedCandidates].sort((left, right) => right.score - left.score).slice(0, 2);
+
+  const { winner, decision } = await chooseWinner({
+    client,
+    planJson,
+    candidates: candidatePool
+  });
+
+  let polished = await parseDraftFromPrompt({
+    client,
+    prompt: buildPolishPrompt({
+      planJson,
+      draft: winner.item,
+      preserve: decision.preserve,
+      polishPriorities: polishPrioritiesForRun(winner, decision),
+      rationale: decision.rationale
+    }),
+    manualIdea,
+    pipelineNote: `AI pipeline winner ${winner.laneName}`
+  });
+  polished = alignItemToPlan(polished, plan);
+
+  let lastFinalReview: ReviewResult | undefined;
+
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    const finalReview = await reviewQueueItem(polished, {
+      planJson,
+      laneName: `${winner.laneName}-polished`,
+      rubricEmphasis: playbook.rubricEmphasis
+    });
+    lastFinalReview = finalReview;
+
+    if (finalReview.approved) {
+      polished.notes = [polished.notes, `Plan mode ${plan.contentMode}`]
+        .filter((value): value is string => Boolean(value))
+        .join(" | ");
+      if (attempt > 1) {
+        logStep(`Accepted polished draft for ${polished.title} on attempt ${attempt}.`);
+      }
+      return polished;
+    }
+
+    const revisionBrief =
+      finalReview.review.revisionBrief.length > 0
+        ? finalReview.review.revisionBrief
+        : finalReview.review.reasons;
+
     logWarn(
-      `Rejected draft attempt ${attempt} for ${item.title}: ${lastReasons.join(" | ")}`
+      `Polish attempt ${attempt} failed for ${polished.title}: ${finalReview.review.reasons.join(" | ")}`
     );
+
+    polished = await parseDraftFromPrompt({
+      client,
+      prompt: buildPolishPrompt({
+        planJson,
+        draft: polished,
+        preserve: decision.preserve,
+        polishPriorities: revisionBrief,
+        rationale: `Further revision requested after editorial review of the selected ${winner.laneName} lane.`
+      }),
+      manualIdea,
+      pipelineNote: `AI pipeline winner ${winner.laneName} revised`
+    });
+    polished = alignItemToPlan(polished, plan);
+  }
+
+  if (
+    allowSoftPass &&
+    lastFinalReview &&
+    lastFinalReview.review.overall >= 5 &&
+    lastFinalReview.review.humanVoice >= 5 &&
+    lastFinalReview.review.specificity >= 5 &&
+    lastFinalReview.review.freshness >= 5 &&
+    lastFinalReview.review.visualFit >= 6 &&
+    lastFinalReview.review.modeFit >= 5
+  ) {
+    polished.notes = [polished.notes, "Showcase soft-pass"]
+      .filter((value): value is string => Boolean(value))
+      .join(" | ");
+    logWarn(`Soft-passing showcase draft for ${polished.title} after near-miss review.`);
+    return polished;
   }
 
   throw new Error(
-    `Unable to generate an approved post after 3 attempts.${lastItem ? ` Last title: ${lastItem.title}.` : ""} ${lastReasons.join(" ")}`
+    `Unable to generate an approved post after planning, candidate fan-out, selection, and polish for mode ${targetMode}.`
   );
 };
 

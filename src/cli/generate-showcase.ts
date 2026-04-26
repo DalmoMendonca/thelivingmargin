@@ -24,7 +24,8 @@ for (const mode of contentModes) {
         queue,
         published,
         forcedContentMode: mode,
-        seedIdea: showcaseSeedIdeas[mode]
+        seedIdea: showcaseSeedIdeas[mode],
+        allowSoftPass: true
       });
 
       if (isTooSimilar(candidate, queue, published)) {

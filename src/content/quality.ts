@@ -1,9 +1,9 @@
-import OpenAI from "openai";
-import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 import { appEnv, hasOpenAi } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
 import { contentModeProfiles } from "./mode-profiles.js";
+import { modePlaybooks } from "./mode-playbooks.js";
+import { createOpenAiClient, parseStructuredResponse } from "./openai.js";
 
 const metaPattern =
   /\b(thoughtful contrarian|comment bait|uncomfortable, but useful|morning prompt|midday reminder|evening practice)\b/i;
@@ -25,9 +25,15 @@ const reviewSchema = z.object({
   freshness: z.number().min(1).max(10),
   captionDelta: z.number().min(1).max(10),
   visualFit: z.number().min(1).max(10),
+  modeFit: z.number().min(1).max(10),
   reasons: z.array(z.string()).max(6),
   revisionBrief: z.array(z.string()).max(6)
 });
+
+export interface ReviewResult {
+  approved: boolean;
+  review: z.infer<typeof reviewSchema>;
+}
 
 const textLength = (value?: string) =>
   (value ?? "")
@@ -82,7 +88,14 @@ const budgetForItem = (item: QueueItem) => {
     return {
       kicker: 42,
       headline: item.templateFamily === "broadside" ? 88 : narrativeMode ? 78 : 74,
-      body: item.templateFamily === "broadside" ? (narrativeMode ? 290 : 250) : narrativeMode ? 245 : 220,
+      body:
+        item.templateFamily === "broadside"
+          ? narrativeMode
+            ? 290
+            : 250
+          : narrativeMode
+            ? 245
+            : 220,
       footer: 84
     };
   }
@@ -246,8 +259,8 @@ export const lintQueueItem = (item: QueueItem) => {
     warnings.push("Caption is drifting too close to the image copy.");
   }
 
-  if (item.caption.hashtags.length < 3 || item.caption.hashtags.length > 6) {
-    errors.push("Hashtag count must stay between 3 and 6.");
+  if (item.caption.hashtags.length > 4) {
+    errors.push("Hashtag count must stay at 4 or fewer.");
   }
 
   return {
@@ -257,15 +270,29 @@ export const lintQueueItem = (item: QueueItem) => {
   };
 };
 
-const reviewPromptForItem = (item: QueueItem, warnings: string[]) =>
+const reviewPromptForItem = (
+  item: QueueItem,
+  warnings: string[],
+  context?: {
+    planJson?: string;
+    laneName?: string;
+    rubricEmphasis?: string[];
+  }
+) =>
   [
     "Review this Instagram content package for a premium writing account.",
-    "Reject anything that feels AI-generated, over-explained, generic, caption-redundant, or visually risky.",
-    "A passing draft should sound like a sharp human wrote it in one sitting.",
-    "Focus especially on: human voice, specificity, freshness, whether the caption adds a second move, and whether the amount of text fits the chosen visual format.",
+    "Your job is to judge whether it sounds human, specific, mode-faithful, and worth publishing.",
+    "Reject drafts that feel generic, synthetic, caption-redundant, implausible, over-explained, or visually risky.",
+    "A passing draft should feel like a sharp person wrote it in one sitting.",
     `This draft's intended mode is ${item.contentMode} (${contentModeProfiles[item.contentMode].label}).`,
-    `Mode success: ${contentModeProfiles[item.contentMode].objective}`,
+    `Mode success target: ${contentModeProfiles[item.contentMode].objective}`,
     `Mode failure patterns: ${contentModeProfiles[item.contentMode].bannedMoves.join(" | ")}`,
+    `Mode rubric emphasis: ${modePlaybooks[item.contentMode].rubricEmphasis.join(" | ")}`,
+    context?.laneName ? `Candidate lane: ${context.laneName}` : undefined,
+    context?.planJson ? `Planning brief:\n${context.planJson}` : undefined,
+    context?.rubricEmphasis && context.rubricEmphasis.length > 0
+      ? `Additional rubric emphasis:\n- ${context.rubricEmphasis.join("\n- ")}`
+      : undefined,
     warnings.length > 0 ? `Lint warnings:\n- ${warnings.join("\n- ")}` : undefined,
     "Candidate JSON:",
     JSON.stringify(
@@ -282,12 +309,20 @@ const reviewPromptForItem = (item: QueueItem, warnings: string[]) =>
       },
       null,
       2
-    )
+    ),
+    "Return structured scores. Use harsh but fair standards."
   ]
     .filter(Boolean)
     .join("\n\n");
 
-export const reviewQueueItem = async (item: QueueItem) => {
+export const reviewQueueItem = async (
+  item: QueueItem,
+  context?: {
+    planJson?: string;
+    laneName?: string;
+    rubricEmphasis?: string[];
+  }
+): Promise<ReviewResult> => {
   const lint = lintQueueItem(item);
   if (!lint.approved) {
     return {
@@ -300,6 +335,7 @@ export const reviewQueueItem = async (item: QueueItem) => {
         freshness: 1,
         captionDelta: 1,
         visualFit: 1,
+        modeFit: 1,
         reasons: lint.errors,
         revisionBrief: [...lint.errors, ...lint.warnings].slice(0, 6)
       }
@@ -317,6 +353,7 @@ export const reviewQueueItem = async (item: QueueItem) => {
         freshness: 8,
         captionDelta: 8,
         visualFit: 9,
+        modeFit: 8,
         reasons: lint.warnings,
         revisionBrief: []
       }
@@ -334,41 +371,33 @@ export const reviewQueueItem = async (item: QueueItem) => {
         freshness: 8,
         captionDelta: 8,
         visualFit: 8,
+        modeFit: 8,
         reasons: lint.warnings,
         revisionBrief: []
       }
     };
   }
 
-  const client = new OpenAI({ apiKey: appEnv.OPENAI_API_KEY });
-  const response = await client.responses.parse({
-    model: appEnv.OPENAI_MODEL,
+  const client = createOpenAiClient();
+  const review = await parseStructuredResponse({
+    client,
+    schema: reviewSchema,
+    schemaName: "instagram_editorial_review",
     instructions:
-      "You are a ruthless editorial reviewer. Be conservative. If the draft feels even mildly generic, approve=false.",
-    input: reviewPromptForItem(item, lint.warnings),
-    max_output_tokens: 700,
-    reasoning: {
-      effort: "low"
-    },
-    text: {
-      format: zodTextFormat(reviewSchema, "instagram_editorial_review"),
-      verbosity: "low"
-    }
+      "You are a sharp editorial reviewer. Score the work honestly. Approve only if it feels publishable for a premium text-first Instagram account. Return JSON only.",
+    input: reviewPromptForItem(item, lint.warnings, context),
+    maxOutputTokens: 900,
+    reasoningEffort: "low"
   });
 
-  const review = response.output_parsed;
-  if (!review) {
-    throw new Error("Review model did not return a structured result.");
-  }
-
   const approved =
-    review.approve &&
-    review.overall >= 8 &&
-    review.humanVoice >= 8 &&
+    review.overall >= 7 &&
+    review.humanVoice >= 7 &&
     review.specificity >= 7 &&
     review.freshness >= 7 &&
-    review.captionDelta >= 7 &&
-    review.visualFit >= 7;
+    review.captionDelta >= 6 &&
+    review.visualFit >= 7 &&
+    review.modeFit >= 7;
 
   return {
     approved,
