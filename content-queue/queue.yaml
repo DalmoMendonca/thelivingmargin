@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T14:55:35.334Z
+updatedAt: 2026-04-26T15:13:05.024Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -215,7 +215,7 @@ items:
     fingerprint: advice decoration inspired only resourced rested tuesday useful
       when works youre
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: midday
     kind: single
     templateFamily: highlight
@@ -247,6 +247,9 @@ items:
         - "#selfknowledge"
         - "#habits"
         - "#clarity"
+    renderDir: docs/assets/posts/2026-04-26-tuesday-advice
+    renderedFiles:
+      - docs/assets/posts/2026-04-26-tuesday-advice/post.png
   - id: 2026-04-26-busy-language
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual
