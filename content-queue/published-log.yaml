@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T17:13:00.444Z
+updatedAt: 2026-04-26T18:10:40.048Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -187,3 +187,14 @@ entries:
     slot: morning
     instagramMediaId: "18082139120108764"
     title: Hope's Favorite Translation
+  - id: 2026-04-26-busy-language
+    publishedAt: 2026-04-26T18:10:40.020Z
+    topic: intimacy and distance
+    angle: People sometimes use the language of busyness to soften a choice they do
+      not want to name.
+    fingerprint: busy busyness choice distance do intimacy language name not people
+      soften sometimes they use want
+    kind: single
+    slot: midday
+    instagramMediaId: "18114649333685159"
+    title: Busy Language

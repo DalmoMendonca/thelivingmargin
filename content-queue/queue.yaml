@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T18:10:29.245Z
+updatedAt: 2026-04-26T18:10:40.021Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -261,8 +261,8 @@ items:
       not want to name.
     fingerprint: busy busyness choice distance do intimacy language name not people
       soften sometimes they use want
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     slotPreference: midday
     kind: single
     templateFamily: broadside
@@ -298,6 +298,8 @@ items:
     renderDir: docs/assets/posts/2026-04-26-busy-language
     renderedFiles:
       - docs/assets/posts/2026-04-26-busy-language/post.png
+    instagramMediaId: "18114649333685159"
+    publishedAt: 2026-04-26T18:10:40.020Z
   - id: 2026-04-26-future-tense-intimacy
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual
