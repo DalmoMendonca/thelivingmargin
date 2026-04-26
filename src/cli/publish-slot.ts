@@ -5,13 +5,23 @@ import {
   hasInstagramPublish,
   projectRoot
 } from "../config/brand.js";
-import { generateWithOpenAi, queueTarget, topUpQueue } from "../content/generator.js";
+import {
+  countPublishableItems,
+  generateWithOpenAi,
+  queueTarget,
+  topUpQueue
+} from "../content/generator.js";
 import { reviewQueueItem } from "../content/quality.js";
 import { isTooSimilar } from "../content/dedupe.js";
+import { buildFallbackQueueItemForSlot } from "../content/fallback-posts.js";
 import { publicUrlsForItem } from "../publish/assets.js";
 import { sendFailureAlert } from "../publish/alerts.js";
 import { publishToInstagram } from "../publish/instagram.js";
-import { findNextReadyItem, replaceQueueItem } from "../queue/selection.js";
+import {
+  findNextPublishableItem,
+  findNextPublishableItemAnySlot,
+  replaceQueueItem
+} from "../queue/selection.js";
 import {
   loadIdeas,
   loadPublished,
@@ -22,7 +32,7 @@ import {
   savePublished,
   saveQueue
 } from "../queue/store.js";
-import type { SlotName } from "../types.js";
+import type { QueueItem, SlotName } from "../types.js";
 import { commitAndPushIfChanged } from "../util/git.js";
 import { pollUrl } from "../util/http.js";
 import { logError, logStep, logWarn } from "../util/log.js";
@@ -32,116 +42,282 @@ import { getFlag, hasFlag } from "./args.js";
 
 const slot = (getFlag("slot") as SlotName | undefined) ?? "morning";
 const dryRun = hasFlag("dry-run");
+const scheduledRun = process.env.GITHUB_EVENT_NAME === "schedule";
 
 const queue = await loadQueue();
 const published = await loadPublished();
 const ideas = await loadIdeas();
 
-const generated = await topUpQueue({
-  queue,
-  published,
-  manualIdeas: pendingIdeas(ideas),
-  desiredCount: queueTarget()
-});
+const usedFingerprints = () =>
+  new Set([
+    ...queue.items.map((item) => item.fingerprint),
+    ...published.entries.map((entry) => entry.fingerprint)
+  ]);
 
-const usedIdeaIds = new Set<string>();
-for (const item of generated) {
-  if (isTooSimilar(item, queue, published)) {
-    continue;
+const saveQueueState = async () => {
+  await saveQueue(queue);
+  await saveIdeas(ideas);
+  await savePreviewManifest(queue.items);
+};
+
+const syncGeneratedItems = async (generated: QueueItem[]) => {
+  if (generated.length === 0) {
+    return;
   }
 
-  queue.items.push(item);
-  if (item.source === "manual" && item.notes) {
-    const match = item.notes.match(/manual idea ([\w-]+)/);
-    if (match) {
-      usedIdeaIds.add(match[1]);
-    }
-  }
-}
+  const usedIdeaIds = new Set<string>();
 
-for (const idea of ideas.ideas) {
-  if (usedIdeaIds.has(idea.id)) {
-    idea.status = "consumed";
-  }
-}
-
-await saveIdeas(ideas);
-await saveQueue(queue);
-
-let target = findNextReadyItem(queue, slot);
-if (!target) {
-  logWarn(`No ready ${slot} item was available. Generating one on demand.`);
-
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
-    const generatedTarget = await generateWithOpenAi({
-      slot,
-      queue,
-      published
-    });
-
-    if (isTooSimilar(generatedTarget, queue, published)) {
-      logWarn(
-        `Generated ${slot} item was too similar on attempt ${attempt}. Retrying.`
-      );
+  for (const item of generated) {
+    if (isTooSimilar(item, queue, published)) {
+      logWarn(`Skipped generated duplicate ${item.title}.`);
       continue;
     }
 
-    queue.items.push(generatedTarget);
-    await saveQueue(queue);
-    target = generatedTarget;
-    break;
+    queue.items.push(item);
+
+    if (item.source === "manual" && item.notes) {
+      const match = item.notes.match(/manual idea ([\w-]+)/);
+      if (match) {
+        usedIdeaIds.add(match[1]);
+      }
+    }
   }
-}
 
-if (!target) {
-  throw new Error(`Unable to generate a non-duplicate ${slot} item on demand.`);
-}
+  for (const idea of ideas.ideas) {
+    if (usedIdeaIds.has(idea.id)) {
+      idea.status = "consumed";
+    }
+  }
 
-const qualityReview = await reviewQueueItem(target);
-if (!qualityReview.approved) {
-  target.status = "blocked";
-  target.lastError = `Pre-publish QC failed: ${qualityReview.review.reasons.join(" | ")}`;
+  await saveQueueState();
+};
+
+const isRetriableMediaError = (message?: string) => {
+  const value = message?.toLowerCase() ?? "";
+  return (
+    value.includes("media id is not available") ||
+    value.includes("media is not ready for publishing")
+  );
+};
+
+const reviveRetriableBlockedItems = () => {
+  let revived = 0;
+
+  for (const item of queue.items) {
+    if (item.status !== "blocked" || !isRetriableMediaError(item.lastError)) {
+      continue;
+    }
+
+    item.status = item.renderedFiles?.length ? "rendered" : "ready";
+    item.publishAttempts = 0;
+    item.lastError = undefined;
+    revived += 1;
+  }
+
+  return revived;
+};
+
+const saveRenderCommit = async (target: QueueItem) => {
+  if (process.env.GITHUB_ACTIONS !== "true") {
+    return;
+  }
+
+  const commitPaths = [
+    files.queue,
+    files.manualIdeas,
+    files.previewManifest,
+    target.renderDir
+  ].filter((value): value is string => Boolean(value));
+
+  await commitAndPushIfChanged(projectRoot, `chore: render ${target.id}`, commitPaths);
+};
+
+const ensureRendered = async (target: QueueItem) => {
+  if (target.renderedFiles?.length) {
+    return;
+  }
+
+  if (target.source === "ai") {
+    const qualityReview = await reviewQueueItem(target);
+    if (!qualityReview.approved) {
+      target.status = "blocked";
+      target.lastError = `Pre-publish QC failed: ${qualityReview.review.reasons.join(" | ")}`;
+      queue.items = replaceQueueItem(queue, target).items;
+      await saveQueueState();
+      throw new Error(target.lastError);
+    }
+  }
+
+  await renderQueueItem(target);
   queue.items = replaceQueueItem(queue, target).items;
-  await saveQueue(queue);
-  throw new Error(target.lastError);
-}
+  await saveQueueState();
+  await saveRenderCommit(target);
+};
 
-await renderQueueItem(target);
-const renderedQueue = replaceQueueItem(queue, target);
-queue.items = renderedQueue.items;
-await saveQueue(queue);
-await savePreviewManifest(queue.items);
+const ensurePublicAssets = async (target: QueueItem) => {
+  if (!appEnv.PUBLIC_GITHUB_REPOSITORY) {
+    if (dryRun || !hasInstagramPublish()) {
+      logStep(
+        `Rendered ${target.id} locally. Set PUBLIC_GITHUB_REPOSITORY once the code is pushed to GitHub.`
+      );
+      process.exit(0);
+    }
 
-if (process.env.GITHUB_ACTIONS === "true") {
-  const commitPaths = [files.queue, files.previewManifest, target.renderDir]
-    .filter((value): value is string => Boolean(value));
-  await commitAndPushIfChanged(projectRoot, `chore: render ${target.id}`, [
-    ...commitPaths
-  ]);
-}
-
-if (!appEnv.PUBLIC_GITHUB_REPOSITORY) {
-  if (dryRun || !hasInstagramPublish()) {
-    logStep(
-      `Rendered ${target.id} locally. Set PUBLIC_GITHUB_REPOSITORY once the code is pushed to GitHub.`
-    );
-    process.exit(0);
+    throw new Error("PUBLIC_GITHUB_REPOSITORY is required for live publishing.");
   }
 
-  throw new Error("PUBLIC_GITHUB_REPOSITORY is required for live publishing.");
-}
+  const publicUrls = publicUrlsForItem(target);
+  logStep(`Rendered public assets:\n${publicUrls.join("\n")}`);
 
-const publicUrls = publicUrlsForItem(target);
-logStep(`Rendered public assets:\n${publicUrls.join("\n")}`);
+  if (dryRun) {
+    return;
+  }
 
-if (!dryRun) {
   for (const url of publicUrls) {
     const reachable = await pollUrl(url, 20, 6000);
     if (!reachable) {
       throw new Error(`Rendered asset did not become reachable: ${url}`);
     }
   }
+};
+
+const tryGenerateTarget = async () => {
+  const manualIdea = pendingIdeas(ideas)[0];
+
+  for (let attempt = 1; attempt <= brand.maxPublishAttempts; attempt += 1) {
+    try {
+      const generatedTarget = await generateWithOpenAi({
+        slot,
+        queue,
+        published,
+        manualIdea,
+        seedIdea: manualIdea?.idea
+      });
+
+      if (isTooSimilar(generatedTarget, queue, published)) {
+        logWarn(
+          `Generated ${slot} item was too similar on attempt ${attempt}. Retrying.`
+        );
+        continue;
+      }
+
+      await syncGeneratedItems([generatedTarget]);
+      return generatedTarget;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      logWarn(`On-demand ${slot} generation attempt ${attempt} failed: ${message}`);
+    }
+  }
+
+  return undefined;
+};
+
+const buildEmergencyFallback = async () => {
+  const fallback = buildFallbackQueueItemForSlot({
+    slot,
+    usedFingerprints: usedFingerprints()
+  });
+
+  if (!fallback) {
+    return undefined;
+  }
+
+  if (isTooSimilar(fallback, queue, published)) {
+    return undefined;
+  }
+
+  queue.items.push(fallback);
+  await saveQueueState();
+  logWarn(`Using curated emergency fallback for ${slot}: ${fallback.title}.`);
+  return fallback;
+};
+
+const resolveTarget = async () => {
+  const revived = reviveRetriableBlockedItems();
+  if (revived > 0) {
+    logWarn(`Revived ${revived} blocked item(s) that failed only on media readiness.`);
+    await saveQueueState();
+  }
+
+  let target = findNextPublishableItem(queue, slot);
+  if (target) {
+    return target;
+  }
+
+  if (scheduledRun) {
+    target = findNextPublishableItemAnySlot(queue);
+    if (target) {
+      logWarn(
+        `No publishable ${slot} item was available. Scheduled run is using ${target.slotPreference} inventory to preserve cadence.`
+      );
+      return target;
+    }
+  }
+
+  logWarn(`No publishable ${slot} item was available. Generating one on demand.`);
+  target = await tryGenerateTarget();
+  if (target) {
+    return target;
+  }
+
+  target = await buildEmergencyFallback();
+  if (target) {
+    return target;
+  }
+
+  if (scheduledRun) {
+    target = findNextPublishableItemAnySlot(queue);
+    if (target) {
+      logWarn(
+        `Falling back to ${target.slotPreference} inventory after ${slot} generation failed.`
+      );
+      return target;
+    }
+  }
+
+  return undefined;
+};
+
+const bestEffortTopUp = async () => {
+  const currentCount = countPublishableItems(queue.items);
+  const desiredCount = Math.min(queueTarget(), currentCount + brand.queueTopUpPerRun);
+
+  if (desiredCount <= currentCount) {
+    return;
+  }
+
+  const generated = await topUpQueue({
+    queue,
+    published,
+    manualIdeas: pendingIdeas(ideas),
+    desiredCount,
+    bestEffort: true
+  });
+
+  await syncGeneratedItems(generated);
+};
+
+let target = await resolveTarget();
+if (!target) {
+  throw new Error(`Unable to resolve a publishable item for ${slot}.`);
 }
+
+try {
+  await ensureRendered(target);
+} catch (error) {
+  const message = error instanceof Error ? error.message : String(error);
+  logWarn(`Primary target ${target.title} was blocked before publish: ${message}`);
+
+  const fallback = await buildEmergencyFallback();
+  if (!fallback) {
+    throw error;
+  }
+
+  target = fallback;
+  await ensureRendered(target);
+}
+
+await ensurePublicAssets(target);
 
 if (dryRun || !hasInstagramPublish()) {
   logStep(
@@ -160,6 +336,7 @@ for (let attempt = 1; attempt <= brand.maxPublishAttempts; attempt += 1) {
     logStep(`Publishing attempt ${attempt} for ${target.id}.`);
     instagramMediaId = await publishToInstagram(target);
     target.publishAttempts = attempt;
+    target.lastError = undefined;
     break;
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
@@ -171,10 +348,12 @@ for (let attempt = 1; attempt <= brand.maxPublishAttempts; attempt += 1) {
 }
 
 if (!instagramMediaId) {
-  target.status = "blocked";
+  target.status = isRetriableMediaError(lastError) && target.renderedFiles?.length
+    ? "rendered"
+    : "blocked";
   target.lastError = lastError;
   queue.items = replaceQueueItem(queue, target).items;
-  await saveQueue(queue);
+  await saveQueueState();
   await sendFailureAlert(
     `Instagram publish failed for ${target.title}`,
     [
@@ -183,12 +362,18 @@ if (!instagramMediaId) {
       `Title: ${target.title}`,
       `Error: ${lastError ?? "Unknown error"}`,
       "",
-      "The queue item was left in blocked status so it will not silently repeat forever."
+      target.status === "rendered"
+        ? "The queue item was returned to rendered status so the automation can retry it."
+        : "The queue item was left in blocked status so it will not silently repeat forever."
     ].join("\n")
   );
 
   if (process.env.GITHUB_ACTIONS === "true") {
-    await commitAndPushIfChanged(projectRoot, `chore: block ${target.id}`, [files.queue]);
+    await commitAndPushIfChanged(projectRoot, `chore: mark ${target.id}`, [
+      files.queue,
+      files.manualIdeas,
+      files.previewManifest
+    ]);
   }
 
   process.exit(1);
@@ -210,13 +395,14 @@ published.entries.push({
   title: target.title
 });
 
-await saveQueue(queue);
+await bestEffortTopUp();
+await saveQueueState();
 await savePublished(published);
-await savePreviewManifest(queue.items);
 
 if (process.env.GITHUB_ACTIONS === "true") {
   await commitAndPushIfChanged(projectRoot, `chore: publish ${target.id}`, [
     files.queue,
+    files.manualIdeas,
     files.publishedLog,
     files.previewManifest
   ]);

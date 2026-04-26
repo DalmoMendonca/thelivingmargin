@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T05:38:23.314Z",
+  "updatedAt": "2026-04-26T14:46:16.607Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -21,6 +21,17 @@
       "createdAt": "2026-04-26T03:50:05.757Z",
       "renderedFiles": [
         "assets/posts/20260426-clean-apology/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-before-the-crash",
+      "title": "Before the Crash",
+      "kind": "single",
+      "topic": "rest and worthiness",
+      "angle": "Rest is allowed before exhaustion turns you into a worse version of yourself.",
+      "createdAt": "2026-04-26T03:50:05.757Z",
+      "renderedFiles": [
+        "assets/posts/2026-04-26-before-the-crash/post.png"
       ]
     },
     {

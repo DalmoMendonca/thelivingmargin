@@ -47,6 +47,26 @@ const baseItem = (
   };
 };
 
+const cloneTemplate = (template: QueueItem, notes?: string): QueueItem => ({
+  ...baseItem(template.title, template.angle, template.topic),
+  slotPreference: template.slotPreference,
+  kind: template.kind,
+  templateFamily: template.templateFamily,
+  palette: template.palette,
+  surfaceStyle: template.surfaceStyle,
+  contentMode: template.contentMode,
+  voiceMode: template.voiceMode,
+  quoteAttribution: template.quoteAttribution,
+  altText: template.altText,
+  single: template.single ? { ...template.single } : undefined,
+  carousel: template.carousel?.map((slide) => ({ ...slide })),
+  caption: {
+    ...template.caption,
+    hashtags: [...template.caption.hashtags]
+  },
+  notes
+});
+
 export const sampleQueueItems = (): QueueItem[] => [
   {
     ...baseItem(
@@ -335,3 +355,24 @@ export const sampleQueueItems = (): QueueItem[] => [
     )
   }
 ];
+
+export const buildFallbackQueueItemForSlot = ({
+  slot,
+  usedFingerprints = new Set<string>()
+}: {
+  slot: QueueItem["slotPreference"];
+  usedFingerprints?: Set<string>;
+}) => {
+  const templates = sampleQueueItems();
+  const template =
+    templates.find(
+      (item) =>
+        item.slotPreference === slot && !usedFingerprints.has(item.fingerprint)
+    ) ?? templates.find((item) => item.slotPreference === slot);
+
+  if (!template) {
+    return undefined;
+  }
+
+  return cloneTemplate(template, "Emergency fallback");
+};

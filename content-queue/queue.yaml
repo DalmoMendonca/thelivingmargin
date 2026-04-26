@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T05:38:23.292Z
+updatedAt: 2026-04-26T14:46:16.555Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -104,7 +104,7 @@ items:
     fingerprint: allowed before crash exhaustion into rest turns version worse
       worthiness yourself
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: morning
     kind: single
     templateFamily: notebook
@@ -131,6 +131,9 @@ items:
         - "#burnout"
         - "#habits"
         - "#mentalclarity"
+    renderDir: docs/assets/posts/2026-04-26-before-the-crash
+    renderedFiles:
+      - docs/assets/posts/2026-04-26-before-the-crash/post.png
   - id: 2026-04-26-clarity-sounds-rude
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual
@@ -347,8 +350,8 @@ items:
     angle: Warmth can imitate care even when actual availability never arrives.
     fingerprint: actual arrives attention availability can care even imitate never
       presence warmth when
-    publishAttempts: 3
-    status: blocked
+    publishAttempts: 1
+    status: published
     slotPreference: evening
     kind: single
     templateFamily: editorial
@@ -381,11 +384,8 @@ items:
     renderDir: docs/assets/posts/20260426-warmth-and-presence
     renderedFiles:
       - docs/assets/posts/20260426-warmth-and-presence/post.png
-    lastError: 'Publish container failed with 400: {"error":{"message":"Media ID is
-      not
-      available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Cannot
-      Publish","error_user_msg":"The media is not ready for publishing, please
-      wait for a moment","fbtrace_id":"AAvrjyDw0CT6zYkIA9fKIcV"}}'
+    instagramMediaId: "18075733736203097"
+    publishedAt: 2026-04-26T14:46:02.188Z
   - id: 2026-04-26-private-rehearsal
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual

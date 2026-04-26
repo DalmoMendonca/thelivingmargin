@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T04:52:47.909Z
+updatedAt: 2026-04-26T14:46:16.610Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -133,3 +133,13 @@ entries:
     slot: morning
     instagramMediaId: "18417905251132623"
     title: Clean Apology
+  - id: 2026-04-26-warmth-and-presence
+    publishedAt: 2026-04-26T14:46:02.188Z
+    topic: attention and care
+    angle: Warmth can imitate care even when actual availability never arrives.
+    fingerprint: actual arrives attention availability can care even imitate never
+      presence warmth when
+    kind: single
+    slot: evening
+    instagramMediaId: "18075733736203097"
+    title: Warmth and Presence

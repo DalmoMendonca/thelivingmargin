@@ -14,7 +14,6 @@ on:
           - evening
   schedule:
     - cron: "0 * * * *"
-      timezone: "America/Chicago"
 
 concurrency:
   group: instagram-publish-${{ github.ref_name || 'main' }}
@@ -52,9 +51,10 @@ jobs:
           SLOT="${{ inputs.slot }}"
           if [ -z "$SLOT" ]; then
             HOUR="$(TZ=America/Chicago date +%H)"
-            if [ "$HOUR" -lt 12 ]; then
+            ROTATION=$((10#$HOUR % 3))
+            if [ "$ROTATION" -eq 0 ]; then
               SLOT="morning"
-            elif [ "$HOUR" -lt 17 ]; then
+            elif [ "$ROTATION" -eq 1 ]; then
               SLOT="midday"
             else
               SLOT="evening"

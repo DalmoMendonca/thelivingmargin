@@ -176,7 +176,10 @@ export const brand = {
     carousel: 0.4
   },
   queueTarget: 30,
+  queueTopUpPerRun: 2,
   maxPublishAttempts: 3,
+  instagramContainerPollAttempts: 20,
+  instagramContainerPollIntervalMs: 3000,
   topics: [
     "grief and repair",
     "intimacy and distance",

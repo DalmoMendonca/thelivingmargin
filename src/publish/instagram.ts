@@ -1,8 +1,9 @@
-import { appEnv } from "../config/brand.js";
+import { appEnv, brand } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
 import { normalizeQuoteAttribution } from "../util/post.js";
 import { assertOk } from "../util/http.js";
 import { logStep } from "../util/log.js";
+import { sleep } from "../util/time.js";
 import { publicUrlsForItem } from "./assets.js";
 
 const graphBase = "https://graph.instagram.com/v25.0";
@@ -52,6 +53,50 @@ const createImageContainer = async ({
   return json.id;
 };
 
+const readyStatuses = new Set(["FINISHED", "READY", "PUBLISHED"]);
+const failedStatuses = new Set(["ERROR", "EXPIRED"]);
+
+const waitForContainerReady = async (containerId: string, label: string) => {
+  for (
+    let attempt = 1;
+    attempt <= brand.instagramContainerPollAttempts;
+    attempt += 1
+  ) {
+    const response = await assertOk(
+      await fetch(`${graphBase}/${containerId}?fields=status_code,status`, {
+        method: "GET",
+        headers: authHeaders()
+      }),
+      "Fetch container status"
+    );
+
+    const json = (await response.json()) as {
+      status_code?: string;
+      status?: string;
+    };
+    const status = (json.status_code ?? json.status ?? "UNKNOWN").toUpperCase();
+    logStep(
+      `Instagram container ${label} (${containerId}) status ${attempt}/${brand.instagramContainerPollAttempts}: ${status}`
+    );
+
+    if (readyStatuses.has(status)) {
+      return;
+    }
+
+    if (failedStatuses.has(status)) {
+      throw new Error(
+        `Instagram container ${label} (${containerId}) entered terminal status ${status}.`
+      );
+    }
+
+    await sleep(brand.instagramContainerPollIntervalMs);
+  }
+
+  throw new Error(
+    `Instagram container ${label} (${containerId}) was not ready after ${brand.instagramContainerPollAttempts} checks.`
+  );
+};
+
 const publishContainer = async (containerId: string) => {
   const response = await assertOk(
     await fetch(`${graphBase}/${appEnv.INSTAGRAM_USER_ID}/media_publish`, {
@@ -98,17 +143,18 @@ export const publishToInstagram = async (item: QueueItem) => {
       altText: item.altText
     });
 
+    await waitForContainerReady(containerId, item.id);
     return publishContainer(containerId);
   }
 
   const childIds: string[] = [];
-  for (const assetUrl of assetUrls) {
-    childIds.push(
-      await createImageContainer({
-        imageUrl: assetUrl,
-        isCarouselItem: true
-      })
-    );
+  for (let index = 0; index < assetUrls.length; index += 1) {
+    const childId = await createImageContainer({
+      imageUrl: assetUrls[index],
+      isCarouselItem: true
+    });
+    await waitForContainerReady(childId, `${item.id} child ${index + 1}`);
+    childIds.push(childId);
   }
 
   const carouselResponse = await assertOk(
@@ -125,5 +171,6 @@ export const publishToInstagram = async (item: QueueItem) => {
   );
 
   const carouselJson = (await carouselResponse.json()) as { id: string };
+  await waitForContainerReady(carouselJson.id, `${item.id} carousel`);
   return publishContainer(carouselJson.id);
 };

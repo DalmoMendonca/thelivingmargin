@@ -26,6 +26,7 @@ import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
 import { buildPostPrompt, buildRevisionPrompt } from "./prompts.js";
 import { reviewQueueItem } from "./quality.js";
+import { isPublishableStatus } from "../queue/selection.js";
 
 const templateFamilyValues = [
   "oracle",
@@ -182,7 +183,7 @@ const nextSlotForQueue = (items: QueueItem[]) => {
   const readyCounts = new Map(slotOrder.map((slot) => [slot, 0]));
 
   for (const item of items) {
-    if (item.status !== "ready") {
+    if (!isPublishableStatus(item.status)) {
       continue;
     }
 
@@ -203,6 +204,9 @@ const nextSlotForQueue = (items: QueueItem[]) => {
     return slotOrder.indexOf(left) - slotOrder.indexOf(right);
   })[0];
 };
+
+export const countPublishableItems = (items: QueueItem[]) =>
+  items.filter((item) => isPublishableStatus(item.status)).length;
 
 export const fallbackPosts = () => sampleQueueItems();
 
@@ -344,15 +348,17 @@ export const topUpQueue = async ({
   queue,
   published,
   manualIdeas,
-  desiredCount
+  desiredCount,
+  bestEffort = false
 }: {
   queue: QueueFile;
   published: PublishedLogFile;
   manualIdeas: ManualIdea[];
   desiredCount: number;
+  bestEffort?: boolean;
 }) => {
-  const readyCount = queue.items.filter((item) => item.status === "ready").length;
-  const missing = Math.max(desiredCount - readyCount, 0);
+  const publishableCount = countPublishableItems(queue.items);
+  const missing = Math.max(desiredCount - publishableCount, 0);
 
   if (missing === 0) {
     logStep("Queue already meets target size.");
@@ -371,19 +377,30 @@ export const topUpQueue = async ({
     const manualIdea = manualIdeas[index];
 
     logStep(`Generating queue item ${index + 1} of ${missing} for ${slot}.`);
-    const item = await generateWithOpenAi({
-      slot,
-      queue: {
-        ...queue,
-        items: [...queue.items, ...generated]
-      },
-      published,
-      manualIdea,
-      forcedContentMode: undefined,
-      seedIdea: manualIdea?.idea
-    });
+    try {
+      const item = await generateWithOpenAi({
+        slot,
+        queue: {
+          ...queue,
+          items: [...queue.items, ...generated]
+        },
+        published,
+        manualIdea,
+        forcedContentMode: undefined,
+        seedIdea: manualIdea?.idea
+      });
 
-    generated.push(item);
+      generated.push(item);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      logWarn(`Queue top-up failed for ${slot}: ${message}`);
+
+      if (!bestEffort) {
+        throw error;
+      }
+
+      break;
+    }
   }
 
   return generated;
