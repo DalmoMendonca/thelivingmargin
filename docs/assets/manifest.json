@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T15:14:04.493Z",
+  "updatedAt": "2026-04-26T16:10:57.719Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -80,6 +80,17 @@
       "createdAt": "2026-04-26T03:50:05.757Z",
       "renderedFiles": [
         "assets/posts/20260426-warmth-and-presence/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-private-rehearsal",
+      "title": "Private Rehearsal",
+      "kind": "single",
+      "topic": "character and habit",
+      "angle": "What you rehearse in private usually becomes your public face under stress.",
+      "createdAt": "2026-04-26T03:50:05.757Z",
+      "renderedFiles": [
+        "assets/posts/2026-04-26-private-rehearsal/post.png"
       ]
     },
     {

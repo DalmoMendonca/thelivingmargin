@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T15:14:04.475Z
+updatedAt: 2026-04-26T16:10:57.699Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -402,7 +402,7 @@ items:
     fingerprint: becomes character face habit private public rehearsal rehearse
       stress under usually what
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: evening
     kind: single
     templateFamily: signal
@@ -429,6 +429,9 @@ items:
         - "#habits"
         - "#selfawareness"
         - "#mindset"
+    renderDir: docs/assets/posts/2026-04-26-private-rehearsal
+    renderedFiles:
+      - docs/assets/posts/2026-04-26-private-rehearsal/post.png
   - id: 2026-04-26-mess-as-gate
     createdAt: 2026-04-26T05:04:32.116Z
     source: ai
