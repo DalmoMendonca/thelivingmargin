@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T23:48:32.845Z",
+  "updatedAt": "2026-04-26T02:27:29.654Z",
   "items": [
     {
       "id": "2026-04-25-proof-of-your-priorities",
@@ -195,6 +195,17 @@
         "assets/posts/20260425-the-deadline-is-the-teacher/slide-03.png",
         "assets/posts/20260425-the-deadline-is-the-teacher/slide-04.png",
         "assets/posts/20260425-the-deadline-is-the-teacher/slide-05.png"
+      ]
+    },
+    {
+      "id": "2026-04-25-quiet-quitting-vs-quiet-beginning",
+      "title": "Quiet Quitting vs Quiet Beginning",
+      "kind": "single",
+      "topic": "work and motivation",
+      "angle": "Reframe burnout-era withdrawal as a mis-aimed start rather than an end.",
+      "createdAt": "2026-04-25T23:48:22.815Z",
+      "renderedFiles": [
+        "assets/posts/20260426-quiet-quitting-vs-quiet-beginning/post.png"
       ]
     }
   ]

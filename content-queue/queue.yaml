@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T23:48:32.819Z
+updatedAt: 2026-04-26T02:27:29.626Z
 items:
   - id: 2026-04-25-proof-of-your-priorities
     createdAt: 2026-04-25T22:35:52.681Z
@@ -1519,5 +1519,56 @@ items:
         - "#burnout"
         - "#motivation"
         - "#creativity"
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426-quiet-quitting-vs-quiet-beginning
+    renderedFiles:
+      - docs/assets/posts/20260426-quiet-quitting-vs-quiet-beginning/post.png
+  - id: 2026-04-26-refusal-vs-failure
+    createdAt: 2026-04-26T02:27:28.899Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Refusal vs Failure
+    topic: avoidance disguised as standards
+    angle: We mistake fear of being seen trying for standards; refusal looks tidy,
+      failure looks alive.
+    fingerprint: alive as avoidance being disguised failure fear looks mistake
+      refusal seen standards tidy trying vs
+    contentMode: question
+    voiceMode: sharp
+    altText: "A textured notebook page with a taped note. Bold headline reads: 'Are
+      you refusing or failing?' Underneath, a short paragraph contrasts tidy
+      refusal with messy, informative failure. Soft pencil margin marks and a
+      small underlined phrase for emphasis."
+    single:
+      headline: Are you refusing or failing?
+      body: >-
+        Refusal feels clean: no draft, no witness, no dent in the image.
+        [[Failure is noisy.]] It puts evidence on the table, breaks your neat
+        story, and gives you a next move.
+
+
+        If your “standard” keeps you from attempts you could survive, it isn’t a
+        standard. It’s camouflage.
+      supportLine: Refusal protects reputation; failure grows judgment.
+      footer: Pick the mess that teaches.
+    caption:
+      hook: Some lives look polished because nothing is tested.
+      body: Refusal keeps you safe from the record. Failure puts your claims in
+        daylight. If you’re always “not quite ready,” you’re managing image, not
+        improving craft. Standards are real when they demand contact with
+        consequence.
+      callToComment: Where do you call it a standard when it’s really a refusal?
+      hashtags:
+        - "#creativepractice"
+        - "#craft"
+        - "#makingthings"
+        - "#perfectionism"
+        - "#process"
+        - "#writinglife"
     publishAttempts: 0
     status: ready
