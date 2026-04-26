@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T03:53:09.356Z
+updatedAt: 2026-04-26T03:53:57.197Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -285,7 +285,7 @@ items:
     fingerprint: attention by closeness distance friendship future instead intimacy
       present promising relationships some spending survive tense
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: evening
     kind: single
     templateFamily: broadside
@@ -319,6 +319,9 @@ items:
         - "#loneliness"
         - "#relationships"
         - "#writing"
+    renderDir: docs/assets/posts/20260426-future-tense-intimacy
+    renderedFiles:
+      - docs/assets/posts/20260426-future-tense-intimacy/post.png
   - id: 2026-04-26-warmth-and-presence
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual
