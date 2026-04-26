@@ -18,8 +18,6 @@ import { publicUrlsForItem } from "../publish/assets.js";
 import { sendFailureAlert } from "../publish/alerts.js";
 import { publishToInstagram } from "../publish/instagram.js";
 import {
-  findNextPublishableItem,
-  findNextPublishableItemAnySlot,
   replaceQueueItem
 } from "../queue/selection.js";
 import {
@@ -43,6 +41,7 @@ import { getFlag, hasFlag } from "./args.js";
 const slot = (getFlag("slot") as SlotName | undefined) ?? "morning";
 const dryRun = hasFlag("dry-run");
 const scheduledRun = process.env.GITHUB_EVENT_NAME === "schedule";
+const runningInGitHubActions = process.env.GITHUB_ACTIONS === "true";
 
 const queue = await loadQueue();
 const published = await loadPublished();
@@ -53,6 +52,21 @@ const usedFingerprints = () =>
     ...queue.items.map((item) => item.fingerprint),
     ...published.entries.map((entry) => entry.fingerprint)
   ]);
+
+const findCandidateForSlot = (excludedIds: Set<string>) =>
+  queue.items.find(
+    (item) =>
+      !excludedIds.has(item.id) &&
+      item.slotPreference === slot &&
+      (item.status === "ready" || item.status === "rendered")
+  );
+
+const findCandidateAnySlot = (excludedIds: Set<string>) =>
+  queue.items.find(
+    (item) =>
+      !excludedIds.has(item.id) &&
+      (item.status === "ready" || item.status === "rendered")
+  );
 
 const saveQueueState = async () => {
   await saveQueue(queue);
@@ -212,40 +226,46 @@ const tryGenerateTarget = async () => {
   return undefined;
 };
 
-const buildEmergencyFallback = async () => {
+const buildEmergencyFallback = async ({
+  allowDuplicate = false
+}: {
+  allowDuplicate?: boolean;
+} = {}) => {
   const fallback = buildFallbackQueueItemForSlot({
     slot,
-    usedFingerprints: usedFingerprints()
+    usedFingerprints: allowDuplicate ? new Set<string>() : usedFingerprints()
   });
 
   if (!fallback) {
     return undefined;
   }
 
-  if (isTooSimilar(fallback, queue, published)) {
+  if (!allowDuplicate && isTooSimilar(fallback, queue, published)) {
     return undefined;
   }
 
   queue.items.push(fallback);
   await saveQueueState();
-  logWarn(`Using curated emergency fallback for ${slot}: ${fallback.title}.`);
+  logWarn(
+    `Using curated emergency fallback for ${slot}: ${fallback.title}${allowDuplicate ? " (duplicate allowed for reliability)." : "."}`
+  );
   return fallback;
 };
 
-const resolveTarget = async () => {
+const resolveTarget = async (excludedIds = new Set<string>()) => {
   const revived = reviveRetriableBlockedItems();
   if (revived > 0) {
     logWarn(`Revived ${revived} blocked item(s) that failed only on media readiness.`);
     await saveQueueState();
   }
 
-  let target = findNextPublishableItem(queue, slot);
+  let target = findCandidateForSlot(excludedIds);
   if (target) {
     return target;
   }
 
   if (scheduledRun) {
-    target = findNextPublishableItemAnySlot(queue);
+    target = findCandidateAnySlot(excludedIds);
     if (target) {
       logWarn(
         `No publishable ${slot} item was available. Scheduled run is using ${target.slotPreference} inventory to preserve cadence.`
@@ -266,7 +286,7 @@ const resolveTarget = async () => {
   }
 
   if (scheduledRun) {
-    target = findNextPublishableItemAnySlot(queue);
+    target = findCandidateAnySlot(excludedIds);
     if (target) {
       logWarn(
         `Falling back to ${target.slotPreference} inventory after ${slot} generation failed.`
@@ -279,6 +299,11 @@ const resolveTarget = async () => {
 };
 
 const bestEffortTopUp = async () => {
+  if (runningInGitHubActions) {
+    logStep("Skipping queue top-up during GitHub Actions publish run to reduce state churn.");
+    return;
+  }
+
   const currentCount = countPublishableItems(queue.items);
   const desiredCount = Math.min(queueTarget(), currentCount + brand.queueTopUpPerRun);
 
@@ -297,24 +322,51 @@ const bestEffortTopUp = async () => {
   await syncGeneratedItems(generated);
 };
 
-let target = await resolveTarget();
+const resolveRenderableTarget = async () => {
+  const attemptedIds = new Set<string>();
+
+  while (true) {
+    const target = await resolveTarget(attemptedIds);
+    if (!target) {
+      const fallback = await buildEmergencyFallback({ allowDuplicate: true });
+      if (!fallback) {
+        return undefined;
+      }
+
+      await ensureRendered(fallback);
+      return fallback;
+    }
+
+    attemptedIds.add(target.id);
+
+    try {
+      await ensureRendered(target);
+      return target;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      logWarn(`Primary target ${target.title} was blocked before publish: ${message}`);
+
+      const replacement = await resolveTarget(attemptedIds);
+      if (replacement) {
+        continue;
+      }
+
+      const fallback =
+        (await buildEmergencyFallback()) ??
+        (await buildEmergencyFallback({ allowDuplicate: true }));
+      if (fallback) {
+        await ensureRendered(fallback);
+        return fallback;
+      }
+
+      throw error;
+    }
+  }
+};
+
+const target = await resolveRenderableTarget();
 if (!target) {
   throw new Error(`Unable to resolve a publishable item for ${slot}.`);
-}
-
-try {
-  await ensureRendered(target);
-} catch (error) {
-  const message = error instanceof Error ? error.message : String(error);
-  logWarn(`Primary target ${target.title} was blocked before publish: ${message}`);
-
-  const fallback = await buildEmergencyFallback();
-  if (!fallback) {
-    throw error;
-  }
-
-  target = fallback;
-  await ensureRendered(target);
 }
 
 await ensurePublicAssets(target);
