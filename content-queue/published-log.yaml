@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T03:53:09.364Z
+updatedAt: 2026-04-26T03:54:18.545Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -111,3 +111,14 @@ entries:
     slot: midday
     instagramMediaId: "18101666176812866"
     title: Clarity Sounds Rude
+  - id: 2026-04-26-future-tense-intimacy
+    publishedAt: 2026-04-26T03:54:18.536Z
+    topic: friendship and distance
+    angle: Some relationships survive by promising future closeness instead of
+      spending present attention.
+    fingerprint: attention by closeness distance friendship future instead intimacy
+      present promising relationships some spending survive tense
+    kind: single
+    slot: evening
+    instagramMediaId: "18209404774331097"
+    title: Future Tense Intimacy
