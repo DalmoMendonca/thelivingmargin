@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T16:12:07.921Z
+updatedAt: 2026-04-26T16:41:09.321Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -963,3 +963,550 @@ items:
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-03.png
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-04.png
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-05.png
+  - source: manual
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Hope's Favorite Translation
+    topic: dating and denial
+    angle: People often call one-sided interest bad timing because the cleaner
+      explanation would force them to change direction.
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: Blue plaster editorial card about calling someone busy because not
+      interested would hurt more.
+    single:
+      headline: |-
+        You keep calling them busy
+        because [[not interested]]
+        would rearrange your hope.
+      body: Temporary language is how a lot of one-sided situations stay emotionally
+        open.
+      supportLine: Some confusion is borrowed optimism.
+    caption:
+      hook: A vague maybe can keep a door open longer than a clean no.
+      body: That is why people reread the politeness and ignore the pattern.
+        Uncertainty can feel gentler than truth while it is still collecting
+        time.
+      hashtags:
+        - "#dating"
+        - "#relationships"
+        - "#selfrespect"
+        - "#discernment"
+    notes: Showcase fallback
+    id: 20260426163111-hope-s-favorite-translation
+    createdAt: 2026-04-26T16:31:11.737Z
+    fingerprint: bad because call change cleaner dating denial direction explanation
+      favorite force hopes interest often one people sided them timing
+      translation would
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426163111-hope-s-favorite-translation
+    renderedFiles:
+      - docs/assets/posts/20260426163111-hope-s-favorite-translation/post.png
+  - id: 20260426163218-the-padding-that-gets-you-ignored
+    createdAt: 2026-04-26T16:32:18.297Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: The Padding That Gets You Ignored
+    topic: Making a direct work ask without apology-padding
+    angle: If you soften the request, you also soften the decision-so give the other
+      person a clear yes/no and a deadline.
+    fingerprint: also apology ask clear deadline decision direct gets give if
+      ignored making no other padding person request so soften without work yes
+    contentMode: advice
+    voiceMode: sharp
+    altText: 5-slide notebook-style carousel showing how apology-padding words turn
+      work requests into non-answers, with a two-line deadline + A/B template,
+      one Slack/email example, one verbal meeting example, and a 48-hour
+      follow-up rule that specifies what to do next.
+    carousel:
+      - kicker: Slide 1
+        headline: Padding turns asks into background noise
+        body: >-
+          If your message includes words like “just,” “quickly,” “when you have
+          time/minute,” “whenever,” or “if possible,” you’ve offered an exit
+          ramp.
+
+
+          You’re not asking for a decision-you’re asking for permission to
+          delay.
+        footer: "Fix: deadline + A/B choice."
+      - kicker: Slide 2
+        headline: Use this 2-line template
+        body: >-
+          I need [deliverable] by [day, time].
+
+
+          Can you do A ([what you want]) or B ([fallback])? Reply A or B by
+          [same deadline].
+        footer: Remove the soft words; keep the yes/no.
+      - kicker: Slide 3
+        headline: Async example (Slack/email)
+        body: >-
+          Hi-can you handle the Thursday deck updates?
+
+
+          I need the finalized slide figures + sources by Thu 2:00pm. Can you do
+          A: send updated slides by Thu 2:00pm, or B: confirm which 2 charts to
+          cut? Reply A or B by Thu 2:00pm.
+        footer: Clear choice = clearer routing.
+      - kicker: Slide 4
+        headline: Meeting example (verbal)
+        body: |-
+          For the deck, I need the final client intro language today.
+
+          Option A: approve this version.
+
+          Option B: send the exact edits by 4:00pm so I can update immediately.
+
+          Which is it-A or B-by end of meeting?
+        footer: No “we’ll see.” Close the loop.
+      - kicker: Slide 5
+        headline: No response after 48 hours?
+        body: >-
+          Send: “Following up on [deliverable]. A or B by [time]? B is my
+          default if I don’t hear back.”
+
+
+          If still no reply after 48 hours: create/update the workspace artifact
+          for B (task in your tracker or updated doc), and timestamp it with
+          “[done] as B on [date/time]”. Proceed on B.
+        footer: Silence doesn’t pause your timeline.
+    caption:
+      hook: “When you have a minute” is polite-so it makes your ask optional.
+      body: >-
+        Turn the request into a decision:
+
+
+        I need [deliverable] by [day, time].
+
+
+        Can you do A ([what you want]) or B ([fallback])? Reply A or B by [same
+        deadline].
+
+
+        Apology-padding words to remove: just / quickly / when you have time /
+        when you have a minute / whenever / if possible.
+
+
+        Follow-up rule (48 hours):
+
+
+        “Following up on [deliverable]. A or B by [time]? B is my default if I
+        don’t hear back.”
+
+
+        If they can’t choose A/B, ask for C with a date-or have them confirm
+        explicitly: “Not by [time].”
+      callToComment: Comment your deliverable + deadline and I’ll rewrite it into A/B
+        in two lines.
+      hashtags:
+        - "#workplacewriting"
+        - "#workcommunication"
+        - "#slacktips"
+        - "#emailtemplates"
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner warning revised | Showcase soft-pass
+    renderDir: docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored
+    renderedFiles:
+      - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-01.png
+      - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-02.png
+      - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-03.png
+      - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-04.png
+      - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-05.png
+  - id: 20260426163305-the-handwritten-route
+    createdAt: 2026-04-26T16:33:05.871Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The handwritten route
+    topic: Practical help that turns panic into one clear next step
+    angle: In a small public moment, the person who offers one usable direction-not
+      sympathy-changes what the next minute can be.
+    fingerprint: can changes clear direction handwritten help into minute moment
+      next not offers one panic person practical public route small step
+      sympathy turns usable what who
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: polished with no attribution
+    altText: "Three-panel story: rainy clinic steps with a stroller wedged by the
+      entrance rail and an appointment paper coming apart; a staff member
+      confirms intake via the lobby intercom and writes directions on the back
+      of a receipt; the recipient reaches the correct desk with the scribble
+      still in hand as the helper steps away."
+    carousel:
+      - kicker: Rain + a dead phone
+        headline: The address didn’t survive the day
+        body: Clinic steps slick with rain. A stroller wedged by the entrance rail, and
+          my phone stuck on “No Service.” My visitor badge form was half-inked
+          when security asked for the right desk name-one I couldn’t pin down.
+        footer: My paper kept tearing where my hands kept grabbing.
+      - kicker: One interruption
+        headline: They didn’t ask how I felt
+        body: A staff member answered the lobby intercom, confirmed intake, then grabbed
+          the back of my receipt. “Past the vending machines-Desk 7.” The pen
+          kept moving like it was the most ordinary answer in the building.
+        footer: They handed me the direction and nothing else.
+      - kicker: Still rain on my sleeves
+        headline: By the time I arrived, I could breathe
+        body: I walked straight to Desk 7, receipt creased but holding. The rain cooled
+          the back of my neck, and my fingers stopped worrying the torn edge.
+          When I looked up, the helper was already stepping away-already gone
+          from the moment I needed.
+        footer: Just enough afterglow to keep going.
+    caption:
+      hook: It wasn’t comfort. It was a route-handwritten, fast.
+      body: "The help cost them a real interruption: a few seconds on the intercom and
+        time to write me to the right desk. From me, it cost accepting the line
+        on the paper and walking-no bargaining with the panic."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260426163305-the-handwritten-route
+    renderedFiles:
+      - docs/assets/posts/20260426163305-the-handwritten-route/slide-01.png
+      - docs/assets/posts/20260426163305-the-handwritten-route/slide-02.png
+      - docs/assets/posts/20260426163305-the-handwritten-route/slide-03.png
+  - id: 20260426163410-spend-the-day-live-the-bill
+    createdAt: 2026-04-26T16:34:10.661Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Spend the day, live the bill
+    topic: attention spent on ordinary Tuesday evenings
+    angle: If Tuesday night turns into small evasions, you don’t just waste time-you
+      practice the kind of life you’ll wake up to.
+    fingerprint: attention bill day dont evasions evenings if into just kind life
+      live night ordinary practice small spend spent time tuesday turns up wake
+      waste youll
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: — Annie Dillard
+    altText: "Text on a charcoal-grain midnight paper background: “How we spend our
+      days is, of course, how we spend our lives.” - Annie Dillard"
+    single:
+      headline: “How we spend our days is, of course, how we spend our lives.”
+      body: ""
+      footer: "- Annie Dillard"
+    caption:
+      hook: 6:30-7:30. Kitchen light. Thumb hovering over “one more.”
+      body: "Dillard isn’t being poetic-this is the ledger: you trade attention for
+        comfort. You reschedule the calendar invite, call unread messages “not
+        urgent,” and tomorrow morning asks for the exact hours you just spent
+        avoiding. Comfort tonight. Consequence tomorrow: less time, less focus,
+        more catching up."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner application revised | Showcase soft-pass
+    renderDir: docs/assets/posts/20260426163410-spend-the-day-live-the-bill
+    renderedFiles:
+      - docs/assets/posts/20260426163410-spend-the-day-live-the-bill/post.png
+  - source: manual
+    title: Before the Crash
+    topic: rest and worthiness
+    angle: Rest is allowed before exhaustion turns you into a worse version of
+      yourself.
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: roseLedger
+    surfaceStyle: notebookCream
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: Notebook-style card reminding people they can rest before they collapse.
+    single:
+      headline: You are allowed to rest before you become impossible to live with.
+      body: Exhaustion doesn't make you noble. It makes you less accurate, less kind,
+        and more likely to mistake burnout for truth.
+      supportLine: You do not need a collapse to justify a chair.
+      footer: Rest is cheapest before the repair bill.
+    caption:
+      hook: Waiting until you're wrecked is not discipline. It's expensive timing.
+      body: A lot of people only grant themselves rest once their body has made the
+        decision for them. Earlier mercy is usually smarter than dramatic
+        recovery.
+      callToComment: What sign tells you you've waited too long to pause?
+      hashtags:
+        - "#rest"
+        - "#selfrespect"
+        - "#burnout"
+        - "#habits"
+        - "#mentalclarity"
+    id: 20260426163515-before-the-crash
+    createdAt: 2026-04-26T16:35:15.034Z
+    fingerprint: allowed before crash exhaustion into rest turns version worse
+      worthiness yourself
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426163515-before-the-crash
+    renderedFiles:
+      - docs/assets/posts/20260426163515-before-the-crash/post.png
+  - source: manual
+    title: Busy Language
+    topic: intimacy and distance
+    angle: People sometimes use the language of busyness to soften a choice they do
+      not want to name.
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: vellumRose
+    contentMode: observation
+    voiceMode: reflective
+    altText: Broadside-style text card reflecting on how people use busy language to
+      soften distance.
+    single:
+      headline: At brunch, everyone said they were 'bad at texting.'
+      body: >-
+        Nobody sounded guilty. Just booked.
+
+
+        We have learned to describe neglect with the language of inconvenience.
+
+
+        Sometimes the problem is not modern life. Sometimes it's that we want
+        intimacy on a schedule that protects us from it.
+      supportLine: Busy can be true and still be a cover.
+      footer: Some absences are logistical. Some are chosen.
+    caption:
+      hook: The friendliest distance usually arrives with a reasonable explanation.
+      body: That is what makes it hard to name. Nobody is cruel enough to indict. The
+        relationship just starts living on intentions instead of contact.
+      callToComment: Where do you notice future plans replacing actual presence?
+      hashtags:
+        - "#friendship"
+        - "#relationships"
+        - "#attention"
+        - "#modernlife"
+    id: 20260426163634-busy-language
+    createdAt: 2026-04-26T16:36:34.003Z
+    fingerprint: busy busyness choice distance do intimacy language name not people
+      soften sometimes they use want
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426163634-busy-language
+    renderedFiles:
+      - docs/assets/posts/20260426163634-busy-language/post.png
+  - source: manual
+    title: Old Yeses
+    topic: obligation and identity
+    angle: A commitment can remain active long after the self who made it is gone.
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    contentMode: question
+    voiceMode: reflective
+    altText: Editorial wall card asking what obligations people still carry just
+      because they once said yes.
+    single:
+      headline: What are you still carrying just because you [[said yes once]]?
+      body: |-
+        A promise can outlive its reason.
+
+        Sometimes discipline is finishing.
+        Sometimes it's admitting the job has changed.
+      supportLine: Old yeses can become expensive furniture.
+      footer: Which obligation needs to be re-chosen?
+    caption:
+      hook: Not every unfinished thing deserves your loyalty.
+      body: Some obligations began as honesty and stayed as inertia. The useful
+        question is not whether you can endure them. It's whether they still
+        belong in the life you're actually building.
+      callToComment: What's one commitment you need to re-choose instead of just carrying?
+      hashtags:
+        - "#selfknowledge"
+        - "#decisionmaking"
+        - "#boundaries"
+        - "#writing"
+        - "#growth"
+    id: 20260426163731-old-yeses
+    createdAt: 2026-04-26T16:37:31.698Z
+    fingerprint: active after can commitment gone identity long made obligation old
+      remain self who yeses
+    publishAttempts: 0
+    status: rendered
+    notes: Showcase fallback
+    renderDir: docs/assets/posts/20260426163731-old-yeses
+    renderedFiles:
+      - docs/assets/posts/20260426163731-old-yeses/post.png
+  - id: 20260426163810-prep-as-a-delay-ritual
+    createdAt: 2026-04-26T16:38:10.404Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Prep as a Delay Ritual
+    topic: Reframing “prepping” as avoidance of the first ugly draft
+    angle: What you call preparation often functions like a delay ritual that buys
+      you distance from the first sentence that can be judged.
+    fingerprint: as avoidance buys call can delay distance draft first from
+      functions judged like often prep preparation prepping reframing ritual
+      sentence ugly what
+    contentMode: reframe
+    voiceMode: sharp
+    altText: Dark textured background with tabs labeled for “best template,” a
+      renamed folder, a blinking cursor in a blank document, and the words “the
+      first ugly sentence.”
+    single:
+      headline: “I’m prepping.” Means “I’m being professional before anyone can see
+        page one.”
+      body: Prep is how you avoid writing the first ugly sentence-and staying a
+        beginner on paper.
+      supportLine: Write one bad first line. No upgrades. Then stop editing for 10 minutes.
+      footer: If you keep prepping, the deadline still arrives-and the handoff gets
+        worse.
+    caption:
+      hook: Those tabs for “best template” don’t improve the draft-they postpone the
+        moment you face the first ugly sentence.
+      body: "Renamed folders and outline polishing buy you distance, but the deadline
+        keeps moving. That time leak turns into rushed choices, worse output, or
+        a missed handoff. Next time the blinking cursor stares back: write one
+        deliberately bad line, then don’t upgrade it for 10 minutes. Ritual ends
+        when you write the first ugly sentence."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner behavioral test | Plan mode reframe
+    renderDir: docs/assets/posts/20260426163810-prep-as-a-delay-ritual
+    renderedFiles:
+      - docs/assets/posts/20260426163810-prep-as-a-delay-ritual/post.png
+  - source: manual
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: What I'll Try Means
+    topic: ambiguity and commitment
+    angle: A short exchange can expose the difference between warmth and commitment
+      when one person relies on ambiguity.
+    contentMode: dialogue
+    voiceMode: reflective
+    altText: Three-slide notebook carousel about how 'I'll try' can mean very
+      different things in a relationship.
+    carousel:
+      - kicker: Kitchen
+        headline: '"Are you still coming?"'
+        body: |-
+          'I said I'd try,' he said.
+
+          That was the sentence she finally heard correctly.
+        footer: Some ambiguity is policy.
+      - kicker: Translation
+        headline: "\"I'll try\" can mean two different things."
+        body: |-
+          One person hears hope.
+          The other person has already protected their evening.
+        footer: Warmth and commitment are not synonyms.
+      - kicker: After
+        headline: She stopped arguing with the wording.
+        body: From then on, she listened for dates, not tone. It hurt less than guessing
+          and ended sooner.
+        footer: Clarity can feel colder than fantasy.
+    caption:
+      hook: A lot of painful relationships are built on sentences nobody translates in
+        time.
+      body: Language can divide responsibility very neatly. One person gets to sound
+        kind. The other person carries the labor of interpretation.
+      hashtags:
+        - "#dialogue"
+        - "#relationships"
+        - "#communication"
+        - "#clarity"
+    notes: Showcase fallback
+    id: 20260426163933-what-i-ll-try-means
+    createdAt: 2026-04-26T16:39:33.021Z
+    fingerprint: ambiguity between can commitment difference exchange expose ill
+      means one person relies short try warmth what when
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426163933-what-i-ll-try-means
+    renderedFiles:
+      - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-01.png
+      - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-02.png
+      - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-03.png
+  - source: manual
+    slotPreference: midday
+    kind: carousel
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Improvement as Camouflage
+    topic: self-improvement and avoidance
+    angle: Self-improvement language can hide from exposure, feedback, and real
+      attempts when it never risks embarrassment.
+    contentMode: list
+    voiceMode: sharp
+    altText: Five-slide blue carousel listing signs that self-improvement has become
+      image management instead of growth.
+    carousel:
+      - kicker: List
+        headline: 5 signs your self-improvement plan is protecting you from being seen.
+        body: Growth can be honest. It can also be the prettier cousin of avoidance.
+        footer: The difference is contact.
+      - kicker: Sign 1
+        headline: You keep preparing for a conversation you could already have.
+        body: Reading more about honesty can feel safer than saying one unpolished true
+          sentence out loud.
+        footer: Research is not always readiness.
+      - kicker: Sign 2
+        headline: You buy systems where feedback would be cheaper.
+        body: A new routine can look productive while it quietly replaces exposure with
+          equipment.
+        footer: Tools can become camouflage.
+      - kicker: Sign 3
+        headline: You call it standards when you mean insulation.
+        body: If the plan only counts once it can protect your image, the plan is
+          serving fear first.
+        footer: Perfection often has a bodyguard.
+      - kicker: Turn
+        headline: If improvement never risks embarrassment, it may be image management.
+        body: Real growth usually includes a visible draft, an awkward ask, or a day you
+          are seen mid-process.
+        footer: The proof is contact, not vocabulary.
+    caption:
+      hook: Some glow-ups are just better-lit hiding places.
+      body: Self-improvement becomes honest again the moment it touches a real
+        attempt, a real witness, or a real consequence. Until then, a lot of it
+        is beautifully organized delay.
+      hashtags:
+        - "#selfimprovement"
+        - "#avoidance"
+        - "#growth"
+        - "#selfknowledge"
+    notes: Showcase fallback
+    id: 20260426164107-improvement-as-camouflage
+    createdAt: 2026-04-26T16:41:07.047Z
+    fingerprint: as attempts avoidance camouflage can embarrassment exposure
+      feedback from hide improvement language never real risks self when
+    publishAttempts: 0
+    status: rendered
+    renderDir: docs/assets/posts/20260426164107-improvement-as-camouflage
+    renderedFiles:
+      - docs/assets/posts/20260426164107-improvement-as-camouflage/slide-01.png
+      - docs/assets/posts/20260426164107-improvement-as-camouflage/slide-02.png
+      - docs/assets/posts/20260426164107-improvement-as-camouflage/slide-03.png
+      - docs/assets/posts/20260426164107-improvement-as-camouflage/slide-04.png
+      - docs/assets/posts/20260426164107-improvement-as-camouflage/slide-05.png

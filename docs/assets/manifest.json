@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T16:12:07.941Z",
+  "updatedAt": "2026-04-26T16:41:09.350Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -213,6 +213,128 @@
         "assets/posts/20260426053317-improvement-as-camouflage/slide-03.png",
         "assets/posts/20260426053317-improvement-as-camouflage/slide-04.png",
         "assets/posts/20260426053317-improvement-as-camouflage/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260426163111-hope-s-favorite-translation",
+      "title": "Hope's Favorite Translation",
+      "kind": "single",
+      "topic": "dating and denial",
+      "angle": "People often call one-sided interest bad timing because the cleaner explanation would force them to change direction.",
+      "createdAt": "2026-04-26T16:31:11.737Z",
+      "renderedFiles": [
+        "assets/posts/20260426163111-hope-s-favorite-translation/post.png"
+      ]
+    },
+    {
+      "id": "20260426163218-the-padding-that-gets-you-ignored",
+      "title": "The Padding That Gets You Ignored",
+      "kind": "carousel",
+      "topic": "Making a direct work ask without apology-padding",
+      "angle": "If you soften the request, you also soften the decision-so give the other person a clear yes/no and a deadline.",
+      "createdAt": "2026-04-26T16:32:18.297Z",
+      "renderedFiles": [
+        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-01.png",
+        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-02.png",
+        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-03.png",
+        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-04.png",
+        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260426163305-the-handwritten-route",
+      "title": "The handwritten route",
+      "kind": "carousel",
+      "topic": "Practical help that turns panic into one clear next step",
+      "angle": "In a small public moment, the person who offers one usable direction-not sympathy-changes what the next minute can be.",
+      "createdAt": "2026-04-26T16:33:05.871Z",
+      "renderedFiles": [
+        "assets/posts/20260426163305-the-handwritten-route/slide-01.png",
+        "assets/posts/20260426163305-the-handwritten-route/slide-02.png",
+        "assets/posts/20260426163305-the-handwritten-route/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260426163410-spend-the-day-live-the-bill",
+      "title": "Spend the day, live the bill",
+      "kind": "single",
+      "topic": "attention spent on ordinary Tuesday evenings",
+      "angle": "If Tuesday night turns into small evasions, you don’t just waste time-you practice the kind of life you’ll wake up to.",
+      "createdAt": "2026-04-26T16:34:10.661Z",
+      "renderedFiles": [
+        "assets/posts/20260426163410-spend-the-day-live-the-bill/post.png"
+      ]
+    },
+    {
+      "id": "20260426163515-before-the-crash",
+      "title": "Before the Crash",
+      "kind": "single",
+      "topic": "rest and worthiness",
+      "angle": "Rest is allowed before exhaustion turns you into a worse version of yourself.",
+      "createdAt": "2026-04-26T16:35:15.034Z",
+      "renderedFiles": [
+        "assets/posts/20260426163515-before-the-crash/post.png"
+      ]
+    },
+    {
+      "id": "20260426163634-busy-language",
+      "title": "Busy Language",
+      "kind": "single",
+      "topic": "intimacy and distance",
+      "angle": "People sometimes use the language of busyness to soften a choice they do not want to name.",
+      "createdAt": "2026-04-26T16:36:34.003Z",
+      "renderedFiles": [
+        "assets/posts/20260426163634-busy-language/post.png"
+      ]
+    },
+    {
+      "id": "20260426163731-old-yeses",
+      "title": "Old Yeses",
+      "kind": "single",
+      "topic": "obligation and identity",
+      "angle": "A commitment can remain active long after the self who made it is gone.",
+      "createdAt": "2026-04-26T16:37:31.698Z",
+      "renderedFiles": [
+        "assets/posts/20260426163731-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260426163810-prep-as-a-delay-ritual",
+      "title": "Prep as a Delay Ritual",
+      "kind": "single",
+      "topic": "Reframing “prepping” as avoidance of the first ugly draft",
+      "angle": "What you call preparation often functions like a delay ritual that buys you distance from the first sentence that can be judged.",
+      "createdAt": "2026-04-26T16:38:10.404Z",
+      "renderedFiles": [
+        "assets/posts/20260426163810-prep-as-a-delay-ritual/post.png"
+      ]
+    },
+    {
+      "id": "20260426163933-what-i-ll-try-means",
+      "title": "What I'll Try Means",
+      "kind": "carousel",
+      "topic": "ambiguity and commitment",
+      "angle": "A short exchange can expose the difference between warmth and commitment when one person relies on ambiguity.",
+      "createdAt": "2026-04-26T16:39:33.021Z",
+      "renderedFiles": [
+        "assets/posts/20260426163933-what-i-ll-try-means/slide-01.png",
+        "assets/posts/20260426163933-what-i-ll-try-means/slide-02.png",
+        "assets/posts/20260426163933-what-i-ll-try-means/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260426164107-improvement-as-camouflage",
+      "title": "Improvement as Camouflage",
+      "kind": "carousel",
+      "topic": "self-improvement and avoidance",
+      "angle": "Self-improvement language can hide from exposure, feedback, and real attempts when it never risks embarrassment.",
+      "createdAt": "2026-04-26T16:41:07.047Z",
+      "renderedFiles": [
+        "assets/posts/20260426164107-improvement-as-camouflage/slide-01.png",
+        "assets/posts/20260426164107-improvement-as-camouflage/slide-02.png",
+        "assets/posts/20260426164107-improvement-as-camouflage/slide-03.png",
+        "assets/posts/20260426164107-improvement-as-camouflage/slide-04.png",
+        "assets/posts/20260426164107-improvement-as-camouflage/slide-05.png"
       ]
     }
   ]
