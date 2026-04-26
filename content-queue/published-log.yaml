@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T18:10:40.048Z
+updatedAt: 2026-04-26T19:17:22.772Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -198,3 +198,14 @@ entries:
     slot: midday
     instagramMediaId: "18114649333685159"
     title: Busy Language
+  - id: 20260426052908-eleven-minutes
+    publishedAt: 2026-04-26T19:17:22.736Z
+    topic: care and urgency
+    angle: A small act of institutional mercy can matter for years when it prevents
+      a hard day from becoming a permanent regret.
+    fingerprint: act becoming can care day eleven from hard institutional matter
+      mercy minutes permanent prevents regret small urgency when years
+    kind: carousel
+    slot: evening
+    instagramMediaId: "17877630396577286"
+    title: Eleven Minutes
