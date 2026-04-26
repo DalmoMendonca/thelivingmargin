@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T15:13:05.024Z
+updatedAt: 2026-04-26T15:14:04.475Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -214,8 +214,8 @@ items:
       decoration.
     fingerprint: advice decoration inspired only resourced rested tuesday useful
       when works youre
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     slotPreference: midday
     kind: single
     templateFamily: highlight
@@ -250,6 +250,8 @@ items:
     renderDir: docs/assets/posts/2026-04-26-tuesday-advice
     renderedFiles:
       - docs/assets/posts/2026-04-26-tuesday-advice/post.png
+    instagramMediaId: "17923536960317884"
+    publishedAt: 2026-04-26T15:13:19.328Z
   - id: 2026-04-26-busy-language
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual

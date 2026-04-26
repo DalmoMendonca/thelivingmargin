@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T14:55:35.357Z
+updatedAt: 2026-04-26T15:14:04.494Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -154,3 +154,14 @@ entries:
     slot: morning
     instagramMediaId: "17857679097651353"
     title: Before the Crash
+  - id: 2026-04-26-tuesday-advice
+    publishedAt: 2026-04-26T15:13:19.328Z
+    topic: useful advice
+    angle: Advice that only works when you're rested, resourced, and inspired is
+      decoration.
+    fingerprint: advice decoration inspired only resourced rested tuesday useful
+      when works youre
+    kind: single
+    slot: midday
+    instagramMediaId: "17923536960317884"
+    title: Tuesday Advice
