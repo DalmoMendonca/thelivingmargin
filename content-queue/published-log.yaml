@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T15:14:04.494Z
+updatedAt: 2026-04-26T16:12:07.942Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -165,3 +165,13 @@ entries:
     slot: midday
     instagramMediaId: "17923536960317884"
     title: Tuesday Advice
+  - id: 2026-04-26-private-rehearsal
+    publishedAt: 2026-04-26T16:11:18.398Z
+    topic: character and habit
+    angle: What you rehearse in private usually becomes your public face under stress.
+    fingerprint: becomes character face habit private public rehearsal rehearse
+      stress under usually what
+    kind: single
+    slot: evening
+    instagramMediaId: "18324620962271826"
+    title: Private Rehearsal

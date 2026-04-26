@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T16:10:57.699Z
+updatedAt: 2026-04-26T16:12:07.921Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -401,8 +401,8 @@ items:
     angle: What you rehearse in private usually becomes your public face under stress.
     fingerprint: becomes character face habit private public rehearsal rehearse
       stress under usually what
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     slotPreference: evening
     kind: single
     templateFamily: signal
@@ -432,6 +432,8 @@ items:
     renderDir: docs/assets/posts/2026-04-26-private-rehearsal
     renderedFiles:
       - docs/assets/posts/2026-04-26-private-rehearsal/post.png
+    instagramMediaId: "18324620962271826"
+    publishedAt: 2026-04-26T16:11:18.398Z
   - id: 2026-04-26-mess-as-gate
     createdAt: 2026-04-26T05:04:32.116Z
     source: ai
