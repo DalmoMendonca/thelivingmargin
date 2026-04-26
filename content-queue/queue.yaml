@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T22:08:46.393Z
+updatedAt: 2026-04-26T23:11:37.788Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -813,12 +813,14 @@ items:
     createdAt: 2026-04-26T05:31:23.286Z
     fingerprint: active after can commitment gone identity long made obligation old
       remain self who yeses
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426053123-old-yeses
     renderedFiles:
       - docs/assets/posts/20260426053123-old-yeses/post.png
+    instagramMediaId: "18184743784374317"
+    publishedAt: 2026-04-26T23:11:37.788Z
   - source: manual
     slotPreference: midday
     kind: single
