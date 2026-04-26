@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T21:09:59.539Z
+updatedAt: 2026-04-26T22:08:46.433Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -231,3 +231,14 @@ entries:
     slot: midday
     instagramMediaId: "18015222353685752"
     title: Clarity Sounds Rude
+  - id: 20260426052942-tuesday-is-the-life
+    publishedAt: 2026-04-26T22:08:46.393Z
+    topic: attention and ordinary life
+    angle: A well-known line about days and lives becomes useful again when it is
+      aimed at ordinary repetition instead of abstract admiration.
+    fingerprint: about abstract admiration again aimed at attention becomes days
+      instead known life line lives ordinary repetition tuesday useful well when
+    kind: single
+    slot: evening
+    instagramMediaId: "18009477284893816"
+    title: Tuesday Is the Life

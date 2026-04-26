@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T21:09:59.502Z
+updatedAt: 2026-04-26T22:08:46.393Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -678,11 +678,13 @@ items:
     createdAt: 2026-04-26T05:29:42.691Z
     fingerprint: about abstract admiration again aimed at attention becomes days
       instead known life line lives ordinary repetition tuesday useful well when
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260426052942-tuesday-is-the-life
     renderedFiles:
       - docs/assets/posts/20260426052942-tuesday-is-the-life/post.png
+    instagramMediaId: "18009477284893816"
+    publishedAt: 2026-04-26T22:08:46.393Z
   - source: manual
     title: Before the Crash
     topic: rest and worthiness
