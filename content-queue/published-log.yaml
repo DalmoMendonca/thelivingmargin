@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T03:50:47.682Z
+updatedAt: 2026-04-26T03:53:09.364Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -100,3 +100,14 @@ entries:
     slot: morning
     instagramMediaId: "17983540304820724"
     title: Old Yeses
+  - id: 2026-04-26-clarity-sounds-rude
+    publishedAt: 2026-04-26T03:53:09.355Z
+    topic: work and communication
+    angle: In vague rooms, a specific sentence feels impolite because it creates
+      actual owners.
+    fingerprint: actual because clarity communication creates feels impolite owners
+      rooms rude sentence sounds specific vague work
+    kind: carousel
+    slot: midday
+    instagramMediaId: "18101666176812866"
+    title: Clarity Sounds Rude
