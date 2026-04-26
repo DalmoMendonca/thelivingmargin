@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T04:52:47.899Z
+updatedAt: 2026-04-26T05:04:40.843Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -348,7 +348,7 @@ items:
     fingerprint: actual arrives attention availability can care even imitate never
       presence warmth when
     publishAttempts: 0
-    status: ready
+    status: rendered
     slotPreference: evening
     kind: single
     templateFamily: editorial
@@ -378,6 +378,9 @@ items:
         - "#relationships"
         - "#boundaries"
         - "#selfrespect"
+    renderDir: docs/assets/posts/20260426-warmth-and-presence
+    renderedFiles:
+      - docs/assets/posts/20260426-warmth-and-presence/post.png
   - id: 2026-04-26-private-rehearsal
     createdAt: 2026-04-26T03:50:05.757Z
     source: manual
@@ -414,3 +417,38 @@ items:
         - "#habits"
         - "#selfawareness"
         - "#mindset"
+  - id: 2026-04-26-mess-as-gate
+    createdAt: 2026-04-26T05:04:32.116Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Mess as Gate
+    topic: environmental boundaries
+    angle: Physical disorder can serve as a covert limit on access and demand.
+    fingerprint: access as boundaries can covert demand disorder environmental gate
+      limit mess physical serve
+    contentMode: observation
+    voiceMode: reflective
+    altText: "Editorial card on warm paper with the line: The sink stays full on
+      purpose. It keeps drop-ins short and the day yours."
+    single:
+      headline: The sink stays full [[on purpose]].
+      body: It keeps drop-ins short and the day yours.
+    caption:
+      hook: Some mess isn’t neglect; it’s policy.
+      body: "Objects make clean excuses. A piled sink closes the door without a speech
+        and buys you an easy alibi: sorry for the mess, can’t host. It works
+        until the life you want also bounces off it."
+      callToComment: What piece of “clutter” quietly protects you, and what would it
+        cost to retire it?
+      hashtags:
+        - "#writing"
+        - "#observation"
+        - "#boundaries"
+        - "#domesticdetail"
+        - "#morningreading"
+    publishAttempts: 0
+    status: ready

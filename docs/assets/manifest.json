@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T04:52:47.911Z",
+  "updatedAt": "2026-04-26T05:04:40.851Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -47,6 +47,17 @@
       "createdAt": "2026-04-26T03:50:05.757Z",
       "renderedFiles": [
         "assets/posts/20260426-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-warmth-and-presence",
+      "title": "Warmth and Presence",
+      "kind": "single",
+      "topic": "attention and care",
+      "angle": "Warmth can imitate care even when actual availability never arrives.",
+      "createdAt": "2026-04-26T03:50:05.757Z",
+      "renderedFiles": [
+        "assets/posts/20260426-warmth-and-presence/post.png"
       ]
     }
   ]
