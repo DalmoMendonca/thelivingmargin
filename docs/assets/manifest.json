@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26T03:54:18.549Z",
+  "updatedAt": "2026-04-26T04:52:29.935Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -10,6 +10,17 @@
       "createdAt": "2026-04-26T03:50:05.755Z",
       "renderedFiles": [
         "assets/posts/20260426-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "2026-04-26-clean-apology",
+      "title": "Clean Apology",
+      "kind": "single",
+      "topic": "conflict and accountability",
+      "angle": "A real apology is usually shorter than the defense that tries to keep innocence intact.",
+      "createdAt": "2026-04-26T03:50:05.757Z",
+      "renderedFiles": [
+        "assets/posts/20260426-clean-apology/post.png"
       ]
     },
     {
