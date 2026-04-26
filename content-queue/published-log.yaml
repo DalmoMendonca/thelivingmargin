@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-25T23:48:32.844Z
+updatedAt: 2026-04-26T02:27:41.242Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -69,3 +69,13 @@ entries:
     slot: evening
     instagramMediaId: "18439010374186956"
     title: The Hobby Test
+  - id: 2026-04-25-quiet-quitting-vs-quiet-beginning
+    publishedAt: 2026-04-26T02:27:41.219Z
+    topic: work and motivation
+    angle: Reframe burnout-era withdrawal as a mis-aimed start rather than an end.
+    fingerprint: aimed as beginning burnout end era mis motivation quiet quitting
+      rather reframe start than vs withdrawal work
+    kind: single
+    slot: morning
+    instagramMediaId: "17960560247934361"
+    title: Quiet Quitting vs Quiet Beginning
