@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T02:31:00.185Z
+updatedAt: 2026-04-26T02:31:11.254Z
 items:
   - id: 2026-04-25-proof-of-your-priorities
     createdAt: 2026-04-25T22:35:52.681Z
@@ -1577,11 +1577,18 @@ items:
         - "#perfectionism"
         - "#process"
         - "#writinglife"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 2
+    status: published
     renderDir: docs/assets/posts/20260426-refusal-vs-failure
     renderedFiles:
       - docs/assets/posts/20260426-refusal-vs-failure/post.png
+    lastError: 'Publish container failed with 400: {"error":{"message":"Media ID is
+      not
+      available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Cannot
+      Publish","error_user_msg":"The media is not ready for publishing, please
+      wait for a moment","fbtrace_id":"Anfn4aDlR3nudDtramillVP"}}'
+    instagramMediaId: "18401454463145086"
+    publishedAt: 2026-04-26T02:31:11.254Z
   - id: 2026-04-26-practice-vs-preference
     createdAt: 2026-04-26T02:30:58.558Z
     source: ai

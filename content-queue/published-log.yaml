@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T02:27:41.242Z
+updatedAt: 2026-04-26T02:31:11.282Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -79,3 +79,14 @@ entries:
     slot: morning
     instagramMediaId: "17960560247934361"
     title: Quiet Quitting vs Quiet Beginning
+  - id: 2026-04-26-refusal-vs-failure
+    publishedAt: 2026-04-26T02:31:11.254Z
+    topic: avoidance disguised as standards
+    angle: We mistake fear of being seen trying for standards; refusal looks tidy,
+      failure looks alive.
+    fingerprint: alive as avoidance being disguised failure fear looks mistake
+      refusal seen standards tidy trying vs
+    kind: single
+    slot: morning
+    instagramMediaId: "18401454463145086"
+    title: Refusal vs Failure
