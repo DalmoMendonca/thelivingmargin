@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T20:09:37.265Z
+updatedAt: 2026-04-26T21:09:59.502Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -573,8 +573,8 @@ items:
     createdAt: 2026-04-26T05:28:54.741Z
     fingerprint: actual because clarity communication creates feels impolite owners
       rooms rude sentence sounds specific vague work
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426052854-clarity-sounds-rude
     renderedFiles:
@@ -583,6 +583,8 @@ items:
       - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-03.png
       - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-04.png
       - docs/assets/posts/20260426052854-clarity-sounds-rude/slide-05.png
+    instagramMediaId: "18015222353685752"
+    publishedAt: 2026-04-26T21:09:59.502Z
   - source: manual
     slotPreference: evening
     kind: carousel
