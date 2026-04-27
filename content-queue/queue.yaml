@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T19:35:28.480Z
+updatedAt: 2026-04-27T19:35:46.723Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1743,8 +1743,8 @@ items:
       spending present attention.
     fingerprint: attention by closeness distance friendship future instead intimacy
       present promising relationships some spending survive tense
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 3
+    status: blocked
     slotPreference: evening
     kind: single
     templateFamily: broadside
@@ -1778,3 +1778,9 @@ items:
     renderDir: docs/assets/posts/20260427193526-future-tense-intimacy
     renderedFiles:
       - docs/assets/posts/20260427193526-future-tense-intimacy/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"A_K8EdLZyvFfXFB6i9lQaj5"}}'
