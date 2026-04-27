@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T22:18:25.938Z",
+  "updatedAt": "2026-04-27T23:18:19.071Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -431,6 +431,17 @@
       "createdAt": "2026-04-27T22:18:06.289Z",
       "renderedFiles": [
         "assets/posts/20260427221806-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260427231803-no-supporting-documents",
+      "title": "No Supporting Documents",
+      "kind": "single",
+      "topic": "over-explaining a limit or no",
+      "angle": "Offer permission to decline, delay, or reschedule without building a case, then clarify that long explanations often turn a boundary into an appeal.",
+      "createdAt": "2026-04-27T23:18:03.641Z",
+      "renderedFiles": [
+        "assets/posts/20260427231803-no-supporting-documents/post.png"
       ]
     }
   ]
