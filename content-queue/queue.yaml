@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T23:11:37.788Z
+updatedAt: 2026-04-27T00:14:26.222Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -769,12 +769,14 @@ items:
     createdAt: 2026-04-26T05:30:50.664Z
     fingerprint: busy busyness choice distance do intimacy language name not people
       soften sometimes they use want
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426053050-busy-language
     renderedFiles:
       - docs/assets/posts/20260426053050-busy-language/post.png
+    instagramMediaId: "17886973155508025"
+    publishedAt: 2026-04-27T00:14:26.221Z
   - source: manual
     title: Old Yeses
     topic: obligation and identity

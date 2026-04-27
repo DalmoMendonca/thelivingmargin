@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-26T23:11:37.821Z
+updatedAt: 2026-04-27T00:14:26.271Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -252,3 +252,14 @@ entries:
     slot: morning
     instagramMediaId: "18184743784374317"
     title: Old Yeses
+  - id: 20260426053050-busy-language
+    publishedAt: 2026-04-27T00:14:26.221Z
+    topic: intimacy and distance
+    angle: People sometimes use the language of busyness to soften a choice they do
+      not want to name.
+    fingerprint: busy busyness choice distance do intimacy language name not people
+      soften sometimes they use want
+    kind: single
+    slot: midday
+    instagramMediaId: "17886973155508025"
+    title: Busy Language
