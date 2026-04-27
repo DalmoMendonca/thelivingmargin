@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T01:32:43.228Z",
+  "updatedAt": "2026-04-27T01:48:43.485Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -346,6 +346,131 @@
         "assets/posts/20260426164107-improvement-as-camouflage/slide-03.png",
         "assets/posts/20260426164107-improvement-as-camouflage/slide-04.png",
         "assets/posts/20260426164107-improvement-as-camouflage/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260427013644-hope-s-favorite-translation",
+      "title": "Hope's Favorite Translation",
+      "kind": "single",
+      "topic": "dating and denial",
+      "angle": "People often call one-sided interest bad timing because the cleaner explanation would force them to change direction.",
+      "createdAt": "2026-04-27T01:36:44.481Z",
+      "renderedFiles": [
+        "assets/posts/20260427013644-hope-s-favorite-translation/post.png"
+      ]
+    },
+    {
+      "id": "20260427013856-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-27T01:38:56.150Z",
+      "renderedFiles": [
+        "assets/posts/20260427013856-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260427013856-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260427013856-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260427013856-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260427013856-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260427014025-eleven-minutes",
+      "title": "Eleven Minutes",
+      "kind": "carousel",
+      "topic": "care and urgency",
+      "angle": "A small act of institutional mercy can matter for years when it prevents a hard day from becoming a permanent regret.",
+      "createdAt": "2026-04-27T01:40:25.534Z",
+      "renderedFiles": [
+        "assets/posts/20260427014025-eleven-minutes/slide-01.png",
+        "assets/posts/20260427014025-eleven-minutes/slide-02.png",
+        "assets/posts/20260427014025-eleven-minutes/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260427014104-days-not-vibes",
+      "title": "Days, Not Vibes",
+      "kind": "single",
+      "topic": "attention as the real unit of a life",
+      "angle": "Famous lines hit hardest when the day you stole for scrolling starts showing up in everything you keep deferring.",
+      "createdAt": "2026-04-27T01:41:04.232Z",
+      "renderedFiles": [
+        "assets/posts/20260427014104-days-not-vibes/post.png"
+      ]
+    },
+    {
+      "id": "20260427014206-rest-without-proof",
+      "title": "Rest Without Proof",
+      "kind": "single",
+      "topic": "Taking a break before the breakdown",
+      "angle": "Rest is allowed while you’re still functional; waiting for collapse only buys you longer downtime.",
+      "createdAt": "2026-04-27T01:42:06.572Z",
+      "renderedFiles": [
+        "assets/posts/20260427014206-rest-without-proof/post.png"
+      ]
+    },
+    {
+      "id": "20260427014314-soon-is-a-substitute",
+      "title": "Soon is a Substitute",
+      "kind": "carousel",
+      "topic": "Future-tense closeness used to avoid scheduling",
+      "angle": "Warm words act as a placeholder-“we should” keeps closeness alive while the plan stays off the calendar.",
+      "createdAt": "2026-04-27T01:43:14.139Z",
+      "renderedFiles": [
+        "assets/posts/20260427014314-soon-is-a-substitute/slide-01.png",
+        "assets/posts/20260427014314-soon-is-a-substitute/slide-02.png",
+        "assets/posts/20260427014314-soon-is-a-substitute/slide-03.png",
+        "assets/posts/20260427014314-soon-is-a-substitute/slide-04.png"
+      ]
+    },
+    {
+      "id": "20260427014420-old-yeses",
+      "title": "Old Yeses",
+      "kind": "single",
+      "topic": "obligation and identity",
+      "angle": "A commitment can remain active long after the self who made it is gone.",
+      "createdAt": "2026-04-27T01:44:20.329Z",
+      "renderedFiles": [
+        "assets/posts/20260427014420-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260427014523-drafts-as-insurance",
+      "title": "Drafts as Insurance",
+      "kind": "single",
+      "topic": "Reframing procrastination as image-protection",
+      "angle": "What you call procrastination is often insurance against a specific embarrassment: preempt the judgment, then ship a smaller, testable version.",
+      "createdAt": "2026-04-27T01:45:23.057Z",
+      "renderedFiles": [
+        "assets/posts/20260427014523-drafts-as-insurance/post.png"
+      ]
+    },
+    {
+      "id": "20260427014717-what-i-ll-try-means",
+      "title": "What I'll Try Means",
+      "kind": "carousel",
+      "topic": "ambiguity and commitment",
+      "angle": "A short exchange can expose the difference between warmth and commitment when one person relies on ambiguity.",
+      "createdAt": "2026-04-27T01:47:17.497Z",
+      "renderedFiles": [
+        "assets/posts/20260427014717-what-i-ll-try-means/slide-01.png",
+        "assets/posts/20260427014717-what-i-ll-try-means/slide-02.png",
+        "assets/posts/20260427014717-what-i-ll-try-means/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260427014836-improvement-as-camouflage",
+      "title": "Improvement as Camouflage",
+      "kind": "carousel",
+      "topic": "self-improvement and avoidance",
+      "angle": "Self-improvement language can hide from exposure, feedback, and real attempts when it never risks embarrassment.",
+      "createdAt": "2026-04-27T01:48:36.605Z",
+      "renderedFiles": [
+        "assets/posts/20260427014836-improvement-as-camouflage/slide-01.png",
+        "assets/posts/20260427014836-improvement-as-camouflage/slide-02.png",
+        "assets/posts/20260427014836-improvement-as-camouflage/slide-03.png",
+        "assets/posts/20260427014836-improvement-as-camouflage/slide-04.png",
+        "assets/posts/20260427014836-improvement-as-camouflage/slide-05.png"
       ]
     }
   ]
