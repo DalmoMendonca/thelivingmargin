@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T11:31:56.976Z
+updatedAt: 2026-04-27T12:28:21.475Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1103,39 +1103,16 @@ items:
         footer: Silence doesn’t pause your timeline.
     caption:
       hook: “When you have a minute” is polite-so it makes your ask optional.
-      body: >-
-        Turn the request into a decision:
-
-
-        I need [deliverable] by [day, time].
-
-
+      body: "Turn the request into a decision: I need [deliverable] by [day, time].
         Can you do A ([what you want]) or B ([fallback])? Reply A or B by [same
-        deadline].
-
-
-        Apology-padding words to remove: just / quickly / when you have time /
-        when you have a minute / whenever / if possible.
-
-
-        Follow-up rule (48 hours):
-
-
-        “Following up on [deliverable]. A or B by [time]? B is my default if I
-        don’t hear back.”
-
-
-        If they can’t choose A/B, ask for C with a date-or have them confirm
-        explicitly: “Not by [time].”
+        deadline]."
       callToComment: Comment your deliverable + deadline and I’ll rewrite it into A/B
         in two lines.
       hashtags:
         - "#workplacewriting"
         - "#workcommunication"
-        - "#slacktips"
-        - "#emailtemplates"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 3
+    status: blocked
     notes: AI pipeline winner warning revised | Showcase soft-pass
     renderDir: docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored
     renderedFiles:
@@ -1144,6 +1121,12 @@ items:
       - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-03.png
       - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-04.png
       - docs/assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-05.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"At-E1GSr97HIxp5SX5Q76LK"}}'
   - id: 20260426163305-the-handwritten-route
     createdAt: 2026-04-26T16:33:05.871Z
     source: ai
