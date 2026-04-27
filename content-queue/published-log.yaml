@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T07:09:51.095Z
+updatedAt: 2026-04-27T08:46:32.869Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -321,3 +321,14 @@ entries:
     slot: evening
     instagramMediaId: "17979486647844259"
     title: Spend the day, live the bill
+  - id: 20260426163515-before-the-crash
+    publishedAt: 2026-04-27T08:46:32.849Z
+    topic: rest and worthiness
+    angle: Rest is allowed before exhaustion turns you into a worse version of
+      yourself.
+    fingerprint: allowed before crash exhaustion into rest turns version worse
+      worthiness yourself
+    kind: single
+    slot: morning
+    instagramMediaId: "18160591987431851"
+    title: Before the Crash

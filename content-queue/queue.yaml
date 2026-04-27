@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T07:09:51.067Z
+updatedAt: 2026-04-27T08:46:32.849Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1262,27 +1262,25 @@ items:
       supportLine: You do not need a collapse to justify a chair.
       footer: Rest is cheapest before the repair bill.
     caption:
-      hook: Waiting until you're wrecked is not discipline. It's expensive timing.
+      hook: Waiting until you're wrecked is not discipline.
       body: A lot of people only grant themselves rest once their body has made the
         decision for them. Earlier mercy is usually smarter than dramatic
         recovery.
       callToComment: What sign tells you you've waited too long to pause?
       hashtags:
         - "#rest"
-        - "#selfrespect"
-        - "#burnout"
-        - "#habits"
-        - "#mentalclarity"
     id: 20260426163515-before-the-crash
     createdAt: 2026-04-26T16:35:15.034Z
     fingerprint: allowed before crash exhaustion into rest turns version worse
       worthiness yourself
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426163515-before-the-crash
     renderedFiles:
       - docs/assets/posts/20260426163515-before-the-crash/post.png
+    instagramMediaId: "18160591987431851"
+    publishedAt: 2026-04-27T08:46:32.849Z
   - source: manual
     title: Busy Language
     topic: intimacy and distance
