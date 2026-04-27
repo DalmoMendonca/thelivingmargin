@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T16:33:40.515Z
+updatedAt: 2026-04-27T17:31:20.580Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1572,3 +1572,42 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ACpQlh8MmUeB1LhiWzCNwZl"}}'
+  - id: 20260427173106-low-maintenance-alibi
+    createdAt: 2026-04-27T17:31:06.302Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Low-Maintenance Alibi
+    topic: using flexibility to avoid stating a real preference
+    angle: A sharp question that frames being low-maintenance as an alibi for hiding
+      what you wanted until resentment shows up.
+    fingerprint: alibi as avoid being flexibility frames hiding low maintenance
+      preference question real resentment sharp shows stating until up using
+      wanted what
+    contentMode: question
+    voiceMode: sharp
+    quoteAttribution: ": null"
+    altText: "Notebook-style cream paper post. Large text asks: \"In the dinner
+      group text, is 'low-maintenance' just how you hide what you wanted?\"
+      Smaller text below says: \"You send 'whatever works.' The place gets
+      picked. The quiet resentment comes home with you.\""
+    single:
+      headline: In the dinner group text, is 'low-maintenance' just how you hide what
+        you wanted?
+      body: You send 'whatever works.' The place gets picked. The quiet resentment
+        comes home with you.
+    caption:
+      hook: If you never name a preference, people only learn your accommodation.
+      body: After enough restaurant picks and calendar invites, your taste stops
+        registering. What remains is the version of you that's easiest to plan
+        around.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260427173106-low-maintenance-alibi
+    renderedFiles:
+      - docs/assets/posts/20260427173106-low-maintenance-alibi/post.png

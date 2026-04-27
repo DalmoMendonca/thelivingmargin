@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T16:33:40.530Z",
+  "updatedAt": "2026-04-27T17:31:20.602Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -357,6 +357,17 @@
       "createdAt": "2026-04-27T16:33:17.316Z",
       "renderedFiles": [
         "assets/posts/20260427163317-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260427173106-low-maintenance-alibi",
+      "title": "Low-Maintenance Alibi",
+      "kind": "single",
+      "topic": "using flexibility to avoid stating a real preference",
+      "angle": "A sharp question that frames being low-maintenance as an alibi for hiding what you wanted until resentment shows up.",
+      "createdAt": "2026-04-27T17:31:06.302Z",
+      "renderedFiles": [
+        "assets/posts/20260427173106-low-maintenance-alibi/post.png"
       ]
     }
   ]
