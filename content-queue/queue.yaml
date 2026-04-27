@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T01:32:43.201Z
+updatedAt: 2026-04-27T03:00:26.575Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -853,18 +853,18 @@ items:
       hashtags:
         - "#work"
         - "#reframe"
-        - "#selfknowledge"
-        - "#motivation"
     notes: Showcase fallback
     id: 20260426053155-planner-shaped-resentment
     createdAt: 2026-04-26T05:31:55.707Z
     fingerprint: called chosen gets honestly misdiagnosis never obligation planner
       procrastination resentment role shaped sometimes toward was what work
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260426053155-planner-shaped-resentment
     renderedFiles:
       - docs/assets/posts/20260426053155-planner-shaped-resentment/post.png
+    instagramMediaId: "18132721207557583"
+    publishedAt: 2026-04-27T03:00:26.575Z
   - source: manual
     slotPreference: evening
     kind: carousel

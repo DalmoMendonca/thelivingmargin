@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T01:32:43.228Z
+updatedAt: 2026-04-27T03:00:26.601Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -274,3 +274,14 @@ entries:
     slot: evening
     instagramMediaId: "18126386182594896"
     title: What I'll Try Means
+  - id: 20260426053155-planner-shaped-resentment
+    publishedAt: 2026-04-27T03:00:26.575Z
+    topic: work and misdiagnosis
+    angle: What gets called procrastination is sometimes resentment toward a role or
+      obligation that was never honestly chosen.
+    fingerprint: called chosen gets honestly misdiagnosis never obligation planner
+      procrastination resentment role shaped sometimes toward was what work
+    kind: single
+    slot: midday
+    instagramMediaId: "18132721207557583"
+    title: Planner-Shaped Resentment
