@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T08:46:32.849Z
+updatedAt: 2026-04-27T09:42:55.982Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -969,15 +969,13 @@ items:
       hashtags:
         - "#selfimprovement"
         - "#avoidance"
-        - "#growth"
-        - "#selfknowledge"
     notes: Showcase fallback
     id: 20260426053317-improvement-as-camouflage
     createdAt: 2026-04-26T05:33:17.310Z
     fingerprint: as attempts avoidance camouflage can embarrassment exposure
       feedback from hide improvement language never real risks self when
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260426053317-improvement-as-camouflage
     renderedFiles:
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-01.png
@@ -985,6 +983,8 @@ items:
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-03.png
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-04.png
       - docs/assets/posts/20260426053317-improvement-as-camouflage/slide-05.png
+    instagramMediaId: "17891792796459247"
+    publishedAt: 2026-04-27T09:42:55.982Z
   - source: manual
     slotPreference: morning
     kind: single
