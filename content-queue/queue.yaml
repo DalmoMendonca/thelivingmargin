@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T09:42:55.982Z
+updatedAt: 2026-04-27T10:37:24.288Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1452,24 +1452,23 @@ items:
       hook: A lot of painful relationships are built on sentences nobody translates in
         time.
       body: Language can divide responsibility very neatly. One person gets to sound
-        kind. The other person carries the labor of interpretation.
+        kind.
       hashtags:
         - "#dialogue"
-        - "#relationships"
-        - "#communication"
-        - "#clarity"
     notes: Showcase fallback
     id: 20260426163933-what-i-ll-try-means
     createdAt: 2026-04-26T16:39:33.021Z
     fingerprint: ambiguity between can commitment difference exchange expose ill
       means one person relies short try warmth what when
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     renderDir: docs/assets/posts/20260426163933-what-i-ll-try-means
     renderedFiles:
       - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-01.png
       - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-02.png
       - docs/assets/posts/20260426163933-what-i-ll-try-means/slide-03.png
+    instagramMediaId: "18114459349755273"
+    publishedAt: 2026-04-27T10:37:24.288Z
   - source: manual
     slotPreference: midday
     kind: carousel
