@@ -1,10 +1,12 @@
 import type { ContentMode } from "../types.js";
+import { normalizeForFingerprint } from "../util/text.js";
 
-interface ModeExemplar {
+export interface ModeExemplar {
   title: string;
   imageDirection: string;
   captionDirection: string;
   whyItWorks: string;
+  tags: string[];
 }
 
 interface DraftLane {
@@ -12,12 +14,63 @@ interface DraftLane {
   instruction: string;
 }
 
+export interface CaptionPolicy {
+  hookMaxWords: number;
+  bodyMaxWords: number;
+  bodyMaxSentences: number;
+  allowCallToComment: boolean;
+  callToCommentMaxWords: number;
+  maxHashtags: number;
+  guidance: string[];
+}
+
 export interface ModePlaybook {
   plannerQuestions: string[];
   draftLanes: DraftLane[];
   rubricEmphasis: string[];
+  captionPolicy: CaptionPolicy;
   exemplars: ModeExemplar[];
 }
+
+const tokenize = (value: string) =>
+  normalizeForFingerprint(value)
+    .split(" ")
+    .filter((token) => token.length >= 4);
+
+const overlapScore = (left: Set<string>, right: Set<string>) => {
+  let hits = 0;
+  for (const token of left) {
+    if (right.has(token)) {
+      hits += 1;
+    }
+  }
+  return hits;
+};
+
+const exemplarTokens = (exemplar: ModeExemplar) =>
+  new Set(
+    tokenize(
+      [
+        exemplar.title,
+        exemplar.imageDirection,
+        exemplar.captionDirection,
+        exemplar.whyItWorks,
+        exemplar.tags.join(" ")
+      ].join(" ")
+    )
+  );
+
+const rotationOffset = (seed: string, size: number) => {
+  if (!seed || size === 0) {
+    return 0;
+  }
+
+  let total = 0;
+  for (const char of seed) {
+    total += char.charCodeAt(0);
+  }
+  return total % size;
+};
 
 export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
   aphorism: {
@@ -48,6 +101,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The body should clarify the line, not become a second headline.",
       "The post should leave behind one repeatable phrase."
     ],
+    captionPolicy: {
+      hookMaxWords: 15,
+      bodyMaxWords: 34,
+      bodyMaxSentences: 2,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 2,
+      guidance: [
+        "The caption gets one clean second move: cost, implication, or social translation.",
+        "If the card already lands, end early."
+      ]
+    },
     exemplars: [
       {
         title: "Hope's Favorite Translation",
@@ -56,16 +121,37 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Explain how temporary language protects a fantasy longer than a clean answer would.",
         whyItWorks:
-          "It compresses denial into one concrete emotional move instead of offering general dating advice."
+          "It compresses denial into one emotional move instead of giving general advice.",
+        tags: ["dating", "hope", "denial", "translation"]
       },
       {
         title: "Clean Apology",
-        imageDirection:
-          "A clean apology is shorter than the defense.",
+        imageDirection: "A clean apology is shorter than the defense.",
         captionDirection:
           "Shift from the line itself to the deeper conflict between absolution and repair.",
         whyItWorks:
-          "It sounds spoken, specific, and socially useful instead of wise for its own sake."
+          "It sounds spoken and useful instead of wise for its own sake.",
+        tags: ["repair", "conflict", "accountability", "language"]
+      },
+      {
+        title: "Interest Has a Calendar",
+        imageDirection:
+          "Interest usually has a [[calendar]] before it has a poem.",
+        captionDirection:
+          "Tie romance language to whether anyone ever turns feeling into logistics.",
+        whyItWorks:
+          "The concrete noun makes the sentence feel observed, not mystical.",
+        tags: ["dating", "plans", "effort", "romance"]
+      },
+      {
+        title: "Closure's First Day",
+        imageDirection:
+          "Closure is often just the first day you stop auditioning for their clarity.",
+        captionDirection:
+          "Frame closure as a behavioral stop, not a magical feeling of peace.",
+        whyItWorks:
+          "It turns a generic self-help word into a clean social action.",
+        tags: ["breakup", "clarity", "self-respect", "ending"]
       }
     ]
   },
@@ -97,15 +183,27 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The advice should survive a tired Tuesday, not just a notebook.",
       "The caption should add a practical edge case or application."
     ],
+    captionPolicy: {
+      hookMaxWords: 16,
+      bodyMaxWords: 48,
+      bodyMaxSentences: 3,
+      allowCallToComment: true,
+      callToCommentMaxWords: 14,
+      maxHashtags: 2,
+      guidance: [
+        "The caption sharpens application instead of repeating the tactic.",
+        "If there is a question, it should feel like a field test."
+      ]
+    },
     exemplars: [
       {
         title: "Clarity Sounds Rude",
-        imageDirection:
-          "Replace 'we should' with a name, a verb, and a date.",
+        imageDirection: "Replace 'we should' with a name, a verb, and a date.",
         captionDirection:
           "Explain why vague rooms confuse politeness with progress.",
         whyItWorks:
-          "It gives a concrete move and names the social pressure that makes the move feel difficult."
+          "It gives a concrete move and names the social pressure around it.",
+        tags: ["work", "clarity", "meetings", "plans"]
       },
       {
         title: "Tuesday Advice",
@@ -114,7 +212,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Move from elegance to usefulness under noise, fatigue, and friction.",
         whyItWorks:
-          "It keeps the post practical while still sounding authored and sharp."
+          "It keeps the post practical while still sounding authored.",
+        tags: ["advice", "fatigue", "practicality", "friction"]
+      },
+      {
+        title: "Ask for the Decision",
+        imageDirection:
+          "If you need a yes or no, stop ending the sentence where politeness can hide.",
+        captionDirection:
+          "Show how uncertainty survives because the sentence leaves an exit ramp.",
+        whyItWorks:
+          "It teaches a concrete communication move while naming why people avoid it.",
+        tags: ["communication", "boundaries", "dating", "work"]
       }
     ]
   },
@@ -146,6 +255,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The caption should name what made the moment matter, not retell every beat.",
       "The ending should resolve with afterglow, not a miracle or sermon."
     ],
+    captionPolicy: {
+      hookMaxWords: 18,
+      bodyMaxWords: 54,
+      bodyMaxSentences: 3,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 2,
+      guidance: [
+        "Use the caption to name the human principle quietly.",
+        "Do not retell the carousel."
+      ]
+    },
     exemplars: [
       {
         title: "Eleven Minutes",
@@ -154,7 +275,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Frame the story around people who know which rules can bend without breaking what matters.",
         whyItWorks:
-          "It is emotionally clear but small enough to feel witnessed rather than cinematic."
+          "It is emotionally clear but small enough to feel witnessed rather than cinematic.",
+        tags: ["hospital", "urgency", "nurse", "mercy"]
       },
       {
         title: "Address on the Receipt",
@@ -163,7 +285,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Name the quiet dignity of practical help without overpraising kindness.",
         whyItWorks:
-          "It keeps the pathos inside behavior and dialogue instead of moral explanation."
+          "It keeps the pathos inside behavior and dialogue.",
+        tags: ["aging", "pharmacy", "memory", "dignity"]
+      },
+      {
+        title: "Half Ticket Home",
+        imageDirection:
+          "Greyhound counter, missed connection, clerk quietly marks the second leg as bereavement.",
+        captionDirection:
+          "Name the relief of being helped by someone who understands bureaucracy without worshipping it.",
+        whyItWorks:
+          "The system is recognizable, the gesture is small, and the stakes feel credible.",
+        tags: ["travel", "family", "bereavement", "clerk"]
       }
     ]
   },
@@ -195,6 +328,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The commentary should feel sharper than a fan account.",
       "The image should foreground the quote; the caption should justify why it matters now."
     ],
+    captionPolicy: {
+      hookMaxWords: 16,
+      bodyMaxWords: 38,
+      bodyMaxSentences: 2,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 2,
+      guidance: [
+        "The caption explains present-day bite, not admiration.",
+        "A premium quote post feels current because of the framing, not because the caption is long."
+      ]
+    },
     exemplars: [
       {
         title: "Tuesday Is the Life",
@@ -203,7 +348,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Use Tuesday as the test case instead of talking about the quote in general.",
         whyItWorks:
-          "It makes a famous line feel specific again by attaching it to repetition."
+          "It makes a famous line feel specific again by attaching it to repetition.",
+        tags: ["annie dillard", "days", "habits", "attention"]
       },
       {
         title: "Keep the Room Lit",
@@ -212,7 +358,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Move from admiration to the concrete cost of distracted presence.",
         whyItWorks:
-          "It reframes the quote as a behavioral demand rather than something pretty to repost."
+          "It reframes the quote as a behavioral demand rather than something pretty to repost.",
+        tags: ["simone weil", "attention", "presence", "relationships"]
+      },
+      {
+        title: "Instructions for Living",
+        imageDirection:
+          "\"Pay attention. Be astonished. Tell about it.\" - Mary Oliver",
+        captionDirection:
+          "Translate the line away from aesthetics and toward the discipline of actually noticing your life.",
+        whyItWorks:
+          "The quote is short and gets sharper when attached to ordinary witness.",
+        tags: ["mary oliver", "attention", "writing", "ordinary life"]
       }
     ]
   },
@@ -244,6 +401,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The post must include a real object of permission or relief.",
       "The caption should add one clarifying truth that keeps the tone adult."
     ],
+    captionPolicy: {
+      hookMaxWords: 15,
+      bodyMaxWords: 32,
+      bodyMaxSentences: 2,
+      allowCallToComment: true,
+      callToCommentMaxWords: 12,
+      maxHashtags: 1,
+      guidance: [
+        "The caption adds one clarifying truth, not more comfort language.",
+        "If there is a question, it should invite self-recognition, not dependency."
+      ]
+    },
     exemplars: [
       {
         title: "Before the Crash",
@@ -252,16 +421,37 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Shift from permission to the practical cost of waiting too long.",
         whyItWorks:
-          "It is comforting because it is blunt and useful, not because it flatters the reader."
+          "It is comforting because it is blunt and useful, not because it flatters the reader.",
+        tags: ["rest", "burnout", "permission", "adult relief"]
       },
       {
         title: "No Collapse Required",
-        imageDirection:
-          "You do not need a collapse to justify a chair.",
+        imageDirection: "You do not need a collapse to justify a chair.",
         captionDirection:
           "Explain how dramatic breakdowns become false proof that rest is deserved.",
         whyItWorks:
-          "It compresses relief into a memorable line while staying unsentimental."
+          "It compresses relief into a memorable line while staying unsentimental.",
+        tags: ["rest", "exhaustion", "permission", "body"]
+      },
+      {
+        title: "The Reply Can Wait",
+        imageDirection:
+          "You are allowed to answer that tomorrow if tonight needs your name back.",
+        captionDirection:
+          "Keep the focus on overstretched adults, not digital-detox aesthetics.",
+        whyItWorks:
+          "The line is soft, but the object of relief is specific and current.",
+        tags: ["texting", "overwhelm", "attention", "boundaries"]
+      },
+      {
+        title: "Leave Before You Hate It",
+        imageDirection:
+          "You are allowed to leave before resentment has to file the paperwork.",
+        captionDirection:
+          "Clarify that earlier exits are often cleaner than noble endurance.",
+        whyItWorks:
+          "It gives permission without pretending the exit is painless.",
+        tags: ["boundaries", "work", "relationships", "resentment"]
       }
     ]
   },
@@ -293,6 +483,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The copy should prefer social texture over abstraction.",
       "The caption should push one click deeper rather than restate the visible pattern."
     ],
+    captionPolicy: {
+      hookMaxWords: 15,
+      bodyMaxWords: 34,
+      bodyMaxSentences: 2,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 2,
+      guidance: [
+        "The caption widens the social reading by one notch, not a lecture.",
+        "Observation posts lose force when the caption turns sociological."
+      ]
+    },
     exemplars: [
       {
         title: "Busy Language",
@@ -301,16 +503,37 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Move from the phrase itself to the way intentions replace contact.",
         whyItWorks:
-          "It grounds the thesis in a public scene before widening to the social pattern."
+          "It grounds the thesis in a public scene before widening to the social pattern.",
+        tags: ["texting", "friendship", "brunch", "language"]
       },
       {
         title: "Warmth and Presence",
-        imageDirection:
-          "Warmth is not always presence.",
+        imageDirection: "Warmth is not always presence.",
         captionDirection:
           "Define the difference through weight-bearing contact rather than temperature.",
         whyItWorks:
-          "It takes a fuzzy relationship complaint and makes it behaviorally legible."
+          "It takes a fuzzy relationship complaint and makes it behaviorally legible.",
+        tags: ["relationships", "presence", "warmth", "effort"]
+      },
+      {
+        title: "Future-Tense Friendship",
+        imageDirection:
+          "'We should catch up' is sometimes just friendship in the future tense.",
+        captionDirection:
+          "Show how affection survives more easily in language than in calendars.",
+        whyItWorks:
+          "It names a common ritual with a phrase people can borrow immediately.",
+        tags: ["friendship", "plans", "future tense", "language"]
+      },
+      {
+        title: "Low-Maintenance Award",
+        imageDirection:
+          "The person called [[low-maintenance]] is often just the person swallowing the inconvenience.",
+        captionDirection:
+          "Move from the compliment itself to the labor hidden inside it.",
+        whyItWorks:
+          "It makes a familiar compliment feel suddenly political and lived.",
+        tags: ["friendship", "labor", "compliment", "inconvenience"]
       }
     ]
   },
@@ -342,6 +565,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "Support text should deepen the cost, not diffuse the pressure.",
       "The comment question should feel native, not bolted on."
     ],
+    captionPolicy: {
+      hookMaxWords: 16,
+      bodyMaxWords: 28,
+      bodyMaxSentences: 2,
+      allowCallToComment: true,
+      callToCommentMaxWords: 12,
+      maxHashtags: 1,
+      guidance: [
+        "The caption explains why the question bites without softening it.",
+        "If the image question already invites response, the call to comment can disappear."
+      ]
+    },
     exemplars: [
       {
         title: "Old Yeses",
@@ -350,7 +585,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Shift from endurance to whether the commitment still belongs in the life being built now.",
         whyItWorks:
-          "It exposes a tradeoff and an identity lag in one sentence."
+          "It exposes a tradeoff and an identity lag in one sentence.",
+        tags: ["commitment", "identity", "obligation", "change"]
       },
       {
         title: "Hardest Thing",
@@ -359,7 +595,28 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Name the difference between truth-seeking and relief-seeking.",
         whyItWorks:
-          "It makes a reflective prompt feel pointed instead of generic."
+          "It makes a reflective prompt feel pointed instead of generic.",
+        tags: ["truth", "avoidance", "action", "fear"]
+      },
+      {
+        title: "Patience or Fear",
+        imageDirection:
+          "What are you calling [[patience]] that is really fear of making the room awkward?",
+        captionDirection:
+          "Frame patience as a possible alibi instead of a virtue by default.",
+        whyItWorks:
+          "The question is socially costly because it touches politeness, not just introspection.",
+        tags: ["awkwardness", "politeness", "fear", "relationships"]
+      },
+      {
+        title: "First-Draft Life",
+        imageDirection:
+          "Which part of your life only survives because nobody reopened the first draft?",
+        captionDirection:
+          "Connect inertia with identity maintenance instead of logistics.",
+        whyItWorks:
+          "It pressures real life instead of feeling like a workbook prompt.",
+        tags: ["identity", "inertia", "work", "reconsideration"]
       }
     ]
   },
@@ -391,6 +648,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The turn should sound clean enough to repeat aloud.",
       "The caption should explain the practical consequence of the reframe."
     ],
+    captionPolicy: {
+      hookMaxWords: 16,
+      bodyMaxWords: 34,
+      bodyMaxSentences: 2,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 2,
+      guidance: [
+        "The caption explains what changes once the new frame is accepted.",
+        "Do not spend the caption congratulating the insight."
+      ]
+    },
     exemplars: [
       {
         title: "Planner-Shaped Resentment",
@@ -399,7 +668,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Explain how the diagnosis changes the remedy.",
         whyItWorks:
-          "It is vivid, useful, and specific without becoming theatrical."
+          "It is vivid, useful, and specific without becoming theatrical.",
+        tags: ["work", "resentment", "procrastination", "diagnosis"]
       },
       {
         title: "Quiet Beginning",
@@ -408,7 +678,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Push from withdrawal as failure toward mis-aimed energy.",
         whyItWorks:
-          "It takes a familiar cliche and finds a sharper human interpretation."
+          "It takes a familiar cliche and finds a sharper human interpretation.",
+        tags: ["work", "quiet quitting", "energy", "beginning"]
+      },
+      {
+        title: "Useful on Command",
+        imageDirection:
+          "Maybe you are not unmotivated. Maybe you are tired of being useful on command.",
+        captionDirection:
+          "Move from willpower language to the cost of endless availability.",
+        whyItWorks:
+          "The reframe opens a different remedy without getting abstract.",
+        tags: ["motivation", "burnout", "availability", "work"]
       }
     ]
   },
@@ -440,6 +721,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "Each slide should advance the emotional meaning of the exchange.",
       "The caption should explain what the exchange revealed rather than narrating stage directions."
     ],
+    captionPolicy: {
+      hookMaxWords: 15,
+      bodyMaxWords: 36,
+      bodyMaxSentences: 2,
+      allowCallToComment: false,
+      callToCommentMaxWords: 0,
+      maxHashtags: 1,
+      guidance: [
+        "The caption should translate the subtext once and stop.",
+        "Dialogue posts weaken fast when the caption starts explaining every beat."
+      ]
+    },
     exemplars: [
       {
         title: "What I'll Try Means",
@@ -448,7 +741,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Translate the phrase into asymmetry of hope and responsibility.",
         whyItWorks:
-          "It dramatizes ambiguity with ordinary language rather than polished banter."
+          "It dramatizes ambiguity with ordinary language rather than polished banter.",
+        tags: ["dating", "ambiguity", "effort", "plans"]
       },
       {
         title: "Not Mad",
@@ -457,7 +751,28 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Pull out the resignation or withdrawal hidden under calm language.",
         whyItWorks:
-          "It lets dialogue carry the truth instead of explaining it first."
+          "It lets dialogue carry the truth instead of explaining it first.",
+        tags: ["relationship", "withdrawal", "conflict", "subtext"]
+      },
+      {
+        title: "You Don't Have To",
+        imageDirection:
+          "\"You don't have to come.\" / \"I know. That's why it hurts.\"",
+        captionDirection:
+          "Expose the difference between freedom and care.",
+        whyItWorks:
+          "The exchange is tiny but the subtext expands cleanly.",
+        tags: ["relationships", "care", "choice", "hurt"]
+      },
+      {
+        title: "Inbox for Dinner",
+        imageDirection:
+          "\"Did you eat?\" / \"I answered the work email.\"",
+        captionDirection:
+          "Translate productivity as a false substitute for care of the body.",
+        whyItWorks:
+          "The lines sound lived and current; the meaning arrives through mismatch.",
+        tags: ["work", "exhaustion", "body", "care"]
       }
     ]
   },
@@ -489,6 +804,18 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
       "The final slide must synthesize, not merely repeat.",
       "The caption should add one nuance or omitted edge case rather than summarizing the list."
     ],
+    captionPolicy: {
+      hookMaxWords: 16,
+      bodyMaxWords: 42,
+      bodyMaxSentences: 3,
+      allowCallToComment: true,
+      callToCommentMaxWords: 12,
+      maxHashtags: 2,
+      guidance: [
+        "The caption should add the missing edge case, not a recap.",
+        "If the carousel already scans cleanly, the caption should feel like a margin note."
+      ]
+    },
     exemplars: [
       {
         title: "Improvement as Camouflage",
@@ -497,7 +824,8 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Explain how real growth becomes honest the moment it touches consequence or exposure.",
         whyItWorks:
-          "The list items are diagnostic, distinct, and culminate in a stronger concluding frame."
+          "The items are diagnostic, distinct, and culminate in a stronger concluding frame.",
+        tags: ["self-improvement", "avoidance", "exposure", "growth"]
       },
       {
         title: "Three Rules for Naming Delay",
@@ -506,8 +834,93 @@ export const modePlaybooks: Record<ContentMode, ModePlaybook> = {
         captionDirection:
           "Add one omitted edge case about mixed motives and partial truth.",
         whyItWorks:
-          "It gives a scannable promise and a practical sorting framework."
+          "It gives a scannable promise and a practical sorting framework.",
+        tags: ["delay", "fear", "confusion", "diagnosis"]
+      },
+      {
+        title: "Warmth Without Plans",
+        imageDirection:
+          "4 phrases people use when they want warmth without logistics.",
+        captionDirection:
+          "Explain why vague affection can still feel binding.",
+        whyItWorks:
+          "Each phrase can carry a separate social function instead of filler.",
+        tags: ["friendship", "plans", "language", "avoidance"]
+      },
+      {
+        title: "Helpful or Controlling",
+        imageDirection:
+          "5 signs your helpfulness became crowd-control.",
+        captionDirection:
+          "Add one nuance about the difference between service and steering.",
+        whyItWorks:
+          "The premise is fresh, behavioral, and gives the last slide room to synthesize.",
+        tags: ["control", "helpfulness", "relationships", "family"]
       }
     ]
   }
 };
+
+export const getCaptionPolicy = (mode: ContentMode) => modePlaybooks[mode].captionPolicy;
+
+export const describeCaptionPolicy = (mode: ContentMode) => {
+  const policy = getCaptionPolicy(mode);
+  return [
+    `Hook: 1 sentence, at most ${policy.hookMaxWords} words.`,
+    `Body: at most ${policy.bodyMaxSentences} short sentences and ${policy.bodyMaxWords} words.`,
+    policy.allowCallToComment
+      ? `Call to comment: optional only when native, at most ${policy.callToCommentMaxWords} words.`
+      : "Call to comment: omit it unless the post absolutely depends on one.",
+    `Hashtags: 0 to ${policy.maxHashtags}.`,
+    ...policy.guidance
+  ];
+};
+
+export const selectModeExemplars = (
+  mode: ContentMode,
+  contextText?: string,
+  limit = 4
+) => {
+  const exemplars = modePlaybooks[mode].exemplars;
+  if (exemplars.length <= limit) {
+    return exemplars;
+  }
+
+  const seed = normalizeForFingerprint(contextText ?? "");
+  const contextTokens = new Set(tokenize(seed));
+  const offset = rotationOffset(seed, exemplars.length);
+
+  return [...exemplars]
+    .map((exemplar, index) => {
+      const tagTokens = new Set(exemplar.tags.flatMap((tag) => tokenize(tag)));
+
+      return {
+        exemplar,
+        index,
+        score:
+          overlapScore(tagTokens, contextTokens) * 3 +
+          overlapScore(exemplarTokens(exemplar), contextTokens)
+      };
+    })
+    .sort((left, right) => {
+      if (right.score !== left.score) {
+        return right.score - left.score;
+      }
+
+      const leftRotation = (left.index - offset + exemplars.length) % exemplars.length;
+      const rightRotation = (right.index - offset + exemplars.length) % exemplars.length;
+      return leftRotation - rightRotation;
+    })
+    .slice(0, limit)
+    .map((entry) => entry.exemplar);
+};
+
+export const formatModeExemplars = (exemplars: ModeExemplar[]) =>
+  exemplars
+    .map(
+      (example, index) => `Example ${index + 1}: ${example.title}
+- Image direction: ${example.imageDirection}
+- Caption direction: ${example.captionDirection}
+- Why it works: ${example.whyItWorks}`
+    )
+    .join("\n\n");

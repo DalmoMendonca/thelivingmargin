@@ -14,7 +14,12 @@ import type {
   SlotName
 } from "../types.js";
 import { contentModeProfiles } from "./mode-profiles.js";
-import { modePlaybooks } from "./mode-playbooks.js";
+import {
+  describeCaptionPolicy,
+  formatModeExemplars,
+  modePlaybooks,
+  selectModeExemplars
+} from "./mode-playbooks.js";
 
 const slotModePriorities: Record<SlotName, ContentMode[]> = {
   morning: ["question", "encouragement", "aphorism", "reframe", "quote", "advice"],
@@ -172,15 +177,11 @@ const manualSeedBlock = ({
   ].join("\n");
 };
 
-const plannerExampleBlock = (mode: ContentMode) =>
-  modePlaybooks[mode].exemplars
-    .map(
-      (example, index) => `Example ${index + 1}: ${example.title}
-- Image direction: ${example.imageDirection}
-- Caption direction: ${example.captionDirection}
-- Why it works: ${example.whyItWorks}`
-    )
-    .join("\n\n");
+const plannerExampleBlock = (mode: ContentMode, contextText?: string) =>
+  formatModeExemplars(selectModeExemplars(mode, contextText, 4));
+
+const captionPolicyBlock = (mode: ContentMode) =>
+  describeCaptionPolicy(mode).map((rule) => `- ${rule}`).join("\n");
 
 export const buildPlanningPrompt = ({
   slot,
@@ -200,6 +201,7 @@ export const buildPlanningPrompt = ({
   const targetMode = forcedContentMode ?? deriveTargetMode(slot, queue);
   const profile = contentModeProfiles[targetMode];
   const playbook = modePlaybooks[targetMode];
+  const planningContext = [manualIdea?.idea, seedIdea].filter(Boolean).join("\n");
   const modeCounts = new Map<string, number>();
   const templateCounts = new Map<string, number>();
 
@@ -275,6 +277,9 @@ ${profile.imageRules.map((rule) => `- ${rule}`).join("\n")}
 Mode caption rules:
 ${profile.captionRules.map((rule) => `- ${rule}`).join("\n")}
 
+Caption compression policy:
+${captionPolicyBlock(targetMode)}
+
 Mode banned moves:
 ${profile.bannedMoves.map((rule) => `- ${rule}`).join("\n")}
 
@@ -285,7 +290,7 @@ Planning questions you must answer privately before drafting:
 ${playbook.plannerQuestions.map((question) => `- ${question}`).join("\n")}
 
 Calibration examples:
-${plannerExampleBlock(targetMode)}
+${plannerExampleBlock(targetMode, planningContext)}
 
 Instruction hierarchy note:
 - Treat the brand rules and output contract as authoritative.
@@ -342,6 +347,10 @@ export const buildCandidatePrompt = ({
 }) => {
   const profile = contentModeProfiles[mode];
   const playbook = modePlaybooks[mode];
+  const exemplarBlock = formatModeExemplars(
+    selectModeExemplars(mode, `${planJson}\n${laneName}\n${laneInstruction}`, 3)
+  );
+  const captionPolicy = describeCaptionPolicy(mode);
 
   return `
 You are writing one candidate Instagram content package from an approved planning brief.
@@ -365,6 +374,12 @@ ${antiSlopRules.map((rule) => `- ${rule}`).join("\n")}
 Mode banned moves:
 ${profile.bannedMoves.map((rule) => `- ${rule}`).join("\n")}
 
+Caption compression policy:
+${captionPolicy.map((rule) => `- ${rule}`).join("\n")}
+
+Mode-specific exemplar bank:
+${exemplarBlock}
+
 Use this planning brief exactly as the source of truth:
 ${planJson}
 
@@ -372,6 +387,7 @@ Drafting instructions:
 - Write the post, not commentary about the post.
 - Honor the plan's kind, content mode, template family, palette, surface style, and slot preference.
 - Let the image land first. Let the caption add the second move.
+- Compression beats completeness, especially in the caption.
 - Sound authored, not optimized.
 - If using a carousel, make each slide advance meaning rather than rewording the previous slide.
 - If using [[highlight markers]], use them sparingly and only on phrases worth visual emphasis.
@@ -407,9 +423,9 @@ Return JSON only in this exact shape:
   ],
   "caption": {
     "hook": "1 sentence",
-    "body": "2 to 4 sentences",
+    "body": "short, compressed, second-move copy only",
     "callToComment": "optional; only include when native to the post",
-    "hashtags": ["0 to 4 concise hashtags"]
+    "hashtags": ["0 to 2 concise hashtags unless the mode policy allows less"]
   }
 }
 
@@ -422,6 +438,7 @@ Output rules:
 - No page label inside the copy for a single-image post.
 - Keep every field short enough to render cleanly.
 - Hashtags are optional. Zero is allowed and often better for a premium post.
+- Do not use the caption to recap the card.
 `.trim();
 };
 
@@ -521,12 +538,19 @@ ${preserve.map((value) => `- ${value}`).join("\n")}
 Apply these polish priorities:
 ${polishPriorities.map((value) => `- ${value}`).join("\n")}
 
+Caption compression policy:
+${describeCaptionPolicy(draft.contentMode).map((rule) => `- ${rule}`).join("\n")}
+
+Relevant exemplar bank:
+${formatModeExemplars(selectModeExemplars(draft.contentMode, planJson, 2))}
+
 Candidate JSON:
 ${JSON.stringify(draft, null, 2)}
 
 Revision rules:
 - Keep the underlying idea and the best sentence music.
 - Cut anything generic, decorative, or over-explained.
+- If the caption can lose a sentence without losing meaning, cut it.
 - Keep the copy visually renderable.
 - Do not change the content mode.
 - Do not invent attribution.

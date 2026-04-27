@@ -1,8 +1,9 @@
 import { z } from "zod";
 import { appEnv, hasOpenAi } from "../config/brand.js";
 import type { QueueItem } from "../types.js";
+import { countCaptionSentences, countCaptionWords } from "./caption.js";
 import { contentModeProfiles } from "./mode-profiles.js";
-import { modePlaybooks } from "./mode-playbooks.js";
+import { describeCaptionPolicy, getCaptionPolicy, modePlaybooks } from "./mode-playbooks.js";
 import { createOpenAiClient, parseStructuredResponse } from "./openai.js";
 
 const metaPattern =
@@ -122,6 +123,7 @@ export const lintQueueItem = (item: QueueItem) => {
   const warnings: string[] = [];
   const budgets = budgetForItem(item);
   const profile = contentModeProfiles[item.contentMode];
+  const captionPolicy = getCaptionPolicy(item.contentMode);
 
   if (item.kind === "single" && !item.single) {
     errors.push("Single post is missing `single` content.");
@@ -259,8 +261,35 @@ export const lintQueueItem = (item: QueueItem) => {
     warnings.push("Caption is drifting too close to the image copy.");
   }
 
+  if (countCaptionWords(item.caption.hook) > captionPolicy.hookMaxWords) {
+    errors.push("Caption hook is too long for this mode.");
+  }
+
+  if (countCaptionWords(item.caption.body) > captionPolicy.bodyMaxWords) {
+    errors.push("Caption body is too long for this mode.");
+  }
+
+  if (countCaptionSentences(item.caption.body) > captionPolicy.bodyMaxSentences) {
+    errors.push("Caption body uses too many sentences for this mode.");
+  }
+
+  if (!captionPolicy.allowCallToComment && item.caption.callToComment) {
+    warnings.push("This mode usually performs better without a call to comment.");
+  }
+
+  if (
+    captionPolicy.allowCallToComment &&
+    countCaptionWords(item.caption.callToComment) > captionPolicy.callToCommentMaxWords
+  ) {
+    warnings.push("Call to comment is too long for this mode.");
+  }
+
   if (item.caption.hashtags.length > 4) {
     errors.push("Hashtag count must stay at 4 or fewer.");
+  }
+
+  if (item.caption.hashtags.length > captionPolicy.maxHashtags) {
+    warnings.push(`This mode should usually stay at ${captionPolicy.maxHashtags} hashtag(s) or fewer.`);
   }
 
   return {
@@ -288,6 +317,7 @@ const reviewPromptForItem = (
     `Mode success target: ${contentModeProfiles[item.contentMode].objective}`,
     `Mode failure patterns: ${contentModeProfiles[item.contentMode].bannedMoves.join(" | ")}`,
     `Mode rubric emphasis: ${modePlaybooks[item.contentMode].rubricEmphasis.join(" | ")}`,
+    `Caption policy: ${describeCaptionPolicy(item.contentMode).join(" | ")}`,
     context?.laneName ? `Candidate lane: ${context.laneName}` : undefined,
     context?.planJson ? `Planning brief:\n${context.planJson}` : undefined,
     context?.rubricEmphasis && context.rubricEmphasis.length > 0

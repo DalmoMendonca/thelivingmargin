@@ -66,3 +66,4 @@ await saveQueue(queue);
 await savePreviewManifest(queue.items);
 
 logStep(`Generated and rendered ${generated.length} showcase post(s), one for each mode.`);
+process.exit(0);

@@ -22,6 +22,7 @@ import {
 } from "../util/text.js";
 import { nowIso } from "../util/time.js";
 import { sampleQueueItems } from "./fallback-posts.js";
+import { compressCaptionBundle } from "./caption.js";
 import { contentModeProfiles } from "./mode-profiles.js";
 import { modePlaybooks } from "./mode-playbooks.js";
 import { createOpenAiClient, parseStructuredResponse } from "./openai.js";
@@ -171,7 +172,7 @@ const buildQueueItem = (
     pipelineNote
   ].filter((value): value is string => Boolean(value));
 
-  return sanitizeQueueItem({
+  const item = sanitizeQueueItem({
     id,
     createdAt,
     source: manualIdea ? "manual" : "ai",
@@ -222,6 +223,9 @@ const buildQueueItem = (
     status: "ready",
     notes: notes.length > 0 ? notes.join(" | ") : undefined
   });
+
+  item.caption = compressCaptionBundle(item.contentMode, item.caption);
+  return item;
 };
 
 const nextSlotForQueue = (items: QueueItem[]) => {
@@ -321,6 +325,7 @@ const alignItemToPlan = (item: QueueItem, plan: DraftPlan) => {
   item.palette = plan.palette;
   item.surfaceStyle = plan.surfaceStyle;
   item.voiceMode = plan.voiceMode;
+  item.caption = compressCaptionBundle(plan.contentMode, item.caption);
   return item;
 };
 

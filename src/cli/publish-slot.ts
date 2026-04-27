@@ -11,6 +11,7 @@ import {
   queueTarget,
   topUpQueue
 } from "../content/generator.js";
+import { compressCaptionBundle } from "../content/caption.js";
 import { reviewQueueItem } from "../content/quality.js";
 import { isTooSimilar } from "../content/dedupe.js";
 import { buildFallbackQueueItemForSlot } from "../content/fallback-posts.js";
@@ -147,6 +148,14 @@ const saveRenderCommit = async (target: QueueItem) => {
 };
 
 const ensureRendered = async (target: QueueItem) => {
+  const originalCaption = JSON.stringify(target.caption);
+  target.caption = compressCaptionBundle(target.contentMode, target.caption);
+
+  if (JSON.stringify(target.caption) !== originalCaption) {
+    queue.items = replaceQueueItem(queue, target).items;
+    await saveQueueState();
+  }
+
   if (target.renderedFiles?.length) {
     return;
   }
