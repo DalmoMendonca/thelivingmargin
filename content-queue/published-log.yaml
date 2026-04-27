@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T04:21:31.257Z
+updatedAt: 2026-04-27T05:59:36.239Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -297,3 +297,15 @@ entries:
     slot: evening
     instagramMediaId: "18012733784849769"
     title: The handwritten route
+  - id: 20260426163111-hope-s-favorite-translation
+    publishedAt: 2026-04-27T05:59:36.210Z
+    topic: dating and denial
+    angle: People often call one-sided interest bad timing because the cleaner
+      explanation would force them to change direction.
+    fingerprint: bad because call change cleaner dating denial direction explanation
+      favorite force hopes interest often one people sided them timing
+      translation would
+    kind: single
+    slot: morning
+    instagramMediaId: "17876665257590710"
+    title: Hope's Favorite Translation
