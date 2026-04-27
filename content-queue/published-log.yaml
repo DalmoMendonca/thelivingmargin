@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T00:14:26.271Z
+updatedAt: 2026-04-27T01:32:43.228Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -263,3 +263,14 @@ entries:
     slot: midday
     instagramMediaId: "17886973155508025"
     title: Busy Language
+  - id: 20260426053233-what-i-ll-try-means
+    publishedAt: 2026-04-27T01:32:43.200Z
+    topic: ambiguity and commitment
+    angle: A short exchange can expose the difference between warmth and commitment
+      when one person relies on ambiguity.
+    fingerprint: ambiguity between can commitment difference exchange expose ill
+      means one person relies short try warmth what when
+    kind: carousel
+    slot: evening
+    instagramMediaId: "18126386182594896"
+    title: What I'll Try Means
