@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T03:00:26.575Z
+updatedAt: 2026-04-27T04:21:31.230Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1188,19 +1188,21 @@ items:
           from the moment I needed.
         footer: Just enough afterglow to keep going.
     caption:
-      hook: It wasn’t comfort. It was a route-handwritten, fast.
+      hook: It wasn’t comfort.
       body: "The help cost them a real interruption: a few seconds on the intercom and
         time to write me to the right desk. From me, it cost accepting the line
         on the paper and walking-no bargaining with the panic."
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: AI pipeline winner quiet witness | Plan mode story
     renderDir: docs/assets/posts/20260426163305-the-handwritten-route
     renderedFiles:
       - docs/assets/posts/20260426163305-the-handwritten-route/slide-01.png
       - docs/assets/posts/20260426163305-the-handwritten-route/slide-02.png
       - docs/assets/posts/20260426163305-the-handwritten-route/slide-03.png
+    instagramMediaId: "18012733784849769"
+    publishedAt: 2026-04-27T04:21:31.230Z
   - id: 20260426163410-spend-the-day-live-the-bill
     createdAt: 2026-04-26T16:34:10.661Z
     source: ai
