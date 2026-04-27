@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T20:24:56.025Z",
+  "updatedAt": "2026-04-27T21:23:48.352Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -405,6 +405,21 @@
       "createdAt": "2026-04-27T20:24:34.117Z",
       "renderedFiles": [
         "assets/posts/20260427202434-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260427212346-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-27T21:23:46.996Z",
+      "renderedFiles": [
+        "assets/posts/20260427212346-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260427212346-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260427212346-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260427212346-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260427212346-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
