@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T05:59:36.210Z
+updatedAt: 2026-04-27T07:09:51.067Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1228,19 +1228,20 @@ items:
       body: ""
       footer: "- Annie Dillard"
     caption:
-      hook: 6:30-7:30. Kitchen light. Thumb hovering over “one more.”
+      hook: 6:30-7:30.
       body: "Dillard isn’t being poetic-this is the ledger: you trade attention for
         comfort. You reschedule the calendar invite, call unread messages “not
         urgent,” and tomorrow morning asks for the exact hours you just spent
-        avoiding. Comfort tonight. Consequence tomorrow: less time, less focus,
-        more catching up."
+        avoiding."
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: AI pipeline winner application revised | Showcase soft-pass
     renderDir: docs/assets/posts/20260426163410-spend-the-day-live-the-bill
     renderedFiles:
       - docs/assets/posts/20260426163410-spend-the-day-live-the-bill/post.png
+    instagramMediaId: "17979486647844259"
+    publishedAt: 2026-04-27T07:09:51.067Z
   - source: manual
     title: Before the Crash
     topic: rest and worthiness
