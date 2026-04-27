@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-27T15:32:49.319Z",
+  "updatedAt": "2026-04-27T16:33:18.072Z",
   "items": [
     {
       "id": "2026-04-26-old-yeses",
@@ -346,6 +346,17 @@
         "assets/posts/20260426164107-improvement-as-camouflage/slide-03.png",
         "assets/posts/20260426164107-improvement-as-camouflage/slide-04.png",
         "assets/posts/20260426164107-improvement-as-camouflage/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260427163317-future-tense-intimacy",
+      "title": "Future Tense Intimacy",
+      "kind": "single",
+      "topic": "friendship and distance",
+      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
+      "createdAt": "2026-04-27T16:33:17.316Z",
+      "renderedFiles": [
+        "assets/posts/20260427163317-future-tense-intimacy/post.png"
       ]
     }
   ]
