@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T18:27:58.255Z
+updatedAt: 2026-04-27T19:35:28.480Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1683,3 +1683,98 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AOaJASXMxv-OWmp_Sc5-bBA"}}'
+  - id: 20260427193154-extra-chairs
+    createdAt: 2026-04-27T19:31:54.503Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Extra Chairs
+    topic: not believing a real invitation because too many invitations are only
+      politeness
+    angle: A short exchange shows how being treated as optional for long enough can
+      make a sincere invitation sound like social weather.
+    fingerprint: as because being believing can chairs enough exchange extra how
+      invitation invitations like long make many not only optional politeness
+      real short shows sincere social sound too treated weather
+    contentMode: dialogue
+    voiceMode: reflective
+    altText: "Three-slide warm paper carousel in brass ink with spare dialogue.
+      Slide 1: \"How come you didn't come?\" \"I thought you were coming.\"
+      Slide 2: \"I thought that was just being nice.\" \"Like, group chat
+      nice.\" Slide 3: \"I texted you the address.\" \"There were extra chairs
+      out. I grabbed more paper plates.\""
+    carousel:
+      - headline: "\"How come you didn't come?\""
+        body: '"I thought you were coming."'
+      - headline: '"I thought that was just being nice."'
+        body: '"Like, group chat nice."'
+      - headline: '"I texted you the address."'
+        body: '"There were extra chairs out. I grabbed more paper plates."'
+    caption:
+      hook: Courtesy and inclusion can sound the same.
+      body: If you've been optional long enough, friendliness reads like weather. You
+        believe the invite later-when someone sends the address and sets out
+        extra chairs and paper plates.
+      hashtags: []
+    publishAttempts: 0
+    status: blocked
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    lastError: 'Pre-publish QC failed: The core exchange is credible, and "Like,
+      group chat nice" sounds like something a real person would actually say. |
+      The slides do progress emotionally: confusion, mistrust, then proof of
+      sincerity through concrete details. | It slips a little toward neatness:
+      every line is doing thematic work, so the exchange feels slightly
+      over-composed rather than fully overheard. | The last slide is the
+      strongest because the chairs/plates details make the invitation tangible
+      instead of abstract. | The caption explains too much and repeats the exact
+      evidence from the slides, which flattens the aftertaste instead of
+      translating the subtext once and stopping. | For a premium text-first
+      account, this is close, but not quite sharp enough in the caption/editing
+      to feel finished.'
+  - id: 20260427193526-future-tense-intimacy
+    createdAt: 2026-04-27T19:35:26.669Z
+    source: manual
+    title: Future Tense Intimacy
+    topic: friendship and distance
+    angle: Some relationships survive by promising future closeness instead of
+      spending present attention.
+    fingerprint: attention by closeness distance friendship future instead intimacy
+      present promising relationships some spending survive tense
+    publishAttempts: 0
+    status: rendered
+    slotPreference: evening
+    kind: single
+    templateFamily: broadside
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    contentMode: story
+    voiceMode: reflective
+    altText: Warm paper story card about people using future tense to imitate closeness.
+    single:
+      headline: Some people use [[future tense]] the way others use touch.
+      body: >-
+        We'll do dinner soon.
+
+        We should take a trip.
+
+        Let's have a proper catch-up.
+
+
+        Promise can simulate closeness for a long time when nobody asks it to
+        become a date on the calendar.
+      supportLine: Planned intimacy is still intimacy only when it lands.
+      footer: Hope is not the same as contact.
+    caption:
+      hook: The loneliest conversations are sometimes the warmest ones.
+      body: Nobody is absent enough to accuse. Nobody is present enough to lean on.
+        The relationship survives on future language and borrowed feeling.
+      hashtags:
+        - "#friendship"
+        - "#loneliness"
+    notes: Emergency fallback
+    renderDir: docs/assets/posts/20260427193526-future-tense-intimacy
+    renderedFiles:
+      - docs/assets/posts/20260427193526-future-tense-intimacy/post.png
