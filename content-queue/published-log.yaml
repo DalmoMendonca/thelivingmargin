@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T10:37:24.310Z
+updatedAt: 2026-04-27T11:31:57.004Z
 entries:
   - id: 2026-04-25-peace-as-a-disguise
     publishedAt: 2026-04-25T18:05:33.951Z
@@ -354,3 +354,13 @@ entries:
     slot: evening
     instagramMediaId: "18114459349755273"
     title: What I'll Try Means
+  - id: 20260426163731-old-yeses
+    publishedAt: 2026-04-27T11:31:56.976Z
+    topic: obligation and identity
+    angle: A commitment can remain active long after the self who made it is gone.
+    fingerprint: active after can commitment gone identity long made obligation old
+      remain self who yeses
+    kind: single
+    slot: morning
+    instagramMediaId: "18119611744659526"
+    title: Old Yeses

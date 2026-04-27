@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-27T10:37:24.288Z
+updatedAt: 2026-04-27T11:31:56.976Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -1353,25 +1353,22 @@ items:
     caption:
       hook: Not every unfinished thing deserves your loyalty.
       body: Some obligations began as honesty and stayed as inertia. The useful
-        question is not whether you can endure them. It's whether they still
-        belong in the life you're actually building.
+        question is not whether you can endure them.
       callToComment: What's one commitment you need to re-choose instead of just carrying?
       hashtags:
         - "#selfknowledge"
-        - "#decisionmaking"
-        - "#boundaries"
-        - "#writing"
-        - "#growth"
     id: 20260426163731-old-yeses
     createdAt: 2026-04-26T16:37:31.698Z
     fingerprint: active after can commitment gone identity long made obligation old
       remain self who yeses
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: published
     notes: Showcase fallback
     renderDir: docs/assets/posts/20260426163731-old-yeses
     renderedFiles:
       - docs/assets/posts/20260426163731-old-yeses/post.png
+    instagramMediaId: "18119611744659526"
+    publishedAt: 2026-04-27T11:31:56.976Z
   - id: 20260426163810-prep-as-a-delay-ritual
     createdAt: 2026-04-26T16:38:10.404Z
     source: ai
