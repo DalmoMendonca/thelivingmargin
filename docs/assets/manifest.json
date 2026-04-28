@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-04-28T16:36:32.877Z",
+  "updatedAt": "2026-04-28T17:38:00.776Z",
   "items": [
-    {
-      "id": "20260426052908-eleven-minutes",
-      "title": "Eleven Minutes",
-      "kind": "carousel",
-      "topic": "care and urgency",
-      "angle": "A small act of institutional mercy can matter for years when it prevents a hard day from becoming a permanent regret.",
-      "createdAt": "2026-04-26T05:29:08.381Z",
-      "renderedFiles": [
-        "assets/posts/20260426052908-eleven-minutes/slide-01.png",
-        "assets/posts/20260426052908-eleven-minutes/slide-02.png",
-        "assets/posts/20260426052908-eleven-minutes/slide-03.png"
-      ]
-    },
     {
       "id": "20260426052942-tuesday-is-the-life",
       "title": "Tuesday Is the Life",
@@ -489,6 +476,17 @@
       "createdAt": "2026-04-28T16:36:08.639Z",
       "renderedFiles": [
         "assets/posts/20260428163608-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260428173742-private-delay-public-emergency",
+      "title": "Private Delay, Public Emergency",
+      "kind": "single",
+      "topic": "last-minute urgency at work",
+      "angle": "What arrives as a sudden deadline is often an earlier delay reassigned as shared urgency.",
+      "createdAt": "2026-04-28T17:37:42.678Z",
+      "renderedFiles": [
+        "assets/posts/20260428173742-private-delay-public-emergency/post.png"
       ]
     }
   ]

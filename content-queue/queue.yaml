@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T16:36:32.854Z
+updatedAt: 2026-04-28T17:38:00.738Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2733,3 +2733,37 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AgS7h9YrlBWo-vBI6j9U9qO"}}'
+  - id: 20260428173742-private-delay-public-emergency
+    createdAt: 2026-04-28T17:37:42.678Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Private Delay, Public Emergency
+    topic: last-minute urgency at work
+    angle: What arrives as a sudden deadline is often an earlier delay reassigned as
+      shared urgency.
+    fingerprint: arrives as at deadline delay earlier emergency last minute often
+      private public reassigned shared sudden urgency what work
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "Single editorial-style Instagram post on a warm paper background in
+      sage ash tones. Headline reads: 'A 4:47 email is often someone else’s
+      missed deadline.' Body reads: 'The task is real; the emergency got
+      forwarded.'"
+    single:
+      headline: A 4:47 email is often someone else’s missed deadline.
+      body: The task is real; the emergency got forwarded.
+    caption:
+      hook: You can do the work without buying the panic.
+      body: A lot of “ASAP” starts as time that ran out somewhere else. Then it hits
+        your desk or Slack like it was always a team emergency.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode aphorism
+    renderDir: docs/assets/posts/20260428173742-private-delay-public-emergency
+    renderedFiles:
+      - docs/assets/posts/20260428173742-private-delay-public-emergency/post.png
