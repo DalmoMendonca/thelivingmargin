@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T09:48:59.933Z
+updatedAt: 2026-04-28T10:40:42.095Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2415,3 +2415,47 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"APxHBSA1KSkXXvzyH2nrPMI"}}'
+  - id: 20260428104040-future-tense-intimacy
+    createdAt: 2026-04-28T10:40:40.746Z
+    source: manual
+    title: Future Tense Intimacy
+    topic: friendship and distance
+    angle: Some relationships survive by promising future closeness instead of
+      spending present attention.
+    fingerprint: attention by closeness distance friendship future instead intimacy
+      present promising relationships some spending survive tense
+    publishAttempts: 0
+    status: rendered
+    slotPreference: evening
+    kind: single
+    templateFamily: broadside
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    contentMode: story
+    voiceMode: reflective
+    altText: Warm paper story card about people using future tense to imitate closeness.
+    single:
+      headline: Some people use [[future tense]] the way others use touch.
+      body: >-
+        We'll do dinner soon.
+
+        We should take a trip.
+
+        Let's have a proper catch-up.
+
+
+        Promise can simulate closeness for a long time when nobody asks it to
+        become a date on the calendar.
+      supportLine: Planned intimacy is still intimacy only when it lands.
+      footer: Hope is not the same as contact.
+    caption:
+      hook: The loneliest conversations are sometimes the warmest ones.
+      body: Nobody is absent enough to accuse. Nobody is present enough to lean on.
+        The relationship survives on future language and borrowed feeling.
+      hashtags:
+        - "#friendship"
+        - "#loneliness"
+    notes: Emergency fallback
+    renderDir: docs/assets/posts/20260428104040-future-tense-intimacy
+    renderedFiles:
+      - docs/assets/posts/20260428104040-future-tense-intimacy/post.png

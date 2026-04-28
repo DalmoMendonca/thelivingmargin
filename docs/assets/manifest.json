@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T09:48:59.954Z",
+  "updatedAt": "2026-04-28T10:40:42.119Z",
   "items": [
-    {
-      "id": "2026-04-26-busy-language",
-      "title": "Busy Language",
-      "kind": "single",
-      "topic": "intimacy and distance",
-      "angle": "People sometimes use the language of busyness to soften a choice they do not want to name.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/2026-04-26-busy-language/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-future-tense-intimacy",
       "title": "Future Tense Intimacy",
@@ -483,6 +472,17 @@
       "createdAt": "2026-04-28T09:48:29.253Z",
       "renderedFiles": [
         "assets/posts/20260428094829-polite-yes-hangover/post.png"
+      ]
+    },
+    {
+      "id": "20260428104040-future-tense-intimacy",
+      "title": "Future Tense Intimacy",
+      "kind": "single",
+      "topic": "friendship and distance",
+      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
+      "createdAt": "2026-04-28T10:40:40.746Z",
+      "renderedFiles": [
+        "assets/posts/20260428104040-future-tense-intimacy/post.png"
       ]
     }
   ]
