@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T07:48:51.214Z
+updatedAt: 2026-04-28T08:49:46.563Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2327,3 +2327,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AAYS9-XF1nx83hL7IXdEDUM"}}'
+  - id: 20260428084930-everywhere-is-nowhere
+    createdAt: 2026-04-28T08:49:30.128Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Everywhere Is Nowhere
+    topic: ambient distraction disguised as responsiveness
+    angle: "Use Seneca's line to frame divided attention as a modern form of
+      absence: too many open channels do not make you engaged; they make you
+      unavailable to your own life and to the person in front of you."
+    fingerprint: absence ambient as attention channels disguised distraction divided
+      do engaged everywhere form frame front life line make many modern not
+      nowhere open own person responsiveness senecas they too unavailable use
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Seneca
+    altText: Single-image editorial quote card on a textured blue plaster surface
+      with generous margins. Large centered text reads, "To be everywhere is to
+      be nowhere." Small attribution beneath reads, - Seneca.
+    single:
+      headline: '"To be everywhere is to be nowhere."'
+      body: "- Seneca"
+    caption:
+      hook: Responsiveness can look a lot like absence.
+      body: Face-up phone, open tabs, Slack pinging, cold coffee, and the person
+        across from you has to repeat themselves. Being reachable all day can
+        leave you missing your life while it happens.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner ordinary life | Plan mode quote
+    renderDir: docs/assets/posts/20260428084930-everywhere-is-nowhere
+    renderedFiles:
+      - docs/assets/posts/20260428084930-everywhere-is-nowhere/post.png

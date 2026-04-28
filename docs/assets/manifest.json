@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-28T07:48:51.233Z",
+  "updatedAt": "2026-04-28T08:49:46.600Z",
   "items": [
-    {
-      "id": "2026-04-26-clarity-sounds-rude",
-      "title": "Clarity Sounds Rude",
-      "kind": "carousel",
-      "topic": "work and communication",
-      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/20260426-clarity-sounds-rude/slide-01.png",
-        "assets/posts/20260426-clarity-sounds-rude/slide-02.png",
-        "assets/posts/20260426-clarity-sounds-rude/slide-03.png",
-        "assets/posts/20260426-clarity-sounds-rude/slide-04.png",
-        "assets/posts/20260426-clarity-sounds-rude/slide-05.png"
-      ]
-    },
     {
       "id": "2026-04-26-tuesday-advice",
       "title": "Tuesday Advice",
@@ -487,6 +472,17 @@
       "createdAt": "2026-04-28T07:48:32.455Z",
       "renderedFiles": [
         "assets/posts/20260428074832-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260428084930-everywhere-is-nowhere",
+      "title": "Everywhere Is Nowhere",
+      "kind": "single",
+      "topic": "ambient distraction disguised as responsiveness",
+      "angle": "Use Seneca's line to frame divided attention as a modern form of absence: too many open channels do not make you engaged; they make you unavailable to your own life and to the person in front of you.",
+      "createdAt": "2026-04-28T08:49:30.128Z",
+      "renderedFiles": [
+        "assets/posts/20260428084930-everywhere-is-nowhere/post.png"
       ]
     }
   ]
