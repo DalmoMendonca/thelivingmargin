@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T11:36:14.659Z",
+  "updatedAt": "2026-04-28T12:32:12.353Z",
   "items": [
-    {
-      "id": "2026-04-26-warmth-and-presence",
-      "title": "Warmth and Presence",
-      "kind": "single",
-      "topic": "attention and care",
-      "angle": "Warmth can imitate care even when actual availability never arrives.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/20260426-warmth-and-presence/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-private-rehearsal",
       "title": "Private Rehearsal",
@@ -483,6 +472,21 @@
       "createdAt": "2026-04-28T11:35:38.387Z",
       "renderedFiles": [
         "assets/posts/20260428113538-late-start-amnesty/post.png"
+      ]
+    },
+    {
+      "id": "20260428123210-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-28T12:32:10.969Z",
+      "renderedFiles": [
+        "assets/posts/20260428123210-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260428123210-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260428123210-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260428123210-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260428123210-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]

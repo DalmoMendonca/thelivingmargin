@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T11:36:14.627Z
+updatedAt: 2026-04-28T12:32:12.327Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2504,3 +2504,63 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ajc3XcxLo_WSdp-F-Ej14BA"}}'
+  - id: 20260428123210-clarity-sounds-rude
+    createdAt: 2026-04-28T12:32:10.969Z
+    source: manual
+    title: Clarity Sounds Rude
+    topic: work and communication
+    angle: In vague rooms, a specific sentence feels impolite because it creates
+      actual owners.
+    fingerprint: actual because clarity communication creates feels impolite owners
+      rooms rude sentence sounds specific vague work
+    publishAttempts: 0
+    status: rendered
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: roseLedger
+    surfaceStyle: notebookCream
+    contentMode: advice
+    voiceMode: sharp
+    altText: Five-slide notebook carousel on why clarity feels rude in vague group
+      settings.
+    carousel:
+      - kicker: Meetings
+        headline: Clarity is why half the room goes quiet.
+        body: Vagueness lets everyone stay agreeable. Specifics create owners.
+        footer: That is why they feel rude.
+      - kicker: Try this
+        headline: Replace 'we should' with a name, a verb, and a date.
+        body: "\"Can you send the draft by Thursday?\" moves more life than \"let's keep
+          this moving.\""
+        footer: Mood is not progress.
+      - kicker: Notice
+        headline: A vague room protects reputation.
+        body: Nobody can fail a task nobody actually owns.
+        footer: Fog is political.
+      - kicker: Cost
+        headline: The meeting after the meeting is the price.
+        body: That is where people finally ask what was meant, who is doing it, and
+          whether anyone agreed.
+        footer: Say it once in the room.
+      - kicker: Question
+        headline: What sentence would make this concrete right now?
+        body: Ask that before the conversation ends and watch how fast the air changes.
+        footer: Clarity sounds rude until it saves time.
+    caption:
+      hook: A vague room can confuse politeness with progress.
+      body: If nobody leaves with a name, a decision, or a date, the conversation
+        mostly served mood management. Clarity feels sharp because it stops
+        people from borrowing each other's assumptions.
+      callToComment: What sentence cuts through fog fastest for you?
+      hashtags:
+        - "#work"
+        - "#communication"
+    notes: Emergency fallback
+    renderDir: docs/assets/posts/20260428123210-clarity-sounds-rude
+    renderedFiles:
+      - docs/assets/posts/20260428123210-clarity-sounds-rude/slide-01.png
+      - docs/assets/posts/20260428123210-clarity-sounds-rude/slide-02.png
+      - docs/assets/posts/20260428123210-clarity-sounds-rude/slide-03.png
+      - docs/assets/posts/20260428123210-clarity-sounds-rude/slide-04.png
+      - docs/assets/posts/20260428123210-clarity-sounds-rude/slide-05.png
