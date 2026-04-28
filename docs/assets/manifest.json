@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-04-28T22:21:06.825Z",
+  "updatedAt": "2026-04-28T23:19:38.319Z",
   "items": [
-    {
-      "id": "20260426053233-what-i-ll-try-means",
-      "title": "What I'll Try Means",
-      "kind": "carousel",
-      "topic": "ambiguity and commitment",
-      "angle": "A short exchange can expose the difference between warmth and commitment when one person relies on ambiguity.",
-      "createdAt": "2026-04-26T05:32:33.251Z",
-      "renderedFiles": [
-        "assets/posts/20260426053233-what-i-ll-try-means/slide-01.png",
-        "assets/posts/20260426053233-what-i-ll-try-means/slide-02.png",
-        "assets/posts/20260426053233-what-i-ll-try-means/slide-03.png"
-      ]
-    },
     {
       "id": "20260426053317-improvement-as-camouflage",
       "title": "Improvement as Camouflage",
@@ -495,6 +482,17 @@
       "createdAt": "2026-04-28T22:20:47.061Z",
       "renderedFiles": [
         "assets/posts/20260428222047-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260428231936-old-yeses",
+      "title": "Old Yeses",
+      "kind": "single",
+      "topic": "obligation and identity",
+      "angle": "A commitment can remain active long after the self who made it is gone.",
+      "createdAt": "2026-04-28T23:19:36.897Z",
+      "renderedFiles": [
+        "assets/posts/20260428231936-old-yeses/post.png"
       ]
     }
   ]
