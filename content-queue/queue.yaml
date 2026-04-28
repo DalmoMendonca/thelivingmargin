@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T08:50:09.040Z
+updatedAt: 2026-04-28T09:48:42.699Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2370,3 +2370,42 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A5qXsvuSgBBa1LAG7boelCv"}}'
+  - id: 20260428094829-polite-yes-hangover
+    createdAt: 2026-04-28T09:48:29.253Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Polite Yes Hangover
+    topic: mistaking social-pressure agreements for personal flakiness
+    angle: What feels like unreliability is often a yes given to the room before
+      your private answer has had time to arrive.
+    fingerprint: agreements answer arrive before feels flakiness given had hangover
+      has like mistaking often personal polite pressure private room social time
+      unreliability what yes
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: "Editorial-style single image with the text: 'I kept calling myself
+      flaky. Often it was politeness on the spot. I said yes for the room and
+      heard my real answer on the walk home.'"
+    single:
+      headline: I kept calling myself flaky.
+      body: |-
+        Often it was politeness on the spot.
+
+        I said yes for the room and heard my real answer on the walk home.
+    caption:
+      hook: Some yeses expire as soon as the room does.
+      body: 'That changes the fix: not stricter follow-through, but a pause before
+        agreeing. When a group dinner or favor comes up, use "let me check" and
+        answer after the walk home.'
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner behavioral test | Plan mode reframe
+    renderDir: docs/assets/posts/20260428094829-polite-yes-hangover
+    renderedFiles:
+      - docs/assets/posts/20260428094829-polite-yes-hangover/post.png

@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T08:50:09.070Z",
+  "updatedAt": "2026-04-28T09:48:42.735Z",
   "items": [
-    {
-      "id": "2026-04-26-tuesday-advice",
-      "title": "Tuesday Advice",
-      "kind": "single",
-      "topic": "useful advice",
-      "angle": "Advice that only works when you're rested, resourced, and inspired is decoration.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/2026-04-26-tuesday-advice/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-busy-language",
       "title": "Busy Language",
@@ -483,6 +472,17 @@
       "createdAt": "2026-04-28T08:49:30.128Z",
       "renderedFiles": [
         "assets/posts/20260428084930-everywhere-is-nowhere/post.png"
+      ]
+    },
+    {
+      "id": "20260428094829-polite-yes-hangover",
+      "title": "Polite Yes Hangover",
+      "kind": "single",
+      "topic": "mistaking social-pressure agreements for personal flakiness",
+      "angle": "What feels like unreliability is often a yes given to the room before your private answer has had time to arrive.",
+      "createdAt": "2026-04-28T09:48:29.253Z",
+      "renderedFiles": [
+        "assets/posts/20260428094829-polite-yes-hangover/post.png"
       ]
     }
   ]
