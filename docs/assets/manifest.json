@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T18:33:50.176Z",
+  "updatedAt": "2026-04-28T19:34:02.843Z",
   "items": [
-    {
-      "id": "20260426053014-before-the-crash",
-      "title": "Before the Crash",
-      "kind": "single",
-      "topic": "rest and worthiness",
-      "angle": "Rest is allowed before exhaustion turns you into a worse version of yourself.",
-      "createdAt": "2026-04-26T05:30:14.087Z",
-      "renderedFiles": [
-        "assets/posts/20260426053014-before-the-crash/post.png"
-      ]
-    },
     {
       "id": "20260426053050-busy-language",
       "title": "Busy Language",
@@ -491,6 +480,17 @@
         "assets/posts/20260428183159-apology-cleanup/slide-03.png",
         "assets/posts/20260428183159-apology-cleanup/slide-04.png",
         "assets/posts/20260428183159-apology-cleanup/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260428193400-future-tense-intimacy",
+      "title": "Future Tense Intimacy",
+      "kind": "single",
+      "topic": "friendship and distance",
+      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
+      "createdAt": "2026-04-28T19:34:00.636Z",
+      "renderedFiles": [
+        "assets/posts/20260428193400-future-tense-intimacy/post.png"
       ]
     }
   ]
