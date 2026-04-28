@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T20:30:16.796Z",
+  "updatedAt": "2026-04-28T21:24:49.475Z",
   "items": [
-    {
-      "id": "20260426053123-old-yeses",
-      "title": "Old Yeses",
-      "kind": "single",
-      "topic": "obligation and identity",
-      "angle": "A commitment can remain active long after the self who made it is gone.",
-      "createdAt": "2026-04-26T05:31:23.286Z",
-      "renderedFiles": [
-        "assets/posts/20260426053123-old-yeses/post.png"
-      ]
-    },
     {
       "id": "20260426053155-planner-shaped-resentment",
       "title": "Planner-Shaped Resentment",
@@ -491,6 +480,21 @@
       "createdAt": "2026-04-28T20:29:52.849Z",
       "renderedFiles": [
         "assets/posts/20260428202952-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260428212447-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-28T21:24:47.065Z",
+      "renderedFiles": [
+        "assets/posts/20260428212447-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260428212447-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260428212447-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260428212447-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260428212447-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
