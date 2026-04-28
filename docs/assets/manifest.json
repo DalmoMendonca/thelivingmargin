@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-28T15:51:47.922Z",
+  "updatedAt": "2026-04-28T16:36:10.171Z",
   "items": [
-    {
-      "id": "20260426052854-clarity-sounds-rude",
-      "title": "Clarity Sounds Rude",
-      "kind": "carousel",
-      "topic": "work and communication",
-      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
-      "createdAt": "2026-04-26T05:28:54.741Z",
-      "renderedFiles": [
-        "assets/posts/20260426052854-clarity-sounds-rude/slide-01.png",
-        "assets/posts/20260426052854-clarity-sounds-rude/slide-02.png",
-        "assets/posts/20260426052854-clarity-sounds-rude/slide-03.png",
-        "assets/posts/20260426052854-clarity-sounds-rude/slide-04.png",
-        "assets/posts/20260426052854-clarity-sounds-rude/slide-05.png"
-      ]
-    },
     {
       "id": "20260426052908-eleven-minutes",
       "title": "Eleven Minutes",
@@ -493,6 +478,17 @@
         "assets/posts/20260428155016-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260428155016-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260428155016-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260428163608-future-tense-intimacy",
+      "title": "Future Tense Intimacy",
+      "kind": "single",
+      "topic": "friendship and distance",
+      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
+      "createdAt": "2026-04-28T16:36:08.639Z",
+      "renderedFiles": [
+        "assets/posts/20260428163608-future-tense-intimacy/post.png"
       ]
     }
   ]
