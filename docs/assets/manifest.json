@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T03:04:59.415Z",
+  "updatedAt": "2026-04-28T05:06:33.424Z",
   "items": [
-    {
-      "id": "2026-04-26-old-yeses",
-      "title": "Old Yeses",
-      "kind": "single",
-      "topic": "obligation and identity",
-      "angle": "A commitment can remain active long after the self who made it is gone.",
-      "createdAt": "2026-04-26T03:50:05.755Z",
-      "renderedFiles": [
-        "assets/posts/20260426-old-yeses/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-clean-apology",
       "title": "Clean Apology",
@@ -483,6 +472,17 @@
         "assets/posts/20260428030333-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260428030333-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260428030333-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260428050614-invoice-test",
+      "title": "Invoice Test",
+      "kind": "single",
+      "topic": "the difference between praise and paid support",
+      "angle": "When encouragement evaporates at the moment of price, it was admiration from a safe distance rather than real backing.",
+      "createdAt": "2026-04-28T05:06:14.999Z",
+      "renderedFiles": [
+        "assets/posts/20260428050614-invoice-test/post.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T03:04:59.397Z
+updatedAt: 2026-04-28T05:06:33.397Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2170,3 +2170,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AM0kSuBWLI5CpwIEN8R8tlX"}}'
+  - id: 20260428050614-invoice-test
+    createdAt: 2026-04-28T05:06:14.999Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Invoice Test
+    topic: the difference between praise and paid support
+    angle: When encouragement evaporates at the moment of price, it was admiration
+      from a safe distance rather than real backing.
+    fingerprint: admiration at backing between difference distance encouragement
+      evaporates from invoice moment paid praise price rather real safe support
+      test than was when
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "Single-image text post on a warm parchment background. Headline reads:
+      'The rate is where the love gets quiet.' Smaller line below reads:
+      'Admiration talks. Support pays the invoice.'"
+    single:
+      headline: The rate is where the love gets quiet.
+      body: Admiration talks. Support pays the invoice.
+    caption:
+      hook: That pause after the checkout link tells the truth.
+      body: Not everyone can afford the price. The discount ask usually tells you
+        whether they're working with a budget or hoping admiration counts as
+        payment.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260428050614-invoice-test
+    renderedFiles:
+      - docs/assets/posts/20260428050614-invoice-test/post.png
