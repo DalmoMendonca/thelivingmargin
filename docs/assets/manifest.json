@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T05:06:51.607Z",
+  "updatedAt": "2026-04-28T06:52:36.138Z",
   "items": [
-    {
-      "id": "2026-04-26-clean-apology",
-      "title": "Clean Apology",
-      "kind": "single",
-      "topic": "conflict and accountability",
-      "angle": "A real apology is usually shorter than the defense that tries to keep innocence intact.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/20260426-clean-apology/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-before-the-crash",
       "title": "Before the Crash",
@@ -483,6 +472,21 @@
       "createdAt": "2026-04-28T05:06:14.999Z",
       "renderedFiles": [
         "assets/posts/20260428050614-invoice-test/post.png"
+      ]
+    },
+    {
+      "id": "20260428065233-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-28T06:52:33.055Z",
+      "renderedFiles": [
+        "assets/posts/20260428065233-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260428065233-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260428065233-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260428065233-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260428065233-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
