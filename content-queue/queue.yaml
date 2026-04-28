@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T13:37:14.803Z
+updatedAt: 2026-04-28T13:38:11.459Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2603,11 +2603,17 @@ items:
       hook: Sometimes that’s the part that stings.
       body: Not the asking- the fact that it was already obvious.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 3
+    status: blocked
     notes: AI pipeline winner quiet rupture | Plan mode dialogue
     renderDir: docs/assets/posts/20260428133656-hands-full
     renderedFiles:
       - docs/assets/posts/20260428133656-hands-full/slide-01.png
       - docs/assets/posts/20260428133656-hands-full/slide-02.png
       - docs/assets/posts/20260428133656-hands-full/slide-03.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"AyOnrrgU_sOHvHzsiRKDt1_"}}'
