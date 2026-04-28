@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T19:34:23.541Z",
+  "updatedAt": "2026-04-28T20:29:54.313Z",
   "items": [
-    {
-      "id": "20260426053050-busy-language",
-      "title": "Busy Language",
-      "kind": "single",
-      "topic": "intimacy and distance",
-      "angle": "People sometimes use the language of busyness to soften a choice they do not want to name.",
-      "createdAt": "2026-04-26T05:30:50.664Z",
-      "renderedFiles": [
-        "assets/posts/20260426053050-busy-language/post.png"
-      ]
-    },
     {
       "id": "20260426053123-old-yeses",
       "title": "Old Yeses",
@@ -491,6 +480,17 @@
       "createdAt": "2026-04-28T19:34:00.636Z",
       "renderedFiles": [
         "assets/posts/20260428193400-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260428202952-old-yeses",
+      "title": "Old Yeses",
+      "kind": "single",
+      "topic": "obligation and identity",
+      "angle": "A commitment can remain active long after the self who made it is gone.",
+      "createdAt": "2026-04-28T20:29:52.849Z",
+      "renderedFiles": [
+        "assets/posts/20260428202952-old-yeses/post.png"
       ]
     }
   ]
