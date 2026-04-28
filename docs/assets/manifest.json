@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T17:38:24.019Z",
+  "updatedAt": "2026-04-28T18:32:15.122Z",
   "items": [
-    {
-      "id": "20260426052942-tuesday-is-the-life",
-      "title": "Tuesday Is the Life",
-      "kind": "single",
-      "topic": "attention and ordinary life",
-      "angle": "A well-known line about days and lives becomes useful again when it is aimed at ordinary repetition instead of abstract admiration.",
-      "createdAt": "2026-04-26T05:29:42.691Z",
-      "renderedFiles": [
-        "assets/posts/20260426052942-tuesday-is-the-life/post.png"
-      ]
-    },
     {
       "id": "20260426053014-before-the-crash",
       "title": "Before the Crash",
@@ -487,6 +476,21 @@
       "createdAt": "2026-04-28T17:37:42.678Z",
       "renderedFiles": [
         "assets/posts/20260428173742-private-delay-public-emergency/post.png"
+      ]
+    },
+    {
+      "id": "20260428183159-apology-cleanup",
+      "title": "Apology Cleanup",
+      "kind": "carousel",
+      "topic": "how to tell when an apology is trying to end discomfort rather than repair harm",
+      "angle": "A repair-minded apology costs the speaker something; a cleanup apology mainly tries to get the room comfortable again.",
+      "createdAt": "2026-04-28T18:31:59.511Z",
+      "renderedFiles": [
+        "assets/posts/20260428183159-apology-cleanup/slide-01.png",
+        "assets/posts/20260428183159-apology-cleanup/slide-02.png",
+        "assets/posts/20260428183159-apology-cleanup/slide-03.png",
+        "assets/posts/20260428183159-apology-cleanup/slide-04.png",
+        "assets/posts/20260428183159-apology-cleanup/slide-05.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T17:38:23.992Z
+updatedAt: 2026-04-28T18:32:15.080Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2773,3 +2773,65 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AoMLAsHpUCP60OZsKGhKPqV"}}'
+  - id: 20260428183159-apology-cleanup
+    createdAt: 2026-04-28T18:31:59.511Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Apology Cleanup
+    topic: how to tell when an apology is trying to end discomfort rather than
+      repair harm
+    angle: A repair-minded apology costs the speaker something; a cleanup apology
+      mainly tries to get the room comfortable again.
+    fingerprint: again apology cleanup comfortable costs discomfort end get harm how
+      mainly minded rather repair room something speaker tell than tries trying
+      when
+    contentMode: list
+    voiceMode: sharp
+    altText: "A 5-slide editorial-style Instagram carousel on warm paper in brass
+      ink titled 'Apology Cleanup.' It offers five signs an apology is trying to
+      end discomfort rather than repair harm: explanation before ownership,
+      pressure for quick closure, no accepted future inconvenience or changed
+      behavior, and a final slide arguing that real repair costs convenience,
+      certainty, or status."
+    carousel:
+      - kicker: 5 signs
+        headline: This apology wants cleanup, not repair
+        body: A quick scan for the polished sorry that quietly asks you to make this
+          easy again.
+        footer: Run it against your last hard conversation.
+      - headline: Explanation lands before ownership
+        body: "First comes the long text message: stress, intent, tone, context. The
+          plain line about what they did arrives late, softened, or missing."
+        footer: Ownership should not need a runway.
+      - headline: You’re rushed toward closure
+        body: "Soon it becomes: are you still upset, are we good, can we move on. Your
+          pace gets treated like the problem."
+        footer: Closure is being requested, not earned.
+      - headline: Nothing gets harder for them next time
+        body: No changed behavior, no correction, no accepted inconvenience. The apology
+          is thorough; the future stays easy for them.
+        footer: Repair alters the next scene.
+      - headline: The real test is cost
+        body: "A real apology spends something: convenience, certainty, a little status,
+          sometimes the right to look innocent. Cleanup mainly tries to get the
+          room comfortable again."
+        footer: The issue is not wording. It is cost.
+    caption:
+      hook: Clumsy apologies can still be real.
+      body: The giveaway is not elegance. It is whether the apology can tolerate your
+        full reaction, or only works if you make the room comfortable fast.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260428183159-apology-cleanup
+    renderedFiles:
+      - docs/assets/posts/20260428183159-apology-cleanup/slide-01.png
+      - docs/assets/posts/20260428183159-apology-cleanup/slide-02.png
+      - docs/assets/posts/20260428183159-apology-cleanup/slide-03.png
+      - docs/assets/posts/20260428183159-apology-cleanup/slide-04.png
+      - docs/assets/posts/20260428183159-apology-cleanup/slide-05.png
