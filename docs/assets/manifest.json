@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T13:38:11.488Z",
+  "updatedAt": "2026-04-28T15:50:20.341Z",
   "items": [
-    {
-      "id": "20260426052820-hope-s-favorite-translation",
-      "title": "Hope's Favorite Translation",
-      "kind": "single",
-      "topic": "dating and denial",
-      "angle": "People often call one-sided interest bad timing because the cleaner explanation would force them to change direction.",
-      "createdAt": "2026-04-26T05:28:20.624Z",
-      "renderedFiles": [
-        "assets/posts/20260426052820-hope-s-favorite-translation/post.png"
-      ]
-    },
     {
       "id": "20260426052854-clarity-sounds-rude",
       "title": "Clarity Sounds Rude",
@@ -489,6 +478,21 @@
         "assets/posts/20260428133656-hands-full/slide-01.png",
         "assets/posts/20260428133656-hands-full/slide-02.png",
         "assets/posts/20260428133656-hands-full/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260428155016-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-28T15:50:16.151Z",
+      "renderedFiles": [
+        "assets/posts/20260428155016-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260428155016-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260428155016-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260428155016-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260428155016-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
