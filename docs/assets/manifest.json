@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T21:26:04.074Z",
+  "updatedAt": "2026-04-28T22:20:48.485Z",
   "items": [
-    {
-      "id": "20260426053155-planner-shaped-resentment",
-      "title": "Planner-Shaped Resentment",
-      "kind": "single",
-      "topic": "work and misdiagnosis",
-      "angle": "What gets called procrastination is sometimes resentment toward a role or obligation that was never honestly chosen.",
-      "createdAt": "2026-04-26T05:31:55.707Z",
-      "renderedFiles": [
-        "assets/posts/20260426053155-planner-shaped-resentment/post.png"
-      ]
-    },
     {
       "id": "20260426053233-what-i-ll-try-means",
       "title": "What I'll Try Means",
@@ -495,6 +484,17 @@
         "assets/posts/20260428212447-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260428212447-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260428212447-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260428222047-future-tense-intimacy",
+      "title": "Future Tense Intimacy",
+      "kind": "single",
+      "topic": "friendship and distance",
+      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
+      "createdAt": "2026-04-28T22:20:47.061Z",
+      "renderedFiles": [
+        "assets/posts/20260428222047-future-tense-intimacy/post.png"
       ]
     }
   ]
