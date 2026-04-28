@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T10:41:04.391Z
+updatedAt: 2026-04-28T11:35:52.695Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2465,3 +2465,36 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A40IvF7lLrPGr_6IrHOJnAS"}}'
+  - id: 20260428113538-late-start-amnesty
+    createdAt: 2026-04-28T11:35:38.387Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Late Start Amnesty
+    topic: the private shame spiral after a messy or delayed morning
+    angle: Grant permission to recover a day after a late start, then clarify that
+      people often lose more time to self-punishment than to the original delay.
+    fingerprint: after amnesty clarify day delay delayed grant late lose messy more
+      morning often original people permission private punishment recover self
+      shame spiral start than then time
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: "Warm paper editorial graphic in sage-ash tones with the text: 'You can
+      start at 9:43. A missed alarm doesn't get to take the whole day with it.'"
+    single:
+      headline: You can start at 9:43.
+      body: A missed alarm doesn't get to take the whole day with it.
+    caption:
+      hook: The delay usually isn't the part that costs you.
+      body: "It's the self-punishment after: tab shuffling, ceremonial restarts,
+        treating a cold coffee and a late login like proof the day is shot."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner relief | Plan mode encouragement
+    renderDir: docs/assets/posts/20260428113538-late-start-amnesty
+    renderedFiles:
+      - docs/assets/posts/20260428113538-late-start-amnesty/post.png

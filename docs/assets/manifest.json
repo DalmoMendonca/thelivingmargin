@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T10:41:04.417Z",
+  "updatedAt": "2026-04-28T11:35:52.732Z",
   "items": [
-    {
-      "id": "2026-04-26-future-tense-intimacy",
-      "title": "Future Tense Intimacy",
-      "kind": "single",
-      "topic": "friendship and distance",
-      "angle": "Some relationships survive by promising future closeness instead of spending present attention.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/20260426-future-tense-intimacy/post.png"
-      ]
-    },
     {
       "id": "2026-04-26-warmth-and-presence",
       "title": "Warmth and Presence",
@@ -483,6 +472,17 @@
       "createdAt": "2026-04-28T10:40:40.746Z",
       "renderedFiles": [
         "assets/posts/20260428104040-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260428113538-late-start-amnesty",
+      "title": "Late Start Amnesty",
+      "kind": "single",
+      "topic": "the private shame spiral after a messy or delayed morning",
+      "angle": "Grant permission to recover a day after a late start, then clarify that people often lose more time to self-punishment than to the original delay.",
+      "createdAt": "2026-04-28T11:35:38.387Z",
+      "renderedFiles": [
+        "assets/posts/20260428113538-late-start-amnesty/post.png"
       ]
     }
   ]
