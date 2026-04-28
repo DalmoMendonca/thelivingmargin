@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-28T12:33:28.113Z",
+  "updatedAt": "2026-04-28T13:37:14.843Z",
   "items": [
-    {
-      "id": "2026-04-26-private-rehearsal",
-      "title": "Private Rehearsal",
-      "kind": "single",
-      "topic": "character and habit",
-      "angle": "What you rehearse in private usually becomes your public face under stress.",
-      "createdAt": "2026-04-26T03:50:05.757Z",
-      "renderedFiles": [
-        "assets/posts/2026-04-26-private-rehearsal/post.png"
-      ]
-    },
     {
       "id": "20260426052820-hope-s-favorite-translation",
       "title": "Hope's Favorite Translation",
@@ -487,6 +476,19 @@
         "assets/posts/20260428123210-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260428123210-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260428123210-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260428133656-hands-full",
+      "title": "Hands Full",
+      "kind": "carousel",
+      "topic": "the difference between being helped and being noticed",
+      "angle": "The sting is often not refusal but having to ask when the strain was already visible.",
+      "createdAt": "2026-04-28T13:36:56.262Z",
+      "renderedFiles": [
+        "assets/posts/20260428133656-hands-full/slide-01.png",
+        "assets/posts/20260428133656-hands-full/slide-02.png",
+        "assets/posts/20260428133656-hands-full/slide-03.png"
       ]
     }
   ]

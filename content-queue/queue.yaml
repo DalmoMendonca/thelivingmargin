@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-28T12:33:28.066Z
+updatedAt: 2026-04-28T13:37:14.803Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -2570,3 +2570,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A6CqbWnAPdZLvja3iqHDzlo"}}'
+  - id: 20260428133656-hands-full
+    createdAt: 2026-04-28T13:36:56.262Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Hands Full
+    topic: the difference between being helped and being noticed
+    angle: The sting is often not refusal but having to ask when the strain was
+      already visible.
+    fingerprint: already ask being between but difference full hands having helped
+      not noticed often refusal sting strain visible was when
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: "Three-slide dark charcoal carousel with spare dialogue about visible
+      strain being missed. Slide 1: “You could've asked me to help.” “I know.”
+      Slide 2: “I had grocery bags on both wrists,” “keys in my mouth, stuck in
+      the doorway.” “You looked up when one hit the frame.” Slide 3: “Right.” “I
+      thought you'd notice.”"
+    carousel:
+      - headline: “You could've asked me to help.”
+        body: “I know.”
+      - headline: “I had grocery bags on both wrists,”
+        body: “keys in my mouth, stuck in the doorway.”
+        footer: “You looked up when one hit the frame.”
+      - headline: “Right.”
+        body: “I thought you'd notice.”
+    caption:
+      hook: Sometimes that’s the part that stings.
+      body: Not the asking- the fact that it was already obvious.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260428133656-hands-full
+    renderedFiles:
+      - docs/assets/posts/20260428133656-hands-full/slide-01.png
+      - docs/assets/posts/20260428133656-hands-full/slide-02.png
+      - docs/assets/posts/20260428133656-hands-full/slide-03.png
