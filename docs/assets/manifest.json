@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-29T01:36:05.266Z",
+  "updatedAt": "2026-04-29T03:03:39.107Z",
   "items": [
-    {
-      "id": "20260426163218-the-padding-that-gets-you-ignored",
-      "title": "The Padding That Gets You Ignored",
-      "kind": "carousel",
-      "topic": "Making a direct work ask without apology-padding",
-      "angle": "If you soften the request, you also soften the decision-so give the other person a clear yes/no and a deadline.",
-      "createdAt": "2026-04-26T16:32:18.297Z",
-      "renderedFiles": [
-        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-01.png",
-        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-02.png",
-        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-03.png",
-        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-04.png",
-        "assets/posts/20260426163218-the-padding-that-gets-you-ignored/slide-05.png"
-      ]
-    },
     {
       "id": "20260426163305-the-handwritten-route",
       "title": "The handwritten route",
@@ -493,6 +478,21 @@
       "createdAt": "2026-04-29T01:35:41.578Z",
       "renderedFiles": [
         "assets/posts/20260429013541-future-tense-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260429030336-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-29T03:03:36.739Z",
+      "renderedFiles": [
+        "assets/posts/20260429030336-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260429030336-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260429030336-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260429030336-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260429030336-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
