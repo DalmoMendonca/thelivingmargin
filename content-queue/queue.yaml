@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-29T03:04:57.911Z
+updatedAt: 2026-04-29T05:06:15.897Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -3279,3 +3279,42 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A0VwhVHbzt7FLySrS20UKmI"}}'
+  - id: 20260429050613-old-yeses
+    createdAt: 2026-04-29T05:06:13.570Z
+    source: manual
+    title: Old Yeses
+    topic: obligation and identity
+    angle: A commitment can remain active long after the self who made it is gone.
+    fingerprint: active after can commitment gone identity long made obligation old
+      remain self who yeses
+    publishAttempts: 0
+    status: rendered
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    contentMode: question
+    voiceMode: reflective
+    altText: Editorial wall card asking what obligations people still carry just
+      because they once said yes.
+    single:
+      headline: What are you still carrying just because you [[said yes once]]?
+      body: |-
+        A promise can outlive its reason.
+
+        Sometimes discipline is finishing.
+        Sometimes it's admitting the job has changed.
+      supportLine: Old yeses can become expensive furniture.
+      footer: Which obligation needs to be re-chosen?
+    caption:
+      hook: Not every unfinished thing deserves your loyalty.
+      body: Some obligations began as honesty and stayed as inertia. The useful
+        question is not whether you can endure them.
+      callToComment: What's one commitment you need to re-choose instead of just carrying?
+      hashtags:
+        - "#selfknowledge"
+    notes: Emergency fallback
+    renderDir: docs/assets/posts/20260429050613-old-yeses
+    renderedFiles:
+      - docs/assets/posts/20260429050613-old-yeses/post.png

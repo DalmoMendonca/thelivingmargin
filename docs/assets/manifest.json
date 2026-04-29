@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-04-29T03:04:57.936Z",
+  "updatedAt": "2026-04-29T05:06:15.932Z",
   "items": [
-    {
-      "id": "20260426163305-the-handwritten-route",
-      "title": "The handwritten route",
-      "kind": "carousel",
-      "topic": "Practical help that turns panic into one clear next step",
-      "angle": "In a small public moment, the person who offers one usable direction-not sympathy-changes what the next minute can be.",
-      "createdAt": "2026-04-26T16:33:05.871Z",
-      "renderedFiles": [
-        "assets/posts/20260426163305-the-handwritten-route/slide-01.png",
-        "assets/posts/20260426163305-the-handwritten-route/slide-02.png",
-        "assets/posts/20260426163305-the-handwritten-route/slide-03.png"
-      ]
-    },
     {
       "id": "20260426163410-spend-the-day-live-the-bill",
       "title": "Spend the day, live the bill",
@@ -493,6 +480,17 @@
         "assets/posts/20260429030336-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260429030336-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260429030336-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260429050613-old-yeses",
+      "title": "Old Yeses",
+      "kind": "single",
+      "topic": "obligation and identity",
+      "angle": "A commitment can remain active long after the self who made it is gone.",
+      "createdAt": "2026-04-29T05:06:13.570Z",
+      "renderedFiles": [
+        "assets/posts/20260429050613-old-yeses/post.png"
       ]
     }
   ]
