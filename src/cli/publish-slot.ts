@@ -115,6 +115,15 @@ const isRetriableMediaError = (message?: string) => {
   );
 };
 
+const isRateLimitError = (message?: string) => {
+  const value = message?.toLowerCase() ?? "";
+  return (
+    value.includes("application request limit reached") ||
+    value.includes("action is blocked") ||
+    (value.includes("403") && value.includes("2207051"))
+  );
+};
+
 const reviveRetriableBlockedItems = () => {
   let revived = 0;
 
@@ -249,7 +258,11 @@ const buildEmergencyFallback = async ({
     return undefined;
   }
 
-  if (!allowDuplicate && isTooSimilar(fallback, queue, published)) {
+  // Never allow fallback posts that duplicate already published content
+  if (isTooSimilar(fallback, queue, published)) {
+    logWarn(
+      `Emergency fallback ${fallback.title} was too similar to published content. Skipping to prevent reposts.`
+    );
     return undefined;
   }
 
@@ -378,6 +391,19 @@ if (!target) {
   throw new Error(`Unable to resolve a publishable item for ${slot}.`);
 }
 
+// Additional safety check: never publish content that's already in the published log
+const alreadyPublished = published.entries.some(
+  (entry) => entry.id === target.id || entry.fingerprint === target.fingerprint
+);
+if (alreadyPublished) {
+  logError(
+    `Target ${target.id} (${target.title}) is already in published log. Skipping to prevent repost.`
+  );
+  throw new Error(
+    `Content ${target.id} was already published. This should not happen - check deduplication logic.`
+  );
+}
+
 await ensurePublicAssets(target);
 
 if (dryRun || !hasInstagramPublish()) {
@@ -405,6 +431,12 @@ for (let attempt = 1; attempt <= brand.maxPublishAttempts; attempt += 1) {
     target.publishAttempts = attempt;
     target.lastError = message;
     logError(message);
+
+    // Stop retrying immediately on rate limit errors to prevent duplicate posts
+    if (isRateLimitError(message)) {
+      logError("Rate limit error detected. Stopping retry loop to prevent duplicate posts.");
+      break;
+    }
   }
 }
 

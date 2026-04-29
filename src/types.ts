@@ -83,6 +83,8 @@ export interface QueueItem {
   status: QueueStatus;
   notes?: string;
   lastError?: string;
+  nextPublishAttemptAt?: string;
+  instagramCreationId?: string;
   instagramMediaId?: string;
   publishedAt?: string;
 }
