@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-29T09:43:40.330Z",
+  "updatedAt": "2026-04-29T10:36:10.142Z",
   "items": [
-    {
-      "id": "20260426163810-prep-as-a-delay-ritual",
-      "title": "Prep as a Delay Ritual",
-      "kind": "single",
-      "topic": "Reframing “prepping” as avoidance of the first ugly draft",
-      "angle": "What you call preparation often functions like a delay ritual that buys you distance from the first sentence that can be judged.",
-      "createdAt": "2026-04-26T16:38:10.404Z",
-      "renderedFiles": [
-        "assets/posts/20260426163810-prep-as-a-delay-ritual/post.png"
-      ]
-    },
     {
       "id": "20260426163933-what-i-ll-try-means",
       "title": "What I'll Try Means",
@@ -499,6 +488,17 @@
         "assets/posts/20260429094232-clarity-sounds-rude/slide-03.png",
         "assets/posts/20260429094232-clarity-sounds-rude/slide-04.png",
         "assets/posts/20260429094232-clarity-sounds-rude/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260429103555-illusion-of-contact",
+      "title": "Illusion of Contact",
+      "kind": "single",
+      "topic": "mistaking constant contact for actual communication",
+      "angle": "Whyte's line lands now because pings, reactions, and updates can mimic communication while the actual answer stays unsaid.",
+      "createdAt": "2026-04-29T10:35:55.381Z",
+      "renderedFiles": [
+        "assets/posts/20260429103555-illusion-of-contact/post.png"
       ]
     }
   ]

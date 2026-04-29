@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-29T09:43:40.279Z
+updatedAt: 2026-04-29T10:36:10.093Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -3551,3 +3551,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AngZw1BtnAHEXGkNCm8f82u"}}'
+  - id: 20260429103555-illusion-of-contact
+    createdAt: 2026-04-29T10:35:55.381Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Illusion of Contact
+    topic: mistaking constant contact for actual communication
+    angle: Whyte's line lands now because pings, reactions, and updates can mimic
+      communication while the actual answer stays unsaid.
+    fingerprint: actual answer because can communication constant contact illusion
+      lands line mimic mistaking now pings reactions stays unsaid updates while
+      whytes
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: William H. Whyte
+    altText: "A single editorial-style Instagram card on a dark charcoal-grain
+      background. Large white text reads: “The great enemy of communication, we
+      find, is the illusion of it.” Beneath it, in smaller type, is the
+      attribution: - William H. Whyte."
+    single:
+      headline: “The great enemy of communication,
+      body: we find, is the illusion of it.”
+      supportLine: "- William H. Whyte"
+    caption:
+      hook: The thread is active; the answer isn’t.
+      body: Typing dots, a thumbs-up, a voice note, a calendar hold-still no usable
+        answer. Enough contact to feel in touch; enough ambiguity for
+        responsibility to stay unclaimed.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260429103555-illusion-of-contact
+    renderedFiles:
+      - docs/assets/posts/20260429103555-illusion-of-contact/post.png
