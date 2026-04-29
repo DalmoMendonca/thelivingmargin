@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-29T08:46:21.725Z",
+  "updatedAt": "2026-04-29T09:42:33.863Z",
   "items": [
-    {
-      "id": "20260426163731-old-yeses",
-      "title": "Old Yeses",
-      "kind": "single",
-      "topic": "obligation and identity",
-      "angle": "A commitment can remain active long after the self who made it is gone.",
-      "createdAt": "2026-04-26T16:37:31.698Z",
-      "renderedFiles": [
-        "assets/posts/20260426163731-old-yeses/post.png"
-      ]
-    },
     {
       "id": "20260426163810-prep-as-a-delay-ritual",
       "title": "Prep as a Delay Ritual",
@@ -495,6 +484,21 @@
       "createdAt": "2026-04-29T08:46:02.105Z",
       "renderedFiles": [
         "assets/posts/20260429084602-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260429094232-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-29T09:42:32.418Z",
+      "renderedFiles": [
+        "assets/posts/20260429094232-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260429094232-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260429094232-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260429094232-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260429094232-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
