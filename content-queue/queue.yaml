@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-29T14:44:49.457Z
+updatedAt: 2026-04-29T15:46:29.578Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -3765,3 +3765,118 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A_BPJPECrx_qyYjGRzucilF"}}'
+  - id: 20260429154038-easygoing-or-avoidant
+    createdAt: 2026-04-29T15:40:38.230Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Easygoing or Avoidant
+    topic: calling yourself low-maintenance in group decisions
+    angle: What gets praised as easygoing is often just avoiding the small social
+      risk of naming a preference, and it returns later as quiet resentment or
+      feeling unseen.
+    fingerprint: as avoidant avoiding calling decisions easygoing feeling gets group
+      just later low maintenance naming often praised preference quiet
+      resentment returns risk small social unseen what yourself
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: ": null,"
+    altText: "Single editorial-style post on warm sage paper. The text reframes
+      being 'easygoing' in group dinner plans: saying 'whatever works' can look
+      low-maintenance but is often avoiding the social risk of having a
+      preference. It ends with ordering last, going with the plan, and feeling
+      quietly resentful and unseen by a choice you never named."
+    single:
+      headline: Easygoing is a flattering identity.
+      body: At group dinner, "whatever works" can look low-maintenance when it is
+        really just avoiding the small social risk of having a preference.
+      supportLine: You order last, go with the plan, then feel quietly resentful and
+        oddly unseen by a choice you never named.
+    caption:
+      hook: Name one preference before the table decides.
+      body: Place, time, or "not Thai again" is enough. You do not need to be louder
+        everywhere, just present before silence turns into resentment.
+      hashtags: []
+    publishAttempts: 0
+    status: blocked
+    notes: AI pipeline winner behavioral test | Plan mode reframe
+    lastError: "Pre-publish QC failed: The idea is real and specific, but the
+      reframe is still fairly familiar: 'easygoing' masking avoidance/resentment
+      is not yet a meaningfully sharper replacement. | The headline is clean but
+      not memorable enough to carry a premium text-first post on its own. | The
+      body explains the point clearly, but it leans analytical rather than
+      quotable; it does not quite land as a repeatable reframe. | The support
+      line adds useful consequence, but it is long and slightly diffuse, which
+      weakens visual punch. | Caption is better than the slide text in one way:
+      it gives a practical action and consequence. But it also exposes that the
+      core post is doing more explaining than reframing. | Overall this feels
+      competent and human, not synthetic, but not distinctive enough to feel
+      publish-ready for a premium account."
+  - id: 20260429154609-relief-apology
+    createdAt: 2026-04-29T15:46:09.637Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Relief Apology
+    topic: how to tell when an apology is trying to end awkwardness instead of
+      repair harm
+    angle: Some apologies mainly ask for quick social relief, and you can usually
+      tell by whether they help carry the impact or ask you to clear the
+      tension.
+    fingerprint: apologies apology ask awkwardness by can carry clear end harm help
+      how impact instead mainly quick relief repair social some tell tension
+      they trying usually when whether
+    contentMode: list
+    voiceMode: sharp
+    altText: "A five-slide editorial carousel in brass ink on warm paper. Slide 1
+      introduces four tests for spotting an apology that wants relief instead of
+      repair. Slide 2 says to notice when someone names the awkwardness instead
+      of the act, using the example of interrupting you in front of everyone.
+      Slide 3 says early reassurance like “are we good?” signals a bid for
+      relief. Slide 4 says a long explanation about intent or character,
+      including a text sent after the meeting, can outrun accountability. Slide
+      5 explains why it feels off: repair helps carry the consequence, while
+      relief asks you to carry the discomfort."
+    carousel:
+      - kicker: Relief Apology
+        headline: 4 tests for an apology that wants relief, not repair
+        body: The kind that leaves you heavier, then asks you to make the room
+          comfortable again.
+      - kicker: Test 1
+        headline: If they name the awkwardness, not the act, note it.
+        body: “Sorry that got awkward” is not “I interrupted you in front of everyone.”
+          Repair gets specific.
+      - kicker: Test 2
+        headline: If they ask for reassurance early, they're chasing relief.
+        body: "“Are we good?” before they've made room for impact turns the task over to
+          you: reassure them, smooth it over, move on."
+      - kicker: Test 3
+        headline: If the explanation outruns the apology, note it.
+        body: "A long text after the meeting about intent, stress, or “that’s not who I
+          am” can dodge the plain fact: what happened still landed on you."
+      - kicker: The larger test
+        headline: Why it feels off
+        body: It feels off because the load shifts. Repair helps carry what they caused.
+          Relief asks you to clear the tension so they can feel done.
+    caption:
+      hook: Clumsy isn’t the same as fake.
+      body: "Some sincere people apologize badly at first, especially when
+        embarrassed. The real question is what happens after you name the
+        impact: do they make room for it, or rush to explain themselves?"
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner rules | Plan mode list
+    renderDir: docs/assets/posts/20260429154609-relief-apology
+    renderedFiles:
+      - docs/assets/posts/20260429154609-relief-apology/slide-01.png
+      - docs/assets/posts/20260429154609-relief-apology/slide-02.png
+      - docs/assets/posts/20260429154609-relief-apology/slide-03.png
+      - docs/assets/posts/20260429154609-relief-apology/slide-04.png
+      - docs/assets/posts/20260429154609-relief-apology/slide-05.png

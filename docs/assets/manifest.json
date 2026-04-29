@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-29T14:44:49.494Z",
+  "updatedAt": "2026-04-29T15:46:29.606Z",
   "items": [
-    {
-      "id": "20260427182632-clarity-sounds-rude",
-      "title": "Clarity Sounds Rude",
-      "kind": "carousel",
-      "topic": "work and communication",
-      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
-      "createdAt": "2026-04-27T18:26:32.580Z",
-      "renderedFiles": [
-        "assets/posts/20260427182632-clarity-sounds-rude/slide-01.png",
-        "assets/posts/20260427182632-clarity-sounds-rude/slide-02.png",
-        "assets/posts/20260427182632-clarity-sounds-rude/slide-03.png",
-        "assets/posts/20260427182632-clarity-sounds-rude/slide-04.png",
-        "assets/posts/20260427182632-clarity-sounds-rude/slide-05.png"
-      ]
-    },
     {
       "id": "20260427193526-future-tense-intimacy",
       "title": "Future Tense Intimacy",
@@ -493,6 +478,21 @@
       "createdAt": "2026-04-29T14:44:25.351Z",
       "renderedFiles": [
         "assets/posts/20260429144425-cc-without-authority/post.png"
+      ]
+    },
+    {
+      "id": "20260429154609-relief-apology",
+      "title": "Relief Apology",
+      "kind": "carousel",
+      "topic": "how to tell when an apology is trying to end awkwardness instead of repair harm",
+      "angle": "Some apologies mainly ask for quick social relief, and you can usually tell by whether they help carry the impact or ask you to clear the tension.",
+      "createdAt": "2026-04-29T15:46:09.637Z",
+      "renderedFiles": [
+        "assets/posts/20260429154609-relief-apology/slide-01.png",
+        "assets/posts/20260429154609-relief-apology/slide-02.png",
+        "assets/posts/20260429154609-relief-apology/slide-03.png",
+        "assets/posts/20260429154609-relief-apology/slide-04.png",
+        "assets/posts/20260429154609-relief-apology/slide-05.png"
       ]
     }
   ]
