@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-29T13:35:43.501Z
+updatedAt: 2026-04-29T14:44:41.591Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -3724,3 +3724,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Aheak8qeDGSqPAbCT3jN_mS"}}'
+  - id: 20260429144425-cc-without-authority
+    createdAt: 2026-04-29T14:44:25.351Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: CC Without Authority
+    topic: workplace inclusion that carries responsibility without decision-making
+      power
+    angle: When someone is kept visible through updates and threads but shut out of
+      the real call, inclusion becomes a way to assign risk downhill.
+    fingerprint: assign authority becomes but call carries cc decision downhill
+      inclusion kept making out power real responsibility risk shut someone
+      threads through updates visible way when without workplace
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "A warm sage paper background with spare left-aligned text. Headline:
+      \"The cc line isn't power if you own the fallout.\" Smaller line below:
+      \"They loop you into the updates, then make the real call elsewhere.\""
+    single:
+      headline: The cc line isn't power if you own the fallout.
+      body: They loop you into the updates, then make the real call elsewhere.
+    caption:
+      hook: Visibility is cheap when the decision room stays closed.
+      body: Organizations spread risk through meeting invites, status updates, and cc
+        lines. The labor stays public; the authority stays in the decision room.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260429144425-cc-without-authority
+    renderedFiles:
+      - docs/assets/posts/20260429144425-cc-without-authority/post.png
