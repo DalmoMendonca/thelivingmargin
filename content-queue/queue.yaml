@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-29T11:32:06.043Z
+updatedAt: 2026-04-29T12:29:22.489Z
 items:
   - id: 2026-04-26-old-yeses
     createdAt: 2026-04-26T03:50:05.755Z
@@ -3635,3 +3635,36 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AexsVoci9Wa_YecpcNU8xil"}}'
+  - id: 20260429122905-no-worries-if-not
+    createdAt: 2026-04-29T12:29:05.434Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: No Worries If Not
+    topic: pre-softened requests in texts and emails
+    angle: The phrase "no worries if not" often cushions the asker from a clean
+      rejection before the reply even arrives.
+    fingerprint: arrives asker before clean cushions emails even from if no not
+      often phrase pre rejection reply requests softened texts worries
+    contentMode: observation
+    voiceMode: sharp
+    altText: Editorial-style single image on warm paper with the headline "no
+      worries if not" and subtext explaining that the ask starts softening your
+      no before you have even checked your calendar.
+    single:
+      headline: '"no worries if not"'
+      body: The ask starts softening your no before you’ve even checked your calendar.
+    caption:
+      hook: Some asks pre-brace for rejection.
+      body: The cushion is mostly for the person asking. They get to sound casual in
+        the text bubble; you still have to carry the reply.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode observation
+    renderDir: docs/assets/posts/20260429122905-no-worries-if-not
+    renderedFiles:
+      - docs/assets/posts/20260429122905-no-worries-if-not/post.png

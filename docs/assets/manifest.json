@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-29T11:32:06.080Z",
+  "updatedAt": "2026-04-29T12:29:22.533Z",
   "items": [
-    {
-      "id": "20260426164107-improvement-as-camouflage",
-      "title": "Improvement as Camouflage",
-      "kind": "carousel",
-      "topic": "self-improvement and avoidance",
-      "angle": "Self-improvement language can hide from exposure, feedback, and real attempts when it never risks embarrassment.",
-      "createdAt": "2026-04-26T16:41:07.047Z",
-      "renderedFiles": [
-        "assets/posts/20260426164107-improvement-as-camouflage/slide-01.png",
-        "assets/posts/20260426164107-improvement-as-camouflage/slide-02.png",
-        "assets/posts/20260426164107-improvement-as-camouflage/slide-03.png",
-        "assets/posts/20260426164107-improvement-as-camouflage/slide-04.png",
-        "assets/posts/20260426164107-improvement-as-camouflage/slide-05.png"
-      ]
-    },
     {
       "id": "20260427163317-future-tense-intimacy",
       "title": "Future Tense Intimacy",
@@ -497,6 +482,17 @@
       "createdAt": "2026-04-29T11:31:29.668Z",
       "renderedFiles": [
         "assets/posts/20260429113129-the-instant-answer/post.png"
+      ]
+    },
+    {
+      "id": "20260429122905-no-worries-if-not",
+      "title": "No Worries If Not",
+      "kind": "single",
+      "topic": "pre-softened requests in texts and emails",
+      "angle": "The phrase \"no worries if not\" often cushions the asker from a clean rejection before the reply even arrives.",
+      "createdAt": "2026-04-29T12:29:05.434Z",
+      "renderedFiles": [
+        "assets/posts/20260429122905-no-worries-if-not/post.png"
       ]
     }
   ]
