@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-04-29T05:06:36.738Z",
+  "updatedAt": "2026-04-29T06:48:29.008Z",
   "items": [
-    {
-      "id": "20260426163410-spend-the-day-live-the-bill",
-      "title": "Spend the day, live the bill",
-      "kind": "single",
-      "topic": "attention spent on ordinary Tuesday evenings",
-      "angle": "If Tuesday night turns into small evasions, you don’t just waste time-you practice the kind of life you’ll wake up to.",
-      "createdAt": "2026-04-26T16:34:10.661Z",
-      "renderedFiles": [
-        "assets/posts/20260426163410-spend-the-day-live-the-bill/post.png"
-      ]
-    },
     {
       "id": "20260426163515-before-the-crash",
       "title": "Before the Crash",
@@ -491,6 +480,21 @@
       "createdAt": "2026-04-29T05:06:13.570Z",
       "renderedFiles": [
         "assets/posts/20260429050613-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260429064827-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-29T06:48:27.453Z",
+      "renderedFiles": [
+        "assets/posts/20260429064827-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260429064827-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260429064827-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260429064827-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260429064827-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
