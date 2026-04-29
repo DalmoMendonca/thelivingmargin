@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-04-28T23:19:58.362Z",
+  "updatedAt": "2026-04-29T00:22:11.344Z",
   "items": [
-    {
-      "id": "20260426053317-improvement-as-camouflage",
-      "title": "Improvement as Camouflage",
-      "kind": "carousel",
-      "topic": "self-improvement and avoidance",
-      "angle": "Self-improvement language can hide from exposure, feedback, and real attempts when it never risks embarrassment.",
-      "createdAt": "2026-04-26T05:33:17.310Z",
-      "renderedFiles": [
-        "assets/posts/20260426053317-improvement-as-camouflage/slide-01.png",
-        "assets/posts/20260426053317-improvement-as-camouflage/slide-02.png",
-        "assets/posts/20260426053317-improvement-as-camouflage/slide-03.png",
-        "assets/posts/20260426053317-improvement-as-camouflage/slide-04.png",
-        "assets/posts/20260426053317-improvement-as-camouflage/slide-05.png"
-      ]
-    },
     {
       "id": "20260426163111-hope-s-favorite-translation",
       "title": "Hope's Favorite Translation",
@@ -493,6 +478,21 @@
       "createdAt": "2026-04-28T23:19:36.897Z",
       "renderedFiles": [
         "assets/posts/20260428231936-old-yeses/post.png"
+      ]
+    },
+    {
+      "id": "20260429002209-clarity-sounds-rude",
+      "title": "Clarity Sounds Rude",
+      "kind": "carousel",
+      "topic": "work and communication",
+      "angle": "In vague rooms, a specific sentence feels impolite because it creates actual owners.",
+      "createdAt": "2026-04-29T00:22:09.877Z",
+      "renderedFiles": [
+        "assets/posts/20260429002209-clarity-sounds-rude/slide-01.png",
+        "assets/posts/20260429002209-clarity-sounds-rude/slide-02.png",
+        "assets/posts/20260429002209-clarity-sounds-rude/slide-03.png",
+        "assets/posts/20260429002209-clarity-sounds-rude/slide-04.png",
+        "assets/posts/20260429002209-clarity-sounds-rude/slide-05.png"
       ]
     }
   ]
