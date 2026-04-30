@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T12:26:22.936Z",
+  "updatedAt": "2026-04-30T13:31:43.948Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -98,6 +98,17 @@
       "createdAt": "2026-04-30T04:38:21.694Z",
       "renderedFiles": [
         "assets/posts/20260430043821-sure-is-a-placeholder/post.png"
+      ]
+    },
+    {
+      "id": "20260430043852-rationing-attention",
+      "title": "Rationing Attention",
+      "kind": "single",
+      "topic": "attention as social generosity",
+      "angle": "When your phone pre-books your attention, generosity becomes an exception you keep having to justify.",
+      "createdAt": "2026-04-30T04:38:52.394Z",
+      "renderedFiles": [
+        "assets/posts/20260430043852-rationing-attention/post.png"
       ]
     }
   ]

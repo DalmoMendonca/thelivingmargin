@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T12:26:22.915Z
+updatedAt: 2026-04-30T13:31:43.922Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -467,8 +467,11 @@ items:
       hashtags:
         - "#attention"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner application | Plan mode quote
+    renderDir: docs/assets/posts/20260430043852-rationing-attention
+    renderedFiles:
+      - docs/assets/posts/20260430043852-rationing-attention/post.png
   - id: 20260430043944-kind-questions-stuck-room
     createdAt: 2026-04-30T04:39:44.080Z
     source: ai
