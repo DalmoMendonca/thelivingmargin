@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T21:19:30.344Z
+updatedAt: 2026-04-30T21:19:37.067Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -880,12 +880,18 @@ items:
         to them. Swap in: “I’ll send the update Thu at 3pm,” or “If I don’t
         reply by 3pm, ping me."
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner diagnosis | Plan mode reframe
     renderDir: docs/assets/posts/20260430044417-let-me-know-isn-t-neutral
     renderedFiles:
       - docs/assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"AFC7uuI1RGSMBCAfnIIL90-"}}'
   - id: 20260430044454-help-as-a-heat-source
     createdAt: 2026-04-30T04:44:54.185Z
     source: ai
