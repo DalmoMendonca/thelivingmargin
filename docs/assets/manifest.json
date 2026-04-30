@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T16:28:42.658Z",
+  "updatedAt": "2026-04-30T17:28:32.066Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -148,6 +148,17 @@
         "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-01.png",
         "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-02.png",
         "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260430044132-feedback-as-permission",
+      "title": "Feedback as Permission",
+      "kind": "single",
+      "topic": "Using “feedback” to outsource the decision",
+      "angle": "If you call it feedback but you’re really waiting for permission, the delay becomes the point.",
+      "createdAt": "2026-04-30T04:41:32.830Z",
+      "renderedFiles": [
+        "assets/posts/20260430044132-feedback-as-permission/post.png"
       ]
     }
   ]

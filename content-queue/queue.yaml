@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T16:28:42.626Z
+updatedAt: 2026-04-30T17:28:32.037Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -684,8 +684,11 @@ items:
         credibility bleed out while you wait for dots to speak.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner misnaming | Plan mode question
+    renderDir: docs/assets/posts/20260430044132-feedback-as-permission
+    renderedFiles:
+      - docs/assets/posts/20260430044132-feedback-as-permission/post.png
   - id: 20260430044218-no-rush-still-due
     createdAt: 2026-04-30T04:42:18.095Z
     source: ai
