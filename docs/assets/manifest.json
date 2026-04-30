@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T10:33:06.064Z",
+  "updatedAt": "2026-04-30T11:30:00.029Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -76,6 +76,17 @@
         "assets/posts/20260430043704-sometime-next-week/slide-01.png",
         "assets/posts/20260430043704-sometime-next-week/slide-02.png",
         "assets/posts/20260430043704-sometime-next-week/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260430043748-affectionate-exit",
+      "title": "Affectionate Exit",
+      "kind": "single",
+      "topic": "Post-fight texts used to dodge repair",
+      "angle": "An affectionate sign-off after a fight often functions as an off-ramp from accountability, not an arrival to resolution.",
+      "createdAt": "2026-04-30T04:37:48.465Z",
+      "renderedFiles": [
+        "assets/posts/20260430043748-affectionate-exit/post.png"
       ]
     }
   ]

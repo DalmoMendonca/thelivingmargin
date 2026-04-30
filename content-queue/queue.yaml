@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T10:33:06.037Z
+updatedAt: 2026-04-30T11:30:00.001Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -375,8 +375,11 @@ items:
       body: Next conversation starts guarded-affection becomes delay, not clarity.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner translation | Plan mode aphorism
+    renderDir: docs/assets/posts/20260430043748-affectionate-exit
+    renderedFiles:
+      - docs/assets/posts/20260430043748-affectionate-exit/post.png
   - id: 20260430043821-sure-is-a-placeholder
     createdAt: 2026-04-30T04:38:21.694Z
     source: ai
