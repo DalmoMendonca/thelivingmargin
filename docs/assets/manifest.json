@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T05:04:27.030Z",
+  "updatedAt": "2026-04-30T06:46:48.769Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -10,6 +10,21 @@
       "createdAt": "2026-04-30T04:33:40.089Z",
       "renderedFiles": [
         "assets/posts/20260430043340-quiet-dishes/post.png"
+      ]
+    },
+    {
+      "id": "20260430043422-let-me-know-follow-ups",
+      "title": "Let-Me-Know Follow-Ups",
+      "kind": "carousel",
+      "topic": "follow-ups that turn into silence",
+      "angle": "If your message avoids the decision, people can’t respond without risking being wrong-so add a deadline and two usable options.",
+      "createdAt": "2026-04-30T04:34:22.555Z",
+      "renderedFiles": [
+        "assets/posts/20260430043422-let-me-know-follow-ups/slide-01.png",
+        "assets/posts/20260430043422-let-me-know-follow-ups/slide-02.png",
+        "assets/posts/20260430043422-let-me-know-follow-ups/slide-03.png",
+        "assets/posts/20260430043422-let-me-know-follow-ups/slide-04.png",
+        "assets/posts/20260430043422-let-me-know-follow-ups/slide-05.png"
       ]
     }
   ]
