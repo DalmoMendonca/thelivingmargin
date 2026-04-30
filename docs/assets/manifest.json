@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T07:43:37.725Z",
+  "updatedAt": "2026-04-30T08:42:28.472Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -38,6 +38,17 @@
         "assets/posts/20260430043458-the-missing-detail/slide-01.png",
         "assets/posts/20260430043458-the-missing-detail/slide-02.png",
         "assets/posts/20260430043458-the-missing-detail/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260430043547-polite-vagueness-is-a-cost",
+      "title": "Polite Vagueness Is a Cost",
+      "kind": "single",
+      "topic": "Sending the plain request instead of smoothing it into ambiguity",
+      "angle": "You’re allowed to send the sentence you actually mean; the “just checking” edit mostly buys you more waiting.",
+      "createdAt": "2026-04-30T04:35:47.315Z",
+      "renderedFiles": [
+        "assets/posts/20260430043547-polite-vagueness-is-a-cost/post.png"
       ]
     }
   ]
