@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T17:28:40.471Z",
+  "updatedAt": "2026-04-30T18:25:16.197Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -159,6 +159,17 @@
       "createdAt": "2026-04-30T04:41:32.830Z",
       "renderedFiles": [
         "assets/posts/20260430044132-feedback-as-permission/post.png"
+      ]
+    },
+    {
+      "id": "20260430044218-no-rush-still-due",
+      "title": "No Rush, Still Due",
+      "kind": "single",
+      "topic": "The 'no rush' phrase that quietly schedules you without negotiating time",
+      "angle": "When someone says 'no rush' right next to a deadline, they remove your ability to ask-so you end up doing the prioritizing work for them.",
+      "createdAt": "2026-04-30T04:42:18.095Z",
+      "renderedFiles": [
+        "assets/posts/20260430044218-no-rush-still-due/post.png"
       ]
     }
   ]
