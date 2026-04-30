@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T18:25:26.318Z",
+  "updatedAt": "2026-04-30T19:29:30.075Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -170,6 +170,19 @@
       "createdAt": "2026-04-30T04:42:18.095Z",
       "renderedFiles": [
         "assets/posts/20260430044218-no-rush-still-due/post.png"
+      ]
+    },
+    {
+      "id": "20260430044312-whatever-after-midnight",
+      "title": "Whatever, after midnight",
+      "kind": "carousel",
+      "topic": "Misused flexibility that avoids choice but still changes the room.",
+      "angle": "“Whatever” can be a dodge-especially when the decision shows up later as a personal inconvenience.",
+      "createdAt": "2026-04-30T04:43:12.343Z",
+      "renderedFiles": [
+        "assets/posts/20260430044312-whatever-after-midnight/slide-01.png",
+        "assets/posts/20260430044312-whatever-after-midnight/slide-02.png",
+        "assets/posts/20260430044312-whatever-after-midnight/slide-03.png"
       ]
     }
   ]

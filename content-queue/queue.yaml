@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T18:25:26.292Z
+updatedAt: 2026-04-30T19:29:30.045Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -792,8 +792,13 @@ items:
         the corrections, and the extra temperature work landed on me.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260430044312-whatever-after-midnight
+    renderedFiles:
+      - docs/assets/posts/20260430044312-whatever-after-midnight/slide-01.png
+      - docs/assets/posts/20260430044312-whatever-after-midnight/slide-02.png
+      - docs/assets/posts/20260430044312-whatever-after-midnight/slide-03.png
   - id: 20260430044344-accurate-delivery-beats-apology-polishing
     createdAt: 2026-04-30T04:43:44.403Z
     source: ai
