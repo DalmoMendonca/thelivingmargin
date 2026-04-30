@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T08:42:36.824Z
+updatedAt: 2026-04-30T09:38:52.477Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -272,8 +272,14 @@ items:
         “seen”-not a decision. Send: “Are we still on for [time]?"
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner social ritual | Plan mode observation
+    renderDir: docs/assets/posts/20260430043618-emoji-silence-live-schedule
+    renderedFiles:
+      - docs/assets/posts/20260430043618-emoji-silence-live-schedule/slide-01.png
+      - docs/assets/posts/20260430043618-emoji-silence-live-schedule/slide-02.png
+      - docs/assets/posts/20260430043618-emoji-silence-live-schedule/slide-03.png
+      - docs/assets/posts/20260430043618-emoji-silence-live-schedule/slide-04.png
   - id: 20260430043704-sometime-next-week
     createdAt: 2026-04-30T04:37:04.353Z
     source: ai

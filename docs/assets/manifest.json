@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T08:42:36.849Z",
+  "updatedAt": "2026-04-30T09:38:52.502Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -49,6 +49,20 @@
       "createdAt": "2026-04-30T04:35:47.315Z",
       "renderedFiles": [
         "assets/posts/20260430043547-polite-vagueness-is-a-cost/post.png"
+      ]
+    },
+    {
+      "id": "20260430043618-emoji-silence-live-schedule",
+      "title": "Emoji Silence, Live Schedule",
+      "kind": "carousel",
+      "topic": "Emoji reactions replacing real replies in group chats",
+      "angle": "A reaction is a social dodge: it acknowledges presence without taking the small, embarrassing step of committing to the answer.",
+      "createdAt": "2026-04-30T04:36:18.053Z",
+      "renderedFiles": [
+        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-01.png",
+        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-02.png",
+        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-03.png",
+        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-04.png"
       ]
     }
   ]
