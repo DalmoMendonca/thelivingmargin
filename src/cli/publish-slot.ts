@@ -475,7 +475,8 @@ if (!instagramMediaId) {
 target.status = "published";
 target.instagramMediaId = instagramMediaId;
 target.publishedAt = nowIso();
-queue.items = queue.items.map((item) => (item.id === target.id ? target : item));
+// Remove published item from queue to prevent reuse and keep queue clean
+queue.items = queue.items.filter((item) => item.id !== target.id);
 published.entries.push({
   id: target.id,
   publishedAt: target.publishedAt,

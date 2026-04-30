@@ -27,7 +27,7 @@ export const parseStructuredResponse = async <Schema extends z.ZodTypeAny>({
   input,
   maxOutputTokens,
   reasoningEffort = reasoningEffortForModel(appEnv.OPENAI_MODEL),
-  retries = 2,
+  retries = 5,
   verbosity = "low"
 }: {
   client: OpenAI;
@@ -66,6 +66,8 @@ export const parseStructuredResponse = async <Schema extends z.ZodTypeAny>({
       return parsed;
     } catch (error) {
       lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[${schemaName}] Attempt ${attempt}/${retries} failed: ${message}`);
     }
   }
 
