@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T19:29:53.876Z
+updatedAt: 2026-04-30T20:21:30.489Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -839,8 +839,11 @@ items:
         polishing the apology.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner relief | Plan mode encouragement
+    renderDir: docs/assets/posts/20260430044344-accurate-delivery-beats-apology-polishing
+    renderedFiles:
+      - docs/assets/posts/20260430044344-accurate-delivery-beats-apology-polishing/post.png
   - id: 20260430044417-let-me-know-isn-t-neutral
     createdAt: 2026-04-30T04:44:17.136Z
     source: ai
