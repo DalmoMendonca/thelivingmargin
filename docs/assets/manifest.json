@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T22:16:38.328Z",
+  "updatedAt": "2026-04-30T23:16:37.175Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -205,6 +205,17 @@
       "createdAt": "2026-04-30T04:44:17.136Z",
       "renderedFiles": [
         "assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png"
+      ]
+    },
+    {
+      "id": "20260430044522-quick-thing-real-cost",
+      "title": "Quick Thing, Real Cost",
+      "kind": "single",
+      "topic": "Work messages that borrow your time",
+      "angle": "The phrase “one quick thing” usually means your calendar is the buffer they’re assuming you’ll provide.",
+      "createdAt": "2026-04-30T04:45:22.053Z",
+      "renderedFiles": [
+        "assets/posts/20260430044522-quick-thing-real-cost/post.png"
       ]
     },
     {

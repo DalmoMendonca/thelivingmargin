@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T22:16:38.303Z
+updatedAt: 2026-04-30T23:16:37.145Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -959,8 +959,11 @@ items:
       hashtags:
         - "#workboundaries"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260430044522-quick-thing-real-cost
+    renderedFiles:
+      - docs/assets/posts/20260430044522-quick-thing-real-cost/post.png
   - id: 20260430044613-scheduling-replies-that-offload-the-decision
     createdAt: 2026-04-30T04:46:13.628Z
     source: ai
