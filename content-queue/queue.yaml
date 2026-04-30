@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T09:39:13.870Z
+updatedAt: 2026-04-30T10:32:45.424Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -334,8 +334,13 @@ items:
         you’re negotiating the fallout.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner translation | Plan mode dialogue
+    renderDir: docs/assets/posts/20260430043704-sometime-next-week
+    renderedFiles:
+      - docs/assets/posts/20260430043704-sometime-next-week/slide-01.png
+      - docs/assets/posts/20260430043704-sometime-next-week/slide-02.png
+      - docs/assets/posts/20260430043704-sometime-next-week/slide-03.png
   - id: 20260430043748-affectionate-exit
     createdAt: 2026-04-30T04:37:48.465Z
     source: ai

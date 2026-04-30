@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T09:39:13.894Z",
+  "updatedAt": "2026-04-30T10:32:45.451Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -63,6 +63,19 @@
         "assets/posts/20260430043618-emoji-silence-live-schedule/slide-02.png",
         "assets/posts/20260430043618-emoji-silence-live-schedule/slide-03.png",
         "assets/posts/20260430043618-emoji-silence-live-schedule/slide-04.png"
+      ]
+    },
+    {
+      "id": "20260430043704-sometime-next-week",
+      "title": "Sometime Next Week",
+      "kind": "carousel",
+      "topic": "vague scheduling becoming someone else’s commitment",
+      "angle": "When you dodge a date, you quietly give it away-then you’re stuck negotiating the consequences.",
+      "createdAt": "2026-04-30T04:37:04.353Z",
+      "renderedFiles": [
+        "assets/posts/20260430043704-sometime-next-week/slide-01.png",
+        "assets/posts/20260430043704-sometime-next-week/slide-02.png",
+        "assets/posts/20260430043704-sometime-next-week/slide-03.png"
       ]
     }
   ]
