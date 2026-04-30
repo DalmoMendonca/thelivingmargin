@@ -469,6 +469,13 @@ if (!instagramMediaId) {
     ]);
   }
 
+  // Exit with code 0 if rate limit error - content was generated and can be retried later
+  // Exit with code 1 only for actual failures (blocked items, rendering errors)
+  if (isRateLimitError(lastError)) {
+    logStep("Content generated successfully. Instagram rate limit reached - will retry on next run.");
+    process.exit(0);
+  }
+
   process.exit(1);
 }
 

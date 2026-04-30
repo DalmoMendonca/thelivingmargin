@@ -14,10 +14,11 @@ on:
           - evening
   schedule:
     - cron: "0 * * * *"
+      # Run at minute 0 of every hour (UTC)
 
 concurrency:
   group: instagram-publish-${{ github.ref_name || 'main' }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write

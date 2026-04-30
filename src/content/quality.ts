@@ -125,6 +125,19 @@ export const lintQueueItem = (item: QueueItem) => {
   const profile = contentModeProfiles[item.contentMode];
   const captionPolicy = getCaptionPolicy(item.contentMode);
 
+  // Check for invalid palette/surfaceStyle combinations that cause legibility issues
+  const darkSurfaces = ["charcoalGrain"];
+  const darkBackgroundPalettes = ["midnightPaper"];
+  const lightTextPalettes = ["midnightPaper"];
+
+  if (darkSurfaces.includes(item.surfaceStyle) && !darkBackgroundPalettes.includes(item.palette)) {
+    errors.push(`Surface style ${item.surfaceStyle} requires a dark background palette like midnightPaper for legibility.`);
+  }
+
+  if (darkBackgroundPalettes.includes(item.palette) && !darkSurfaces.includes(item.surfaceStyle)) {
+    warnings.push(`Palette ${item.palette} has a dark background and works best with charcoalGrain surface.`);
+  }
+
   if (item.kind === "single" && !item.single) {
     errors.push("Single post is missing `single` content.");
   }
