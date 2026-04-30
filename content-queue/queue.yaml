@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T04:54:28.632Z
+updatedAt: 2026-04-30T05:04:16.466Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -35,8 +35,11 @@ items:
       hashtags:
         - "#tradeoff"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260430043340-quiet-dishes
+    renderedFiles:
+      - docs/assets/posts/20260430043340-quiet-dishes/post.png
   - id: 20260430043422-let-me-know-follow-ups
     createdAt: 2026-04-30T04:34:22.555Z
     source: ai
