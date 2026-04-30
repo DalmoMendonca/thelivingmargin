@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T21:19:37.067Z
+updatedAt: 2026-04-30T22:16:16.540Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -927,8 +927,10 @@ items:
         tonight."
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: blocked
     notes: AI pipeline winner application | Plan mode quote
+    lastError: "Pre-publish QC failed: Surface style charcoalGrain requires a dark
+      background palette like midnightPaper for legibility."
   - id: 20260430044522-quick-thing-real-cost
     createdAt: 2026-04-30T04:45:22.053Z
     source: ai
@@ -1056,8 +1058,10 @@ items:
         - "#smallhelp"
         - "#institutionalmercy"
     publishAttempts: 0
-    status: ready
+    status: blocked
     notes: AI pipeline winner institutional mercy | Plan mode story
+    lastError: "Pre-publish QC failed: Surface style charcoalGrain requires a dark
+      background palette like midnightPaper for legibility."
   - id: 20260430044725-emoji-only-responsibility
     createdAt: 2026-04-30T04:47:25.863Z
     source: ai
@@ -1177,8 +1181,13 @@ items:
         timeline anyway.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260430045019-later-as-a-no
+    renderedFiles:
+      - docs/assets/posts/20260430045019-later-as-a-no/slide-01.png
+      - docs/assets/posts/20260430045019-later-as-a-no/slide-02.png
+      - docs/assets/posts/20260430045019-later-as-a-no/slide-03.png
   - id: 20260430045112-skip-the-pre-apology
     createdAt: 2026-04-30T04:51:12.777Z
     source: ai

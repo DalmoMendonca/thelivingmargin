@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T21:19:37.090Z",
+  "updatedAt": "2026-04-30T22:16:16.561Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -205,6 +205,19 @@
       "createdAt": "2026-04-30T04:44:17.136Z",
       "renderedFiles": [
         "assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png"
+      ]
+    },
+    {
+      "id": "20260430045019-later-as-a-no",
+      "title": "Later as a No",
+      "kind": "carousel",
+      "topic": "Polite deflection that costs you prep time",
+      "angle": "When someone answers with “later,” the exchange reveals they were never agreeing to the work-just buying time.",
+      "createdAt": "2026-04-30T04:50:19.357Z",
+      "renderedFiles": [
+        "assets/posts/20260430045019-later-as-a-no/slide-01.png",
+        "assets/posts/20260430045019-later-as-a-no/slide-02.png",
+        "assets/posts/20260430045019-later-as-a-no/slide-03.png"
       ]
     }
   ]
