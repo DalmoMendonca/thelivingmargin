@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T06:47:15.714Z",
+  "updatedAt": "2026-04-30T07:43:17.663Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -25,6 +25,19 @@
         "assets/posts/20260430043422-let-me-know-follow-ups/slide-03.png",
         "assets/posts/20260430043422-let-me-know-follow-ups/slide-04.png",
         "assets/posts/20260430043422-let-me-know-follow-ups/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260430043458-the-missing-detail",
+      "title": "The Missing Detail",
+      "kind": "carousel",
+      "topic": "Embarrassment dissolves when you name the exact missing thing",
+      "angle": "The threshold doesn’t open for vague apologies-it opens when you offer one usable detail, no bargaining for forgiveness.",
+      "createdAt": "2026-04-30T04:34:58.474Z",
+      "renderedFiles": [
+        "assets/posts/20260430043458-the-missing-detail/slide-01.png",
+        "assets/posts/20260430043458-the-missing-detail/slide-02.png",
+        "assets/posts/20260430043458-the-missing-detail/slide-03.png"
       ]
     }
   ]

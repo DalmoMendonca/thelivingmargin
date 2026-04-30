@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T06:47:15.686Z
+updatedAt: 2026-04-30T07:43:17.638Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -177,8 +177,13 @@ items:
       hashtags:
         - "#quietclarity"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260430043458-the-missing-detail
+    renderedFiles:
+      - docs/assets/posts/20260430043458-the-missing-detail/slide-01.png
+      - docs/assets/posts/20260430043458-the-missing-detail/slide-02.png
+      - docs/assets/posts/20260430043458-the-missing-detail/slide-03.png
   - id: 20260430043547-polite-vagueness-is-a-cost
     createdAt: 2026-04-30T04:35:47.315Z
     source: ai
