@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T15:32:58.104Z",
+  "updatedAt": "2026-04-30T16:28:22.515Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -135,6 +135,19 @@
       "createdAt": "2026-04-30T04:40:17.668Z",
       "renderedFiles": [
         "assets/posts/20260430044017-brain-picking-container/post.png"
+      ]
+    },
+    {
+      "id": "20260430044051-the-sentence-before-the-sticker",
+      "title": "The Sentence Before the Sticker",
+      "kind": "carousel",
+      "topic": "Specificity in a time-sensitive handoff beats polite vagueness",
+      "angle": "In public, when the question has a consequence, the kindest move is the exact sentence and the paperwork that matches it.",
+      "createdAt": "2026-04-30T04:40:51.906Z",
+      "renderedFiles": [
+        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-01.png",
+        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-02.png",
+        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-03.png"
       ]
     }
   ]

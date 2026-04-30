@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T15:32:58.067Z
+updatedAt: 2026-04-30T16:28:22.488Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -640,8 +640,13 @@ items:
         - "#specificity"
         - "#handoff"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260430044051-the-sentence-before-the-sticker
+    renderedFiles:
+      - docs/assets/posts/20260430044051-the-sentence-before-the-sticker/slide-01.png
+      - docs/assets/posts/20260430044051-the-sentence-before-the-sticker/slide-02.png
+      - docs/assets/posts/20260430044051-the-sentence-before-the-sticker/slide-03.png
   - id: 20260430044132-feedback-as-permission
     createdAt: 2026-04-30T04:41:32.830Z
     source: ai
