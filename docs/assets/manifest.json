@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T11:30:08.341Z",
+  "updatedAt": "2026-04-30T12:26:14.537Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -87,6 +87,17 @@
       "createdAt": "2026-04-30T04:37:48.465Z",
       "renderedFiles": [
         "assets/posts/20260430043748-affectionate-exit/post.png"
+      ]
+    },
+    {
+      "id": "20260430043821-sure-is-a-placeholder",
+      "title": "Sure Is a Placeholder",
+      "kind": "single",
+      "topic": "When a quick yes is social relief, not commitment",
+      "angle": "The default is “I changed my mind.” The useful frame is “I bargained for comfort, and it got scheduled.”",
+      "createdAt": "2026-04-30T04:38:21.694Z",
+      "renderedFiles": [
+        "assets/posts/20260430043821-sure-is-a-placeholder/post.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T11:30:08.314Z
+updatedAt: 2026-04-30T12:26:14.505Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -423,8 +423,11 @@ items:
         calendar for Tuesday morning."
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260430043821-sure-is-a-placeholder
+    renderedFiles:
+      - docs/assets/posts/20260430043821-sure-is-a-placeholder/post.png
   - id: 20260430043852-rationing-attention
     createdAt: 2026-04-30T04:38:52.394Z
     source: ai
