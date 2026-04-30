@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T13:31:55.594Z",
+  "updatedAt": "2026-04-30T14:39:34.112Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -109,6 +109,21 @@
       "createdAt": "2026-04-30T04:38:52.394Z",
       "renderedFiles": [
         "assets/posts/20260430043852-rationing-attention/post.png"
+      ]
+    },
+    {
+      "id": "20260430043944-kind-questions-stuck-room",
+      "title": "Kind Questions, Stuck Room",
+      "kind": "carousel",
+      "topic": "Questions that sound considerate but block the decision",
+      "angle": "When a question can’t be answered without risk, it quietly removes responsibility from the asker-and keeps everyone waiting.",
+      "createdAt": "2026-04-30T04:39:44.080Z",
+      "renderedFiles": [
+        "assets/posts/20260430043944-kind-questions-stuck-room/slide-01.png",
+        "assets/posts/20260430043944-kind-questions-stuck-room/slide-02.png",
+        "assets/posts/20260430043944-kind-questions-stuck-room/slide-03.png",
+        "assets/posts/20260430043944-kind-questions-stuck-room/slide-04.png",
+        "assets/posts/20260430043944-kind-questions-stuck-room/slide-05.png"
       ]
     }
   ]

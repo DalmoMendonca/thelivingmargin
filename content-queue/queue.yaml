@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T13:31:55.569Z
+updatedAt: 2026-04-30T14:39:34.088Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -531,8 +531,15 @@ items:
         - "#boundaries"
         - "#communication"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260430043944-kind-questions-stuck-room
+    renderedFiles:
+      - docs/assets/posts/20260430043944-kind-questions-stuck-room/slide-01.png
+      - docs/assets/posts/20260430043944-kind-questions-stuck-room/slide-02.png
+      - docs/assets/posts/20260430043944-kind-questions-stuck-room/slide-03.png
+      - docs/assets/posts/20260430043944-kind-questions-stuck-room/slide-04.png
+      - docs/assets/posts/20260430043944-kind-questions-stuck-room/slide-05.png
   - id: 20260430044017-brain-picking-container
     createdAt: 2026-04-30T04:40:17.668Z
     source: ai
