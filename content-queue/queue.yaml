@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T14:40:05.895Z
+updatedAt: 2026-04-30T15:32:49.758Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -580,8 +580,11 @@ items:
         next week? ”"
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner field test | Plan mode advice
+    renderDir: docs/assets/posts/20260430044017-brain-picking-container
+    renderedFiles:
+      - docs/assets/posts/20260430044017-brain-picking-container/post.png
   - id: 20260430044051-the-sentence-before-the-sticker
     createdAt: 2026-04-30T04:40:51.906Z
     source: ai

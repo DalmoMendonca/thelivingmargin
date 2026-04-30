@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T14:40:05.923Z",
+  "updatedAt": "2026-04-30T15:32:49.786Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -124,6 +124,17 @@
         "assets/posts/20260430043944-kind-questions-stuck-room/slide-03.png",
         "assets/posts/20260430043944-kind-questions-stuck-room/slide-04.png",
         "assets/posts/20260430043944-kind-questions-stuck-room/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260430044017-brain-picking-container",
+      "title": "Brain-Picking Container",
+      "kind": "single",
+      "topic": "Setting a time box for vague requests",
+      "angle": "If someone asks to “pick your brain” without a decision or deadline, they’re asking for your attention-so you offer a small, specific container instead.",
+      "createdAt": "2026-04-30T04:40:17.668Z",
+      "renderedFiles": [
+        "assets/posts/20260430044017-brain-picking-container/post.png"
       ]
     }
   ]
