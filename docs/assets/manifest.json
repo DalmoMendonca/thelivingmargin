@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T20:21:39.083Z",
+  "updatedAt": "2026-04-30T21:19:30.373Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -194,6 +194,17 @@
       "createdAt": "2026-04-30T04:43:44.403Z",
       "renderedFiles": [
         "assets/posts/20260430044344-accurate-delivery-beats-apology-polishing/post.png"
+      ]
+    },
+    {
+      "id": "20260430044417-let-me-know-isn-t-neutral",
+      "title": "Let Me Know Isn’t Neutral",
+      "kind": "single",
+      "topic": "reframing the phrase “let me know” as a delay tactic",
+      "angle": "“Let me know” can read kind, but it quietly assigns the follow-up to the other person-so the delay becomes the system.",
+      "createdAt": "2026-04-30T04:44:17.136Z",
+      "renderedFiles": [
+        "assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png"
       ]
     }
   ]

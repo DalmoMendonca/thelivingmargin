@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T20:21:39.060Z
+updatedAt: 2026-04-30T21:19:30.344Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -881,8 +881,11 @@ items:
         reply by 3pm, ping me."
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260430044417-let-me-know-isn-t-neutral
+    renderedFiles:
+      - docs/assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png
   - id: 20260430044454-help-as-a-heat-source
     createdAt: 2026-04-30T04:44:54.185Z
     source: ai
