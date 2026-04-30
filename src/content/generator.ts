@@ -363,9 +363,9 @@ const parseDraftFromPrompt = async ({
     schema: responseSchema,
     schemaName: "instagram_post_package",
     instructions:
-      "You are a creative director and copywriter for a visually sophisticated Instagram account. Return JSON only.",
+      "You are a creative director and copywriter for a visually sophisticated Instagram account. Return valid JSON only. Do not truncate or cut off the JSON.",
     input: prompt,
-    maxOutputTokens: 2200
+    maxOutputTokens: 4000
   });
 
   return buildQueueItem(parsed, manualIdea, pipelineNote);
@@ -393,7 +393,7 @@ const generatePlan = async ({
     schema: planningSchema,
     schemaName: "instagram_content_plan",
     instructions:
-      "You are the planning brain for a premium text-first Instagram account. Build a concrete, specific plan before prose is written. Return JSON only.",
+      "You are the planning brain for a premium text-first Instagram account. Build a concrete, specific plan before prose is written. Return valid JSON only. Do not truncate or cut off the JSON.",
     input: buildPlanningPrompt({
       slot,
       recentPublished: published,
@@ -402,7 +402,7 @@ const generatePlan = async ({
       forcedContentMode,
       seedIdea
     }),
-    maxOutputTokens: 1500
+    maxOutputTokens: 3000
   });
 
 const generateLaneCandidate = async ({
@@ -461,7 +461,7 @@ const chooseWinner = async ({
       schema: selectionSchema,
       schemaName: "instagram_candidate_selection",
       instructions:
-        "You are an editorial selector choosing the best candidate from multiple drafts. Return JSON only.",
+        "You are an editorial selector choosing the best candidate from multiple drafts. Return valid JSON only. Do not truncate or cut off the JSON.",
       input: buildSelectionPrompt({
         planJson,
         candidates: candidates.map((candidate) => ({
@@ -472,7 +472,7 @@ const chooseWinner = async ({
           item: candidate.item
         }))
       }),
-      maxOutputTokens: 700
+      maxOutputTokens: 1500
     });
 
     const winner =

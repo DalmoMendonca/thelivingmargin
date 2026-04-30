@@ -1,3 +1,1251 @@
 version: 1
-updatedAt: 2026-04-29T23:15:00.000Z
-items: []
+updatedAt: 2026-04-30T04:54:28.632Z
+items:
+  - id: 20260430043340-quiet-dishes
+    createdAt: 2026-04-30T04:33:40.089Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Quiet Dishes
+    topic: using non-requests as conflict avoidance in shared life
+    angle: If you won’t ask directly, you don’t just avoid a fight-you train the
+      room to keep running on your silence.
+    fingerprint: as ask avoid avoidance conflict directly dishes dont fight if just
+      keep life non quiet requests room running shared silence train using wont
+    contentMode: question
+    voiceMode: sharp
+    altText: Dark charcoal-grain tabletop with a paper towel ring, a half-written
+      “when you have a second...” note, and a dish pile in a sink, like a quiet
+      receipt of avoidance.
+    single:
+      headline: When you say “I don’t want to start a fight,” what are you paying the
+        sink to repeat?
+      body: The dish pile and paper towel ring are your alibi, dressed up as “not a
+        fight.” Next to the circled day, the half-assembled “when you have a
+        second...” message stays unsent-because you chose ease over an honest
+        ask.
+    caption:
+      hook: Your silence isn’t neutral; it trades honesty for reputation-and still
+        demands payment.
+      body: You buy “peace” with reputation and effort, not results. Then you call it
+        neutral while the sink-and your day-pay back the cost.
+      hashtags:
+        - "#tradeoff"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner tradeoff | Plan mode question
+  - id: 20260430043422-let-me-know-follow-ups
+    createdAt: 2026-04-30T04:34:22.555Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: charcoalGrain
+    title: Let-Me-Know Follow-Ups
+    topic: follow-ups that turn into silence
+    angle: If your message avoids the decision, people can’t respond without risking
+      being wrong-so add a deadline and two usable options.
+    fingerprint: add avoids being cant deadline decision follow if into know let me
+      message options people respond risking silence so turn two ups usable
+      without wrong
+    contentMode: advice
+    voiceMode: sharp
+    altText: "Carousel about fixing vague follow-ups that invite silence. Slide 1
+      shows “Let me know what works” after a meeting and labels it as
+      open-ended. Slide 2 provides a decision+deadline+two-options template with
+      an A/B reply permission line. Slide 3 gives a work-day scheduling example.
+      Slide 4 covers the one-option edge case. Slide 5 gives a next-time rule:
+      draft before you leave the meeting."
+    carousel:
+      - kicker: The trap
+        headline: “Let me know what works” = safe-to-ignore.
+        body: >-
+          After the meeting, your Slack ends with: “Let me know what works.”
+
+
+          It signals: no concrete ask, no cutoff, no wrong to be accountable
+          for.
+        footer: Open-ended = safe to ignore.
+      - kicker: The fix
+        headline: Decision + deadline + two usable options.
+        body: "Confirm by Tue 3:00pm: Option A (X) or Option B (Y). No essay-reply A or
+          B."
+        footer: Choice. Then time.
+      - kicker: Work-day example
+        headline: Scheduling follow-up (quick reply).
+        body: |-
+          Option A: 1:30-2:00pm, Room 2.
+
+          Option B: 2:00-2:30pm, call.
+
+          Reply with A or B by Tue 3:00pm.
+        footer: Two options a tired brain can pick.
+      - kicker: Edge case
+        headline: Only one option? Make the default explicit.
+        body: |-
+          I’ll proceed with Option A unless you tell me otherwise by Tue 3:00pm.
+
+          If that’s wrong, send the correction by the same time.
+        footer: Default + correction path-no meeting required.
+      - kicker: Next time rule
+        headline: Write the follow-up before you leave the meeting.
+        body: Set the deadline and lock your A/B picks while details are still
+          live-before you leave the meeting, not after lunch.
+        footer: Draft first. Then send.
+    caption:
+      hook: Vague follow-ups become silence because the other person can’t answer
+        safely.
+      body: If you skip the decision, I’ll assume the default (usually your first
+        option) after the cutoff. If you only have one option, say what you’ll
+        do and request a correction by the same time.
+      hashtags:
+        - "#workcommunication"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner script | Plan mode advice
+  - id: 20260430043458-the-missing-detail
+    createdAt: 2026-04-30T04:34:58.474Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The Missing Detail
+    topic: Embarrassment dissolves when you name the exact missing thing
+    angle: The threshold doesn’t open for vague apologies-it opens when you offer
+      one usable detail, no bargaining for forgiveness.
+    fingerprint: apologies bargaining detail dissolves doesnt embarrassment exact
+      forgiveness missing name no offer one open opens thing threshold usable
+      vague when
+    contentMode: story
+    voiceMode: reflective
+    altText: "Carousel: 6:52 p.m. lobby check-in. Slide 1 shows a red-beeping
+      keycard scanner and a folded clipboard with wristbands beside a locked
+      lobby door and rain-dark windows. Slide 2 shows a phone on an open
+      confirmation email as the exact confirmation number is read; a label
+      printer spits out a temporary badge. Slide 3 shows the temporary badge or
+      wristband resting on a dark chair arm by the window, while the door
+      remains closed but no longer feels like the whole problem."
+    carousel:
+      - kicker: 6:52 p.m.
+        headline: Red scanner
+        body: A keycard scanner beeps red every time your hand gets closer. A folded
+          clipboard holds a stack of wristbands. The lobby door stays
+          shut-rain-dark windows behind it.
+      - kicker: No bargaining
+        headline: The exact detail
+        body: Your phone is open to the confirmation email. You don’t say “I think I’m
+          on the list.” You read the confirmation number exactly. The label
+          printer answers with a temporary badge.
+      - kicker: Afterglow
+        headline: A badge that fits
+        body: The temporary badge settles on the edge of a dark chair arm by the window.
+          The door is still closed. It’s just no longer the whole story.
+    caption:
+      hook: At 6:52 p.
+      body: "I’d said plenty of sorrys before I said the one usable detail: the
+        confirmation number from my email. The label printer found it. A
+        temporary badge clicked into place-and the door stopped feeling like
+        judgment."
+      hashtags:
+        - "#quietclarity"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner quiet witness | Plan mode story
+  - id: 20260430043547-polite-vagueness-is-a-cost
+    createdAt: 2026-04-30T04:35:47.315Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Polite Vagueness Is a Cost
+    topic: Sending the plain request instead of smoothing it into ambiguity
+    angle: You’re allowed to send the sentence you actually mean; the “just
+      checking” edit mostly buys you more waiting.
+    fingerprint: actually allowed ambiguity buys checking cost edit instead into
+      just mean more mostly plain polite request send sending sentence smoothing
+      vagueness waiting youre
+    contentMode: encouragement
+    voiceMode: sharp
+    altText: Notebook page with faint margin lines, coffee ring on paper, a sticky
+      note with the exact email wording you keep avoiding, and a laptop email
+      draft with the cursor blinking in the subject line.
+    single:
+      headline: Send the sentence you mean.
+      body: Skip the soft decoy.
+      supportLine: Leave out “just checking.”
+      footer: Cursor blinking in the subject line.
+    caption:
+      hook: You can send the plain request you’re deleting from your draft.
+      body: This morning, the cursor blinks while you soften the subject line. Vague
+        asks get vague replies-then comes another round of clarifying; are you
+        choosing clarity or fewer messages?
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner relief | Plan mode encouragement
+  - id: 20260430043618-emoji-silence-live-schedule
+    createdAt: 2026-04-30T04:36:18.053Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Emoji Silence, Live Schedule
+    topic: Emoji reactions replacing real replies in group chats
+    angle: "A reaction is a social dodge: it acknowledges presence without taking
+      the small, embarrassing step of committing to the answer."
+    fingerprint: acknowledges answer chats committing dodge embarrassing emoji group
+      live presence reaction reactions real replacing replies schedule silence
+      small social step taking without
+    contentMode: observation
+    voiceMode: sharp
+    altText: Group chat screen shows a time question with only thumbs and heart
+      reactions and a “seen” timestamp, no decision posted.
+    carousel:
+      - headline: Are we still on for [time]?
+        body: You ask the group chat a time-sensitive question. The emoji reaction
+          button fills with thumbs and hearts-then the thread goes quiet.
+        footer: “Seen” updates, but no answer appears.
+      - headline: Acknowledging vs answering
+        body: "A reaction is the noise of agreement. A reply is the commitment: yes, no,
+          or an update you can plan around."
+      - headline: Your schedule becomes the guess
+        body: When everyone keeps reacting instead of replying, nobody owns the plan.
+          You end up estimating the group’s decision by watching the clock.
+      - headline: Send this instead
+        body: “Are we still on for [time]? Reply yes or no.”
+        footer: One line. One decision.
+    caption:
+      hook: In group chats, emojis can sound like answers without ever becoming one.
+      body: "Ask a time-sensitive question and you’ll get thumbs, hearts, and
+        “seen”-not a decision. Send: “Are we still on for [time]?"
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner social ritual | Plan mode observation
+  - id: 20260430043704-sometime-next-week
+    createdAt: 2026-04-30T04:37:04.353Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Sometime Next Week
+    topic: vague scheduling becoming someone else’s commitment
+    angle: When you dodge a date, you quietly give it away-then you’re stuck
+      negotiating the consequences.
+    fingerprint: away becoming commitment consequences date dodge elses give
+      negotiating next quietly scheduling someone sometime stuck then vague week
+      when youre
+    contentMode: dialogue
+    voiceMode: sharp
+    quoteAttribution: Sometime next week
+    altText: "Three-panel notebook-style dialogue: an inbox invite is answered with
+      “sometime next week,” then the other person shows “Tuesday at 9” and “I
+      already booked you,” ending with “Are you still coming?”"
+    carousel:
+      - headline: Invite?
+        body: |-
+          "Did you see the invite?"
+
+          "Yeah-sometime next week."
+        footer: Worn paper notes. Phone screen glare.
+      - headline: No room left for “maybe.”
+        body: |-
+          "Tuesday at 9."
+
+          "I already booked you."
+        footer: Calendar invite stamped like a decision.
+      - headline: Tradeoff, live.
+        body: |-
+          "Are you still coming?"
+
+          "I thought we had time."
+        footer: Confirmation email open like evidence.
+    caption:
+      hook: “Sometime next week” doesn’t stay vague; it becomes a calendar item for
+        you.
+      body: The confirmation email arrived with “Tuesday at 9” already circled. Your
+        “sometime next week” looseness became someone else’s plan, and now
+        you’re negotiating the fallout.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner translation | Plan mode dialogue
+  - id: 20260430043748-affectionate-exit
+    createdAt: 2026-04-30T04:37:48.465Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: charcoalGrain
+    title: Affectionate Exit
+    topic: Post-fight texts used to dodge repair
+    angle: An affectionate sign-off after a fight often functions as an off-ramp
+      from accountability, not an arrival to resolution.
+    fingerprint: accountability affectionate after arrival as dodge exit fight from
+      functions not off often post ramp repair resolution sign texts used
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: A typographic Instagram card with a bold headline stating that a “love
+      you” text after a fight is an exit rather than a real conversation, plus a
+      short line about the quiet after the fight.
+    single:
+      headline: That “love you” text is an exit, not a conversation.
+      body: It buys silence so you can postpone the hard question.
+      supportLine: Quiet after the fight, softened into a period.
+    caption:
+      hook: The sweet text after the fight lands like a period on your timeline.
+      body: Next conversation starts guarded-affection becomes delay, not clarity.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner translation | Plan mode aphorism
+  - id: 20260430043821-sure-is-a-placeholder
+    createdAt: 2026-04-30T04:38:21.694Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: notebookCream
+    title: Sure Is a Placeholder
+    topic: When a quick yes is social relief, not commitment
+    angle: The default is “I changed my mind.” The useful frame is “I bargained for
+      comfort, and it got scheduled.”
+    fingerprint: bargained changed comfort commitment default frame got i mind my
+      not placeholder quick relief scheduled social sure useful when yes
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: nullable
+    altText: Notebook page with a sticky note that reads “sure” crossed out, beside
+      a calendar invite titled with a scheduled meeting time.
+    single:
+      headline: |-
+        “You changed your mind.”
+
+        “You bargained for comfort, and it got scheduled.”
+      body: In the meeting-room question, “sure” ends the pressure. Then the sticky
+        note gets crossed out-and the calendar invite arrives with the exact
+        time and expectations you weren’t planning to carry.
+      supportLine: Swap instant agreement for a time-bound yes-or a clean no-before
+        the invite locks in.
+      footer: "Say: “I can do that-if it’s on the calendar for Tuesday morning.”"
+    caption:
+      hook: “You changed your mind” is the story; the invite is the receipt.
+      body: "Treat “sure” as immediate choice and you’ll correct it later-when the
+        calendar invite already locks the time. Say: “I can, if it’s on the
+        calendar for Tuesday morning."
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+  - id: 20260430043852-rationing-attention
+    createdAt: 2026-04-30T04:38:52.394Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Rationing Attention
+    topic: attention as social generosity
+    angle: When your phone pre-books your attention, generosity becomes an exception
+      you keep having to justify.
+    fingerprint: as attention becomes books exception generosity having justify keep
+      phone pre rationing social when
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: — Simone Weil
+    altText: Dark, grainy tabletop with phone glow on the table; a notification
+      sound moment is implied mid-sentence. Large editorial type reads
+      “Attention is the rarest and purest form of generosity.” with “- Simone
+      Weil” smaller near the bottom edge.
+    single:
+      headline: “Attention is the rarest and purest form of generosity.”
+      body: ""
+      footer: "- Simone Weil"
+    caption:
+      hook: Your phone keeps booking your generosity in five-second increments.
+      body: Phone-glow on the table; the notification sound cuts someone’s sentence
+        off mid-thought, and you’re halfway listening. Your eye contact doesn’t
+        land, and the room turns into a waiting room.
+      hashtags:
+        - "#attention"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner application | Plan mode quote
+  - id: 20260430043944-kind-questions-stuck-room
+    createdAt: 2026-04-30T04:39:44.080Z
+    source: ai
+    slotPreference: morning
+    kind: carousel
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: notebookCream
+    title: Kind Questions, Stuck Room
+    topic: Questions that sound considerate but block the decision
+    angle: When a question can’t be answered without risk, it quietly removes
+      responsibility from the asker-and keeps everyone waiting.
+    fingerprint: answered asker block but cant considerate decision everyone from
+      keeps kind question questions quietly removes responsibility risk room
+      sound stuck waiting when without
+    contentMode: list
+    voiceMode: sharp
+    altText: Notebook-style diagnostic carousel with five highlighted question
+      phrases; each shows a single social consequence and ends with a cleaner
+      next-step replacement question.
+    carousel:
+      - kicker: Margin note
+        headline: The questions that sound kind but keep everyone stuck.
+        body: (┊ notebook margin lines ┊) They feel gentle because they don’t ask for a
+          decision-so you host the awkward instead.
+      - kicker: Burden shift
+        headline: “Anything else you need?”
+        body: "(┊ pencil texture ┊) Consequence: you have to name what’s wrong to
+          justify their help, like a group chat thread that only moves when
+          someone admits they’re stuck."
+      - kicker: Permission trap
+        headline: “Is everything okay?”
+        body: "(┊ margin line alert ┊) Consequence: updates become
+          reassurance-performance, end of a meeting included-either you invent
+          calm or look like you’re starting drama."
+      - kicker: Off-ramp loading
+        headline: “Let me know if anything changes.”
+        body: "(┊ notebook edge callout ┊) Consequence: you become the alarm system; the
+          calendar invite stays unchanged while you wait for a follow-up message
+          drafted and deleted."
+      - kicker: Replacement
+        headline: Name the decision. Make it narrow.
+        body: “Can you do X by Y, or should we plan Z?”
+    caption:
+      hook: Kind questions can be real-or a polite way to dodge responsibility.
+      body: "If they can act on your answer and name the next step, it’s sincere. If
+        they just want reassurance while they stay hands-off, it’s avoidance.
+        Example: “Is everything okay?"
+      callToComment: Which phrase do you catch yourself using?
+      hashtags:
+        - "#boundaries"
+        - "#communication"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner signs | Plan mode list
+  - id: 20260430044017-brain-picking-container
+    createdAt: 2026-04-30T04:40:17.668Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Brain-Picking Container
+    topic: Setting a time box for vague requests
+    angle: If someone asks to “pick your brain” without a decision or deadline,
+      they’re asking for your attention-so you offer a small, specific container
+      instead.
+    fingerprint: asking asks attention box brain container deadline decision if
+      instead offer pick picking requests setting small so someone specific
+      theyre time vague without
+    contentMode: advice
+    voiceMode: sharp
+    altText: "Handwritten note on dark paper reading “pick your brain?” with a bold
+      rule beneath: “Time box it. Name the decision.”"
+    single:
+      headline: Time box it. Name the decision.
+      body: “I can do 10 minutes today-what decision do you need by the end of that
+        time?”
+      supportLine: "If they won’t name it: “What would make this useful by next week?”"
+      footer: Short container beats open-ended attention.
+    caption:
+      hook: “Pick your brain” is attention first-so ask for a decision that fits
+        inside a clock.
+      body: "Use: “I can do 10 minutes today-what decision do you need by the end of
+        that time? ” If they won’t name it, ask: “What would make this useful by
+        next week? ”"
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner field test | Plan mode advice
+  - id: 20260430044051-the-sentence-before-the-sticker
+    createdAt: 2026-04-30T04:40:51.906Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: The Sentence Before the Sticker
+    topic: Specificity in a time-sensitive handoff beats polite vagueness
+    angle: In public, when the question has a consequence, the kindest move is the
+      exact sentence and the paperwork that matches it.
+    fingerprint: beats before consequence exact handoff has kindest matches move
+      paperwork polite public question sensitive sentence specificity sticker
+      time vagueness when
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: /
+    altText: "Three-slide rainy daycare pickup story: a clipboard at a glass door, a
+      hesitation when the approved-contact name is wrong, one correction signed
+      next to the updated name, then a temporary sticker placed on a laminated
+      pickup pass and later kept by keys."
+    carousel:
+      - kicker: Rainy curb pickup moment
+        headline: The clipboard rule
+        body: Rain freckles the glass door. You’re fumbling a laminated pickup pass
+          while the front desk points to a clipboard with the approved-contact
+          list. The name you say lands wrong, and the pen pauses above the line.
+      - kicker: A small rule can move when it’s specific
+        headline: One correction, out loud
+        body: You open the approved-contact email on your phone and ask, “Can you update
+          the list to Maya Alvarez today?” The staff marks the change. You sign
+          next to Maya Alvarez-quick, exact, done in the moment.
+      - kicker: Afterglow, not a spectacle
+        headline: Proof it’s fixed
+        body: A temporary sticker goes onto your pass-official enough to end the hold.
+          Later, at home, you drop that pass into a tray by your keys, and the
+          little label stays put until the next handoff.
+    caption:
+      hook: At the daycare window, embarrassment loosened when you said one exact
+        sentence.
+      body: The list wasn’t being strict-it was keeping the pickup flow moving. One
+        correction, written and signed right then, unblocked the next family.
+        Later, the temporary sticker stayed by your keys like proof you handled
+        it early.
+      hashtags:
+        - "#specificity"
+        - "#handoff"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner institutional mercy | Plan mode story
+  - id: 20260430044132-feedback-as-permission
+    createdAt: 2026-04-30T04:41:32.830Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Feedback as Permission
+    topic: Using “feedback” to outsource the decision
+    angle: If you call it feedback but you’re really waiting for permission, the
+      delay becomes the point.
+    fingerprint: as becomes but call decision delay feedback if outsource permission
+      point really using waiting youre
+    contentMode: question
+    voiceMode: sharp
+    altText: "Notebook page with centered headline question in brass ink: “When you
+      ask for feedback, are you really waiting for permission to choose?”"
+    single:
+      headline: When you ask for feedback, are you really waiting for permission to
+        choose?
+      body: You send the draft with “Any thoughts?” and three waiting dots-editing
+        never arrives.
+      supportLine: "Draft document to group chat: soft ask, waiting under the surface."
+      footer: Permission, not feedback.
+    caption:
+      hook: “Any thoughts?
+      body: The room gets etiquette instead of revision. Time, clarity, and
+        credibility bleed out while you wait for dots to speak.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner misnaming | Plan mode question
+  - id: 20260430044218-no-rush-still-due
+    createdAt: 2026-04-30T04:42:18.095Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: No Rush, Still Due
+    topic: The 'no rush' phrase that quietly schedules you without negotiating time
+    angle: When someone says 'no rush' right next to a deadline, they remove your
+      ability to ask-so you end up doing the prioritizing work for them.
+    fingerprint: ability ask deadline doing due end negotiating next no phrase
+      prioritizing quietly remove right rush says schedules so someone still
+      them they time up when without work
+    contentMode: observation
+    voiceMode: sharp
+    quoteAttribution: /**/null
+    altText: Photograph of a notebook page with a handwritten deadline reading
+      “Friday, May 17.” A taped sticky note next to it reads “no rush 😊.”
+    single:
+      headline: “No rush.” Still due.
+      body: Notebook deadline reads Friday, May 17. A taped note says “no rush” with a
+        smiley, and you can’t ask for clarification without sounding difficult.
+      supportLine: You start early-then they follow up Monday like urgency was negotiable.
+      footer: "Copy/paste: “Happy to start now-can you confirm the deliverable is due
+        Friday, or is it flexible?”"
+    caption:
+      hook: “No rush” next to a Friday date is scheduling, disguised.
+      body: "In the email, “no rush” sits by Friday (May 17), and you don’t want to
+        sound difficult. Copy/paste: “Happy to start now-can you confirm the
+        deliverable is due Friday, or is it flexible?"
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner translation | Plan mode observation
+  - id: 20260430044312-whatever-after-midnight
+    createdAt: 2026-04-30T04:43:12.343Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Whatever, after midnight
+    topic: Misused flexibility that avoids choice but still changes the room.
+    angle: “Whatever” can be a dodge-especially when the decision shows up later as
+      a personal inconvenience.
+    fingerprint: after as avoids but can changes choice decision dodge especially
+      flexibility inconvenience later midnight misused personal room shows still
+      up whatever when
+    contentMode: dialogue
+    voiceMode: sharp
+    quoteAttribution: /
+    altText: "A three-slide carousel in a notebook style showing calm dialogue
+      across midnight: a thermostat request, an “whatever” dodge with an
+      unfinished line, then the room’s temperature and blanket situation turning
+      into an uneven consequence."
+    carousel:
+      - kicker: Slide 1
+        headline: Seventy.
+        body: >-
+          “Can you set the bedroom thermostat to seventy-and leave the remote on
+          the nightstand?”
+
+
+          “Yeah. Dim lamp glow. Blanket pulled higher. I’ve got it.”
+      - kicker: Slide 2
+        headline: Whatever doesn’t commit.
+        body: |-
+          “Seventy. No dodge-just set it.”
+
+          “Whatever. Just set it-”
+      - kicker: Slide 3
+        headline: My side paid first.
+        body: >-
+          “Why’s my side freezing? I woke up cold-the remote’s still on the
+          nightstand.”
+
+
+          “You said ‘whatever’... so I left it where it was- and now you can
+          sort the rest, I guess-”
+    caption:
+      hook: “Whatever” changes the room-then you wake up doing the fix.
+      body: They set the bedroom thermostat after your “whatever. ” You slept through
+        the corrections, and the extra temperature work landed on me.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+  - id: 20260430044344-accurate-delivery-beats-apology-polishing
+    createdAt: 2026-04-30T04:43:44.403Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Accurate Delivery Beats Apology Polishing
+    topic: Updating an estimate without performing regret
+    angle: You’re allowed to swap the vague apology for a clean new time-because
+      what they’re waiting on is follow-through, not your remorse.
+    fingerprint: accurate allowed apology beats because clean delivery estimate
+      follow new not performing polishing regret remorse swap theyre through
+      time updating vague waiting what without youre
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: Notebook-style page with a blinking cursor in an email draft that
+      starts “per my last message...”, alongside a calendar invite and a changed
+      time reading 3:00 p.m.
+    single:
+      headline: Update the time, skip the apology.
+      body: Change it to I can send it by 3:00 p.m. and leave the remorse draft
+        untouched.
+      supportLine: Accuracy may feel less comforting than saying soon, but it keeps
+        plans from unraveling.
+      footer: Precision is follow-through they can schedule around.
+    caption:
+      hook: Your reader doesn’t need cleaner wording; they need a time they can plan
+        around.
+      body: A real fix is a window they can schedule. One clean update, then stop
+        polishing the apology.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner relief | Plan mode encouragement
+  - id: 20260430044417-let-me-know-isn-t-neutral
+    createdAt: 2026-04-30T04:44:17.136Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: notebookCream
+    title: Let Me Know Isn’t Neutral
+    topic: reframing the phrase “let me know” as a delay tactic
+    angle: “Let me know” can read kind, but it quietly assigns the follow-up to the
+      other person-so the delay becomes the system.
+    fingerprint: as assigns becomes but can delay follow isnt kind know let me
+      neutral other person phrase quietly read reframing so system tactic up
+    contentMode: reframe
+    voiceMode: sharp
+    altText: Close-up of a handwritten sticky note reading “let me know,” crossed
+      out with a thin line; replacement text reads “Kind doesn’t mean
+      noncommittal.”
+    single:
+      headline: Kind doesn’t mean noncommittal.
+      body: Cross out “let me know” and replace it with a time-bound next step.
+      supportLine: Sticky-note courtesy, cursor over Send.
+      footer: Make the follow-up belong to you.
+    caption:
+      hook: “Let me know” can sound kind-until it assigns the next step.
+      body: "After you send it following a status request, it quietly hands scheduling
+        to them. Swap in: “I’ll send the update Thu at 3pm,” or “If I don’t
+        reply by 3pm, ping me."
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+  - id: 20260430044454-help-as-a-heat-source
+    createdAt: 2026-04-30T04:44:54.185Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: signal
+    palette: emberParchment
+    surfaceStyle: charcoalGrain
+    title: Help as a Heat Source
+    topic: boundaries that cost social comfort
+    angle: If you only agree to stay useful, not because you want to, the cost won’t
+      stay invisible.
+    fingerprint: agree as because boundaries comfort cost heat help if invisible not
+      only social source stay useful want wont
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Margaret Atwood
+    altText: "A textured, charcoal-on-ember quote card reading: “You are not
+      obligated to set yourself on fire to keep others warm.” - Margaret
+      Atwood."
+    single:
+      headline: “You are not obligated to set yourself on fire to keep others warm.” -
+        Margaret Atwood
+      body: "DM lands: “Can you cover this tonight?” Draft back: “I can’t take this
+        tonight. I can cover Wednesday 10-12.” If needed: “I can send a starter
+        draft by 6.”"
+      supportLine: Keep the borrowed line-make the boundary the message.
+      footer: Saying yes now buys peace and charges resentment later.
+    caption:
+      hook: That DM-“Can you cover this tonight?
+      body: "A yes buys relief and schedules your exhaustion for later-resentment,
+        double-work, delayed follow-through. Send the time-bounded no: “I can’t
+        tonight."
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner application | Plan mode quote
+  - id: 20260430044522-quick-thing-real-cost
+    createdAt: 2026-04-30T04:45:22.053Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: notebookCream
+    title: Quick Thing, Real Cost
+    topic: Work messages that borrow your time
+    angle: The phrase “one quick thing” usually means your calendar is the buffer
+      they’re assuming you’ll provide.
+    fingerprint: assuming borrow buffer calendar cost means messages one phrase
+      provide quick real theyre thing time usually work youll
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "Notebook-style text on a blue background: “one quick thing” is your
+      calendar’s unpaid buffer."
+    single:
+      headline: “one quick thing” is your calendar’s unpaid buffer.
+      body: No due time gets attached, so your calendar block does the estimating.
+    caption:
+      hook: That phrase turns help into a deadline that relocates to you.
+      body: "Before you assist, ask: “What’s the deadline, and what block should I
+        move? ”"
+      hashtags:
+        - "#workboundaries"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner recognition | Plan mode aphorism
+  - id: 20260430044613-scheduling-replies-that-offload-the-decision
+    createdAt: 2026-04-30T04:46:13.628Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Scheduling Replies That Offload the Decision
+    topic: Common scheduling phrases that transfer the decision (and stress) onto you
+    angle: When a reply sounds agreeable but avoids specifying a choice, it quietly
+      makes your calendar their fallback plan.
+    fingerprint: agreeable avoids but calendar choice common decision fallback makes
+      offload onto phrases plan quietly replies reply scheduling sounds
+      specifying stress their transfer when
+    contentMode: list
+    voiceMode: sharp
+    altText: Three scheduling reply phrases that avoid choosing a time, ending with
+      a copy-paste boundary using 12:30 or 3:00 and a reply-by-EOD deadline.
+    carousel:
+      - headline: 3 scheduling replies that make your calendar do the work
+        body: If they won’t pick a time, your next message becomes the decision. Name
+          the pattern, then stop running the relay.
+      - headline: “I can do Monday” (no time)
+        body: Day picked, hour missing. You’re left turning Monday into a time
+          hunt-usually in a group chat.
+      - headline: “Whichever works”
+        body: "They transfer the choice to you: you find a slot, send the calendar
+          invite, then wait for them to react."
+      - headline: “I’m flexible”
+        body: Flexibility becomes steering. You become the decider-and the one who
+          reschedules when it doesn’t lock.
+      - headline: "Synthesis: boundary + two options + EOD deadline"
+        body: "Copy-paste control sentence: “I can do 12:30 or 3:00 on Monday. Reply by
+          EOD tonight; if not, I’ll book 12:30 and reschedule solo if needed.”"
+    caption:
+      hook: Agreeable scheduling language is still control-especially when it dodges
+        the choice.
+      body: If they truly can’t choose yet, ask for a time window, not “whatever. ”
+        Give it an EOD deadline anyway. The deadline protects you from the
+        follow-up loop.
+      callToComment: Which phrase shows up most in your group chat?
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner signs | Plan mode list
+  - id: 20260430044647-quarters-in-the-slot
+    createdAt: 2026-04-30T04:46:47.971Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: emberParchment
+    surfaceStyle: charcoalGrain
+    title: Quarters in the Slot
+    topic: feeling foolish asking for help with something small
+    angle: The embarrassment of “maybe it’s just me” costs more than the help
+      does-so you trade pride for one concrete action.
+    fingerprint: action asking concrete costs does embarrassment feeling foolish
+      help its just maybe me more one pride quarters slot small so something
+      than trade
+    contentMode: story
+    voiceMode: reflective
+    altText: "Three-panel carousel in a laundromat at 6:40pm: quarters caught in a
+      coin return beside a blinking timer and a damp handwritten receipt with
+      the machine number; an attendant behind a counter reads the number and
+      points to the exact stuck slot/coin tray, and you try again; folded
+      laundry sits beside a stamped, dated receipt on a plastic seat."
+    carousel:
+      - kicker: 6:40pm
+        headline: The return wouldn’t give them back.
+        body: Damp quarters sat where the slot curved into the coin tray. The timer kept
+          blinking. Your receipt-handwritten, slick with detergent-showed the
+          machine number, and you paused before speaking.
+        footer: You decided whether to look incompetent or get it fixed.
+      - kicker: Behind the counter
+        headline: You named the machine. Then you tried exactly once.
+        body: The attendant read the number from your receipt and pointed to the stuck
+          slot/coin tray. You tried again the way they showed-confirming the
+          detail before blaming yourself.
+        footer: One correction, and the return finally took the charge.
+      - kicker: After
+        headline: Relief that stays small.
+        body: Laundry on the seat, folded into something you can carry. The receipt came
+          back stamped and dated-ordinary proof, no speeches, just saved hours.
+        footer: Folded clothes. Stamped receipt. Time back.
+    caption:
+      hook: At 6:40pm, I waited too long-until the machine number on my receipt did
+        the talking.
+      body: I hesitated like admitting I couldn’t fix it would make me smaller. Then I
+        told the attendant the number and the exact coin return slot to try
+        again. After that, I just folded-no speeches, no blame, only hours
+        spared next week.
+      hashtags:
+        - "#smallhelp"
+        - "#institutionalmercy"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner institutional mercy | Plan mode story
+  - id: 20260430044725-emoji-only-responsibility
+    createdAt: 2026-04-30T04:47:25.863Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: charcoalGrain
+    title: Emoji-Only Responsibility
+    topic: avoiding accountability with reaction-only replies in group chats
+    angle: If you treat an emoji as neutrality, you still change the room-you just
+      don’t own what it means.
+    fingerprint: accountability as avoiding change chats dont emoji group if just
+      means neutrality only own reaction replies responsibility room still treat
+      what
+    contentMode: question
+    voiceMode: sharp
+    altText: Handwritten-style question on a charcoal-grain background about
+      replying in a group chat with a thumbs-up/heart reaction instead of the
+      actual sentence. Subtitle reads 'reaction instead of an answer' with a
+      small thumbs-up style sticker mark.
+    single:
+      headline: In this group chat, what are you buying with a thumbs-up / heart
+        instead of the sentence?
+      body: reaction instead of an answer
+      supportLine: Request lands • you react (thumbs-up/heart) • read receipts do the
+        assuming
+      footer: Later you’ll be forced to clarify-after they’ve already decided.
+    caption:
+      hook: A reaction-only reply in a group chat isn’t neutrality-it buys an
+        assumption you won’t own.
+      body: They read your thumbs-up/heart as agreement and start the follow-up. Then
+        you’re forced to clarify later, after the room already decided.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner tradeoff | Plan mode question
+  - id: 20260430044835-owner-by-accident
+    createdAt: 2026-04-30T04:48:35.947Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Owner-by-accident
+    topic: claiming ownership without agreeing to the deliverable
+    angle: If you’re quietly made the owner, you fix it with one written
+      scope-and-deadline sentence before the ambiguity hardens.
+    fingerprint: accident agreeing ambiguity before by claiming deadline deliverable
+      fix hardens if made one owner ownership quietly scope sentence without
+      written youre
+    contentMode: advice
+    voiceMode: sharp
+    altText: "Editorial notebook page with faint checklist marks and a circled note
+      reading “TBD next to your name,” plus a written reply template: “I’m
+      responsible for [task] by [date]; [other] is still unassigned.”"
+    single:
+      headline: Fix “TBD” before it becomes yours.
+      body: I’m responsible for [task] by [date]; [other] is still unassigned.
+      supportLine: Polite silence turns into agreement when your name sits in the recap.
+      footer: When the thread moves on, they treat it like you owned it.
+    caption:
+      hook: "If your name is under “TBD,” make it contract-simple: scope + deadline."
+      body: "Reply in the meeting recap with one line: I can commit to [task] by
+        [date]. Leave [other] out: “Not covered-assign an owner. ” Silence makes
+        it feel implied, and then the thread moves on."
+      hashtags:
+        - "#communication"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner script | Plan mode advice
+  - id: 20260430045019-later-as-a-no
+    createdAt: 2026-04-30T04:50:19.357Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Later as a No
+    topic: Polite deflection that costs you prep time
+    angle: When someone answers with “later,” the exchange reveals they were never
+      agreeing to the work-just buying time.
+    fingerprint: agreeing answers as buying costs deflection exchange just later
+      never no polite prep reveals someone they time were when work
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: "Three-slide office-adjacent dialogue: at a kitchen counter, you
+      request Annex B in the shared doc tied to a 3:00 calendar invite and a
+      sticky note time; follow-up references an inbox timestamp; you require
+      upload by 3:00 as they trail off."
+    carousel:
+      - kicker: Office kitchen counter
+        headline: “Later-sure.”
+        body: |-
+          You: “Annex B in the shared doc-before the 3:00 calendar invite.”
+
+          Them: “Okay. I’ll do it later.”
+      - kicker: The time is on the record
+        headline: “Later” won’t pick a number.
+        body: |-
+          You: “What time does “later” mean? The inbox timestamp is 2:10.”
+
+          Them: “After lunch. I’ll get to it.”
+      - kicker: Smallest step you’ll accept
+        headline: Own the deadline or I move.
+        body: >-
+          You: “Upload Annex B into the shared doc by 3:00. I’ll forward the
+          invite without your section.”
+
+
+          Them: “I can still-”
+    caption:
+      hook: “Later” isn’t a yes-it's a delay tactic disguised as politeness.
+      body: Request Annex B in the shared doc by 3:00; if they dodge, you act on the
+        timeline anyway.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+  - id: 20260430045112-skip-the-pre-apology
+    createdAt: 2026-04-30T04:51:12.777Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: charcoalGrain
+    title: Skip the Pre-Apology
+    topic: Not pre-apologizing for a simple request in writing
+    angle: Cut the pre-apology and you get to keep your attention-your request stops
+      acting like optional homework.
+    fingerprint: acting apologizing apology attention cut get homework keep like not
+      optional pre request simple skip stops writing
+    contentMode: encouragement
+    voiceMode: sharp
+    quoteAttribution: nullable
+    altText: "A tactile notebook page in charcoal ink. A draft line reading “sorry
+      to bother-just...” is crossed out, with a clean replacement request
+      underneath: “Can you confirm the delivery time by Thursday?” Ink bleed and
+      paper grain show around the crossed-out words, with a small torn corner at
+      the edge."
+    single:
+      headline: Ask without the pre-apology.
+      body: "Send the line you actually mean: “Can you confirm the delivery time by
+        Thursday?”"
+      supportLine: The “sorry to bother” buys delay and hands them control of your urgency.
+      footer: Cursor hovering before sending-pre-apology crossed out.
+    caption:
+      hook: Your draft starts with “sorry to bother”-cut it and send the request.
+      body: That extra politeness doesn’t make you safer. It gives the other person an
+        off-ramp and slows your clarity.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner permission | Plan mode encouragement
+  - id: 20260430045203-just-checking-in-means-you-re-on-call
+    createdAt: 2026-04-30T04:52:03.807Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Just Checking In Means You’re On Call
+    topic: The social dodge inside “just checking in” after delay
+    angle: “Just checking in” quietly turns your silence into their urgency-then
+      asks you to do the emotional work of fixing it.
+    fingerprint: after asks call checking delay do dodge emotional fixing inside
+      into just means quietly silence social their then turns urgency work youre
+    contentMode: observation
+    voiceMode: sharp
+    altText: Four-slide carousel showing an inbox thread with the subject line “Just
+      checking in,” explaining the urgency transfer, the politeness versus
+      precision tradeoff, and a copy-paste reply template with a specific date
+      and next step.
+    carousel:
+      - kicker: Inbox scene
+        headline: "Email subject line: “Just checking in.”"
+        body: The thread is still live, dated down to the last ping-cursor hovering over
+          “Sorry for the delay.”
+        footer: "Highlighted: just checking in"
+      - kicker: What it actually does
+        headline: It’s not requesting information.
+        body: "It’s outsourcing urgency: your silence becomes their timeline, and you
+          inherit the follow-up work."
+        footer: Urgency transferred to the recipient
+      - kicker: The tradeoff
+        headline: "Choose one lane: kindness or control."
+        body: You can be kind and keep it vague-or be precise and take control with a
+          date on the next step.
+        footer: Keep politeness; keep control.
+      - kicker: Copy-paste alternative
+        headline: Reply with a date + next step.
+        body: “Thanks for the nudge. I can send the status update by Thursday 3:00 PM.
+          If that timing doesn’t work, reply with your preferred window and I’ll
+          adjust.”
+        footer: Keep politeness; keep the wheel.
+    caption:
+      hook: “just checking in” is politeness that quietly converts your silence into
+        their schedule.
+      body: "If you need to respond, don’t extend the fog. Send: “Thanks for the
+        nudge."
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner translation | Plan mode observation
+  - id: 20260430045240-seen-message
+    createdAt: 2026-04-30T04:52:40.250Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Seen Message
+    topic: attention as a real cost you pay-or refuse
+    angle: When you half-pay attention, you’re not being neutral; you’re choosing
+      what someone’s time becomes.
+    fingerprint: as attention becomes being choosing cost half message neutral not
+      pay real refuse seen someones time what when youre
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Simone Weil
+    altText: "Dark, hand-made editorial quote card on a charcoal-grain surface,
+      generous margins like a ledger page. Centered serif text reads “Attention
+      is the rarest and purest form of generosity.” Attribution appears at the
+      bottom: - Simone Weil."
+    single:
+      headline: “Attention is the rarest and purest form of generosity.”
+      body: "- Simone Weil"
+    caption:
+      hook: The “seen” moment isn’t neutral; it’s you changing what their time
+        becomes.
+      body: In the group chat at late evening, you tap reply, but the unread badge
+        stays lit-phone face-down by your notebook. They wait while you don’t
+        answer, their plan quietly shifts; attention is the cost you refuse.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner counterweight | Plan mode quote
+  - id: 20260430045308-quick-call-time-borrowing
+    createdAt: 2026-04-30T04:53:08.687Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: signal
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Quick Call = Time Borrowing
+    topic: Work messaging and the pressure to drop everything
+    angle: “Quick call” is a request for your availability, not a plan for the work.
+    fingerprint: availability borrowing call drop everything messaging not plan
+      pressure quick request time work
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: Photographed dark notebook and printed agenda; the phrase “quick call”
+      is highlighted beside an invented blank time window and a calendar invite
+      reminder.
+    single:
+      headline: “Quick call” is how they borrow your calendar time.
+      body: No agenda-just a Slack/Teams link, an invented time window, and a calendar
+        invite that needs you.
+      supportLine: "Notebook highlight: “quick call” circled over blank slots."
+      footer: Small irritation, delivered as politeness.
+    caption:
+      hook: When they say “quick call,” they’re recruiting your availability, not your
+        help.
+      body: No agenda turns you into the buffer. Then you’re the one apologizing for
+        the calendar invite.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+  - id: 20260430045339-the-disclaimer-that-gets-you-ignored
+    createdAt: 2026-04-30T04:53:39.540Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: The Disclaimer That Gets You Ignored
+    topic: Meeting pre-apologies and how disclaimers erase your question
+    angle: A “not a dumb question” disclaimer isn’t politeness-it’s permission for
+      the room to dismiss you, and the fix is removing the cushion.
+    fingerprint: apologies cushion disclaimer disclaimers dismiss dumb erase fix
+      gets how ignored isnt its meeting not permission politeness pre question
+      removing room
+    contentMode: reframe
+    voiceMode: sharp
+    altText: Notebook margin with a small crossed-out disclaimer reading like a
+      pre-apology; the remaining line reads as a clean one-sentence question.
+    single:
+      headline: “Not a dumb question” feels like self-protection-until it becomes
+        permission.
+      body: "Say the same thing without the cushion: one clean question starter,
+        straight to the point."
+      supportLine: "In the notebook margin, crossed-out “dumb question?” = old frame
+        (politeness / self-protection). New frame: the room gets permission to
+        dismiss you."
+      footer: "Replace “Not a dumb question...” with: “Can you clarify X, because I’m
+        not seeing Y?”"
+    caption:
+      hook: When you pre-apologize, you’re handing the room an exit.
+      body: Politeness doesn’t slow anyone down; it changes where your question lands.
+        Cut the “dumb” wrapper and ask straight, so meeting silence stops acting
+        like permission-better answers, faster alignment, less defensive
+        hedging.
+      hashtags:
+        - "#meetings"
+        - "#communication"
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner counterframe | Plan mode reframe
+  - id: 20260430045428-name-repair-rules
+    createdAt: 2026-04-30T04:54:28.623Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: midnightPaper
+    surfaceStyle: notebookCream
+    title: Name-Repair Rules
+    topic: How to fix a mispronounced name without making the room pay for your
+      embarrassment
+    angle: The cleanest repair is brief correction plus quick return-anything longer
+      turns your mistake into someone else’s job.
+    fingerprint: anything brief cleanest correction elses embarrassment fix how into
+      job longer making mispronounced mistake name pay plus quick repair return
+      room rules someone turns without
+    contentMode: list
+    voiceMode: sharp
+    altText: Notebook page with a mispronounced name crossed out in black pen, the
+      correct spelling circled, a small sticky note on the wall, and a public
+      introduce moment framed by the next sentence.
+    carousel:
+      - headline: Don’t rescue the moment-repair it.
+        body: If you mispronounce a name, stop negotiating the air. The room doesn’t
+          need your story; it needs one clean fix.
+      - headline: Correct once, clearly, then continue.
+        body: "Mispronounced name: “Sarah?” Fix: “It’s Sara.” Sara, it’s good to meet
+          you."
+      - headline: Cut the justification.
+        body: "No: “I’m bad with names.” Circle the right spelling with your voice, then
+          move to the next sentence."
+      - headline: Don’t make them coach you.
+        body: "Avoid “Did I get it right?” Unless they offer, ask nothing. In public:
+          correct once, then continue. In private: you can fix it
+          later-briefly."
+      - headline: Your job is the next sentence.
+        body: Fix the sound, return the floor, and keep going. Let embarrassment stay in
+          your body-not in the room.
+    caption:
+      hook: Correct the name once, then stop turning a quick mistake into a group
+        project.
+      body: If they correct you back, don’t negotiate. Say it once, thank them, and
+        move on-especially in public.
+      hashtags: []
+    publishAttempts: 0
+    status: ready
+    notes: AI pipeline winner mistakes | Plan mode list
