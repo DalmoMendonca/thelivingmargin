@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T08:42:28.445Z
+updatedAt: 2026-04-30T08:42:36.824Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -221,12 +221,18 @@ items:
         asks get vague replies-then comes another round of clarifying; are you
         choosing clarity or fewer messages?
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner relief | Plan mode encouragement
     renderDir: docs/assets/posts/20260430043547-polite-vagueness-is-a-cost
     renderedFiles:
       - docs/assets/posts/20260430043547-polite-vagueness-is-a-cost/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"Aka_ireXgtrpCth5K-lSKkt"}}'
   - id: 20260430043618-emoji-silence-live-schedule
     createdAt: 2026-04-30T04:36:18.053Z
     source: ai
