@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T12:16:36.846Z",
+  "updatedAt": "2026-05-01T13:30:48.320Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -363,6 +363,19 @@
       "createdAt": "2026-05-01T12:16:28.430Z",
       "renderedFiles": [
         "assets/posts/20260501121628-no-pressure/post.png"
+      ]
+    },
+    {
+      "id": "20260501133047-wrong-order",
+      "title": "Wrong Order",
+      "kind": "carousel",
+      "topic": "accepting the wrong thing to avoid becoming an inconvenience in public",
+      "angle": "A small restaurant exchange shows how embarrassment can make someone protect the table's ease more than their own experience.",
+      "createdAt": "2026-05-01T13:30:47.492Z",
+      "renderedFiles": [
+        "assets/posts/20260501133047-wrong-order/slide-01.png",
+        "assets/posts/20260501133047-wrong-order/slide-02.png",
+        "assets/posts/20260501133047-wrong-order/slide-03.png"
       ]
     }
   ]

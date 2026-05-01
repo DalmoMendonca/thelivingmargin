@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T12:16:36.821Z
+updatedAt: 2026-05-01T13:30:48.291Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1710,3 +1710,46 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A4GlBYpQDwG4b4W_m1AWW4b"}}'
+  - id: 20260501133047-wrong-order
+    createdAt: 2026-05-01T13:30:47.492Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Wrong Order
+    topic: accepting the wrong thing to avoid becoming an inconvenience in public
+    angle: A small restaurant exchange shows how embarrassment can make someone
+      protect the table's ease more than their own experience.
+    fingerprint: accepting avoid becoming can ease embarrassment exchange experience
+      how inconvenience make more order own protect public restaurant shows
+      small someone tables than their thing wrong
+    contentMode: dialogue
+    voiceMode: reflective
+    quoteAttribution: / null? wait invalid need actual null
+    altText: Three-slide text carousel in a dark paper style. Slide 1 asks why the
+      wrong plate was not sent back. Slide 2 answers that everyone else had
+      already gotten their food and the server had already moved on. Slide 3
+      admits that stopping the table felt worse than keeping the wrong order.
+    carousel:
+      - headline: "\"Why didn't you send it back?\""
+        body: '"The server brought you the wrong plate."'
+      - headline: '"Everyone else had already gotten their food."'
+        body: "\"The server was already moving on, and I wasn't going to stop the whole
+          table.\""
+      - headline: '"Then why keep it?"'
+        body: '"Stopping the table felt worse than keeping the wrong order."'
+    caption:
+      hook: Embarrassment can make a simple correction feel expensive.
+      body: Sometimes you keep the table moving by taking the hit yourself. A simple
+        fix starts to feel socially expensive.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260501133047-wrong-order
+    renderedFiles:
+      - docs/assets/posts/20260501133047-wrong-order/slide-01.png
+      - docs/assets/posts/20260501133047-wrong-order/slide-02.png
+      - docs/assets/posts/20260501133047-wrong-order/slide-03.png
