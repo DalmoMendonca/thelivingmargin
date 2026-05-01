@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T01:32:53.645Z",
+  "updatedAt": "2026-05-01T03:00:58.360Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -231,6 +231,17 @@
         "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-03.png",
         "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-04.png",
         "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260430044835-owner-by-accident",
+      "title": "Owner-by-accident",
+      "kind": "single",
+      "topic": "claiming ownership without agreeing to the deliverable",
+      "angle": "If you’re quietly made the owner, you fix it with one written scope-and-deadline sentence before the ambiguity hardens.",
+      "createdAt": "2026-04-30T04:48:35.947Z",
+      "renderedFiles": [
+        "assets/posts/20260430044835-owner-by-accident/post.png"
       ]
     },
     {

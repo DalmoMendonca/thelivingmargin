@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T01:32:53.622Z
+updatedAt: 2026-05-01T03:00:58.327Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1154,8 +1154,11 @@ items:
       hashtags:
         - "#communication"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner script | Plan mode advice
+    renderDir: docs/assets/posts/20260430044835-owner-by-accident
+    renderedFiles:
+      - docs/assets/posts/20260430044835-owner-by-accident/post.png
   - id: 20260430045019-later-as-a-no
     createdAt: 2026-04-30T04:50:19.357Z
     source: ai
