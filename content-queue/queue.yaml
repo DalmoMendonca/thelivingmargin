@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T11:25:16.770Z
+updatedAt: 2026-05-01T12:16:28.834Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1668,3 +1668,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A7WXtd-ZDuwMMy4yMalhL_w"}}'
+  - id: 20260501121628-no-pressure
+    createdAt: 2026-05-01T12:16:28.430Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: No Pressure
+    topic: the phrase "no pressure" attached to a real request
+    angle: "\"No pressure\" often keeps a real request intact while making refusal
+      feel like the receiver's awkwardness to manage."
+    fingerprint: attached awkwardness feel intact keeps like making manage no often
+      phrase pressure real receivers refusal request while
+    contentMode: observation
+    voiceMode: sharp
+    altText: A warm paper broadside with the headline '"No pressure"' and body text
+      observing that after a favor, intro, or calendar ask, the phrase does not
+      remove pressure; it keeps the request and makes refusal the receiver's
+      awkwardness to manage.
+    single:
+      headline: '"No pressure"'
+      body: After a favor, intro, or calendar ask, it doesn't remove pressure. It
+        keeps the request and makes the refusal your awkwardness to manage.
+    caption:
+      hook: The exclamation point does not help.
+      body: If the ask already costs you something, the disclaimer mostly protects the
+        sender from sounding demanding. You still have to make the no sound
+        easy.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner social ritual | Plan mode observation
+    renderDir: docs/assets/posts/20260501121628-no-pressure
+    renderedFiles:
+      - docs/assets/posts/20260501121628-no-pressure/post.png
