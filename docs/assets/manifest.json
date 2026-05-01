@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T00:19:38.512Z",
+  "updatedAt": "2026-05-01T01:32:45.599Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -244,6 +244,17 @@
         "assets/posts/20260430045019-later-as-a-no/slide-01.png",
         "assets/posts/20260430045019-later-as-a-no/slide-02.png",
         "assets/posts/20260430045019-later-as-a-no/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260430045240-seen-message",
+      "title": "Seen Message",
+      "kind": "single",
+      "topic": "attention as a real cost you pay-or refuse",
+      "angle": "When you half-pay attention, you’re not being neutral; you’re choosing what someone’s time becomes.",
+      "createdAt": "2026-04-30T04:52:40.250Z",
+      "renderedFiles": [
+        "assets/posts/20260430045240-seen-message/post.png"
       ]
     }
   ]

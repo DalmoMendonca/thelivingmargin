@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T00:19:38.485Z
+updatedAt: 2026-05-01T01:32:45.562Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1335,8 +1335,11 @@ items:
         answer, their plan quietly shifts; attention is the cost you refuse.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260430045240-seen-message
+    renderedFiles:
+      - docs/assets/posts/20260430045240-seen-message/post.png
   - id: 20260430045308-quick-call-time-borrowing
     createdAt: 2026-04-30T04:53:08.687Z
     source: ai
