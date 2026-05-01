@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T17:21:07.785Z
+updatedAt: 2026-05-01T18:20:23.005Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1928,3 +1928,66 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A0VeFKIertlditubQPaQ3_c"}}'
+  - id: 20260501182021-endorsement-not-input
+    createdAt: 2026-05-01T18:20:21.748Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Endorsement, Not Input
+    topic: signs a room is asking you to legitimize a decision instead of help make it
+    angle: Sometimes "thoughts?" is not an invitation to shape the decision; it is a
+      request to help make an already-made decision look shared.
+    fingerprint: already asking decision endorsement help input instead invitation
+      legitimize look made make not request room shape shared signs sometimes
+      thoughts
+    contentMode: list
+    voiceMode: sharp
+    quoteAttribution: ": null"
+    altText: "A 5-slide editorial carousel on warm paper in sage ash tones. It
+      offers a three-part diagnostic for when a meeting or review wants
+      endorsement rather than real input: the timing is already locked, the
+      feedback allowed is cosmetic, and dissent gets recoded as tone or
+      awkwardness. The final slide explains that the real ask is legitimacy, not
+      collaboration."
+    carousel:
+      - kicker: Diagnostic
+        headline: 3 signs the room wants your endorsement, not your input
+        body: When "any thoughts?" shows up after the decision is already packaged and
+          moving.
+      - kicker: "1"
+        headline: The timing is too late for real influence.
+        body: The final deck is done. The calendar is already booked. Feedback gets
+          requested after the plan has momentum, not while it can still change.
+      - kicker: "2"
+        headline: Your lane is cosmetic edits.
+        body: They welcome wording, formatting, a title tweak, maybe a date shift. The
+          minute you question the structure, the room acts like you changed the
+          assignment.
+      - kicker: "3"
+        headline: Disagreement gets recoded as tone or awkwardness.
+        body: A real objection becomes negativity, bad tone, or inconvenience. "We can
+          take that offline" usually means the information is less welcome than
+          the smoothness.
+      - kicker: So what is the ask?
+        headline: Legitimacy.
+        body: Once your participation is there to spread ownership, not shape the
+          choice, the pressure you feel is reputational, not collaborative. They
+          do not need help deciding. They need the decision to look shared.
+    caption:
+      hook: Late review is not fake by default.
+      body: It becomes honest when the owner names what is locked, what can still
+        move, and whether no is still allowed.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260501182021-endorsement-not-input
+    renderedFiles:
+      - docs/assets/posts/20260501182021-endorsement-not-input/slide-01.png
+      - docs/assets/posts/20260501182021-endorsement-not-input/slide-02.png
+      - docs/assets/posts/20260501182021-endorsement-not-input/slide-03.png
+      - docs/assets/posts/20260501182021-endorsement-not-input/slide-04.png
+      - docs/assets/posts/20260501182021-endorsement-not-input/slide-05.png
