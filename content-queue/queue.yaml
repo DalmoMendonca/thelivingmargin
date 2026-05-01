@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T08:35:33.837Z
+updatedAt: 2026-05-01T08:35:42.663Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1451,12 +1451,18 @@ items:
       hashtags:
         - "#meetings"
         - "#communication"
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner counterframe | Plan mode reframe
     renderDir: docs/assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored
     renderedFiles:
       - docs/assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"Av-dFb-oAnGBfujRky_8hSv"}}'
   - id: 20260430045428-name-repair-rules
     createdAt: 2026-04-30T04:54:28.623Z
     source: ai
