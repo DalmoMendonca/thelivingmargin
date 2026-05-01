@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T06:50:07.402Z",
+  "updatedAt": "2026-05-01T07:43:25.132Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -291,6 +291,21 @@
       "createdAt": "2026-04-30T04:53:08.687Z",
       "renderedFiles": [
         "assets/posts/20260430045308-quick-call-time-borrowing/post.png"
+      ]
+    },
+    {
+      "id": "20260430045428-name-repair-rules",
+      "title": "Name-Repair Rules",
+      "kind": "carousel",
+      "topic": "How to fix a mispronounced name without making the room pay for your embarrassment",
+      "angle": "The cleanest repair is brief correction plus quick return-anything longer turns your mistake into someone else’s job.",
+      "createdAt": "2026-04-30T04:54:28.623Z",
+      "renderedFiles": [
+        "assets/posts/20260430045428-name-repair-rules/slide-01.png",
+        "assets/posts/20260430045428-name-repair-rules/slide-02.png",
+        "assets/posts/20260430045428-name-repair-rules/slide-03.png",
+        "assets/posts/20260430045428-name-repair-rules/slide-04.png",
+        "assets/posts/20260430045428-name-repair-rules/slide-05.png"
       ]
     }
   ]
