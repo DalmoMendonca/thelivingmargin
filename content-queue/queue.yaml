@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T19:28:10.905Z
+updatedAt: 2026-05-01T19:28:30.274Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2038,11 +2038,17 @@ items:
       body: "The useful move is rarely sentimental. It is logistical: lower the
         audience, hold the place, let the problem stay small."
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner quiet witness | Plan mode story
     renderDir: docs/assets/posts/20260501192808-keep-your-place
     renderedFiles:
       - docs/assets/posts/20260501192808-keep-your-place/slide-01.png
       - docs/assets/posts/20260501192808-keep-your-place/slide-02.png
       - docs/assets/posts/20260501192808-keep-your-place/slide-03.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"A6uoCQ9nE9YvRvWoZHGsFiw"}}'
