@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-01T22:17:51.649Z",
+  "updatedAt": "2026-05-01T23:17:28.603Z",
   "items": [
-    {
-      "id": "20260430043340-quiet-dishes",
-      "title": "Quiet Dishes",
-      "kind": "single",
-      "topic": "using non-requests as conflict avoidance in shared life",
-      "angle": "If you won’t ask directly, you don’t just avoid a fight-you train the room to keep running on your silence.",
-      "createdAt": "2026-04-30T04:33:40.089Z",
-      "renderedFiles": [
-        "assets/posts/20260430043340-quiet-dishes/post.png"
-      ]
-    },
     {
       "id": "20260430043422-let-me-know-follow-ups",
       "title": "Let-Me-Know Follow-Ups",
@@ -483,6 +472,17 @@
         "assets/posts/20260501221730-after-the-fact-help/slide-01.png",
         "assets/posts/20260501221730-after-the-fact-help/slide-02.png",
         "assets/posts/20260501221730-after-the-fact-help/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260501231726-buy-relief",
+      "title": "Buy Relief",
+      "kind": "single",
+      "topic": "buying to end awkward sales pressure",
+      "angle": "Give permission to walk out without paying to escape a polite interaction.",
+      "createdAt": "2026-05-01T23:17:26.318Z",
+      "renderedFiles": [
+        "assets/posts/20260501231726-buy-relief/post.png"
       ]
     }
   ]
