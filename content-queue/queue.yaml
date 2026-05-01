@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T07:43:52.941Z
+updatedAt: 2026-05-01T08:35:33.837Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1452,8 +1452,11 @@ items:
         - "#meetings"
         - "#communication"
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored
+    renderedFiles:
+      - docs/assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored/post.png
   - id: 20260430045428-name-repair-rules
     createdAt: 2026-04-30T04:54:28.623Z
     source: ai

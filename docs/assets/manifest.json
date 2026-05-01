@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T07:43:52.967Z",
+  "updatedAt": "2026-05-01T08:35:33.869Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -291,6 +291,17 @@
       "createdAt": "2026-04-30T04:53:08.687Z",
       "renderedFiles": [
         "assets/posts/20260430045308-quick-call-time-borrowing/post.png"
+      ]
+    },
+    {
+      "id": "20260430045339-the-disclaimer-that-gets-you-ignored",
+      "title": "The Disclaimer That Gets You Ignored",
+      "kind": "single",
+      "topic": "Meeting pre-apologies and how disclaimers erase your question",
+      "angle": "A “not a dumb question” disclaimer isn’t politeness-it’s permission for the room to dismiss you, and the fix is removing the cushion.",
+      "createdAt": "2026-04-30T04:53:39.540Z",
+      "renderedFiles": [
+        "assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored/post.png"
       ]
     },
     {
