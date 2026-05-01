@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T20:17:25.101Z",
+  "updatedAt": "2026-05-01T21:16:47.785Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -459,6 +459,17 @@
       "createdAt": "2026-05-01T20:17:15.497Z",
       "renderedFiles": [
         "assets/posts/20260501201715-low-maintenance/post.png"
+      ]
+    },
+    {
+      "id": "20260501211647-the-doorway-rule",
+      "title": "The Doorway Rule",
+      "kind": "single",
+      "topic": "how to handle important conversations that start in exit-space",
+      "angle": "If a conversation has real stakes, do not try to settle it in a doorway, hallway, parking lot, or while packing up; move it into ten actual minutes in a real setting first.",
+      "createdAt": "2026-05-01T21:16:47.257Z",
+      "renderedFiles": [
+        "assets/posts/20260501211647-the-doorway-rule/post.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T20:17:25.071Z
+updatedAt: 2026-05-01T21:16:47.748Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2097,3 +2097,48 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AYyRcGuAb3LtwBkgFniVl8P"}}'
+  - id: 20260501211647-the-doorway-rule
+    createdAt: 2026-05-01T21:16:47.257Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: The Doorway Rule
+    topic: how to handle important conversations that start in exit-space
+    angle: If a conversation has real stakes, do not try to settle it in a doorway,
+      hallway, parking lot, or while packing up; move it into ten actual minutes
+      in a real setting first.
+    fingerprint: actual conversation conversations do doorway exit first hallway
+      handle has how if important into lot minutes move not packing parking real
+      rule setting settle space stakes start ten try up while
+    contentMode: advice
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: Editorial-style single Instagram post on a blue plaster background. The
+      headline says not to settle important conversations in a doorway. The body
+      names a coat on, a bag over the shoulder, and a half-closed laptop as
+      exit-space where people say the smallest version of what they mean. A
+      support line offers a short script to move the talk into ten actual
+      minutes, and the footer says changing the setting is respect, not dodging.
+    single:
+      headline: If it matters, don't settle it in a doorway.
+      body: "Coat on, bag over your shoulder, half-closed laptop: that's exit-space.
+        In rushed spaces, people say the smallest version of what they mean. If
+        it has stakes, give it ten actual minutes in a real place."
+      supportLine: "\"I want to answer this well, not fast. Give me ten minutes and
+        let's sit down.\""
+      footer: Changing the setting is respect, not dodging.
+    caption:
+      hook: Exit-space answers are where important things get minimized.
+      body: "That's when you agree too fast, apologize too soon, or call it nothing
+        because you're already halfway out. Try: \"I want to answer this well,
+        not fast. Can we do this after I put my bag down?"
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner field test | Plan mode advice
+    renderDir: docs/assets/posts/20260501211647-the-doorway-rule
+    renderedFiles:
+      - docs/assets/posts/20260501211647-the-doorway-rule/post.png
