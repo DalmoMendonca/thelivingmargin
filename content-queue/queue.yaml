@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T18:20:48.310Z
+updatedAt: 2026-05-01T19:28:10.905Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1997,3 +1997,52 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A6q8E4Y1Bf8xqzbtY-kKDxR"}}'
+  - id: 20260501192808-keep-your-place
+    createdAt: 2026-05-01T19:28:08.548Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Keep Your Place
+    topic: dignity-preserving help during a failed payment
+    angle: In a public embarrassment, the best help is often the practical move that
+      removes the audience and keeps your place intact.
+    fingerprint: audience best dignity during embarrassment failed help intact keep
+      keeps move often payment place practical preserving public removes
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: altTextAriaLabelledby
+    altText: Three-slide text carousel about a failed card payment at a grocery
+      checkout. Slide 1 describes a red card-reader beep, a stalled line, and
+      yogurt sweating on the belt. Slide 2 shows the cashier saying, "I can park
+      this for a minute," setting the bags behind the counter, and preserving
+      the customer’s place in line. Slide 3 resolves with the customer
+      returning, paying normally, and leaving without the moment becoming a
+      public event.
+    carousel:
+      - kicker: Checkout
+        headline: The card reader gave that red beep.
+        body: My yogurt was sweating on the belt. The line stalled in that small, awful
+          way that makes a minute feel longer.
+      - headline: '"I can park this for a minute."'
+        body: The cashier tapped a few keys, set the bags behind the counter, and waved
+          the next cart through. "You keep your place," she said. "Take a second
+          and come right back."
+      - headline: Two minutes later, I was back at the card reader.
+        body: Same cashier, same bags, no ceremony. She pulled the order back up, it
+          went through, and the evening kept moving.
+    caption:
+      hook: Real tact changes the conditions of a bad moment.
+      body: "The useful move is rarely sentimental. It is logistical: lower the
+        audience, hold the place, let the problem stay small."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260501192808-keep-your-place
+    renderedFiles:
+      - docs/assets/posts/20260501192808-keep-your-place/slide-01.png
+      - docs/assets/posts/20260501192808-keep-your-place/slide-02.png
+      - docs/assets/posts/20260501192808-keep-your-place/slide-03.png

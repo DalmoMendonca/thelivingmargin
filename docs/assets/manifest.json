@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T18:20:48.332Z",
+  "updatedAt": "2026-05-01T19:28:10.937Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -435,6 +435,19 @@
         "assets/posts/20260501182021-endorsement-not-input/slide-03.png",
         "assets/posts/20260501182021-endorsement-not-input/slide-04.png",
         "assets/posts/20260501182021-endorsement-not-input/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260501192808-keep-your-place",
+      "title": "Keep Your Place",
+      "kind": "carousel",
+      "topic": "dignity-preserving help during a failed payment",
+      "angle": "In a public embarrassment, the best help is often the practical move that removes the audience and keeps your place intact.",
+      "createdAt": "2026-05-01T19:28:08.548Z",
+      "renderedFiles": [
+        "assets/posts/20260501192808-keep-your-place/slide-01.png",
+        "assets/posts/20260501192808-keep-your-place/slide-02.png",
+        "assets/posts/20260501192808-keep-your-place/slide-03.png"
       ]
     }
   ]
