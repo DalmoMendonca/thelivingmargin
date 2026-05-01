@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T19:28:30.294Z",
+  "updatedAt": "2026-05-01T20:17:15.961Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -448,6 +448,17 @@
         "assets/posts/20260501192808-keep-your-place/slide-01.png",
         "assets/posts/20260501192808-keep-your-place/slide-02.png",
         "assets/posts/20260501192808-keep-your-place/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260501201715-low-maintenance",
+      "title": "Low-Maintenance",
+      "kind": "single",
+      "topic": "using agreeableness as cover for not naming a preference or need",
+      "angle": "The post asks whether calling yourself low-maintenance is sometimes a safer label for being afraid to become inconvenient once you want something specific.",
+      "createdAt": "2026-05-01T20:17:15.497Z",
+      "renderedFiles": [
+        "assets/posts/20260501201715-low-maintenance/post.png"
       ]
     }
   ]
