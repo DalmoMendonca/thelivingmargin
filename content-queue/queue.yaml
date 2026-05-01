@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T03:01:06.425Z
+updatedAt: 2026-05-01T05:13:11.058Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1119,8 +1119,10 @@ items:
         you’re forced to clarify later, after the room already decided.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: blocked
     notes: AI pipeline winner tradeoff | Plan mode question
+    lastError: "Pre-publish QC failed: Surface style charcoalGrain requires a dark
+      background palette like midnightPaper for legibility."
   - id: 20260430044835-owner-by-accident
     createdAt: 2026-04-30T04:48:35.947Z
     source: ai
@@ -1259,8 +1261,10 @@ items:
         off-ramp and slows your clarity.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: blocked
     notes: AI pipeline winner permission | Plan mode encouragement
+    lastError: "Pre-publish QC failed: Surface style charcoalGrain requires a dark
+      background palette like midnightPaper for legibility."
   - id: 20260430045203-just-checking-in-means-you-re-on-call
     createdAt: 2026-04-30T04:52:03.807Z
     source: ai
@@ -1386,8 +1390,11 @@ items:
         the calendar invite.
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260430045308-quick-call-time-borrowing
+    renderedFiles:
+      - docs/assets/posts/20260430045308-quick-call-time-borrowing/post.png
   - id: 20260430045339-the-disclaimer-that-gets-you-ignored
     createdAt: 2026-04-30T04:53:39.540Z
     source: ai

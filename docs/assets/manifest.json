@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T03:01:06.446Z",
+  "updatedAt": "2026-05-01T05:13:11.082Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -266,6 +266,17 @@
       "createdAt": "2026-04-30T04:52:40.250Z",
       "renderedFiles": [
         "assets/posts/20260430045240-seen-message/post.png"
+      ]
+    },
+    {
+      "id": "20260430045308-quick-call-time-borrowing",
+      "title": "Quick Call = Time Borrowing",
+      "kind": "single",
+      "topic": "Work messaging and the pressure to drop everything",
+      "angle": "“Quick call” is a request for your availability, not a plan for the work.",
+      "createdAt": "2026-04-30T04:53:08.687Z",
+      "renderedFiles": [
+        "assets/posts/20260430045308-quick-call-time-borrowing/post.png"
       ]
     }
   ]
