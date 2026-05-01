@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T21:16:57.929Z
+updatedAt: 2026-05-01T22:17:32.358Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2148,3 +2148,47 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Agzc78qISm2ND63q-A9I0M4"}}'
+  - id: 20260501221730-after-the-fact-help
+    createdAt: 2026-05-01T22:17:30.577Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: After-the-Fact Help
+    topic: retroactive generosity that avoids real inconvenience
+    angle: The people most upset you did not ask for help are sometimes the ones who
+      made asking feel expensive while it was still happening.
+    fingerprint: after ask asking avoids did expensive fact feel generosity
+      happening help inconvenience made most not ones people real retroactive
+      sometimes still upset was while who
+    contentMode: dialogue
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: Three-slide Instagram carousel on a dark charcoal textured background.
+      Slide 1 reads, "You should've said something." and, "You make it sound
+      like I didn't think of that." Slide 2 reads, "Last time I called late..."
+      and, "you sighed and said, 'So I have to change my plans now?'" Slide 3
+      reads, "The next day it was, 'Why didn't you tell me?'" and, "By then, it
+      wasn't costing you anything."
+    carousel:
+      - headline: "\"You should've said something.\""
+        body: "\"You make it sound like I didn't think of that.\""
+      - headline: '"Last time I called late..."'
+        body: "\"you sighed and said, 'So I have to change my plans now?'\""
+      - headline: "\"The next day it was, 'Why didn't you tell me?'\""
+        body: "\"By then, it wasn't costing you anything.\""
+    caption:
+      hook: Some people become easiest to need after it’s over.
+      body: Being willing in theory isn’t the same as being easy to call. People
+        remember the sigh before they believe the offer.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260501221730-after-the-fact-help
+    renderedFiles:
+      - docs/assets/posts/20260501221730-after-the-fact-help/slide-01.png
+      - docs/assets/posts/20260501221730-after-the-fact-help/slide-02.png
+      - docs/assets/posts/20260501221730-after-the-fact-help/slide-03.png

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T21:16:57.955Z",
+  "updatedAt": "2026-05-01T22:17:32.388Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -470,6 +470,19 @@
       "createdAt": "2026-05-01T21:16:47.257Z",
       "renderedFiles": [
         "assets/posts/20260501211647-the-doorway-rule/post.png"
+      ]
+    },
+    {
+      "id": "20260501221730-after-the-fact-help",
+      "title": "After-the-Fact Help",
+      "kind": "carousel",
+      "topic": "retroactive generosity that avoids real inconvenience",
+      "angle": "The people most upset you did not ask for help are sometimes the ones who made asking feel expensive while it was still happening.",
+      "createdAt": "2026-05-01T22:17:30.577Z",
+      "renderedFiles": [
+        "assets/posts/20260501221730-after-the-fact-help/slide-01.png",
+        "assets/posts/20260501221730-after-the-fact-help/slide-02.png",
+        "assets/posts/20260501221730-after-the-fact-help/slide-03.png"
       ]
     }
   ]
