@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T08:35:42.663Z
+updatedAt: 2026-05-01T09:32:14.142Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1523,3 +1523,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AS8RUTefUgAQ27HWC2uDE92"}}'
+  - id: 20260501093213-price-in-the-invite
+    createdAt: 2026-05-01T09:32:13.688Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Price in the Invite
+    topic: naming cost before social commitment hardens
+    angle: If a plan costs money, include the number in the invitation so people can
+      answer honestly before politeness gets involved.
+    fingerprint: answer before can commitment cost costs gets hardens honestly if
+      include invitation invite involved money naming number people plan
+      politeness price so social
+    contentMode: advice
+    voiceMode: sharp
+    altText: "Editorial text post that reads: Headline, 'Put the price in the
+      invite.' Body, 'If dinner is a $78 tasting menu or the tickets are $45,
+      put that in the group text; late numbers turn politeness into pressure.'"
+    single:
+      headline: Put the price in the invite.
+      body: If dinner is a $78 tasting menu or the tickets are $45, put that in the
+        group text; late numbers turn politeness into pressure.
+    caption:
+      hook: The awkward part is the late number.
+      body: When the ticket link or cover charge appears after everyone sounded in,
+        someone has to backpedal or overpay. That is how people get pushed
+        between budget and belonging.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner warning | Plan mode advice
+    renderDir: docs/assets/posts/20260501093213-price-in-the-invite
+    renderedFiles:
+      - docs/assets/posts/20260501093213-price-in-the-invite/post.png

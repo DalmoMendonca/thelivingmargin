@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T08:35:42.687Z",
+  "updatedAt": "2026-05-01T09:32:14.163Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -317,6 +317,17 @@
         "assets/posts/20260430045428-name-repair-rules/slide-03.png",
         "assets/posts/20260430045428-name-repair-rules/slide-04.png",
         "assets/posts/20260430045428-name-repair-rules/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260501093213-price-in-the-invite",
+      "title": "Price in the Invite",
+      "kind": "single",
+      "topic": "naming cost before social commitment hardens",
+      "angle": "If a plan costs money, include the number in the invitation so people can answer honestly before politeness gets involved.",
+      "createdAt": "2026-05-01T09:32:13.688Z",
+      "renderedFiles": [
+        "assets/posts/20260501093213-price-in-the-invite/post.png"
       ]
     }
   ]
