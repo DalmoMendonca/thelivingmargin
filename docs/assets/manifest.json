@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-30T23:16:45.749Z",
+  "updatedAt": "2026-05-01T00:19:09.408Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -216,6 +216,21 @@
       "createdAt": "2026-04-30T04:45:22.053Z",
       "renderedFiles": [
         "assets/posts/20260430044522-quick-thing-real-cost/post.png"
+      ]
+    },
+    {
+      "id": "20260430044613-scheduling-replies-that-offload-the-decision",
+      "title": "Scheduling Replies That Offload the Decision",
+      "kind": "carousel",
+      "topic": "Common scheduling phrases that transfer the decision (and stress) onto you",
+      "angle": "When a reply sounds agreeable but avoids specifying a choice, it quietly makes your calendar their fallback plan.",
+      "createdAt": "2026-04-30T04:46:13.628Z",
+      "renderedFiles": [
+        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-01.png",
+        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-02.png",
+        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-03.png",
+        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-04.png",
+        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-05.png"
       ]
     },
     {

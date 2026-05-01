@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-04-30T23:16:45.727Z
+updatedAt: 2026-05-01T00:19:09.382Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1014,8 +1014,15 @@ items:
       callToComment: Which phrase shows up most in your group chat?
       hashtags: []
     publishAttempts: 0
-    status: ready
+    status: rendered
     notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision
+    renderedFiles:
+      - docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-01.png
+      - docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-02.png
+      - docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-03.png
+      - docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-04.png
+      - docs/assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-05.png
   - id: 20260430044647-quarters-in-the-slot
     createdAt: 2026-04-30T04:46:47.971Z
     source: ai
