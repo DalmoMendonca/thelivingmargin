@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T13:31:04.804Z",
+  "updatedAt": "2026-05-01T14:25:09.753Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -376,6 +376,17 @@
         "assets/posts/20260501133047-wrong-order/slide-01.png",
         "assets/posts/20260501133047-wrong-order/slide-02.png",
         "assets/posts/20260501133047-wrong-order/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260501142509-send-me-the-question",
+      "title": "Send Me the Question",
+      "kind": "single",
+      "topic": "permission to ask for a question in writing before answering",
+      "angle": "Needing the question in writing is not a weakness; for some adults, it is how accuracy survives pressure.",
+      "createdAt": "2026-05-01T14:25:09.316Z",
+      "renderedFiles": [
+        "assets/posts/20260501142509-send-me-the-question/post.png"
       ]
     }
   ]
