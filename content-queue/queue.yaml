@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T10:31:44.796Z
+updatedAt: 2026-05-01T11:25:07.474Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1621,3 +1621,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ak-pvuPWIHX3cj1Momvk1Fw"}}'
+  - id: 20260501112507-recurring-plan
+    createdAt: 2026-05-01T11:25:07.040Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Recurring Plan
+    topic: calendar inertia in social commitments
+    angle: Ask whether a standing plan is still on the calendar because sending one
+      honest sentence feels more uncomfortable than keeping it.
+    fingerprint: ask because calendar commitments feels honest inertia keeping more
+      one plan recurring sending sentence social standing still than
+      uncomfortable whether
+    contentMode: question
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: Single editorial-style Instagram post on a warm paper background with a
+      sharp question about a standing dinner still being on the calendar because
+      one honest sentence has not been sent yet, followed by a body line showing
+      the unsent message in a group chat and a support line about losing whole
+      evenings to a yes no longer meant.
+    single:
+      headline: Is that standing dinner still on your calendar mainly because you
+        haven't sent one honest sentence yet?
+      body: "In the group chat, one sentence is still sitting unsent: \"I can't keep
+        doing this.\""
+      supportLine: Meanwhile, whole evenings keep going to a yes you already stopped
+        meaning.
+    caption:
+      hook: Recurring plans can run for months on social avoidance alone.
+      body: One unsent sentence can keep a dinner, call, or invite in motion. The real
+        drain is time spent performing a yes that's already expired.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260501112507-recurring-plan
+    renderedFiles:
+      - docs/assets/posts/20260501112507-recurring-plan/post.png

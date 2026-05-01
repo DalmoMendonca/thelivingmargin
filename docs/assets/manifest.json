@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T10:31:44.821Z",
+  "updatedAt": "2026-05-01T11:25:07.508Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -341,6 +341,17 @@
         "assets/posts/20260501103126-the-wine-list-rescue/slide-01.png",
         "assets/posts/20260501103126-the-wine-list-rescue/slide-02.png",
         "assets/posts/20260501103126-the-wine-list-rescue/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260501112507-recurring-plan",
+      "title": "Recurring Plan",
+      "kind": "single",
+      "topic": "calendar inertia in social commitments",
+      "angle": "Ask whether a standing plan is still on the calendar because sending one honest sentence feels more uncomfortable than keeping it.",
+      "createdAt": "2026-05-01T11:25:07.040Z",
+      "renderedFiles": [
+        "assets/posts/20260501112507-recurring-plan/post.png"
       ]
     }
   ]
