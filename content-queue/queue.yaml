@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T09:32:25.788Z
+updatedAt: 2026-05-01T10:31:27.357Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1565,3 +1565,53 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AyoYe9VxyAx9piGk1hI8YuX"}}'
+  - id: 20260501103126-the-wine-list-rescue
+    createdAt: 2026-05-01T10:31:26.548Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The Wine List Rescue
+    topic: being quietly spared a public class-performance embarrassment
+    angle: The most generous kind of expertise keeps someone in the room without
+      making them display what they do not know.
+    fingerprint: being class display do embarrassment expertise generous keeps kind
+      know list making most not performance public quietly rescue room someone
+      spared them they what wine without
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: ":null? սխLet's fix. Need valid JSON only. Reset.**}]}** Wait:
+      I need output valid JSON only matching schema. Let's provide correct
+      final.}}】}reinterpretation սխ.ենցേധൃത്തിയൻ<|vq_2950|>]}**}{"
+    altText: 'Three dark, textured carousel slides tell a restrained story about a
+      work dinner: a heavy wine list is handed over after a senior person says,
+      "you pick," a server quietly asks "lighter or fuller" with a finger on one
+      bottle, and the bottle arrives while the table simply keeps moving.'
+    carousel:
+      - kicker: Work dinner
+        headline: Then the heavy wine list landed in front of them.
+        body: Under the steakhouse lamp glow, a senior person slid it over and said,
+          easy as passing the salt, "you pick." The table went still for half a
+          beat-long enough to feel.
+      - headline: The server saw it before the table did.
+        body: 'One finger touched a bottle. Then, low and plain: "lighter or fuller?"
+          Not a lesson. Just a usable lane.'
+      - headline: The bottle arrived, and the room kept moving.
+        body: A pour, a nod, someone back to the story before the glass settled. The
+          embarrassment never got time to ripen.
+    caption:
+      hook: The best expertise keeps you in the room.
+      body: Real professionalism lowers another person’s self-consciousness. It
+        replaces a small public test with one plain choice. That’s the kind of
+        competence people remember.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260501103126-the-wine-list-rescue
+    renderedFiles:
+      - docs/assets/posts/20260501103126-the-wine-list-rescue/slide-01.png
+      - docs/assets/posts/20260501103126-the-wine-list-rescue/slide-02.png
+      - docs/assets/posts/20260501103126-the-wine-list-rescue/slide-03.png

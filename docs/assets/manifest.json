@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T09:32:25.810Z",
+  "updatedAt": "2026-05-01T10:31:27.377Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -328,6 +328,19 @@
       "createdAt": "2026-05-01T09:32:13.688Z",
       "renderedFiles": [
         "assets/posts/20260501093213-price-in-the-invite/post.png"
+      ]
+    },
+    {
+      "id": "20260501103126-the-wine-list-rescue",
+      "title": "The Wine List Rescue",
+      "kind": "carousel",
+      "topic": "being quietly spared a public class-performance embarrassment",
+      "angle": "The most generous kind of expertise keeps someone in the room without making them display what they do not know.",
+      "createdAt": "2026-05-01T10:31:26.548Z",
+      "renderedFiles": [
+        "assets/posts/20260501103126-the-wine-list-rescue/slide-01.png",
+        "assets/posts/20260501103126-the-wine-list-rescue/slide-02.png",
+        "assets/posts/20260501103126-the-wine-list-rescue/slide-03.png"
       ]
     }
   ]
