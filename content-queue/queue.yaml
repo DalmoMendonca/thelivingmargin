@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T15:20:43.465Z
+updatedAt: 2026-05-01T16:22:37.749Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1844,3 +1844,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AT0VervpDPy_5YoTyXHrMtn"}}'
+  - id: 20260501162237-count-the-spoons
+    createdAt: 2026-05-01T16:22:37.244Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Count the Spoons
+    topic: self-advertised integrity
+    angle: Repeated claims of honesty, loyalty, or being drama-free are often
+      marketing in place of evidence.
+    fingerprint: advertised being claims count drama evidence free honesty integrity
+      loyalty marketing often place repeated self spoons
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Ralph Waldo Emerson
+    altText: A severe editorial quote card on a dark charcoal-grain background.
+      Large centered text reads, “An ounce of performance is worth pounds of
+      promises.” Small attribution beneath reads Ralph Waldo Emerson.
+    single:
+      headline: “An ounce of performance is worth pounds of promises.”
+      body: Ralph Waldo Emerson
+    caption:
+      hook: Pre-announced character usually wants a head start.
+      body: On a first date or in a kickoff meeting, “trust me” and “I hate drama” can
+        precede a small boundary crossing. Treat the slogan as copy; watch what
+        they do next.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner application | Plan mode quote
+    renderDir: docs/assets/posts/20260501162237-count-the-spoons
+    renderedFiles:
+      - docs/assets/posts/20260501162237-count-the-spoons/post.png
