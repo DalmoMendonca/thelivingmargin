@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T14:25:18.240Z",
+  "updatedAt": "2026-05-01T15:20:35.814Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -387,6 +387,17 @@
       "createdAt": "2026-05-01T14:25:09.316Z",
       "renderedFiles": [
         "assets/posts/20260501142509-send-me-the-question/post.png"
+      ]
+    },
+    {
+      "id": "20260501152035-bad-at-networking",
+      "title": "Bad at Networking",
+      "kind": "single",
+      "topic": "self-blame after transactional work events",
+      "angle": "What people call being bad at networking is often just discomfort in conversations where they're deciding whether you're useful.",
+      "createdAt": "2026-05-01T15:20:35.129Z",
+      "renderedFiles": [
+        "assets/posts/20260501152035-bad-at-networking/post.png"
       ]
     }
   ]

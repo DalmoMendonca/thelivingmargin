@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T14:25:18.216Z
+updatedAt: 2026-05-01T15:20:35.787Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -1800,3 +1800,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AW9nbDMSfaVFBjEOdniYSRI"}}'
+  - id: 20260501152035-bad-at-networking
+    createdAt: 2026-05-01T15:20:35.129Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Bad at Networking
+    topic: self-blame after transactional work events
+    angle: What people call being bad at networking is often just discomfort in
+      conversations where they're deciding whether you're useful.
+    fingerprint: after at bad being blame call conversations deciding discomfort
+      events just networking often people self theyre transactional useful what
+      where whether work youre
+    contentMode: reframe
+    voiceMode: sharp
+    altText: "Single editorial-style Instagram post on warm paper texture. Headline
+      reads: '\"Bad at networking\"'. Body reads: 'is often just discomfort in a
+      room where people are sizing up your usefulness.' Support line reads:
+      'Name tag. Warm white wine. Eyes past your shoulder.'"
+    single:
+      headline: '"Bad at networking"'
+      body: is often just discomfort in a room where people are sizing up your
+        usefulness.
+      supportLine: Name tag. Warm white wine. Eyes past your shoulder.
+    caption:
+      hook: The shame usually comes from naming the room wrong.
+      body: "Once you see the exchange for what it is, you can play it deliberately:
+        tighter intro, faster exit, cleaner LinkedIn follow-up. Or stop
+        expecting warmth from a room built to sort."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260501152035-bad-at-networking
+    renderedFiles:
+      - docs/assets/posts/20260501152035-bad-at-networking/post.png
