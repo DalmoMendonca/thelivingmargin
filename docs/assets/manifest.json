@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01T05:13:21.170Z",
+  "updatedAt": "2026-05-01T06:49:42.344Z",
   "items": [
     {
       "id": "20260430043340-quiet-dishes",
@@ -255,6 +255,20 @@
         "assets/posts/20260430045019-later-as-a-no/slide-01.png",
         "assets/posts/20260430045019-later-as-a-no/slide-02.png",
         "assets/posts/20260430045019-later-as-a-no/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260430045203-just-checking-in-means-you-re-on-call",
+      "title": "Just Checking In Means You’re On Call",
+      "kind": "carousel",
+      "topic": "The social dodge inside “just checking in” after delay",
+      "angle": "“Just checking in” quietly turns your silence into their urgency-then asks you to do the emotional work of fixing it.",
+      "createdAt": "2026-04-30T04:52:03.807Z",
+      "renderedFiles": [
+        "assets/posts/20260430045203-just-checking-in-means-you-re-on-call/slide-01.png",
+        "assets/posts/20260430045203-just-checking-in-means-you-re-on-call/slide-02.png",
+        "assets/posts/20260430045203-just-checking-in-means-you-re-on-call/slide-03.png",
+        "assets/posts/20260430045203-just-checking-in-means-you-re-on-call/slide-04.png"
       ]
     },
     {
