@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T21:14:01.410Z
+updatedAt: 2026-05-02T22:13:38.074Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3244,3 +3244,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AF7WGRL23BCuR8M4IHApsL1"}}'
+  - id: 20260502221336-illusion-of-it
+    createdAt: 2026-05-02T22:13:36.621Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: signal
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Illusion of It
+    topic: mistaking constant contact for actual understanding
+    angle: William H. Whyte's line feels current because reactions, check-ins, and
+      quick acknowledgments can create a sense of alignment before anything is
+      clearly said, decided, or owned.
+    fingerprint: acknowledgments actual alignment anything because before can check
+      clearly constant contact create current decided feels h illusion ins line
+      mistaking owned quick reactions said sense understanding whytes william
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: William H. Whyte
+    altText: A dark charcoal-grain quote card with generous negative space. Main
+      text reads, “The great enemy of communication, we find, is the illusion of
+      it.” Beneath it, in smaller quieter type, reads, “William H. Whyte.”
+    single:
+      headline: “The great enemy of communication, we find, is the illusion of it.”
+      body: ""
+      supportLine: William H. Whyte
+    caption:
+      hook: A thumbs-up can end a thread without answering it.
+      body: A read receipt or “sounds good” can make something feel settled when
+        nobody owns the next move. That’s how a meeting recap becomes another
+        meeting.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner ordinary life | Plan mode quote
+    renderDir: docs/assets/posts/20260502221336-illusion-of-it
+    renderedFiles:
+      - docs/assets/posts/20260502221336-illusion-of-it/post.png

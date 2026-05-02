@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T21:14:01.444Z",
+  "updatedAt": "2026-05-02T22:13:38.114Z",
   "items": [
-    {
-      "id": "20260430045240-seen-message",
-      "title": "Seen Message",
-      "kind": "single",
-      "topic": "attention as a real cost you pay-or refuse",
-      "angle": "When you half-pay attention, you’re not being neutral; you’re choosing what someone’s time becomes.",
-      "createdAt": "2026-04-30T04:52:40.250Z",
-      "renderedFiles": [
-        "assets/posts/20260430045240-seen-message/post.png"
-      ]
-    },
     {
       "id": "20260430045308-quick-call-time-borrowing",
       "title": "Quick Call = Time Borrowing",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-02T21:13:52.849Z",
       "renderedFiles": [
         "assets/posts/20260502211352-correction-tax/post.png"
+      ]
+    },
+    {
+      "id": "20260502221336-illusion-of-it",
+      "title": "Illusion of It",
+      "kind": "single",
+      "topic": "mistaking constant contact for actual understanding",
+      "angle": "William H. Whyte's line feels current because reactions, check-ins, and quick acknowledgments can create a sense of alignment before anything is clearly said, decided, or owned.",
+      "createdAt": "2026-05-02T22:13:36.621Z",
+      "renderedFiles": [
+        "assets/posts/20260502221336-illusion-of-it/post.png"
       ]
     }
   ]
