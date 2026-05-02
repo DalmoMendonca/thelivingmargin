@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T03:01:01.980Z
+updatedAt: 2026-05-02T03:01:08.956Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2358,9 +2358,15 @@ items:
       body: You’re expected to smooth it over and stay warm anyway. The wait is one
         thing; being made to host it politely is another.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner recognition | Plan mode aphorism
     renderDir: docs/assets/posts/20260502030100-available-minutes
     renderedFiles:
       - docs/assets/posts/20260502030100-available-minutes/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"AJME1jpgS7AmG4D8ldgGXc7"}}'
