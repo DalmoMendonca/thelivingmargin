@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T03:01:08.956Z
+updatedAt: 2026-05-02T04:14:42.335Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2370,3 +2370,66 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AJME1jpgS7AmG4D8ldgGXc7"}}'
+  - id: 20260502041441-the-expensive-no
+    createdAt: 2026-05-02T04:14:41.140Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The Expensive No
+    topic: three ways casual requests are built to make refusal feel rude
+    angle: Some requests sound small only because the social cost has been moved
+      from the favor itself onto the person who might say no.
+    fingerprint: because been built casual cost expensive favor feel from has itself
+      make might moved no only onto person refusal requests rude say small
+      social some sound three ways who
+    contentMode: list
+    voiceMode: sharp
+    altText: "A five-slide editorial carousel about how casual requests can make
+      refusal feel rude. Slide 1 introduces three signs a small ask is not
+      actually low-pressure. Slide 2 covers public asks in a group chat, at the
+      dinner table, or on speakerphone, where saying no means managing the room.
+      Slide 3 focuses on minimizer phrases like “just a quick favor,” “real
+      quick,” and “it’s nothing,” which make hesitation look oversized. Slide 4
+      shows how no is treated as needing a reason, with “Why, what do you have
+      going on?” Slide 5 distinguishes a simple request from a loaded one: if
+      you have to manage optics, comfort, and explanation, the wording was
+      casual but the ask was not."
+    carousel:
+      - kicker: Diagnostic
+        headline: 3 signs a small ask isn’t actually low-pressure
+        body: When the favor sounds casual but the social cost lands on the person who
+          might say no.
+      - kicker: "1"
+        headline: They ask with an audience
+        body: In the group chat, at the dinner table, on speakerphone. Now you’re not
+          just declining a favor; you’re managing the room.
+      - kicker: "2"
+        headline: They keep calling it small
+        body: “Just a quick favor.” “Real quick.” “It’s nothing.” The task gets
+          described as tiny so your hesitation looks oversized.
+      - kicker: "3"
+        headline: Your no has to come with a reason
+        body: “Why, what do you have going on?” When no turns into a follow-up
+          interview, it was never allowed to be simple.
+      - kicker: The tell
+        headline: A simple request leaves you a choice
+        body: A loaded one makes you handle optics, comfort, and explanation. Once you
+          have to manage the room, the wording was casual; the ask was not.
+    caption:
+      hook: Not every loaded ask is calculated.
+      body: Sometimes it’s just habit. People can call something easy while making
+        refusal expensive. Intent can be fuzzy; the structure usually isn’t.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260502041441-the-expensive-no
+    renderedFiles:
+      - docs/assets/posts/20260502041441-the-expensive-no/slide-01.png
+      - docs/assets/posts/20260502041441-the-expensive-no/slide-02.png
+      - docs/assets/posts/20260502041441-the-expensive-no/slide-03.png
+      - docs/assets/posts/20260502041441-the-expensive-no/slide-04.png
+      - docs/assets/posts/20260502041441-the-expensive-no/slide-05.png

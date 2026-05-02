@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-05-02T03:01:08.978Z",
+  "updatedAt": "2026-05-02T04:14:42.372Z",
   "items": [
-    {
-      "id": "20260430043618-emoji-silence-live-schedule",
-      "title": "Emoji Silence, Live Schedule",
-      "kind": "carousel",
-      "topic": "Emoji reactions replacing real replies in group chats",
-      "angle": "A reaction is a social dodge: it acknowledges presence without taking the small, embarrassing step of committing to the answer.",
-      "createdAt": "2026-04-30T04:36:18.053Z",
-      "renderedFiles": [
-        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-01.png",
-        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-02.png",
-        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-03.png",
-        "assets/posts/20260430043618-emoji-silence-live-schedule/slide-04.png"
-      ]
-    },
     {
       "id": "20260430043704-sometime-next-week",
       "title": "Sometime Next Week",
@@ -477,6 +463,21 @@
       "createdAt": "2026-05-02T03:01:00.238Z",
       "renderedFiles": [
         "assets/posts/20260502030100-available-minutes/post.png"
+      ]
+    },
+    {
+      "id": "20260502041441-the-expensive-no",
+      "title": "The Expensive No",
+      "kind": "carousel",
+      "topic": "three ways casual requests are built to make refusal feel rude",
+      "angle": "Some requests sound small only because the social cost has been moved from the favor itself onto the person who might say no.",
+      "createdAt": "2026-05-02T04:14:41.140Z",
+      "renderedFiles": [
+        "assets/posts/20260502041441-the-expensive-no/slide-01.png",
+        "assets/posts/20260502041441-the-expensive-no/slide-02.png",
+        "assets/posts/20260502041441-the-expensive-no/slide-03.png",
+        "assets/posts/20260502041441-the-expensive-no/slide-04.png",
+        "assets/posts/20260502041441-the-expensive-no/slide-05.png"
       ]
     }
   ]
