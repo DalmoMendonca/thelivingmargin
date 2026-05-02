@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-02T00:19:31.948Z",
+  "updatedAt": "2026-05-02T01:40:23.783Z",
   "items": [
-    {
-      "id": "20260430043458-the-missing-detail",
-      "title": "The Missing Detail",
-      "kind": "carousel",
-      "topic": "Embarrassment dissolves when you name the exact missing thing",
-      "angle": "The threshold doesn’t open for vague apologies-it opens when you offer one usable detail, no bargaining for forgiveness.",
-      "createdAt": "2026-04-30T04:34:58.474Z",
-      "renderedFiles": [
-        "assets/posts/20260430043458-the-missing-detail/slide-01.png",
-        "assets/posts/20260430043458-the-missing-detail/slide-02.png",
-        "assets/posts/20260430043458-the-missing-detail/slide-03.png"
-      ]
-    },
     {
       "id": "20260430043547-polite-vagueness-is-a-cost",
       "title": "Polite Vagueness Is a Cost",
@@ -479,6 +466,17 @@
       "createdAt": "2026-05-02T00:19:22.441Z",
       "renderedFiles": [
         "assets/posts/20260502001922-reacted-not-answered/post.png"
+      ]
+    },
+    {
+      "id": "20260502014022-small-exceptions",
+      "title": "Small Exceptions",
+      "kind": "single",
+      "topic": "polite entitlement disguised as minor inconvenience",
+      "angle": "Everyday selfishness often arrives looking courteous while quietly assuming the cost belongs to someone else.",
+      "createdAt": "2026-05-02T01:40:22.342Z",
+      "renderedFiles": [
+        "assets/posts/20260502014022-small-exceptions/post.png"
       ]
     }
   ]

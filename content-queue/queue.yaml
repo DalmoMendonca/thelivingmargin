@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T00:19:31.926Z
+updatedAt: 2026-05-02T01:40:23.750Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2279,3 +2279,42 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AdwETyAkarFeAO_RVwHb6Dp"}}'
+  - id: 20260502014022-small-exceptions
+    createdAt: 2026-05-02T01:40:22.342Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Small Exceptions
+    topic: polite entitlement disguised as minor inconvenience
+    angle: Everyday selfishness often arrives looking courteous while quietly
+      assuming the cost belongs to someone else.
+    fingerprint: arrives as assuming belongs cost courteous disguised else
+      entitlement everyday exceptions inconvenience looking minor often polite
+      quietly selfishness small someone while
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Jane Addams
+    altText: A dark editorial quote card on a charcoal-grain texture with wide
+      margins. Large centered text reads, "The essence of immorality is the
+      tendency to make an exception of myself." Small footer attribution reads
+      "Jane Addams."
+    single:
+      headline: '"The essence of immorality is the tendency to make an exception of
+        myself."'
+      body: ""
+      footer: Jane Addams
+    caption:
+      hook: Some selfishness arrives wearing good manners.
+      body: It’s the person who shows up late to dinner, then asks for a recap like
+        the night paused for them. The apology is manners; the assumption is the
+        tell.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner ordinary life | Plan mode quote
+    renderDir: docs/assets/posts/20260502014022-small-exceptions
+    renderedFiles:
+      - docs/assets/posts/20260502014022-small-exceptions/post.png
