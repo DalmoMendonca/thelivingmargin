@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T18:15:45.177Z",
+  "updatedAt": "2026-05-02T19:23:19.401Z",
   "items": [
-    {
-      "id": "20260430044835-owner-by-accident",
-      "title": "Owner-by-accident",
-      "kind": "single",
-      "topic": "claiming ownership without agreeing to the deliverable",
-      "angle": "If you’re quietly made the owner, you fix it with one written scope-and-deadline sentence before the ambiguity hardens.",
-      "createdAt": "2026-04-30T04:48:35.947Z",
-      "renderedFiles": [
-        "assets/posts/20260430044835-owner-by-accident/post.png"
-      ]
-    },
     {
       "id": "20260430045019-later-as-a-no",
       "title": "Later as a No",
@@ -474,6 +463,19 @@
       "createdAt": "2026-05-02T18:15:35.335Z",
       "renderedFiles": [
         "assets/posts/20260502181535-design-the-help/post.png"
+      ]
+    },
+    {
+      "id": "20260502192318-after-the-coat-is-off",
+      "title": "After the Coat Is Off",
+      "kind": "carousel",
+      "topic": "withholding a changed plan until arrival makes objection socially expensive",
+      "angle": "Sometimes the manipulation isn't the decision. It's waiting to reveal it until objection would look rude.",
+      "createdAt": "2026-05-02T19:23:18.024Z",
+      "renderedFiles": [
+        "assets/posts/20260502192318-after-the-coat-is-off/slide-01.png",
+        "assets/posts/20260502192318-after-the-coat-is-off/slide-02.png",
+        "assets/posts/20260502192318-after-the-coat-is-off/slide-03.png"
       ]
     }
   ]

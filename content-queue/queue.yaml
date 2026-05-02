@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T18:15:45.154Z
+updatedAt: 2026-05-02T19:23:19.359Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3107,3 +3107,51 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AXtMAE6sxIh1ATw_zDArAcF"}}'
+  - id: 20260502192318-after-the-coat-is-off
+    createdAt: 2026-05-02T19:23:18.024Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: After the Coat Is Off
+    topic: withholding a changed plan until arrival makes objection socially expensive
+    angle: Sometimes the manipulation isn't the decision. It's waiting to reveal it
+      until objection would look rude.
+    fingerprint: after arrival changed coat decision expensive isnt its look makes
+      manipulation objection off plan reveal rude socially sometimes until
+      waiting withholding would
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: "A three-slide dialogue carousel on a dark charcoal-textured
+      background. Slide 1: someone arrives, says hello in the doorway, notices
+      their coat is already on a chair and the table is set, then learns the
+      other person is leaving early. Slide 2: the other person explains they did
+      not mention it at the door because they did not want to make it a whole
+      thing. Slide 3: the first person answers that the real issue was waiting
+      until after arrival, when any honest reaction would look rude."
+    carousel:
+      - kicker: Doorway hello
+        headline: "\"Wait, you're leaving early?\""
+        body: "\"I just walked in. My coat's on the chair and the table's already
+          set.\""
+      - headline: "\"I didn't say it at the door.\""
+        body: "\"I didn't want to make it a whole thing.\""
+      - headline: "\"You didn't avoid a whole thing.\""
+        body: "\"You waited till my coat was off. It wasn't the change. It was making
+          any honest reaction look rude.\""
+    caption:
+      hook: Sometimes the timing is the trick.
+      body: Telling someone after they're already settled in can be a way of managing
+        their reaction. Once honesty looks impolite, silence starts doing the
+        work.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260502192318-after-the-coat-is-off
+    renderedFiles:
+      - docs/assets/posts/20260502192318-after-the-coat-is-off/slide-01.png
+      - docs/assets/posts/20260502192318-after-the-coat-is-off/slide-02.png
+      - docs/assets/posts/20260502192318-after-the-coat-is-off/slide-03.png
