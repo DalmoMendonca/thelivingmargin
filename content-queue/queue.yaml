@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T11:16:10.369Z
+updatedAt: 2026-05-02T12:14:14.817Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2760,3 +2760,37 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A8y1_lRuXR6iXlX86FdLnwI"}}'
+  - id: 20260502121413-before-you-knew
+    createdAt: 2026-05-02T12:14:13.162Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Before You Knew
+    topic: nostalgia that is really grief for a less-informed self
+    angle: What feels like missing the past is sometimes grief for the self who had
+      not yet learned how the story would end.
+    fingerprint: before end feels grief had how informed knew learned less like
+      missing nostalgia not past really self sometimes story what who would yet
+    contentMode: reframe
+    voiceMode: reflective
+    altText: 'Single-image Instagram post on a warm paper background in sage ash
+      tones. Text reads: "You think you miss that time. Sometimes you miss who
+      you were before you knew how it would end."'
+    single:
+      headline: You think you miss that time.
+      body: Sometimes you miss who you were before you knew how it would end.
+    caption:
+      hook: Going back usually makes the feeling sharper, not smaller.
+      body: Reopening the old message thread will not give you the version of you who
+        had not read the rest yet. What changed is what you know now, and the
+        thread cannot undo that.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260502121413-before-you-knew
+    renderedFiles:
+      - docs/assets/posts/20260502121413-before-you-knew/post.png
