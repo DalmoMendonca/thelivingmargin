@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T01:40:32.252Z",
+  "updatedAt": "2026-05-02T03:01:02.022Z",
   "items": [
-    {
-      "id": "20260430043547-polite-vagueness-is-a-cost",
-      "title": "Polite Vagueness Is a Cost",
-      "kind": "single",
-      "topic": "Sending the plain request instead of smoothing it into ambiguity",
-      "angle": "You’re allowed to send the sentence you actually mean; the “just checking” edit mostly buys you more waiting.",
-      "createdAt": "2026-04-30T04:35:47.315Z",
-      "renderedFiles": [
-        "assets/posts/20260430043547-polite-vagueness-is-a-cost/post.png"
-      ]
-    },
     {
       "id": "20260430043618-emoji-silence-live-schedule",
       "title": "Emoji Silence, Live Schedule",
@@ -477,6 +466,17 @@
       "createdAt": "2026-05-02T01:40:22.342Z",
       "renderedFiles": [
         "assets/posts/20260502014022-small-exceptions/post.png"
+      ]
+    },
+    {
+      "id": "20260502030100-available-minutes",
+      "title": "Available Minutes",
+      "kind": "single",
+      "topic": "repeated lateness without warning in friendship, dating, or work",
+      "angle": "The insult in repeated lateness without an update is less the delay than the assumption that your time would stay open and absorb it.",
+      "createdAt": "2026-05-02T03:01:00.238Z",
+      "renderedFiles": [
+        "assets/posts/20260502030100-available-minutes/post.png"
       ]
     }
   ]

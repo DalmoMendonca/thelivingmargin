@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T01:40:32.228Z
+updatedAt: 2026-05-02T03:01:01.980Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2324,3 +2324,43 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Abp95sFX2WUQX2YG4YixCh4"}}'
+  - id: 20260502030100-available-minutes
+    createdAt: 2026-05-02T03:01:00.238Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Available Minutes
+    topic: repeated lateness without warning in friendship, dating, or work
+    angle: The insult in repeated lateness without an update is less the delay than
+      the assumption that your time would stay open and absorb it.
+    fingerprint: absorb assumption available dating delay friendship insult lateness
+      less minutes open repeated stay than time update warning without work
+      would
+    contentMode: aphorism
+    voiceMode: sharp
+    quoteAttribution: ": null? Wait must be valid JSON only. Let's correct.}'}?}
+      to=final code  oqaatigassistant to=final  ҭJSON цҳауеит ​ឿងuser to=final
+      code ҳәеитjson  博悦json  pourquoi లేదుassistant to=final  style? No. Need
+      resend proper JSON only.{"
+    altText: "Single-image post on a blue plaster background with the text: “At
+      twelve minutes and no text, it’s not the delay; it’s the assumption your
+      time would keep itself open for them.” Below it: “That’s why the cooling
+      coffee stings.”"
+    single:
+      headline: At twelve minutes and no text, it’s not the delay; it’s the assumption
+        your time would keep itself open for them.
+      body: That’s why the cooling coffee stings.
+    caption:
+      hook: The awkward part is the performance when they finally arrive.
+      body: You’re expected to smooth it over and stay warm anyway. The wait is one
+        thing; being made to host it politely is another.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260502030100-available-minutes
+    renderedFiles:
+      - docs/assets/posts/20260502030100-available-minutes/post.png
