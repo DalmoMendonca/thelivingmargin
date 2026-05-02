@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T06:36:20.713Z
+updatedAt: 2026-05-02T07:32:55.720Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2528,3 +2528,56 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ak2lO-wabVu3fdIy4NOC6fi"}}'
+  - id: 20260502073253-tracked-changes
+    createdAt: 2026-05-02T07:32:53.943Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Tracked Changes
+    topic: competent discretion during a public mistake
+    angle: The help people remember most is often the kind that fixes your exposure
+      before your embarrassment becomes the room's event.
+    fingerprint: becomes before changes competent discretion during embarrassment
+      event exposure fixes help kind mistake most often people public remember
+      rooms tracked
+    contentMode: story
+    voiceMode: reflective
+    altText: Three-slide carousel set at a copy shop before an interview. A resume
+      opens with tracked changes and comment bubbles visible while a line forms
+      behind the customer. The clerk quietly turns the monitor a few inches
+      away, says, "Happens all the time. Give me a second," removes the markup,
+      and reprints. The customer leaves with a warm, neatly tapped stack of
+      clean pages and a sense of relief.
+    carousel:
+      - kicker: Copy shop counter
+        headline: Forty minutes before an interview, the wrong version opened.
+        body: It was my resume with tracked changes still on. Comment bubbles ran down
+          the margin. One said, "cut this, sounds bitter." A line was forming
+          behind me.
+      - headline: The clerk looked once, then turned the monitor a few inches away.
+        body: Just enough that the next person had nothing to read. Then she said,
+          "Happens all the time. Give me a second," switched off the markup, and
+          ran the file again.
+      - kicker: Walkout
+        headline: She handed over the new copies like nothing had happened.
+        body: The stack was warm and neatly tapped square on the counter, clean black
+          type all the way down. By the time I hit the sidewalk, it had already
+          shrunk back to size.
+    caption:
+      hook: The best help makes a bad moment smaller before anyone else can enlarge
+        it.
+      body: Practical discretion buys back your footing. It keeps one visible mistake
+        from becoming your public shape. Some people know how to do that without
+        adding themselves to the story.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness revised | Plan mode story
+    renderDir: docs/assets/posts/20260502073253-tracked-changes
+    renderedFiles:
+      - docs/assets/posts/20260502073253-tracked-changes/slide-01.png
+      - docs/assets/posts/20260502073253-tracked-changes/slide-02.png
+      - docs/assets/posts/20260502073253-tracked-changes/slide-03.png

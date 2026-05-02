@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T06:36:20.739Z",
+  "updatedAt": "2026-05-02T07:32:55.755Z",
   "items": [
-    {
-      "id": "20260430043821-sure-is-a-placeholder",
-      "title": "Sure Is a Placeholder",
-      "kind": "single",
-      "topic": "When a quick yes is social relief, not commitment",
-      "angle": "The default is “I changed my mind.” The useful frame is “I bargained for comfort, and it got scheduled.”",
-      "createdAt": "2026-04-30T04:38:21.694Z",
-      "renderedFiles": [
-        "assets/posts/20260430043821-sure-is-a-placeholder/post.png"
-      ]
-    },
     {
       "id": "20260430043852-rationing-attention",
       "title": "Rationing Attention",
@@ -476,6 +465,19 @@
       "createdAt": "2026-05-02T06:36:11.500Z",
       "renderedFiles": [
         "assets/posts/20260502063611-write-down-the-date/post.png"
+      ]
+    },
+    {
+      "id": "20260502073253-tracked-changes",
+      "title": "Tracked Changes",
+      "kind": "carousel",
+      "topic": "competent discretion during a public mistake",
+      "angle": "The help people remember most is often the kind that fixes your exposure before your embarrassment becomes the room's event.",
+      "createdAt": "2026-05-02T07:32:53.943Z",
+      "renderedFiles": [
+        "assets/posts/20260502073253-tracked-changes/slide-01.png",
+        "assets/posts/20260502073253-tracked-changes/slide-02.png",
+        "assets/posts/20260502073253-tracked-changes/slide-03.png"
       ]
     }
   ]
