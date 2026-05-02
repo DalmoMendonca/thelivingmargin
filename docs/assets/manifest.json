@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T05:49:10.452Z",
+  "updatedAt": "2026-05-02T06:36:11.992Z",
   "items": [
-    {
-      "id": "20260430043748-affectionate-exit",
-      "title": "Affectionate Exit",
-      "kind": "single",
-      "topic": "Post-fight texts used to dodge repair",
-      "angle": "An affectionate sign-off after a fight often functions as an off-ramp from accountability, not an arrival to resolution.",
-      "createdAt": "2026-04-30T04:37:48.465Z",
-      "renderedFiles": [
-        "assets/posts/20260430043748-affectionate-exit/post.png"
-      ]
-    },
     {
       "id": "20260430043821-sure-is-a-placeholder",
       "title": "Sure Is a Placeholder",
@@ -476,6 +465,17 @@
       "createdAt": "2026-05-02T05:49:00.107Z",
       "renderedFiles": [
         "assets/posts/20260502054900-editing-around-power/post.png"
+      ]
+    },
+    {
+      "id": "20260502063611-write-down-the-date",
+      "title": "Write Down the Date",
+      "kind": "single",
+      "topic": "making care concrete instead of trusting yourself to remember",
+      "angle": "If someone mentions something hard or important, note the date before the conversation ends so your care comes back with specifics.",
+      "createdAt": "2026-05-02T06:36:11.500Z",
+      "renderedFiles": [
+        "assets/posts/20260502063611-write-down-the-date/post.png"
       ]
     }
   ]

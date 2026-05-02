@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T05:49:10.430Z
+updatedAt: 2026-05-02T06:36:11.948Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2485,3 +2485,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AXxVSrhs6vhxvmS49DJj1q1"}}'
+  - id: 20260502063611-write-down-the-date
+    createdAt: 2026-05-02T06:36:11.500Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Write Down the Date
+    topic: making care concrete instead of trusting yourself to remember
+    angle: If someone mentions something hard or important, note the date before the
+      conversation ends so your care comes back with specifics.
+    fingerprint: back before care comes concrete conversation date down ends hard if
+      important instead making mentions note remember so someone something
+      specifics trusting write yourself
+    contentMode: advice
+    voiceMode: sharp
+    altText: Single editorial-style post on a notebook-cream surface with a sage-ash
+      palette. The text tells readers to write down the date before the
+      conversation ends, using a Tuesday scan and a Wednesday reminder as the
+      example, and contrasts good intentions with specific follow-up.
+    single:
+      headline: Before the conversation ends, write down the date.
+      body: "Try: \"Your scan is Tuesday, right? I'm setting a reminder for
+        Wednesday.\" Good intentions are warm. Specific follow-up is care that
+        survives tomorrow."
+    caption:
+      hook: Memory is not a care system.
+      body: If their interview is Thursday, set the reminder before you hang up. "How
+        did Thursday's interview go? " feels different from "Just checking in.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner script | Plan mode advice
+    renderDir: docs/assets/posts/20260502063611-write-down-the-date
+    renderedFiles:
+      - docs/assets/posts/20260502063611-write-down-the-date/post.png
