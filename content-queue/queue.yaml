@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T16:15:36.546Z
+updatedAt: 2026-05-02T17:16:55.758Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3015,3 +3015,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AD_1EwgjanQuUNMywcKaKra"}}'
+  - id: 20260502171654-low-maintenance
+    createdAt: 2026-05-02T17:16:54.125Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Low-Maintenance
+    topic: using flexibility as cover for fear of being refused
+    angle: A sharp question that frames being "easy" in the group chat as an alibi
+      for staying liked without risking a direct no.
+    fingerprint: alibi as being chat cover direct easy fear flexibility frames group
+      liked low maintenance no question refused risking sharp staying using
+      without
+    contentMode: question
+    voiceMode: sharp
+    altText: A spare editorial-style post on a blue plaster background. The headline
+      asks, 'In the group chat, is being "easy" just how you stay liked without
+      risking a no?' Smaller text reads, 'Pleasant in the chat. Quietly
+      resentful at the table.'
+    single:
+      headline: In the group chat, is being "easy" just how you stay liked without
+        risking a no?
+      body: Pleasant in the chat. Quietly resentful at the table.
+    caption:
+      hook: Silence still picks a winner.
+      body: If you never name the restaurant or meeting time, the most decisive person
+        decides. Your preference doesn’t disappear; it turns into private
+        resentment.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260502171654-low-maintenance
+    renderedFiles:
+      - docs/assets/posts/20260502171654-low-maintenance/post.png

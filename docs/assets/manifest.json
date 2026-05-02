@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T16:15:36.574Z",
+  "updatedAt": "2026-05-02T17:16:55.799Z",
   "items": [
-    {
-      "id": "20260430044522-quick-thing-real-cost",
-      "title": "Quick Thing, Real Cost",
-      "kind": "single",
-      "topic": "Work messages that borrow your time",
-      "angle": "The phrase “one quick thing” usually means your calendar is the buffer they’re assuming you’ll provide.",
-      "createdAt": "2026-04-30T04:45:22.053Z",
-      "renderedFiles": [
-        "assets/posts/20260430044522-quick-thing-real-cost/post.png"
-      ]
-    },
     {
       "id": "20260430044613-scheduling-replies-that-offload-the-decision",
       "title": "Scheduling Replies That Offload the Decision",
@@ -478,6 +467,17 @@
         "assets/posts/20260502161516-the-first-question/slide-01.png",
         "assets/posts/20260502161516-the-first-question/slide-02.png",
         "assets/posts/20260502161516-the-first-question/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260502171654-low-maintenance",
+      "title": "Low-Maintenance",
+      "kind": "single",
+      "topic": "using flexibility as cover for fear of being refused",
+      "angle": "A sharp question that frames being \"easy\" in the group chat as an alibi for staying liked without risking a direct no.",
+      "createdAt": "2026-05-02T17:16:54.125Z",
+      "renderedFiles": [
+        "assets/posts/20260502171654-low-maintenance/post.png"
       ]
     }
   ]
