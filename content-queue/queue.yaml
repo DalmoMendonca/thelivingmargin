@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T17:17:02.550Z
+updatedAt: 2026-05-02T18:15:36.698Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3058,3 +3058,46 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AwzsE-gK_33kicDbHgijdGa"}}'
+  - id: 20260502181535-design-the-help
+    createdAt: 2026-05-02T18:15:35.335Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Design the Help
+    topic: making a clear ask without creating hidden labor
+    angle: When you ask for help, name the scope, timing, and smallest useful
+      version so the other person does not have to design the help for you.
+    fingerprint: ask clear creating design does have help hidden labor making name
+      not other person scope smallest so timing useful version when without
+    contentMode: advice
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: "Single Instagram post on a notebook-cream background with sage-ash
+      accents. The card says to ask in three parts: what you need, by when, and
+      the smallest useful version. It adds that flexibility can sound polite but
+      become hidden labor. A sample script asks someone to read the first page
+      at a draft link by tomorrow morning, with a fallback of 15 minutes on the
+      opening. The footer rule says not to send 'when you have a sec' texts this
+      week."
+    single:
+      headline: Ask in three parts.
+      body: Say what you need, by when, and the smallest useful version. Flexibility
+        can sound polite. It can also become hidden labor.
+      supportLine: Could you read the first page at this draft link by tomorrow
+        morning? If not, 15 minutes on the opening helps.
+      footer: "Rule this week: don't send \"when you have a sec\" texts."
+    caption:
+      hook: Vague asks feel softer.
+      body: Embarrassment makes specificity feel pushy. But a clear ask lets someone
+        answer honestly and help in proportion. A full read, a first page, and
+        15 minutes are different favors.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner field test | Plan mode advice
+    renderDir: docs/assets/posts/20260502181535-design-the-help
+    renderedFiles:
+      - docs/assets/posts/20260502181535-design-the-help/post.png

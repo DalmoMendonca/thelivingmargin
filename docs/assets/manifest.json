@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-02T17:17:02.587Z",
+  "updatedAt": "2026-05-02T18:15:36.730Z",
   "items": [
-    {
-      "id": "20260430044613-scheduling-replies-that-offload-the-decision",
-      "title": "Scheduling Replies That Offload the Decision",
-      "kind": "carousel",
-      "topic": "Common scheduling phrases that transfer the decision (and stress) onto you",
-      "angle": "When a reply sounds agreeable but avoids specifying a choice, it quietly makes your calendar their fallback plan.",
-      "createdAt": "2026-04-30T04:46:13.628Z",
-      "renderedFiles": [
-        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-01.png",
-        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-02.png",
-        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-03.png",
-        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-04.png",
-        "assets/posts/20260430044613-scheduling-replies-that-offload-the-decision/slide-05.png"
-      ]
-    },
     {
       "id": "20260430044835-owner-by-accident",
       "title": "Owner-by-accident",
@@ -478,6 +463,17 @@
       "createdAt": "2026-05-02T17:16:54.125Z",
       "renderedFiles": [
         "assets/posts/20260502171654-low-maintenance/post.png"
+      ]
+    },
+    {
+      "id": "20260502181535-design-the-help",
+      "title": "Design the Help",
+      "kind": "single",
+      "topic": "making a clear ask without creating hidden labor",
+      "angle": "When you ask for help, name the scope, timing, and smallest useful version so the other person does not have to design the help for you.",
+      "createdAt": "2026-05-02T18:15:35.335Z",
+      "renderedFiles": [
+        "assets/posts/20260502181535-design-the-help/post.png"
       ]
     }
   ]
