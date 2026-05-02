@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T09:24:21.361Z
+updatedAt: 2026-05-02T10:19:16.124Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2669,3 +2669,46 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AQPdqQg_ECITYN6-gB9wwB-"}}'
+  - id: 20260502101915-audience-reply
+    createdAt: 2026-05-02T10:19:15.475Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Audience Reply
+    topic: public warmth and private unavailability
+    angle: The exchange shows how warmth can appear right on time in public and go
+      missing in private.
+    fingerprint: appear audience can exchange go how missing private public reply
+      right shows time unavailability warmth
+    contentMode: dialogue
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: Three dark, text-only carousel slides in a broadside style. Slide 1
+      says, "Hey, did you see my message?" and, "No rush. I couldn't tell if it
+      got buried." Slide 2 says, "Yeah, I saw it." and, "I've just had a lot
+      going on." Slide 3 says, "I know." and, "You answer in the group thread
+      when everyone can see it. It's my direct messages that sit there."
+    carousel:
+      - headline: '"Hey, did you see my message?"'
+        body: "\"No rush. I couldn't tell if it got buried.\""
+      - headline: '"Yeah, I saw it."'
+        body: "\"I've just had a lot going on.\""
+      - headline: '"I know."'
+        body: "\"You answer in the group thread when everyone can see it. It's my direct
+          messages that sit there.\""
+    caption:
+      hook: The hurt wasn't the silence.
+      body: Some people reply fastest when the reply can be seen. That lands
+        differently than being busy.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260502101915-audience-reply
+    renderedFiles:
+      - docs/assets/posts/20260502101915-audience-reply/slide-01.png
+      - docs/assets/posts/20260502101915-audience-reply/slide-02.png
+      - docs/assets/posts/20260502101915-audience-reply/slide-03.png

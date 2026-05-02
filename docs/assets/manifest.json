@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T09:24:21.400Z",
+  "updatedAt": "2026-05-02T10:19:16.155Z",
   "items": [
-    {
-      "id": "20260430044017-brain-picking-container",
-      "title": "Brain-Picking Container",
-      "kind": "single",
-      "topic": "Setting a time box for vague requests",
-      "angle": "If someone asks to “pick your brain” without a decision or deadline, they’re asking for your attention-so you offer a small, specific container instead.",
-      "createdAt": "2026-04-30T04:40:17.668Z",
-      "renderedFiles": [
-        "assets/posts/20260430044017-brain-picking-container/post.png"
-      ]
-    },
     {
       "id": "20260430044051-the-sentence-before-the-sticker",
       "title": "The Sentence Before the Sticker",
@@ -474,6 +463,19 @@
       "createdAt": "2026-05-02T09:24:13.208Z",
       "renderedFiles": [
         "assets/posts/20260502092413-edited-intimacy/post.png"
+      ]
+    },
+    {
+      "id": "20260502101915-audience-reply",
+      "title": "Audience Reply",
+      "kind": "carousel",
+      "topic": "public warmth and private unavailability",
+      "angle": "The exchange shows how warmth can appear right on time in public and go missing in private.",
+      "createdAt": "2026-05-02T10:19:15.475Z",
+      "renderedFiles": [
+        "assets/posts/20260502101915-audience-reply/slide-01.png",
+        "assets/posts/20260502101915-audience-reply/slide-02.png",
+        "assets/posts/20260502101915-audience-reply/slide-03.png"
       ]
     }
   ]
