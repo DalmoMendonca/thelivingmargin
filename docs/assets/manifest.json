@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T12:14:20.788Z",
+  "updatedAt": "2026-05-02T13:30:31.536Z",
   "items": [
-    {
-      "id": "20260430044218-no-rush-still-due",
-      "title": "No Rush, Still Due",
-      "kind": "single",
-      "topic": "The 'no rush' phrase that quietly schedules you without negotiating time",
-      "angle": "When someone says 'no rush' right next to a deadline, they remove your ability to ask-so you end up doing the prioritizing work for them.",
-      "createdAt": "2026-04-30T04:42:18.095Z",
-      "renderedFiles": [
-        "assets/posts/20260430044218-no-rush-still-due/post.png"
-      ]
-    },
     {
       "id": "20260430044312-whatever-after-midnight",
       "title": "Whatever, after midnight",
@@ -474,6 +463,17 @@
       "createdAt": "2026-05-02T12:14:13.162Z",
       "renderedFiles": [
         "assets/posts/20260502121413-before-you-knew/post.png"
+      ]
+    },
+    {
+      "id": "20260502133030-in-front-of-your-nose",
+      "title": "In Front of Your Nose",
+      "kind": "single",
+      "topic": "the obvious truth hidden by overprocessing",
+      "angle": "Many adult problems are already visible in the patterns we keep managing instead of naming.",
+      "createdAt": "2026-05-02T13:30:30.077Z",
+      "renderedFiles": [
+        "assets/posts/20260502133030-in-front-of-your-nose/post.png"
       ]
     }
   ]
