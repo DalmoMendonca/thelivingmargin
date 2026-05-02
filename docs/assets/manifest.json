@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T07:33:15.286Z",
+  "updatedAt": "2026-05-02T08:29:23.248Z",
   "items": [
-    {
-      "id": "20260430043852-rationing-attention",
-      "title": "Rationing Attention",
-      "kind": "single",
-      "topic": "attention as social generosity",
-      "angle": "When your phone pre-books your attention, generosity becomes an exception you keep having to justify.",
-      "createdAt": "2026-04-30T04:38:52.394Z",
-      "renderedFiles": [
-        "assets/posts/20260430043852-rationing-attention/post.png"
-      ]
-    },
     {
       "id": "20260430043944-kind-questions-stuck-room",
       "title": "Kind Questions, Stuck Room",
@@ -478,6 +467,17 @@
         "assets/posts/20260502073253-tracked-changes/slide-01.png",
         "assets/posts/20260502073253-tracked-changes/slide-02.png",
         "assets/posts/20260502073253-tracked-changes/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260502082921-take-the-joke",
+      "title": "Take the Joke",
+      "kind": "single",
+      "topic": "recurring jabs disguised as humor in social settings",
+      "angle": "The post asks whether taking a joke is sometimes a small public cost paid to keep the room comfortable.",
+      "createdAt": "2026-05-02T08:29:21.827Z",
+      "renderedFiles": [
+        "assets/posts/20260502082921-take-the-joke/post.png"
       ]
     }
   ]

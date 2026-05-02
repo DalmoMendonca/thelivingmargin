@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T07:33:15.259Z
+updatedAt: 2026-05-02T08:29:23.214Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2587,3 +2587,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A9W5b5dI3MZDHSPcRxSdtFH"}}'
+  - id: 20260502082921-take-the-joke
+    createdAt: 2026-05-02T08:29:21.827Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Take the Joke
+    topic: recurring jabs disguised as humor in social settings
+    angle: The post asks whether taking a joke is sometimes a small public cost paid
+      to keep the room comfortable.
+    fingerprint: as asks comfortable cost disguised humor jabs joke keep paid post
+      public recurring room settings small social sometimes take taking whether
+    contentMode: question
+    voiceMode: sharp
+    altText: A single-image Instagram post on warm sage-toned paper. The headline
+      reads, 'At the dinner table, are you taking the joke-or just keeping the
+      room easy?' A short line below reads, 'Quick laugh, room intact.'
+    single:
+      headline: At the dinner table, are you taking the joke-or just keeping the room
+        easy?
+      body: ""
+      supportLine: Quick laugh, room intact.
+    caption:
+      hook: The ride home usually hears what the table edited out.
+      body: Each quick laugh and subject change teaches the room what it can keep
+        doing.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner self-betrayal | Plan mode question
+    renderDir: docs/assets/posts/20260502082921-take-the-joke
+    renderedFiles:
+      - docs/assets/posts/20260502082921-take-the-joke/post.png
