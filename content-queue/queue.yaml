@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T19:23:35.450Z
+updatedAt: 2026-05-02T20:10:52.783Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3161,3 +3161,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AQBEbIKJmBnSKpg3zqpmkMx"}}'
+  - id: 20260502201052-say-it-again
+    createdAt: 2026-05-02T20:10:52.353Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Say It Again
+    topic: asking for repetition instead of faking comprehension
+    angle: When instructions come too fast, asking for them again is usually cheaper
+      than pretending you caught it and fixing the mistake later.
+    fingerprint: again asking caught cheaper come comprehension faking fast fixing
+      instead instructions later mistake pretending repetition say than them too
+      usually when
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: A warm paper-textured editorial Instagram post with a single sentence
+      giving adults permission to ask the front desk to repeat instructions
+      instead of pretending to understand and dealing with a bigger mess later.
+    single:
+      headline: You can ask the front desk to say it again; ten awkward seconds beat
+        an afternoon fixing what you only pretended to catch.
+      body: ""
+    caption:
+      hook: Missing one step is normal; pretending you caught it costs more.
+      body: This shows up in voicemail directions, password resets, and half-heard
+        meeting changes. Asking again is usually the fastest way to keep a small
+        miss from turning into rework.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260502201052-say-it-again
+    renderedFiles:
+      - docs/assets/posts/20260502201052-say-it-again/post.png

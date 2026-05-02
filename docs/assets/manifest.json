@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-02T19:23:35.482Z",
+  "updatedAt": "2026-05-02T20:10:52.830Z",
   "items": [
-    {
-      "id": "20260430045019-later-as-a-no",
-      "title": "Later as a No",
-      "kind": "carousel",
-      "topic": "Polite deflection that costs you prep time",
-      "angle": "When someone answers with “later,” the exchange reveals they were never agreeing to the work-just buying time.",
-      "createdAt": "2026-04-30T04:50:19.357Z",
-      "renderedFiles": [
-        "assets/posts/20260430045019-later-as-a-no/slide-01.png",
-        "assets/posts/20260430045019-later-as-a-no/slide-02.png",
-        "assets/posts/20260430045019-later-as-a-no/slide-03.png"
-      ]
-    },
     {
       "id": "20260430045203-just-checking-in-means-you-re-on-call",
       "title": "Just Checking In Means You’re On Call",
@@ -476,6 +463,17 @@
         "assets/posts/20260502192318-after-the-coat-is-off/slide-01.png",
         "assets/posts/20260502192318-after-the-coat-is-off/slide-02.png",
         "assets/posts/20260502192318-after-the-coat-is-off/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260502201052-say-it-again",
+      "title": "Say It Again",
+      "kind": "single",
+      "topic": "asking for repetition instead of faking comprehension",
+      "angle": "When instructions come too fast, asking for them again is usually cheaper than pretending you caught it and fixing the mistake later.",
+      "createdAt": "2026-05-02T20:10:52.353Z",
+      "renderedFiles": [
+        "assets/posts/20260502201052-say-it-again/post.png"
       ]
     }
   ]
