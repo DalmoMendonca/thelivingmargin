@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T22:13:45.468Z",
+  "updatedAt": "2026-05-02T23:15:12.976Z",
   "items": [
-    {
-      "id": "20260430045308-quick-call-time-borrowing",
-      "title": "Quick Call = Time Borrowing",
-      "kind": "single",
-      "topic": "Work messaging and the pressure to drop everything",
-      "angle": "“Quick call” is a request for your availability, not a plan for the work.",
-      "createdAt": "2026-04-30T04:53:08.687Z",
-      "renderedFiles": [
-        "assets/posts/20260430045308-quick-call-time-borrowing/post.png"
-      ]
-    },
     {
       "id": "20260430045339-the-disclaimer-that-gets-you-ignored",
       "title": "The Disclaimer That Gets You Ignored",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-02T22:13:36.621Z",
       "renderedFiles": [
         "assets/posts/20260502221336-illusion-of-it/post.png"
+      ]
+    },
+    {
+      "id": "20260502231512-forwarded-panic",
+      "title": "Forwarded Panic",
+      "kind": "single",
+      "topic": "family competence turning into default emergency labor",
+      "angle": "The reliable child becomes the family’s unspoken forwarding address for stress, errands, and administrative spillover.",
+      "createdAt": "2026-05-02T23:15:12.493Z",
+      "renderedFiles": [
+        "assets/posts/20260502231512-forwarded-panic/post.png"
       ]
     }
   ]

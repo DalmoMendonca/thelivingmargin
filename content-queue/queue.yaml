@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T22:13:45.431Z
+updatedAt: 2026-05-02T23:15:12.933Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3288,3 +3288,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AZoEDpvCIAfMglCpj_Q6Jvs"}}'
+  - id: 20260502231512-forwarded-panic
+    createdAt: 2026-05-02T23:15:12.493Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: signal
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Forwarded Panic
+    topic: family competence turning into default emergency labor
+    angle: The reliable child becomes the family’s unspoken forwarding address for
+      stress, errands, and administrative spillover.
+    fingerprint: address administrative becomes child competence default emergency
+      errands family familys forwarded forwarding into labor panic reliable
+      spillover stress turning unspoken
+    contentMode: aphorism
+    voiceMode: sharp
+    quoteAttribution: .
+    altText: "Single-image post on warm paper texture with wide margins. Headline
+      reads: 'In my family, competence gets forwarded to my phone.' Smaller line
+      below reads: 'Enough favors, and nobody says the role is yours.'"
+    single:
+      headline: In my family, competence gets forwarded to my phone.
+      body: Enough favors, and nobody says the role is yours.
+    caption:
+      hook: The phone buzz tells the family who will handle it.
+      body: One bank form in the group chat becomes the pharmacy run, the appointment
+        ride, the follow-up call. After a while, your time is no longer yours;
+        you’re the house’s routing system.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260502231512-forwarded-panic
+    renderedFiles:
+      - docs/assets/posts/20260502231512-forwarded-panic/post.png
