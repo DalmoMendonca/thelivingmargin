@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T08:29:30.321Z
+updatedAt: 2026-05-02T09:24:14.604Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2628,3 +2628,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Afy0BsqfqNZx2BZqBmQqgwx"}}'
+  - id: 20260502092413-edited-intimacy
+    createdAt: 2026-05-02T09:24:13.208Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Edited Intimacy
+    topic: long voice notes as controlled closeness
+    angle: A long voice note can offer real warmth through tone, breath, and texture
+      while still giving the sender control of timing and interruption.
+    fingerprint: as breath can closeness control controlled edited giving
+      interruption intimacy long note notes offer real sender still texture
+      through timing tone voice warmth while
+    contentMode: observation
+    voiceMode: reflective
+    altText: "A dark charcoal-grain broadside card with the text: 'A long voice note
+      can feel intimate because it carries tone, breath, texture.' Below it:
+      'Sometimes it’s also a way to be personal without giving up the floor.'"
+    single:
+      headline: A long voice note can feel intimate because it carries tone, breath,
+        texture.
+      body: Sometimes it’s also a way to be personal without giving up the floor.
+    caption:
+      hook: The waveform bubble can make warmth feel a little more managed.
+      body: You get tone, breath, texture. They get an uninterrupted turn, plus the
+        soft exit of “no need to respond right now.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode observation
+    renderDir: docs/assets/posts/20260502092413-edited-intimacy
+    renderedFiles:
+      - docs/assets/posts/20260502092413-edited-intimacy/post.png

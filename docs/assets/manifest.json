@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-02T08:29:30.343Z",
+  "updatedAt": "2026-05-02T09:24:14.639Z",
   "items": [
-    {
-      "id": "20260430043944-kind-questions-stuck-room",
-      "title": "Kind Questions, Stuck Room",
-      "kind": "carousel",
-      "topic": "Questions that sound considerate but block the decision",
-      "angle": "When a question can’t be answered without risk, it quietly removes responsibility from the asker-and keeps everyone waiting.",
-      "createdAt": "2026-04-30T04:39:44.080Z",
-      "renderedFiles": [
-        "assets/posts/20260430043944-kind-questions-stuck-room/slide-01.png",
-        "assets/posts/20260430043944-kind-questions-stuck-room/slide-02.png",
-        "assets/posts/20260430043944-kind-questions-stuck-room/slide-03.png",
-        "assets/posts/20260430043944-kind-questions-stuck-room/slide-04.png",
-        "assets/posts/20260430043944-kind-questions-stuck-room/slide-05.png"
-      ]
-    },
     {
       "id": "20260430044017-brain-picking-container",
       "title": "Brain-Picking Container",
@@ -478,6 +463,17 @@
       "createdAt": "2026-05-02T08:29:21.827Z",
       "renderedFiles": [
         "assets/posts/20260502082921-take-the-joke/post.png"
+      ]
+    },
+    {
+      "id": "20260502092413-edited-intimacy",
+      "title": "Edited Intimacy",
+      "kind": "single",
+      "topic": "long voice notes as controlled closeness",
+      "angle": "A long voice note can offer real warmth through tone, breath, and texture while still giving the sender control of timing and interruption.",
+      "createdAt": "2026-05-02T09:24:13.208Z",
+      "renderedFiles": [
+        "assets/posts/20260502092413-edited-intimacy/post.png"
       ]
     }
   ]
