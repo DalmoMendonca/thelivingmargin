@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-01T23:17:36.075Z
+updatedAt: 2026-05-02T00:19:23.984Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2235,3 +2235,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Alc0z47ofW-LO-EszMwzrsz"}}'
+  - id: 20260502001922-reacted-not-answered
+    createdAt: 2026-05-02T00:19:22.441Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Reacted, Not Answered
+    topic: emoji reactions replacing an actual reply in planning messages
+    angle: In group chats, reactions keep the mood friendly while leaving one person
+      to actually resolve the plan.
+    fingerprint: actual actually answered chats emoji friendly group keep leaving
+      messages mood not one person plan planning reacted reactions replacing
+      reply resolve while
+    contentMode: observation
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: Single-image post with text about a group chat where a logistical
+      message like "Does 7 work?" gets several thumbs-up reactions but no actual
+      reply, leaving one person to carry the plan.
+    single:
+      headline: '"Does 7 work?" gets six thumbs-up and still no answer.'
+      body: A reaction keeps the mood up, but it doesn’t settle the plan. Someone
+        still has to carry it.
+      supportLine: The chat stays warm. The burden stays put.
+    caption:
+      hook: Warmth can hide a handoff.
+      body: Reactions let people stay present in the chat without picking up a piece
+        of the logistics. Nobody means harm, but one person still ends up doing
+        the carrying.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner scene | Plan mode observation
+    renderDir: docs/assets/posts/20260502001922-reacted-not-answered
+    renderedFiles:
+      - docs/assets/posts/20260502001922-reacted-not-answered/post.png

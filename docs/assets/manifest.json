@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-01T23:17:36.100Z",
+  "updatedAt": "2026-05-02T00:19:24.014Z",
   "items": [
-    {
-      "id": "20260430043422-let-me-know-follow-ups",
-      "title": "Let-Me-Know Follow-Ups",
-      "kind": "carousel",
-      "topic": "follow-ups that turn into silence",
-      "angle": "If your message avoids the decision, people can’t respond without risking being wrong-so add a deadline and two usable options.",
-      "createdAt": "2026-04-30T04:34:22.555Z",
-      "renderedFiles": [
-        "assets/posts/20260430043422-let-me-know-follow-ups/slide-01.png",
-        "assets/posts/20260430043422-let-me-know-follow-ups/slide-02.png",
-        "assets/posts/20260430043422-let-me-know-follow-ups/slide-03.png",
-        "assets/posts/20260430043422-let-me-know-follow-ups/slide-04.png",
-        "assets/posts/20260430043422-let-me-know-follow-ups/slide-05.png"
-      ]
-    },
     {
       "id": "20260430043458-the-missing-detail",
       "title": "The Missing Detail",
@@ -483,6 +468,17 @@
       "createdAt": "2026-05-01T23:17:26.318Z",
       "renderedFiles": [
         "assets/posts/20260501231726-buy-relief/post.png"
+      ]
+    },
+    {
+      "id": "20260502001922-reacted-not-answered",
+      "title": "Reacted, Not Answered",
+      "kind": "single",
+      "topic": "emoji reactions replacing an actual reply in planning messages",
+      "angle": "In group chats, reactions keep the mood friendly while leaving one person to actually resolve the plan.",
+      "createdAt": "2026-05-02T00:19:22.441Z",
+      "renderedFiles": [
+        "assets/posts/20260502001922-reacted-not-answered/post.png"
       ]
     }
   ]
