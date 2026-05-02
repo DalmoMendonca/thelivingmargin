@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-02T10:19:33.194Z",
+  "updatedAt": "2026-05-02T11:16:01.322Z",
   "items": [
-    {
-      "id": "20260430044051-the-sentence-before-the-sticker",
-      "title": "The Sentence Before the Sticker",
-      "kind": "carousel",
-      "topic": "Specificity in a time-sensitive handoff beats polite vagueness",
-      "angle": "In public, when the question has a consequence, the kindest move is the exact sentence and the paperwork that matches it.",
-      "createdAt": "2026-04-30T04:40:51.906Z",
-      "renderedFiles": [
-        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-01.png",
-        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-02.png",
-        "assets/posts/20260430044051-the-sentence-before-the-sticker/slide-03.png"
-      ]
-    },
     {
       "id": "20260430044132-feedback-as-permission",
       "title": "Feedback as Permission",
@@ -476,6 +463,17 @@
         "assets/posts/20260502101915-audience-reply/slide-01.png",
         "assets/posts/20260502101915-audience-reply/slide-02.png",
         "assets/posts/20260502101915-audience-reply/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260502111600-no-preface",
+      "title": "No Preface",
+      "kind": "single",
+      "topic": "public beginnerhood without self-erasure",
+      "angle": "Offer permission to be visibly new at something without leading with an apology or a joke at your own expense.",
+      "createdAt": "2026-05-02T11:16:00.258Z",
+      "renderedFiles": [
+        "assets/posts/20260502111600-no-preface/post.png"
       ]
     }
   ]
