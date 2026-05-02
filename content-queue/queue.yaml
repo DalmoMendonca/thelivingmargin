@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T20:11:00.596Z
+updatedAt: 2026-05-02T21:13:54.454Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3203,3 +3203,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"As4F0tzvZW0fODsA2CGtzdi"}}'
+  - id: 20260502211352-correction-tax
+    createdAt: 2026-05-02T21:13:52.849Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Correction Tax
+    topic: the way people add cheerfulness when correcting a small factual error
+    angle: People add lol or an emoji after fixing a small detail so accuracy does
+      not get mistaken for attitude.
+    fingerprint: accuracy add after attitude cheerfulness correcting correction
+      detail does emoji error factual fixing get lol mistaken not people small
+      so tax way when
+    contentMode: observation
+    voiceMode: sharp
+    altText: "Single-image text post on warm paper in brass ink. Headline: 'Actually
+      it’s the 14th lol'. Body: 'Fix the date, bill, or name, then add lol or an
+      emoji so accuracy doesn’t read like attitude.'"
+    single:
+      headline: Actually it’s the 14th lol
+      body: Fix the date, bill, or name, then add lol or an emoji so accuracy doesn’t
+        read like attitude.
+    caption:
+      hook: That softener is for the room.
+      body: In the group chat, the lol reassures the witnesses that accuracy is not
+        attitude. Just the right date, bill, or name.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode observation
+    renderDir: docs/assets/posts/20260502211352-correction-tax
+    renderedFiles:
+      - docs/assets/posts/20260502211352-correction-tax/post.png
