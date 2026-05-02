@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T15:16:03.191Z
+updatedAt: 2026-05-02T16:15:18.794Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2961,3 +2961,51 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AZeCTjxfuVjg8CzqnuGGv6c"}}'
+  - id: 20260502161516-the-first-question
+    createdAt: 2026-05-02T16:15:16.724Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The First Question
+    topic: a senior person using their status to make a room easier for everyone else
+    angle: Sometimes the most generous use of confidence is asking the obvious
+      question first so nobody else has to pay the social cost alone.
+    fingerprint: alone asking confidence cost easier else everyone first generous
+      has make most nobody obvious pay person question room senior so social
+      sometimes status their use using
+    contentMode: story
+    voiceMode: reflective
+    altText: "A three-slide carousel in a dim conference room. Slide 1 shows the
+      silence after a presenter asks, “Any questions?” while the AC hums, damp
+      rings sit under half-finished paper coffee cups, and a dense slide has
+      lost the room. Slide 2 shows the most senior person at the end of the
+      table saying, “Can you back up for a second?” and then, “I missed that
+      last slide.” Slide 3 shows the room loosening: pens move, more hands go
+      up, and someone finally asks the practical question."
+    carousel:
+      - headline: Then the presenter said, “Any questions?”
+        body: The conference room AC hummed. Half-finished paper coffee cups left damp
+          rings while everyone looked at the slide they had all stopped
+          understanding two minutes ago.
+      - headline: "From the end of the table: “Can you back up for a second?”"
+        body: The most senior person looked up and said, “I missed that last slide.”
+          Plain as that.
+      - headline: After that, the room got usable again.
+        body: Pens moved. Two other hands went up. Someone pushed a paper cup aside and
+          asked, “Wait, when does this part hit us?”
+    caption:
+      hook: Sometimes relief enters a room sounding almost basic.
+      body: A little status spent in the right place can lower the cost of being
+        confused. Then people can ask what they actually need to ask.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260502161516-the-first-question
+    renderedFiles:
+      - docs/assets/posts/20260502161516-the-first-question/slide-01.png
+      - docs/assets/posts/20260502161516-the-first-question/slide-02.png
+      - docs/assets/posts/20260502161516-the-first-question/slide-03.png

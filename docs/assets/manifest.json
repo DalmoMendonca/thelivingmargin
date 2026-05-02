@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T15:16:03.239Z",
+  "updatedAt": "2026-05-02T16:15:18.837Z",
   "items": [
-    {
-      "id": "20260430044417-let-me-know-isn-t-neutral",
-      "title": "Let Me Know Isn’t Neutral",
-      "kind": "single",
-      "topic": "reframing the phrase “let me know” as a delay tactic",
-      "angle": "“Let me know” can read kind, but it quietly assigns the follow-up to the other person-so the delay becomes the system.",
-      "createdAt": "2026-04-30T04:44:17.136Z",
-      "renderedFiles": [
-        "assets/posts/20260430044417-let-me-know-isn-t-neutral/post.png"
-      ]
-    },
     {
       "id": "20260430044522-quick-thing-real-cost",
       "title": "Quick Thing, Real Cost",
@@ -476,6 +465,19 @@
         "assets/posts/20260502151534-default-adult/slide-03.png",
         "assets/posts/20260502151534-default-adult/slide-04.png",
         "assets/posts/20260502151534-default-adult/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260502161516-the-first-question",
+      "title": "The First Question",
+      "kind": "carousel",
+      "topic": "a senior person using their status to make a room easier for everyone else",
+      "angle": "Sometimes the most generous use of confidence is asking the obvious question first so nobody else has to pay the social cost alone.",
+      "createdAt": "2026-05-02T16:15:16.724Z",
+      "renderedFiles": [
+        "assets/posts/20260502161516-the-first-question/slide-01.png",
+        "assets/posts/20260502161516-the-first-question/slide-02.png",
+        "assets/posts/20260502161516-the-first-question/slide-03.png"
       ]
     }
   ]
