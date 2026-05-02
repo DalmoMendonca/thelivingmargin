@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-02T13:30:39.704Z",
+  "updatedAt": "2026-05-02T14:19:05.712Z",
   "items": [
-    {
-      "id": "20260430044312-whatever-after-midnight",
-      "title": "Whatever, after midnight",
-      "kind": "carousel",
-      "topic": "Misused flexibility that avoids choice but still changes the room.",
-      "angle": "“Whatever” can be a dodge-especially when the decision shows up later as a personal inconvenience.",
-      "createdAt": "2026-04-30T04:43:12.343Z",
-      "renderedFiles": [
-        "assets/posts/20260430044312-whatever-after-midnight/slide-01.png",
-        "assets/posts/20260430044312-whatever-after-midnight/slide-02.png",
-        "assets/posts/20260430044312-whatever-after-midnight/slide-03.png"
-      ]
-    },
     {
       "id": "20260430044344-accurate-delivery-beats-apology-polishing",
       "title": "Accurate Delivery Beats Apology Polishing",
@@ -474,6 +461,17 @@
       "createdAt": "2026-05-02T13:30:30.077Z",
       "renderedFiles": [
         "assets/posts/20260502133030-in-front-of-your-nose/post.png"
+      ]
+    },
+    {
+      "id": "20260502141905-cheap-gets-assigned",
+      "title": "Cheap Gets Assigned",
+      "kind": "single",
+      "topic": "uneven dinner bills and the social shame around correcting them",
+      "angle": "When a group wants convenience, the person naming the numbers often gets cast as petty even when they are the only one protecting fairness.",
+      "createdAt": "2026-05-02T14:19:05.158Z",
+      "renderedFiles": [
+        "assets/posts/20260502141905-cheap-gets-assigned/post.png"
       ]
     }
   ]
