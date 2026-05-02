@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T14:19:14.053Z",
+  "updatedAt": "2026-05-02T15:15:36.685Z",
   "items": [
-    {
-      "id": "20260430044344-accurate-delivery-beats-apology-polishing",
-      "title": "Accurate Delivery Beats Apology Polishing",
-      "kind": "single",
-      "topic": "Updating an estimate without performing regret",
-      "angle": "You’re allowed to swap the vague apology for a clean new time-because what they’re waiting on is follow-through, not your remorse.",
-      "createdAt": "2026-04-30T04:43:44.403Z",
-      "renderedFiles": [
-        "assets/posts/20260430044344-accurate-delivery-beats-apology-polishing/post.png"
-      ]
-    },
     {
       "id": "20260430044417-let-me-know-isn-t-neutral",
       "title": "Let Me Know Isn’t Neutral",
@@ -472,6 +461,21 @@
       "createdAt": "2026-05-02T14:19:05.158Z",
       "renderedFiles": [
         "assets/posts/20260502141905-cheap-gets-assigned/post.png"
+      ]
+    },
+    {
+      "id": "20260502151534-default-adult",
+      "title": "Default Adult",
+      "kind": "carousel",
+      "topic": "signs you have become the default adult in a friendship group",
+      "angle": "A friendship group assigns one adult by tiny defaults: the same person keeps turning vagueness, awkwardness, and loose ends into something workable.",
+      "createdAt": "2026-05-02T15:15:34.151Z",
+      "renderedFiles": [
+        "assets/posts/20260502151534-default-adult/slide-01.png",
+        "assets/posts/20260502151534-default-adult/slide-02.png",
+        "assets/posts/20260502151534-default-adult/slide-03.png",
+        "assets/posts/20260502151534-default-adult/slide-04.png",
+        "assets/posts/20260502151534-default-adult/slide-05.png"
       ]
     }
   ]

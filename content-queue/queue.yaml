@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T14:19:14.023Z
+updatedAt: 2026-05-02T15:15:36.632Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2892,3 +2892,66 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AilCvWzCb4vxn1jKJfQjLNV"}}'
+  - id: 20260502151534-default-adult
+    createdAt: 2026-05-02T15:15:34.151Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Default Adult
+    topic: signs you have become the default adult in a friendship group
+    angle: "A friendship group assigns one adult by tiny defaults: the same person
+      keeps turning vagueness, awkwardness, and loose ends into something
+      workable."
+    fingerprint: adult assigns awkwardness become by default defaults ends
+      friendship group have into keeps loose one person same signs something
+      tiny turning vagueness workable
+    contentMode: list
+    voiceMode: sharp
+    altText: "Five-slide cream notebook carousel about signs you have become the
+      default adult in a friendship group. Slide 1 offers a five-sign diagnostic
+      and mentions the group chat. Slide 2 shows vague preferences becoming a
+      real plan only when one person picks the time and sends the reservation
+      link. Slide 3 shows praise like being organized functioning as delegation.
+      Slide 4 names the cleanup work: follow-up texts, Venmo requests, smoothing
+      tone, and getting people home. Slide 5 separates being capable from being
+      permanently on duty, ending with competence mistaken for consent."
+    carousel:
+      - kicker: Diagnostic
+        headline: 5 signs you’re the default adult in the group chat
+        body: Nobody appoints one. You just keep turning “whatever works” into a time, a
+          reservation link, and a way home.
+      - kicker: Sign 1
+        headline: The plan is not real until you make it real
+        body: Everyone stays pleasantly vague until you pick the hour, name the place,
+          and turn loose preferences into an actual plan.
+      - kicker: Sign 2
+        headline: Praise shows up right before the handoff
+        body: “You’re so organized” or “you’re good at this” sounds like a compliment.
+          Usually it means the task has already been placed in your hands.
+      - kicker: Sign 3
+        headline: Your job starts after everyone already said yes
+        body: You send the follow-up text in the group chat, chase the Venmo request,
+          smooth the weird tone, and make sure nobody gets left stranded.
+      - kicker: The bigger tell
+        headline: Competence got mistaken for consent
+        body: Being capable is real. Being on duty every time is a role. Repeated
+          reliability is not permanent permission.
+    caption:
+      hook: Sometimes you chose the role; that still doesn’t make it permanent.
+      body: "The real test is simple: stop once. If one missed follow-up text turns
+        into inconvenience or offense, your reliability got treated like
+        availability."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260502151534-default-adult
+    renderedFiles:
+      - docs/assets/posts/20260502151534-default-adult/slide-01.png
+      - docs/assets/posts/20260502151534-default-adult/slide-02.png
+      - docs/assets/posts/20260502151534-default-adult/slide-03.png
+      - docs/assets/posts/20260502151534-default-adult/slide-04.png
+      - docs/assets/posts/20260502151534-default-adult/slide-05.png
