@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-02T04:15:08.025Z",
+  "updatedAt": "2026-05-02T05:49:01.917Z",
   "items": [
-    {
-      "id": "20260430043704-sometime-next-week",
-      "title": "Sometime Next Week",
-      "kind": "carousel",
-      "topic": "vague scheduling becoming someone else’s commitment",
-      "angle": "When you dodge a date, you quietly give it away-then you’re stuck negotiating the consequences.",
-      "createdAt": "2026-04-30T04:37:04.353Z",
-      "renderedFiles": [
-        "assets/posts/20260430043704-sometime-next-week/slide-01.png",
-        "assets/posts/20260430043704-sometime-next-week/slide-02.png",
-        "assets/posts/20260430043704-sometime-next-week/slide-03.png"
-      ]
-    },
     {
       "id": "20260430043748-affectionate-exit",
       "title": "Affectionate Exit",
@@ -478,6 +465,17 @@
         "assets/posts/20260502041441-the-expensive-no/slide-03.png",
         "assets/posts/20260502041441-the-expensive-no/slide-04.png",
         "assets/posts/20260502041441-the-expensive-no/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260502054900-editing-around-power",
+      "title": "Editing Around Power",
+      "kind": "single",
+      "topic": "rewriting messages when directness feels expensive",
+      "angle": "What looks like overthinking before sending a message is often careful editing in a relationship where directness carries a social cost.",
+      "createdAt": "2026-05-02T05:49:00.107Z",
+      "renderedFiles": [
+        "assets/posts/20260502054900-editing-around-power/post.png"
       ]
     }
   ]

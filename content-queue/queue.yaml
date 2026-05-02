@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T04:15:07.999Z
+updatedAt: 2026-05-02T05:49:01.870Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -2439,3 +2439,43 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AEUtBgrvrcXNoVcusantEDW"}}'
+  - id: 20260502054900-editing-around-power
+    createdAt: 2026-05-02T05:49:00.107Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Editing Around Power
+    topic: rewriting messages when directness feels expensive
+    angle: What looks like overthinking before sending a message is often careful
+      editing in a relationship where directness carries a social cost.
+    fingerprint: around before careful carries cost directness editing expensive
+      feels like looks message messages often overthinking power relationship
+      rewriting sending social what when where
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: "Cream notebook-style background with dark brass text. Headline:
+      'Overthinking is what it looks like from the outside.' Body: 'Up close: an
+      unsent text, an email draft, a softened sentence, a backspace key, and a
+      send button in a relationship where directness can create fallout.'
+      Support line: 'You are not just choosing words. You are pricing fallout.'"
+    single:
+      headline: Overthinking is what it looks like from the outside.
+      body: "Up close: an unsent text, an email draft, a softened sentence, a
+        backspace key, and a send button in a relationship where directness can
+        create fallout."
+      supportLine: You are not just choosing words. You are pricing fallout.
+    caption:
+      hook: Call it cost, and the next move changes.
+      body: Then the fix is not better wording. It is a safer channel, a cleaner
+        boundary, or a more honest read of the relationship.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260502054900-editing-around-power
+    renderedFiles:
+      - docs/assets/posts/20260502054900-editing-around-power/post.png
