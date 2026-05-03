@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-03T13:30:18.733Z",
+  "updatedAt": "2026-05-03T14:18:59.959Z",
   "items": [
-    {
-      "id": "20260501192808-keep-your-place",
-      "title": "Keep Your Place",
-      "kind": "carousel",
-      "topic": "dignity-preserving help during a failed payment",
-      "angle": "In a public embarrassment, the best help is often the practical move that removes the audience and keeps your place intact.",
-      "createdAt": "2026-05-01T19:28:08.548Z",
-      "renderedFiles": [
-        "assets/posts/20260501192808-keep-your-place/slide-01.png",
-        "assets/posts/20260501192808-keep-your-place/slide-02.png",
-        "assets/posts/20260501192808-keep-your-place/slide-03.png"
-      ]
-    },
     {
       "id": "20260501201715-low-maintenance",
       "title": "Low-Maintenance",
@@ -471,6 +458,17 @@
       "createdAt": "2026-05-03T13:30:08.493Z",
       "renderedFiles": [
         "assets/posts/20260503133008-what-not-to-answer/post.png"
+      ]
+    },
+    {
+      "id": "20260503141858-simple-version",
+      "title": "Simple Version",
+      "kind": "single",
+      "topic": "embarrassment disguised as confusion",
+      "angle": "The post asks whether \"confusing\" is just the safer word for the embarrassment of needing a simple explanation.",
+      "createdAt": "2026-05-03T14:18:58.019Z",
+      "renderedFiles": [
+        "assets/posts/20260503141858-simple-version/post.png"
       ]
     }
   ]
