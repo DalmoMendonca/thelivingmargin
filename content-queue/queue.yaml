@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T19:23:40.588Z
+updatedAt: 2026-05-03T20:13:53.167Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4223,3 +4223,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AqgI0VqSE0ZZJFEtCo05dSm"}}'
+  - id: 20260503201351-temporary-drawer
+    createdAt: 2026-05-03T20:13:51.937Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: signal
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Temporary Drawer
+    topic: household clutter as postponed decision-making
+    angle: What looks like harmless clutter is often a room filling up with
+      decisions nobody wanted to make when they were small.
+    fingerprint: as clutter decision decisions drawer filling harmless household
+      like looks make making nobody often postponed room small temporary they up
+      wanted were what when
+    contentMode: aphorism
+    voiceMode: reflective
+    quoteAttribution: ">null"
+    altText: Single Instagram post on notebook-cream paper texture with sage-ash
+      styling. Large headline reads, "The junk drawer is where temporary goes to
+      become furniture." Smaller body text reads, "Every spare cable in it is a
+      tiny unfinished verdict waiting for you before coffee."
+    single:
+      headline: The junk drawer is where temporary goes to become furniture.
+      body: Every spare cable in it is a tiny unfinished verdict waiting for you
+        before coffee.
+    caption:
+      hook: Some clutter is postponed closure.
+      body: The tote bag of returns, the chair with clothes, the later pile all keep
+        asking for a tiny verdict. Enough unofficial things can make a room feel
+        louder than it looks.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260503201351-temporary-drawer
+    renderedFiles:
+      - docs/assets/posts/20260503201351-temporary-drawer/post.png

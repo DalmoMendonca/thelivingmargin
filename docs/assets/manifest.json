@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T19:23:40.628Z",
+  "updatedAt": "2026-05-03T20:13:53.218Z",
   "items": [
-    {
-      "id": "20260502014022-small-exceptions",
-      "title": "Small Exceptions",
-      "kind": "single",
-      "topic": "polite entitlement disguised as minor inconvenience",
-      "angle": "Everyday selfishness often arrives looking courteous while quietly assuming the cost belongs to someone else.",
-      "createdAt": "2026-05-02T01:40:22.342Z",
-      "renderedFiles": [
-        "assets/posts/20260502014022-small-exceptions/post.png"
-      ]
-    },
     {
       "id": "20260502030100-available-minutes",
       "title": "Available Minutes",
@@ -471,6 +460,17 @@
         "assets/posts/20260503192322-split-six-ways/slide-01.png",
         "assets/posts/20260503192322-split-six-ways/slide-02.png",
         "assets/posts/20260503192322-split-six-ways/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260503201351-temporary-drawer",
+      "title": "Temporary Drawer",
+      "kind": "single",
+      "topic": "household clutter as postponed decision-making",
+      "angle": "What looks like harmless clutter is often a room filling up with decisions nobody wanted to make when they were small.",
+      "createdAt": "2026-05-03T20:13:51.937Z",
+      "renderedFiles": [
+        "assets/posts/20260503201351-temporary-drawer/post.png"
       ]
     }
   ]
