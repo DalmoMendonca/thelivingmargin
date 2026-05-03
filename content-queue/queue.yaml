@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T21:15:57.604Z
+updatedAt: 2026-05-03T22:12:44.625Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4309,3 +4309,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Afjy1_du7RbzHkke084rPmm"}}'
+  - id: 20260503221243-honest-and-wrong
+    createdAt: 2026-05-03T22:12:43.828Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Honest and Wrong
+    topic: candor used as cover for bad reading
+    angle: Iris Murdoch's line feels current because people often treat honesty as
+      moral permission, even when they are careless, self-serving, or simply
+      wrong about the other person.
+    fingerprint: about as bad because candor careless cover current even feels
+      honest honesty iris line moral murdochs often other people permission
+      person reading self serving simply they treat used when wrong
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Iris Murdoch
+    altText: "A single editorial quote card on a dark charcoal-grain background.
+      Large centered text reads, “One can be absolutely truthful and absolutely
+      wrong.” Beneath it, in small understated type, is the attribution: Iris
+      Murdoch."
+    single:
+      headline: “One can be absolutely truthful and absolutely wrong.”
+      body: Iris Murdoch
+    caption:
+      hook: "“I’m just being honest” often means: don’t ask if I’m right."
+      body: After the blunt text, the meeting comment, or the claim that your pause
+        was manipulation, the bruise is the certainty. Feeling something is
+        real; seeing someone clearly is harder.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner ordinary life | Plan mode quote
+    renderDir: docs/assets/posts/20260503221243-honest-and-wrong
+    renderedFiles:
+      - docs/assets/posts/20260503221243-honest-and-wrong/post.png

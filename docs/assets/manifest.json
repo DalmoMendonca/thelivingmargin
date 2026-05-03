@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-03T21:15:57.643Z",
+  "updatedAt": "2026-05-03T22:12:44.666Z",
   "items": [
-    {
-      "id": "20260502041441-the-expensive-no",
-      "title": "The Expensive No",
-      "kind": "carousel",
-      "topic": "three ways casual requests are built to make refusal feel rude",
-      "angle": "Some requests sound small only because the social cost has been moved from the favor itself onto the person who might say no.",
-      "createdAt": "2026-05-02T04:14:41.140Z",
-      "renderedFiles": [
-        "assets/posts/20260502041441-the-expensive-no/slide-01.png",
-        "assets/posts/20260502041441-the-expensive-no/slide-02.png",
-        "assets/posts/20260502041441-the-expensive-no/slide-03.png",
-        "assets/posts/20260502041441-the-expensive-no/slide-04.png",
-        "assets/posts/20260502041441-the-expensive-no/slide-05.png"
-      ]
-    },
     {
       "id": "20260502054900-editing-around-power",
       "title": "Editing Around Power",
@@ -471,6 +456,17 @@
       "createdAt": "2026-05-03T21:15:48.699Z",
       "renderedFiles": [
         "assets/posts/20260503211548-warm-up-talk/post.png"
+      ]
+    },
+    {
+      "id": "20260503221243-honest-and-wrong",
+      "title": "Honest and Wrong",
+      "kind": "single",
+      "topic": "candor used as cover for bad reading",
+      "angle": "Iris Murdoch's line feels current because people often treat honesty as moral permission, even when they are careless, self-serving, or simply wrong about the other person.",
+      "createdAt": "2026-05-03T22:12:43.828Z",
+      "renderedFiles": [
+        "assets/posts/20260503221243-honest-and-wrong/post.png"
       ]
     }
   ]
