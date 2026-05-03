@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T11:14:56.395Z
+updatedAt: 2026-05-03T12:13:43.455Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3811,3 +3811,67 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ArRhdaxxTZ61OjfJIL3Y0IY"}}'
+  - id: 20260503121342-easygoing-tax
+    createdAt: 2026-05-03T12:13:42.204Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Easygoing Tax
+    topic: performing low-maintenance behavior in shared plans and small decisions
+    angle: Trying to seem easygoing does not erase your preferences; it makes other
+      people find them late through guesswork, tone, or revision.
+    fingerprint: behavior decisions does easygoing erase find guesswork late low
+      maintenance makes not other people performing plans preferences revision
+      seem shared small tax them through tone trying
+    contentMode: list
+    voiceMode: sharp
+    altText: "A five-slide editorial-style carousel about the hidden cost of acting
+      low-maintenance in shared plans. Slide 1 introduces four signs that being
+      easygoing can create extra work. Slide 2 covers saying 'whatever works'
+      before checking your actual schedule, budget, appetite, or ride home.
+      Slide 3 covers minimizing a preference until disappointment shows up in
+      tone once a restaurant reservation is booked. Slide 4 covers agreeing
+      publicly, then trying to renegotiate through side texts, slow replies, or
+      a late veto. Slide 5 reframes real ease as naming the few things that
+      matter early, ending with the line: 'Easy to deal with is not the same as
+      impossible to find.'"
+    carousel:
+      - kicker: Signs
+        headline: 4 signs being "easygoing" is making the plan harder
+        body: Not because you are difficult. Because your real preferences still arrive
+          later through guesswork, revision, or tone.
+      - kicker: Sign 1
+        headline: You say "whatever works" before checking what actually works
+        body: Calendar, budget, appetite, ride home. Then the group text builds around
+          an answer you never tested.
+      - kicker: Sign 2
+        headline: You call it "not a big deal" until your tone says it is
+        body: The preference gets minimized first. Then it shows up as silence, edge, or
+          the tone shift once the restaurant reservation is booked.
+      - kicker: Sign 3
+        headline: You agree in public, then renegotiate in private
+        body: Quick yes in the room. Side text later. Slow replies. A late veto once the
+          plan already has bones.
+      - kicker: Reframe
+        headline: Real ease comes from being locatable early
+        body: Name the few things that actually matter before everyone starts guessing.
+          Easy to deal with is not the same as impossible to find.
+    caption:
+      hook: Politeness is fine; hidden constraints are what make easygoing expensive.
+      body: Sometimes you truly do not care. Politeness is not the problem; hidden
+        constraints are. If the price, timing, appetite, or ride home matters,
+        say it before the plan hardens.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260503121342-easygoing-tax
+    renderedFiles:
+      - docs/assets/posts/20260503121342-easygoing-tax/slide-01.png
+      - docs/assets/posts/20260503121342-easygoing-tax/slide-02.png
+      - docs/assets/posts/20260503121342-easygoing-tax/slide-03.png
+      - docs/assets/posts/20260503121342-easygoing-tax/slide-04.png
+      - docs/assets/posts/20260503121342-easygoing-tax/slide-05.png

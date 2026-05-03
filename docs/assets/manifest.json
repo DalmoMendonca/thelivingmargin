@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T11:14:56.428Z",
+  "updatedAt": "2026-05-03T12:13:43.503Z",
   "items": [
-    {
-      "id": "20260501172059-luxury-sentence",
-      "title": "Luxury Sentence",
-      "kind": "single",
-      "topic": "casual bill-splitting that quietly offloads cost",
-      "angle": "A relaxed table phrase can hide the fact that one polite person is covering everyone else's extras.",
-      "createdAt": "2026-05-01T17:20:59.646Z",
-      "renderedFiles": [
-        "assets/posts/20260501172059-luxury-sentence/post.png"
-      ]
-    },
     {
       "id": "20260501182021-endorsement-not-input",
       "title": "Endorsement, Not Input",
@@ -471,6 +460,21 @@
       "createdAt": "2026-05-03T11:14:47.868Z",
       "renderedFiles": [
         "assets/posts/20260503111447-hallway-support/post.png"
+      ]
+    },
+    {
+      "id": "20260503121342-easygoing-tax",
+      "title": "Easygoing Tax",
+      "kind": "carousel",
+      "topic": "performing low-maintenance behavior in shared plans and small decisions",
+      "angle": "Trying to seem easygoing does not erase your preferences; it makes other people find them late through guesswork, tone, or revision.",
+      "createdAt": "2026-05-03T12:13:42.204Z",
+      "renderedFiles": [
+        "assets/posts/20260503121342-easygoing-tax/slide-01.png",
+        "assets/posts/20260503121342-easygoing-tax/slide-02.png",
+        "assets/posts/20260503121342-easygoing-tax/slide-03.png",
+        "assets/posts/20260503121342-easygoing-tax/slide-04.png",
+        "assets/posts/20260503121342-easygoing-tax/slide-05.png"
       ]
     }
   ]
