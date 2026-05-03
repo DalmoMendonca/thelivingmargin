@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T10:21:06.743Z
+updatedAt: 2026-05-03T11:14:48.323Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3770,3 +3770,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A2bmWV-R3LW6d9AMkAoZ1vY"}}'
+  - id: 20260503111447-hallway-support
+    createdAt: 2026-05-03T11:14:47.868Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Hallway Support
+    topic: private agreement without public backing at work
+    angle: When someone agrees only afterward in the hallway, they're protecting
+      their name instead of sharing the risk in the room.
+    fingerprint: afterward agreement agrees at backing hallway instead name only
+      private protecting public risk room sharing someone support their theyre
+      when without work
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: 'Single-image text post on a dark charcoal-grain background. Headline:
+      "Saving your agreement for the hallway saves your name, not mine." Body:
+      "By afterward, the room has already decided who stood alone."'
+    single:
+      headline: Saving your agreement for the hallway saves your name, not mine.
+      body: By afterward, the room has already decided who stood alone.
+    caption:
+      hook: The meeting is where it counts; the hallway is where people protect their
+        name.
+      body: Decisions and ownership are assigned in the room. Private agreement
+        afterward changes nothing.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260503111447-hallway-support
+    renderedFiles:
+      - docs/assets/posts/20260503111447-hallway-support/post.png

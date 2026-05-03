@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T10:21:06.794Z",
+  "updatedAt": "2026-05-03T11:14:48.379Z",
   "items": [
-    {
-      "id": "20260501162237-count-the-spoons",
-      "title": "Count the Spoons",
-      "kind": "single",
-      "topic": "self-advertised integrity",
-      "angle": "Repeated claims of honesty, loyalty, or being drama-free are often marketing in place of evidence.",
-      "createdAt": "2026-05-01T16:22:37.244Z",
-      "renderedFiles": [
-        "assets/posts/20260501162237-count-the-spoons/post.png"
-      ]
-    },
     {
       "id": "20260501172059-luxury-sentence",
       "title": "Luxury Sentence",
@@ -471,6 +460,17 @@
         "assets/posts/20260503102047-not-bothering-you/slide-01.png",
         "assets/posts/20260503102047-not-bothering-you/slide-02.png",
         "assets/posts/20260503102047-not-bothering-you/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260503111447-hallway-support",
+      "title": "Hallway Support",
+      "kind": "single",
+      "topic": "private agreement without public backing at work",
+      "angle": "When someone agrees only afterward in the hallway, they're protecting their name instead of sharing the risk in the room.",
+      "createdAt": "2026-05-03T11:14:47.868Z",
+      "renderedFiles": [
+        "assets/posts/20260503111447-hallway-support/post.png"
       ]
     }
   ]
