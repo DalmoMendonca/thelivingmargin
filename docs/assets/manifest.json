@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T17:16:32.043Z",
+  "updatedAt": "2026-05-03T18:15:42.619Z",
   "items": [
-    {
-      "id": "20260501231726-buy-relief",
-      "title": "Buy Relief",
-      "kind": "single",
-      "topic": "buying to end awkward sales pressure",
-      "angle": "Give permission to walk out without paying to escape a polite interaction.",
-      "createdAt": "2026-05-01T23:17:26.318Z",
-      "renderedFiles": [
-        "assets/posts/20260501231726-buy-relief/post.png"
-      ]
-    },
     {
       "id": "20260502001922-reacted-not-answered",
       "title": "Reacted, Not Answered",
@@ -469,6 +458,17 @@
       "createdAt": "2026-05-03T17:16:24.230Z",
       "renderedFiles": [
         "assets/posts/20260503171624-buy-the-easier-version/post.png"
+      ]
+    },
+    {
+      "id": "20260503181540-tapback-diplomacy",
+      "title": "Tapback Diplomacy",
+      "kind": "single",
+      "topic": "emoji reactions standing in for actual answers",
+      "angle": "When a message needs words, a heart or thumbs-up can function as a socially acceptable nonreply.",
+      "createdAt": "2026-05-03T18:15:40.835Z",
+      "renderedFiles": [
+        "assets/posts/20260503181540-tapback-diplomacy/post.png"
       ]
     }
   ]

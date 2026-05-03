@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T17:16:31.995Z
+updatedAt: 2026-05-03T18:15:42.578Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4114,3 +4114,45 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AKlnjskfy1BqmfBKiTZsoAs"}}'
+  - id: 20260503181540-tapback-diplomacy
+    createdAt: 2026-05-03T18:15:40.835Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Tapback Diplomacy
+    topic: emoji reactions standing in for actual answers
+    angle: When a message needs words, a heart or thumbs-up can function as a
+      socially acceptable nonreply.
+    fingerprint: acceptable actual answers as can diplomacy emoji function heart
+      message needs nonreply reactions socially standing tapback thumbs up when
+      words
+    contentMode: observation
+    voiceMode: sharp
+    quoteAttribution: "altTextA warm paper broadside with a large, immediate
+      emphasis on a heart tapback attached to a long text bubble. The text
+      reads: “A heart on a specific ask is acknowledgment pretending to be an
+      answer.” Supporting line: “It marks the message as seen. It also avoids
+      yes, no, or not right now.”"
+    altText: "A warm paper broadside with a large, immediate emphasis on a heart
+      tapback attached to a long text bubble. The text reads: “A heart on a
+      specific ask is acknowledgment pretending to be an answer.” Supporting
+      line: “It marks the message as seen. It also avoids yes, no, or not right
+      now.”"
+    single:
+      headline: A heart on a specific ask is acknowledgment pretending to be an answer.
+      body: It marks the message as seen. It also avoids yes, no, or not right now.
+    caption:
+      hook: Tapbacks feel polite because they move the work off-screen.
+      body: Now the sender has to decode whether that heart meant care, agreement,
+        delay, or dismissal. It lands just enough to make a follow-up feel
+        pushy.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode observation
+    renderDir: docs/assets/posts/20260503181540-tapback-diplomacy
+    renderedFiles:
+      - docs/assets/posts/20260503181540-tapback-diplomacy/post.png
