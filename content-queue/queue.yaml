@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T17:16:25.336Z
+updatedAt: 2026-05-03T17:16:31.995Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4102,9 +4102,15 @@ items:
         like virtue when it is mostly pride.
       callToComment: Where does pride make life harder?
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner relief | Plan mode encouragement
     renderDir: docs/assets/posts/20260503171624-buy-the-easier-version
     renderedFiles:
       - docs/assets/posts/20260503171624-buy-the-easier-version/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"AKlnjskfy1BqmfBKiTZsoAs"}}'
