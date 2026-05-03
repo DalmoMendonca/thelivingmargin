@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T06:48:13.681Z
+updatedAt: 2026-05-03T07:36:57.738Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3575,3 +3575,54 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ar03lRY6w-5U9ahmrFoklIl"}}'
+  - id: 20260503073655-aisle-14
+    createdAt: 2026-05-03T07:36:55.801Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Aisle 14
+    topic: being helped without being made to feel ignorant
+    angle: A small hardware-store interaction shows that real expertise often sounds
+      like translation, not display.
+    fingerprint: 14 aisle being display expertise feel hardware helped ignorant
+      interaction like made not often real shows small sounds store translation
+      without
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: ": null"
+    altText: Three-slide notebook-style carousel in sage and cream. Slide 1 shows
+      confusion in a hardware store aisle under fluorescent lighting, checking a
+      screenshot and comparing wall anchors. Slide 2 centers the line, "What are
+      you actually trying to hang?" and the choice becoming simple. Slide 3 ends
+      with a small bag, a warm receipt, and the feeling of leaving understood
+      rather than embarrassed.
+    carousel:
+      - headline: By then I’d been pretending to compare packages for too long.
+        body: Under the fluorescent hum, I kept checking a screenshot of my shelf and
+          turning over little packets of wall anchors like I knew what any of it
+          meant. The real problem was one shelf and one wall.
+      - headline: Then he asked the only useful question.
+        body: He looked at the screenshot on my phone and said, "What are you actually
+          trying to hang?" Once I answered, the whole aisle collapsed into two
+          choices instead of thirty.
+      - headline: I left with a small bag and the feeling of being understood.
+        body: The receipt was still warm from the printer. The relief wasn’t dramatic.
+          It was just leaving with the right thing, without that scraped feeling
+          of having to audition competence first.
+    caption:
+      hook: Good help starts with the job, not with whether you know the right aisle
+        words.
+      body: Real expertise often sounds like translation, not display. The best help
+        begins with the actual task, then makes the system small enough to use.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260503073655-aisle-14
+    renderedFiles:
+      - docs/assets/posts/20260503073655-aisle-14/slide-01.png
+      - docs/assets/posts/20260503073655-aisle-14/slide-02.png
+      - docs/assets/posts/20260503073655-aisle-14/slide-03.png

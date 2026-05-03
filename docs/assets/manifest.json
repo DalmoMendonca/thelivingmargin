@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T06:48:13.723Z",
+  "updatedAt": "2026-05-03T07:36:57.792Z",
   "items": [
-    {
-      "id": "20260501121628-no-pressure",
-      "title": "No Pressure",
-      "kind": "single",
-      "topic": "the phrase \"no pressure\" attached to a real request",
-      "angle": "\"No pressure\" often keeps a real request intact while making refusal feel like the receiver's awkwardness to manage.",
-      "createdAt": "2026-05-01T12:16:28.430Z",
-      "renderedFiles": [
-        "assets/posts/20260501121628-no-pressure/post.png"
-      ]
-    },
     {
       "id": "20260501133047-wrong-order",
       "title": "Wrong Order",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-03T06:48:05.343Z",
       "renderedFiles": [
         "assets/posts/20260503064805-play-it-by-ear/post.png"
+      ]
+    },
+    {
+      "id": "20260503073655-aisle-14",
+      "title": "Aisle 14",
+      "kind": "carousel",
+      "topic": "being helped without being made to feel ignorant",
+      "angle": "A small hardware-store interaction shows that real expertise often sounds like translation, not display.",
+      "createdAt": "2026-05-03T07:36:55.801Z",
+      "renderedFiles": [
+        "assets/posts/20260503073655-aisle-14/slide-01.png",
+        "assets/posts/20260503073655-aisle-14/slide-02.png",
+        "assets/posts/20260503073655-aisle-14/slide-03.png"
       ]
     }
   ]
