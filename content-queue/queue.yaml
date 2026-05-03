@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-02T23:15:20.728Z
+updatedAt: 2026-05-03T00:18:21.219Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3330,3 +3330,43 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A3aFsH2o5bj6vj_zeJorAfJ"}}'
+  - id: 20260503001820-editing-for-safety
+    createdAt: 2026-05-03T00:18:20.844Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Editing for Safety
+    topic: rewriting a clear message until it feels impossible to resent
+    angle: What gets called overthinking a text or email is often an attempt to
+      manage the other person's reaction in advance, which makes endless editing
+      feel necessary and never sufficient.
+    fingerprint: advance attempt called clear editing email endless feel feels gets
+      impossible makes manage message necessary never often other overthinking
+      persons reaction resent rewriting safety sufficient text until what which
+    contentMode: reframe
+    voiceMode: sharp
+    altText: "Single-image notebook-style post on a warm cream paper background with
+      brass-toned text. The copy reads: Overthinking is the polite name for it.
+      You keep adding just, extra exclamation marks, and rewriting the first
+      line of a simple ask. Not to make it clearer. To manage their reaction
+      before they have one."
+    single:
+      headline: Overthinking is the polite name for it.
+      body: You keep adding just, extra exclamation marks, and rewriting the first
+        line of a simple ask.
+      supportLine: Not to make it clearer. To manage their reaction before they have one.
+    caption:
+      hook: A draft cannot protect you from someone else having a feeling.
+      body: "Once you stop treating wording like insurance, the test gets simpler: is
+        it clear, is it fair, can you stand behind it. That’s stronger than
+        false safety."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260503001820-editing-for-safety
+    renderedFiles:
+      - docs/assets/posts/20260503001820-editing-for-safety/post.png

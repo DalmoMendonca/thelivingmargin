@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-02T23:15:20.770Z",
+  "updatedAt": "2026-05-03T00:18:21.255Z",
   "items": [
-    {
-      "id": "20260430045339-the-disclaimer-that-gets-you-ignored",
-      "title": "The Disclaimer That Gets You Ignored",
-      "kind": "single",
-      "topic": "Meeting pre-apologies and how disclaimers erase your question",
-      "angle": "A “not a dumb question” disclaimer isn’t politeness-it’s permission for the room to dismiss you, and the fix is removing the cushion.",
-      "createdAt": "2026-04-30T04:53:39.540Z",
-      "renderedFiles": [
-        "assets/posts/20260430045339-the-disclaimer-that-gets-you-ignored/post.png"
-      ]
-    },
     {
       "id": "20260430045428-name-repair-rules",
       "title": "Name-Repair Rules",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-02T23:15:12.493Z",
       "renderedFiles": [
         "assets/posts/20260502231512-forwarded-panic/post.png"
+      ]
+    },
+    {
+      "id": "20260503001820-editing-for-safety",
+      "title": "Editing for Safety",
+      "kind": "single",
+      "topic": "rewriting a clear message until it feels impossible to resent",
+      "angle": "What gets called overthinking a text or email is often an attempt to manage the other person's reaction in advance, which makes endless editing feel necessary and never sufficient.",
+      "createdAt": "2026-05-03T00:18:20.844Z",
+      "renderedFiles": [
+        "assets/posts/20260503001820-editing-for-safety/post.png"
       ]
     }
   ]
