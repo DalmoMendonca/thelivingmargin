@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T12:14:09.877Z
+updatedAt: 2026-05-03T13:30:08.942Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3881,3 +3881,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AIrQ0lU8sdaCJYR7adbeVTC"}}'
+  - id: 20260503133008-what-not-to-answer
+    createdAt: 2026-05-03T13:30:08.493Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: signal
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: What Not to Answer
+    topic: minor slights and selective attention
+    angle: In a screen-fed culture of tiny irritations, wisdom is deciding which
+      offenses do not deserve pursuit.
+    fingerprint: answer attention culture deciding deserve do fed irritations minor
+      not offenses pursuit screen selective slights tiny what which wisdom
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: William James
+    altText: A single Instagram quote card on a dark charcoal textured background.
+      Large centered text reads, “The art of being wise is the art of knowing
+      what to overlook.” Small attribution below reads, William James.
+    single:
+      headline: “The art of being wise is the art of knowing what to overlook.”
+      body: William James
+    caption:
+      hook: Your unsent draft is not always evidence of self-respect.
+      body: "Screens manufacture insult: a clipped Slack ping, a group-chat tone, a
+        text reread once too often. Deleting the petty reply and answering the
+        actual question is judgment; overlooking noise is not the same as
+        accepting real contempt."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260503133008-what-not-to-answer
+    renderedFiles:
+      - docs/assets/posts/20260503133008-what-not-to-answer/post.png

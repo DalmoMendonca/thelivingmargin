@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-03T12:14:09.916Z",
+  "updatedAt": "2026-05-03T13:30:08.997Z",
   "items": [
-    {
-      "id": "20260501182021-endorsement-not-input",
-      "title": "Endorsement, Not Input",
-      "kind": "carousel",
-      "topic": "signs a room is asking you to legitimize a decision instead of help make it",
-      "angle": "Sometimes \"thoughts?\" is not an invitation to shape the decision; it is a request to help make an already-made decision look shared.",
-      "createdAt": "2026-05-01T18:20:21.748Z",
-      "renderedFiles": [
-        "assets/posts/20260501182021-endorsement-not-input/slide-01.png",
-        "assets/posts/20260501182021-endorsement-not-input/slide-02.png",
-        "assets/posts/20260501182021-endorsement-not-input/slide-03.png",
-        "assets/posts/20260501182021-endorsement-not-input/slide-04.png",
-        "assets/posts/20260501182021-endorsement-not-input/slide-05.png"
-      ]
-    },
     {
       "id": "20260501192808-keep-your-place",
       "title": "Keep Your Place",
@@ -475,6 +460,17 @@
         "assets/posts/20260503121342-easygoing-tax/slide-03.png",
         "assets/posts/20260503121342-easygoing-tax/slide-04.png",
         "assets/posts/20260503121342-easygoing-tax/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260503133008-what-not-to-answer",
+      "title": "What Not to Answer",
+      "kind": "single",
+      "topic": "minor slights and selective attention",
+      "angle": "In a screen-fed culture of tiny irritations, wisdom is deciding which offenses do not deserve pursuit.",
+      "createdAt": "2026-05-03T13:30:08.493Z",
+      "renderedFiles": [
+        "assets/posts/20260503133008-what-not-to-answer/post.png"
       ]
     }
   ]
