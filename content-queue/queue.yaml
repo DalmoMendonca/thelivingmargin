@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T18:15:42.578Z
+updatedAt: 2026-05-03T18:15:51.409Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4150,9 +4150,15 @@ items:
         delay, or dismissal. It lands just enough to make a follow-up feel
         pushy.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner translation | Plan mode observation
     renderDir: docs/assets/posts/20260503181540-tapback-diplomacy
     renderedFiles:
       - docs/assets/posts/20260503181540-tapback-diplomacy/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"A4p2goeZ4ZOh1466M-Uh8AM"}}'
