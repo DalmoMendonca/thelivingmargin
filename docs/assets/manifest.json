@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T14:19:08.946Z",
+  "updatedAt": "2026-05-03T15:14:54.499Z",
   "items": [
-    {
-      "id": "20260501201715-low-maintenance",
-      "title": "Low-Maintenance",
-      "kind": "single",
-      "topic": "using agreeableness as cover for not naming a preference or need",
-      "angle": "The post asks whether calling yourself low-maintenance is sometimes a safer label for being afraid to become inconvenient once you want something specific.",
-      "createdAt": "2026-05-01T20:17:15.497Z",
-      "renderedFiles": [
-        "assets/posts/20260501201715-low-maintenance/post.png"
-      ]
-    },
     {
       "id": "20260501211647-the-doorway-rule",
       "title": "The Doorway Rule",
@@ -469,6 +458,17 @@
       "createdAt": "2026-05-03T14:18:58.019Z",
       "renderedFiles": [
         "assets/posts/20260503141858-simple-version/post.png"
+      ]
+    },
+    {
+      "id": "20260503151453-late-without-the-trial",
+      "title": "Late Without the Trial",
+      "kind": "single",
+      "topic": "overexplaining after a small failure",
+      "angle": "When you inconvenience someone, a brief direct apology is usually more respectful than a long alibi that asks them to manage your embarrassment.",
+      "createdAt": "2026-05-03T15:14:53.674Z",
+      "renderedFiles": [
+        "assets/posts/20260503151453-late-without-the-trial/post.png"
       ]
     }
   ]

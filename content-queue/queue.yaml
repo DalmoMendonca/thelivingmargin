@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T14:19:08.906Z
+updatedAt: 2026-05-03T15:14:54.462Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3967,3 +3967,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AoUdzL_rKkZNoNWJBpJ2snV"}}'
+  - id: 20260503151453-late-without-the-trial
+    createdAt: 2026-05-03T15:14:53.674Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Late Without the Trial
+    topic: overexplaining after a small failure
+    angle: When you inconvenience someone, a brief direct apology is usually more
+      respectful than a long alibi that asks them to manage your embarrassment.
+    fingerprint: after alibi apology asks brief direct embarrassment failure
+      inconvenience late long manage more overexplaining respectful small
+      someone than them trial usually when without
+    contentMode: advice
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: "Notebook-style post in sage ash tones. Headline: 'If the coffee is
+      already on the table, skip the alibi.' Body gives a doorway script for
+      arriving late: 'Sorry I'm late. I know we started at 12. Thanks for
+      waiting.' A support line adds a rule for the week: one-line sorry first,
+      and context only if it changes the plan."
+    single:
+      headline: If the coffee is already on the table, skip the alibi.
+      body: "At the doorway, try: \"Sorry I'm late. I know we started at 12. Thanks
+        for waiting.\" Then sit down."
+      supportLine: "Rule for this week: one-line sorry first. Add context only if it
+        changes the plan."
+    caption:
+      hook: A long excuse makes your lateness their cleanup job.
+      body: 'A long alibi makes them track the story and comfort you. Brief context
+        helps only when it changes the next move: "Missed my train, so please
+        order without me," or "Can we push the start 10 minutes? "'
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner script | Plan mode advice
+    renderDir: docs/assets/posts/20260503151453-late-without-the-trial
+    renderedFiles:
+      - docs/assets/posts/20260503151453-late-without-the-trial/post.png
