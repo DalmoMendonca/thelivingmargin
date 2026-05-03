@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T18:15:51.409Z
+updatedAt: 2026-05-03T19:23:24.303Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4162,3 +4162,58 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A4p2goeZ4ZOh1466M-Uh8AM"}}'
+  - id: 20260503192322-split-six-ways
+    createdAt: 2026-05-03T19:23:22.354Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Split Six Ways
+    topic: the social embarrassment of speaking up about money in a group setting
+    angle: What looks like poor communication at the table is sometimes someone
+      accurately reading that the room has already made honesty expensive.
+    fingerprint: about accurately already at communication embarrassment expensive
+      group has honesty like looks made money poor reading room setting six
+      social someone sometimes speaking split table up ways what
+    contentMode: dialogue
+    voiceMode: sharp
+    quoteAttribution: "altText doesn't allow null in schema? Wait quoteAttribution
+      nullable yes, altText string. Need valid JSON. Let's continue carefully.
+      We need output entire valid object no commentary. Let's construct fully.##
+      correction: can't do editing in final? Need provide final JSON only. Let's
+      restart clean.}}"
+    altText: A three-slide notebook-style carousel in sage and cream. Slide 1 shows
+      a person being told they went quiet when the restaurant check came, and
+      replying, 'I can do mine.' Slide 2 reveals they only had soup and water
+      while others had drinks and were already saying to split it six ways.
+      Slide 3 shows that a casual 'don't make this a spreadsheet' joke made
+      speaking up feel costly before anyone asked.
+    carousel:
+      - headline: '"You got quiet when the check came."'
+        body: |-
+          "I said, 'I can do mine.'"
+
+          "You said it real quiet."
+      - headline: '"Because I had soup and water."'
+        body: "\"You all had drinks, and 'split it six ways' was already out there
+          before the check even landed.\""
+      - headline: "\"You could've just said that.\""
+        body: |-
+          "Somebody had already made the 'don't make this a spreadsheet' joke."
+
+          "I mean. I kind of did."
+    caption:
+      hook: Silence gets cheaper once the room calls precision petty.
+      body: By the time the check comes, the rules are already set. 'Just say
+        something' misses how fast a throwaway joke can make honesty cost more.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260503192322-split-six-ways
+    renderedFiles:
+      - docs/assets/posts/20260503192322-split-six-ways/slide-01.png
+      - docs/assets/posts/20260503192322-split-six-ways/slide-02.png
+      - docs/assets/posts/20260503192322-split-six-ways/slide-03.png

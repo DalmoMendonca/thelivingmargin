@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T18:15:51.437Z",
+  "updatedAt": "2026-05-03T19:23:24.358Z",
   "items": [
-    {
-      "id": "20260502001922-reacted-not-answered",
-      "title": "Reacted, Not Answered",
-      "kind": "single",
-      "topic": "emoji reactions replacing an actual reply in planning messages",
-      "angle": "In group chats, reactions keep the mood friendly while leaving one person to actually resolve the plan.",
-      "createdAt": "2026-05-02T00:19:22.441Z",
-      "renderedFiles": [
-        "assets/posts/20260502001922-reacted-not-answered/post.png"
-      ]
-    },
     {
       "id": "20260502014022-small-exceptions",
       "title": "Small Exceptions",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-03T18:15:40.835Z",
       "renderedFiles": [
         "assets/posts/20260503181540-tapback-diplomacy/post.png"
+      ]
+    },
+    {
+      "id": "20260503192322-split-six-ways",
+      "title": "Split Six Ways",
+      "kind": "carousel",
+      "topic": "the social embarrassment of speaking up about money in a group setting",
+      "angle": "What looks like poor communication at the table is sometimes someone accurately reading that the room has already made honesty expensive.",
+      "createdAt": "2026-05-03T19:23:22.354Z",
+      "renderedFiles": [
+        "assets/posts/20260503192322-split-six-ways/slide-01.png",
+        "assets/posts/20260503192322-split-six-ways/slide-02.png",
+        "assets/posts/20260503192322-split-six-ways/slide-03.png"
       ]
     }
   ]
