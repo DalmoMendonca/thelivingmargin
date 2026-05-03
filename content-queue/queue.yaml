@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T07:37:17.599Z
+updatedAt: 2026-05-03T08:33:06.651Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3632,3 +3632,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AYSDB3t8smDtubFS6KfjNUe"}}'
+  - id: 20260503083306-no-cover-story
+    createdAt: 2026-05-03T08:33:06.325Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: No Cover Story
+    topic: public waiting without fake busyness
+    angle: A brief public pause does not need camouflage; you can arrive early,
+      wait, and let yourself be visibly unoccupied.
+    fingerprint: arrive brief busyness camouflage can cover does early fake let need
+      no not pause public story unoccupied visibly wait waiting without yourself
+    contentMode: encouragement
+    voiceMode: reflective
+    altText: "A single editorial-style Instagram post on warm paper texture in brass
+      ink. The card contains one sentence: 'You are allowed to arrive early, sit
+      in the lobby chair with your coffee, and not pretend to text.'"
+    single:
+      headline: You are allowed to arrive early, sit in the lobby chair with your
+        coffee, and not pretend to text.
+      body: ""
+    caption:
+      hook: Not every early minute needs a cover story.
+      body: Most fake busyness isn’t urgency; it’s social cover. If you hide every
+        small wait, visible waiting starts to feel like something to apologize
+        for.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260503083306-no-cover-story
+    renderedFiles:
+      - docs/assets/posts/20260503083306-no-cover-story/post.png

@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-03T07:37:17.657Z",
+  "updatedAt": "2026-05-03T08:33:06.689Z",
   "items": [
-    {
-      "id": "20260501133047-wrong-order",
-      "title": "Wrong Order",
-      "kind": "carousel",
-      "topic": "accepting the wrong thing to avoid becoming an inconvenience in public",
-      "angle": "A small restaurant exchange shows how embarrassment can make someone protect the table's ease more than their own experience.",
-      "createdAt": "2026-05-01T13:30:47.492Z",
-      "renderedFiles": [
-        "assets/posts/20260501133047-wrong-order/slide-01.png",
-        "assets/posts/20260501133047-wrong-order/slide-02.png",
-        "assets/posts/20260501133047-wrong-order/slide-03.png"
-      ]
-    },
     {
       "id": "20260501142509-send-me-the-question",
       "title": "Send Me the Question",
@@ -471,6 +458,17 @@
         "assets/posts/20260503073655-aisle-14/slide-01.png",
         "assets/posts/20260503073655-aisle-14/slide-02.png",
         "assets/posts/20260503073655-aisle-14/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260503083306-no-cover-story",
+      "title": "No Cover Story",
+      "kind": "single",
+      "topic": "public waiting without fake busyness",
+      "angle": "A brief public pause does not need camouflage; you can arrive early, wait, and let yourself be visibly unoccupied.",
+      "createdAt": "2026-05-03T08:33:06.325Z",
+      "renderedFiles": [
+        "assets/posts/20260503083306-no-cover-story/post.png"
       ]
     }
   ]
