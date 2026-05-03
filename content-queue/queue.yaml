@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T09:30:10.867Z
+updatedAt: 2026-05-03T10:20:48.533Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3719,3 +3719,48 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A75bcRCK4auxry4YnPQbqGJ"}}'
+  - id: 20260503102047-not-bothering-you
+    createdAt: 2026-05-03T10:20:47.653Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Not Bothering You
+    topic: using politeness to avoid the one person whose refusal would feel
+      definitive
+    angle: "The polite excuse gives way to the real reason: they avoided the friend
+      whose honest answer would have made the ask feel as late and large as it
+      was."
+    fingerprint: answer as ask avoid avoided bothering definitive excuse feel friend
+      gives have honest large late made not one person polite politeness real
+      reason refusal they using was way whose would
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: A three-slide notebook-style carousel in brass ink on cream paper.
+      Slide 1 says, "Why didn't you ask me directly?" and "For the airport
+      pickup." Slide 2 says, "I didn't want to bother you." and "It was last
+      minute." Slide 3 says, "You texted three other people first." then "Yeah."
+      and "You might've said no."
+    carousel:
+      - headline: "\"Why didn't you ask me directly?\""
+        body: '"For the airport pickup."'
+      - headline: "\"I didn't want to bother you.\""
+        body: '"It was last minute."'
+      - headline: '"You texted three other people first."'
+        body: '"Yeah."'
+        footer: "\"You might've said no.\""
+    caption:
+      hook: Sometimes "I didn't want to bother you" means something else.
+      body: The person they skip is often the one who'd answer plainly and make the
+        favor sound as big and late as it really is.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260503102047-not-bothering-you
+    renderedFiles:
+      - docs/assets/posts/20260503102047-not-bothering-you/slide-01.png
+      - docs/assets/posts/20260503102047-not-bothering-you/slide-02.png
+      - docs/assets/posts/20260503102047-not-bothering-you/slide-03.png

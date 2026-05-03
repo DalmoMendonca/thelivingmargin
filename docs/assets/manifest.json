@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T09:30:10.912Z",
+  "updatedAt": "2026-05-03T10:20:48.576Z",
   "items": [
-    {
-      "id": "20260501152035-bad-at-networking",
-      "title": "Bad at Networking",
-      "kind": "single",
-      "topic": "self-blame after transactional work events",
-      "angle": "What people call being bad at networking is often just discomfort in conversations where they're deciding whether you're useful.",
-      "createdAt": "2026-05-01T15:20:35.129Z",
-      "renderedFiles": [
-        "assets/posts/20260501152035-bad-at-networking/post.png"
-      ]
-    },
     {
       "id": "20260501162237-count-the-spoons",
       "title": "Count the Spoons",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-03T09:30:02.218Z",
       "renderedFiles": [
         "assets/posts/20260503093002-praise-that-pins-you/post.png"
+      ]
+    },
+    {
+      "id": "20260503102047-not-bothering-you",
+      "title": "Not Bothering You",
+      "kind": "carousel",
+      "topic": "using politeness to avoid the one person whose refusal would feel definitive",
+      "angle": "The polite excuse gives way to the real reason: they avoided the friend whose honest answer would have made the ask feel as late and large as it was.",
+      "createdAt": "2026-05-03T10:20:47.653Z",
+      "renderedFiles": [
+        "assets/posts/20260503102047-not-bothering-you/slide-01.png",
+        "assets/posts/20260503102047-not-bothering-you/slide-02.png",
+        "assets/posts/20260503102047-not-bothering-you/slide-03.png"
       ]
     }
   ]
