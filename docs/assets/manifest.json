@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-03T00:18:30.084Z",
+  "updatedAt": "2026-05-03T01:33:39.380Z",
   "items": [
-    {
-      "id": "20260430045428-name-repair-rules",
-      "title": "Name-Repair Rules",
-      "kind": "carousel",
-      "topic": "How to fix a mispronounced name without making the room pay for your embarrassment",
-      "angle": "The cleanest repair is brief correction plus quick return-anything longer turns your mistake into someone else’s job.",
-      "createdAt": "2026-04-30T04:54:28.623Z",
-      "renderedFiles": [
-        "assets/posts/20260430045428-name-repair-rules/slide-01.png",
-        "assets/posts/20260430045428-name-repair-rules/slide-02.png",
-        "assets/posts/20260430045428-name-repair-rules/slide-03.png",
-        "assets/posts/20260430045428-name-repair-rules/slide-04.png",
-        "assets/posts/20260430045428-name-repair-rules/slide-05.png"
-      ]
-    },
     {
       "id": "20260501093213-price-in-the-invite",
       "title": "Price in the Invite",
@@ -471,6 +456,21 @@
       "createdAt": "2026-05-03T00:18:20.844Z",
       "renderedFiles": [
         "assets/posts/20260503001820-editing-for-safety/post.png"
+      ]
+    },
+    {
+      "id": "20260503013336-favor-language",
+      "title": "Favor Language",
+      "kind": "carousel",
+      "topic": "phrases that make a favor sound smaller than it is",
+      "angle": "Certain polite openings shrink the labor before you can assess it, so the receiver has to fight the wording before they can answer honestly.",
+      "createdAt": "2026-05-03T01:33:36.753Z",
+      "renderedFiles": [
+        "assets/posts/20260503013336-favor-language/slide-01.png",
+        "assets/posts/20260503013336-favor-language/slide-02.png",
+        "assets/posts/20260503013336-favor-language/slide-03.png",
+        "assets/posts/20260503013336-favor-language/slide-04.png",
+        "assets/posts/20260503013336-favor-language/slide-05.png"
       ]
     }
   ]

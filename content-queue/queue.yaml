@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T00:18:30.058Z
+updatedAt: 2026-05-03T01:33:39.340Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3376,3 +3376,59 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A3Vsb0ic5bZQpvDx8Mo_byT"}}'
+  - id: 20260503013336-favor-language
+    createdAt: 2026-05-03T01:33:36.753Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Favor Language
+    topic: phrases that make a favor sound smaller than it is
+    angle: Certain polite openings shrink the labor before you can assess it, so the
+      receiver has to fight the wording before they can answer honestly.
+    fingerprint: answer assess before can certain favor fight has honestly labor
+      language make openings phrases polite receiver shrink smaller so sound
+      than they wording
+    contentMode: list
+    voiceMode: sharp
+    altText: "A five-slide editorial carousel titled Favor Language. It lists three
+      phrases that make a favor sound smaller than it is: quick favor, pick your
+      brain, and when you have a sec or 15-minute call. The final slide explains
+      that the real problem is minimized cost, not asking for help."
+    carousel:
+      - kicker: Signs
+        headline: 3 phrases that make the favor sound smaller than it is
+        body: You read the opener and already know the task is about to outgrow the
+          wording.
+      - headline: “Quick favor”
+        body: The adjective gets there first. By the time the real ask arrives, you’re
+          not only answering a request. You’re correcting its packaging.
+      - headline: “Pick your brain”
+        body: A tidy way to make thought sound casual and free. What’s being requested
+          is often judgment, experience, and follow-up dressed as a chat.
+      - headline: “When you have a sec” or “15-minute call”
+        body: The clock gets assigned from the outside. A sec becomes a slot, then prep,
+          then comments on a draft or deck you were apparently already free to
+          read.
+      - headline: The issue isn’t asking for help
+        body: It’s minimized cost. A favor stays clean when the labor is named plainly;
+          the trouble starts when the wording spends your yes before you give
+          it.
+    caption:
+      hook: Sometimes they misread the scope; the effect still lands on you.
+      body: Not every soft opener is a tactic. They may truly think the call is
+        fifteen minutes and the deck is a glance. You still get to answer the
+        real ask.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260503013336-favor-language
+    renderedFiles:
+      - docs/assets/posts/20260503013336-favor-language/slide-01.png
+      - docs/assets/posts/20260503013336-favor-language/slide-02.png
+      - docs/assets/posts/20260503013336-favor-language/slide-03.png
+      - docs/assets/posts/20260503013336-favor-language/slide-04.png
+      - docs/assets/posts/20260503013336-favor-language/slide-05.png
