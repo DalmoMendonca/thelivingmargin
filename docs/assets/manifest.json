@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T20:14:02.073Z",
+  "updatedAt": "2026-05-03T21:15:49.265Z",
   "items": [
-    {
-      "id": "20260502030100-available-minutes",
-      "title": "Available Minutes",
-      "kind": "single",
-      "topic": "repeated lateness without warning in friendship, dating, or work",
-      "angle": "The insult in repeated lateness without an update is less the delay than the assumption that your time would stay open and absorb it.",
-      "createdAt": "2026-05-02T03:01:00.238Z",
-      "renderedFiles": [
-        "assets/posts/20260502030100-available-minutes/post.png"
-      ]
-    },
     {
       "id": "20260502041441-the-expensive-no",
       "title": "The Expensive No",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-03T20:13:51.937Z",
       "renderedFiles": [
         "assets/posts/20260503201351-temporary-drawer/post.png"
+      ]
+    },
+    {
+      "id": "20260503211548-warm-up-talk",
+      "title": "Warm-Up Talk",
+      "kind": "single",
+      "topic": "disdain for small talk",
+      "angle": "What gets called hating small talk is often impatience with the warm-up real conversation requires.",
+      "createdAt": "2026-05-03T21:15:48.699Z",
+      "renderedFiles": [
+        "assets/posts/20260503211548-warm-up-talk/post.png"
       ]
     }
   ]

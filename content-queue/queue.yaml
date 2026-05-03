@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T20:14:02.030Z
+updatedAt: 2026-05-03T21:15:49.210Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4267,3 +4267,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"As07xrbI8k2CWWAm3TqnxGO"}}'
+  - id: 20260503211548-warm-up-talk
+    createdAt: 2026-05-03T21:15:48.699Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Warm-Up Talk
+    topic: disdain for small talk
+    angle: What gets called hating small talk is often impatience with the warm-up
+      real conversation requires.
+    fingerprint: called conversation disdain gets hating impatience often real
+      requires small talk up warm what
+    contentMode: reframe
+    voiceMode: sharp
+    altText: A cream notebook-style graphic in a muted sage ash palette. The main
+      line reads, “I hate small talk” is often just impatience with the warm-up.
+      A smaller line below reads, At a work lunch, even the weather sentence is
+      an on-ramp to the conversation you came for.
+    single:
+      headline: “I hate small talk” is often just impatience with the warm-up.
+      body: At a work lunch, even the weather sentence is an on-ramp to the
+        conversation you came for.
+    caption:
+      hook: You can miss a whole room by grading the first ten minutes.
+      body: Treat the first weather sentence like an on-ramp, not proof the room is
+        shallow. In practice, you stay longer, ask the second question, and let
+        the conversation open.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260503211548-warm-up-talk
+    renderedFiles:
+      - docs/assets/posts/20260503211548-warm-up-talk/post.png
