@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T01:34:03.826Z",
+  "updatedAt": "2026-05-03T03:01:44.746Z",
   "items": [
-    {
-      "id": "20260501093213-price-in-the-invite",
-      "title": "Price in the Invite",
-      "kind": "single",
-      "topic": "naming cost before social commitment hardens",
-      "angle": "If a plan costs money, include the number in the invitation so people can answer honestly before politeness gets involved.",
-      "createdAt": "2026-05-01T09:32:13.688Z",
-      "renderedFiles": [
-        "assets/posts/20260501093213-price-in-the-invite/post.png"
-      ]
-    },
     {
       "id": "20260501103126-the-wine-list-rescue",
       "title": "The Wine List Rescue",
@@ -471,6 +460,17 @@
         "assets/posts/20260503013336-favor-language/slide-03.png",
         "assets/posts/20260503013336-favor-language/slide-04.png",
         "assets/posts/20260503013336-favor-language/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260503030143-reply-time",
+      "title": "Reply Time",
+      "kind": "single",
+      "topic": "how to handle requests made on the spot",
+      "angle": "When a request is made live and politeness is doing half the work, do not decide in the room; give a specific time you will reply.",
+      "createdAt": "2026-05-03T03:01:43.083Z",
+      "renderedFiles": [
+        "assets/posts/20260503030143-reply-time/post.png"
       ]
     }
   ]

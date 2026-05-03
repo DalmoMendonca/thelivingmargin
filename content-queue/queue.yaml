@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T01:34:03.788Z
+updatedAt: 2026-05-03T03:01:44.702Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3438,3 +3438,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ae9UVfQ0pyKqtDp_eOWyS3m"}}'
+  - id: 20260503030143-reply-time
+    createdAt: 2026-05-03T03:01:43.083Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Reply Time
+    topic: how to handle requests made on the spot
+    angle: When a request is made live and politeness is doing half the work, do not
+      decide in the room; give a specific time you will reply.
+    fingerprint: decide do doing give half handle how live made not politeness reply
+      request requests room specific spot time when will work
+    contentMode: advice
+    voiceMode: sharp
+    altText: "A cream notebook-style Instagram graphic. Headline: \"Hallway asks can
+      rush a yes.\" Body: \"If you're asked live and politeness is doing half
+      the work, don't decide in the room. Say, 'Let me look properly and text
+      you by 4.'\" Support line: \"Live pressure can distort consent.\""
+    single:
+      headline: Hallway asks can rush a yes.
+      body: If you're asked live and politeness is doing half the work, don't decide
+        in the room. Say, "Let me look properly and text you by 4."
+      supportLine: Live pressure can distort consent.
+    caption:
+      hook: A short delay tests the request.
+      body: If they wanted your real answer, a few hours changes nothing. If the mood
+        shifts when you pause, they may have wanted speed more than consent.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner warning | Plan mode advice
+    renderDir: docs/assets/posts/20260503030143-reply-time
+    renderedFiles:
+      - docs/assets/posts/20260503030143-reply-time/post.png
