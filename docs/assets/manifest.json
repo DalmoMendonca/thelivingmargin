@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T22:12:52.480Z",
+  "updatedAt": "2026-05-03T23:15:43.171Z",
   "items": [
-    {
-      "id": "20260502054900-editing-around-power",
-      "title": "Editing Around Power",
-      "kind": "single",
-      "topic": "rewriting messages when directness feels expensive",
-      "angle": "What looks like overthinking before sending a message is often careful editing in a relationship where directness carries a social cost.",
-      "createdAt": "2026-05-02T05:49:00.107Z",
-      "renderedFiles": [
-        "assets/posts/20260502054900-editing-around-power/post.png"
-      ]
-    },
     {
       "id": "20260502063611-write-down-the-date",
       "title": "Write Down the Date",
@@ -467,6 +456,21 @@
       "createdAt": "2026-05-03T22:12:43.828Z",
       "renderedFiles": [
         "assets/posts/20260503221243-honest-and-wrong/post.png"
+      ]
+    },
+    {
+      "id": "20260503231540-pretending-to-decide",
+      "title": "Pretending to Decide",
+      "kind": "carousel",
+      "topic": "how to spot a discussion that is really a pre-made decision",
+      "angle": "When one outcome already has language, logistics, and momentum, the \"discussion\" is usually a softer way to spread ownership.",
+      "createdAt": "2026-05-03T23:15:40.791Z",
+      "renderedFiles": [
+        "assets/posts/20260503231540-pretending-to-decide/slide-01.png",
+        "assets/posts/20260503231540-pretending-to-decide/slide-02.png",
+        "assets/posts/20260503231540-pretending-to-decide/slide-03.png",
+        "assets/posts/20260503231540-pretending-to-decide/slide-04.png",
+        "assets/posts/20260503231540-pretending-to-decide/slide-05.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T22:12:52.446Z
+updatedAt: 2026-05-03T23:15:43.110Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4353,3 +4353,68 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AFtXaQXcO1YkPjhk7m09eoR"}}'
+  - id: 20260503231540-pretending-to-decide
+    createdAt: 2026-05-03T23:15:40.791Z
+    source: ai
+    slotPreference: morning
+    kind: carousel
+    templateFamily: highlight
+    palette: bluePlaster
+    surfaceStyle: plasterBlue
+    title: Pretending to Decide
+    topic: how to spot a discussion that is really a pre-made decision
+    angle: When one outcome already has language, logistics, and momentum, the
+      "discussion" is usually a softer way to spread ownership.
+    fingerprint: already decide decision discussion has how language logistics made
+      momentum one outcome ownership pre pretending really softer spot spread
+      usually way when
+    contentMode: list
+    voiceMode: sharp
+    altText: "Five-slide carousel on a blue plaster background about spotting a
+      discussion that is not really open. Slide 1 promises 3 signs the room is
+      pretending to decide and frames them as tests: what is prepared, what is
+      debatable, and what is already moving. Slide 2 says one option arrives
+      fully dressed with an agenda deck, dates, numbers, copy, or a budget line
+      while the others stay vague. Slide 3 says the only questions left are
+      about rollout, wording, timing, and implementation, not whether to do it.
+      Slide 4 says calendar holds, money, or prior promises are already attached
+      before a late request for thoughts. Slide 5 concludes that the room is not
+      choosing, but being asked to share ownership of a decision already in
+      motion."
+    carousel:
+      - kicker: Diagnostic
+        headline: 3 signs the room is pretending to decide
+        body: Use these three tests when input is invited, but one outcome already feels
+          settled.
+        footer: Check what is prepared, what is debatable, and what is already moving.
+      - kicker: Sign 1
+        headline: One option arrives fully dressed
+        body: It already has an agenda deck, dates, numbers, copy, maybe even a budget
+          line. The other options are still sketches.
+      - kicker: Sign 2
+        headline: Only rollout is up for debate
+        body: You can discuss timing, wording, and implementation questions. Not whether
+          this should happen at all.
+      - kicker: Sign 3
+        headline: Input shows up after motion starts
+        body: Calendar holds are out. Money is attached. Then comes the late "thoughts?"
+      - kicker: What it is
+        headline: The room is not choosing
+        body: It is being asked to share ownership of a decision already in motion.
+        footer: Rollout presented as discussion.
+    caption:
+      hook: Sometimes this is avoidance, not malice.
+      body: 'People soften a near-decision into a discussion because saying it plainly
+        feels too sharp. Try: "Sounds like this is already leaning toward
+        rollout. " Clear sequencing can save everyone a performative debate.'
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260503231540-pretending-to-decide
+    renderedFiles:
+      - docs/assets/posts/20260503231540-pretending-to-decide/slide-01.png
+      - docs/assets/posts/20260503231540-pretending-to-decide/slide-02.png
+      - docs/assets/posts/20260503231540-pretending-to-decide/slide-03.png
+      - docs/assets/posts/20260503231540-pretending-to-decide/slide-04.png
+      - docs/assets/posts/20260503231540-pretending-to-decide/slide-05.png
