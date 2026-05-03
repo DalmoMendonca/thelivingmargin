@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-03T16:15:21.164Z",
+  "updatedAt": "2026-05-03T17:16:25.389Z",
   "items": [
-    {
-      "id": "20260501221730-after-the-fact-help",
-      "title": "After-the-Fact Help",
-      "kind": "carousel",
-      "topic": "retroactive generosity that avoids real inconvenience",
-      "angle": "The people most upset you did not ask for help are sometimes the ones who made asking feel expensive while it was still happening.",
-      "createdAt": "2026-05-01T22:17:30.577Z",
-      "renderedFiles": [
-        "assets/posts/20260501221730-after-the-fact-help/slide-01.png",
-        "assets/posts/20260501221730-after-the-fact-help/slide-02.png",
-        "assets/posts/20260501221730-after-the-fact-help/slide-03.png"
-      ]
-    },
     {
       "id": "20260501231726-buy-relief",
       "title": "Buy Relief",
@@ -471,6 +458,17 @@
         "assets/posts/20260503161501-blame-the-machine/slide-01.png",
         "assets/posts/20260503161501-blame-the-machine/slide-02.png",
         "assets/posts/20260503161501-blame-the-machine/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260503171624-buy-the-easier-version",
+      "title": "Buy the Easier Version",
+      "kind": "single",
+      "topic": "shame around paying for small convenience when life is already full",
+      "angle": "A small shortcut is allowed when the cheaper, harder option would quietly cost you the steadiness you still need later.",
+      "createdAt": "2026-05-03T17:16:24.230Z",
+      "renderedFiles": [
+        "assets/posts/20260503171624-buy-the-easier-version/post.png"
       ]
     }
   ]
