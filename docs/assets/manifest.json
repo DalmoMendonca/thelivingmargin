@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T15:15:03.539Z",
+  "updatedAt": "2026-05-03T16:15:03.629Z",
   "items": [
-    {
-      "id": "20260501211647-the-doorway-rule",
-      "title": "The Doorway Rule",
-      "kind": "single",
-      "topic": "how to handle important conversations that start in exit-space",
-      "angle": "If a conversation has real stakes, do not try to settle it in a doorway, hallway, parking lot, or while packing up; move it into ten actual minutes in a real setting first.",
-      "createdAt": "2026-05-01T21:16:47.257Z",
-      "renderedFiles": [
-        "assets/posts/20260501211647-the-doorway-rule/post.png"
-      ]
-    },
     {
       "id": "20260501221730-after-the-fact-help",
       "title": "After-the-Fact Help",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-03T15:14:53.674Z",
       "renderedFiles": [
         "assets/posts/20260503151453-late-without-the-trial/post.png"
+      ]
+    },
+    {
+      "id": "20260503161501-blame-the-machine",
+      "title": "Blame the Machine",
+      "kind": "carousel",
+      "topic": "public embarrassment and everyday tact",
+      "angle": "At a grocery checkout, a clerk spares a customer public embarrassment by blaming the machine before the line can blame the person.",
+      "createdAt": "2026-05-03T16:15:01.599Z",
+      "renderedFiles": [
+        "assets/posts/20260503161501-blame-the-machine/slide-01.png",
+        "assets/posts/20260503161501-blame-the-machine/slide-02.png",
+        "assets/posts/20260503161501-blame-the-machine/slide-03.png"
       ]
     }
   ]

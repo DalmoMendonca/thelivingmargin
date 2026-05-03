@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T15:15:03.508Z
+updatedAt: 2026-05-03T16:15:03.581Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4014,3 +4014,54 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ABWwl6G8q5VVdXBVoKTjiy6"}}'
+  - id: 20260503161501-blame-the-machine
+    createdAt: 2026-05-03T16:15:01.599Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Blame the Machine
+    topic: public embarrassment and everyday tact
+    angle: At a grocery checkout, a clerk spares a customer public embarrassment by
+      blaming the machine before the line can blame the person.
+    fingerprint: at before blame blaming by can checkout clerk customer
+      embarrassment everyday grocery line machine person public spares tact
+    contentMode: story
+    voiceMode: reflective
+    altText: Three-slide text carousel in a sage and warm paper style. Slide 1
+      describes a grocery self-checkout flashing red over a basket with
+      detergent and pasta while a man with a handbasket waits behind and the
+      line stalls. Slide 2 describes a clerk in a green apron stepping in and
+      saying, "that reader's been weird all day," then moving the customer to
+      another register. Slide 3 ends with the customer successfully paying at
+      the next register, taking the bag, and leaving through the automatic doors
+      with the problem left on the machine.
+    carousel:
+      - headline: The self-checkout flashed red before I could even pull my card away.
+        body: Detergent. Pasta. A basket that should have taken thirty seconds. Instead
+          the screen went bright red while a man with a handbasket stopped
+          behind me and the line went still.
+      - headline: The woman in the green apron looked over and said,
+        body: "\"that reader's been weird all day,\" like the problem belonged to the
+          store. Then she tapped a code and sent me to the next register before
+          anyone had time to make it mine."
+      - headline: At the next register, the card went through. I paid, packed the bag,
+          and left.
+        body: The man with the handbasket moved up. The automatic doors opened. The
+          problem stayed with the machine.
+    caption:
+      hook: Tact is knowing what not to make public.
+      body: Practiced adults can solve a problem without pinning it to a person in
+        front of strangers. Sometimes the skill is giving the room another
+        explanation, fast.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260503161501-blame-the-machine
+    renderedFiles:
+      - docs/assets/posts/20260503161501-blame-the-machine/slide-01.png
+      - docs/assets/posts/20260503161501-blame-the-machine/slide-02.png
+      - docs/assets/posts/20260503161501-blame-the-machine/slide-03.png
