@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T08:33:14.975Z
+updatedAt: 2026-05-03T09:30:02.720Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3673,3 +3673,43 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A6BnbPtwXzwor5-GdWG9wdt"}}'
+  - id: 20260503093002-praise-that-pins-you
+    createdAt: 2026-05-03T09:30:02.218Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Praise That Pins You
+    topic: flattering language that rewards convenience
+    angle: What gets called being bad at taking compliments is sometimes accurate
+      discomfort with praise that is really asking you to stay easy, agreeable,
+      and available.
+    fingerprint: accurate agreeable asking at available bad being called compliments
+      convenience discomfort easy flattering gets language pins praise really
+      rewards sometimes stay taking what
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: ": null,"
+    altText: A warm paper-textured Instagram graphic with a sharp line about
+      compliments. The text says that being bad at taking compliments can
+      sometimes mean noticing when 'you're so easy to work with' is really
+      praise for staying easy on other people.
+    single:
+      headline: Being bad at taking compliments
+      body: is sometimes just noticing that “you’re so easy to work with” is praise
+        for staying easy on them.
+    caption:
+      hook: Some compliments leave you thanked and strangely stuck.
+      body: Appreciation names a real choice or effort. Containment praises how
+        convenient you are-“I never have to worry about you” or “you’re so
+        low-maintenance”-so you stop treating every uneasy “thanks” as something
+        true.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260503093002-praise-that-pins-you
+    renderedFiles:
+      - docs/assets/posts/20260503093002-praise-that-pins-you/post.png
