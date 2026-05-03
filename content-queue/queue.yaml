@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T11:14:48.323Z
+updatedAt: 2026-05-03T11:14:56.395Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3799,9 +3799,15 @@ items:
       body: Decisions and ownership are assigned in the room. Private agreement
         afterward changes nothing.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner embarrassment | Plan mode aphorism
     renderDir: docs/assets/posts/20260503111447-hallway-support
     renderedFiles:
       - docs/assets/posts/20260503111447-hallway-support/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"ArRhdaxxTZ61OjfJIL3Y0IY"}}'
