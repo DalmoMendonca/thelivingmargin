@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-03T03:01:53.059Z",
+  "updatedAt": "2026-05-03T05:09:07.278Z",
   "items": [
-    {
-      "id": "20260501103126-the-wine-list-rescue",
-      "title": "The Wine List Rescue",
-      "kind": "carousel",
-      "topic": "being quietly spared a public class-performance embarrassment",
-      "angle": "The most generous kind of expertise keeps someone in the room without making them display what they do not know.",
-      "createdAt": "2026-05-01T10:31:26.548Z",
-      "renderedFiles": [
-        "assets/posts/20260501103126-the-wine-list-rescue/slide-01.png",
-        "assets/posts/20260501103126-the-wine-list-rescue/slide-02.png",
-        "assets/posts/20260501103126-the-wine-list-rescue/slide-03.png"
-      ]
-    },
     {
       "id": "20260501112507-recurring-plan",
       "title": "Recurring Plan",
@@ -471,6 +458,17 @@
       "createdAt": "2026-05-03T03:01:43.083Z",
       "renderedFiles": [
         "assets/posts/20260503030143-reply-time/post.png"
+      ]
+    },
+    {
+      "id": "20260503050906-wrong-person-s-explanation",
+      "title": "Wrong Person's Explanation",
+      "kind": "single",
+      "topic": "delaying a decision while waiting for someone unreliable to finally explain themselves",
+      "angle": "Ask whether the reader is postponing a clean move until the least trustworthy narrator provides the explanation they want.",
+      "createdAt": "2026-05-03T05:09:06.468Z",
+      "renderedFiles": [
+        "assets/posts/20260503050906-wrong-person-s-explanation/post.png"
       ]
     }
   ]
