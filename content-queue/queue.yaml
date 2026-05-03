@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T05:09:15.762Z
+updatedAt: 2026-05-03T06:48:06.551Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -3525,3 +3525,47 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AT2UymIZw0ZhAL2caLkBdLI"}}'
+  - id: 20260503064805-play-it-by-ear
+    createdAt: 2026-05-03T06:48:05.343Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Play It By Ear
+    topic: vague plans as unevenly distributed flexibility
+    angle: The phrase "play it by ear" often sounds relaxed, but it usually means
+      one person keeps their options while the other keeps the time open.
+    fingerprint: as but by distributed ear flexibility keeps means often one open
+      options other person phrase plans play relaxed sounds their time unevenly
+      usually vague while
+    contentMode: observation
+    voiceMode: sharp
+    quoteAttribution: ": {},"
+    altText: "Single-image post on a warm parchment background with centered
+      editorial text. Headline: '\"play it by ear\"'. Body text below reads: 'In
+      the group chat, it sounds relaxed. Usually it means one person keeps their
+      options, and the other keeps Saturday afternoon open.'"
+    single:
+      headline: '"play it by ear"'
+      body: |-
+        In the group chat, it sounds relaxed.
+
+        Usually it means one person keeps their options,
+
+        and the other keeps
+
+        Saturday afternoon open.
+    caption:
+      hook: Flexibility stops feeling casual when only one person has it.
+      body: By noon, one person hasn’t showered or started errands because they’re
+        keeping the window open. The other still gets to decide later, while
+        they wait to make other plans.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner translation | Plan mode observation
+    renderDir: docs/assets/posts/20260503064805-play-it-by-ear
+    renderedFiles:
+      - docs/assets/posts/20260503064805-play-it-by-ear/post.png

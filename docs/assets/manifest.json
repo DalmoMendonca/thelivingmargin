@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-03T05:09:15.792Z",
+  "updatedAt": "2026-05-03T06:48:06.601Z",
   "items": [
-    {
-      "id": "20260501112507-recurring-plan",
-      "title": "Recurring Plan",
-      "kind": "single",
-      "topic": "calendar inertia in social commitments",
-      "angle": "Ask whether a standing plan is still on the calendar because sending one honest sentence feels more uncomfortable than keeping it.",
-      "createdAt": "2026-05-01T11:25:07.040Z",
-      "renderedFiles": [
-        "assets/posts/20260501112507-recurring-plan/post.png"
-      ]
-    },
     {
       "id": "20260501121628-no-pressure",
       "title": "No Pressure",
@@ -469,6 +458,17 @@
       "createdAt": "2026-05-03T05:09:06.468Z",
       "renderedFiles": [
         "assets/posts/20260503050906-wrong-person-s-explanation/post.png"
+      ]
+    },
+    {
+      "id": "20260503064805-play-it-by-ear",
+      "title": "Play It By Ear",
+      "kind": "single",
+      "topic": "vague plans as unevenly distributed flexibility",
+      "angle": "The phrase \"play it by ear\" often sounds relaxed, but it usually means one person keeps their options while the other keeps the time open.",
+      "createdAt": "2026-05-03T06:48:05.343Z",
+      "renderedFiles": [
+        "assets/posts/20260503064805-play-it-by-ear/post.png"
       ]
     }
   ]
