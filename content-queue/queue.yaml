@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T21:24:14.843Z
+updatedAt: 2026-05-04T22:20:51.525Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5374,3 +5374,55 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AGfJi-C5u34hSGb9P_mcEfe"}}'
+  - id: 20260504222050-the-better-bottle
+    createdAt: 2026-05-04T22:20:50.703Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: The Better Bottle
+    topic: social tact when someone declines a drink
+    angle: A small act of social intelligence is making room for someone's no
+      without asking them to earn it with a personal explanation.
+    fingerprint: act asking better bottle declines drink earn explanation
+      intelligence making no personal room small social someone someones tact
+      them when without
+    contentMode: story
+    voiceMode: reflective
+    altText: Three-slide text carousel on a dark charcoal paper texture. At a dinner
+      table, wine is already being poured when one guest lightly covers her
+      glass and says, "No thanks." The moment is redirected with, "Wait, I have
+      something better," and cold sparkling water is poured instead. The guest
+      remains part of the table without needing to explain.
+    carousel:
+      - headline: The bottle was already tipped.
+        body: >-
+          Glasses out, red on its way, and one hand lightly covered the last
+          one.
+
+
+          "No thanks," she said, just enough to stop the pour.
+      - headline: '"Wait, I have something better."'
+        body: The wine went back down. The cold sparkling water sweating on the table
+          tipped into her glass instead. No one asked why.
+      - headline: Then the bread basket came around.
+        body: Someone tore off a piece. Someone asked for the salt. Her glass caught the
+          candlelight like everyone else's, and the evening moved on with her
+          still inside it.
+    caption:
+      hook: Real tact changes the logistics before it changes the subject.
+      body: "Good social instinct protects privacy without announcing that it is doing
+        so. Sometimes the graceful move is logistical: offer another glass, keep
+        the rhythm, leave the person their own context. A no does not need
+        supporting documents."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260504222050-the-better-bottle
+    renderedFiles:
+      - docs/assets/posts/20260504222050-the-better-bottle/slide-01.png
+      - docs/assets/posts/20260504222050-the-better-bottle/slide-02.png
+      - docs/assets/posts/20260504222050-the-better-bottle/slide-03.png

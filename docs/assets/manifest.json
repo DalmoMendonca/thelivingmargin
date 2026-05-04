@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T21:24:14.914Z",
+  "updatedAt": "2026-05-04T22:20:51.584Z",
   "items": [
-    {
-      "id": "20260503030143-reply-time",
-      "title": "Reply Time",
-      "kind": "single",
-      "topic": "how to handle requests made on the spot",
-      "angle": "When a request is made live and politeness is doing half the work, do not decide in the room; give a specific time you will reply.",
-      "createdAt": "2026-05-03T03:01:43.083Z",
-      "renderedFiles": [
-        "assets/posts/20260503030143-reply-time/post.png"
-      ]
-    },
     {
       "id": "20260503050906-wrong-person-s-explanation",
       "title": "Wrong Person's Explanation",
@@ -471,6 +460,19 @@
         "assets/posts/20260504212344-im-easy/slide-03.png",
         "assets/posts/20260504212344-im-easy/slide-04.png",
         "assets/posts/20260504212344-im-easy/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260504222050-the-better-bottle",
+      "title": "The Better Bottle",
+      "kind": "carousel",
+      "topic": "social tact when someone declines a drink",
+      "angle": "A small act of social intelligence is making room for someone's no without asking them to earn it with a personal explanation.",
+      "createdAt": "2026-05-04T22:20:50.703Z",
+      "renderedFiles": [
+        "assets/posts/20260504222050-the-better-bottle/slide-01.png",
+        "assets/posts/20260504222050-the-better-bottle/slide-02.png",
+        "assets/posts/20260504222050-the-better-bottle/slide-03.png"
       ]
     }
   ]
