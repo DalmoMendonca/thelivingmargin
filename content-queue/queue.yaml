@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T09:44:08.794Z
+updatedAt: 2026-05-04T10:42:03.802Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4818,3 +4818,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AomK4ZPEQ4bc6ilGVLNDGR5"}}'
+  - id: 20260504104201-the-exception-rule
+    createdAt: 2026-05-04T10:42:01.904Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: The Exception Rule
+    topic: self-excusing behavior in ordinary adult life
+    angle: Everyday inconsideration usually hides inside private exception logic,
+      not open selfishness.
+    fingerprint: adult behavior everyday exception excusing hides inconsideration
+      inside life logic not open ordinary private rule self selfishness usually
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Jane Addams
+    altText: Editorial-style quote card on warm paper with generous margins and
+      visible texture. Main text reads, “The essence of immorality is the
+      tendency to make an exception of myself.” Small clear attribution beneath
+      reads, “- Jane Addams.”
+    single:
+      headline: “The essence of immorality is the tendency to make an exception of
+        myself.”
+      body: "- Jane Addams"
+    caption:
+      hook: Inconsideration usually arrives wearing a good reason.
+      body: "The late arrival text, the shared sink, the reschedule with “just this
+        once”: overwhelm and busyness don’t erase the cost; they relocate it.
+        Most adult bad manners aren’t dramatic, just privately exempt."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260504104201-the-exception-rule
+    renderedFiles:
+      - docs/assets/posts/20260504104201-the-exception-rule/post.png

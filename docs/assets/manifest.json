@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T09:44:08.856Z",
+  "updatedAt": "2026-05-04T10:42:03.857Z",
   "items": [
-    {
-      "id": "20260502141905-cheap-gets-assigned",
-      "title": "Cheap Gets Assigned",
-      "kind": "single",
-      "topic": "uneven dinner bills and the social shame around correcting them",
-      "angle": "When a group wants convenience, the person naming the numbers often gets cast as petty even when they are the only one protecting fairness.",
-      "createdAt": "2026-05-02T14:19:05.158Z",
-      "renderedFiles": [
-        "assets/posts/20260502141905-cheap-gets-assigned/post.png"
-      ]
-    },
     {
       "id": "20260502151534-default-adult",
       "title": "Default Adult",
@@ -475,6 +464,17 @@
         "assets/posts/20260504094337-volunteered-by-compliment/slide-03.png",
         "assets/posts/20260504094337-volunteered-by-compliment/slide-04.png",
         "assets/posts/20260504094337-volunteered-by-compliment/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260504104201-the-exception-rule",
+      "title": "The Exception Rule",
+      "kind": "single",
+      "topic": "self-excusing behavior in ordinary adult life",
+      "angle": "Everyday inconsideration usually hides inside private exception logic, not open selfishness.",
+      "createdAt": "2026-05-04T10:42:01.904Z",
+      "renderedFiles": [
+        "assets/posts/20260504104201-the-exception-rule/post.png"
       ]
     }
   ]
