@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T22:21:13.826Z",
+  "updatedAt": "2026-05-04T23:18:03.984Z",
   "items": [
-    {
-      "id": "20260503050906-wrong-person-s-explanation",
-      "title": "Wrong Person's Explanation",
-      "kind": "single",
-      "topic": "delaying a decision while waiting for someone unreliable to finally explain themselves",
-      "angle": "Ask whether the reader is postponing a clean move until the least trustworthy narrator provides the explanation they want.",
-      "createdAt": "2026-05-03T05:09:06.468Z",
-      "renderedFiles": [
-        "assets/posts/20260503050906-wrong-person-s-explanation/post.png"
-      ]
-    },
     {
       "id": "20260503064805-play-it-by-ear",
       "title": "Play It By Ear",
@@ -473,6 +462,17 @@
         "assets/posts/20260504222050-the-better-bottle/slide-01.png",
         "assets/posts/20260504222050-the-better-bottle/slide-02.png",
         "assets/posts/20260504222050-the-better-bottle/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260504231803-professionalism-or-disguise",
+      "title": "Professionalism or Disguise",
+      "kind": "single",
+      "topic": "hiding desire behind polished restraint at work",
+      "angle": "Questions whether professionalism is sometimes just fear made cleaner, especially when asking for credit, money, or a clear answer.",
+      "createdAt": "2026-05-04T23:18:03.410Z",
+      "renderedFiles": [
+        "assets/posts/20260504231803-professionalism-or-disguise/post.png"
       ]
     }
   ]
