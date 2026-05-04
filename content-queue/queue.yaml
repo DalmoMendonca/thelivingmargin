@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T08:48:23.537Z
+updatedAt: 2026-05-04T09:43:40.178Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4748,3 +4748,67 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ABsglhGCpCgtnrmzUcE9Jt0"}}'
+  - id: 20260504094337-volunteered-by-compliment
+    createdAt: 2026-05-04T09:43:37.841Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Volunteered by Compliment
+    topic: phrases that assign you labor before you have agreed
+    angle: A compliment can become a soft capture device when praise assigns you
+      work, emotional labor, or logistics you never agreed to.
+    fingerprint: agreed assign assigns become before by can capture compliment
+      device emotional have labor logistics never phrases praise soft
+      volunteered when work
+    contentMode: list
+    voiceMode: sharp
+    altText: A five-slide Instagram carousel in a notebook-style design about
+      phrases that volunteer you before you agree. Slide 1 introduces a compact
+      list of three phrases and explains that praise arrives first, then the
+      task, then saying no starts to look rude. Slide 2 focuses on 'You’re so
+      organized' in a family group chat or meeting follow-up, where praise
+      frames you as the obvious person for the work. Slide 3 covers 'It’ll only
+      take a second' as language that minimizes scope before you answer. Slide 4
+      shows 'We all kind of thought you’d do it' as implied group consensus,
+      with a school fundraiser or group plan context. Slide 5 names the larger
+      pattern as flattery used for labor recruitment, while noting that not
+      every compliment is a trap.
+    carousel:
+      - kicker: 3 phrases
+        headline: 3 phrases that volunteer you before you agree
+        body: Praise arrives first, then the task, then that tiny pause where saying no
+          starts to look rude.
+      - headline: '"You’re so organized."'
+        body: In the family group chat or the meeting follow-up, praise can set the ask
+          on the table before you do. You get cast as the obvious person for the
+          list, the plan, the cleanup.
+      - headline: '"It’ll only take a second."'
+        body: The work gets made small before you answer. Then no stops sounding like
+          capacity and starts sounding petty.
+      - headline: '"We all kind of thought you’d do it."'
+        body: At the school fundraiser or group plan, the decision arrives sounding
+          already settled. You’re treated like the last person to hear your own
+          assignment.
+      - headline: Flattery as labor recruitment
+        body: Not every compliment is a trap. But when admiration arrives carrying
+          logistics, it’s doing more than noticing you. A real compliment
+          survives your no.
+    caption:
+      hook: The real test is whether your no is still allowed.
+      body: Plenty of appreciation is clean. It turns into recruitment when the warmth
+        expires the second you decline. Appreciation names you; recruitment
+        leans on you.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260504094337-volunteered-by-compliment
+    renderedFiles:
+      - docs/assets/posts/20260504094337-volunteered-by-compliment/slide-01.png
+      - docs/assets/posts/20260504094337-volunteered-by-compliment/slide-02.png
+      - docs/assets/posts/20260504094337-volunteered-by-compliment/slide-03.png
+      - docs/assets/posts/20260504094337-volunteered-by-compliment/slide-04.png
+      - docs/assets/posts/20260504094337-volunteered-by-compliment/slide-05.png
