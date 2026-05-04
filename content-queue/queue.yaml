@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T11:33:21.211Z
+updatedAt: 2026-05-04T12:28:15.107Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4902,3 +4902,45 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AIaD7YzYY5oI5jbHQTCFtfy"}}'
+  - id: 20260504122813-answer-with-a-clock
+    createdAt: 2026-05-04T12:28:13.797Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Answer With a Clock
+    topic: how to handle on-the-spot requests without fake agreement
+    angle: When you feel pressed to answer immediately, give a specific return time
+      instead of a polite yes you have not actually chosen.
+    fingerprint: actually agreement answer chosen clock fake feel give handle have
+      how immediately instead not polite pressed requests return specific spot
+      time when without yes
+    contentMode: advice
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: Single-image post on a notebook-cream background with brass-ink text.
+      The post advises that when a hallway ask puts you on the spot and others
+      are listening, you should say, "Let me check my calendar. I'll message you
+      by 3 today," instead of agreeing immediately. It adds that a clock is
+      clearer than instant warmth and that the delay only works if the 3 o'clock
+      message actually arrives.
+    single:
+      headline: When a hallway ask lands and everyone's listening, don't buy time with
+        a fake yes.
+      body: "Say: \"Let me check my calendar. I'll message you by 3 today.\""
+      supportLine: A clock is clearer than instant warmth.
+      footer: The delay only works if the 3 o'clock message arrives.
+    caption:
+      hook: A vague yes becomes slow avoidance fast.
+      body: This is where Slack pings and in-person asks go wrong. You agree, then
+        stall, then drop the follow-up. If you say 3 today, send the message at
+        3.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner field test | Plan mode advice
+    renderDir: docs/assets/posts/20260504122813-answer-with-a-clock
+    renderedFiles:
+      - docs/assets/posts/20260504122813-answer-with-a-clock/post.png

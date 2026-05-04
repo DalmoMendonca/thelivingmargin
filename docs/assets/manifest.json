@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-04T11:33:21.250Z",
+  "updatedAt": "2026-05-04T12:28:15.174Z",
   "items": [
-    {
-      "id": "20260502161516-the-first-question",
-      "title": "The First Question",
-      "kind": "carousel",
-      "topic": "a senior person using their status to make a room easier for everyone else",
-      "angle": "Sometimes the most generous use of confidence is asking the obvious question first so nobody else has to pay the social cost alone.",
-      "createdAt": "2026-05-02T16:15:16.724Z",
-      "renderedFiles": [
-        "assets/posts/20260502161516-the-first-question/slide-01.png",
-        "assets/posts/20260502161516-the-first-question/slide-02.png",
-        "assets/posts/20260502161516-the-first-question/slide-03.png"
-      ]
-    },
     {
       "id": "20260502171654-low-maintenance",
       "title": "Low-Maintenance",
@@ -471,6 +458,17 @@
       "createdAt": "2026-05-04T11:33:10.919Z",
       "renderedFiles": [
         "assets/posts/20260504113310-room-and-email/post.png"
+      ]
+    },
+    {
+      "id": "20260504122813-answer-with-a-clock",
+      "title": "Answer With a Clock",
+      "kind": "single",
+      "topic": "how to handle on-the-spot requests without fake agreement",
+      "angle": "When you feel pressed to answer immediately, give a specific return time instead of a polite yes you have not actually chosen.",
+      "createdAt": "2026-05-04T12:28:13.797Z",
+      "renderedFiles": [
+        "assets/posts/20260504122813-answer-with-a-clock/post.png"
       ]
     }
   ]
