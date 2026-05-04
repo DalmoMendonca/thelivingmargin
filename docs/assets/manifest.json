@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T16:33:02.080Z",
+  "updatedAt": "2026-05-04T17:31:42.566Z",
   "items": [
-    {
-      "id": "20260502211352-correction-tax",
-      "title": "Correction Tax",
-      "kind": "single",
-      "topic": "the way people add cheerfulness when correcting a small factual error",
-      "angle": "People add lol or an emoji after fixing a small detail so accuracy does not get mistaken for attitude.",
-      "createdAt": "2026-05-02T21:13:52.849Z",
-      "renderedFiles": [
-        "assets/posts/20260502211352-correction-tax/post.png"
-      ]
-    },
     {
       "id": "20260502221336-illusion-of-it",
       "title": "Illusion of It",
@@ -471,6 +460,17 @@
         "assets/posts/20260504163241-already-sitting-down/slide-01.png",
         "assets/posts/20260504163241-already-sitting-down/slide-02.png",
         "assets/posts/20260504163241-already-sitting-down/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260504173141-buy-the-easier-version",
+      "title": "Buy the Easier Version",
+      "kind": "single",
+      "topic": "permission to reduce unnecessary difficulty in ordinary adult life",
+      "angle": "Give adults permission to choose an ordinary convenience without treating difficulty as proof of virtue.",
+      "createdAt": "2026-05-04T17:31:41.138Z",
+      "renderedFiles": [
+        "assets/posts/20260504173141-buy-the-easier-version/post.png"
       ]
     }
   ]

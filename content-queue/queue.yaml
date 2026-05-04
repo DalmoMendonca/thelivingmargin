@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T16:33:02.039Z
+updatedAt: 2026-05-04T17:31:42.507Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5141,3 +5141,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AR7zDb3U-eP8h-57X8LKq_l"}}'
+  - id: 20260504173141-buy-the-easier-version
+    createdAt: 2026-05-04T17:31:41.138Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Buy the Easier Version
+    topic: permission to reduce unnecessary difficulty in ordinary adult life
+    angle: Give adults permission to choose an ordinary convenience without treating
+      difficulty as proof of virtue.
+    fingerprint: adult adults as buy choose convenience difficulty easier give life
+      ordinary permission proof reduce treating unnecessary version virtue
+      without
+    contentMode: encouragement
+    voiceMode: sharp
+    altText: "Single-image editorial post on warm sage paper. Text reads: 'You are
+      allowed to buy the pre-cut vegetables; the hard way is not proof of
+      virtue.'"
+    single:
+      headline: You are allowed to buy the pre-cut vegetables; the hard way is not
+        proof of virtue.
+      body: ""
+    caption:
+      hook: Energy is a real cost, even when the receipt looks smaller.
+      body: A cab ride home or an assembly fee can be cheaper than showing up
+        depleted. Where do you still perform needless hardship to feel
+        responsible?
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260504173141-buy-the-easier-version
+    renderedFiles:
+      - docs/assets/posts/20260504173141-buy-the-easier-version/post.png
