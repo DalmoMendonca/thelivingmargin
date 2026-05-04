@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T15:37:24.828Z
+updatedAt: 2026-05-04T16:32:42.238Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5094,3 +5094,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A-m84dv5ZNZiZwJ-4T_2ENm"}}'
+  - id: 20260504163241-already-sitting-down
+    createdAt: 2026-05-04T16:32:41.322Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Already Sitting Down
+    topic: the social cost of asking for help after someone has checked out
+    angle: '"Just ask for help" stops being simple once the other person has already
+      sat down and settled into being done.'
+    fingerprint: after already ask asking being checked cost done down has help into
+      just once other out person sat settled simple sitting social someone stops
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: A three-slide dark, charcoal-textured text carousel. Slide 1 asks, "Why
+      didn’t you ask for help?" and says, "I would’ve gotten up." Slide 2
+      replies, "I know." and adds, "But you were already on the couch, and I
+      still had the dish towel." Slide 3 says, "After that," and finishes, "now
+      I’m asking you to get back up."
+    carousel:
+      - headline: “Why didn’t you ask for help?”
+        body: “I would’ve gotten up.”
+      - headline: “I know.”
+        body: “But you were already on the couch, and I still had the dish towel.”
+      - headline: “After that,”
+        body: “now I’m asking you to get back up.”
+    caption:
+      hook: The ask changes once they sit down.
+      body: It’s not just asking for help. It’s asking someone to come back after
+        they’ve already checked out.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260504163241-already-sitting-down
+    renderedFiles:
+      - docs/assets/posts/20260504163241-already-sitting-down/slide-01.png
+      - docs/assets/posts/20260504163241-already-sitting-down/slide-02.png
+      - docs/assets/posts/20260504163241-already-sitting-down/slide-03.png

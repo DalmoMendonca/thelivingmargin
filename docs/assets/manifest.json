@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T15:37:24.874Z",
+  "updatedAt": "2026-05-04T16:32:42.297Z",
   "items": [
-    {
-      "id": "20260502201052-say-it-again",
-      "title": "Say It Again",
-      "kind": "single",
-      "topic": "asking for repetition instead of faking comprehension",
-      "angle": "When instructions come too fast, asking for them again is usually cheaper than pretending you caught it and fixing the mistake later.",
-      "createdAt": "2026-05-02T20:10:52.353Z",
-      "renderedFiles": [
-        "assets/posts/20260502201052-say-it-again/post.png"
-      ]
-    },
     {
       "id": "20260502211352-correction-tax",
       "title": "Correction Tax",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-04T15:37:14.858Z",
       "renderedFiles": [
         "assets/posts/20260504153714-reaction-is-not-a-reply/post.png"
+      ]
+    },
+    {
+      "id": "20260504163241-already-sitting-down",
+      "title": "Already Sitting Down",
+      "kind": "carousel",
+      "topic": "the social cost of asking for help after someone has checked out",
+      "angle": "\"Just ask for help\" stops being simple once the other person has already sat down and settled into being done.",
+      "createdAt": "2026-05-04T16:32:41.322Z",
+      "renderedFiles": [
+        "assets/posts/20260504163241-already-sitting-down/slide-01.png",
+        "assets/posts/20260504163241-already-sitting-down/slide-02.png",
+        "assets/posts/20260504163241-already-sitting-down/slide-03.png"
       ]
     }
   ]
