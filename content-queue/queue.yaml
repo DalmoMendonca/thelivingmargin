@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T07:57:29.767Z
+updatedAt: 2026-05-04T08:48:16.086Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4707,3 +4707,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AatyYzyrZsPoaIcY7X3A_ad"}}'
+  - id: 20260504084815-say-it-again
+    createdAt: 2026-05-04T08:48:15.611Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Say It Again
+    topic: asking someone to repeat themselves instead of pretending you heard
+    angle: Give adults plain permission to ask for a repeat in the moment, because a
+      brief interruption is usually cheaper than managing a misunderstanding for
+      the next twenty minutes.
+    fingerprint: adults again ask asking because brief cheaper give heard instead
+      interruption managing minutes misunderstanding moment next permission
+      plain pretending repeat say someone than themselves twenty usually
+    contentMode: encouragement
+    voiceMode: sharp
+    altText: Single editorial-style Instagram post on warm paper with brass-ink
+      text. The headline says, 'Ask them to say it again.' The body says, 'In
+      the noisy restaurant, skip the quick nod.'
+    single:
+      headline: Ask them to say it again.
+      body: In the noisy restaurant, skip the quick nod.
+    caption:
+      hook: The awkward part is usually the pretending, not the repeat.
+      body: In the conference room, one guessed instruction can waste the next twenty
+        minutes. The late laugh usually costs more than the repeat.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260504084815-say-it-again
+    renderedFiles:
+      - docs/assets/posts/20260504084815-say-it-again/post.png

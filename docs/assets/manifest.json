@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T07:57:29.809Z",
+  "updatedAt": "2026-05-04T08:48:16.146Z",
   "items": [
-    {
-      "id": "20260502121413-before-you-knew",
-      "title": "Before You Knew",
-      "kind": "single",
-      "topic": "nostalgia that is really grief for a less-informed self",
-      "angle": "What feels like missing the past is sometimes grief for the self who had not yet learned how the story would end.",
-      "createdAt": "2026-05-02T12:14:13.162Z",
-      "renderedFiles": [
-        "assets/posts/20260502121413-before-you-knew/post.png"
-      ]
-    },
     {
       "id": "20260502133030-in-front-of-your-nose",
       "title": "In Front of Your Nose",
@@ -471,6 +460,17 @@
         "assets/posts/20260504075708-friendly-way/slide-01.png",
         "assets/posts/20260504075708-friendly-way/slide-02.png",
         "assets/posts/20260504075708-friendly-way/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260504084815-say-it-again",
+      "title": "Say It Again",
+      "kind": "single",
+      "topic": "asking someone to repeat themselves instead of pretending you heard",
+      "angle": "Give adults plain permission to ask for a repeat in the moment, because a brief interruption is usually cheaper than managing a misunderstanding for the next twenty minutes.",
+      "createdAt": "2026-05-04T08:48:15.611Z",
+      "renderedFiles": [
+        "assets/posts/20260504084815-say-it-again/post.png"
       ]
     }
   ]
