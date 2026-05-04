@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T20:27:42.159Z
+updatedAt: 2026-05-04T21:23:47.176Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5309,3 +5309,62 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AaBEoiVmBuu7l6g1IcC3dRx"}}'
+  - id: 20260504212344-im-easy
+    createdAt: 2026-05-04T21:23:44.994Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Im Easy
+    topic: false low-maintenance in group planning
+    angle: Calling yourself easygoing can be a way to avoid the small risk of naming
+      a preference while making everyone else absorb the cost of guessing.
+    fingerprint: absorb avoid calling can cost easy easygoing else everyone false
+      group guessing im low maintenance making naming planning preference risk
+      small way while yourself
+    contentMode: list
+    voiceMode: sharp
+    altText: A five-slide notebook-style carousel about when saying "I'm easy" in
+      group planning becomes extra work for everyone else. It covers vague
+      agreement followed by visible dissatisfaction, revealing a real constraint
+      after a reservation, booking, or order is already in motion, and making
+      other people infer budget, appetite, timing, or ride-home needs. The final
+      slide defines low-maintenance as naming one real preference early.
+    carousel:
+      - kicker: 3 signs
+        headline: "\"I'm easy\" is making more work."
+        body: When "whatever works" means everyone else still has to guess, check, and
+          repair around you.
+      - kicker: "1"
+        headline: You approve every option, then punish the chosen one.
+        body: '"Anything is fine" becomes a face at the menu, a weird silence in the
+          group text, or "I mean, I can make it work."'
+      - kicker: "2"
+        headline: The real constraint appears after the reservation, booking, or order.
+        body: Now it's the budget, the dairy, the last train, or the early meeting.
+          Useful information, just very late.
+      - kicker: "3"
+        headline: You call yourself flexible while everyone else becomes your decoder.
+        body: They still have to infer price range, appetite, timing, and ride-home
+          needs. That isn't chill. That's admin.
+      - kicker: Instead
+        headline: Low-maintenance means naming one real preference early.
+        body: Budget, timing, food, ride home. Not preference-free. Just clear before
+          other people discover it by consequence.
+    caption:
+      hook: Some people learned to hide preferences to stay safe.
+      body: That makes sense. But if the group has to read your face or redo a
+        booking, the labor just changed hands.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner mistakes | Plan mode list
+    renderDir: docs/assets/posts/20260504212344-im-easy
+    renderedFiles:
+      - docs/assets/posts/20260504212344-im-easy/slide-01.png
+      - docs/assets/posts/20260504212344-im-easy/slide-02.png
+      - docs/assets/posts/20260504212344-im-easy/slide-03.png
+      - docs/assets/posts/20260504212344-im-easy/slide-04.png
+      - docs/assets/posts/20260504212344-im-easy/slide-05.png

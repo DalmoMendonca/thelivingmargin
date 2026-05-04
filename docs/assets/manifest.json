@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-04T20:27:42.208Z",
+  "updatedAt": "2026-05-04T21:23:47.240Z",
   "items": [
-    {
-      "id": "20260503013336-favor-language",
-      "title": "Favor Language",
-      "kind": "carousel",
-      "topic": "phrases that make a favor sound smaller than it is",
-      "angle": "Certain polite openings shrink the labor before you can assess it, so the receiver has to fight the wording before they can answer honestly.",
-      "createdAt": "2026-05-03T01:33:36.753Z",
-      "renderedFiles": [
-        "assets/posts/20260503013336-favor-language/slide-01.png",
-        "assets/posts/20260503013336-favor-language/slide-02.png",
-        "assets/posts/20260503013336-favor-language/slide-03.png",
-        "assets/posts/20260503013336-favor-language/slide-04.png",
-        "assets/posts/20260503013336-favor-language/slide-05.png"
-      ]
-    },
     {
       "id": "20260503030143-reply-time",
       "title": "Reply Time",
@@ -471,6 +456,21 @@
       "createdAt": "2026-05-04T20:27:32.511Z",
       "renderedFiles": [
         "assets/posts/20260504202732-cold-dinner/post.png"
+      ]
+    },
+    {
+      "id": "20260504212344-im-easy",
+      "title": "Im Easy",
+      "kind": "carousel",
+      "topic": "false low-maintenance in group planning",
+      "angle": "Calling yourself easygoing can be a way to avoid the small risk of naming a preference while making everyone else absorb the cost of guessing.",
+      "createdAt": "2026-05-04T21:23:44.994Z",
+      "renderedFiles": [
+        "assets/posts/20260504212344-im-easy/slide-01.png",
+        "assets/posts/20260504212344-im-easy/slide-02.png",
+        "assets/posts/20260504212344-im-easy/slide-03.png",
+        "assets/posts/20260504212344-im-easy/slide-04.png",
+        "assets/posts/20260504212344-im-easy/slide-05.png"
       ]
     }
   ]
