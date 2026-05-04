@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T17:31:52.041Z
+updatedAt: 2026-05-04T18:29:17.386Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5183,3 +5183,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AITCcqgVBW_Q78DwOLXvUc0"}}'
+  - id: 20260504182915-late-no
+    createdAt: 2026-05-04T18:29:15.582Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Late No
+    topic: the sinking feeling that shows up right after you agree to something
+    angle: What people often call overthinking after the fact is sometimes a genuine
+      no arriving a few minutes late, after social politeness already said yes.
+    fingerprint: after agree already arriving call fact feeling few genuine late
+      minutes no often overthinking people politeness right said shows sinking
+      social something sometimes up what yes
+    contentMode: reframe
+    voiceMode: sharp
+    quoteAttribution: .
+    altText: Single-image Instagram post on a cream notebook-style background with
+      sharp text reframing the stomach drop after accepting a calendar invite as
+      a late no rather than overthinking.
+    single:
+      headline: That stomach drop after you accept the calendar invite gets called
+        overthinking.
+      body: Sometimes it’s a no arriving late, after politeness already said yes.
+    caption:
+      hook: Catch it in the elevator, before the typed follow-up.
+      body: "Don’t spend two days talking yourself into it. Send: “I said yes too
+        fast-I need to bow out,” before it hardens into quiet resentment."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260504182915-late-no
+    renderedFiles:
+      - docs/assets/posts/20260504182915-late-no/post.png

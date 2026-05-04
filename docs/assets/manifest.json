@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T17:31:52.094Z",
+  "updatedAt": "2026-05-04T18:29:17.456Z",
   "items": [
-    {
-      "id": "20260502221336-illusion-of-it",
-      "title": "Illusion of It",
-      "kind": "single",
-      "topic": "mistaking constant contact for actual understanding",
-      "angle": "William H. Whyte's line feels current because reactions, check-ins, and quick acknowledgments can create a sense of alignment before anything is clearly said, decided, or owned.",
-      "createdAt": "2026-05-02T22:13:36.621Z",
-      "renderedFiles": [
-        "assets/posts/20260502221336-illusion-of-it/post.png"
-      ]
-    },
     {
       "id": "20260502231512-forwarded-panic",
       "title": "Forwarded Panic",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-04T17:31:41.138Z",
       "renderedFiles": [
         "assets/posts/20260504173141-buy-the-easier-version/post.png"
+      ]
+    },
+    {
+      "id": "20260504182915-late-no",
+      "title": "Late No",
+      "kind": "single",
+      "topic": "the sinking feeling that shows up right after you agree to something",
+      "angle": "What people often call overthinking after the fact is sometimes a genuine no arriving a few minutes late, after social politeness already said yes.",
+      "createdAt": "2026-05-04T18:29:15.582Z",
+      "renderedFiles": [
+        "assets/posts/20260504182915-late-no/post.png"
       ]
     }
   ]
