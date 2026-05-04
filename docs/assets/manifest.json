@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T01:34:54.873Z",
+  "updatedAt": "2026-05-04T03:02:23.671Z",
   "items": [
-    {
-      "id": "20260502082921-take-the-joke",
-      "title": "Take the Joke",
-      "kind": "single",
-      "topic": "recurring jabs disguised as humor in social settings",
-      "angle": "The post asks whether taking a joke is sometimes a small public cost paid to keep the room comfortable.",
-      "createdAt": "2026-05-02T08:29:21.827Z",
-      "renderedFiles": [
-        "assets/posts/20260502082921-take-the-joke/post.png"
-      ]
-    },
     {
       "id": "20260502092413-edited-intimacy",
       "title": "Edited Intimacy",
@@ -471,6 +460,17 @@
         "assets/posts/20260504013431-wrong-name-at-dinner/slide-01.png",
         "assets/posts/20260504013431-wrong-name-at-dinner/slide-02.png",
         "assets/posts/20260504013431-wrong-name-at-dinner/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260504030223-witnessed-urgency",
+      "title": "Witnessed Urgency",
+      "kind": "single",
+      "topic": "cc-driven responsiveness at work",
+      "angle": "An ignored request often becomes urgent only when the neglect is visible to someone with rank.",
+      "createdAt": "2026-05-04T03:02:23.138Z",
+      "renderedFiles": [
+        "assets/posts/20260504030223-witnessed-urgency/post.png"
       ]
     }
   ]
