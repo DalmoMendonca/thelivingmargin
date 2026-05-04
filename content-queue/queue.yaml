@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T06:56:53.659Z
+updatedAt: 2026-05-04T07:57:10.678Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4660,3 +4660,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AMraebfn0YChZgqE4LqQvdC"}}'
+  - id: 20260504075708-friendly-way
+    createdAt: 2026-05-04T07:57:08.602Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Friendly Way
+    topic: ceremonial invitations mistaken for real plans
+    angle: The sting is realizing the warmth was meant to stay verbal, not become a
+      date on the calendar.
+    fingerprint: become calendar ceremonial date friendly invitations meant mistaken
+      not plans real realizing stay sting verbal warmth was way
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: "A three-slide dark, charcoal-textured carousel with short dialogue.
+      Slide 1: “We should get dinner sometime.” “Yeah, I’d love that.” Slide 2:
+      “Next Thursday?” “I can put it on my calendar.” Slide 3: “Oh - I mean...”
+      “Not, like, next Thursday.” “I just meant... sometime.”"
+    carousel:
+      - headline: “We should get dinner sometime.”
+        body: “Yeah, I’d love that.”
+      - headline: “Next Thursday?”
+        body: “I can put it on my calendar.”
+      - headline: “Oh - I mean...”
+        body: “Not, like, next Thursday.”
+        footer: “I just meant... sometime.”
+    caption:
+      hook: The embarrassment starts when you treat the invitation like a plan.
+      body: Some invitations are meant to sound warm, not accountable. The other
+        person pays with a brief awkward pause for taking the warmth literally.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260504075708-friendly-way
+    renderedFiles:
+      - docs/assets/posts/20260504075708-friendly-way/slide-01.png
+      - docs/assets/posts/20260504075708-friendly-way/slide-02.png
+      - docs/assets/posts/20260504075708-friendly-way/slide-03.png

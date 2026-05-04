@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T06:56:53.702Z",
+  "updatedAt": "2026-05-04T07:57:10.731Z",
   "items": [
-    {
-      "id": "20260502111600-no-preface",
-      "title": "No Preface",
-      "kind": "single",
-      "topic": "public beginnerhood without self-erasure",
-      "angle": "Offer permission to be visibly new at something without leading with an apology or a joke at your own expense.",
-      "createdAt": "2026-05-02T11:16:00.258Z",
-      "renderedFiles": [
-        "assets/posts/20260502111600-no-preface/post.png"
-      ]
-    },
     {
       "id": "20260502121413-before-you-knew",
       "title": "Before You Knew",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-04T06:56:45.816Z",
       "renderedFiles": [
         "assets/posts/20260504065645-the-tight-smile/post.png"
+      ]
+    },
+    {
+      "id": "20260504075708-friendly-way",
+      "title": "Friendly Way",
+      "kind": "carousel",
+      "topic": "ceremonial invitations mistaken for real plans",
+      "angle": "The sting is realizing the warmth was meant to stay verbal, not become a date on the calendar.",
+      "createdAt": "2026-05-04T07:57:08.602Z",
+      "renderedFiles": [
+        "assets/posts/20260504075708-friendly-way/slide-01.png",
+        "assets/posts/20260504075708-friendly-way/slide-02.png",
+        "assets/posts/20260504075708-friendly-way/slide-03.png"
       ]
     }
   ]
