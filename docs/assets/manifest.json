@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-04T00:19:13.142Z",
+  "updatedAt": "2026-05-04T01:34:32.659Z",
   "items": [
-    {
-      "id": "20260502073253-tracked-changes",
-      "title": "Tracked Changes",
-      "kind": "carousel",
-      "topic": "competent discretion during a public mistake",
-      "angle": "The help people remember most is often the kind that fixes your exposure before your embarrassment becomes the room's event.",
-      "createdAt": "2026-05-02T07:32:53.943Z",
-      "renderedFiles": [
-        "assets/posts/20260502073253-tracked-changes/slide-01.png",
-        "assets/posts/20260502073253-tracked-changes/slide-02.png",
-        "assets/posts/20260502073253-tracked-changes/slide-03.png"
-      ]
-    },
     {
       "id": "20260502082921-take-the-joke",
       "title": "Take the Joke",
@@ -471,6 +458,19 @@
       "createdAt": "2026-05-04T00:19:01.689Z",
       "renderedFiles": [
         "assets/posts/20260504001901-wrong-kind-of-help/post.png"
+      ]
+    },
+    {
+      "id": "20260504013431-wrong-name-at-dinner",
+      "title": "Wrong Name at Dinner",
+      "kind": "carousel",
+      "topic": "quiet correction that protects dignity in public",
+      "angle": "The most generous correction is the one that gives someone the right information without making them pay for the mistake all night.",
+      "createdAt": "2026-05-04T01:34:31.731Z",
+      "renderedFiles": [
+        "assets/posts/20260504013431-wrong-name-at-dinner/slide-01.png",
+        "assets/posts/20260504013431-wrong-name-at-dinner/slide-02.png",
+        "assets/posts/20260504013431-wrong-name-at-dinner/slide-03.png"
       ]
     }
   ]

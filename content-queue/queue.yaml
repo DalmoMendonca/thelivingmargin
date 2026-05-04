@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T00:19:13.105Z
+updatedAt: 2026-05-04T01:34:32.610Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4473,3 +4473,54 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A9AIvIrDs_NAuSpWw0wQ0vD"}}'
+  - id: 20260504013431-wrong-name-at-dinner
+    createdAt: 2026-05-04T01:34:31.731Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Wrong Name at Dinner
+    topic: quiet correction that protects dignity in public
+    angle: The most generous correction is the one that gives someone the right
+      information without making them pay for the mistake all night.
+    fingerprint: all at correction dignity dinner generous gives information making
+      mistake most name night one pay protects public quiet right someone them
+      without wrong
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: :null
+    altText: Three-slide text carousel about a conference dinner. The narrator
+      realizes too late that she has been calling a man by the wrong name after
+      seeing his conference lanyard. He quietly says, 'Aaron, by the way,' then
+      redirects the conversation back to travel. A moment later the table is
+      back to bread baskets and layover talk, and the mistake is over.
+    carousel:
+      - kicker: Conference dinner
+        headline: Halfway down the long restaurant table, I noticed his conference
+          lanyard said Aaron.
+        body: I had already called him Adrian more than once. The second bread basket
+          was coming back, and I could hear the last few sentences again with
+          the wrong name in them.
+      - headline: When he reached for the bread, he leaned over and said, “Aaron, by the
+          way.”
+        body: Low enough for only me. Then he looked back up and said, “So you were in
+          Madrid before Lisbon?”
+      - headline: A minute later someone was comparing layovers, and I got his name
+          right.
+        body: The plates kept clattering, the basket made another pass, and the
+          conversation stayed on travel.
+    caption:
+      hook: The best correction is the one that doesn’t become the evening.
+      body: You still need the right information. You do not need to pay for an
+        ordinary mistake all night. Some people understand that instinctively.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260504013431-wrong-name-at-dinner
+    renderedFiles:
+      - docs/assets/posts/20260504013431-wrong-name-at-dinner/slide-01.png
+      - docs/assets/posts/20260504013431-wrong-name-at-dinner/slide-02.png
+      - docs/assets/posts/20260504013431-wrong-name-at-dinner/slide-03.png
