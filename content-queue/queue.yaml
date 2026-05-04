@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T05:07:26.578Z
+updatedAt: 2026-05-04T05:07:34.413Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4605,9 +4605,15 @@ items:
       body: If you never risk inconvenience, your preferences stop participating.
         Other people's defaults start furnishing your week.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner misnaming | Plan mode question
     renderDir: docs/assets/posts/20260504050725-easygoing-or-avoidant
     renderedFiles:
       - docs/assets/posts/20260504050725-easygoing-or-avoidant/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"Azha8n_xttpGi6udEo8Kv0W"}}'
