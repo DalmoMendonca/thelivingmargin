@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T19:33:17.583Z
+updatedAt: 2026-05-04T20:27:34.298Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5269,3 +5269,37 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A7v9szXUISWHYuqOBN1ZYaT"}}'
+  - id: 20260504202732-cold-dinner
+    createdAt: 2026-05-04T20:27:32.511Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Cold Dinner
+    topic: the hidden cost of being the reliable one
+    angle: What gets praised as dependability is often a pattern of small
+      interruptions that leave one person paying the visible cost every time.
+    fingerprint: as being cold cost dependability dinner every gets hidden
+      interruptions leave often one pattern paying person praised reliable small
+      time visible what
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: A warm parchment-style Instagram graphic with the headline, 'Dependable
+      is what they call you when dinner goes cold.' Smaller text below reads,
+      'By the time you sit back down, your plate is the only one cold.'
+    single:
+      headline: Dependable is what they call you when dinner goes cold.
+      body: By the time you sit back down, your plate is the only one cold.
+    caption:
+      hook: People get used to the person who gets up first.
+      body: The ringing phone, the group text, the quick fix-after enough repeats, it
+        stops reading as a favor. It starts looking like your job.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260504202732-cold-dinner
+    renderedFiles:
+      - docs/assets/posts/20260504202732-cold-dinner/post.png

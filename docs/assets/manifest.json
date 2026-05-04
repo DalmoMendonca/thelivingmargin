@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T19:33:17.630Z",
+  "updatedAt": "2026-05-04T20:27:34.357Z",
   "items": [
-    {
-      "id": "20260503001820-editing-for-safety",
-      "title": "Editing for Safety",
-      "kind": "single",
-      "topic": "rewriting a clear message until it feels impossible to resent",
-      "angle": "What gets called overthinking a text or email is often an attempt to manage the other person's reaction in advance, which makes endless editing feel necessary and never sufficient.",
-      "createdAt": "2026-05-03T00:18:20.844Z",
-      "renderedFiles": [
-        "assets/posts/20260503001820-editing-for-safety/post.png"
-      ]
-    },
     {
       "id": "20260503013336-favor-language",
       "title": "Favor Language",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-04T19:33:07.635Z",
       "renderedFiles": [
         "assets/posts/20260504193307-borrowed-patience/post.png"
+      ]
+    },
+    {
+      "id": "20260504202732-cold-dinner",
+      "title": "Cold Dinner",
+      "kind": "single",
+      "topic": "the hidden cost of being the reliable one",
+      "angle": "What gets praised as dependability is often a pattern of small interruptions that leave one person paying the visible cost every time.",
+      "createdAt": "2026-05-04T20:27:32.511Z",
+      "renderedFiles": [
+        "assets/posts/20260504202732-cold-dinner/post.png"
       ]
     }
   ]
