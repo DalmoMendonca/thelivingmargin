@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T05:07:34.413Z
+updatedAt: 2026-05-04T06:56:46.354Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4617,3 +4617,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Azha8n_xttpGi6udEo8Kv0W"}}'
+  - id: 20260504065645-the-tight-smile
+    createdAt: 2026-05-04T06:56:45.816Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: The Tight Smile
+    topic: disliking photos of yourself because they expose social performance
+    angle: What readers often call looking bad in photos is sometimes the discomfort
+      of seeing themselves trying too hard to seem easy or relaxed.
+    fingerprint: bad because call discomfort disliking easy expose hard looking
+      often performance photos readers relaxed seeing seem smile social
+      sometimes themselves they tight too trying what yourself
+    contentMode: reframe
+    voiceMode: sharp
+    altText: "Notebook-style cream image with the text: “I look bad in photos.”
+      Sometimes it’s the shock of seeing yourself trying too hard to seem easy
+      or relaxed. Small line: Tight smile. Raised shoulders."
+    single:
+      headline: “I look bad in photos.”
+      body: Sometimes it’s the shock of seeing yourself trying too hard to seem easy
+        or relaxed.
+      supportLine: Tight smile. Raised shoulders.
+    caption:
+      hook: The camera roll is cruel about social effort.
+      body: Once you see a group photo that way, the question stops being how to pose
+        better. It becomes where and around whom you still brace-and where your
+        shoulders actually drop.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260504065645-the-tight-smile
+    renderedFiles:
+      - docs/assets/posts/20260504065645-the-tight-smile/post.png
