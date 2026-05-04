@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T12:28:24.305Z
+updatedAt: 2026-05-04T13:33:39.871Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4950,3 +4950,56 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AZHsfI_CuRoJ76qZ7zA1x6b"}}'
+  - id: 20260504133337-normal-language-version
+    createdAt: 2026-05-04T13:33:37.512Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Normal-Language Version
+    topic: being quietly rescued from social jargon
+    angle: The kindest experts notice when someone is bluffing through a coded
+      setting and offer translation without making them earn it.
+    fingerprint: being bluffing coded earn experts from jargon kindest language
+      making normal notice offer quietly rescued setting social someone them
+      through translation version when without
+    contentMode: story
+    voiceMode: reflective
+    quoteAttribution: altText
+    altText: Three-slide notebook-style carousel set in a restaurant wine bar. Slide
+      1 shows friends ordering quickly from a wine list while the narrator nods
+      through terms like skin-contact and orange wine, with the server still
+      waiting with a pen. Slide 2 shows the server quietly asking, "Do you want
+      the normal-language version?" and translating the choices plainly. Slide 3
+      ends with the order placed and the narrator physically relaxing for the
+      rest of dinner.
+    carousel:
+      - kicker: Wine bar
+        headline: By the time the wine list got to me, everyone else had already ordered
+          fast.
+        body: Two friends had said "skin-contact" and "orange wine" like those were
+          normal Tuesday words. I was halfway through an educated nod while the
+          server stood there, pen still waiting.
+      - headline: She looked at me once and said, "Do you want the normal-language
+          version?"
+        body: "Not loud. Not pitying. Just: this one is crisp, this one is softer, this
+          one tastes a little like tea. Suddenly there was a way to answer
+          without pretending."
+      - headline: I picked the second one in about ten seconds.
+        body: The glass came, my jaw unclenched, and the rest of the night stopped
+          feeling like a quiz.
+    caption:
+      hook: Real expertise makes a coded room legible before embarrassment sets in.
+      body: Some people use fluency as a social filter. The kindest experts translate
+        without making you earn it. That’s how a room turns human again.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet witness | Plan mode story
+    renderDir: docs/assets/posts/20260504133337-normal-language-version
+    renderedFiles:
+      - docs/assets/posts/20260504133337-normal-language-version/slide-01.png
+      - docs/assets/posts/20260504133337-normal-language-version/slide-02.png
+      - docs/assets/posts/20260504133337-normal-language-version/slide-03.png

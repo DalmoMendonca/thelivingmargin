@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T12:28:24.345Z",
+  "updatedAt": "2026-05-04T13:33:39.931Z",
   "items": [
-    {
-      "id": "20260502171654-low-maintenance",
-      "title": "Low-Maintenance",
-      "kind": "single",
-      "topic": "using flexibility as cover for fear of being refused",
-      "angle": "A sharp question that frames being \"easy\" in the group chat as an alibi for staying liked without risking a direct no.",
-      "createdAt": "2026-05-02T17:16:54.125Z",
-      "renderedFiles": [
-        "assets/posts/20260502171654-low-maintenance/post.png"
-      ]
-    },
     {
       "id": "20260502181535-design-the-help",
       "title": "Design the Help",
@@ -469,6 +458,19 @@
       "createdAt": "2026-05-04T12:28:13.797Z",
       "renderedFiles": [
         "assets/posts/20260504122813-answer-with-a-clock/post.png"
+      ]
+    },
+    {
+      "id": "20260504133337-normal-language-version",
+      "title": "Normal-Language Version",
+      "kind": "carousel",
+      "topic": "being quietly rescued from social jargon",
+      "angle": "The kindest experts notice when someone is bluffing through a coded setting and offer translation without making them earn it.",
+      "createdAt": "2026-05-04T13:33:37.512Z",
+      "renderedFiles": [
+        "assets/posts/20260504133337-normal-language-version/slide-01.png",
+        "assets/posts/20260504133337-normal-language-version/slide-02.png",
+        "assets/posts/20260504133337-normal-language-version/slide-03.png"
       ]
     }
   ]
