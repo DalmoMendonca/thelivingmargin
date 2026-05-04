@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-03T23:16:08.223Z
+updatedAt: 2026-05-04T00:19:02.952Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -4424,3 +4424,46 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ap-jDeBZqMV_mEFLi5hdXH6"}}'
+  - id: 20260504001901-wrong-kind-of-help
+    createdAt: 2026-05-04T00:19:01.689Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Wrong Kind of Help
+    topic: asking what kind of feedback someone wants before giving it
+    angle: Before you start fixing someone's draft, deck, or difficult message, ask
+      what kind of help they want, because useful help depends on the stage
+      they're in.
+    fingerprint: ask asking because before deck depends difficult draft feedback
+      fixing giving help kind message someone someones stage start they theyre
+      useful want wants what wrong
+    contentMode: advice
+    voiceMode: reflective
+    altText: "Single notebook-style Instagram post in brass ink on cream paper.
+      Headline: “Before I start marking this up, do you want edits, ideas, or
+      just a read?” Body: “Ask it before the Google Doc, the deck, or the draft
+      text gets covered in notes.” Support line: “The wrong help at the wrong
+      stage can turn vulnerable work into cleanup.” Footer: “Then people start
+      protecting the work instead of improving it.”"
+    single:
+      headline: Before I start marking this up, do you want edits, ideas, or just a read?
+      body: Ask it before the Google Doc, the deck, or the draft text gets covered in
+        notes.
+      supportLine: The wrong help at the wrong stage can turn vulnerable work into cleanup.
+      footer: Then people start protecting the work instead of improving it.
+    caption:
+      hook: Early notes can land like a verdict.
+      body: On a half-built deck or an unsent text, detailed comments can be the wrong
+        tool. Sometimes they need edits; sometimes one reaction, a few ideas, or
+        just a read. Too much too soon, and they protect the draft instead of
+        moving it forward.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner script | Plan mode advice
+    renderDir: docs/assets/posts/20260504001901-wrong-kind-of-help
+    renderedFiles:
+      - docs/assets/posts/20260504001901-wrong-kind-of-help/post.png
