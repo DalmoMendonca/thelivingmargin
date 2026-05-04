@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T13:33:59.981Z",
+  "updatedAt": "2026-05-04T14:42:58.031Z",
   "items": [
-    {
-      "id": "20260502181535-design-the-help",
-      "title": "Design the Help",
-      "kind": "single",
-      "topic": "making a clear ask without creating hidden labor",
-      "angle": "When you ask for help, name the scope, timing, and smallest useful version so the other person does not have to design the help for you.",
-      "createdAt": "2026-05-02T18:15:35.335Z",
-      "renderedFiles": [
-        "assets/posts/20260502181535-design-the-help/post.png"
-      ]
-    },
     {
       "id": "20260502192318-after-the-coat-is-off",
       "title": "After the Coat Is Off",
@@ -471,6 +460,17 @@
         "assets/posts/20260504133337-normal-language-version/slide-01.png",
         "assets/posts/20260504133337-normal-language-version/slide-02.png",
         "assets/posts/20260504133337-normal-language-version/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260504144256-invitation-twice",
+      "title": "Invitation Twice",
+      "kind": "single",
+      "topic": "last-minute plans accepted out of belonging scarcity",
+      "angle": "Calling yourself spontaneous can be a cleaner alibi for the fear that if you decline once, the invitation may not come again.",
+      "createdAt": "2026-05-04T14:42:56.605Z",
+      "renderedFiles": [
+        "assets/posts/20260504144256-invitation-twice/post.png"
       ]
     }
   ]

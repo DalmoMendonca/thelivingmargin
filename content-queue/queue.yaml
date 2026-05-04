@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T13:33:59.934Z
+updatedAt: 2026-05-04T14:42:57.970Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5009,3 +5009,40 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Akl-cOfs4lsMl8k07ydT8yP"}}'
+  - id: 20260504144256-invitation-twice
+    createdAt: 2026-05-04T14:42:56.605Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Invitation Twice
+    topic: last-minute plans accepted out of belonging scarcity
+    angle: Calling yourself spontaneous can be a cleaner alibi for the fear that if
+      you decline once, the invitation may not come again.
+    fingerprint: accepted again alibi belonging calling can cleaner come decline
+      fear if invitation last may minute not once out plans scarcity spontaneous
+      twice yourself
+    contentMode: question
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: "Notebook-cream single image in a sage-ash palette. The main text asks:
+      \"When you call a 6:12 p.m. 'you out tonight?' text spontaneity, are you
+      really afraid it won't come again if you say no?\" Smaller text below
+      reads: \"The reshuffled alarm tells the truth.\""
+    single:
+      headline: When you call a 6:12 p.m. "you out tonight?" text spontaneity, are you
+        really afraid it won’t come again if you say no?
+      body: The reshuffled alarm tells the truth.
+    caption:
+      hook: Some quick yeses are really membership fees.
+      body: If a same-night plan works only after you erase your evening, the invite
+        is saying that too. The cost is never just tonight.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260504144256-invitation-twice
+    renderedFiles:
+      - docs/assets/posts/20260504144256-invitation-twice/post.png
