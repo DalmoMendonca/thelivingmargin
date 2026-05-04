@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-04T14:43:05.367Z",
+  "updatedAt": "2026-05-04T15:37:15.448Z",
   "items": [
-    {
-      "id": "20260502192318-after-the-coat-is-off",
-      "title": "After the Coat Is Off",
-      "kind": "carousel",
-      "topic": "withholding a changed plan until arrival makes objection socially expensive",
-      "angle": "Sometimes the manipulation isn't the decision. It's waiting to reveal it until objection would look rude.",
-      "createdAt": "2026-05-02T19:23:18.024Z",
-      "renderedFiles": [
-        "assets/posts/20260502192318-after-the-coat-is-off/slide-01.png",
-        "assets/posts/20260502192318-after-the-coat-is-off/slide-02.png",
-        "assets/posts/20260502192318-after-the-coat-is-off/slide-03.png"
-      ]
-    },
     {
       "id": "20260502201052-say-it-again",
       "title": "Say It Again",
@@ -471,6 +458,17 @@
       "createdAt": "2026-05-04T14:42:56.605Z",
       "renderedFiles": [
         "assets/posts/20260504144256-invitation-twice/post.png"
+      ]
+    },
+    {
+      "id": "20260504153714-reaction-is-not-a-reply",
+      "title": "Reaction Is Not a Reply",
+      "kind": "single",
+      "topic": "emoji reactions used in place of real answers",
+      "angle": "In messaging, a heart on a concrete question can keep the exchange warm while leaving the actual answer, commitment, or logistics untouched.",
+      "createdAt": "2026-05-04T15:37:14.858Z",
+      "renderedFiles": [
+        "assets/posts/20260504153714-reaction-is-not-a-reply/post.png"
       ]
     }
   ]

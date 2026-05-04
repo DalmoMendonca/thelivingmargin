@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T14:43:05.332Z
+updatedAt: 2026-05-04T15:37:15.387Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5052,3 +5052,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AQmQsbDnTaerRcZsRuS86Le"}}'
+  - id: 20260504153714-reaction-is-not-a-reply
+    createdAt: 2026-05-04T15:37:14.858Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Reaction Is Not a Reply
+    topic: emoji reactions used in place of real answers
+    angle: In messaging, a heart on a concrete question can keep the exchange warm
+      while leaving the actual answer, commitment, or logistics untouched.
+    fingerprint: actual answer answers can commitment concrete emoji exchange heart
+      keep leaving logistics messaging not place question reaction reactions
+      real reply untouched used warm while
+    contentMode: observation
+    voiceMode: sharp
+    altText: "Single-image text post on a dark charcoal-grain background that reads:
+      “When “Does Thursday work?” gets a heart, the tone stays warm, but the
+      question still isn’t answered.”"
+    single:
+      headline: When “Does Thursday work?” gets a heart, the tone stays warm, but the
+        question still isn’t answered.
+      body: ""
+    caption:
+      hook: Some hearts are just warmer read receipts.
+      body: A heart can signal goodwill without spending clarity. The thread stays
+        friendly, but the person waiting on Thursday feels acknowledged, not
+        answered.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner social ritual | Plan mode observation
+    renderDir: docs/assets/posts/20260504153714-reaction-is-not-a-reply
+    renderedFiles:
+      - docs/assets/posts/20260504153714-reaction-is-not-a-reply/post.png
