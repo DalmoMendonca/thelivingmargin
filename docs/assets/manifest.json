@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T18:29:27.530Z",
+  "updatedAt": "2026-05-04T19:33:09.130Z",
   "items": [
-    {
-      "id": "20260502231512-forwarded-panic",
-      "title": "Forwarded Panic",
-      "kind": "single",
-      "topic": "family competence turning into default emergency labor",
-      "angle": "The reliable child becomes the family’s unspoken forwarding address for stress, errands, and administrative spillover.",
-      "createdAt": "2026-05-02T23:15:12.493Z",
-      "renderedFiles": [
-        "assets/posts/20260502231512-forwarded-panic/post.png"
-      ]
-    },
     {
       "id": "20260503001820-editing-for-safety",
       "title": "Editing for Safety",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-04T18:29:15.582Z",
       "renderedFiles": [
         "assets/posts/20260504182915-late-no/post.png"
+      ]
+    },
+    {
+      "id": "20260504193307-borrowed-patience",
+      "title": "Borrowed Patience",
+      "kind": "single",
+      "topic": "advice that becomes noble when someone else pays the cost",
+      "angle": "La Rochefoucauld still feels current because patience sounds most virtuous when the disruption lands on someone else’s calendar.",
+      "createdAt": "2026-05-04T19:33:07.635Z",
+      "renderedFiles": [
+        "assets/posts/20260504193307-borrowed-patience/post.png"
       ]
     }
   ]

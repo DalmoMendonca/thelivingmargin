@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T18:29:27.485Z
+updatedAt: 2026-05-04T19:33:09.068Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5225,3 +5225,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Arp25OzSIBEQGFPDPlQ0jui"}}'
+  - id: 20260504193307-borrowed-patience
+    createdAt: 2026-05-04T19:33:07.635Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Borrowed Patience
+    topic: advice that becomes noble when someone else pays the cost
+    angle: La Rochefoucauld still feels current because patience sounds most
+      virtuous when the disruption lands on someone else’s calendar.
+    fingerprint: advice because becomes borrowed calendar cost current disruption
+      else elses feels la lands most noble patience pays rochefoucauld someone
+      sounds still virtuous when
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: François de La Rochefoucauld
+    altText: A dark editorial quote card on a charcoal-grain surface with wide
+      margins. Large, unified text reads, “We all have strength enough to bear
+      the misfortunes of others.” A small attribution beneath reads, François de
+      La Rochefoucauld.
+    single:
+      headline: “We all have strength enough
+      body: to bear the misfortunes of others.”
+      footer: François de La Rochefoucauld
+    caption:
+      hook: Grace gets very elegant on someone else’s calendar.
+      body: In the group chat, “be patient” sounds noble when dinner gets moved again
+        and they’re not losing the Saturday. Flexibility is cheap when the
+        inconvenience misses your weekend.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260504193307-borrowed-patience
+    renderedFiles:
+      - docs/assets/posts/20260504193307-borrowed-patience/post.png
