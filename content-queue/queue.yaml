@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T10:33:32.843Z
+updatedAt: 2026-05-05T11:28:25.335Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5975,3 +5975,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AtYK9m5uK7IPi0SWyLrYDdG"}}'
+  - id: 20260505112824-dinner-loyalty
+    createdAt: 2026-05-05T11:28:24.851Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: emberParchment
+    surfaceStyle: paperWarm
+    title: Dinner Loyalty
+    topic: belonging maintained by fear of becoming the next target
+    angle: Ask whether what gets called loyalty is really self-protection in a group
+      that stays bonded by talking about whoever is absent.
+    fingerprint: about absent ask becoming belonging bonded by called dinner fear
+      gets group loyalty maintained next protection really self stays talking
+      target what whether whoever
+    contentMode: question
+    voiceMode: sharp
+    altText: A warm parchment-style Instagram graphic with a large question reading,
+      'Is this loyalty, or just paying for your seat when someone's name comes
+      up and everybody laughs too fast?' Smaller text below reads, 'At that
+      table, everyone knows what happens to the person who isn't there.' A final
+      small line says, 'Staying safe means laughing on time.'
+    single:
+      headline: Is this [[loyalty]], or just paying for your seat when someone's name
+        comes up and everybody laughs too fast?
+      body: At that table, everyone knows what happens to the person who isn't there.
+      supportLine: Staying safe means laughing on time.
+    caption:
+      hook: Some groups feel close because everyone knows the penalty.
+      body: You can hear it in how fast the pile-on lands. A group can feel tight when
+        compliance is what keeps you out of the story.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260505112824-dinner-loyalty
+    renderedFiles:
+      - docs/assets/posts/20260505112824-dinner-loyalty/post.png

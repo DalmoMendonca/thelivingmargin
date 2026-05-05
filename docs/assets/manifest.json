@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-05T10:33:32.892Z",
+  "updatedAt": "2026-05-05T11:28:25.404Z",
   "items": [
-    {
-      "id": "20260503161501-blame-the-machine",
-      "title": "Blame the Machine",
-      "kind": "carousel",
-      "topic": "public embarrassment and everyday tact",
-      "angle": "At a grocery checkout, a clerk spares a customer public embarrassment by blaming the machine before the line can blame the person.",
-      "createdAt": "2026-05-03T16:15:01.599Z",
-      "renderedFiles": [
-        "assets/posts/20260503161501-blame-the-machine/slide-01.png",
-        "assets/posts/20260503161501-blame-the-machine/slide-02.png",
-        "assets/posts/20260503161501-blame-the-machine/slide-03.png"
-      ]
-    },
     {
       "id": "20260503171624-buy-the-easier-version",
       "title": "Buy the Easier Version",
@@ -473,6 +460,17 @@
         "assets/posts/20260505103314-next-door-chapel/slide-01.png",
         "assets/posts/20260505103314-next-door-chapel/slide-02.png",
         "assets/posts/20260505103314-next-door-chapel/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260505112824-dinner-loyalty",
+      "title": "Dinner Loyalty",
+      "kind": "single",
+      "topic": "belonging maintained by fear of becoming the next target",
+      "angle": "Ask whether what gets called loyalty is really self-protection in a group that stays bonded by talking about whoever is absent.",
+      "createdAt": "2026-05-05T11:28:24.851Z",
+      "renderedFiles": [
+        "assets/posts/20260505112824-dinner-loyalty/post.png"
       ]
     }
   ]
