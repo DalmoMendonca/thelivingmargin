@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T11:28:34.216Z",
+  "updatedAt": "2026-05-05T12:20:46.764Z",
   "items": [
-    {
-      "id": "20260503171624-buy-the-easier-version",
-      "title": "Buy the Easier Version",
-      "kind": "single",
-      "topic": "shame around paying for small convenience when life is already full",
-      "angle": "A small shortcut is allowed when the cheaper, harder option would quietly cost you the steadiness you still need later.",
-      "createdAt": "2026-05-03T17:16:24.230Z",
-      "renderedFiles": [
-        "assets/posts/20260503171624-buy-the-easier-version/post.png"
-      ]
-    },
     {
       "id": "20260503181540-tapback-diplomacy",
       "title": "Tapback Diplomacy",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-05T11:28:24.851Z",
       "renderedFiles": [
         "assets/posts/20260505112824-dinner-loyalty/post.png"
+      ]
+    },
+    {
+      "id": "20260505122046-reaction-receipt",
+      "title": "Reaction Receipt",
+      "kind": "single",
+      "topic": "emoji reactions used as polite non-answers in text conversations",
+      "angle": "A heart or thumbs-up can acknowledge a message without answering it, protecting tone more than it provides clarity.",
+      "createdAt": "2026-05-05T12:20:46.223Z",
+      "renderedFiles": [
+        "assets/posts/20260505122046-reaction-receipt/post.png"
       ]
     }
   ]

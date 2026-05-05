@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T11:28:34.175Z
+updatedAt: 2026-05-05T12:20:46.690Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6019,3 +6019,43 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AnoS--XEtxaPMX9i1p8IUUE"}}'
+  - id: 20260505122046-reaction-receipt
+    createdAt: 2026-05-05T12:20:46.223Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Reaction Receipt
+    topic: emoji reactions used as polite non-answers in text conversations
+    angle: A heart or thumbs-up can acknowledge a message without answering it,
+      protecting tone more than it provides clarity.
+    fingerprint: acknowledge answering answers as can clarity conversations emoji
+      heart message more non polite protecting provides reaction reactions
+      receipt text than thumbs tone up used without
+    contentMode: observation
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: 'Single-image text post on a warm paper background in brass ink.
+      Headline: "A heart on ‘Are we still on for 7?’ answers the vibe, not the
+      question." Body: "The reaction bar acknowledges the text without answering
+      the ask. Which matters when someone is deciding whether to leave the
+      house." Support line: "The tone gets handled right away. The clarity does
+      not."'
+    single:
+      headline: A heart on “Are we still on for 7?” answers the vibe, not the question.
+      body: The reaction bar acknowledges the text without answering the ask. Which
+        matters when someone is deciding whether to leave the house.
+      supportLine: The tone gets handled right away. The clarity does not.
+    caption:
+      hook: A reaction can close the mood before it closes the question.
+      body: It acknowledges receipt, not the actual ask. So the exchange looks
+        resolved while the plan, answer, or next move is still sitting there.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner social ritual | Plan mode observation
+    renderDir: docs/assets/posts/20260505122046-reaction-receipt
+    renderedFiles:
+      - docs/assets/posts/20260505122046-reaction-receipt/post.png
