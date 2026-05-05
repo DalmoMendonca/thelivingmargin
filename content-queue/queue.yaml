@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T09:36:13.646Z
+updatedAt: 2026-05-05T10:33:14.862Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5920,3 +5920,52 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AypaoTvvj3G-Q7StN-znbW5"}}'
+  - id: 20260505103314-next-door-chapel
+    createdAt: 2026-05-05T10:33:14.008Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Next Door Chapel
+    topic: a quiet act that protects someone’s dignity during a public mistake
+    angle: The most intelligent kind of help is often fast, specific, and quiet
+      enough to keep a bad moment from becoming a scene.
+    fingerprint: act bad becoming chapel dignity door during enough fast from help
+      intelligent keep kind mistake moment most next often protects public quiet
+      scene someones specific
+    contentMode: story
+    voiceMode: reflective
+    altText: A three-slide text carousel about a man who realizes during the second
+      hymn that he is in the wrong funeral chapel, is quietly guided out by an
+      usher through a side door, and reaches the correct room just before a
+      reading, with relief showing only when his shoulders finally drop.
+    carousel:
+      - headline: By the second hymn, he knew.
+        body: He had slipped into a back pew with rain still dark on his damp coat
+          sleeve, and the second hymn had already started. Then he opened the
+          folded funeral-home program and saw the surname on the cover was not
+          his.
+      - headline: “You’re next door-come with me.”
+        body: An usher leaned in, low enough that nobody else had to turn. He took him
+          through the side door off the hallway, past the brass room number,
+          without making his lateness more visible.
+      - headline: He made it before the reading.
+        body: They reached the right chapel just as his niece stood to read. He slid
+          into the last row, smoothed the correct program once, and his
+          shoulders came down.
+    caption:
+      hook: The best help reduces exposure before it becomes a scene.
+      body: Some people use their awareness as cover, not display. They notice what
+        could turn public and make it smaller, fast. That intelligence leaves
+        dignity intact.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260505103314-next-door-chapel
+    renderedFiles:
+      - docs/assets/posts/20260505103314-next-door-chapel/slide-01.png
+      - docs/assets/posts/20260505103314-next-door-chapel/slide-02.png
+      - docs/assets/posts/20260505103314-next-door-chapel/slide-03.png

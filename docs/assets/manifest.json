@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T09:36:13.694Z",
+  "updatedAt": "2026-05-05T10:33:14.930Z",
   "items": [
-    {
-      "id": "20260503151453-late-without-the-trial",
-      "title": "Late Without the Trial",
-      "kind": "single",
-      "topic": "overexplaining after a small failure",
-      "angle": "When you inconvenience someone, a brief direct apology is usually more respectful than a long alibi that asks them to manage your embarrassment.",
-      "createdAt": "2026-05-03T15:14:53.674Z",
-      "renderedFiles": [
-        "assets/posts/20260503151453-late-without-the-trial/post.png"
-      ]
-    },
     {
       "id": "20260503161501-blame-the-machine",
       "title": "Blame the Machine",
@@ -471,6 +460,19 @@
       "createdAt": "2026-05-05T09:36:02.124Z",
       "renderedFiles": [
         "assets/posts/20260505093602-before-the-first-round/post.png"
+      ]
+    },
+    {
+      "id": "20260505103314-next-door-chapel",
+      "title": "Next Door Chapel",
+      "kind": "carousel",
+      "topic": "a quiet act that protects someone’s dignity during a public mistake",
+      "angle": "The most intelligent kind of help is often fast, specific, and quiet enough to keep a bad moment from becoming a scene.",
+      "createdAt": "2026-05-05T10:33:14.008Z",
+      "renderedFiles": [
+        "assets/posts/20260505103314-next-door-chapel/slide-01.png",
+        "assets/posts/20260505103314-next-door-chapel/slide-02.png",
+        "assets/posts/20260505103314-next-door-chapel/slide-03.png"
       ]
     }
   ]
