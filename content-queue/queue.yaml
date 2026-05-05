@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T17:32:17.252Z
+updatedAt: 2026-05-05T18:27:34.425Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6206,3 +6206,71 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ADcWB-ci5GGnHhXUfqgWkQs"}}'
+  - id: 20260505182733-unofficial-manager
+    createdAt: 2026-05-05T18:27:33.100Z
+    source: ai
+    slotPreference: midday
+    kind: carousel
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Unofficial Manager
+    topic: unassigned ownership at work
+    angle: The person who translates vague talk into actions, remembers the moving
+      parts, and chases follow-through is already doing management even if
+      nobody has named it.
+    fingerprint: actions already at chases doing even follow has if into management
+      manager moving named nobody ownership parts person remembers talk through
+      translates unassigned unofficial vague who work
+    contentMode: list
+    voiceMode: sharp
+    quoteAttribution: :null
+    altText: A five-slide notebook-style Instagram carousel about being the
+      unofficial manager at work. Slide 1 promises five signs, anchored in
+      recaps, trackers, and nudges. Slide 2 shows translation labor after vague
+      meetings through a meeting recap, names, dates, and a calendar invite.
+      Slide 3 shows memory labor through versions, deadlines, and unanswered
+      questions, plus the deadline tracker. Slide 4 shows friction labor through
+      follow-up emails, polite corrections, and 'just circling back.' Slide 5
+      reframes helpfulness as unassigned ownership when the work loses shape
+      without your push.
+    carousel:
+      - kicker: At work
+        headline: 5 signs you're the unofficial manager
+        body: If the work needs your recap, tracker, and nudges to stay moving, this
+          list is about you.
+      - headline: You turn talk into a plan
+        body: |-
+          1. The meeting only becomes clear after your meeting recap.
+
+          2. You turn "we should" into names, dates, and a calendar invite.
+      - headline: You are holding the memory
+        body: >-
+          3. You know the current version, the real deadline, and the unanswered
+          question.
+
+
+          4. The deadline tracker exists because you got tired of carrying it
+          all in your head.
+      - headline: You absorb the awkward part
+        body: 5. You send the follow-up email, the polite correction, and the "just
+          circling back" so nobody else has to.
+      - headline: That is not just being helpful
+        body: If the work loses shape when you stop pushing, that isn't just
+          helpfulness. It's ownership nobody assigned.
+    caption:
+      hook: Sometimes you volunteered first because mess bothered you.
+      body: You may have written the first recap because you like clean systems. But
+        once everyone starts waiting for your follow-up email, a preference has
+        become a role.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260505182733-unofficial-manager
+    renderedFiles:
+      - docs/assets/posts/20260505182733-unofficial-manager/slide-01.png
+      - docs/assets/posts/20260505182733-unofficial-manager/slide-02.png
+      - docs/assets/posts/20260505182733-unofficial-manager/slide-03.png
+      - docs/assets/posts/20260505182733-unofficial-manager/slide-04.png
+      - docs/assets/posts/20260505182733-unofficial-manager/slide-05.png

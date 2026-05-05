@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T17:32:17.309Z",
+  "updatedAt": "2026-05-05T18:27:34.496Z",
   "items": [
-    {
-      "id": "20260503211548-warm-up-talk",
-      "title": "Warm-Up Talk",
-      "kind": "single",
-      "topic": "disdain for small talk",
-      "angle": "What gets called hating small talk is often impatience with the warm-up real conversation requires.",
-      "createdAt": "2026-05-03T21:15:48.699Z",
-      "renderedFiles": [
-        "assets/posts/20260503211548-warm-up-talk/post.png"
-      ]
-    },
     {
       "id": "20260503221243-honest-and-wrong",
       "title": "Honest and Wrong",
@@ -471,6 +460,21 @@
       "createdAt": "2026-05-05T17:32:07.099Z",
       "renderedFiles": [
         "assets/posts/20260505173207-twice-is-fine/post.png"
+      ]
+    },
+    {
+      "id": "20260505182733-unofficial-manager",
+      "title": "Unofficial Manager",
+      "kind": "carousel",
+      "topic": "unassigned ownership at work",
+      "angle": "The person who translates vague talk into actions, remembers the moving parts, and chases follow-through is already doing management even if nobody has named it.",
+      "createdAt": "2026-05-05T18:27:33.100Z",
+      "renderedFiles": [
+        "assets/posts/20260505182733-unofficial-manager/slide-01.png",
+        "assets/posts/20260505182733-unofficial-manager/slide-02.png",
+        "assets/posts/20260505182733-unofficial-manager/slide-03.png",
+        "assets/posts/20260505182733-unofficial-manager/slide-04.png",
+        "assets/posts/20260505182733-unofficial-manager/slide-05.png"
       ]
     }
   ]
