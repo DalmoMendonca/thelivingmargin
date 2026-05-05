@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-05T19:34:21.058Z",
+  "updatedAt": "2026-05-05T20:23:08.322Z",
   "items": [
-    {
-      "id": "20260503231540-pretending-to-decide",
-      "title": "Pretending to Decide",
-      "kind": "carousel",
-      "topic": "how to spot a discussion that is really a pre-made decision",
-      "angle": "When one outcome already has language, logistics, and momentum, the \"discussion\" is usually a softer way to spread ownership.",
-      "createdAt": "2026-05-03T23:15:40.791Z",
-      "renderedFiles": [
-        "assets/posts/20260503231540-pretending-to-decide/slide-01.png",
-        "assets/posts/20260503231540-pretending-to-decide/slide-02.png",
-        "assets/posts/20260503231540-pretending-to-decide/slide-03.png",
-        "assets/posts/20260503231540-pretending-to-decide/slide-04.png",
-        "assets/posts/20260503231540-pretending-to-decide/slide-05.png"
-      ]
-    },
     {
       "id": "20260504001901-wrong-kind-of-help",
       "title": "Wrong Kind of Help",
@@ -475,6 +460,17 @@
       "createdAt": "2026-05-05T19:34:10.195Z",
       "renderedFiles": [
         "assets/posts/20260505193410-opinion-as-attendance/post.png"
+      ]
+    },
+    {
+      "id": "20260505202307-hired-by-compliment",
+      "title": "Hired by Compliment",
+      "kind": "single",
+      "topic": "praise used to recruit unpaid labor",
+      "angle": "When praise reliably shows up attached to a task, it often functions less as admiration than as a flattering way to assign work.",
+      "createdAt": "2026-05-05T20:23:07.785Z",
+      "renderedFiles": [
+        "assets/posts/20260505202307-hired-by-compliment/post.png"
       ]
     }
   ]

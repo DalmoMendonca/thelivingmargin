@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T19:34:21.013Z
+updatedAt: 2026-05-05T20:23:08.244Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6330,3 +6330,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ALoPibgOrJOa4tFAnYRMgmU"}}'
+  - id: 20260505202307-hired-by-compliment
+    createdAt: 2026-05-05T20:23:07.785Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: signal
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Hired by Compliment
+    topic: praise used to recruit unpaid labor
+    angle: When praise reliably shows up attached to a task, it often functions less
+      as admiration than as a flattering way to assign work.
+    fingerprint: admiration as assign attached by compliment flattering functions
+      hired labor less often praise recruit reliably shows task than unpaid up
+      used way when work
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: A warm paper-textured graphic with the headline 'When the praise comes
+      with a first draft, you're hired by compliment.' and a smaller line below
+      reading 'Being seen asks nothing back; being assigned usually opens with
+      praise.'
+    single:
+      headline: When the praise comes with a first draft, you're hired by compliment.
+      body: Being seen asks nothing back; being assigned usually opens with praise.
+    caption:
+      hook: Then saying no means being the one who kills the vibe.
+      body: In the Slack ping or group chat, the compliment lands first so the
+        reservation or ride feels preapproved. Yes can slip out before you've
+        checked your day.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260505202307-hired-by-compliment
+    renderedFiles:
+      - docs/assets/posts/20260505202307-hired-by-compliment/post.png
