@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T05:53:42.394Z
+updatedAt: 2026-05-05T06:43:13.747Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5703,3 +5703,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AE60NrqfChK7r5ap0uZZl8x"}}'
+  - id: 20260505064313-the-it-s-fine-tax
+    createdAt: 2026-05-05T06:43:13.269Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: notebook
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: The It's Fine Tax
+    topic: staying quiet about small public mix-ups to avoid seeming difficult
+    angle: What gets called being "easy" in a small public mix-up is often just
+      absorbing the cost yourself so nobody else has to feel briefly corrected.
+    fingerprint: about absorbing avoid being briefly called corrected cost difficult
+      easy else feel fine gets has its just mix nobody often public quiet
+      seeming small so staying tax up ups what yourself
+    contentMode: reframe
+    voiceMode: sharp
+    altText: "A notebook-style cream graphic in a sage ash palette. The main text
+      reads, 'Being “easy” can just mean' and underneath, 'absorbing the cost
+      yourself.' A smaller line reads, 'Wrong order, bill off by a few dollars,
+      salon mirror-then: “it’s fine.”'"
+    single:
+      headline: Being “easy” can just mean
+      body: absorbing the cost yourself.
+      supportLine: "Wrong order, bill off by a few dollars, salon mirror-then: “it’s fine.”"
+    caption:
+      hook: Silence doesn’t erase the cost.
+      body: Once you see that, a quick correction feels cleaner than swallowing the
+        mistake. Ten seconds of awkwardness beats taking the inconvenience home.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterframe | Plan mode reframe
+    renderDir: docs/assets/posts/20260505064313-the-it-s-fine-tax
+    renderedFiles:
+      - docs/assets/posts/20260505064313-the-it-s-fine-tax/post.png

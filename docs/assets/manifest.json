@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T05:53:42.432Z",
+  "updatedAt": "2026-05-05T06:43:13.808Z",
   "items": [
-    {
-      "id": "20260503111447-hallway-support",
-      "title": "Hallway Support",
-      "kind": "single",
-      "topic": "private agreement without public backing at work",
-      "angle": "When someone agrees only afterward in the hallway, they're protecting their name instead of sharing the risk in the room.",
-      "createdAt": "2026-05-03T11:14:47.868Z",
-      "renderedFiles": [
-        "assets/posts/20260503111447-hallway-support/post.png"
-      ]
-    },
     {
       "id": "20260503121342-easygoing-tax",
       "title": "Easygoing Tax",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-05T05:53:33.928Z",
       "renderedFiles": [
         "assets/posts/20260505055333-bigger-than-the-mistake/post.png"
+      ]
+    },
+    {
+      "id": "20260505064313-the-it-s-fine-tax",
+      "title": "The It's Fine Tax",
+      "kind": "single",
+      "topic": "staying quiet about small public mix-ups to avoid seeming difficult",
+      "angle": "What gets called being \"easy\" in a small public mix-up is often just absorbing the cost yourself so nobody else has to feel briefly corrected.",
+      "createdAt": "2026-05-05T06:43:13.269Z",
+      "renderedFiles": [
+        "assets/posts/20260505064313-the-it-s-fine-tax/post.png"
       ]
     }
   ]
