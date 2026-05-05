@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T09:36:04.070Z
+updatedAt: 2026-05-05T09:36:13.646Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5908,9 +5908,15 @@ items:
         are revising the social story everyone already spent under. That is why
         late clarity feels heavier than early clarity.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner warning | Plan mode advice
     renderDir: docs/assets/posts/20260505093602-before-the-first-round
     renderedFiles:
       - docs/assets/posts/20260505093602-before-the-first-round/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"AypaoTvvj3G-Q7StN-znbW5"}}'
