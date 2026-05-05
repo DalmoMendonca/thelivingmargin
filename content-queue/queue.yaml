@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T20:23:17.916Z
+updatedAt: 2026-05-05T21:20:52.791Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6372,3 +6372,54 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Av0LNz3rZMx0ksA66gngwx0"}}'
+  - id: 20260505212052-false-urgency
+    createdAt: 2026-05-05T21:20:52.317Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: False Urgency
+    topic: on-the-spot requests that pressure an immediate answer
+    angle: When someone asks for a commitment in passing, ask for the real deadline
+      instead of treating their convenience like your urgency.
+    fingerprint: answer ask asks commitment convenience deadline false immediate
+      instead like passing pressure real requests someone spot their treating
+      urgency when
+    contentMode: advice
+    voiceMode: sharp
+    altText: "A single-image post with the headline 'Bag in hand is not a deadline.'
+      The body describes someone catching you bag in hand as a meeting ends or
+      in the hallway to ask for help, then advises using the script 'When do you
+      need to know?' to separate a real date from social pressure. A support
+      line reads: 'Cleaner yes. Cleaner no. Fewer resentful maybes.'"
+    single:
+      headline: Bag in hand is not a deadline.
+      body: |-
+        When someone catches you bag in hand
+
+        as the meeting ends,
+
+        or in the hallway,
+
+        and asks you to take something on,
+
+        ask: "When do you need to know?"
+
+        That gets you the real date,
+
+        not the pressure of an awkward exit.
+      supportLine: Cleaner yes. Cleaner no. Fewer resentful maybes.
+    caption:
+      hook: A rushed moment can masquerade as a deadline.
+      body: A lot of asks feel urgent because the exit is awkward, not because the
+        date is close. If the real deadline is next Thursday, you can check your
+        week and give a clean answer instead of donating a panicked maybe.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner field test | Plan mode advice
+    renderDir: docs/assets/posts/20260505212052-false-urgency
+    renderedFiles:
+      - docs/assets/posts/20260505212052-false-urgency/post.png

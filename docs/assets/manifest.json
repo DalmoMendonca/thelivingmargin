@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T20:23:17.966Z",
+  "updatedAt": "2026-05-05T21:20:52.867Z",
   "items": [
-    {
-      "id": "20260504001901-wrong-kind-of-help",
-      "title": "Wrong Kind of Help",
-      "kind": "single",
-      "topic": "asking what kind of feedback someone wants before giving it",
-      "angle": "Before you start fixing someone's draft, deck, or difficult message, ask what kind of help they want, because useful help depends on the stage they're in.",
-      "createdAt": "2026-05-04T00:19:01.689Z",
-      "renderedFiles": [
-        "assets/posts/20260504001901-wrong-kind-of-help/post.png"
-      ]
-    },
     {
       "id": "20260504013431-wrong-name-at-dinner",
       "title": "Wrong Name at Dinner",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-05T20:23:07.785Z",
       "renderedFiles": [
         "assets/posts/20260505202307-hired-by-compliment/post.png"
+      ]
+    },
+    {
+      "id": "20260505212052-false-urgency",
+      "title": "False Urgency",
+      "kind": "single",
+      "topic": "on-the-spot requests that pressure an immediate answer",
+      "angle": "When someone asks for a commitment in passing, ask for the real deadline instead of treating their convenience like your urgency.",
+      "createdAt": "2026-05-05T21:20:52.317Z",
+      "renderedFiles": [
+        "assets/posts/20260505212052-false-urgency/post.png"
       ]
     }
   ]
