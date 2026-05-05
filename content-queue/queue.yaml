@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T04:13:38.790Z
+updatedAt: 2026-05-05T05:53:34.400Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5661,3 +5661,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AbNHhJ7Zx7VUk9ZF3_XEVRi"}}'
+  - id: 20260505055333-bigger-than-the-mistake
+    createdAt: 2026-05-05T05:53:33.928Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: notebookCream
+    title: Bigger Than the Mistake
+    topic: over-apologizing after a small work or social error
+    angle: After a minor mistake, the useful permission is to repair it cleanly
+      instead of inflating it with a self-punishing performance.
+    fingerprint: after apologizing bigger cleanly error inflating instead minor
+      mistake over performance permission punishing repair self small social
+      than useful work
+    contentMode: encouragement
+    voiceMode: sharp
+    altText: 'A notebook-cream textured Instagram graphic with a single line of
+      text: "You are allowed to fix the wrong attachment with a follow-up email,
+      not a three-paragraph apology."'
+    single:
+      headline: You are allowed to fix the wrong attachment with a follow-up email,
+        not a three-paragraph apology.
+      body: ""
+    caption:
+      hook: Most small mistakes do not need a character witness.
+      body: A precise correction usually restores trust faster than self-scolding.
+        Repair the typo, send the corrected file, and stop auditioning for
+        forgiveness.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260505055333-bigger-than-the-mistake
+    renderedFiles:
+      - docs/assets/posts/20260505055333-bigger-than-the-mistake/post.png

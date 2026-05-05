@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-05T04:13:38.835Z",
+  "updatedAt": "2026-05-05T05:53:34.457Z",
   "items": [
-    {
-      "id": "20260503102047-not-bothering-you",
-      "title": "Not Bothering You",
-      "kind": "carousel",
-      "topic": "using politeness to avoid the one person whose refusal would feel definitive",
-      "angle": "The polite excuse gives way to the real reason: they avoided the friend whose honest answer would have made the ask feel as late and large as it was.",
-      "createdAt": "2026-05-03T10:20:47.653Z",
-      "renderedFiles": [
-        "assets/posts/20260503102047-not-bothering-you/slide-01.png",
-        "assets/posts/20260503102047-not-bothering-you/slide-02.png",
-        "assets/posts/20260503102047-not-bothering-you/slide-03.png"
-      ]
-    },
     {
       "id": "20260503111447-hallway-support",
       "title": "Hallway Support",
@@ -473,6 +460,17 @@
       "createdAt": "2026-05-05T04:13:28.500Z",
       "renderedFiles": [
         "assets/posts/20260505041328-not-company/post.png"
+      ]
+    },
+    {
+      "id": "20260505055333-bigger-than-the-mistake",
+      "title": "Bigger Than the Mistake",
+      "kind": "single",
+      "topic": "over-apologizing after a small work or social error",
+      "angle": "After a minor mistake, the useful permission is to repair it cleanly instead of inflating it with a self-punishing performance.",
+      "createdAt": "2026-05-05T05:53:33.928Z",
+      "renderedFiles": [
+        "assets/posts/20260505055333-bigger-than-the-mistake/post.png"
       ]
     }
   ]
