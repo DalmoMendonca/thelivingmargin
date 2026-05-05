@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T16:34:59.258Z
+updatedAt: 2026-05-05T17:32:07.528Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6165,3 +6165,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AGTBlxqf76NVb4fQnPlQlCo"}}'
+  - id: 20260505173207-twice-is-fine
+    createdAt: 2026-05-05T17:32:07.099Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Twice Is Fine
+    topic: pretending you understood after missing a detail
+    angle: When you miss a name, time, or meeting room, asking again-even a second
+      time-is usually cleaner than faking comprehension.
+    fingerprint: after again asking cleaner comprehension detail even faking fine
+      meeting miss missing name pretending room second than time twice
+      understood usually when
+    contentMode: encouragement
+    voiceMode: sharp
+    altText: "A warm paper-textured editorial graphic in brass ink with the line:
+      “You’re allowed to say ‘say that again?’ twice if you missed the name, the
+      time, or the room.”"
+    single:
+      headline: You’re allowed to say “say that again?” twice if you missed the name,
+        the time, or the room.
+      body: ""
+    caption:
+      hook: Asking twice is cleaner than pretending once.
+      body: Two seconds now beats the wrong meeting room or reservation time later.
+        Pretending is expensive.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260505173207-twice-is-fine
+    renderedFiles:
+      - docs/assets/posts/20260505173207-twice-is-fine/post.png

@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T16:34:59.338Z",
+  "updatedAt": "2026-05-05T17:32:07.596Z",
   "items": [
-    {
-      "id": "20260503201351-temporary-drawer",
-      "title": "Temporary Drawer",
-      "kind": "single",
-      "topic": "household clutter as postponed decision-making",
-      "angle": "What looks like harmless clutter is often a room filling up with decisions nobody wanted to make when they were small.",
-      "createdAt": "2026-05-03T20:13:51.937Z",
-      "renderedFiles": [
-        "assets/posts/20260503201351-temporary-drawer/post.png"
-      ]
-    },
     {
       "id": "20260503211548-warm-up-talk",
       "title": "Warm-Up Talk",
@@ -471,6 +460,17 @@
         "assets/posts/20260505163434-you-did-say-it/slide-01.png",
         "assets/posts/20260505163434-you-did-say-it/slide-02.png",
         "assets/posts/20260505163434-you-did-say-it/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260505173207-twice-is-fine",
+      "title": "Twice Is Fine",
+      "kind": "single",
+      "topic": "pretending you understood after missing a detail",
+      "angle": "When you miss a name, time, or meeting room, asking again-even a second time-is usually cleaner than faking comprehension.",
+      "createdAt": "2026-05-05T17:32:07.099Z",
+      "renderedFiles": [
+        "assets/posts/20260505173207-twice-is-fine/post.png"
       ]
     }
   ]
