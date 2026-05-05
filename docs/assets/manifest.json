@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T12:20:54.925Z",
+  "updatedAt": "2026-05-05T15:36:03.146Z",
   "items": [
-    {
-      "id": "20260503181540-tapback-diplomacy",
-      "title": "Tapback Diplomacy",
-      "kind": "single",
-      "topic": "emoji reactions standing in for actual answers",
-      "angle": "When a message needs words, a heart or thumbs-up can function as a socially acceptable nonreply.",
-      "createdAt": "2026-05-03T18:15:40.835Z",
-      "renderedFiles": [
-        "assets/posts/20260503181540-tapback-diplomacy/post.png"
-      ]
-    },
     {
       "id": "20260503192322-split-six-ways",
       "title": "Split Six Ways",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-05T12:20:46.223Z",
       "renderedFiles": [
         "assets/posts/20260505122046-reaction-receipt/post.png"
+      ]
+    },
+    {
+      "id": "20260505153602-a-blameless-no",
+      "title": "A Blameless No",
+      "kind": "single",
+      "topic": "delaying a decline while searching for a defensible reason",
+      "angle": "What looks like careful indecision after a decent offer is often a search for a reason more respectable than simply not wanting it enough.",
+      "createdAt": "2026-05-05T15:36:02.615Z",
+      "renderedFiles": [
+        "assets/posts/20260505153602-a-blameless-no/post.png"
       ]
     }
   ]
