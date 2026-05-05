@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T07:37:42.870Z
+updatedAt: 2026-05-05T08:43:48.091Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5786,3 +5786,73 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Ah4LOYuKVvO5Gx1w845st1L"}}'
+  - id: 20260505084345-status-correction
+    createdAt: 2026-05-05T08:43:45.421Z
+    source: ai
+    slotPreference: morning
+    kind: carousel
+    templateFamily: highlight
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Status Correction
+    topic: how to tell when a correction is really a status move
+    angle: A correction can be factually right and still function mainly as a small
+      public placement of rank.
+    fingerprint: as can correction factually function how mainly move placement
+      public rank really right small status still tell when
+    contentMode: list
+    voiceMode: sharp
+    quoteAttribution: ":"
+    altText: Five-slide dark textured carousel titled "Status Correction." Slide 1
+      introduces a three-part test for when a correction is about status more
+      than accuracy. Slide 2 says these corrections often appear only once there
+      is an audience, contrasting public correction with a private follow-up.
+      Slide 3 says tiny mistakes sometimes get oversized, full-room treatment.
+      Slide 4 says some people correct safer targets more than riskier or
+      higher-status ones. Slide 5 concludes that accuracy can be right while the
+      interaction still performs hierarchy, leaving a feeling of quiet
+      diminishment.
+    carousel:
+      - kicker: Status Correction
+        headline: 3 tests for when a correction is about status
+        body: Use them after the meeting-table note, the dinner pronunciation fix, or
+          the group chat typo that somehow stings longer than the mistake.
+        footer: Right fact. Wrong function.
+      - kicker: "1"
+        headline: It shows up once there's an audience
+        body: The private follow-up never comes. But the correction arrives the moment
+          other people can watch it happen.
+        footer: If private would work, public is doing extra work.
+      - kicker: "2"
+        headline: The mistake is tiny. The treatment isn't.
+        body: A small typo, a slight wording slip, one “actually”-and suddenly the whole
+          table gets a demonstration. Helpful correction is brief. Status
+          correction needs a room.
+        footer: Tiny error. Full-room treatment.
+      - kicker: "3"
+        headline: They correct safer people more than riskier ones
+        body: They'll tidy your sentence in a meeting, then let the same miss pass when
+          it comes from someone harder to challenge. That's less about truth
+          than where truth feels safest to display.
+        footer: Watch the direction.
+      - kicker: The distinction
+        headline: Accuracy can be right. Rank can still be the point.
+        body: A good correction clears the fact and leaves the person intact. A status
+          move can be correct and still leave quiet diminishment behind.
+        footer: Truth helps. Hierarchy lingers.
+    caption:
+      hook: Accuracy isn’t the tell.
+      body: Sometimes the group does need the fact in real time. Then good correction
+        stays brief, relevant, and no bigger than the error. The difference
+        isn’t publicness alone; it’s whether clarity or rank is being served.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner signs | Plan mode list
+    renderDir: docs/assets/posts/20260505084345-status-correction
+    renderedFiles:
+      - docs/assets/posts/20260505084345-status-correction/slide-01.png
+      - docs/assets/posts/20260505084345-status-correction/slide-02.png
+      - docs/assets/posts/20260505084345-status-correction/slide-03.png
+      - docs/assets/posts/20260505084345-status-correction/slide-04.png
+      - docs/assets/posts/20260505084345-status-correction/slide-05.png

@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T07:37:42.913Z",
+  "updatedAt": "2026-05-05T08:43:48.150Z",
   "items": [
-    {
-      "id": "20260503133008-what-not-to-answer",
-      "title": "What Not to Answer",
-      "kind": "single",
-      "topic": "minor slights and selective attention",
-      "angle": "In a screen-fed culture of tiny irritations, wisdom is deciding which offenses do not deserve pursuit.",
-      "createdAt": "2026-05-03T13:30:08.493Z",
-      "renderedFiles": [
-        "assets/posts/20260503133008-what-not-to-answer/post.png"
-      ]
-    },
     {
       "id": "20260503141858-simple-version",
       "title": "Simple Version",
@@ -467,6 +456,21 @@
       "createdAt": "2026-05-05T07:37:34.720Z",
       "renderedFiles": [
         "assets/posts/20260505073734-blame-window/post.png"
+      ]
+    },
+    {
+      "id": "20260505084345-status-correction",
+      "title": "Status Correction",
+      "kind": "carousel",
+      "topic": "how to tell when a correction is really a status move",
+      "angle": "A correction can be factually right and still function mainly as a small public placement of rank.",
+      "createdAt": "2026-05-05T08:43:45.421Z",
+      "renderedFiles": [
+        "assets/posts/20260505084345-status-correction/slide-01.png",
+        "assets/posts/20260505084345-status-correction/slide-02.png",
+        "assets/posts/20260505084345-status-correction/slide-03.png",
+        "assets/posts/20260505084345-status-correction/slide-04.png",
+        "assets/posts/20260505084345-status-correction/slide-05.png"
       ]
     }
   ]
