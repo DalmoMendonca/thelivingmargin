@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T22:20:11.901Z",
+  "updatedAt": "2026-05-05T23:18:08.343Z",
   "items": [
-    {
-      "id": "20260504030223-witnessed-urgency",
-      "title": "Witnessed Urgency",
-      "kind": "single",
-      "topic": "cc-driven responsiveness at work",
-      "angle": "An ignored request often becomes urgent only when the neglect is visible to someone with rank.",
-      "createdAt": "2026-05-04T03:02:23.138Z",
-      "renderedFiles": [
-        "assets/posts/20260504030223-witnessed-urgency/post.png"
-      ]
-    },
     {
       "id": "20260504050725-easygoing-or-avoidant",
       "title": "Easygoing or Avoidant",
@@ -471,6 +460,17 @@
         "assets/posts/20260505221946-borrowed-jacket/slide-01.png",
         "assets/posts/20260505221946-borrowed-jacket/slide-02.png",
         "assets/posts/20260505221946-borrowed-jacket/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260505231807-easy-to-keep",
+      "title": "Easy to Keep",
+      "kind": "single",
+      "topic": "self-erasure disguised as being low-maintenance in shared plans",
+      "angle": "A pressure-bearing question about whether seeming low-maintenance in shared plans is really a way to stay easy to keep around.",
+      "createdAt": "2026-05-05T23:18:07.773Z",
+      "renderedFiles": [
+        "assets/posts/20260505231807-easy-to-keep/post.png"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T22:20:11.847Z
+updatedAt: 2026-05-05T23:18:08.266Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6486,3 +6486,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AgMqOwTmN0LL22GDYsvWD05"}}'
+  - id: 20260505231807-easy-to-keep
+    createdAt: 2026-05-05T23:18:07.773Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Easy to Keep
+    topic: self-erasure disguised as being low-maintenance in shared plans
+    angle: A pressure-bearing question about whether seeming low-maintenance in
+      shared plans is really a way to stay easy to keep around.
+    fingerprint: about around as bearing being disguised easy erasure keep low
+      maintenance plans pressure question really seeming self shared stay way
+      whether
+    contentMode: question
+    voiceMode: sharp
+    altText: 'Single Instagram post on warm cream notebook paper with brass-black
+      text. Headline asks: In the restaurant group text, is "low-maintenance"
+      just fear that one real preference makes you harder to keep around? Body
+      reads: You type "whatever works," then feel invisible on the ride home.
+      Support line reads: Easy to include. Hard to know.'
+    single:
+      headline: In the restaurant group text, is "low-maintenance" just fear that one
+        real preference makes you harder to keep around?
+      body: You type "whatever works," then feel invisible on the ride home.
+      supportLine: Easy to include. Hard to know.
+    caption:
+      hook: People plan around the preferences you keep deleting.
+      body: Repeat "whatever works" long enough and dinner, trips, even the pace get
+        built around your silence. Resentment loves a swallowed preference.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner tradeoff | Plan mode question
+    renderDir: docs/assets/posts/20260505231807-easy-to-keep
+    renderedFiles:
+      - docs/assets/posts/20260505231807-easy-to-keep/post.png
