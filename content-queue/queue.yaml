@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T15:36:03.081Z
+updatedAt: 2026-05-05T15:36:19.006Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6102,9 +6102,15 @@ items:
         counts as information, you answer the offer email before it turns into a
         draft reply, a pros-and-cons note, three friends, and a calendar hold.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner diagnosis | Plan mode reframe
     renderDir: docs/assets/posts/20260505153602-a-blameless-no
     renderedFiles:
       - docs/assets/posts/20260505153602-a-blameless-no/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"Azmwk5W9NTZGwQSDPLJ8uY5"}}'
