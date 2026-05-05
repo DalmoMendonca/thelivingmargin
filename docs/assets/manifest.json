@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T08:44:14.292Z",
+  "updatedAt": "2026-05-05T09:36:04.149Z",
   "items": [
-    {
-      "id": "20260503141858-simple-version",
-      "title": "Simple Version",
-      "kind": "single",
-      "topic": "embarrassment disguised as confusion",
-      "angle": "The post asks whether \"confusing\" is just the safer word for the embarrassment of needing a simple explanation.",
-      "createdAt": "2026-05-03T14:18:58.019Z",
-      "renderedFiles": [
-        "assets/posts/20260503141858-simple-version/post.png"
-      ]
-    },
     {
       "id": "20260503151453-late-without-the-trial",
       "title": "Late Without the Trial",
@@ -471,6 +460,17 @@
         "assets/posts/20260505084345-status-correction/slide-03.png",
         "assets/posts/20260505084345-status-correction/slide-04.png",
         "assets/posts/20260505084345-status-correction/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260505093602-before-the-first-round",
+      "title": "Before the First Round",
+      "kind": "single",
+      "topic": "naming payment expectations early at group dinners",
+      "angle": "If splitting evenly is going to matter to you, name the payment plan before anyone orders, while it still reads as logistics instead of correction.",
+      "createdAt": "2026-05-05T09:36:02.124Z",
+      "renderedFiles": [
+        "assets/posts/20260505093602-before-the-first-round/post.png"
       ]
     }
   ]

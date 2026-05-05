@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T08:44:14.238Z
+updatedAt: 2026-05-05T09:36:04.070Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5862,3 +5862,55 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ASjPPF5Tb1zHYibRb2vO67h"}}'
+  - id: 20260505093602-before-the-first-round
+    createdAt: 2026-05-05T09:36:02.124Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Before the First Round
+    topic: naming payment expectations early at group dinners
+    angle: If splitting evenly is going to matter to you, name the payment plan
+      before anyone orders, while it still reads as logistics instead of
+      correction.
+    fingerprint: anyone as at before correction dinners early evenly expectations
+      first going group if instead logistics matter name naming orders payment
+      plan reads round splitting still while
+    contentMode: advice
+    voiceMode: sharp
+    altText: 'Editorial-style single post with the headline "Say it before
+      cocktails, not over the Venmo total." Body advises a before-ordering rule
+      of thumb for group dinners: if splitting evenly is going to bug you, name
+      the plan before the first round or shared plates land. It gives a
+      plainspoken script: "Can we just track our own stuff tonight?" It ends by
+      explaining that once ordering starts, people spend under an assumption, so
+      changing it later feels like correcting the table rather than handling
+      logistics. Support line reads: "Early is math. Late is mood repair."'
+    single:
+      headline: Say it before cocktails, not over the Venmo total.
+      body: >-
+        Rule of thumb: if splitting evenly is going to bug you, name the plan
+        before the first round or shared plates land.
+
+
+        Try: "Can we just track our own stuff tonight?"
+
+
+        Once ordering starts, people spend under an assumption. Changing it
+        later feels like correcting the table, not handling logistics.
+      supportLine: Early is math. Late is mood repair.
+    caption:
+      hook: Menus open, first round coming, and the payment plan still hasn’t been
+        said.
+      body: After cocktails and shared plates, you are not discussing math alone. You
+        are revising the social story everyone already spent under. That is why
+        late clarity feels heavier than early clarity.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner warning | Plan mode advice
+    renderDir: docs/assets/posts/20260505093602-before-the-first-round
+    renderedFiles:
+      - docs/assets/posts/20260505093602-before-the-first-round/post.png
