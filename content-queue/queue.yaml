@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T06:43:21.821Z
+updatedAt: 2026-05-05T07:37:35.255Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5745,3 +5745,38 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A_NCgScKYkXba3dMBm0kjZc"}}'
+  - id: 20260505073734-blame-window
+    createdAt: 2026-05-05T07:37:34.720Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: signal
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Blame Window
+    topic: last-minute inclusion at work that transfers liability without real
+      influence
+    angle: "Late inclusion can disguise a transfer of liability as inclusion:
+      present for fallout, absent from authorship."
+    fingerprint: absent as at authorship blame can disguise fallout from inclusion
+      influence last late liability minute present real transfer transfers
+      window without work
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "Dark, high-contrast text post on a charcoal grain background. Headline
+      reads: “That ‘looped in’ calendar invite is a blame window.” Body reads:
+      “Not authorship. Retroactive cover.”"
+    single:
+      headline: That ‘looped in’ calendar invite is a blame window.
+      body: Not authorship. Retroactive cover.
+    caption:
+      hook: You feel it when your name appears right before the deadline.
+      body: The meeting notes are already written; your name just makes the thread
+        look shared. That’s cover arriving after authorship.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner embarrassment | Plan mode aphorism
+    renderDir: docs/assets/posts/20260505073734-blame-window
+    renderedFiles:
+      - docs/assets/posts/20260505073734-blame-window/post.png

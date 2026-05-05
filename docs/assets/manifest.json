@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-05T06:43:21.870Z",
+  "updatedAt": "2026-05-05T07:37:35.330Z",
   "items": [
-    {
-      "id": "20260503121342-easygoing-tax",
-      "title": "Easygoing Tax",
-      "kind": "carousel",
-      "topic": "performing low-maintenance behavior in shared plans and small decisions",
-      "angle": "Trying to seem easygoing does not erase your preferences; it makes other people find them late through guesswork, tone, or revision.",
-      "createdAt": "2026-05-03T12:13:42.204Z",
-      "renderedFiles": [
-        "assets/posts/20260503121342-easygoing-tax/slide-01.png",
-        "assets/posts/20260503121342-easygoing-tax/slide-02.png",
-        "assets/posts/20260503121342-easygoing-tax/slide-03.png",
-        "assets/posts/20260503121342-easygoing-tax/slide-04.png",
-        "assets/posts/20260503121342-easygoing-tax/slide-05.png"
-      ]
-    },
     {
       "id": "20260503133008-what-not-to-answer",
       "title": "What Not to Answer",
@@ -471,6 +456,17 @@
       "createdAt": "2026-05-05T06:43:13.269Z",
       "renderedFiles": [
         "assets/posts/20260505064313-the-it-s-fine-tax/post.png"
+      ]
+    },
+    {
+      "id": "20260505073734-blame-window",
+      "title": "Blame Window",
+      "kind": "single",
+      "topic": "last-minute inclusion at work that transfers liability without real influence",
+      "angle": "Late inclusion can disguise a transfer of liability as inclusion: present for fallout, absent from authorship.",
+      "createdAt": "2026-05-05T07:37:34.720Z",
+      "renderedFiles": [
+        "assets/posts/20260505073734-blame-window/post.png"
       ]
     }
   ]
