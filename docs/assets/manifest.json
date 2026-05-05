@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-05T15:36:19.048Z",
+  "updatedAt": "2026-05-05T16:34:36.671Z",
   "items": [
-    {
-      "id": "20260503192322-split-six-ways",
-      "title": "Split Six Ways",
-      "kind": "carousel",
-      "topic": "the social embarrassment of speaking up about money in a group setting",
-      "angle": "What looks like poor communication at the table is sometimes someone accurately reading that the room has already made honesty expensive.",
-      "createdAt": "2026-05-03T19:23:22.354Z",
-      "renderedFiles": [
-        "assets/posts/20260503192322-split-six-ways/slide-01.png",
-        "assets/posts/20260503192322-split-six-ways/slide-02.png",
-        "assets/posts/20260503192322-split-six-ways/slide-03.png"
-      ]
-    },
     {
       "id": "20260503201351-temporary-drawer",
       "title": "Temporary Drawer",
@@ -471,6 +458,19 @@
       "createdAt": "2026-05-05T15:36:02.615Z",
       "renderedFiles": [
         "assets/posts/20260505153602-a-blameless-no/post.png"
+      ]
+    },
+    {
+      "id": "20260505163434-you-did-say-it",
+      "title": "You Did Say It",
+      "kind": "carousel",
+      "topic": "being blamed for silence after earlier attempts were dismissed on tone",
+      "angle": "The line \"why didn't you say anything\" often arrives after the first version of the truth was rejected for tone.",
+      "createdAt": "2026-05-05T16:34:34.721Z",
+      "renderedFiles": [
+        "assets/posts/20260505163434-you-did-say-it/slide-01.png",
+        "assets/posts/20260505163434-you-did-say-it/slide-02.png",
+        "assets/posts/20260505163434-you-did-say-it/slide-03.png"
       ]
     }
   ]

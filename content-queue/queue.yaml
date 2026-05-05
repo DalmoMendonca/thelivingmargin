@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T15:36:19.006Z
+updatedAt: 2026-05-05T16:34:36.610Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6114,3 +6114,48 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"Azmwk5W9NTZGwQSDPLJ8uY5"}}'
+  - id: 20260505163434-you-did-say-it
+    createdAt: 2026-05-05T16:34:34.721Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: You Did Say It
+    topic: being blamed for silence after earlier attempts were dismissed on tone
+    angle: The line "why didn't you say anything" often arrives after the first
+      version of the truth was rejected for tone.
+    fingerprint: after anything arrives attempts being blamed did didnt dismissed
+      earlier first line often rejected say silence tone truth version was were
+      why
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: A three-slide carousel on warm paper in brass ink. Slide 1 reads, "Why
+      didn't you tell me?" with the line, "I was still half in the doorway by
+      the kitchen counter." Slide 2 reads, "I did." with the line, "You cut me
+      off, like, immediately." Slide 3 reads, "You said, 'not like that.'" with
+      the line, "Yeah," I said. "That was the part." The exchange shows someone
+      being accused of silence after their earlier attempt was shut down over
+      delivery, not absence.
+    carousel:
+      - headline: "\"Why didn't you tell me?\""
+        body: I was still half in the doorway by the kitchen counter.
+      - headline: '"I did."'
+        body: You cut me off, like, immediately.
+      - headline: "\"You said, 'not like that.'\""
+        body: '"Yeah," I said. "That was the part."'
+    caption:
+      hook: It wasn't silence.
+      body: "Some people call it openness when they really mean: tell me in a way that
+        doesn't inconvenience me. Later they rewrite your first attempt as
+        silence."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260505163434-you-did-say-it
+    renderedFiles:
+      - docs/assets/posts/20260505163434-you-did-say-it/slide-01.png
+      - docs/assets/posts/20260505163434-you-did-say-it/slide-02.png
+      - docs/assets/posts/20260505163434-you-did-say-it/slide-03.png
