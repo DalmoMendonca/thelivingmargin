@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T03:02:04.974Z
+updatedAt: 2026-05-05T04:13:29.478Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5617,3 +5617,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AyaejUq5XbamRkaZtyMsAul"}}'
+  - id: 20260505041328-not-company
+    createdAt: 2026-05-05T04:13:28.500Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: editorial
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Not Company
+    topic: low-grade social intrusion disguised as connection
+    angle: Wilde’s line feels newly useful against the modern habit of occupying
+      attention without offering real presence.
+    fingerprint: against as attention company connection disguised feels grade habit
+      intrusion line low modern newly not occupying offering presence real
+      social useful wildes without
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: Oscar Wilde
+    altText: Single editorial-style quote card on a dark charcoal grain background
+      with generous margins. Centered text reads, “A bore is someone who
+      deprives you of solitude without providing company.” Small attribution
+      beneath reads, Oscar Wilde.
+    single:
+      headline: “A bore is someone who deprives you of solitude without providing
+        company.”
+      body: Oscar Wilde
+    caption:
+      hook: Access keeps getting mistaken for closeness.
+      body: "A calendar hold, a long voice note, the doorway conversation that keeps
+        going: attention gets occupied without anyone quite arriving. Company
+        has texture; access just takes the chair."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner counterweight | Plan mode quote
+    renderDir: docs/assets/posts/20260505041328-not-company
+    renderedFiles:
+      - docs/assets/posts/20260505041328-not-company/post.png

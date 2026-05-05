@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T03:02:05.009Z",
+  "updatedAt": "2026-05-05T04:13:29.542Z",
   "items": [
-    {
-      "id": "20260503093002-praise-that-pins-you",
-      "title": "Praise That Pins You",
-      "kind": "single",
-      "topic": "flattering language that rewards convenience",
-      "angle": "What gets called being bad at taking compliments is sometimes accurate discomfort with praise that is really asking you to stay easy, agreeable, and available.",
-      "createdAt": "2026-05-03T09:30:02.218Z",
-      "renderedFiles": [
-        "assets/posts/20260503093002-praise-that-pins-you/post.png"
-      ]
-    },
     {
       "id": "20260503102047-not-bothering-you",
       "title": "Not Bothering You",
@@ -473,6 +462,17 @@
       "createdAt": "2026-05-05T03:01:54.860Z",
       "renderedFiles": [
         "assets/posts/20260505030154-no-pressure/post.png"
+      ]
+    },
+    {
+      "id": "20260505041328-not-company",
+      "title": "Not Company",
+      "kind": "single",
+      "topic": "low-grade social intrusion disguised as connection",
+      "angle": "Wilde’s line feels newly useful against the modern habit of occupying attention without offering real presence.",
+      "createdAt": "2026-05-05T04:13:28.500Z",
+      "renderedFiles": [
+        "assets/posts/20260505041328-not-company/post.png"
       ]
     }
   ]
