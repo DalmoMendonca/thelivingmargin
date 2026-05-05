@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T00:20:42.795Z
+updatedAt: 2026-05-05T01:33:49.826Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5524,3 +5524,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AQe4_lAth_wA6BiuMiRdN6y"}}'
+  - id: 20260505013348-your-promise
+    createdAt: 2026-05-05T01:33:48.928Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Your Promise
+    topic: being asked to manage someone else's promise
+    angle: When someone says you should have reminded them, they quietly turn their
+      broken promise into your task too.
+    fingerprint: asked being broken elses have into manage promise quietly reminded
+      says should someone task their them they too turn when
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: A three-slide cream notebook-style Instagram carousel in brass ink.
+      Slide 1 reads, "You should've reminded me." Slide 2 reads, "Remind you
+      about what?" and, "The ride home you said you'd give me after work?" Slide
+      3 reads, "So now I was supposed to keep track of it too?" and, "It was
+      your promise. Why is the reminder my job too?"
+    carousel:
+      - headline: "\"You should've reminded me.\""
+        body: ""
+      - headline: '"Remind you about what?"'
+        body: "\"The ride home you said you'd give me after work?\""
+      - headline: '"So now I was supposed to keep track of it too?"'
+        body: '"It was your promise. Why is the reminder my job too?"'
+    caption:
+      hook: The insult comes after the disappointment.
+      body: First they forget the promised ride. Then somehow the reminder text,
+        calendar alert, and follow-up message become your job too.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner misheard promise | Plan mode dialogue
+    renderDir: docs/assets/posts/20260505013348-your-promise
+    renderedFiles:
+      - docs/assets/posts/20260505013348-your-promise/slide-01.png
+      - docs/assets/posts/20260505013348-your-promise/slide-02.png
+      - docs/assets/posts/20260505013348-your-promise/slide-03.png

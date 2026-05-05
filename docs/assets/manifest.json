@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-05T00:20:42.843Z",
+  "updatedAt": "2026-05-05T01:33:49.880Z",
   "items": [
-    {
-      "id": "20260503073655-aisle-14",
-      "title": "Aisle 14",
-      "kind": "carousel",
-      "topic": "being helped without being made to feel ignorant",
-      "angle": "A small hardware-store interaction shows that real expertise often sounds like translation, not display.",
-      "createdAt": "2026-05-03T07:36:55.801Z",
-      "renderedFiles": [
-        "assets/posts/20260503073655-aisle-14/slide-01.png",
-        "assets/posts/20260503073655-aisle-14/slide-02.png",
-        "assets/posts/20260503073655-aisle-14/slide-03.png"
-      ]
-    },
     {
       "id": "20260503083306-no-cover-story",
       "title": "No Cover Story",
@@ -473,6 +460,19 @@
       "createdAt": "2026-05-05T00:20:32.975Z",
       "renderedFiles": [
         "assets/posts/20260505002032-doorway-requests/post.png"
+      ]
+    },
+    {
+      "id": "20260505013348-your-promise",
+      "title": "Your Promise",
+      "kind": "carousel",
+      "topic": "being asked to manage someone else's promise",
+      "angle": "When someone says you should have reminded them, they quietly turn their broken promise into your task too.",
+      "createdAt": "2026-05-05T01:33:48.928Z",
+      "renderedFiles": [
+        "assets/posts/20260505013348-your-promise/slide-01.png",
+        "assets/posts/20260505013348-your-promise/slide-02.png",
+        "assets/posts/20260505013348-your-promise/slide-03.png"
       ]
     }
   ]
