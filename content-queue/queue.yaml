@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T21:21:02.097Z
+updatedAt: 2026-05-05T22:19:47.261Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6429,3 +6429,54 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AFRE3x2jjoQ1KY79GwIGF79"}}'
+  - id: 20260505221946-borrowed-jacket
+    createdAt: 2026-05-05T22:19:46.528Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: notebook
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Borrowed Jacket
+    topic: a stranger preventing a dress-code rule from turning into a public
+      embarrassment
+    angle: Sometimes the most elegant help is not removing the rule but absorbing
+      the humiliation it would have created.
+    fingerprint: absorbing borrowed but code created dress elegant embarrassment
+      from have help humiliation into jacket most not preventing public removing
+      rule sometimes stranger turning would
+    contentMode: story
+    voiceMode: reflective
+    altText: "Three-slide carousel set at a restaurant host stand. Slide 1: a man
+      with a rain-damp collar dries his glasses with a parking receipt as the
+      host says jackets are required. Slide 2: a departing diner quietly offers
+      his navy blazer with the coat-check ticket, saying, 'I'm done with mine.'
+      Slide 3: the borrowed jacket fits a little short in the sleeves, dinner
+      continues, and the blazer is returned quietly at the end."
+    carousel:
+      - kicker: Host stand
+        headline: “I’m sorry, sir. A jacket is required.”
+        body: He was still drying his glasses with the parking receipt, rain at his
+          collar, when the line reached him at the host stand. Not careless.
+          Just caught one step behind the room.
+      - headline: A man near the door slipped off his navy blazer.
+        body: He held out the coat-check ticket with it and said, almost to the host,
+          “I’m done with mine.” No ceremony. Just the quickest way to make the
+          moment smaller.
+      - headline: The sleeves were a little short, and dinner stayed dinner.
+        body: He wore it through the meal, then handed it back on the way out with a
+          quiet thank you. The man took the blazer, the ticket, and kept moving.
+    caption:
+      hook: The best courtesy keeps exposure from becoming a spectacle.
+      body: A rule can stay a rule. The grace is knowing how to enforce it without
+        making someone wear the moment in public. Discretion is often the real
+        service.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner institutional mercy | Plan mode story
+    renderDir: docs/assets/posts/20260505221946-borrowed-jacket
+    renderedFiles:
+      - docs/assets/posts/20260505221946-borrowed-jacket/slide-01.png
+      - docs/assets/posts/20260505221946-borrowed-jacket/slide-02.png
+      - docs/assets/posts/20260505221946-borrowed-jacket/slide-03.png

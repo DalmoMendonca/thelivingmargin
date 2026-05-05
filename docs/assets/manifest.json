@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-05T21:21:02.145Z",
+  "updatedAt": "2026-05-05T22:19:47.319Z",
   "items": [
-    {
-      "id": "20260504013431-wrong-name-at-dinner",
-      "title": "Wrong Name at Dinner",
-      "kind": "carousel",
-      "topic": "quiet correction that protects dignity in public",
-      "angle": "The most generous correction is the one that gives someone the right information without making them pay for the mistake all night.",
-      "createdAt": "2026-05-04T01:34:31.731Z",
-      "renderedFiles": [
-        "assets/posts/20260504013431-wrong-name-at-dinner/slide-01.png",
-        "assets/posts/20260504013431-wrong-name-at-dinner/slide-02.png",
-        "assets/posts/20260504013431-wrong-name-at-dinner/slide-03.png"
-      ]
-    },
     {
       "id": "20260504030223-witnessed-urgency",
       "title": "Witnessed Urgency",
@@ -471,6 +458,19 @@
       "createdAt": "2026-05-05T21:20:52.317Z",
       "renderedFiles": [
         "assets/posts/20260505212052-false-urgency/post.png"
+      ]
+    },
+    {
+      "id": "20260505221946-borrowed-jacket",
+      "title": "Borrowed Jacket",
+      "kind": "carousel",
+      "topic": "a stranger preventing a dress-code rule from turning into a public embarrassment",
+      "angle": "Sometimes the most elegant help is not removing the rule but absorbing the humiliation it would have created.",
+      "createdAt": "2026-05-05T22:19:46.528Z",
+      "renderedFiles": [
+        "assets/posts/20260505221946-borrowed-jacket/slide-01.png",
+        "assets/posts/20260505221946-borrowed-jacket/slide-02.png",
+        "assets/posts/20260505221946-borrowed-jacket/slide-03.png"
       ]
     }
   ]
