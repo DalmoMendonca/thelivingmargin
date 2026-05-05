@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-04T23:18:13.497Z",
+  "updatedAt": "2026-05-05T00:20:33.516Z",
   "items": [
-    {
-      "id": "20260503064805-play-it-by-ear",
-      "title": "Play It By Ear",
-      "kind": "single",
-      "topic": "vague plans as unevenly distributed flexibility",
-      "angle": "The phrase \"play it by ear\" often sounds relaxed, but it usually means one person keeps their options while the other keeps the time open.",
-      "createdAt": "2026-05-03T06:48:05.343Z",
-      "renderedFiles": [
-        "assets/posts/20260503064805-play-it-by-ear/post.png"
-      ]
-    },
     {
       "id": "20260503073655-aisle-14",
       "title": "Aisle 14",
@@ -473,6 +462,17 @@
       "createdAt": "2026-05-04T23:18:03.410Z",
       "renderedFiles": [
         "assets/posts/20260504231803-professionalism-or-disguise/post.png"
+      ]
+    },
+    {
+      "id": "20260505002032-doorway-requests",
+      "title": "Doorway Requests",
+      "kind": "single",
+      "topic": "requests made in passing before their size is clear",
+      "angle": "When someone asks for help while everyone is already moving, move the request into writing before agreeing so you can see its actual size.",
+      "createdAt": "2026-05-05T00:20:32.975Z",
+      "renderedFiles": [
+        "assets/posts/20260505002032-doorway-requests/post.png"
       ]
     }
   ]

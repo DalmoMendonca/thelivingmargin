@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-04T23:18:13.435Z
+updatedAt: 2026-05-05T00:20:33.442Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -5472,3 +5472,49 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ANMz-sqb73WgGNm8c03OkDn"}}'
+  - id: 20260505002032-doorway-requests
+    createdAt: 2026-05-05T00:20:32.975Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Doorway Requests
+    topic: requests made in passing before their size is clear
+    angle: When someone asks for help while everyone is already moving, move the
+      request into writing before agreeing so you can see its actual size.
+    fingerprint: actual agreeing already asks before can clear doorway everyone help
+      into its made move moving passing request requests see size so someone
+      their when while writing
+    contentMode: advice
+    voiceMode: sharp
+    quoteAttribution: "altText-style text post that advises: move doorway requests
+      into writing before agreeing. It describes being in a coat and walking to
+      the elevator, gives the script “Send me the details and I’ll tell you
+      what’s realistic,” and explains that actual dates reveal the size and
+      timeline of the task."
+    altText: "Editorial-style text post that advises: move doorway requests into
+      writing before agreeing. It describes being in a coat and walking to the
+      elevator, gives the script “Send me the details and I’ll tell you what’s
+      realistic,” and explains that actual dates reveal the size and timeline of
+      the task."
+    single:
+      headline: Move doorway requests into writing before agreeing.
+      body: If your coat is on and you're walking to the elevator, don't answer the
+        favor yet. Say, "Send me the details and I'll tell you what's
+        realistic." Once it's in a follow-up text with actual dates, you can see
+        the size, labor, and timeline.
+      supportLine: You're not rejecting the person. You're sizing the task.
+    caption:
+      hook: Motion makes favors sound smaller than they are.
+      body: Standing up, coat on, halfway to the elevator, you're judging tone more
+        than scope. A follow-up text forces actual dates, deliverables, and
+        timing onto the page. That's when a casual yes becomes an informed one.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner script | Plan mode advice
+    renderDir: docs/assets/posts/20260505002032-doorway-requests
+    renderedFiles:
+      - docs/assets/posts/20260505002032-doorway-requests/post.png
