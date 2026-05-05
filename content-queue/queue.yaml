@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-05T20:23:08.244Z
+updatedAt: 2026-05-05T20:23:17.916Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6360,9 +6360,15 @@ items:
         reservation or ride feels preapproved. Yes can slip out before you've
         checked your day.
       hashtags: []
-    publishAttempts: 0
-    status: rendered
+    publishAttempts: 1
+    status: blocked
     notes: AI pipeline winner embarrassment | Plan mode aphorism
     renderDir: docs/assets/posts/20260505202307-hired-by-compliment
     renderedFiles:
       - docs/assets/posts/20260505202307-hired-by-compliment/post.png
+    lastError: 'Publish container failed with 403: {"error":{"message":"Application
+      request limit
+      reached","type":"OAuthException","is_transient":false,"code":4,"error_subcode":2207051,"error_user_title":"action
+      is blocked","error_user_msg":"We restrict certain activity to protect our
+      community. Tell us if you think we made a
+      mistake.","fbtrace_id":"Av0LNz3rZMx0ksA66gngwx0"}}'
