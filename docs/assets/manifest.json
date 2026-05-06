@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-06T01:34:13.722Z",
+  "updatedAt": "2026-05-06T03:02:11.218Z",
   "items": [
-    {
-      "id": "20260504075708-friendly-way",
-      "title": "Friendly Way",
-      "kind": "carousel",
-      "topic": "ceremonial invitations mistaken for real plans",
-      "angle": "The sting is realizing the warmth was meant to stay verbal, not become a date on the calendar.",
-      "createdAt": "2026-05-04T07:57:08.602Z",
-      "renderedFiles": [
-        "assets/posts/20260504075708-friendly-way/slide-01.png",
-        "assets/posts/20260504075708-friendly-way/slide-02.png",
-        "assets/posts/20260504075708-friendly-way/slide-03.png"
-      ]
-    },
     {
       "id": "20260504084815-say-it-again",
       "title": "Say It Again",
@@ -473,6 +460,17 @@
         "assets/posts/20260506013354-leave-my-name-on-it/slide-01.png",
         "assets/posts/20260506013354-leave-my-name-on-it/slide-02.png",
         "assets/posts/20260506013354-leave-my-name-on-it/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260506030210-old-capacity",
+      "title": "Old Capacity",
+      "kind": "single",
+      "topic": "Mistaking reduced bandwidth for perfectionism",
+      "angle": "What gets called perfectionism is often grief about not having the time, focus, or stamina to do the work the way you know it can be done.",
+      "createdAt": "2026-05-06T03:02:10.340Z",
+      "renderedFiles": [
+        "assets/posts/20260506030210-old-capacity/post.png"
       ]
     }
   ]

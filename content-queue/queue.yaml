@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T01:34:13.674Z
+updatedAt: 2026-05-06T03:02:11.164Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6625,3 +6625,41 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"ALDv0D8Jm5mfJ8cHGclLR8p"}}'
+  - id: 20260506030210-old-capacity
+    createdAt: 2026-05-06T03:02:10.340Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Old Capacity
+    topic: Mistaking reduced bandwidth for perfectionism
+    angle: What gets called perfectionism is often grief about not having the time,
+      focus, or stamina to do the work the way you know it can be done.
+    fingerprint: about bandwidth called can capacity do done focus gets grief having
+      know mistaking not often old perfectionism reduced stamina time way what
+      work
+    contentMode: reframe
+    voiceMode: reflective
+    altText: "Editorial-style text post on warm paper texture in brass ink. The text
+      reads: \"You keep calling it perfectionism. Sometimes it's 10:47 p.m., a
+      half-finished draft, a tab left open on the kitchen table, and the grief
+      of knowing tonight's version will be smaller than the one you know how to
+      make.\""
+    single:
+      headline: You keep calling it perfectionism.
+      body: Sometimes it's 10:47 p.m., a half-finished draft, a tab left open on the
+        kitchen table, and the grief of knowing tonight's version will be
+        smaller than the one you know how to make.
+    caption:
+      hook: Once you name it correctly, the next move gets simpler.
+      body: "Stop waiting for your old capacity. Make the task fit tonight: send the
+        shorter email, finish the rough draft, or do the ten-minute version."
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner diagnosis | Plan mode reframe
+    renderDir: docs/assets/posts/20260506030210-old-capacity
+    renderedFiles:
+      - docs/assets/posts/20260506030210-old-capacity/post.png
