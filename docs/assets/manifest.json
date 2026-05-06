@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-05T23:18:18.302Z",
+  "updatedAt": "2026-05-06T00:19:43.848Z",
   "items": [
-    {
-      "id": "20260504050725-easygoing-or-avoidant",
-      "title": "Easygoing or Avoidant",
-      "kind": "single",
-      "topic": "mistaking preference-suppression for being low-maintenance",
-      "angle": "It asks whether calling yourself easygoing is really a cleaner alibi for fear of seeming difficult, and what it costs when other people's defaults keep choosing your life.",
-      "createdAt": "2026-05-04T05:07:25.563Z",
-      "renderedFiles": [
-        "assets/posts/20260504050725-easygoing-or-avoidant/post.png"
-      ]
-    },
     {
       "id": "20260504065645-the-tight-smile",
       "title": "The Tight Smile",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-05T23:18:07.773Z",
       "renderedFiles": [
         "assets/posts/20260505231807-easy-to-keep/post.png"
+      ]
+    },
+    {
+      "id": "20260506001942-sorry-for-the-voice-note",
+      "title": "Sorry for the Voice Note",
+      "kind": "single",
+      "topic": "voice notes as convenience disguised as closeness",
+      "angle": "The apology before a long voice note gives away the split: it sounds intimate, but it is easier for the sender to make than for the receiver to use.",
+      "createdAt": "2026-05-06T00:19:42.306Z",
+      "renderedFiles": [
+        "assets/posts/20260506001942-sorry-for-the-voice-note/post.png"
       ]
     }
   ]
