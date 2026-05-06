@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-06T09:46:41.704Z",
+  "updatedAt": "2026-05-06T10:40:23.964Z",
   "items": [
-    {
-      "id": "20260504122813-answer-with-a-clock",
-      "title": "Answer With a Clock",
-      "kind": "single",
-      "topic": "how to handle on-the-spot requests without fake agreement",
-      "angle": "When you feel pressed to answer immediately, give a specific return time instead of a polite yes you have not actually chosen.",
-      "createdAt": "2026-05-04T12:28:13.797Z",
-      "renderedFiles": [
-        "assets/posts/20260504122813-answer-with-a-clock/post.png"
-      ]
-    },
     {
       "id": "20260504133337-normal-language-version",
       "title": "Normal-Language Version",
@@ -471,6 +460,19 @@
       "createdAt": "2026-05-06T09:46:32.419Z",
       "renderedFiles": [
         "assets/posts/20260506094632-petty-cash-reputation/post.png"
+      ]
+    },
+    {
+      "id": "20260506104022-you-re-with-us",
+      "title": "You're With Us",
+      "kind": "carousel",
+      "topic": "quiet inclusion in a social seating mishap",
+      "angle": "The real grace in a crowded social moment is how quickly someone makes room before your exclusion becomes visible.",
+      "createdAt": "2026-05-06T10:40:22.976Z",
+      "renderedFiles": [
+        "assets/posts/20260506104022-you-re-with-us/slide-01.png",
+        "assets/posts/20260506104022-you-re-with-us/slide-02.png",
+        "assets/posts/20260506104022-you-re-with-us/slide-03.png"
       ]
     }
   ]
