@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-06T03:02:20.530Z",
+  "updatedAt": "2026-05-06T05:03:38.815Z",
   "items": [
-    {
-      "id": "20260504084815-say-it-again",
-      "title": "Say It Again",
-      "kind": "single",
-      "topic": "asking someone to repeat themselves instead of pretending you heard",
-      "angle": "Give adults plain permission to ask for a repeat in the moment, because a brief interruption is usually cheaper than managing a misunderstanding for the next twenty minutes.",
-      "createdAt": "2026-05-04T08:48:15.611Z",
-      "renderedFiles": [
-        "assets/posts/20260504084815-say-it-again/post.png"
-      ]
-    },
     {
       "id": "20260504094337-volunteered-by-compliment",
       "title": "Volunteered by Compliment",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-06T03:02:10.340Z",
       "renderedFiles": [
         "assets/posts/20260506030210-old-capacity/post.png"
+      ]
+    },
+    {
+      "id": "20260506050338-bring-the-list",
+      "title": "Bring the List",
+      "kind": "single",
+      "topic": "using notes in important conversations without shame",
+      "angle": "When the conversation matters, a written list is a clean way to stay honest, not a sign of inadequacy.",
+      "createdAt": "2026-05-06T05:03:38.287Z",
+      "renderedFiles": [
+        "assets/posts/20260506050338-bring-the-list/post.png"
       ]
     }
   ]

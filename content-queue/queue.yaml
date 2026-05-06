@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T03:02:20.487Z
+updatedAt: 2026-05-06T05:03:38.739Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6669,3 +6669,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AjYi1b68z0WmfOOOAeIgwC7"}}'
+  - id: 20260506050338-bring-the-list
+    createdAt: 2026-05-06T05:03:38.287Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: brassInk
+    surfaceStyle: notebookCream
+    title: Bring the List
+    topic: using notes in important conversations without shame
+    angle: When the conversation matters, a written list is a clean way to stay
+      honest, not a sign of inadequacy.
+    fingerprint: bring clean conversation conversations honest important inadequacy
+      list matters not notes shame sign stay using way when without written
+    contentMode: encouragement
+    voiceMode: reflective
+    quoteAttribution: :null
+    altText: 'Single-image post on cream notebook-style paper in brass ink with wide
+      margins. The text reads: "You are allowed to read from a folded note card
+      in a conversation that matters."'
+    single:
+      headline: You are allowed to read from a folded note card in a conversation that
+        matters.
+      body: ""
+    caption:
+      hook: Looking naturally composed is not the point.
+      body: Memory is not a moral test. At the conference table, a folded note card or
+        phone notes app can protect the circled bullet point that matters.
+      callToComment: Where do you still perform ease?
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner permission | Plan mode encouragement
+    renderDir: docs/assets/posts/20260506050338-bring-the-list
+    renderedFiles:
+      - docs/assets/posts/20260506050338-bring-the-list/post.png
