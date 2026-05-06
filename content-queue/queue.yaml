@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T10:40:42.291Z
+updatedAt: 2026-05-06T11:34:17.353Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6927,3 +6927,42 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AHgSnE198kcqVUJzWSh4Ala"}}'
+  - id: 20260506113416-cheap-or-clear
+    createdAt: 2026-05-06T11:34:16.791Z
+    source: ai
+    slotPreference: morning
+    kind: single
+    templateFamily: highlight
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Cheap or Clear
+    topic: fear of looking cheap in group money moments
+    angle: A restaurant check scene shows how generosity can become cover for
+      avoiding the embarrassment of naming what is fair.
+    fingerprint: avoiding become can cheap check clear cover embarrassment fair fear
+      generosity group how looking moments money naming restaurant scene shows
+      what
+    contentMode: question
+    voiceMode: sharp
+    altText: Single-image Instagram graphic on warm paper texture in sage-ash tones.
+      Large text asks, 'When the even split includes their extra cocktail, is
+      that generosity or fear of looking cheap?' Smaller text says, 'The
+      restaurant check lands and nobody says the split is uneven.' A final line
+      reads, 'Doing the math is one thing. Paying to keep the table easy is
+      another.'
+    single:
+      headline: When the even split includes their extra cocktail, is that generosity
+        or fear of looking cheap?
+      body: The restaurant check lands and nobody says the split is uneven.
+      supportLine: Doing the math is one thing. Paying to keep the table easy is another.
+    caption:
+      hook: One awkward sentence is cheaper than the habit.
+      body: Keep overpaying to avoid the Venmo correction, and you teach yourself to
+        fund comfort you didn’t choose.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner self-betrayal | Plan mode question
+    renderDir: docs/assets/posts/20260506113416-cheap-or-clear
+    renderedFiles:
+      - docs/assets/posts/20260506113416-cheap-or-clear/post.png

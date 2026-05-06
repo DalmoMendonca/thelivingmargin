@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-05-06T10:40:42.370Z",
+  "updatedAt": "2026-05-06T11:34:17.431Z",
   "items": [
-    {
-      "id": "20260504133337-normal-language-version",
-      "title": "Normal-Language Version",
-      "kind": "carousel",
-      "topic": "being quietly rescued from social jargon",
-      "angle": "The kindest experts notice when someone is bluffing through a coded setting and offer translation without making them earn it.",
-      "createdAt": "2026-05-04T13:33:37.512Z",
-      "renderedFiles": [
-        "assets/posts/20260504133337-normal-language-version/slide-01.png",
-        "assets/posts/20260504133337-normal-language-version/slide-02.png",
-        "assets/posts/20260504133337-normal-language-version/slide-03.png"
-      ]
-    },
     {
       "id": "20260504144256-invitation-twice",
       "title": "Invitation Twice",
@@ -473,6 +460,17 @@
         "assets/posts/20260506104022-you-re-with-us/slide-01.png",
         "assets/posts/20260506104022-you-re-with-us/slide-02.png",
         "assets/posts/20260506104022-you-re-with-us/slide-03.png"
+      ]
+    },
+    {
+      "id": "20260506113416-cheap-or-clear",
+      "title": "Cheap or Clear",
+      "kind": "single",
+      "topic": "fear of looking cheap in group money moments",
+      "angle": "A restaurant check scene shows how generosity can become cover for avoiding the embarrassment of naming what is fair.",
+      "createdAt": "2026-05-06T11:34:16.791Z",
+      "renderedFiles": [
+        "assets/posts/20260506113416-cheap-or-clear/post.png"
       ]
     }
   ]
