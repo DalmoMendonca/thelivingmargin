@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-06T00:19:52.276Z",
+  "updatedAt": "2026-05-06T01:33:55.339Z",
   "items": [
-    {
-      "id": "20260504065645-the-tight-smile",
-      "title": "The Tight Smile",
-      "kind": "single",
-      "topic": "disliking photos of yourself because they expose social performance",
-      "angle": "What readers often call looking bad in photos is sometimes the discomfort of seeing themselves trying too hard to seem easy or relaxed.",
-      "createdAt": "2026-05-04T06:56:45.816Z",
-      "renderedFiles": [
-        "assets/posts/20260504065645-the-tight-smile/post.png"
-      ]
-    },
     {
       "id": "20260504075708-friendly-way",
       "title": "Friendly Way",
@@ -471,6 +460,19 @@
       "createdAt": "2026-05-06T00:19:42.306Z",
       "renderedFiles": [
         "assets/posts/20260506001942-sorry-for-the-voice-note/post.png"
+      ]
+    },
+    {
+      "id": "20260506013354-leave-my-name-on-it",
+      "title": "Leave My Name On It",
+      "kind": "carousel",
+      "topic": "being erased from work while being praised for being low-ego",
+      "angle": "A spare office exchange exposes how being called low-ego becomes a convenient excuse for stripping authorship from the person whose work made the final version.",
+      "createdAt": "2026-05-06T01:33:54.072Z",
+      "renderedFiles": [
+        "assets/posts/20260506013354-leave-my-name-on-it/slide-01.png",
+        "assets/posts/20260506013354-leave-my-name-on-it/slide-02.png",
+        "assets/posts/20260506013354-leave-my-name-on-it/slide-03.png"
       ]
     }
   ]

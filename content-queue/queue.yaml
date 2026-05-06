@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T00:19:52.232Z
+updatedAt: 2026-05-06T01:33:55.275Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6576,3 +6576,46 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AluzNBXxHPrtudBGat_UFx3"}}'
+  - id: 20260506013354-leave-my-name-on-it
+    createdAt: 2026-05-06T01:33:54.072Z
+    source: ai
+    slotPreference: evening
+    kind: carousel
+    templateFamily: broadside
+    palette: brassInk
+    surfaceStyle: paperWarm
+    title: Leave My Name On It
+    topic: being erased from work while being praised for being low-ego
+    angle: A spare office exchange exposes how being called low-ego becomes a
+      convenient excuse for stripping authorship from the person whose work made
+      the final version.
+    fingerprint: authorship becomes being called convenient ego erased exchange
+      excuse exposes final from how leave low made my name office person praised
+      spare stripping version while whose work
+    contentMode: dialogue
+    voiceMode: sharp
+    altText: "Three-slide text carousel in a warm paper style. Slide 1: 'My name's
+      missing from the final deck.' / 'I took the names off before the team
+      meeting.' Slide 2: 'It read cleaner as a team deck.' / 'And you're usually
+      so good about not needing credit, so...' Slide 3: 'Not needing applause is
+      one thing.' / 'Leave my name on what I wrote.'"
+    carousel:
+      - headline: "\"My name's missing from the final deck.\""
+        body: '"I took the names off before the team meeting."'
+      - headline: '"It read cleaner as a team deck."'
+        body: "\"And you're usually so good about not needing credit, so...\""
+      - headline: '"Not needing applause is one thing."'
+        body: '"Leave my name on what I wrote."'
+    caption:
+      hook: A missing name changes what can be defended later.
+      body: Credit keeps work traceable, defensible, and promotable. When your name is
+        removed from the final version, the loss isn’t ego; it’s record.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner quiet rupture | Plan mode dialogue
+    renderDir: docs/assets/posts/20260506013354-leave-my-name-on-it
+    renderedFiles:
+      - docs/assets/posts/20260506013354-leave-my-name-on-it/slide-01.png
+      - docs/assets/posts/20260506013354-leave-my-name-on-it/slide-02.png
+      - docs/assets/posts/20260506013354-leave-my-name-on-it/slide-03.png
