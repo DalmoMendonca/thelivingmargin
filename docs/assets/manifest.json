@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-06T06:52:16.260Z",
+  "updatedAt": "2026-05-06T07:49:19.518Z",
   "items": [
-    {
-      "id": "20260504104201-the-exception-rule",
-      "title": "The Exception Rule",
-      "kind": "single",
-      "topic": "self-excusing behavior in ordinary adult life",
-      "angle": "Everyday inconsideration usually hides inside private exception logic, not open selfishness.",
-      "createdAt": "2026-05-04T10:42:01.904Z",
-      "renderedFiles": [
-        "assets/posts/20260504104201-the-exception-rule/post.png"
-      ]
-    },
     {
       "id": "20260504113310-room-and-email",
       "title": "Room and Email",
@@ -471,6 +460,17 @@
         "assets/posts/20260506065148-closing-the-case/slide-03.png",
         "assets/posts/20260506065148-closing-the-case/slide-04.png",
         "assets/posts/20260506065148-closing-the-case/slide-05.png"
+      ]
+    },
+    {
+      "id": "20260506074918-seen-isn-t-understood",
+      "title": "Seen Isn't Understood",
+      "kind": "single",
+      "topic": "the false safety of digital acknowledgment",
+      "angle": "A short William H. Whyte line recasts read receipts, reactions, and “noted” as communication theater: plenty of acknowledgment, little shared understanding, and ownership quietly dropped.",
+      "createdAt": "2026-05-06T07:49:18.980Z",
+      "renderedFiles": [
+        "assets/posts/20260506074918-seen-isn-t-understood/post.png"
       ]
     }
   ]

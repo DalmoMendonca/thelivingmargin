@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T06:52:16.183Z
+updatedAt: 2026-05-06T07:49:19.447Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6784,3 +6784,44 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"AkTuRHeUgT_YfG3wqKftQjY"}}'
+  - id: 20260506074918-seen-isn-t-understood
+    createdAt: 2026-05-06T07:49:18.980Z
+    source: ai
+    slotPreference: evening
+    kind: single
+    templateFamily: signal
+    palette: midnightPaper
+    surfaceStyle: charcoalGrain
+    title: Seen Isn't Understood
+    topic: the false safety of digital acknowledgment
+    angle: "A short William H. Whyte line recasts read receipts, reactions, and
+      “noted” as communication theater: plenty of acknowledgment, little shared
+      understanding, and ownership quietly dropped."
+    fingerprint: acknowledgment as communication digital dropped false h isnt line
+      little noted ownership plenty quietly reactions read recasts receipts
+      safety seen shared short theater understanding understood whyte william
+    contentMode: quote
+    voiceMode: sharp
+    quoteAttribution: William H. Whyte
+    altText: Single dark charcoal-grain quote card with generous margins and
+      restrained editorial typography. The dominant text reads, “The great enemy
+      of communication, we find, is the illusion of it.” A small attribution
+      below reads William H. Whyte.
+    single:
+      headline: |-
+        “The great enemy of communication,
+
+        we find, is the illusion of it.”
+      body: William H. Whyte
+    caption:
+      hook: The thread looked handled.
+      body: Read receipts, a thumbs-up reaction, one “noted,” and the meeting recap
+        make the handoff look covered. Then the handoff slips, nobody owns it,
+        and everyone insists it was covered.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner ordinary life | Plan mode quote
+    renderDir: docs/assets/posts/20260506074918-seen-isn-t-understood
+    renderedFiles:
+      - docs/assets/posts/20260506074918-seen-isn-t-understood/post.png
