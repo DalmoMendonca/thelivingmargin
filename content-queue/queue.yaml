@@ -1,5 +1,5 @@
 version: 1
-updatedAt: 2026-05-06T07:49:27.273Z
+updatedAt: 2026-05-06T09:46:32.868Z
 items:
   - id: 20260430043340-quiet-dishes
     createdAt: 2026-04-30T04:33:40.089Z
@@ -6831,3 +6831,39 @@ items:
       is blocked","error_user_msg":"We restrict certain activity to protect our
       community. Tell us if you think we made a
       mistake.","fbtrace_id":"A89W0JkB2xgL5eQGwmK5k8V"}}'
+  - id: 20260506094632-petty-cash-reputation
+    createdAt: 2026-05-06T09:46:32.419Z
+    source: ai
+    slotPreference: midday
+    kind: single
+    templateFamily: editorial
+    palette: sageAsh
+    surfaceStyle: paperWarm
+    title: Petty Cash Reputation
+    topic: being volunteered for labor before being asked
+    angle: When someone offers your help in public before checking with you, they
+      convert your reliability into their social credit.
+    fingerprint: asked before being cash checking convert credit help into labor
+      offers petty public reliability reputation social someone their they
+      volunteered when
+    contentMode: aphorism
+    voiceMode: sharp
+    altText: "Editorial-style text post on warm sage paper. Headline: 'She can
+      handle it' is how people spend your reputation like petty cash. Body: Once
+      it’s said out loud, their ease becomes your obligation."
+    single:
+      headline: '"She can handle it" is how people spend your reputation like petty
+        cash.'
+      body: Once it’s said out loud, their ease becomes your obligation.
+    caption:
+      hook: They look generous.
+      body: They get the social credit for offering help that was never theirs to
+        offer. You get the calendar invite or the awkward correction in front of
+        everyone.
+      hashtags: []
+    publishAttempts: 0
+    status: rendered
+    notes: AI pipeline winner recognition | Plan mode aphorism
+    renderDir: docs/assets/posts/20260506094632-petty-cash-reputation
+    renderedFiles:
+      - docs/assets/posts/20260506094632-petty-cash-reputation/post.png

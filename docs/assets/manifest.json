@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-05-06T07:49:27.328Z",
+  "updatedAt": "2026-05-06T09:46:32.943Z",
   "items": [
-    {
-      "id": "20260504113310-room-and-email",
-      "title": "Room and Email",
-      "kind": "single",
-      "topic": "workplace praise that never turns into advocacy",
-      "angle": "A person can sound highly supportive in public while quietly withholding the private actions that would actually move your name forward.",
-      "createdAt": "2026-05-04T11:33:10.919Z",
-      "renderedFiles": [
-        "assets/posts/20260504113310-room-and-email/post.png"
-      ]
-    },
     {
       "id": "20260504122813-answer-with-a-clock",
       "title": "Answer With a Clock",
@@ -471,6 +460,17 @@
       "createdAt": "2026-05-06T07:49:18.980Z",
       "renderedFiles": [
         "assets/posts/20260506074918-seen-isn-t-understood/post.png"
+      ]
+    },
+    {
+      "id": "20260506094632-petty-cash-reputation",
+      "title": "Petty Cash Reputation",
+      "kind": "single",
+      "topic": "being volunteered for labor before being asked",
+      "angle": "When someone offers your help in public before checking with you, they convert your reliability into their social credit.",
+      "createdAt": "2026-05-06T09:46:32.419Z",
+      "renderedFiles": [
+        "assets/posts/20260506094632-petty-cash-reputation/post.png"
       ]
     }
   ]
