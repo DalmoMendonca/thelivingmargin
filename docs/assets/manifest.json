@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-05-06T05:03:48.352Z",
+  "updatedAt": "2026-05-06T06:51:50.278Z",
   "items": [
-    {
-      "id": "20260504094337-volunteered-by-compliment",
-      "title": "Volunteered by Compliment",
-      "kind": "carousel",
-      "topic": "phrases that assign you labor before you have agreed",
-      "angle": "A compliment can become a soft capture device when praise assigns you work, emotional labor, or logistics you never agreed to.",
-      "createdAt": "2026-05-04T09:43:37.841Z",
-      "renderedFiles": [
-        "assets/posts/20260504094337-volunteered-by-compliment/slide-01.png",
-        "assets/posts/20260504094337-volunteered-by-compliment/slide-02.png",
-        "assets/posts/20260504094337-volunteered-by-compliment/slide-03.png",
-        "assets/posts/20260504094337-volunteered-by-compliment/slide-04.png",
-        "assets/posts/20260504094337-volunteered-by-compliment/slide-05.png"
-      ]
-    },
     {
       "id": "20260504104201-the-exception-rule",
       "title": "The Exception Rule",
@@ -471,6 +456,21 @@
       "createdAt": "2026-05-06T05:03:38.287Z",
       "renderedFiles": [
         "assets/posts/20260506050338-bring-the-list/post.png"
+      ]
+    },
+    {
+      "id": "20260506065148-closing-the-case",
+      "title": "Closing the Case",
+      "kind": "carousel",
+      "topic": "how to tell when an apology is meant to restore comfort more than repair harm",
+      "angle": "Some apologies sound correct but function like cleanup; the real test is whether the person makes room for consequence or asks you to make things easy again.",
+      "createdAt": "2026-05-06T06:51:48.852Z",
+      "renderedFiles": [
+        "assets/posts/20260506065148-closing-the-case/slide-01.png",
+        "assets/posts/20260506065148-closing-the-case/slide-02.png",
+        "assets/posts/20260506065148-closing-the-case/slide-03.png",
+        "assets/posts/20260506065148-closing-the-case/slide-04.png",
+        "assets/posts/20260506065148-closing-the-case/slide-05.png"
       ]
     }
   ]
